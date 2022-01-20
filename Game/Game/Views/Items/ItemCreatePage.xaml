@@ -172,13 +172,6 @@
                                  HorizontalOptions="EndAndExpand"
                                  Clicked="Save_Clicked"/>
                 </Grid>
-                <StackLayout Orientation="Horizontal"
-                             Margin="20">
-
-                    <ImageButton Source="icon_save.png"
-                                 HorizontalOptions="EndAndExpand"
-                                 Clicked="Save_Clicked"/>
-                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
