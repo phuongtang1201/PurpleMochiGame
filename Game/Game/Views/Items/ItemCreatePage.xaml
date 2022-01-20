@@ -169,10 +169,7 @@
                 </Grid>
                 <StackLayout Orientation="Horizontal"
                              Margin="20">
-                    <ImageButton Source="icon_cancel.png"
-                                 HorizontalOptions="StartAndExpand"
-                                 Clicked="Cancel_Clicked"/>
-                    
+
                     <ImageButton Source="icon_save.png"
                                  HorizontalOptions="EndAndExpand"
                                  Clicked="Save_Clicked"/>
