@@ -166,6 +166,11 @@
                         Source="icon_cancel.png"
                         HorizontalOptions="StartAndExpand"
                         Clicked="Cancel_Clicked"/>
+
+                    <ImageButton Grid.Row="0" Grid.Column="1" 
+                                 Source="icon_save.png"
+                                 HorizontalOptions="EndAndExpand"
+                                 Clicked="Save_Clicked"/>
                 </Grid>
                 <StackLayout Orientation="Horizontal"
                              Margin="20">
