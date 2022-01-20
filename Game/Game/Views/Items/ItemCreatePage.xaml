@@ -150,7 +150,23 @@
 
                     </StackLayout>
                 </StackLayout>
-                
+                <Grid
+                    RowSpacing="1"
+                    ColumnSpacing="2"
+                    VerticalOptions="Center">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ImageButton Grid.Row="0" Grid.Column="0"
+                        Source="icon_cancel.png"
+                        HorizontalOptions="StartAndExpand"
+                        Clicked="Cancel_Clicked"/>
+                </Grid>
                 <StackLayout Orientation="Horizontal"
                              Margin="20">
                     <ImageButton Source="icon_cancel.png"
