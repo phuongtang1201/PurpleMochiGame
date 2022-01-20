@@ -27,6 +27,7 @@
                 Spacing="10">
 
                 <Label Text="Update Page" Style="{StaticResource HeaderStyle}"/>
+                <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
                 <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
 
@@ -48,6 +49,7 @@
 
                     <Entry Grid.Row="0" Grid.Column="1"
                         Text="{Binding Data.Name}" 
+                        TextChanged="Entry_CheckNotEmpty"
                         Style="{StaticResource EntryStyle}"/>
 
                     <Label Grid.Row="1" Grid.Column="0"
@@ -56,6 +58,7 @@
 
                     <Entry Grid.Row="1" Grid.Column="1"
                         Text="{Binding Data.Description}" 
+                        TextChanged="Entry_CheckNotEmpty"
                         Style="{StaticResource EntryStyle}"/>
 
                     <Label Grid.Row="2" Grid.Column="0"

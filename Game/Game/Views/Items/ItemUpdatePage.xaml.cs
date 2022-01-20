@@ -32,6 +32,10 @@ namespace Game.Views
 
             this.ViewModel.Title = "Update " + data.Title;
 
+            //This message will show if either the name entry box or description entry box is empty
+            Warning_Not_Null_Message.Text = "Please enter a valid input.";
+            Warning_Not_Null_Message.IsVisible = false;
+
             //Need to make the SelectedItem a string, so it can select the correct item.
             LocationPicker.SelectedItem = data.Data.Location.ToString();
             AttributePicker.SelectedItem = data.Data.Attribute.ToString();
@@ -63,7 +67,34 @@ namespace Game.Views
         {
             _ = await Navigation.PopModalAsync();
         }
+        /// <summary>
+        /// Check the entry box to guarantee entering a not null value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Entry_CheckNotEmpty (object sender, ValueChangedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(ViewModel.Data.Name))
+            {
+                Warning_Not_Null_Message.IsVisible = true;
+                return;
+            }
+            if (!string.IsNullOrEmpty(ViewModel.Data.Name))
+            {
+                Warning_Not_Null_Message.IsVisible = false;
+            }
+            if (string.IsNullOrEmpty(ViewModel.Data.Description))
+            {
+                Warning_Not_Null_Message.IsVisible = true;
+                return;
+            }
+            if (!string.IsNullOrEmpty(ViewModel.Data.Description))
+            {
+                Warning_Not_Null_Message.IsVisible = false;
+                return;
+            }
 
+        }
         /// <summary>
         /// Catch the change to the Stepper for Range
         /// </summary>
