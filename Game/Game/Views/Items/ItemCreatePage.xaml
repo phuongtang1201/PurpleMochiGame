@@ -139,7 +139,7 @@
                     <Label 
                         Text="Damage" 
                         Style="{StaticResource LabelStyle}"/>
-                    
+
                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
                         <Label 
@@ -153,8 +153,14 @@
                         <Stepper 
                             Value="{Binding Data.Damage, Mode=TwoWay}"
                             ValueChanged="Damage_OnStepperValueChanged"/>
-                    
+
                     </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                             Margin="20">
+                    <ImageButton Source="icon_cancel.png"
+                                 HorizontalOptions="StartAndExpand"
+                                 Clicked="Cancel_Clicked"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
