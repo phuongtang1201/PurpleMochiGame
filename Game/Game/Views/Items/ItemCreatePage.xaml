@@ -34,7 +34,9 @@
                 <Entry 
                     Placeholder="Enter the item name"
                     Style="{StaticResource EntryStyle}"/>
-                
+
+                <Label Text="Description" HorizontalOptions="Center"/>
+
                 <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
