@@ -37,6 +37,10 @@
 
                 <Label Text="Description" HorizontalOptions="Center"/>
 
+                <Entry 
+                    Placeholder="Enter the item description"
+                    Style="{StaticResource EntryStyle}"/>
+
                 <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
