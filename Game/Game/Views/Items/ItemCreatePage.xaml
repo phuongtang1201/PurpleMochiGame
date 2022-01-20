@@ -31,6 +31,10 @@
 
                 <Label Text="Item name" HorizontalOptions="Center"/>
 
+                <Entry 
+                    Placeholder="Enter the item name"
+                    Style="{StaticResource EntryStyle}"/>
+                
                 <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
