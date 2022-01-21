@@ -110,17 +110,17 @@ namespace Game.Views
         }
 
         /// <summary>
-        /// Catch the change to the stepper for Value
+        /// Catch the change to the slider for Value
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public void Value_OnStepperValueChanged(object sender, ValueChangedEventArgs e)
+        public void Value_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
         {
-            ValueValue.Text = String.Format("{0}", e.NewValue);
+            ValueValue.Text = String.Format("{0}", Convert.ToInt32(e.NewValue));
         }
 
         /// <summary>
-        /// Catch the change to the stepper for Damage
+        /// Catch the change to the slider for Damage
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
