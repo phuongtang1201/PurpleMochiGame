@@ -105,7 +105,7 @@
                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
                         <Slider 
-                            Value="{Binding Data.Range, Mode=TwoWay}"  WidthRequest="364"
+                            Value="{Binding Data.Range, Mode=TwoWay}"  WidthRequest="200"
                             Minimum = "0" Maximum = "9" 
                              ValueChanged = "Range_OnSliderValueChanged" Margin = "10"/>
                         
@@ -125,7 +125,7 @@
 
                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
                         <Slider 
-                            Value="{Binding Data.Value, Mode=TwoWay}"  WidthRequest="364"
+                            Value="{Binding Data.Value, Mode=TwoWay}"  WidthRequest="200"
                             Minimum = "0" Maximum = "9" 
                              ValueChanged = "Value_OnSliderValueChanged" Margin = "10"/>
 
@@ -146,7 +146,7 @@
                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
                         <Slider 
-                            Value="{Binding Data.Damage, Mode=TwoWay}"  WidthRequest="364"
+                            Value="{Binding Data.Damage, Mode=TwoWay}"  WidthRequest="200"
                             Minimum = "0" Maximum = "9" 
                              ValueChanged = "Damage_OnSliderValueChanged" Margin = "10"/>
 
