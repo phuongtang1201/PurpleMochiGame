@@ -97,6 +97,11 @@ namespace Game.Views
             ValueValue.Text = String.Format("{0}", e.NewValue);
         }
 
+        public void Value_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            ValueValue.Text = String.Format("{0}", e.NewValue);
+        }
+
         /// <summary>
         /// Catch the change to the stepper for Damage
         /// </summary>
