@@ -121,7 +121,7 @@ namespace Game.Views
         /// <param name="e"></param>
         public void Range_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
         {
-            RangeValue.Text = String.Format("{0}", e.NewValue);
+            RangeValue.Text = String.Format("{0}", Convert.ToInt32(e.NewValue));
         }
 
         /// <summary>
