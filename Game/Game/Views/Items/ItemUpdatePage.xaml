@@ -161,6 +161,28 @@
 
                     </StackLayout>
                 </StackLayout>
+                <Grid
+                    RowSpacing="1"
+                    ColumnSpacing="2"
+                    VerticalOptions="Center">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ImageButton Grid.Row="0" Grid.Column="0"
+                        Source="icon_cancel.png"
+                        HorizontalOptions="StartAndExpand"
+                        Clicked="Cancel_Clicked"/>
+
+                    <ImageButton Grid.Row="0" Grid.Column="1" 
+                                 Source="icon_save.png"
+                                 HorizontalOptions="EndAndExpand"
+                                 Clicked="Save_Clicked"/>
+                </Grid>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
