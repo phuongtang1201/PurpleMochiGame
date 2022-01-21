@@ -116,5 +116,10 @@ namespace Game.Views
         {
             DamageValue.Text = String.Format("{0}", e.NewValue);
         }
+
+        public void Damage_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            DamageValue.Text = String.Format("{0}", e.NewValue);
+        }
     }
 }
