@@ -44,8 +44,28 @@
             Padding="20">
 
                 <Label Text="Are you sure you want to delete this item?" Style="{StaticResource MessageStyle}"/>
-                <Grid>
-                    <Button 
+                <Grid
+                    RowSpacing="1"
+                    ColumnSpacing="2"
+                    VerticalOptions="Center">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Row="0" Grid.Column="0"
+                Text="No" 
+                Clicked="Cancel_Clicked" 
+                HorizontalOptions="Center"
+                FontSize="Medium"
+                BorderWidth="1" 
+                BorderColor="black">
+                    </Button>
+                    
+                    <Button Grid.Row="0" Grid.Column="1"
                 Text="Yes" 
                 Clicked="Delete_Clicked" 
                 HorizontalOptions="Center"
