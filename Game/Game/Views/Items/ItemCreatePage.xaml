@@ -104,7 +104,7 @@
 
                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
-                        <Slider x:Name ="RangeValue2" WidthRequest="364" Minimum ="0" Maximum="9"
+                        <Slider x:Name ="RangeValue2" WidthRequest="200" Minimum ="0" Maximum="9"
                                 Value="{Binding Data.Range, Mode=TwoWay}"
                                 HorizontalOptions="CenterAndExpand"
                                 VerticalOptions="CenterAndExpand"
@@ -126,7 +126,7 @@
 
                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
-                        <Slider x:Name ="ValueValue2" WidthRequest="364" Minimum ="0" Maximum="9"
+                        <Slider x:Name ="ValueValue2" WidthRequest="200" Minimum ="0" Maximum="9"
                                 Value="{Binding Data.Range, Mode=TwoWay}"
                                 HorizontalOptions="CenterAndExpand"
                                 VerticalOptions="CenterAndExpand"
@@ -148,7 +148,7 @@
 
                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
-                        <Slider x:Name ="DamageValue2" WidthRequest="364" Minimum ="0" Maximum="9"
+                        <Slider x:Name ="DamageValue2" WidthRequest="200" Minimum ="0" Maximum="9"
                                 Value="{Binding Data.Range, Mode=TwoWay}"
                                 HorizontalOptions="CenterAndExpand"
                                 VerticalOptions="CenterAndExpand"
