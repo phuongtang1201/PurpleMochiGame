@@ -97,6 +97,11 @@ namespace Game.Views
             ValueValue.Text = String.Format("{0}", e.NewValue);
         }
 
+        /// <summary>
+        /// Catch the change in the slider for Value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void Value_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
         {
             ValueValue.Text = String.Format("{0}", e.NewValue);
