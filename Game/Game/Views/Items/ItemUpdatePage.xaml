@@ -123,6 +123,10 @@
                         Style="{StaticResource LabelStyle}"/>
 
                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                        <Slider 
+                            Value="{Binding Data.Value, Mode=TwoWay}"  WidthRequest="364"
+                            Minimum = "0" Maximum = "9" 
+                             ValueChanged = "Value_OnSliderValueChanged" Margin = "10"/>
 
                         <Label 
                             Text="{Binding Data.Value}" 
@@ -131,10 +135,6 @@
                             Padding="0,0,10,0"
                             HorizontalOptions="End"
                             HorizontalTextAlignment="End"/>
-
-                        <Stepper 
-                            Value="{Binding Data.Value, Mode=TwoWay}"
-                            ValueChanged="Value_OnStepperValueChanged"/>
 
                     </StackLayout>
 
