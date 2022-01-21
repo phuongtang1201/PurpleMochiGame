@@ -77,6 +77,11 @@ namespace Game.Views
             RangeValue.Text = String.Format("{0}", e.NewValue);
         }
 
+        public void Range_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            RangeValue.Text = String.Format("{0}", e.NewValue);
+        }
+
         /// <summary>
         /// Catch the change to the stepper for Value
         /// </summary>
