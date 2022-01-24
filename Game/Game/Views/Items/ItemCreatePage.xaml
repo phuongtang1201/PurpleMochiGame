@@ -26,7 +26,8 @@
 
                 <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
 
-                <Label Text="Item Name" HorizontalOptions="Start" TextColor="Black"/>
+                <Label Text="Item Name" HorizontalOptions="Start" 
+                       Style="{StaticResource LabelStyle}"/>
 
                 <Entry 
                     Text="{Binding Data.Name}"
@@ -35,7 +36,8 @@
                     WidthRequest="300"
                     HorizontalOptions="Start"/>
 
-                <Label Text="Description" HorizontalOptions="Start" TextColor="Black"/>
+                <Label Text="Description" HorizontalOptions="Start" 
+                       Style="{StaticResource LabelStyle}"/>
 
                 <Entry 
                     Text="{Binding Data.Description}"
