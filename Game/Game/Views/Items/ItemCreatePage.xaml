@@ -25,15 +25,15 @@
                 <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
                 <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
-                
-                <Label Text="Item Name" HorizontalOptions="Start"/>
+
+                <Label Text="Item Name" HorizontalOptions="Start" TextColor="Black"/>
 
                 <Entry 
                     Text="{Binding Data.Name}"
                     TextChanged="Entry_CheckNotEmpty"
                     Style="{StaticResource EntryStyle}"/>
 
-                <Label Text="Description" HorizontalOptions="Start"/>
+                <Label Text="Description" HorizontalOptions="Start" TextColor="Black"/>
 
                 <Entry 
                     Text="{Binding Data.Description}"
