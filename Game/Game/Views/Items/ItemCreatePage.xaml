@@ -21,13 +21,11 @@
         <ScrollView>
             <StackLayout Style="{StaticResource OuterBoxStack}"
                 Spacing="10">
-                <StackLayout HorizontalOptions="Center">
                 <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
                 <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
-
                 <Label Text="Item Name" HorizontalOptions="Start" 
-                       Style="{StaticResource LabelStyle}"/>
+                    Style="{StaticResource LabelStyle}"/>
 
                 <Entry 
                     Text="{Binding Data.Name}"
@@ -37,7 +35,7 @@
                     HorizontalOptions="Start"/>
 
                 <Label Text="Description" HorizontalOptions="Start" 
-                       Style="{StaticResource LabelStyle}"/>
+                   Style="{StaticResource LabelStyle}"/>
 
                 <Entry 
                     Text="{Binding Data.Description}"
@@ -45,7 +43,6 @@
                     Style="{StaticResource EntryStyle}"
                     WidthRequest="500"
                     HorizontalOptions="Start"/>
-                </StackLayout>
 
                 <Grid
                     RowSpacing="1"
@@ -96,25 +93,25 @@
                     </StackLayout>
 
                     <Entry Grid.Row="3" Grid.Column="1"
-                            Text="{Binding Data.ImageURI}" 
-                            Style="{StaticResource EntryStyle}"
-                            WidthRequest="500"
-                            HorizontalOptions="Start"/>
+                        Text="{Binding Data.ImageURI}" 
+                        Style="{StaticResource EntryStyle}"
+                        WidthRequest="500"
+                        HorizontalOptions="Start"/>
 
                 </Grid>
 
-                    <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
+                <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
 
-                        <Label 
-                            Text="Range" 
-                            Style="{StaticResource LabelStyle}"/>
+                    <Label 
+                        Text="Range" 
+                        Style="{StaticResource LabelStyle}"/>
 
                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
                         <Slider x:Name ="RangeValue2" WidthRequest="200" Minimum ="0" Maximum="9"
-                                Value="{Binding Data.Range, Mode=TwoWay}"
-                                HorizontalOptions="CenterAndExpand"
-                                VerticalOptions="CenterAndExpand"
+                            Value="{Binding Data.Range, Mode=TwoWay}"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
                             ValueChanged="Range_OnSliderValueChanged" />
 
                         <Label 
@@ -134,9 +131,9 @@
                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
                         <Slider x:Name ="ValueValue2" WidthRequest="200" Minimum ="0" Maximum="9"
-                                Value="{Binding Data.Range, Mode=TwoWay}"
-                                HorizontalOptions="CenterAndExpand"
-                                VerticalOptions="CenterAndExpand"
+                            Value="{Binding Data.Range, Mode=TwoWay}"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
                             ValueChanged="Value_OnSliderValueChanged" />
 
                         <Label 
@@ -156,9 +153,9 @@
                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
                         <Slider x:Name ="DamageValue2" WidthRequest="200" Minimum ="0" Maximum="9"
-                                Value="{Binding Data.Range, Mode=TwoWay}"
-                                HorizontalOptions="CenterAndExpand"
-                                VerticalOptions="CenterAndExpand"
+                            Value="{Binding Data.Range, Mode=TwoWay}"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
                             ValueChanged="Damage_OnSliderValueChanged" />
 
                         <Label 
