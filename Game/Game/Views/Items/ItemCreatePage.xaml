@@ -94,15 +94,12 @@
                             Style="{StaticResource ImageSmallStyle}"/>
                     </StackLayout>
 
-                    <StackLayout Grid.Row="3" Grid.Column="1" Style="{StaticResource HorizontalStack}" HorizontalOptions="FillAndExpand">
-
-                        <Entry 
+                    <Entry Grid.Row="3" Grid.Column="1"
                             Text="{Binding Data.ImageURI}" 
                             Style="{StaticResource EntryStyle}"
                             WidthRequest="500"
                             HorizontalOptions="Start"/>
 
-                    </StackLayout>
                 </Grid>
 
                     <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
