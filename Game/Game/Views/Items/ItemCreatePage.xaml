@@ -85,15 +85,16 @@
                         SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
                         x:Name="AttributePicker"/>
 
-                    <Label Grid.Row="3" Grid.Column="0"
-                        Text="Image" 
-                        Style="{StaticResource LabelStyle}"/>
-
-                    <StackLayout Grid.Row="3" Grid.Column="1" Style="{StaticResource HorizontalStack}" HorizontalOptions="FillAndExpand">
-
+                    <StackLayout Grid.Row="3" Grid.Column="0" Style="{StaticResource HorizontalStack}" HorizontalOptions="FillAndExpand">
+                        <Label
+                            Text="Image" 
+                            Style="{StaticResource LabelStyle}"/>
                         <Image 
                             Source="{Binding Data.ImageURI}"
                             Style="{StaticResource ImageSmallStyle}"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3" Grid.Column="1" Style="{StaticResource HorizontalStack}" HorizontalOptions="FillAndExpand">
 
                         <Entry 
                             Text="{Binding Data.ImageURI}" 
