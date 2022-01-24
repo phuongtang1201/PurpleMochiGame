@@ -33,7 +33,7 @@
                     Text="{Binding Data.Name}"
                     TextChanged="Entry_CheckNotEmpty"
                     Style="{StaticResource EntryStyle}"
-                    WidthRequest="300"
+                    WidthRequest="500"
                     HorizontalOptions="Start"/>
 
                 <Label Text="Description" HorizontalOptions="Start" 
