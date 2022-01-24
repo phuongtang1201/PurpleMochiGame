@@ -31,14 +31,18 @@
                 <Entry 
                     Text="{Binding Data.Name}"
                     TextChanged="Entry_CheckNotEmpty"
-                    Style="{StaticResource EntryStyle}"/>
+                    Style="{StaticResource EntryStyle}"
+                    WidthRequest="300"
+                    HorizontalOptions="Start"/>
 
                 <Label Text="Description" HorizontalOptions="Start" TextColor="Black"/>
 
                 <Entry 
                     Text="{Binding Data.Description}"
                     TextChanged="Entry_CheckNotEmpty"
-                    Style="{StaticResource EntryStyle}"/>
+                    Style="{StaticResource EntryStyle}"
+                    WidthRequest="500"
+                    HorizontalOptions="Start"/>
 
                 <Grid
                     RowSpacing="1"
