@@ -97,7 +97,9 @@
 
                         <Entry 
                             Text="{Binding Data.ImageURI}" 
-                            Style="{StaticResource EntryStyle}"/>
+                            Style="{StaticResource EntryStyle}"
+                            WidthRequest="500"
+                            HorizontalOptions="Start"/>
 
                     </StackLayout>
                 </Grid>
