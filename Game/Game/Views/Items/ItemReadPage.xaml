@@ -14,75 +14,65 @@
 
 
     <ScrollView>
-        <StackLayout>
 
-            <StackLayout Style="{StaticResource OuterBoxStack}" Spacing="10">
-                <StackLayout HorizontalOptions="Center">
-                    <Image Source="{Binding Data.ImageURI}"  Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
+        <StackLayout Style="{StaticResource OuterBoxStack}" Spacing="10">
+            <StackLayout HorizontalOptions="Center">
+                <Image Source="{Binding Data.ImageURI}"  Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
 
-                    <Label Text="Item Name:" HorizontalOptions="Start"
-                        Style="{StaticResource LabelStyle}"/>
-                    <Label Text="{Binding Data.Name}" 
-                        Style="{StaticResource ValueStyle}"/>
+                <Label Text="Item Name:" HorizontalOptions="Start"
+                Style="{StaticResource LabelStyle}"/>
+                <Label Text="{Binding Data.Name}" HorizontalOptions="Start"
+                Style="{StaticResource ValueStyle}"/>
 
-                    <StackLayout Style="{StaticResource HorizontalStack}">
+                <Label 
+                Text="Description:" HorizontalOptions="Start"
+                Style="{StaticResource LabelStyle}"/>
+                <Label 
+                Text="{Binding Data.Description}" HorizontalOptions="Start"
+                Style="{StaticResource ValueStyle}"/>
+
+                <Label Text="Statistics" HorizontalOptions="Start"
+                       Style="{StaticResource HeaderStyle}"/>
+                <Label Text="Location:" HorizontalOptions="Start"
+                    Style="{StaticResource LabelStyle}"/>
+                <Label Text="{Binding Data.Location}" HorizontalOptions="Start"
+                    Style="{StaticResource ValueStyle}"/>
+
+
+                <StackLayout Spacing="5">
                         <Label 
-                            Text="Description : " 
-                            Style="{StaticResource LabelStyle}"/>
+                    Text="Attribute : " 
+                    Style="{StaticResource LabelStyle}"/>
                         <Label 
-                            Text="{Binding Data.Description}" 
-                            Style="{StaticResource ValueStyle}"/>
-                    </StackLayout>
-
-                </StackLayout>
-
-                <StackLayout Margin="25" Spacing="20">
-                    <Label Text="Statistics" Style="{StaticResource HeaderStyle}"/>
-                    <StackLayout Spacing="5">
-                        <Label 
-                            Text="Location : " 
-                            Style="{StaticResource LabelStyle}"/>
-                        <Label 
-                            Text="{Binding Data.Location}" 
-                            Style="{StaticResource ValueStyle}"/>
-                    </StackLayout>
-
-
-                    <StackLayout Spacing="5">
-                        <Label 
-                            Text="Attribute : " 
-                            Style="{StaticResource LabelStyle}"/>
-                        <Label 
-                            Text="{Binding Data.Attribute}" 
-                            Style="{StaticResource ValueStyle}"/>
+                    Text="{Binding Data.Attribute}" 
+                    Style="{StaticResource ValueStyle}"/>
                     </StackLayout>
 
                     <StackLayout Spacing="5">
                         <Label 
-                            Text="Range : " 
-                            Style="{StaticResource LabelStyle}"/>
+                    Text="Range : " 
+                    Style="{StaticResource LabelStyle}"/>
                         <Label 
-                            Text="{Binding Data.Range}" 
-                            Style="{StaticResource ValueStyle}"/>
+                    Text="{Binding Data.Range}" 
+                    Style="{StaticResource ValueStyle}"/>
                     </StackLayout>
 
                     <StackLayout Spacing="5">
                         <Label 
-                            Text="Value : " 
-                            Style="{StaticResource LabelStyle}"/>
+                    Text="Value : " 
+                    Style="{StaticResource LabelStyle}"/>
                         <Label 
-                            Text="{Binding Data.Value}" 
-                            Style="{StaticResource ValueStyle}"/>
+                    Text="{Binding Data.Value}" 
+                    Style="{StaticResource ValueStyle}"/>
                     </StackLayout>
 
-                    <StackLayout Spacing="5">
-                        <Label 
-                            Text="Damage : " 
-                            Style="{StaticResource LabelStyle}"/>
-                        <Label 
-                            Text="{Binding Data.Damage}" 
-                            Style="{StaticResource ValueStyle}"/>
-                    </StackLayout>
+                <StackLayout Spacing="5">
+                    <Label 
+                    Text="Damage : " 
+                    Style="{StaticResource LabelStyle}"/>
+                    <Label 
+                    Text="{Binding Data.Damage}" 
+                    Style="{StaticResource ValueStyle}"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>
