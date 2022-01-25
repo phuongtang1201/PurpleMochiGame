@@ -26,26 +26,22 @@
 
                     <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
                     <Label Text="Item Name" HorizontalOptions="Start" 
-                        Style="{StaticResource LabelStyle}"
-                        FontSize="14"/>
+                        Style="{StaticResource LabelStyle}" />
 
                     <Entry 
                         Text="{Binding Data.Name}"
                         TextChanged="Entry_CheckNotEmpty"
                         Style="{StaticResource EntryStyle}"
-                        FontSize="12"
                         WidthRequest="300"
                         HorizontalOptions="Start"/>
 
                     <Label Text="Description" HorizontalOptions="Start" 
-                        Style="{StaticResource LabelStyle}"
-                        FontSize="14"/>
+                        Style="{StaticResource LabelStyle}" />
 
                     <Entry 
                         Text="{Binding Data.Description}"
                         TextChanged="Entry_CheckNotEmpty"
                         Style="{StaticResource EntryStyle}"
-                        FontSize="12"
                         WidthRequest="300"
                         HorizontalOptions="Start"/>
 
@@ -71,8 +67,7 @@
 
                     <Label Grid.Row="0" Grid.Column="0"
                         Text="Statistics" 
-                        Style="{StaticResource LabelStyle}"
-                        FontSize="14"/>
+                        Style="{StaticResource LabelStyle}" />
 
                     <Label Grid.Row="1" Grid.Column="0"
                         Text="Location" 
@@ -81,7 +76,6 @@
                     <Picker Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
                         WidthRequest="300"
                         HorizontalOptions="Start"
-                        FontSize="12"
                         ItemsSource="{x:Static local_enum:ItemLocationEnumHelper.GetListCharacter}" 
                         SelectedItem="{Binding Data.Location, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
                         x:Name="LocationPicker"/>
@@ -93,7 +87,6 @@
                     <Picker Grid.Row="2" Grid.Column="1"  Grid.ColumnSpan="2"
                         WidthRequest="300"
                         HorizontalOptions="Start"
-                        FontSize="12"
                         ItemsSource="{x:Static local_enum:AttributeEnumHelper.GetListCharacter}" 
                         SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
                         x:Name="AttributePicker"/>
@@ -111,7 +104,6 @@
                         Text="{Binding Data.ImageURI}" 
                         Style="{StaticResource EntryStyle}"
                         WidthRequest="300"
-                        FontSize="12"
                         HorizontalOptions="Start"/>
 
                     <Label Grid.Row="4" Grid.Column="0"
