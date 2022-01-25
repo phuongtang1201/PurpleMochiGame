@@ -63,7 +63,8 @@
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="75" />
-                        <ColumnDefinition Width="300" />
+                        <ColumnDefinition Width="250" />
+                        <ColumnDefinition Width="50" />
                     </Grid.ColumnDefinitions>
 
                     <Label Grid.Row="0" Grid.Column="0"
@@ -75,7 +76,7 @@
                         Text="Location" 
                         Style="{StaticResource LabelStyle}"/>
 
-                    <Picker Grid.Row="1" Grid.Column="1"
+                    <Picker Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
                         MinimumWidthRequest="100"
                         WidthRequest="500"
                         HorizontalOptions="Start"
@@ -87,7 +88,7 @@
                         Text="Attribute" 
                         Style="{StaticResource LabelStyle}"/>
 
-                    <Picker Grid.Row="2" Grid.Column="1"
+                    <Picker Grid.Row="2" Grid.Column="1"  Grid.ColumnSpan="2"
                         MinimumWidthRequest="100"
                         WidthRequest="500"
                         HorizontalOptions="Start"
@@ -104,7 +105,7 @@
                             Style="{StaticResource ImageSmallStyle}"/>
                     </StackLayout>
 
-                    <Entry Grid.Row="3" Grid.Column="1"
+                    <Entry Grid.Row="3" Grid.Column="1"  Grid.ColumnSpan="2"
                         Text="{Binding Data.ImageURI}" 
                         Style="{StaticResource EntryStyle}"
                         WidthRequest="500"
