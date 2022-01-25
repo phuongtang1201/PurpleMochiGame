@@ -122,16 +122,17 @@
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="75" />
-                        <ColumnDefinition Width="450" />
+                        <ColumnDefinition Width="250" />
                         <ColumnDefinition Width="50" />
                     </Grid.ColumnDefinitions>
 
                     <Label Grid.Row="0" Grid.Column="0"
                         Text="Range" 
-                        Style="{StaticResource LabelStyle}"/>
+                        Style="{StaticResource LabelStyle}"
+                           HorizontalOptions="Start"/>
 
 
-                    <Slider Grid.Row="0" Grid.Column="1" x:Name ="RangeValue2" WidthRequest="200" Minimum ="0" Maximum="9"
+                    <Slider Grid.Row="0" Grid.Column="1" x:Name ="RangeValue2" WidthRequest="100" Minimum ="0" Maximum="9"
                             Value="{Binding Data.Range, Mode=TwoWay}"
                             HorizontalOptions="CenterAndExpand"
                             VerticalOptions="CenterAndExpand"
@@ -150,7 +151,7 @@
                         Style="{StaticResource LabelStyle}"/>
 
                     <Slider Grid.Row="1" Grid.Column="1"
-                            x:Name ="ValueValue2" WidthRequest="200" Minimum ="0" Maximum="9"
+                            x:Name ="ValueValue2" WidthRequest="100" Minimum ="0" Maximum="9"
                             Value="{Binding Data.Range, Mode=TwoWay}"
                             HorizontalOptions="CenterAndExpand"
                             VerticalOptions="CenterAndExpand"
@@ -168,7 +169,7 @@
                         Text="Damage" 
                         Style="{StaticResource LabelStyle}"/>
 
-                    <Slider Grid.Row="2" Grid.Column="1" x:Name ="DamageValue2" WidthRequest="200" Minimum ="0" Maximum="9"
+                    <Slider Grid.Row="2" Grid.Column="1" x:Name ="DamageValue2" WidthRequest="100" Minimum ="0" Maximum="9"
                             Value="{Binding Data.Range, Mode=TwoWay}"
                             HorizontalOptions="CenterAndExpand"
                             VerticalOptions="CenterAndExpand"
