@@ -12,22 +12,39 @@
         <ToolbarItem Text="Delete" Clicked="Delete_Clicked" IconImageSource="icon_delete.png"/>
     </ContentPage.ToolbarItems>
 
+    <ContentPage.Content>
     <ScrollView>
         <StackLayout Spacing="10">
             <StackLayout HorizontalOptions="Center">
                 <Image Source="{Binding Data.ImageURI}"  Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
+                <Grid
+                    RowSpacing="1"
+                    ColumnSpacing="2"
+                    HorizontalOptions="Center">
 
-                <Label Text="Item Name:" HorizontalOptions="Start"
-                Style="{StaticResource LabelStyle}"/>
-                <Label Text="{Binding Data.Name}" HorizontalOptions="Start"
-                Style="{StaticResource ValueStyle}"/>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="150" />
+                    </Grid.ColumnDefinitions>
+                    
+                    <Label Grid.Row="0" Grid.Column="0" 
+                           Text="Item Name:" HorizontalOptions="Start"
+                           Style="{StaticResource LabelStyle}"/>
+                    <Label Grid.Row="0" Grid.Column="1"
+                           Text="{Binding Data.Name}" HorizontalOptions="Start"
+                           Style="{StaticResource ValueStyle}"/>
 
-                <Label 
-                Text="Description:" HorizontalOptions="Start"
-                Style="{StaticResource LabelStyle}"/>
-                <Label 
-                Text="{Binding Data.Description}" HorizontalOptions="Start"
-                Style="{StaticResource ValueStyle}"/>
+                    <Label Grid.Row="1" Grid.Column="0" 
+                           Text="Description:" HorizontalOptions="Start"
+                           Style="{StaticResource LabelStyle}"/>
+                    <Label Grid.Row="1" Grid.Column="1" 
+                           Text="{Binding Data.Description}" HorizontalOptions="Start"
+                           LineBreakMode="WordWrap"
+                           Style="{StaticResource ValueStyle}"/>
+                </Grid>
 
                 <Label Text="Statistics" HorizontalOptions="Start"
                        Style="{StaticResource HeaderStyle}"/>
@@ -60,4 +77,5 @@
             </StackLayout>
         </StackLayout>
     </ScrollView>
+        </ContentPage.Content>
 </ContentPage>
