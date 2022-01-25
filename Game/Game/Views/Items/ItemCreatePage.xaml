@@ -41,18 +41,13 @@
                    Style="{StaticResource LabelStyle}"
                    FontSize="14"/>
 
-                <Entry 
+                    <Entry 
                     Text="{Binding Data.Description}"
                     TextChanged="Entry_CheckNotEmpty"
                     Style="{StaticResource EntryStyle}"
                     FontSize="12"
                     WidthRequest="300"
                     HorizontalOptions="Start"/>
-
-                    <Label Grid.Row="0" Grid.Column="0"
-                        Text="" 
-                        FontSize="10"
-                        Style="{StaticResource LabelStyle}"/>
 
                 </StackLayout>
 
