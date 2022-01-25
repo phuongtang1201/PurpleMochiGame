@@ -27,7 +27,7 @@
                 <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
                 <Label Text="Item Name" HorizontalOptions="Start" 
                     Style="{StaticResource LabelStyle}"
-                    FontSize="18"/>
+                    FontSize="14"/>
 
                 <Entry 
                     Text="{Binding Data.Name}"
@@ -38,7 +38,7 @@
 
                 <Label Text="Description" HorizontalOptions="Start" 
                    Style="{StaticResource LabelStyle}"
-                   FontSize="18"/>
+                   FontSize="14"/>
 
                 <Entry 
                     Text="{Binding Data.Description}"
@@ -74,7 +74,7 @@
                     <Label Grid.Row="0" Grid.Column="0"
                         Text="Statistics" 
                         Style="{StaticResource LabelStyle}"
-                        FontSize="18"/>
+                        FontSize="14"/>
 
                     <Label Grid.Row="1" Grid.Column="0"
                         Text="Location" 
