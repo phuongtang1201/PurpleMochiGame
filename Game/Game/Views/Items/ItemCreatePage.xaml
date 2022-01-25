@@ -33,7 +33,7 @@
                     Text="{Binding Data.Name}"
                     TextChanged="Entry_CheckNotEmpty"
                     Style="{StaticResource EntryStyle}"
-                    WidthRequest="375"
+                    WidthRequest="300"
                     HorizontalOptions="Start"/>
 
                 <Label Text="Description" HorizontalOptions="Start" 
@@ -44,7 +44,7 @@
                     Text="{Binding Data.Description}"
                     TextChanged="Entry_CheckNotEmpty"
                     Style="{StaticResource EntryStyle}"
-                    WidthRequest="375"
+                    WidthRequest="300"
                     HorizontalOptions="Start"/>
 
                     <Label Grid.Row="0" Grid.Column="0"
@@ -78,7 +78,7 @@
 
                     <Picker Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
                         MinimumWidthRequest="100"
-                        WidthRequest="500"
+                        WidthRequest="300"
                         HorizontalOptions="Start"
                         ItemsSource="{x:Static local_enum:ItemLocationEnumHelper.GetListCharacter}" 
                         SelectedItem="{Binding Data.Location, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
@@ -90,7 +90,7 @@
 
                     <Picker Grid.Row="2" Grid.Column="1"  Grid.ColumnSpan="2"
                         MinimumWidthRequest="100"
-                        WidthRequest="500"
+                        WidthRequest="300"
                         HorizontalOptions="Start"
                         ItemsSource="{x:Static local_enum:AttributeEnumHelper.GetListCharacter}" 
                         SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
@@ -108,7 +108,7 @@
                     <Entry Grid.Row="3" Grid.Column="1"  Grid.ColumnSpan="2"
                         Text="{Binding Data.ImageURI}" 
                         Style="{StaticResource EntryStyle}"
-                        WidthRequest="500"
+                        WidthRequest="300"
                         HorizontalOptions="Start"/>
 
                     <Label Grid.Row="4" Grid.Column="0"
