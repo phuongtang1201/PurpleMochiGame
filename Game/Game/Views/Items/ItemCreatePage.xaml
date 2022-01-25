@@ -78,6 +78,7 @@
                         HorizontalOptions="Start"
                         ItemsSource="{x:Static local_enum:ItemLocationEnumHelper.GetListCharacter}" 
                         SelectedItem="{Binding Data.Location, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
+                        SelectedIndexChanged="Range_OnPickerValueChanged"
                         x:Name="LocationPicker"/>
 
                     <Label Grid.Row="2" Grid.Column="0"
@@ -106,25 +107,25 @@
                         WidthRequest="300"
                         HorizontalOptions="Start"/>
 
-                    <Label Grid.Row="4" Grid.Column="0"
-                        Text="Range" 
-                        Style="{StaticResource LabelStyle}"
-                           HorizontalOptions="Start"/>
+                        <Label Grid.Row="4" Grid.Column="0"
+                            Text="Range" 
+                            Style="{StaticResource LabelStyle}"
+                            HorizontalOptions="Start"/>
 
-
-                    <Slider Grid.Row="4" Grid.Column="1" x:Name ="RangeValue2" WidthRequest="100" Minimum ="0" Maximum="9"
-                            Value="{Binding Data.Range, Mode=TwoWay}"
-                            HorizontalOptions="CenterAndExpand"
-                            VerticalOptions="CenterAndExpand"
-                            ValueChanged="Range_OnSliderValueChanged" />
+                    <Slider Grid.Row="4" Grid.Column="1" x:Name ="RangeValue2" 
+                        WidthRequest="100" Minimum ="0" Maximum="9"
+                        Value="{Binding Data.Range, Mode=TwoWay}"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        ValueChanged="Range_OnSliderValueChanged" />
 
                     <Label Grid.Row="4" Grid.Column="2"
-                            Text="{Binding Data.Range}" 
-                            x:Name="RangeValue"
-                            Style="{StaticResource ValueStyle}"
-                            Padding="0,0,10,0"
-                            HorizontalOptions="End"
-                            HorizontalTextAlignment="End"/>
+                        Text="{Binding Data.Range}" 
+                        x:Name="RangeValue"
+                        Style="{StaticResource ValueStyle}"
+                        Padding="0,0,10,0"
+                        HorizontalOptions="End"
+                        HorizontalTextAlignment="End"/>
 
                     <Label Grid.Row="5" Grid.Column="0"
                         Text="Value"

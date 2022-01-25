@@ -104,6 +104,17 @@ namespace Game.Views
 
         }
 
+        ///
+        /// 
+        /// 
+        public void Range_OnPickerValueChanged(object sender, EventArgs e)
+        {
+            if (LocationPicker.SelectedIndex == 1)
+            {
+                RangeValue2.IsVisible = false;
+            }
+        }
+
         /// <summary>
         /// Catch the change to the Stepper for Range
         /// </summary>
