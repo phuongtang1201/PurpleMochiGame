@@ -38,42 +38,27 @@
                 <Label Text="{Binding Data.Location}" HorizontalOptions="Start"
                     Style="{StaticResource ValueStyle}"/>
 
-
-                <StackLayout Spacing="5">
-                        <Label 
-                    Text="Attribute : " 
+                <Label Text="Attribute:" HorizontalOptions="Start"
                     Style="{StaticResource LabelStyle}"/>
-                        <Label 
-                    Text="{Binding Data.Attribute}" 
+                <Label Text="{Binding Data.Attribute}"  HorizontalOptions="Start"
                     Style="{StaticResource ValueStyle}"/>
-                    </StackLayout>
 
-                    <StackLayout Spacing="5">
-                        <Label 
-                    Text="Range : " 
+                <Label Text="Range:" HorizontalOptions="Start"
                     Style="{StaticResource LabelStyle}"/>
-                        <Label 
-                    Text="{Binding Data.Range}" 
+                <Label Text="{Binding Data.Range}" HorizontalOptions="Start"
                     Style="{StaticResource ValueStyle}"/>
-                    </StackLayout>
 
-                    <StackLayout Spacing="5">
-                        <Label 
-                    Text="Value : " 
+                <Label Text="Value:" HorizontalOptions="Start"
                     Style="{StaticResource LabelStyle}"/>
-                        <Label 
+                <Label 
                     Text="{Binding Data.Value}" 
                     Style="{StaticResource ValueStyle}"/>
-                    </StackLayout>
 
-                <StackLayout Spacing="5">
-                    <Label 
-                    Text="Damage : " 
+                <Label 
+                    Text="Damage:" HorizontalOptions="Start"
                     Style="{StaticResource LabelStyle}"/>
-                    <Label 
-                    Text="{Binding Data.Damage}" 
+                <Label Text="{Binding Data.Damage}" HorizontalOptions="Start"
                     Style="{StaticResource ValueStyle}"/>
-                </StackLayout>
             </StackLayout>
         </StackLayout>
     </ScrollView>
