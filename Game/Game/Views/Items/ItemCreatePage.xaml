@@ -33,6 +33,7 @@
                     Text="{Binding Data.Name}"
                     TextChanged="Entry_CheckNotEmpty"
                     Style="{StaticResource EntryStyle}"
+                    FontSize="12"
                     WidthRequest="300"
                     HorizontalOptions="Start"/>
 
@@ -44,11 +45,13 @@
                     Text="{Binding Data.Description}"
                     TextChanged="Entry_CheckNotEmpty"
                     Style="{StaticResource EntryStyle}"
+                    FontSize="12"
                     WidthRequest="300"
                     HorizontalOptions="Start"/>
 
                     <Label Grid.Row="0" Grid.Column="0"
                         Text="" 
+                        FontSize="10"
                         Style="{StaticResource LabelStyle}"/>
 
                 </StackLayout>
@@ -81,9 +84,9 @@
                         Style="{StaticResource LabelStyle}"/>
 
                     <Picker Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
-                        MinimumWidthRequest="100"
                         WidthRequest="300"
                         HorizontalOptions="Start"
+                        FontSize="12"
                         ItemsSource="{x:Static local_enum:ItemLocationEnumHelper.GetListCharacter}" 
                         SelectedItem="{Binding Data.Location, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
                         x:Name="LocationPicker"/>
@@ -93,9 +96,9 @@
                         Style="{StaticResource LabelStyle}"/>
 
                     <Picker Grid.Row="2" Grid.Column="1"  Grid.ColumnSpan="2"
-                        MinimumWidthRequest="100"
                         WidthRequest="300"
                         HorizontalOptions="Start"
+                        FontSize="12"
                         ItemsSource="{x:Static local_enum:AttributeEnumHelper.GetListCharacter}" 
                         SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
                         x:Name="AttributePicker"/>
@@ -113,6 +116,7 @@
                         Text="{Binding Data.ImageURI}" 
                         Style="{StaticResource EntryStyle}"
                         WidthRequest="300"
+                        FontSize="12"
                         HorizontalOptions="Start"/>
 
                     <Label Grid.Row="4" Grid.Column="0"
