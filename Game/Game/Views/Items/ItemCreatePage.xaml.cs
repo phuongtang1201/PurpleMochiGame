@@ -109,10 +109,13 @@ namespace Game.Views
         /// 
         public void Range_OnPickerValueChanged(object sender, EventArgs e)
         {
-            if (LocationPicker.SelectedIndex == 1)
+            if (LocationPicker.SelectedIndex == 0 || LocationPicker.SelectedIndex == 1 || LocationPicker.SelectedIndex == 2
+                || LocationPicker.SelectedIndex == 3 || LocationPicker.SelectedIndex == 4 || LocationPicker.SelectedIndex == 6)
             {
                 RangeValue2.IsVisible = false;
             }
+            else
+                RangeValue2.IsVisible = true;
         }
 
         /// <summary>
