@@ -186,12 +186,16 @@
 
                     <ImageButton Grid.Row="0" Grid.Column="0"
                         Source="icon_cancel.png"
-                        HorizontalOptions="StartAndExpand"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        HorizontalOptions="Start"
                         Clicked="Cancel_Clicked"/>
 
                     <ImageButton Grid.Row="0" Grid.Column="1" 
                                  Source="icon_save.png"
-                                 HorizontalOptions="EndAndExpand"
+                                 WidthRequest="50"
+                                 HeightRequest="50"
+                                 HorizontalOptions="End"
                                  Clicked="Save_Clicked"/>
                 </Grid>
             </StackLayout>
