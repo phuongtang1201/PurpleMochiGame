@@ -51,7 +51,7 @@ namespace Game.Views
         /// <param name="e"></param>
         public async void Save_Clicked(object sender, EventArgs e)
         {
-            // If the image in the data box is empty, use the default one..
+            // If the image in the data box is empty, use the default one.
             if (string.IsNullOrEmpty(ViewModel.Data.ImageURI))
             {
                 ViewModel.Data.ImageURI = Services.ItemService.DefaultImageURI;
@@ -102,20 +102,6 @@ namespace Game.Views
                 return;
             }
 
-        }
-
-        ///
-        /// 
-        /// 
-        public void Range_OnPickerValueChanged(object sender, EventArgs e)
-        {
-            if (LocationPicker.SelectedIndex == 0 || LocationPicker.SelectedIndex == 1 || LocationPicker.SelectedIndex == 2
-                || LocationPicker.SelectedIndex == 3 || LocationPicker.SelectedIndex == 4 || LocationPicker.SelectedIndex == 6)
-            {
-                RangeValue2.IsVisible = false;
-            }
-            else
-                RangeValue2.IsVisible = true;
         }
 
         /// <summary>
@@ -176,6 +162,29 @@ namespace Game.Views
         public void Damage_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
         {
             DamageValue.Text = String.Format("{0}", Convert.ToInt32(e.NewValue));
+        }
+
+        /// <summary>
+        /// Remove Range and Damage Steppers if Location isn't PrimaryHand
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void RangeDamage_OnPickerValueChanged(object sender, EventArgs e)
+        {
+            if (LocationPicker.SelectedIndex != 5)
+            {
+                RangeValue.Text = String.Format("0");
+                DamageValue.Text = String.Format("0");
+                RangeValue2.Value = 0;
+                DamageValue2.Value = 0;
+                RangeValue2.IsVisible = false;
+                DamageValue2.IsVisible = false;
+            }
+            else
+            {
+                RangeValue2.IsVisible = true;
+                DamageValue2.IsVisible = true;
+            }
         }
     }
 }
