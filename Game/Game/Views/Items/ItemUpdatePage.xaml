@@ -131,6 +131,26 @@
                             Padding="0,0,10,0"
                             HorizontalOptions="End"
                             HorizontalTextAlignment="End"/>
+
+                    <Label Grid.Row="5" Grid.Column="0"
+                        Text="Value"
+                        Style="{StaticResource LabelStyle}"/>
+
+                    
+                        <Slider Grid.Row="5" Grid.Column="1"
+                            x:Name="ValueValue2" WidthRequest="100" Minimum="0" Maximum="9"
+                            Value="{Binding Data.Value, Mode=TwoWay}"  
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            ValueChanged = "Value_OnSliderValueChanged" />
+
+                        <Label Grid.Row="5" Grid.Column="2"
+                            Text="{Binding Data.Value}" 
+                            x:Name="ValueValue"
+                            Style="{StaticResource ValueStyle}"
+                            Padding="0,0,10,0"
+                            HorizontalOptions="End"
+                            HorizontalTextAlignment="End"/>
                 </Grid>
 
                 <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
@@ -139,28 +159,12 @@
 
                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
-                        
- 
+                        <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
-                    </StackLayout>
 
-                    <Label 
-                        Text="Value"
-                        Style="{StaticResource LabelStyle}"/>
+                        </StackLayout>
 
-                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
-                        <Slider 
-                            Value="{Binding Data.Value, Mode=TwoWay}"  WidthRequest="200"
-                            Minimum = "0" Maximum = "9" 
-                             ValueChanged = "Value_OnSliderValueChanged" Margin = "10"/>
-
-                        <Label 
-                            Text="{Binding Data.Value}" 
-                            x:Name="ValueValue"
-                            Style="{StaticResource ValueStyle}"
-                            Padding="0,0,10,0"
-                            HorizontalOptions="End"
-                            HorizontalTextAlignment="End"/>
+                    
 
                     </StackLayout>
 
