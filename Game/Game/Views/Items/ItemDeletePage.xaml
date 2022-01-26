@@ -62,11 +62,12 @@
                     </Grid.ColumnDefinitions>
 
                     <BoxView Grid.ColumnSpan="2"
-                             Grid.RowSpan="6"
+                             Grid.RowSpan="2"
                              Color="LightGray" />
 
                     <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  
                            Text="Are you sure you want to delete this item?" 
+                           LineBreakMode="WordWrap"
                            Style="{StaticResource MessageStyle}"/>
 
                     <Button Grid.Row="1" Grid.Column="0"
