@@ -28,29 +28,29 @@
                 <Label Text="Update Page" Style="{StaticResource HeaderStyle}"/>
                 
                 <StackLayout HorizontalOptions="Center">
-                <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
+                    <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
-                <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
+                    <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
 
-                <Label Text="Item Name"
-                       HorizontalOptions="Start"
-                       Style="{StaticResource LabelStyle}"/>
+                    <Label Text="Item Name"
+                           HorizontalOptions="Start"
+                           Style="{StaticResource LabelStyle}"/>
 
-                <Entry Text="{Binding Data.Name}" 
-                        TextChanged="Entry_CheckNotEmpty"
-                        Style="{StaticResource EntryStyle}"
-                        WidthRequest="300"
-                        HorizontalOptions="Start"/>
+                    <Entry Text="{Binding Data.Name}" 
+                            TextChanged="Entry_CheckNotEmpty"
+                            Style="{StaticResource EntryStyle}"
+                            WidthRequest="300"
+                            HorizontalOptions="Start"/>
 
-                <Label Text="Description" 
-                       HorizontalOptions="Start"
-                       Style="{StaticResource LabelStyle}"/>
+                    <Label Text="Description" 
+                           HorizontalOptions="Start"
+                           Style="{StaticResource LabelStyle}"/>
 
-                <Entry Text="{Binding Data.Description}" 
-                        TextChanged="Entry_CheckNotEmpty"
-                        Style="{StaticResource EntryStyle}"
-                        WidthRequest="300"
-                        HorizontalOptions="Start"/>
+                    <Entry Text="{Binding Data.Description}" 
+                            TextChanged="Entry_CheckNotEmpty"
+                            Style="{StaticResource EntryStyle}"
+                            WidthRequest="300"
+                            HorizontalOptions="Start"/>
                 </StackLayout>
                 
                 <Grid
