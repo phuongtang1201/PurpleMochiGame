@@ -79,7 +79,9 @@
                         Text="Location" 
                         Style="{StaticResource LabelStyle}"/>
 
-                    <Picker Grid.Row="1" Grid.Column="1"
+                    <Picker Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+                        WidthRequest="300"
+                        HorizontalOptions="Start"
                         ItemsSource="{x:Static local:ItemLocationEnumHelper.GetListCharacter}" 
                         SelectedItem="{Binding Data.Location, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
                         x:Name="LocationPicker"/>
@@ -88,26 +90,34 @@
                         Text="Attribute" 
                         Style="{StaticResource LabelStyle}"/>
 
-                    <Picker Grid.Row="2" Grid.Column="1"
+                    <Picker Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
+                        WidthRequest="300"
+                        HorizontalOptions="Start"
                         ItemsSource="{x:Static local:AttributeEnumHelper.GetListCharacter}" 
                         SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
                         x:Name="AttributePicker"/>
 
-                    <Label Grid.Row="3" Grid.Column="0"
-                        Text="Image" 
-                        Style="{StaticResource LabelStyle}"/>
-
-                    <StackLayout Grid.Row="3" Grid.Column="1" Style="{StaticResource HorizontalStack}" HorizontalOptions="FillAndExpand">
-
+                    <StackLayout Grid.Row="3" Grid.Column="0" Style="{StaticResource HorizontalStack}" HorizontalOptions="FillAndExpand">
+                        <Label
+                            Text="Image" 
+                            Style="{StaticResource LabelStyle}"/>
                         <Image 
                             Source="{Binding Data.ImageURI}"
                             Style="{StaticResource ImageSmallStyle}"/>
-
-                        <Entry 
-                            Text="{Binding Data.ImageURI}" 
-                            Style="{StaticResource EntryStyle}"/>
-
                     </StackLayout>
+                    
+                    <Entry Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
+                            Text="{Binding Data.ImageURI}" 
+                            Style="{StaticResource EntryStyle}"
+                            WidthRequest="300"
+                            HorizontalOptions="Start"/>
+                    
+                    <Label Grid.Row="4" Grid.Column="0"
+                           Text="Range"
+                           Style="{StaticResource LabelStyle}"
+                           HorizontalOptions="Start"/>
+
+
                 </Grid>
 
                 <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
