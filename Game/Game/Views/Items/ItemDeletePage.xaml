@@ -65,20 +65,11 @@
                              Grid.RowSpan="6"
                              Color="LightGray" />
 
-                    <Label Text="Are you sure you want to delete this item?" Style="{StaticResource MessageStyle}"/>
-                    <Grid
-                    RowSpacing="1"
-                    ColumnSpacing="2"
-                    VerticalOptions="Center">
+                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  
+                           Text="Are you sure you want to delete this item?" 
+                           Style="{StaticResource MessageStyle}"/>
 
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="auto" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="auto"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button Grid.Row="0" Grid.Column="0"
+                    <Button Grid.Row="0" Grid.Column="0"
                 Text="No" 
                 Clicked="Cancel_Clicked" 
                 HorizontalOptions="Center"
@@ -87,15 +78,14 @@
                 BorderColor="black">
                         </Button>
 
-                        <Button Grid.Row="0" Grid.Column="1"
+                    <Button Grid.Row="0" Grid.Column="1"
                 Text="Yes" 
                 Clicked="Delete_Clicked" 
                 HorizontalOptions="Center"
                 FontSize="Medium"
                 BorderWidth="1" 
                 BorderColor="black">
-                        </Button>
-                    </Grid>
+                    </Button>
                 </Grid>
             </StackLayout>
         </StackLayout>
