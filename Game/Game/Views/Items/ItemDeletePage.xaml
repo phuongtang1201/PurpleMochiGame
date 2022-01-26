@@ -20,23 +20,37 @@
                 <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}"
                        HorizontalOptions="CenterAndExpand" />
 
-                <StackLayout Style="{StaticResource HorizontalStack}">
-                    <Label 
+                <Grid
+                    RowSpacing="1"
+                    ColumnSpacing="2"
+                    HorizontalOptions="Center">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="225" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Style="{StaticResource HorizontalStack}">
+                        <Label 
                    Text="Name : " 
                     Style="{StaticResource LabelStyle}"/>
-                    <Label 
+                        <Label 
                     Text="{Binding Data.Name}" 
                     Style="{StaticResource ValueStyle}"/>
-                </StackLayout>
+                    </StackLayout>
 
-                <StackLayout Style="{StaticResource HorizontalStack}">
-                    <Label 
+                    <StackLayout Style="{StaticResource HorizontalStack}">
+                        <Label 
                     Text="Description : " 
                     Style="{StaticResource LabelStyle}"/>
-                    <Label 
+                        <Label 
                     Text="{Binding Data.Description}" 
                     Style="{StaticResource ValueStyle}"/>
-                </StackLayout>
+                    </StackLayout>
+                </Grid>
 
 
                 <StackLayout 
