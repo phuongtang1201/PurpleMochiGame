@@ -56,7 +56,7 @@
                 <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
-                    VerticalOptions="Center">
+                    HorizontalOptions="Center">
 
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto" />
@@ -131,30 +131,20 @@
                             Padding="0,0,10,0"
                             HorizontalOptions="End"
                             HorizontalTextAlignment="End"/>
-                </Grid>
 
-                <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
-
- 
-
-                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
-
-                        
- 
-
-                    </StackLayout>
-
-                    <Label 
+                    <Label Grid.Row="5" Grid.Column="0"
                         Text="Value"
                         Style="{StaticResource LabelStyle}"/>
 
-                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
-                        <Slider 
-                            Value="{Binding Data.Value, Mode=TwoWay}"  WidthRequest="200"
-                            Minimum = "0" Maximum = "9" 
-                             ValueChanged = "Value_OnSliderValueChanged" Margin = "10"/>
+                    
+                        <Slider Grid.Row="5" Grid.Column="1"
+                            x:Name="ValueValue2" WidthRequest="100" Minimum="0" Maximum="9"
+                            Value="{Binding Data.Value, Mode=TwoWay}"  
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            ValueChanged = "Value_OnSliderValueChanged" />
 
-                        <Label 
+                        <Label Grid.Row="5" Grid.Column="2"
                             Text="{Binding Data.Value}" 
                             x:Name="ValueValue"
                             Style="{StaticResource ValueStyle}"
@@ -162,20 +152,18 @@
                             HorizontalOptions="End"
                             HorizontalTextAlignment="End"/>
 
-                    </StackLayout>
-
-                    <Label 
+                    <Label Grid.Row="6" Grid.Column="0"
                         Text="Damage" 
                         Style="{StaticResource LabelStyle}"/>
 
-                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                    <Slider Grid.Row="6" Grid.Column="1"
+                            x:Name="DamageValue2" WidthRequest="100" Minimum="0" Maximum="9"
+                            Value="{Binding Data.Damage, Mode=TwoWay}"  
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            ValueChanged = "Damage_OnSliderValueChanged" />
 
-                        <Slider 
-                            Value="{Binding Data.Damage, Mode=TwoWay}"  WidthRequest="200"
-                            Minimum = "0" Maximum = "9" 
-                             ValueChanged = "Damage_OnSliderValueChanged" Margin = "10"/>
-
-                        <Label 
+                    <Label Grid.Row="6" Grid.Column="2"
                             Text="{Binding Data.Damage}" 
                             x:Name="DamageValue"
                             Style="{StaticResource ValueStyle}"
@@ -183,9 +171,8 @@
                             HorizontalOptions="End"
                             HorizontalTextAlignment="End"/>
 
+                </Grid>
 
-                    </StackLayout>
-                </StackLayout>
                 <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
@@ -199,14 +186,18 @@
                     </Grid.ColumnDefinitions>
 
                     <Button Grid.Row="0" Grid.Column="0"
-                            HorizontalOptions="StartAndExpand"
-                            Clicked="Cancel_Clicked"
-                            Text="Cancel"/>
+                            WidthRequest="50"
+                            HeightRequest="50"
+                            HorizontalOptions="Start"
+                            Text="Cancel"
+                            Clicked="Cancel_Clicked"/>
 
                     <Button Grid.Row="0" Grid.Column="1"
-                            HorizontalOptions="EndAndExpand"
-                            Clicked="Save_Clicked"
-                            Text="Save"/>
+                            WidthRequest="50"
+                            HeightRequest="50"
+                            HorizontalOptions="End"
+                            Text="Save"
+                            Clicked="Save_Clicked"/>
                 </Grid>
             </StackLayout>
         </ScrollView>
