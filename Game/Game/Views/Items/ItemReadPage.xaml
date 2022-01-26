@@ -15,11 +15,13 @@
         <ScrollView>
             <StackLayout Spacing="10">
                 <StackLayout HorizontalOptions="Center">
-                    <Image Source="{Binding Data.ImageURI}"  Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
-                    <Grid
-                    RowSpacing="1"
-                    ColumnSpacing="2"
-                    HorizontalOptions="Center">
+                    
+                    <Image Source="{Binding Data.ImageURI}"  Style="{StaticResource ImageLargeStyle}" 
+                           HorizontalOptions="CenterAndExpand"/>
+                    
+                    <Grid RowSpacing="1"
+                          ColumnSpacing="2"
+                          HorizontalOptions="Center">
 
                         <Grid.RowDefinitions>
                             <RowDefinition Height="auto" />
@@ -32,23 +34,25 @@
                         <Label Grid.Row="0" Grid.Column="0" 
                            Text="Item Name:" HorizontalOptions="Start"
                            Style="{StaticResource LabelStyle}"/>
+                        
                         <Label Grid.Row="0" Grid.Column="1"
-                           Text="{Binding Data.Name}" HorizontalOptions="Start"
-                           Style="{StaticResource ValueStyle}"/>
+                                Text="{Binding Data.Name}" HorizontalOptions="Start"
+                                Style="{StaticResource ValueStyle}"/>
 
                         <Label Grid.Row="1" Grid.Column="0" 
-                           Text="Description:" HorizontalOptions="Start"
-                           Style="{StaticResource LabelStyle}"/>
+                               Text="Description:" HorizontalOptions="Start"
+                                Style="{StaticResource LabelStyle}"/>
+                        
                         <Label Grid.Row="1" Grid.Column="1" 
-                           Text="{Binding Data.Description}" HorizontalOptions="Start"
-                           LineBreakMode="WordWrap"
-                           Style="{StaticResource ValueStyle}"/>
+                                Text="{Binding Data.Description}" HorizontalOptions="Start"
+                                LineBreakMode="WordWrap"
+                                Style="{StaticResource ValueStyle}"/>
                     </Grid>
 
-                    <Grid
-                     RowSpacing="1"
-                     ColumnSpacing="2"
-                     HorizontalOptions="Center">
+                    <Grid RowSpacing="1"
+                          ColumnSpacing="2"
+                          HorizontalOptions="Center">
+                        
                         <Grid.RowDefinitions>
                             <RowDefinition Height="auto" />
                         </Grid.RowDefinitions>
@@ -56,46 +60,54 @@
                             <ColumnDefinition Width="100" />
                             <ColumnDefinition Width="100" />
                         </Grid.ColumnDefinitions>
+                        
                         <BoxView Grid.ColumnSpan="2"
-                             Grid.RowSpan="6"
-                             Color="LightGray" />
+                                 Grid.RowSpan="6"
+                                 Color="LightGray" />
+                            
                         <Label Grid.Row="0" Grid.Column="0" 
-                           Text="Statistics" HorizontalOptions="Start"
-                           Style="{StaticResource HeaderStyle}"/>
+                               Text="Statistics" HorizontalOptions="Start"
+                               Style="{StaticResource HeaderStyle}"/>
+                            
                         <Label Grid.Row="1" Grid.Column="0" 
-                           Text="Location:" HorizontalOptions="Start"
-                           Style="{StaticResource LabelStyle}"/>
+                               Text="Location:" HorizontalOptions="Start"
+                               Style="{StaticResource LabelStyle}"/>
+                            
                         <Label Grid.Row="1" Grid.Column="1" 
-                          Text="{Binding Data.Location}" HorizontalOptions="Start"
-                           Style="{StaticResource ValueStyle}"/>
+                               Text="{Binding Data.Location}" HorizontalOptions="Start"
+                               Style="{StaticResource ValueStyle}"/>
 
                         <Label Grid.Row="2" Grid.Column="0" 
-                           Text="Attribute:" HorizontalOptions="Start"
-                           Style="{StaticResource LabelStyle}"/>
+                               Text="Attribute:" HorizontalOptions="Start"
+                               Style="{StaticResource LabelStyle}"/>
+                            
                         <Label Grid.Row="2" Grid.Column="1" 
-                           Text="{Binding Data.Attribute}"  HorizontalOptions="Start"
-                           Style="{StaticResource ValueStyle}"/>
+                               Text="{Binding Data.Attribute}"  HorizontalOptions="Start"
+                               Style="{StaticResource ValueStyle}"/>
 
                         <Label Grid.Row="3" Grid.Column="0" 
-                           Text="Range:" HorizontalOptions="Start"
-                           Style="{StaticResource LabelStyle}"/>
+                               Text="Range:" HorizontalOptions="Start"
+                               Style="{StaticResource LabelStyle}"/>
+                            
                         <Label Grid.Row="3" Grid.Column="1" 
-                           Text="{Binding Data.Range}" HorizontalOptions="Start"
-                           Style="{StaticResource ValueStyle}"/>
+                               Text="{Binding Data.Range}" HorizontalOptions="Start"
+                               Style="{StaticResource ValueStyle}"/>
 
                         <Label Grid.Row="4" Grid.Column="0" 
-                           Text="Value:" HorizontalOptions="Start"
-                           Style="{StaticResource LabelStyle}"/>
+                               Text="Value:" HorizontalOptions="Start"
+                               Style="{StaticResource LabelStyle}"/>
+                            
                         <Label Grid.Row="4" Grid.Column="1" 
-                           Text="{Binding Data.Value}" 
-                           Style="{StaticResource ValueStyle}"/>
+                               Text="{Binding Data.Value}" 
+                               Style="{StaticResource ValueStyle}"/>
 
                         <Label Grid.Row="5" Grid.Column="0" 
-                       Text="Damage:" HorizontalOptions="Start"
-                           Style="{StaticResource LabelStyle}"/>
+                               Text="Damage:" HorizontalOptions="Start"
+                               Style="{StaticResource LabelStyle}"/>
+                            
                         <Label Grid.Row="5" Grid.Column="1" 
-                           Text="{Binding Data.Damage}" HorizontalOptions="Start"
-                           Style="{StaticResource ValueStyle}"/>
+                               Text="{Binding Data.Damage}" HorizontalOptions="Start"
+                               Style="{StaticResource ValueStyle}"/>
                     </Grid>
                 </StackLayout>
             </StackLayout>
