@@ -90,6 +90,15 @@ namespace Game.Views
             {
                 Warning_Not_Null_Message.IsVisible = false;
             }
+            if (string.IsNullOrEmpty(ViewModel.Data.Description))
+            {
+                Warning_Not_Null_Message.IsVisible = true;
+                return;
+            }
+            if (!string.IsNullOrEmpty(ViewModel.Data.Description))
+            {
+                Warning_Not_Null_Message.IsVisible = false;
+            }
         }
             /// <summary>
             /// The Level selected from the list
