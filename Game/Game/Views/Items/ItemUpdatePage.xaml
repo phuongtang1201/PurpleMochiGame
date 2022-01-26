@@ -26,6 +26,8 @@
                 Spacing="10">
 
                 <Label Text="Update Page" Style="{StaticResource HeaderStyle}"/>
+                
+                <StackLayout HorizontalOptions="Center">
                 <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
                 <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
@@ -49,7 +51,8 @@
                         Style="{StaticResource EntryStyle}"
                         WidthRequest="300"
                         HorizontalOptions="Start"/>
-
+                </StackLayout>
+                
                 <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
