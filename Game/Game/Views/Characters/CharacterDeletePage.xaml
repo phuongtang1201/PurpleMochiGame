@@ -13,12 +13,14 @@
     </ContentPage.ToolbarItems>
 
     <ScrollView>
-        <StackLayout Style="{StaticResource OuterBoxStack}"
-                Spacing="10">
+        <StackLayout Spacing="10">
+            <StackLayout HorizontalOptions="Center">
+                <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}"/>
+            </StackLayout>
 
             <Label Text="Delete Page" Style="{StaticResource HeaderStyle}"/>
 
-            <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}"/>
+            
 
             <StackLayout Style="{StaticResource HorizontalStack}">
                 <Label 
