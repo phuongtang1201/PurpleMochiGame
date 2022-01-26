@@ -16,6 +16,20 @@
         <StackLayout Spacing="10">
             <StackLayout HorizontalOptions="Center">
                 <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}"/>
+
+                <Grid
+                    RowSpacing="1"
+                    ColumnSpacing="2"
+                    HorizontalOptions="Center">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="225" />
+                    </Grid.ColumnDefinitions>
+                </Grid>
             </StackLayout>
 
             <StackLayout Style="{StaticResource HorizontalStack}">
