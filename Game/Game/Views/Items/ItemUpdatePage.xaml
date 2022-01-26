@@ -151,35 +151,19 @@
                             Padding="0,0,10,0"
                             HorizontalOptions="End"
                             HorizontalTextAlignment="End"/>
-                </Grid>
 
-                <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
-
- 
-
-                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
-
-                        <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
-
-
-                        </StackLayout>
-
-                    
-
-                    </StackLayout>
-
-                    <Label 
+                    <Label Grid.Row="6" Grid.Column="0"
                         Text="Damage" 
                         Style="{StaticResource LabelStyle}"/>
 
-                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                    <Slider Grid.Row="6" Grid.Column="1"
+                            x:Name="DamageValue2" WidthRequest="100" Minimum="0" Maximum="9"
+                            Value="{Binding Data.Damage, Mode=TwoWay}"  
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            ValueChanged = "Damage_OnSliderValueChanged" />
 
-                        <Slider 
-                            Value="{Binding Data.Damage, Mode=TwoWay}"  WidthRequest="200"
-                            Minimum = "0" Maximum = "9" 
-                             ValueChanged = "Damage_OnSliderValueChanged" Margin = "10"/>
-
-                        <Label 
+                    <Label Grid.Row="6" Grid.Column="2"
                             Text="{Binding Data.Damage}" 
                             x:Name="DamageValue"
                             Style="{StaticResource ValueStyle}"
@@ -187,9 +171,8 @@
                             HorizontalOptions="End"
                             HorizontalTextAlignment="End"/>
 
+                </Grid>
 
-                    </StackLayout>
-                </StackLayout>
                 <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
