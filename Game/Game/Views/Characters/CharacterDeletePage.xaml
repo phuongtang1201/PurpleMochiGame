@@ -62,6 +62,10 @@
                     <ColumnDefinition Width="250" />
                     <ColumnDefinition Width="50" />
                 </Grid.ColumnDefinitions>
+
+                <BoxView Grid.ColumnSpan="3"
+                             Grid.RowSpan="7"
+                             Color="LightGray" />
             </Grid>
             <Grid
                      RowSpacing="1"
