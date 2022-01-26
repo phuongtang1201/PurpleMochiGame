@@ -61,16 +61,19 @@
                     <ColumnDefinition Width="100" />
                     <ColumnDefinition Width="100" />
                 </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                       Text="Are you sure you want to delete this character?" 
+                       LineBreakMode="WordWrap"
+                       Style="{StaticResource MessageStyle}"/>
+
             </Grid>
 
                 <StackLayout 
             HorizontalOptions="Center" 
             Padding="20">
 
-                <Label Text="Are you sure you want to delete this character?" 
-                       LineBreakMode="WordWrap"
-                       Style="{StaticResource MessageStyle}"/>
-
+                
                 <Button 
                 Text="Yes" 
                 Clicked="Delete_Clicked" 
