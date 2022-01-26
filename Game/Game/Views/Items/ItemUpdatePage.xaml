@@ -65,6 +65,10 @@
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
 
+                    <BoxView Grid.ColumnSpan="3"
+                             Grid.RowSpan="7"
+                             Color="LightGray" />
+                    
                     <Label Grid.Row="2" Grid.Column="0"
                         Text="Location" 
                         Style="{StaticResource LabelStyle}"/>
