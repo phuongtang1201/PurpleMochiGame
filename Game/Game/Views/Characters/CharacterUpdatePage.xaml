@@ -44,7 +44,7 @@
                                 Style="{StaticResource ImageLargeStyle}"
                                 Source="d10.png"
                                 Clicked="RollDice_Clicked"
-                                />
+                                IsVisible="false"/>
                             
                         </StackLayout>
 
