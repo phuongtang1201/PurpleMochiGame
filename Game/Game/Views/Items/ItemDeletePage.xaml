@@ -61,6 +61,10 @@
                         <ColumnDefinition Width="100" />
                     </Grid.ColumnDefinitions>
 
+                    <BoxView Grid.ColumnSpan="2"
+                             Grid.RowSpan="6"
+                             Color="LightGray" />
+
                     <Label Text="Are you sure you want to delete this item?" Style="{StaticResource MessageStyle}"/>
                     <Grid
                     RowSpacing="1"
