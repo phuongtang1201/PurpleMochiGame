@@ -186,9 +186,11 @@
                     </Grid.ColumnDefinitions>
 
                     <Button Grid.Row="0" Grid.Column="0"
-                            HorizontalOptions="StartAndExpand"
-                            Clicked="Cancel_Clicked"
-                            Text="Cancel"/>
+                            WidthRequest="50"
+                            HeightRequest="50"
+                            HorizontalOptions="Start"
+                            Text="Cancel"
+                            Clicked="Cancel_Clicked"/>
 
                     <Button Grid.Row="0" Grid.Column="1"
                             HorizontalOptions="EndAndExpand"
