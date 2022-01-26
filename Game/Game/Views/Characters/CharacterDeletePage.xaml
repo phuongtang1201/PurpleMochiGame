@@ -66,6 +66,10 @@
                 <BoxView Grid.ColumnSpan="3"
                              Grid.RowSpan="7"
                              Color="LightGray" />
+
+                <Label Grid.Row="0" Grid.Column="0"
+                        Text="Statistics" 
+                        Style="{StaticResource LabelStyle}" />
             </Grid>
             <Grid
                      RowSpacing="1"
