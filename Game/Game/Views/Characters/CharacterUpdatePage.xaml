@@ -33,6 +33,7 @@
                     <StackLayout Style="{StaticResource OuterBoxStack}" Spacing="10">
 
                         <Label Text="Update Page" Style="{StaticResource HeaderStyle}"/>
+                        <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
                         <StackLayout>
                             <Image Source="{Binding Data.ImageURI, Mode=TwoWay}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="Center"/>
@@ -51,7 +52,8 @@
                                 Style="{StaticResource LabelStyle}"/>
 
                             <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
-                                Style="{StaticResource EntryStyle}"/>
+                                Style="{StaticResource EntryStyle}"
+                                   TextChanged="Entry_CheckNotEmpty"/>
 
                             <Label Text="Description" 
                                 Style="{StaticResource LabelStyle}"/>

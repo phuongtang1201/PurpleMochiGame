@@ -44,6 +44,9 @@ namespace Game.Views
             {
                 LevelPicker.Items.Add(i.ToString());
             }
+            //This message will show if either the name entry box or description entry box is empty
+            Warning_Not_Null_Message.Text = "Please enter a valid input.";
+            Warning_Not_Null_Message.IsVisible = false;
 
             _ = UpdatePageBindingContext();
         }
@@ -71,14 +74,30 @@ namespace Game.Views
 
             return true;
         }
-
         /// <summary>
-        /// The Level selected from the list
-        /// Need to recalculate Max Health
+        /// Check the entry box to guarantee entering a not null value
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="args"></param>
-        public void Level_Changed(object sender, EventArgs args)
+        /// <param name="e"></param>
+        public void Entry_CheckNotEmpty(object sender, ValueChangedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(ViewModel.Data.Name))
+            {
+                Warning_Not_Null_Message.IsVisible = true;
+                return;
+            }
+            if (!string.IsNullOrEmpty(ViewModel.Data.Name))
+            {
+                Warning_Not_Null_Message.IsVisible = false;
+            }
+        }
+            /// <summary>
+            /// The Level selected from the list
+            /// Need to recalculate Max Health
+            /// </summary>
+            /// <param name="sender"></param>
+            /// <param name="args"></param>
+            public void Level_Changed(object sender, EventArgs args)
         {
             // Change the Level
             ViewModel.Data.Level = LevelPicker.SelectedIndex + 1;
