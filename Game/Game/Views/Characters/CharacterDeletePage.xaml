@@ -18,10 +18,6 @@
                 <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}"/>
             </StackLayout>
 
-            <Label Text="Delete Page" Style="{StaticResource HeaderStyle}"/>
-
-            
-
             <StackLayout Style="{StaticResource HorizontalStack}">
                 <Label 
                    Text="Name : " 
