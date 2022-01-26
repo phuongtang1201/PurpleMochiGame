@@ -177,10 +177,10 @@
                             Clicked="Cancel_Clicked"
                             Text="Cancel"/>
 
-                    <ImageButton Grid.Row="0" Grid.Column="1" 
-                                 Source="icon_save.png"
-                                 HorizontalOptions="EndAndExpand"
-                                 Clicked="Save_Clicked"/>
+                    <Button Grid.Row="0" Grid.Column="1"
+                            HorizontalOptions="EndAndExpand"
+                            Clicked="Save_Clicked"
+                            Text="Save"/>
                 </Grid>
             </StackLayout>
         </ScrollView>
