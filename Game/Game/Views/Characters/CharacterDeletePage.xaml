@@ -70,6 +70,14 @@
                 <Label Grid.Row="0" Grid.Column="0"
                         Text="Statistics" 
                         Style="{StaticResource LabelStyle}" />
+                
+                <Label Grid.Row="1" Grid.Column="0"
+                        Text="Level : " 
+                        Style="{StaticResource LabelStyle}"/>
+
+                <Label Grid.Row="1" Grid.Column="1"
+                                Text="{Binding Data.Level}" 
+                                Style="{StaticResource ValueStyle}"/>
             </Grid>
             <Grid
                      RowSpacing="1"
