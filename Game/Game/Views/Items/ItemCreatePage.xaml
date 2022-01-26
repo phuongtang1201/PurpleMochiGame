@@ -184,11 +184,11 @@
                         Text="Cancel"
                         Clicked="Cancel_Clicked"/>
 
-                    <ImageButton Grid.Row="0" Grid.Column="1" 
-                         Source="icon_save.png"
+                    <Button Grid.Row="0" Grid.Column="1" 
                          WidthRequest="50"
                          HeightRequest="50"
                          HorizontalOptions="End"
+                         Text="Save"
                          Clicked="Save_Clicked"/>
                 </Grid>
             </StackLayout>
