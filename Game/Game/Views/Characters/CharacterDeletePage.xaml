@@ -67,14 +67,7 @@
                        LineBreakMode="WordWrap"
                        Style="{StaticResource MessageStyle}"/>
 
-            </Grid>
-
-                <StackLayout 
-            HorizontalOptions="Center" 
-            Padding="20">
-
-                
-                <Button 
+                <Button Grid.Row="1" Grid.Column="0"
                 Text="Yes" 
                 Clicked="Delete_Clicked" 
                 HorizontalOptions="Center"
@@ -82,8 +75,7 @@
                 BorderWidth="1" 
                 BorderColor="black">
                 </Button>
-            </StackLayout>
-            
+            </Grid>
         </StackLayout>
     </ScrollView>
 </ContentPage>
