@@ -30,6 +30,16 @@
 
                 <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
 
+                <Label Text="Item Name"
+                       HorizontalOptions="Start"
+                       Style="{StaticResource LabelStyle}"/>
+
+                <Entry Text="{Binding Data.Name}" 
+                        TextChanged="Entry_CheckNotEmpty"
+                        Style="{StaticResource EntryStyle}"
+                        WidthRequest="300"
+                        HorizontalOptions="Start"/>
+                
                 <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
@@ -41,15 +51,6 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
-
-                    <Label Grid.Row="0" Grid.Column="0"
-                        Text="Name" 
-                        Style="{StaticResource LabelStyle}"/>
-
-                    <Entry Grid.Row="0" Grid.Column="1"
-                        Text="{Binding Data.Name}" 
-                        TextChanged="Entry_CheckNotEmpty"
-                        Style="{StaticResource EntryStyle}"/>
 
                     <Label Grid.Row="1" Grid.Column="0"
                         Text="Description" 
