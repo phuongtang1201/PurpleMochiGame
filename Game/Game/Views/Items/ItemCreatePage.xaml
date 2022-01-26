@@ -177,11 +177,11 @@
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
 
-                    <ImageButton Grid.Row="0" Grid.Column="0"
-                        Source="icon_cancel.png"
+                    <Button Grid.Row="0" Grid.Column="0"
                         WidthRequest="50"
                         HeightRequest="50"
                         HorizontalOptions="Start"
+                        Text="Cancel"
                         Clicked="Cancel_Clicked"/>
 
                     <ImageButton Grid.Row="0" Grid.Column="1" 
