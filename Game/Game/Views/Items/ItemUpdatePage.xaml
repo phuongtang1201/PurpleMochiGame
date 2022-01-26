@@ -172,10 +172,10 @@
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
 
-                    <ImageButton Grid.Row="0" Grid.Column="0"
-                        Source="icon_cancel.png"
-                        HorizontalOptions="StartAndExpand"
-                        Clicked="Cancel_Clicked"/>
+                    <Button Grid.Row="0" Grid.Column="0"
+                            HorizontalOptions="StartAndExpand"
+                            Clicked="Cancel_Clicked"
+                            Text="Cancel"/>
 
                     <ImageButton Grid.Row="0" Grid.Column="1" 
                                  Source="icon_save.png"
