@@ -122,20 +122,20 @@
                             <Label Text="Attack" Style="{StaticResource LabelStyle}"/>
 
                             <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
-
-                                <Label 
+                                    <Slider
+                                        Value="{Binding Data.Attack, Mode=TwoWay}" WidthRequest="220"
+                                        Minimum="0" Maximum="9"
+                                        ValueChanged="Attack_OnSliderValueChanged"/>
+                                
+                                    <Label 
                                     Text="{Binding Data.Attack, Mode=TwoWay}" 
                                     x:Name="AttackValue"
                                     Style="{StaticResource ValueStyle}"
-                                    Padding="0,0,10,0"
+                                    Padding="20,0,0,0"
                                     HorizontalOptions="End"
                                     HorizontalTextAlignment="End"/>
 
-                                <Stepper 
-                                    Value="{Binding Data.Attack, Mode=TwoWay}"
-                                    ValueChanged="Attack_OnStepperValueChanged"/>
-
-                            </StackLayout>
+                                </StackLayout>
 
                             <Label Text="Defense" Style="{StaticResource LabelStyle}"/>
 
@@ -154,7 +154,7 @@
                                     HorizontalOptions="End"
                                     HorizontalTextAlignment="End"/>
 
-                                </StackLayout>
+                            </StackLayout>
 
                             <Label Text="Speed" Style="{StaticResource LabelStyle}"/>
 
