@@ -51,7 +51,7 @@
                                        Text="{Binding Name}" 
                                        Style="{StaticResource ListStyle}"/>
 
-                                <StackLayout Grid.Column="1" Grid.Row="1"
+                                <StackLayout Grid.Column="1" Grid.Row="2"
                                     Orientation="Horizontal">
                                     
                                     <Label 
@@ -63,7 +63,7 @@
                                 
                                 </StackLayout>
 
-                                <Label Grid.Column="1" Grid.Row="2"
+                                <Label Grid.Column="1" Grid.Row="1"
                                        Text="{Binding Description}" 
                                        Style="{StaticResource ListStyle}"
                                        FontSize="Micro"/>
