@@ -148,7 +148,7 @@ namespace Game.Views
         /// <param name="e"></param>
         public void Attack_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
         {
-            AttackValue.Text = String.Format("{0}", e.NewValue);
+            AttackValue.Text = String.Format("{0}", Convert.ToInt32(e.NewValue));
         }
         /// <summary>
         /// Catch the change to the Stepper for Defense
@@ -177,6 +177,15 @@ namespace Game.Views
         public void Speed_OnStepperValueChanged(object sender, ValueChangedEventArgs e)
         {
             SpeedValue.Text = String.Format("{0}", e.NewValue);
+        }
+        /// <summary>
+        /// Catch the change to the Slider for Speed
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Speed_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            SpeedValue.Text = String.Format("{0}", Convert.ToInt32(e.NewValue));
         }
 
         /// <summary>
