@@ -193,9 +193,11 @@
                             Clicked="Cancel_Clicked"/>
 
                     <Button Grid.Row="0" Grid.Column="1"
-                            HorizontalOptions="EndAndExpand"
-                            Clicked="Save_Clicked"
-                            Text="Save"/>
+                            WidthRequest="50"
+                            HeightRequest="50"
+                            HorizontalOptions="End"
+                            Text="Save"
+                            Clicked="Save_Clicked"/>
                 </Grid>
             </StackLayout>
         </ScrollView>
