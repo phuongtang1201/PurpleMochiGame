@@ -56,7 +56,7 @@
                 <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
-                    VerticalOptions="Center">
+                    HorizontalOptions="Center">
 
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto" />
