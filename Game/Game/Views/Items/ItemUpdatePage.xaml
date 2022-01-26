@@ -116,7 +116,13 @@
                            Text="Range"
                            Style="{StaticResource LabelStyle}"
                            HorizontalOptions="Start"/>
-
+                    
+                    <Slider Grid.Row="4" Grid.Column="1" x:Name="RangeValue2"
+                            WidthRequest="100" Minimum="0" Maximum="9"
+                            Value="{Binding Data.Range, Mode=TwoWay}"  
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            ValueChanged = "Range_OnSliderValueChanged" />
 
                 </Grid>
 
