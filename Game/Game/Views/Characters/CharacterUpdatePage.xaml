@@ -141,19 +141,20 @@
 
                             <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
-                                <Label 
+                                    <Slider
+                                        Value="{Binding Data.Defense, Mode=TwoWay}" WidthRequest="220"
+                                        Minimum="0" Maximum="9"
+                                        ValueChanged="Defense_OnSliderValueChanged"/>
+
+                                    <Label 
                                     Text="{Binding Data.Defense, Mode=TwoWay}" 
                                     x:Name="DefenseValue"
                                     Style="{StaticResource ValueStyle}"
-                                    Padding="0,0,10,0"
+                                    Padding="20,0,0,0"
                                     HorizontalOptions="End"
                                     HorizontalTextAlignment="End"/>
 
-                                <Stepper 
-                                    Value="{Binding Data.Defense, Mode=TwoWay}"
-                                    ValueChanged="Defense_OnStepperValueChanged"/>
-
-                            </StackLayout>
+                                </StackLayout>
 
                             <Label Text="Speed" Style="{StaticResource LabelStyle}"/>
 
