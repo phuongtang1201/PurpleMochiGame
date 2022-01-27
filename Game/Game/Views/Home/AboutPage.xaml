@@ -29,7 +29,11 @@
                     <Label Text="Developers: Erika Skornia-Olsen, Phuong Tang, Veronica Carpenter" 
                            Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" 
                            LineBreakMode="WordWrap"/>
-                    
+
+                    <Label Text="Designers: Rachel Bentfield, Abigail Smith" 
+                           Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" 
+                           LineBreakMode="WordWrap"/>
+
                     <Label x:Name="CurrentDateTime" Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" />
                 </StackLayout>
             </Frame>
