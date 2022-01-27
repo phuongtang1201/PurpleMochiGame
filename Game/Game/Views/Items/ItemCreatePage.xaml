@@ -159,10 +159,9 @@
                             </Grid>
                         </StackLayout>
 
-                        <Grid
-                    RowSpacing="1"
-                    ColumnSpacing="2"
-                    VerticalOptions="Center">
+                        <Grid RowSpacing="1"
+                              ColumnSpacing="2"
+                              VerticalOptions="Center">
 
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="auto" />
@@ -172,18 +171,20 @@
                             </Grid.ColumnDefinitions>
 
                             <Button Grid.Row="0" Grid.Column="0"
-                        WidthRequest="50"
-                        HeightRequest="50"
-                        HorizontalOptions="Start"
-                        Text="Cancel"
-                        Clicked="Cancel_Clicked"/>
+                                    WidthRequest="120"
+                                    HeightRequest="40"
+                                    HorizontalOptions="Start"
+                                    Text="Cancel"
+                                    Margin="10,0,0,0"
+                                    Clicked="Cancel_Clicked"/>
 
                             <Button Grid.Row="0" Grid.Column="1" 
-                         WidthRequest="50"
-                         HeightRequest="50"
-                         HorizontalOptions="End"
-                         Text="Save"
-                         Clicked="Save_Clicked"/>
+                                    WidthRequest="50"
+                                    HeightRequest="50"
+                                    HorizontalOptions="End"
+                                    Text="Save"
+                                    Margin="10,0,0,0"
+                                    Clicked="Save_Clicked"/>
                         </Grid>
                     </StackLayout>
                 </ScrollView>
