@@ -178,7 +178,15 @@ namespace Game.Views
         {
             SpeedValue.Text = String.Format("{0}", e.NewValue);
         }
-
+        /// <summary>
+        /// Catch the change to the Slider for Speed
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Speed_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            SpeedValue.Text = String.Format("{0}", Convert.ToInt32(e.NewValue));
+        }
 
         /// <summary>
         /// The row selected from the list
