@@ -28,21 +28,37 @@
 
                             <Image Source="{Binding Data.ImageURI}"  Style="{StaticResource ImageLargeStyle}" 
                                    HorizontalOptions="Center"/>
-                            
-                            
 
-                            <Label Text="Item Name:"
-                                   Style="{StaticResource HeaderStyle}"/>
+                            <Grid
+                                  RowSpacing="1"
+                                  ColumnSpacing="2"
+                                  VerticalOptions="Center">
 
-                            <Label Text="{Binding Data.Name}"
-                                   Style="{StaticResource ValueStyle}"/>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto" />
+                                </Grid.ColumnDefinitions>
 
-                            <Label Text="Description:"
-                                   Style="{StaticResource HeaderStyle}"/>
+                                <Label Grid.Row="0" Grid.Column="0" 
+                                       Text="Item Name:"
+                                       Style="{StaticResource HeaderStyle}"/>
 
-                            <Label Text="{Binding Data.Description}"
-                                   LineBreakMode="WordWrap"
-                                   Style="{StaticResource ValueStyle}"/>
+                                <Label Grid.Row="0" Grid.Column="1" 
+                                       Text="{Binding Data.Name}"
+                                       Style="{StaticResource ValueStyle}"/>
+
+                                <Label Grid.Row="1" Grid.Column="0" 
+                                       Text="Description:"
+                                       Style="{StaticResource HeaderStyle}"/>
+
+                                <Label Grid.Row="1" Grid.Column="1" 
+                                       Text="{Binding Data.Description}"
+                                       LineBreakMode="WordWrap"
+                                       Style="{StaticResource ValueStyle}"/>
+
+                            </Grid>
 
                         </StackLayout>
 
