@@ -109,7 +109,7 @@
                         Style="{StaticResource LabelStyle}"/>
 
                 <Label Grid.Row="4" Grid.Column="1"
-                                Text="{Binding Data.DefenseValue}" 
+                                Text="{Binding Data.Defense}" 
                                 Style="{StaticResource ValueStyle}"/>
 
                 <Label Grid.Row="5" Grid.Column="0"
