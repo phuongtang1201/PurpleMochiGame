@@ -89,7 +89,8 @@
                                     Text="Image" 
                                     Style="{StaticResource LabelStyle}"/>
 
-                                <StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource HorizontalStack}" HorizontalOptions="FillAndExpand">
+                                <StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource HorizontalStack}" 
+                                             HorizontalOptions="FillAndExpand">
 
                                     <Image 
                                         Source="{Binding Data.ImageURI, Mode=TwoWay}"
