@@ -26,20 +26,21 @@
                         Text="PLAY"
                         FontSize="Title"
                         TextColor="Black"
-                        WidthRequest="150"
+                        WidthRequest="190"
                         HeightRequest="60"
                         CornerRadius="15"
                         Clicked="GameButton_Clicked"/>
 
                     <Button 
                         Text="LEADERBOARD"
-                        WidthRequest="150"
+                        WidthRequest="190"
                         HeightRequest="60"
-                        CornerRadius="15"
-                        />
+                        FontSize="Title"
+                        TextColor="Black"
+                        CornerRadius="15"/>
                     <Button
                         Text="ABOUT"
-                        WidthRequest="150"
+                        WidthRequest="190"
                         HeightRequest="60"
                         CornerRadius="15"/>
                     
