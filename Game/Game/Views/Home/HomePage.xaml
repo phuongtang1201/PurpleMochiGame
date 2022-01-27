@@ -49,6 +49,7 @@
                         Margin="0,20,0,0"/>
                     <Button
                         Text="ABOUT"
+                        Clicked="AboutButton_Clicked"
                         WidthRequest="190"
                         HeightRequest="40"
                         FontSize="Title"
