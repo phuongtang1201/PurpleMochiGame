@@ -32,6 +32,10 @@
                         WidthRequest="150"
                         HeightRequest="60"
                         />
+                    <Button
+                        Text="ABOUT"
+                        WidthRequest="150"
+                        HeightRequest="60"/>
                 </StackLayout>
 
                 <Button
