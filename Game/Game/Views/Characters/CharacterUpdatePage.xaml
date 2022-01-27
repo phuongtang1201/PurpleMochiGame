@@ -35,19 +35,9 @@
                         <Label Text="Update Page" Style="{StaticResource HeaderStyle}"/>
                         <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
-                        <StackLayout>
-                            <Image Source="{Binding Data.ImageURI, Mode=TwoWay}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="Center"/>
-
-                            <ImageButton 
-                                x:Name="RollDice"
-                                Style="{StaticResource ImageLargeStyle}"
-                                Source="d10.png"
-                                Clicked="RollDice_Clicked"
-                                IsVisible="false"/>
-                            
-                        </StackLayout>
-                            
                         <StackLayout Margin="60,0,60,0">
+                            <Image Source="{Binding Data.ImageURI, Mode=TwoWay}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="Center"/>
+                            
                             <Label Text="Name" 
                                 Style="{StaticResource LabelStyle}"/>
 
@@ -61,6 +51,13 @@
                             <Entry Text="{Binding Data.Description, Mode=TwoWay}" 
                                 Style="{StaticResource EntryStyle}"
                                 TextChanged="Entry_CheckNotEmpty"/>
+
+                            <ImageButton 
+                                x:Name="RollDice"
+                                Style="{StaticResource ImageLargeStyle}"
+                                Source="d10.png"
+                                Clicked="RollDice_Clicked"
+                                />
 
                         </StackLayout>
                     <StackLayout Margin="20,0,20,0" 
