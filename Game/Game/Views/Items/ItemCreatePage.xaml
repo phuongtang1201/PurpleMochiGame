@@ -130,6 +130,8 @@
                                 <Slider Grid.Row="5" Grid.Column="1"
                                         x:Name ="ValueValue2" WidthRequest="220" Minimum ="0" Maximum="9"
                                         Value="{Binding Data.Value, Mode=TwoWay}"
+                                        MaximumTrackColor="Black"
+                                        MinimumTrackColor="Black"
                                         ValueChanged="Value_OnSliderValueChanged" />
 
                                 <Label Grid.Row="5" Grid.Column="2"
