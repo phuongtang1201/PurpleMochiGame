@@ -52,7 +52,9 @@
 
                             <Entry 
                                 Text="{Binding Data.Description, Mode=TwoWay}" 
-                                Style="{StaticResource EntryStyle}"/>
+                                Style="{StaticResource EntryStyle}"
+                                TextChanged="Entry_CheckNotEmpty"/>
+                            
                             <ImageButton 
                                 x:Name="RollDice"
                                 Style="{StaticResource ImageLargeStyle}"
