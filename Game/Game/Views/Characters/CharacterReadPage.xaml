@@ -12,6 +12,7 @@
         <ToolbarItem Text="Delete" Clicked="Delete_Clicked" IconImageSource="icon_delete.png"/>
     </ContentPage.ToolbarItems>
 
+    <ContentPage.Content>
     <AbsoluteLayout
         HorizontalOptions="FillAndExpand"
         VerticalOptions="FillAndExpand"
@@ -227,4 +228,5 @@
             </StackLayout>
         </StackLayout>
     </AbsoluteLayout>
+    </ContentPage.Content>
 </ContentPage>
