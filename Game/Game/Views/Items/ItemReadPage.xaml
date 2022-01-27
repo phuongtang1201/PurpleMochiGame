@@ -24,7 +24,7 @@
                     <StackLayout Style="{StaticResource OuterBoxStack}"
                                  Spacing="10">
 
-                        <StackLayout Margin="60,0,60,0">
+                        <StackLayout Margin="60,0,60,0" >
 
                             <Image Source="{Binding Data.ImageURI}"  Style="{StaticResource ImageLargeStyle}" 
                                    HorizontalOptions="Center"/>
@@ -49,18 +49,7 @@
                             Padding="10,0,15,0"
                             BackgroundColor="LightGray">
 
-                            <Grid RowSpacing="1"
-                                  ColumnSpacing="2"
-                                  HorizontalOptions="Center">
-
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="auto" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="auto" />
-                                </Grid.ColumnDefinitions>
-
-                                <Label Grid.Row="0" Grid.Column="0" 
+                            <Label Grid.Row="0" Grid.Column="0" 
                                        Text="Statistics"
                                        Style="{StaticResource HeaderStyle}"/>
 
@@ -100,10 +89,9 @@
                                        Text="Damage:"
                                        Style="{StaticResource LabelStyle}"/>
 
-                                <Label Grid.Row="5" Grid.Column="1" 
+                            <Label Grid.Row="5" Grid.Column="1" 
                                        Text="{Binding Data.Damage}"
                                        Style="{StaticResource ValueStyle}"/>
-                            </Grid>
                         </StackLayout>
                     </StackLayout>
                 </ScrollView>
