@@ -140,6 +140,15 @@ namespace Game.Views
         {
             AttackValue.Text = String.Format("{0}", e.NewValue);
         }
+        /// <summary>
+        /// Catch the change to the Slider for Attack
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Attack_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            AttackValue.Text = String.Format("{0}", Convert.ToInt32(e.NewValue));
+        }
 
         /// <summary>
         /// Catch the change to the Stepper for Defense
