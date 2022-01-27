@@ -43,7 +43,7 @@
                                    TextChanged="Entry_CheckNotEmpty"
                                    Style="{StaticResource EntryStyle}" />
 
-                            <Label Text="Description" HorizontalOptions="Start" 
+                            <Label Text="Description"
                                    Style="{StaticResource LabelStyle}" />
 
                             <Entry 
