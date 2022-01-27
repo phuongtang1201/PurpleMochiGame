@@ -63,7 +63,8 @@
 
                         <StackLayout
                             Margin="20,0,20,0"
-                            Padding="10,0,15,0">
+                            Padding="10,0,15,0"
+                            BackgroundColor="LightGray">
                             <Grid
                                 RowSpacing="1"
                                 ColumnSpacing="2"
