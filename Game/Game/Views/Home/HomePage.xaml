@@ -38,9 +38,7 @@
                         HeightRequest="60"/>
                 </StackLayout>
 
-                <Button
-                    Text="Enter"
-                    Clicked="GameButton_Clicked"/>
+                
 
             </StackLayout>
         </ScrollView>
