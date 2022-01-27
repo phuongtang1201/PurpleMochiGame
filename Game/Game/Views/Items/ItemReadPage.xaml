@@ -65,12 +65,12 @@
                                        Style="{StaticResource HeaderStyle}"/>
 
                                 <Label Grid.Row="1" Grid.Column="0" 
-                               Text="Location:" HorizontalOptions="Start"
-                               Style="{StaticResource LabelStyle}"/>
+                                       Text="Location:"
+                                       Style="{StaticResource LabelStyle}"/>
 
                                 <Label Grid.Row="1" Grid.Column="1" 
-                               Text="{Binding Data.Location}" HorizontalOptions="Start"
-                               Style="{StaticResource ValueStyle}"/>
+                                       Text="{Binding Data.Location}"
+                                       Style="{StaticResource ValueStyle}"/>
 
                                 <Label Grid.Row="2" Grid.Column="0" 
                                Text="Attribute:" HorizontalOptions="Start"
