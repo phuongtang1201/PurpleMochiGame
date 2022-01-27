@@ -36,7 +36,7 @@
 
                             <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" 
                                    HorizontalOptions="Center"/>
-                            <Label Text="Item Name" HorizontalOptions="Start" 
+                            <Label Text="Item Name"
                                    Style="{StaticResource LabelStyle}" />
 
                             <Entry Text="{Binding Data.Name}"
