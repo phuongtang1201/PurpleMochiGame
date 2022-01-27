@@ -42,6 +42,11 @@
                            Text="{Binding Data.Name}" 
                            Style="{StaticResource ValueStyle}"/>
 
+                    <BoxView Grid.Row="1" Grid.Column="0"
+                             Grid.ColumnSpan="2"
+                             Grid.RowSpan="1"
+                             Color="LightGray" />
+                    
                     <Label Grid.Row="1" Grid.Column="0"
                            Text="Description : " 
                            Style="{StaticResource LabelStyle}"/>
