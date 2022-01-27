@@ -102,6 +102,14 @@
                 <Label Grid.Row="4" Grid.Column="1"
                                 Text="{Binding Data.DefenseValue}" 
                                 Style="{StaticResource ValueStyle}"/>
+
+                <Label Grid.Row="5" Grid.Column="0"
+                        Text="Speed: " 
+                        Style="{StaticResource LabelStyle}"/>
+
+                <Label Grid.Row="5" Grid.Column="1"
+                                Text="{Binding Data.Speed}" 
+                                Style="{StaticResource ValueStyle}"/>
             </Grid>
             <Grid
                      RowSpacing="1"
