@@ -52,49 +52,38 @@
                             BackgroundColor="LightGray"
                             WidthRequest="250">
 
-                            <Label Grid.Row="0" Grid.Column="0" 
-                                       Text="Statistics"
+                            <Label Text="Statistics"
                                        Style="{StaticResource HeaderStyle}"/>
 
-                                <Label Grid.Row="1" Grid.Column="0" 
-                                       Text="Location:"
-                                       Style="{StaticResource LabelStyle}"/>
+                            <Label Text="Location:"
+                                   Style="{StaticResource LabelStyle}"/>
 
-                                <Label Grid.Row="1" Grid.Column="1" 
-                                       Text="{Binding Data.Location}"
-                                       Style="{StaticResource ValueStyle}"/>
+                            <Label Text="{Binding Data.Location}"
+                                   Style="{StaticResource ValueStyle}"/>
 
-                                <Label Grid.Row="2" Grid.Column="0" 
-                                       Text="Attribute:"
-                                       Style="{StaticResource LabelStyle}"/>
+                            <Label Text="Attribute:"
+                                   Style="{StaticResource LabelStyle}"/>
 
-                                <Label Grid.Row="2" Grid.Column="1" 
-                                       Text="{Binding Data.Attribute}"
-                                       Style="{StaticResource ValueStyle}"/>
+                            <Label Text="{Binding Data.Attribute}"
+                                   Style="{StaticResource ValueStyle}"/>
 
-                                <Label Grid.Row="3" Grid.Column="0" 
-                                       Text="Range:"
-                                       Style="{StaticResource LabelStyle}"/>
+                            <Label Text="Range:"
+                                   Style="{StaticResource LabelStyle}"/>
 
-                                <Label Grid.Row="3" Grid.Column="1" 
-                                       Text="{Binding Data.Range}"
-                                       Style="{StaticResource ValueStyle}"/>
+                            <Label Text="{Binding Data.Range}"
+                                   Style="{StaticResource ValueStyle}"/>
 
-                                <Label Grid.Row="4" Grid.Column="0" 
-                                       Text="Value:"
-                                       Style="{StaticResource LabelStyle}"/>
+                            <Label Text="Value:"
+                                   Style="{StaticResource LabelStyle}"/>
 
-                                <Label Grid.Row="4" Grid.Column="1" 
-                                       Text="{Binding Data.Value}" 
-                                       Style="{StaticResource ValueStyle}"/>
+                            <Label Text="{Binding Data.Value}" 
+                                   Style="{StaticResource ValueStyle}"/>
 
-                                <Label Grid.Row="5" Grid.Column="0" 
-                                       Text="Damage:"
-                                       Style="{StaticResource LabelStyle}"/>
+                            <Label Text="Damage:"
+                                   Style="{StaticResource LabelStyle}"/>
 
-                            <Label Grid.Row="5" Grid.Column="1" 
-                                       Text="{Binding Data.Damage}"
-                                       Style="{StaticResource ValueStyle}"/>
+                            <Label Text="{Binding Data.Damage}"
+                                   Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
                     </StackLayout>
                 </ScrollView>
