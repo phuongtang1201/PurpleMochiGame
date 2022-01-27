@@ -47,7 +47,8 @@
                         <StackLayout
                             Margin="20,0,20,0"
                             Padding="10,0,15,0"
-                            BackgroundColor="LightGray">
+                            BackgroundColor="LightGray"
+                            WidthRequest="250">
 
                             <Label Grid.Row="0" Grid.Column="0" 
                                        Text="Statistics"
