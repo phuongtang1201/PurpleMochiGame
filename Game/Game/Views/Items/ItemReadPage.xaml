@@ -60,10 +60,6 @@
                                     <ColumnDefinition Width="auto" />
                                 </Grid.ColumnDefinitions>
 
-                                <BoxView Grid.ColumnSpan="2"
-                                 Grid.RowSpan="6"
-                                 Color="LightGray" />
-
                                 <Label Grid.Row="0" Grid.Column="0" 
                                Text="Statistics" HorizontalOptions="Start"
                                Style="{StaticResource HeaderStyle}"/>
