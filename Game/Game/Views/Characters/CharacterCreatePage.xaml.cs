@@ -48,6 +48,10 @@ namespace Game.Views
                 LevelPicker.Items.Add(i.ToString());
             }
 
+            //This message will show if either the name entry box or description entry box is empty
+            Warning_Not_Null_Message.Text = "Please enter a valid input.";
+            Warning_Not_Null_Message.IsVisible = false;
+
             this.ViewModel.Data.Level = 1;
             // LevelPicker.SelectedIndex = ViewModel.Data.Level - 1;
 
