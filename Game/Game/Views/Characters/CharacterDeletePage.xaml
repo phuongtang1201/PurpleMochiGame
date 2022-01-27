@@ -72,7 +72,7 @@
                         Style="{StaticResource LabelStyle}" />
                 
                 <Label Grid.Row="1" Grid.Column="0"
-                        Text="Level : " 
+                        Text="Level: " 
                         Style="{StaticResource LabelStyle}"/>
 
                 <Label Grid.Row="2" Grid.Column="1"
@@ -80,7 +80,7 @@
                                 Style="{StaticResource ValueStyle}"/>
 
                 <Label Grid.Row="2" Grid.Column="0"
-                        Text="Max Health : " 
+                        Text="Max Health: " 
                         Style="{StaticResource LabelStyle}"/>
 
                 <Label Grid.Row="1" Grid.Column="1"
@@ -88,11 +88,19 @@
                                 Style="{StaticResource ValueStyle}"/>
 
                 <Label Grid.Row="3" Grid.Column="0"
-                        Text="Attack : " 
+                        Text="Attack: " 
                         Style="{StaticResource LabelStyle}"/>
 
                 <Label Grid.Row="3" Grid.Column="1"
                                 Text="{Binding Data.Attack}" 
+                                Style="{StaticResource ValueStyle}"/>
+
+                <Label Grid.Row="4" Grid.Column="0"
+                        Text="Defense: " 
+                        Style="{StaticResource LabelStyle}"/>
+
+                <Label Grid.Row="4" Grid.Column="1"
+                                Text="{Binding Data.DefenseValue}" 
                                 Style="{StaticResource ValueStyle}"/>
             </Grid>
             <Grid
