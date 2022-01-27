@@ -165,6 +165,8 @@
                             Value="{Binding Data.Damage, Mode=TwoWay}"  
                             HorizontalOptions="CenterAndExpand"
                             VerticalOptions="CenterAndExpand"
+                            MaximumTrackColor="Black"
+                            MinimumTrackColor="Black"
                             ValueChanged = "Damage_OnSliderValueChanged" />
 
                     <Label Grid.Row="6" Grid.Column="2"
