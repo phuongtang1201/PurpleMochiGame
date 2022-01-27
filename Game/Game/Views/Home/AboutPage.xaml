@@ -18,8 +18,6 @@
                 OutlineColor="LightGray" 
                 Padding="5">
                 <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand">
-                    <Image Source="d20_2.png" Style="{StaticResource ImageMediumStyle}"/>
-                    
                     <Label Text="Cook for Your Life!" Style="{StaticResource HeaderStyle}" 
                            HorizontalOptions="Center"  HorizontalTextAlignment="Center" />
                     
@@ -38,8 +36,8 @@
                 </StackLayout>
             </Frame>
 
-            <StackLayout Style="{StaticResource VerticalStack}">
-                
+            <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand">
+                <Image Source="d20_2.png" Style="{StaticResource ImageLargeStyle}"/>
             </StackLayout>
 
             <!--Database Settings Frame-->
