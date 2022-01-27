@@ -15,6 +15,7 @@
                 <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
                     <Image
                          Source="item.png"
+                           WidthRequest="250" HeightRequest="250"
                          Style="{StaticResource ImageLargeStyle}"/>
                 
                 </StackLayout>
