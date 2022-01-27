@@ -23,10 +23,11 @@
                 <ScrollView>
                     <StackLayout Style="{StaticResource OuterBoxStack}"
                                  Spacing="10">
+                        
                         <StackLayout Margin="60,0,60,0">
 
                             <Image Source="{Binding Data.ImageURI}"  Style="{StaticResource ImageLargeStyle}" 
-                           HorizontalOptions="CenterAndExpand"/>
+                                   HorizontalOptions="Center"/>
 
                             <Grid RowSpacing="1"
                           ColumnSpacing="2"
