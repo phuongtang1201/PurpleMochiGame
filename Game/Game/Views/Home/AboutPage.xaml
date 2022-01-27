@@ -14,16 +14,18 @@
       Orientation="Vertical">
 
         <StackLayout Style="{StaticResource VerticalStack}">
-
-            <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand">
-
-                <Image Source="d20_2.png" Style="{StaticResource ImageMediumStyle}"/>
-                <Label Text="Purple Mochi" Style="{StaticResource HeaderStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" />
-                <Label Text="Phuong Tang" Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" />
-                <Label Text="Veronica Carpenter" Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" />
-                <Label Text="Erika Skornia-Olsen" Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" />
-                <Label x:Name="CurrentDateTime" Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" />
-            </StackLayout>
+            <Frame CornerRadius="10"  
+                OutlineColor="LightGray" 
+                Padding="0">
+                <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand">
+                    <Image Source="d20_2.png" Style="{StaticResource ImageMediumStyle}"/>
+                    <Label Text="Purple Mochi" Style="{StaticResource HeaderStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" />
+                    <Label Text="Phuong Tang" Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" />
+                    <Label Text="Veronica Carpenter" Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" />
+                    <Label Text="Erika Skornia-Olsen" Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" />
+                    <Label x:Name="CurrentDateTime" Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" />
+                </StackLayout>
+            </Frame>
 
             <!--Database Settings Frame-->
 
