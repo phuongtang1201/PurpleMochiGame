@@ -141,14 +141,13 @@
                                        HorizontalTextAlignment="End"/>
 
                                 <Label Grid.Row="6" Grid.Column="0"
-                        Text="Damage" 
-                        Style="{StaticResource LabelStyle}"/>
+                                       Text="Damage" 
+                                       Style="{StaticResource LabelStyle}"/>
 
-                                <Slider Grid.Row="6" Grid.Column="1" x:Name ="DamageValue2" WidthRequest="100" Minimum ="0" Maximum="9"
-                        Value="{Binding Data.Damage, Mode=TwoWay}"
-                        HorizontalOptions="CenterAndExpand"
-                        VerticalOptions="CenterAndExpand"
-                        ValueChanged="Damage_OnSliderValueChanged" />
+                                <Slider Grid.Row="6" Grid.Column="1" x:Name ="DamageValue2" 
+                                        WidthRequest="220" Minimum ="0" Maximum="9"
+                                        Value="{Binding Data.Damage, Mode=TwoWay}"
+                                        ValueChanged="Damage_OnSliderValueChanged" />
 
                                 <Label Grid.Row="6" Grid.Column="2"
                         Text="{Binding Data.Damage}" 
