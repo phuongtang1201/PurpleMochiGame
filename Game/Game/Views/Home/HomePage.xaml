@@ -5,19 +5,20 @@
 
     <ContentPage.Content>
         <ScrollView
-            VerticalOptions="CenterAndExpand"
             HorizontalOptions="CenterAndExpand">
             
             <StackLayout
                 VerticalOptions="Center"
                 HorizontalOptions="Center">
                 <Button
-                    WidthRequest="50" HeightRequest="50"
+                    WidthRequest="60" HeightRequest="60"
                     Text="Setting"
+                    FontSize="Micro"
                     HorizontalOptions="End"
                     CornerRadius="50"/>
                 
                 <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
+                   
                     <Image
                          Source="item.png"
                          WidthRequest="250" HeightRequest="250"
