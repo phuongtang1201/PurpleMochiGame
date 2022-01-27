@@ -61,57 +61,60 @@
                                 Clicked="RollDice_Clicked"/>
                         </StackLayout>
 
-                        <Grid
-                            RowSpacing="1"
-                            ColumnSpacing="2"
-                            VerticalOptions="Center">
+                        <StackLayout
+                            Margin="20,0,20,0"
+                            Padding="10,0,15,0">
+                            <Grid
+                                RowSpacing="1"
+                                ColumnSpacing="2"
+                                VerticalOptions="Center">
 
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto" />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="auto"/>
-                            </Grid.ColumnDefinitions>
-                            <Label Grid.Row="0" Grid.Column="0"
-                                Text="Statistics" 
-                                Style="{StaticResource HeaderStyle}"/>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0"
+                                    Text="Statistics" 
+                                    Style="{StaticResource HeaderStyle}"/>
 
-                            <Label Grid.Row="1" Grid.Column="0"
-                                Text="Image" 
-                                Style="{StaticResource LabelStyle}"/>
+                                <Label Grid.Row="1" Grid.Column="0"
+                                    Text="Image" 
+                                    Style="{StaticResource LabelStyle}"/>
 
-                            <StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource HorizontalStack}" HorizontalOptions="FillAndExpand">
+                                <StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource HorizontalStack}" HorizontalOptions="FillAndExpand">
 
-                                <Image 
-                                    Source="{Binding Data.ImageURI, Mode=TwoWay}"
-                                    Style="{StaticResource ImageSmallStyle}"/>
+                                    <Image 
+                                        Source="{Binding Data.ImageURI, Mode=TwoWay}"
+                                        Style="{StaticResource ImageSmallStyle}"/>
 
-                                <Entry 
-                                    Text="{Binding Data.ImageURI, Mode=TwoWay}" 
-                                    Style="{StaticResource EntryStyle}"/>
+                                    <Entry 
+                                        Text="{Binding Data.ImageURI, Mode=TwoWay}" 
+                                        Style="{StaticResource EntryStyle}"/>
 
-                            </StackLayout>
+                                </StackLayout>
 
-                            <Label Grid.Row="2" Grid.Column="0"
-                                Text="Level" 
-                                Style="{StaticResource LabelStyle}"/>
+                                <Label Grid.Row="2" Grid.Column="0"
+                                    Text="Level" 
+                                    Style="{StaticResource LabelStyle}"/>
 
-                            <Picker Grid.Row="2" Grid.Column="1"
-                                SelectedItem="{Binding SelectedItemProperty}" 
-                                SelectedIndexChanged="Level_Changed"
-                                x:Name="LevelPicker"/>
+                                <Picker Grid.Row="2" Grid.Column="1"
+                                    SelectedItem="{Binding SelectedItemProperty}" 
+                                    SelectedIndexChanged="Level_Changed"
+                                    x:Name="LevelPicker"/>
 
-                            <Label Grid.Row="3" Grid.Column="0"
-                                Text="Max Health" 
-                                Style="{StaticResource LabelStyle}"/>
+                                <Label Grid.Row="3" Grid.Column="0"
+                                    Text="Max Health" 
+                                    Style="{StaticResource LabelStyle}"/>
 
-                            <Label Grid.Row="3" Grid.Column="1"
-                                x:Name="MaxHealthValue"
-                                Text="{Binding Data.MaxHealth, StringFormat= '{0:G} hp'}" 
-                                Style="{StaticResource ValueStyle}"/>
-                        </Grid>
+                                <Label Grid.Row="3" Grid.Column="1"
+                                    x:Name="MaxHealthValue"
+                                    Text="{Binding Data.MaxHealth, StringFormat= '{0:G} hp'}" 
+                                    Style="{StaticResource ValueStyle}"/>
+                            </Grid>
 
-                        <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
+                            <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
 
                             <Label Text="Attack" Style="{StaticResource LabelStyle}"/>
 
@@ -167,7 +170,7 @@
 
                             </StackLayout>
                         </StackLayout>
-
+                        </StackLayout>
                         <FlexLayout 
                         Padding="5"
                         Wrap="Wrap"
