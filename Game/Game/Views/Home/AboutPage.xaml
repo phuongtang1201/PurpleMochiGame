@@ -8,15 +8,17 @@
              Title="About">
 
     <ScrollView
-      Padding="10,10,10,10"
-      VerticalOptions="Start"
-      HorizontalOptions="FillAndExpand"
-      Orientation="Vertical">
+        Margin="70,0,70,0"
+        Padding="10,10,10,10"
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        Orientation="Vertical">
 
         <StackLayout Style="{StaticResource VerticalStack}">
             <Frame CornerRadius="10"  
                 OutlineColor="LightGray" 
-                Padding="5">
+               
+                Padding="15">
                 <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand">
                     <Label Text="Cook for Your Life!" Style="{StaticResource HeaderStyle}" 
                            HorizontalOptions="Center"  HorizontalTextAlignment="Center" />
