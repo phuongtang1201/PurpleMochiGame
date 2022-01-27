@@ -35,9 +35,9 @@
                         <StackLayout Margin="60,0,60,0">
 
                             <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" 
-                           HorizontalOptions="CenterAndExpand"/>
+                                   HorizontalOptions="Center"/>
                             <Label Text="Item Name" HorizontalOptions="Start" 
-                           Style="{StaticResource LabelStyle}" />
+                                   Style="{StaticResource LabelStyle}" />
 
                             <Entry Text="{Binding Data.Name}"
                            TextChanged="Entry_CheckNotEmpty"
