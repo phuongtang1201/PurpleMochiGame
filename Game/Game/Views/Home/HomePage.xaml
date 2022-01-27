@@ -40,6 +40,7 @@
 
                     <Button 
                         Text="LEADERBOARD"
+                        Clicked="ScoresButton_Clicked"
                         WidthRequest="190"
                         HeightRequest="40"
                         FontSize="Title"
