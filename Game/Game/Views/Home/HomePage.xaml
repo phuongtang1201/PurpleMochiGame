@@ -11,7 +11,12 @@
             <StackLayout
                 VerticalOptions="Center"
                 HorizontalOptions="Center">
-
+                <Button
+                    WidthRequest="50" HeightRequest="50"
+                    Text="Setting"
+                    HorizontalOptions="End"
+                    CornerRadius="50"/>
+                
                 <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
                     <Image
                          Source="item.png"
