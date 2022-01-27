@@ -39,14 +39,12 @@
                             <Label Text="Item Name"
                                    Style="{StaticResource LabelStyle}" />
 
-                            <Entry Text="{Binding Data.Name}"
-                           TextChanged="Entry_CheckNotEmpty"
-                           Style="{StaticResource EntryStyle}"
-                           WidthRequest="300"
-                           HorizontalOptions="Start"/>
+                            <Entry Text="{Binding Data.Name, Mode=TwoWay}"
+                                   TextChanged="Entry_CheckNotEmpty"
+                                   Style="{StaticResource EntryStyle}" />
 
                             <Label Text="Description" HorizontalOptions="Start" 
-                           Style="{StaticResource LabelStyle}" />
+                                   Style="{StaticResource LabelStyle}" />
 
                             <Entry 
                         Text="{Binding Data.Description}"
