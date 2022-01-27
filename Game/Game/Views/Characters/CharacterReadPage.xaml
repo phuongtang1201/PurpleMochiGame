@@ -14,7 +14,7 @@
 
     <ContentPage.Content>
     <AbsoluteLayout
-        HorizontalOptions="FillAndExpand"
+        HorizontalOptions="CenterAndExpand"
         VerticalOptions="FillAndExpand"
         >
 
