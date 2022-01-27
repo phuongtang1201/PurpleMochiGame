@@ -46,12 +46,9 @@
                             <Label Text="Description"
                                    Style="{StaticResource LabelStyle}" />
 
-                            <Entry 
-                        Text="{Binding Data.Description}"
-                        TextChanged="Entry_CheckNotEmpty"
-                        Style="{StaticResource EntryStyle}"
-                        WidthRequest="300"
-                        HorizontalOptions="Start"/>
+                            <Entry Text="{Binding Data.Description, Mode=TwoWay}"
+                                   TextChanged="Entry_CheckNotEmpty"
+                                   Style="{StaticResource EntryStyle}" />
 
                         </StackLayout>
 
