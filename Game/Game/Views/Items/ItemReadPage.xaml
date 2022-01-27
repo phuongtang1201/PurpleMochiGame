@@ -28,6 +28,8 @@
 
                             <Image Source="{Binding Data.ImageURI}"  Style="{StaticResource ImageLargeStyle}" 
                                    HorizontalOptions="Center"/>
+                            
+                            
 
                             <Label Text="Item Name:"
                                    Style="{StaticResource HeaderStyle}"/>

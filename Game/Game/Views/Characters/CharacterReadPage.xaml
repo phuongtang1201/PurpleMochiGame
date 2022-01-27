@@ -32,25 +32,19 @@
                                    Style="{StaticResource ImageLargeStyle}"
                                    HorizontalOptions="Center"/>
 
-                        <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label 
-                               Text="Name:" 
-                               Style="{StaticResource LabelStyle}"/>
+                            <Label Text="Name:" 
+                               Style="{StaticResource HeaderStyle}"/>
                             <Label 
                                 Text="{Binding Data.Name}" 
                                 Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
 
-                        <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label 
-                                Text="Description:" 
-                                Style="{StaticResource LabelStyle}"/>
+                            <Label Text="Description:" 
+                                Style="{StaticResource HeaderStyle}"/>
                             <Label 
                                 Text="{Binding Data.Description}" 
                                 Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
 
-                        <StackLayout Style="{StaticResource HorizontalStack}">
+                            <StackLayout Style="{StaticResource HorizontalStack}">
                             <Label 
                                 Text="Level : " 
                                 Style="{StaticResource LabelStyle}"/>
