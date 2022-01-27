@@ -27,5 +27,14 @@ namespace Game.Views
         {
             await Navigation.PushAsync(new GamePage());
         }
+        /// <summary>
+		/// Jump to the Scores
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		public async void ScoresButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ScoreIndexPage());
+        }
     }
 }
