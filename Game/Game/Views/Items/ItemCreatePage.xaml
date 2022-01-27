@@ -133,12 +133,12 @@
                                         ValueChanged="Value_OnSliderValueChanged" />
 
                                 <Label Grid.Row="5" Grid.Column="2"
-                            Text="{Binding Data.Value}" 
-                            x:Name="ValueValue"
-                            Style="{StaticResource ValueStyle}"
-                            Padding="0,0,10,0"
-                            HorizontalOptions="End"
-                            HorizontalTextAlignment="End"/>
+                                       Text="{Binding Data.Value}" 
+                                       x:Name="ValueValue"
+                                       Style="{StaticResource ValueStyle}"
+                                       Padding="20,0,0,0"
+                                       HorizontalOptions="End"
+                                       HorizontalTextAlignment="End"/>
 
                                 <Label Grid.Row="6" Grid.Column="0"
                         Text="Damage" 
