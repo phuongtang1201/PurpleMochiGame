@@ -176,6 +176,22 @@
                         AlignContent="SpaceAround"
                         x:Name="ItemBox">
                         </FlexLayout>
+                        <StackLayout
+                            Style="{StaticResource HorizontalStack}" 
+                            HorizontalOptions="Center">
+                            <Button
+                            Text="Cancel"
+                            Clicked="Cancel_Clicked"
+                            Margin="10,0,0,0"
+                            WidthRequest="120"
+                            HeightRequest="40"/>
+                            <Button
+                            Text="Save"
+                            Clicked="Save_Clicked"
+                            WidthRequest="120"
+                            HeightRequest="40"
+                            Margin="20,0,0,0"/>
+                        </StackLayout>
 
                     </StackLayout>
                 </ScrollView>
