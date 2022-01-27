@@ -73,36 +73,36 @@
                                        Style="{StaticResource ValueStyle}"/>
 
                                 <Label Grid.Row="2" Grid.Column="0" 
-                               Text="Attribute:" HorizontalOptions="Start"
-                               Style="{StaticResource LabelStyle}"/>
+                                       Text="Attribute:"
+                                       Style="{StaticResource LabelStyle}"/>
 
                                 <Label Grid.Row="2" Grid.Column="1" 
-                               Text="{Binding Data.Attribute}"  HorizontalOptions="Start"
-                               Style="{StaticResource ValueStyle}"/>
+                                       Text="{Binding Data.Attribute}"
+                                       Style="{StaticResource ValueStyle}"/>
 
                                 <Label Grid.Row="3" Grid.Column="0" 
-                               Text="Range:" HorizontalOptions="Start"
-                               Style="{StaticResource LabelStyle}"/>
+                                       Text="Range:"
+                                       Style="{StaticResource LabelStyle}"/>
 
                                 <Label Grid.Row="3" Grid.Column="1" 
-                               Text="{Binding Data.Range}" HorizontalOptions="Start"
-                               Style="{StaticResource ValueStyle}"/>
+                                       Text="{Binding Data.Range}"
+                                       Style="{StaticResource ValueStyle}"/>
 
                                 <Label Grid.Row="4" Grid.Column="0" 
-                               Text="Value:" HorizontalOptions="Start"
-                               Style="{StaticResource LabelStyle}"/>
+                                       Text="Value:"
+                                       Style="{StaticResource LabelStyle}"/>
 
                                 <Label Grid.Row="4" Grid.Column="1" 
-                               Text="{Binding Data.Value}" 
-                               Style="{StaticResource ValueStyle}"/>
+                                       Text="{Binding Data.Value}" 
+                                       Style="{StaticResource ValueStyle}"/>
 
                                 <Label Grid.Row="5" Grid.Column="0" 
-                               Text="Damage:" HorizontalOptions="Start"
-                               Style="{StaticResource LabelStyle}"/>
+                                       Text="Damage:"
+                                       Style="{StaticResource LabelStyle}"/>
 
                                 <Label Grid.Row="5" Grid.Column="1" 
-                               Text="{Binding Data.Damage}" HorizontalOptions="Start"
-                               Style="{StaticResource ValueStyle}"/>
+                                       Text="{Binding Data.Damage}"
+                                       Style="{StaticResource ValueStyle}"/>
                             </Grid>
                         </StackLayout>
                     </StackLayout>
