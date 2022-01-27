@@ -21,65 +21,68 @@
         HorizontalOptions="FillAndExpand"
         VerticalOptions="FillAndExpand"
         >
-            
-            
 
-            <ScrollView>
-                <StackLayout Style="{StaticResource OuterBoxStack}"
+            <StackLayout Style="{StaticResource VerticalStack}"
+                    AbsoluteLayout.LayoutBounds="1,1,1,1" 
+                    AbsoluteLayout.LayoutFlags="All">
+
+                <ScrollView>
+                    <StackLayout Style="{StaticResource OuterBoxStack}"
                          Spacing="10">
-                    <StackLayout HorizontalOptions="Center">
-                        <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
+                        
+                        <StackLayout HorizontalOptions="Center">
+                            <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
-                        <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" 
+                            <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" 
                            HorizontalOptions="CenterAndExpand"/>
-                        <Label Text="Item Name" HorizontalOptions="Start" 
+                            <Label Text="Item Name" HorizontalOptions="Start" 
                            Style="{StaticResource LabelStyle}" />
 
-                        <Entry Text="{Binding Data.Name}"
+                            <Entry Text="{Binding Data.Name}"
                            TextChanged="Entry_CheckNotEmpty"
                            Style="{StaticResource EntryStyle}"
                            WidthRequest="300"
                            HorizontalOptions="Start"/>
 
-                        <Label Text="Description" HorizontalOptions="Start" 
+                            <Label Text="Description" HorizontalOptions="Start" 
                            Style="{StaticResource LabelStyle}" />
 
-                        <Entry 
+                            <Entry 
                         Text="{Binding Data.Description}"
                         TextChanged="Entry_CheckNotEmpty"
                         Style="{StaticResource EntryStyle}"
                         WidthRequest="300"
                         HorizontalOptions="Start"/>
 
-                    </StackLayout>
+                        </StackLayout>
 
-                    <Grid
+                        <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
                     HorizontalOptions="Center">
 
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="auto" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="75" />
-                            <ColumnDefinition Width="250" />
-                            <ColumnDefinition Width="50" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="75" />
+                                <ColumnDefinition Width="250" />
+                                <ColumnDefinition Width="50" />
+                            </Grid.ColumnDefinitions>
 
-                        <BoxView Grid.ColumnSpan="3"
+                            <BoxView Grid.ColumnSpan="3"
                              Grid.RowSpan="7"
                              Color="LightGray" />
 
-                        <Label Grid.Row="0" Grid.Column="0"
+                            <Label Grid.Row="0" Grid.Column="0"
                         Text="Statistics" 
                         Style="{StaticResource LabelStyle}" />
 
-                        <Label Grid.Row="1" Grid.Column="0"
+                            <Label Grid.Row="1" Grid.Column="0"
                         Text="Location" 
                         Style="{StaticResource LabelStyle}"/>
 
-                        <Picker Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+                            <Picker Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
                         WidthRequest="300"
                         HorizontalOptions="Start"
                         ItemsSource="{x:Static local_enum:ItemLocationEnumHelper.GetListCharacter}" 
@@ -87,45 +90,45 @@
                         SelectedIndexChanged="RangeDamage_OnPickerValueChanged"
                         x:Name="LocationPicker"/>
 
-                        <Label Grid.Row="2" Grid.Column="0"
+                            <Label Grid.Row="2" Grid.Column="0"
                         Text="Attribute" 
                         Style="{StaticResource LabelStyle}"/>
 
-                        <Picker Grid.Row="2" Grid.Column="1"  Grid.ColumnSpan="2"
+                            <Picker Grid.Row="2" Grid.Column="1"  Grid.ColumnSpan="2"
                         WidthRequest="300"
                         HorizontalOptions="Start"
                         ItemsSource="{x:Static local_enum:AttributeEnumHelper.GetListCharacter}" 
                         SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
                         x:Name="AttributePicker"/>
 
-                        <StackLayout Grid.Row="3" Grid.Column="0" Style="{StaticResource HorizontalStack}" HorizontalOptions="FillAndExpand">
-                            <Label
+                            <StackLayout Grid.Row="3" Grid.Column="0" Style="{StaticResource HorizontalStack}" HorizontalOptions="FillAndExpand">
+                                <Label
                             Text="Image" 
                             Style="{StaticResource LabelStyle}"/>
-                            <Image 
+                                <Image 
                             Source="{Binding Data.ImageURI}"
                             Style="{StaticResource ImageSmallStyle}"/>
-                        </StackLayout>
+                            </StackLayout>
 
-                        <Entry Grid.Row="3" Grid.Column="1"  Grid.ColumnSpan="2"
+                            <Entry Grid.Row="3" Grid.Column="1"  Grid.ColumnSpan="2"
                         Text="{Binding Data.ImageURI}" 
                         Style="{StaticResource EntryStyle}"
                         WidthRequest="300"
                         HorizontalOptions="Start"/>
 
-                        <Label Grid.Row="4" Grid.Column="0"
+                            <Label Grid.Row="4" Grid.Column="0"
                         Text="Range" 
                         Style="{StaticResource LabelStyle}"
                         HorizontalOptions="Start"/>
 
-                        <Slider Grid.Row="4" Grid.Column="1" x:Name ="RangeValue2" 
+                            <Slider Grid.Row="4" Grid.Column="1" x:Name ="RangeValue2" 
                         WidthRequest="100" Minimum ="0" Maximum="9"
                         Value="{Binding Data.Range, Mode=TwoWay}"
                         HorizontalOptions="CenterAndExpand"
                         VerticalOptions="CenterAndExpand"
                         ValueChanged="Range_OnSliderValueChanged" />
 
-                        <Label Grid.Row="4" Grid.Column="2"
+                            <Label Grid.Row="4" Grid.Column="2"
                         Text="{Binding Data.Range}" 
                         x:Name="RangeValue"
                         Style="{StaticResource ValueStyle}"
@@ -133,18 +136,18 @@
                         HorizontalOptions="End"
                         HorizontalTextAlignment="End"/>
 
-                        <Label Grid.Row="5" Grid.Column="0"
+                            <Label Grid.Row="5" Grid.Column="0"
                         Text="Value"
                         Style="{StaticResource LabelStyle}"/>
 
-                        <Slider Grid.Row="5" Grid.Column="1"
+                            <Slider Grid.Row="5" Grid.Column="1"
                             x:Name ="ValueValue2" WidthRequest="100" Minimum ="0" Maximum="9"
                             Value="{Binding Data.Value, Mode=TwoWay}"
                             HorizontalOptions="CenterAndExpand"
                             VerticalOptions="CenterAndExpand"
                             ValueChanged="Value_OnSliderValueChanged" />
 
-                        <Label Grid.Row="5" Grid.Column="2"
+                            <Label Grid.Row="5" Grid.Column="2"
                             Text="{Binding Data.Value}" 
                             x:Name="ValueValue"
                             Style="{StaticResource ValueStyle}"
@@ -152,53 +155,54 @@
                             HorizontalOptions="End"
                             HorizontalTextAlignment="End"/>
 
-                        <Label Grid.Row="6" Grid.Column="0"
+                            <Label Grid.Row="6" Grid.Column="0"
                         Text="Damage" 
                         Style="{StaticResource LabelStyle}"/>
 
-                        <Slider Grid.Row="6" Grid.Column="1" x:Name ="DamageValue2" WidthRequest="100" Minimum ="0" Maximum="9"
+                            <Slider Grid.Row="6" Grid.Column="1" x:Name ="DamageValue2" WidthRequest="100" Minimum ="0" Maximum="9"
                         Value="{Binding Data.Damage, Mode=TwoWay}"
                         HorizontalOptions="CenterAndExpand"
                         VerticalOptions="CenterAndExpand"
                         ValueChanged="Damage_OnSliderValueChanged" />
 
-                        <Label Grid.Row="6" Grid.Column="2"
+                            <Label Grid.Row="6" Grid.Column="2"
                         Text="{Binding Data.Damage}" 
                         x:Name="DamageValue"
                         Style="{StaticResource ValueStyle}"
                         Padding="0,0,10,0"
                         HorizontalOptions="End"
                         HorizontalTextAlignment="End"/>
-                    </Grid>
+                        </Grid>
 
-                    <Grid
+                        <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
                     VerticalOptions="Center">
 
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="auto" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="auto"/>
-                        </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
 
-                        <Button Grid.Row="0" Grid.Column="0"
+                            <Button Grid.Row="0" Grid.Column="0"
                         WidthRequest="50"
                         HeightRequest="50"
                         HorizontalOptions="Start"
                         Text="Cancel"
                         Clicked="Cancel_Clicked"/>
 
-                        <Button Grid.Row="0" Grid.Column="1" 
+                            <Button Grid.Row="0" Grid.Column="1" 
                          WidthRequest="50"
                          HeightRequest="50"
                          HorizontalOptions="End"
                          Text="Save"
                          Clicked="Save_Clicked"/>
-                    </Grid>
-                </StackLayout>
-            </ScrollView>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
