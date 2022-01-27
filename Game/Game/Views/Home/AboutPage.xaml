@@ -17,7 +17,7 @@
         <StackLayout Style="{StaticResource VerticalStack}">
             <Frame CornerRadius="10"  
                 OutlineColor="LightGray" 
-               
+                BackgroundColor="LightGray"
                 Padding="15">
                 <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand">
                     <Label Text="Cook for Your Life!" Style="{StaticResource HeaderStyle}" 
