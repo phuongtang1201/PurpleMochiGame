@@ -147,6 +147,8 @@
                                 <Slider Grid.Row="6" Grid.Column="1" x:Name ="DamageValue2" 
                                         WidthRequest="220" Minimum ="0" Maximum="9"
                                         Value="{Binding Data.Damage, Mode=TwoWay}"
+                                        MaximumTrackColor="Black"
+                                        MinimumTrackColor="Black"
                                         ValueChanged="Damage_OnSliderValueChanged" />
 
                                 <Label Grid.Row="6" Grid.Column="2"
