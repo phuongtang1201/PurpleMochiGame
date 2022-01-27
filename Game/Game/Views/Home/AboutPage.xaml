@@ -38,6 +38,10 @@
                 </StackLayout>
             </Frame>
 
+            <StackLayout Style="{StaticResource VerticalStack}">
+                
+            </StackLayout>
+
             <!--Database Settings Frame-->
 
             <StackLayout Style="{StaticResource HorizontalStack}">
