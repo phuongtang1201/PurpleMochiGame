@@ -86,6 +86,14 @@
                 <Label Grid.Row="1" Grid.Column="1"
                                 Text="{Binding Data.MaxHealth}" 
                                 Style="{StaticResource ValueStyle}"/>
+
+                <Label Grid.Row="3" Grid.Column="0"
+                        Text="Attack : " 
+                        Style="{StaticResource LabelStyle}"/>
+
+                <Label Grid.Row="3" Grid.Column="1"
+                                Text="{Binding Data.Attack}" 
+                                Style="{StaticResource ValueStyle}"/>
             </Grid>
             <Grid
                      RowSpacing="1"
