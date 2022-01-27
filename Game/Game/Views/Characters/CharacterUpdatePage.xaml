@@ -165,6 +165,8 @@
                                     <Slider
                                         Value="{Binding Data.Speed, Mode=TwoWay}" WidthRequest="220"
                                         Minimum="0" Maximum="9"
+                                        MaximumTrackColor="Black"
+                                        MinimumTrackColor="Black"
                                         ValueChanged="Speed_OnSliderValueChanged"/>
 
                                     <Label 
