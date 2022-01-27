@@ -21,36 +21,39 @@
                    
                     <Image
                          Source="item.png"
-                         WidthRequest="250" HeightRequest="250"
+                         WidthRequest="200" HeightRequest="200"
                          Style="{StaticResource ImageLargeStyle}"/>
                 
                 </StackLayout>
                 
-                <StackLayout HorizontalOptions="Center" Padding="70,5,70,0"> 
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="70,15,70,0"> 
                
                     <Button
                         Text="PLAY"
                         FontSize="Title"
                         TextColor="Black"
                         WidthRequest="190"
-                        HeightRequest="60"
+                        HeightRequest="40"
                         CornerRadius="15"
-                        Clicked="GameButton_Clicked"/>
+                        Clicked="GameButton_Clicked"
+                        Margin="0,20,0,0"/>
 
                     <Button 
                         Text="LEADERBOARD"
                         WidthRequest="190"
-                        HeightRequest="60"
+                        HeightRequest="40"
                         FontSize="Title"
                         TextColor="Black"
-                        CornerRadius="15"/>
+                        CornerRadius="15"
+                        Margin="0,20,0,0"/>
                     <Button
                         Text="ABOUT"
                         WidthRequest="190"
-                        HeightRequest="60"
+                        HeightRequest="40"
                         FontSize="Title"
                         TextColor="Black"
-                        CornerRadius="15"/>
+                        CornerRadius="15"
+                        Margin="0,20,0,0"/>
                     
                 </StackLayout>
 
