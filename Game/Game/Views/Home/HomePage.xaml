@@ -42,6 +42,8 @@
                         Text="ABOUT"
                         WidthRequest="190"
                         HeightRequest="60"
+                        FontSize="Title"
+                        TextColor="Black"
                         CornerRadius="15"/>
                     
                 </StackLayout>
