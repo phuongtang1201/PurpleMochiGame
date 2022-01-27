@@ -29,35 +29,18 @@
                             <Image Source="{Binding Data.ImageURI}"  Style="{StaticResource ImageLargeStyle}" 
                                    HorizontalOptions="Center"/>
 
-                            <Grid RowSpacing="1"
-                          ColumnSpacing="2"
-                          HorizontalOptions="Center">
+                            <Label Text="Item Name:"
+                                   Style="{StaticResource HeaderStyle}"/>
 
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="auto" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="100" />
-                                    <ColumnDefinition Width="225" />
-                                </Grid.ColumnDefinitions>
+                            <Label Text="{Binding Data.Name}"
+                                   Style="{StaticResource ValueStyle}"/>
 
-                                <Label Grid.Row="0" Grid.Column="0" 
-                           Text="Item Name:" HorizontalOptions="Start"
-                           Style="{StaticResource LabelStyle}"/>
+                            <Label Text="Description:"
+                                   Style="{StaticResource HeaderStyle}"/>
 
-                                <Label Grid.Row="0" Grid.Column="1"
-                                Text="{Binding Data.Name}" HorizontalOptions="Start"
-                                Style="{StaticResource ValueStyle}"/>
-
-                                <Label Grid.Row="1" Grid.Column="0" 
-                               Text="Description:" HorizontalOptions="Start"
-                                Style="{StaticResource LabelStyle}"/>
-
-                                <Label Grid.Row="1" Grid.Column="1" 
-                                Text="{Binding Data.Description}" HorizontalOptions="Start"
-                                LineBreakMode="WordWrap"
-                                Style="{StaticResource ValueStyle}"/>
-                            </Grid>
+                            <Label Text="{Binding Data.Description}"
+                                   LineBreakMode="WordWrap"
+                                   Style="{StaticResource ValueStyle}"/>
 
                             <Grid RowSpacing="1"
                           ColumnSpacing="2"
