@@ -15,7 +15,7 @@
                 <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
                     <Image
                          Source="item.png"
-                           WidthRequest="250" HeightRequest="250"
+                         WidthRequest="250" HeightRequest="250"
                          Style="{StaticResource ImageLargeStyle}"/>
                 
                 </StackLayout>
@@ -24,11 +24,12 @@
                
                     <Button
                         Text="PLAY"
+                        FontSize="Title"
+                        TextColor="Black"
                         WidthRequest="150"
                         HeightRequest="60"
                         CornerRadius="15"
-                        Clicked="GameButton_Clicked"
-                        />
+                        Clicked="GameButton_Clicked"/>
 
                     <Button 
                         Text="LEADERBOARD"
