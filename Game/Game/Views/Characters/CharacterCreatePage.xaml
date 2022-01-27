@@ -43,7 +43,8 @@
 
                             <Entry 
                                 Text="{Binding Data.Name, Mode=TwoWay}" 
-                                Style="{StaticResource EntryStyle}"/>
+                                Style="{StaticResource EntryStyle}"
+                                TextChanged="Entry_CheckNotEmpty"/>
 
                             <Label 
                                 Text="Description" 
