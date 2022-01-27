@@ -30,6 +30,10 @@
                         <ColumnDefinition Width="225" />
                     </Grid.ColumnDefinitions>
 
+                    <BoxView Grid.ColumnSpan="2"
+                             Grid.RowSpan="1"
+                             Color="LightGray" />
+
                     <Label Grid.Row="0" Grid.Column="0"
                            Text="Name : " 
                            Style="{StaticResource LabelStyle}"/>
