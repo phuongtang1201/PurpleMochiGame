@@ -74,8 +74,8 @@
                                 </Grid.ColumnDefinitions>
 
                                 <Label Grid.Row="0" Grid.Column="0"
-                        Text="Statistics" 
-                        Style="{StaticResource LabelStyle}"/>
+                                       Text="Statistics" 
+                                       Style="{StaticResource HeaderStyle}"/>
 
                                 <Label Grid.Row="1" Grid.Column="0"
                         Text="Location" 
