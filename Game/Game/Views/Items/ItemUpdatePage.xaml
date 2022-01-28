@@ -33,9 +33,12 @@
                     <StackLayout Style="{StaticResource OuterBoxStack}"
                                  Spacing="10">
 
-                            <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
+                        <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
-                            <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
+                        <StackLayout Margin="60,0,60,0">
+
+                            <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" 
+                                   HorizontalOptions="CenterAndExpand"/>
 
                             <Label Text="Item Name"
                            HorizontalOptions="Start"
@@ -51,11 +54,13 @@
                            HorizontalOptions="Start"
                            Style="{StaticResource LabelStyle}"/>
 
-                        <Entry Text="{Binding Data.Description}" 
+                            <Entry Text="{Binding Data.Description}" 
                             TextChanged="Entry_CheckNotEmpty"
                             Style="{StaticResource EntryStyle}"
                             WidthRequest="300"
                             HorizontalOptions="Start"/>
+
+                        </StackLayout>
 
                         <Grid
                     RowSpacing="1"
