@@ -184,13 +184,12 @@
                         </StackLayout>
                         <FlexLayout 
                             Margin="20,0,20,0"
-                         
                             BackgroundColor="LightGray"
-                        Padding="5"
-                        Wrap="Wrap"
-                        JustifyContent="SpaceAround"
-                        AlignContent="SpaceAround"
-                        x:Name="ItemBox">
+                            Padding="10"
+                            Wrap="Wrap"
+                            JustifyContent="SpaceAround"
+                            AlignContent="SpaceAround"
+                            x:Name="ItemBox">
                         </FlexLayout>
                         <StackLayout
                             Style="{StaticResource HorizontalStack}" 
