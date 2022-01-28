@@ -49,10 +49,15 @@
                                 Style="{StaticResource CenterMessageStyle}"/>
                 </StackLayout>
 
-
-                <StackLayout Style="{StaticResource CardImageTextBox}">
-
-                </StackLayout>
+                <Button 
+                        Text="Leaderboard"
+                        Clicked="ScoresButton_Clicked"
+                        WidthRequest="400"
+                        HeightRequest="60"
+                        FontSize="Title"
+                        TextColor="Black"
+                        CornerRadius="15"
+                        Margin="0,20,0,0"/>
 
             </StackLayout>
         </ScrollView>
