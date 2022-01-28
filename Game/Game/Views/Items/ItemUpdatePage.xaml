@@ -101,15 +101,13 @@
                                         x:Name="LocationPicker"/>
 
                                 <Label Grid.Row="3" Grid.Column="0"
-                        Text="Attribute" 
-                        Style="{StaticResource LabelStyle}"/>
+                                       Text="Attribute" 
+                                       Style="{StaticResource LabelStyle}"/>
 
                                 <Picker Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
-                        WidthRequest="300"
-                        HorizontalOptions="Start"
-                        ItemsSource="{x:Static local:AttributeEnumHelper.GetListCharacter}" 
-                        SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
-                        x:Name="AttributePicker"/>
+                                        ItemsSource="{x:Static local:AttributeEnumHelper.GetListCharacter}" 
+                                        SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
+                                        x:Name="AttributePicker"/>
 
                                 <Label Grid.Row="4" Grid.Column="0"
                            Text="Range"
