@@ -84,8 +84,7 @@
                                          WidthRequest="250">
                             <Frame OutlineColor="Black" Padding="1">
                                 <Grid ColumnSpacing="1" 
-                                RowSpacing="1"
-                                BackgroundColor="black">
+                                RowSpacing="1">
 
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"/>
