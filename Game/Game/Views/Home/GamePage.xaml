@@ -29,7 +29,7 @@
                     HorizontalOptions="Center">
                     <Button 
                         Text="Village"
-                        WidthRequest="150"
+                        WidthRequest="195"
                         HeightRequest="40"
                         FontSize="Subtitle"
                         CornerRadius="10"
@@ -37,7 +37,7 @@
 
                     <Button 
                         Text="Auto-Battle"
-                        WidthRequest="150"
+                        WidthRequest="195"
                         HeightRequest="40"
                         FontSize="Subtitle"
                         CornerRadius="10"
