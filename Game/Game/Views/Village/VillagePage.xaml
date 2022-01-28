@@ -30,9 +30,13 @@
                                 Style="{StaticResource ImageLargeStyle}"
                                 Clicked="MonstersButton_Clicked"/>
 
-                    <Label 
-                                Text="Monsters"
-                                Style="{StaticResource CenterMessageStyle}"/>
+                    <Button
+                        Text="Monsters"
+                        WidthRequest="200"
+                        HeightRequest="40"
+                        FontSize="Title"
+                        CornerRadius="10"
+                        Clicked="MonstersButton_Clicked"/>
 
                 </StackLayout>
 
@@ -49,6 +53,7 @@
                         FontSize="Title"
                         CornerRadius="10"
                         Clicked="ItemsButton_Clicked"/>
+                    
                 </StackLayout>
 
                 <Button 
