@@ -24,7 +24,18 @@
                         CornerRadius="15"
                         Margin="0,20,0,0"/>
 
-                <StackLayout Orientation="Horizontal">
+                <Grid 
+                    RowSpacing="1"
+                    ColumnSpacing="2"
+                    VerticalOptions="Center">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions> 
+                    
                     <Button
                         Text="Village"
                         WidthRequest="200"
@@ -40,7 +51,7 @@
                         FontSize="Title"
                         CornerRadius="10"
                         Clicked="AutobattleButton_Clicked"/>
-                </StackLayout>
+                </Grid>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
