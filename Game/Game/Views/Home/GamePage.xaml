@@ -24,34 +24,25 @@
                         CornerRadius="15"
                         Margin="0,20,0,0"/>
 
-                <Grid 
-                    RowSpacing="1"
-                    ColumnSpacing="2"
-                    VerticalOptions="Center">
-
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="auto" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="auto" />
-                    </Grid.ColumnDefinitions> 
-                    
-                    <Button Grid.Row="0" Grid.Column="0"
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="Center">
+                    <Button 
                         Text="Village"
-                        WidthRequest="200"
+                        WidthRequest="150"
                         HeightRequest="40"
-                        FontSize="Title"
+                        FontSize="Subtitle"
                         CornerRadius="10"
                         Clicked="VillageButton_Clicked"/>
 
-                    <Button Grid.Row="0" Grid.Column="1"
+                    <Button 
                         Text="Auto-Battle"
-                        WidthRequest="200"
+                        WidthRequest="150"
                         HeightRequest="40"
-                        FontSize="Title"
+                        FontSize="Subtitle"
                         CornerRadius="10"
                         Clicked="AutobattleButton_Clicked"/>
-                </Grid>
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
