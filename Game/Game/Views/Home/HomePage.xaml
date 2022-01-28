@@ -12,7 +12,7 @@
                 HorizontalOptions="Center">
                 <Button
                     WidthRequest="60" HeightRequest="60"
-                    Text="Setting"
+                    Text="Settings"
                     FontSize="Micro"
                     HorizontalOptions="End"
                     CornerRadius="50"/>
