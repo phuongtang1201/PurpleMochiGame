@@ -48,8 +48,7 @@
                                    Style="{StaticResource EntryStyle}"/>
 
                             <Label Text="Description" 
-                           HorizontalOptions="Start"
-                           Style="{StaticResource LabelStyle}"/>
+                                   Style="{StaticResource LabelStyle}"/>
 
                             <Entry Text="{Binding Data.Description}" 
                             TextChanged="Entry_CheckNotEmpty"
