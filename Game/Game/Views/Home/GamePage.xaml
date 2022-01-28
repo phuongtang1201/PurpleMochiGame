@@ -14,6 +14,16 @@
                        WidthRequest="300"
                        HorizontalOptions="CenterAndExpand" />
 
+                <Button 
+                        Text="Dungeon"
+                        Clicked="DungeonButton_Clicked"
+                        WidthRequest="400"
+                        HeightRequest="60"
+                        FontSize="Title"
+                        TextColor="Black"
+                        CornerRadius="15"
+                        Margin="0,20,0,0"/>
+
                 <StackLayout Style="{StaticResource CardImageTextBox}">
 
                     <ImageButton
