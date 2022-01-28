@@ -31,7 +31,7 @@
                                    HorizontalOptions="Center"/>
 
                             <Grid
-                                  RowSpacing="1"
+                                  RowSpacing="1" 
                                   ColumnSpacing="3"
                                   VerticalOptions="Center"
                                   WidthRequest="300"
@@ -45,7 +45,7 @@
                                 </Grid.ColumnDefinitions>
 
                                 <Label Grid.Row="0" Grid.Column="0" 
-                                       Text="Item Name:"
+                                       Text="Name:"
                                        Style="{StaticResource HeaderStyle}"/>
 
                                 <Label Grid.Row="0" Grid.Column="1" 
