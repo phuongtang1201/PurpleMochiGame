@@ -182,6 +182,13 @@
                             </StackLayout>
                         </StackLayout>
                         </StackLayout>
+                        <Label
+                            Text="Items Box"
+                            FontSize="Small"
+                            Padding="10,0,0,0"
+                            Margin="20,0,20,-10"
+                            BackgroundColor="LightGray"
+                            />
                         <FlexLayout 
                             Margin="20,0,20,0"
                             BackgroundColor="LightGray"
