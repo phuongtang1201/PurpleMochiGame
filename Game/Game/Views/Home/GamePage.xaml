@@ -32,6 +32,14 @@
                         FontSize="Title"
                         CornerRadius="10"
                         Clicked="VillageButton_Clicked"/>
+
+                    <Button
+                        Text="Auto-Battle"
+                        WidthRequest="200"
+                        HeightRequest="40"
+                        FontSize="Title"
+                        CornerRadius="10"
+                        Clicked="AutobattleButton_Clicked"/>
                 </StackLayout>
 
                 <StackLayout Style="{StaticResource CardImageTextBox}">
