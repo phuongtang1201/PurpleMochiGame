@@ -1,4 +1,5 @@
 ﻿using Game.GameRules;
+using Game.Services;
 
 namespace Game.Models
 {
@@ -18,10 +19,10 @@ namespace Game.Models
         {
             PlayerType = PlayerTypeEnum.Character;
             Guid = Id;
-            Name = "Elf";
-            Description = "Happy Elf";
+            Name = "Character Name";
+            Description = "Character Description";
             Level = 1;
-            ImageURI = "knight.png";
+            ImageURI = ItemService.DefaultImageURI;
             ExperienceTotal = 0;
             ExperienceRemaining = LevelTableHelper.LevelDetailsList[Level + 1].Experience - 1;
 
