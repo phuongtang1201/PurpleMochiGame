@@ -114,13 +114,11 @@
                                        Style="{StaticResource LabelStyle}"/>
 
                                 <Slider Grid.Row="4" Grid.Column="1" x:Name="RangeValue2"
-                            WidthRequest="100" Minimum="0" Maximum="9"
-                            Value="{Binding Data.Range, Mode=TwoWay}"  
-                            HorizontalOptions="CenterAndExpand"
-                            VerticalOptions="CenterAndExpand"
-                            MaximumTrackColor="Black"
-                            MinimumTrackColor="Black"
-                            ValueChanged = "Range_OnSliderValueChanged" />
+                                        WidthRequest="220" Minimum="0" Maximum="9"
+                                        Value="{Binding Data.Range, Mode=TwoWay}"  
+                                        MaximumTrackColor="Black"
+                                        MinimumTrackColor="Black"
+                                        ValueChanged = "Range_OnSliderValueChanged" />
 
                                 <Label Grid.Row="4" Grid.Column="2"
                             Text="{Binding Data.Range}" 
