@@ -347,7 +347,7 @@ namespace Game.Models
                     return "-";
                 }
 
-                return string.Format("1D {0}", data);
+                return data.ToString();
             }
         }
 
