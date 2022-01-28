@@ -172,14 +172,10 @@
                         <StackLayout
                             Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
-                            <Grid
-                    RowSpacing="1"
-                    ColumnSpacing="2"
-                    VerticalOptions="Center">
 
-                                <Button 
-                            WidthRequest="50"
-                            HeightRequest="50"
+                            <Button 
+                            WidthRequest="120"
+                            HeightRequest="40"
                             HorizontalOptions="Start"
                             Text="Cancel"
                             Clicked="Cancel_Clicked"/>
