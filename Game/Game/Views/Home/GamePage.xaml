@@ -36,7 +36,7 @@
                         <ColumnDefinition Width="auto" />
                     </Grid.ColumnDefinitions> 
                     
-                    <Button
+                    <Button 
                         Text="Village"
                         WidthRequest="200"
                         HeightRequest="40"
@@ -44,7 +44,7 @@
                         CornerRadius="10"
                         Clicked="VillageButton_Clicked"/>
 
-                    <Button
+                    <Button Grid.Row="0" Grid.Column="1"
                         Text="Auto-Battle"
                         WidthRequest="200"
                         HeightRequest="40"
