@@ -41,18 +41,6 @@
                         CornerRadius="10"
                         Clicked="AutobattleButton_Clicked"/>
                 </StackLayout>
-
-                <StackLayout Style="{StaticResource CardImageTextBox}">
-
-                    <ImageButton
-                        Source="item.png"
-                        Style="{StaticResource ImageLargeStyle}"
-                        Clicked="AutobattleButton_Clicked"/>
-
-                    <Label 
-                        Text="Auto Battle"
-                        Style="{StaticResource CenterMessageStyle}"/>
-                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
