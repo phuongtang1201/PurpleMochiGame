@@ -363,7 +363,10 @@ namespace Game.Models
                     return GetDamageLevelBonus.ToString();
                 }
 
-                return GetDamageLevelBonus.ToString() + " + " + GetDamageItemBonusString;
+                var data = GetDamageItemBonus;
+                data += GetDamageLevelBonus;
+
+                return data.ToString();
 
             }
         }
