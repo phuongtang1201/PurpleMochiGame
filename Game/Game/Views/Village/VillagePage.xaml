@@ -25,10 +25,8 @@
 
                 <StackLayout Style="{StaticResource CardImageTextBox}">
 
-                    <ImageButton
-                                Source="item.png"
-                                Style="{StaticResource ImageLargeStyle}"
-                                Clicked="MonstersButton_Clicked"/>
+                    <Image Source="item.png" Style="{StaticResource ImageLargeStyle}"
+                       HorizontalOptions="CenterAndExpand" />
 
                     <Button
                         Text="Monsters"
