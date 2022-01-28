@@ -41,8 +41,7 @@
                                    HorizontalOptions="Center"/>
 
                             <Label Text="Item Name"
-                           HorizontalOptions="Start"
-                           Style="{StaticResource LabelStyle}"/>
+                                   Style="{StaticResource LabelStyle}"/>
 
                             <Entry Text="{Binding Data.Name}" 
                             TextChanged="Entry_CheckNotEmpty"
