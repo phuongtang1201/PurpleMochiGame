@@ -205,8 +205,23 @@
                         AlignContent="SpaceAround"
                         x:Name="ItemBox">
                     </FlexLayout>
-
-                </StackLayout>
+                        <StackLayout
+                            Style="{StaticResource HorizontalStack}" 
+                            HorizontalOptions="Center">
+                            <Button
+                            Text="Cancel"
+                            Clicked="Delete_Clicked"
+                            Margin="10,0,0,0"
+                            WidthRequest="120"
+                            HeightRequest="40"/>
+                            <Button
+                            Text="Save"
+                            Clicked="Update_Clicked"
+                            WidthRequest="120"
+                            HeightRequest="40"
+                            Margin="20,0,0,0"/>
+                        </StackLayout>
+                    </StackLayout>
             </ScrollView>
         </StackLayout>
 
@@ -229,11 +244,13 @@
                     <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" Padding="2">
                         <Image x:Name="PopupItemImage" Style="{StaticResource ImageLargeStyle}"/>
 
-                        <Label x:Name="PopupItemName" Style="{StaticResource PopupItemTextStyle} " MaxLines="2" LineBreakMode="WordWrap" />
-                        <Label x:Name="PopupItemDescription" Style="{StaticResource PopupItemTextStyle}" MaxLines="2" LineBreakMode="WordWrap" />
+                        <Label x:Name="PopupItemName" Style="{StaticResource PopupItemTextStyle} " 
+                               MaxLines="2" LineBreakMode="WordWrap" />
+                        <Label x:Name="PopupItemDescription" Style="{StaticResource PopupItemTextStyle}" 
+                               MaxLines="2" LineBreakMode="WordWrap" />
 
                         <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label Text="Location : " Style="{StaticResource LabelStyle}" />
+                            <Label Text="Location: " Style="{StaticResource LabelStyle}" />
                             <Label x:Name="PopupItemLocation" Style="{StaticResource ValueStyle}" />
                         </StackLayout>
 
