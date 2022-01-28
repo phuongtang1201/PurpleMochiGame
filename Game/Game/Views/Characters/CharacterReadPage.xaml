@@ -190,10 +190,10 @@
                                        Text="{Binding Data.GetDamageLevelBonus}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="3" Grid.Row="6"
-                                       Text="{Binding Data.GetDamageItemBonus}" HorizontalOptions="Center"
+                                       Text="{Binding Data.GetDamageItemBonusString}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="4" Grid.Row="6"
-                                       Text="{Binding Data.GetDamageTotal}" HorizontalOptions="Center"
+                                       Text="{Binding Data.GetDamageTotalString}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                 </Grid>
                             </StackLayout>
