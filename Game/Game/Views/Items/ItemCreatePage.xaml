@@ -170,14 +170,14 @@
                             Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
 
-                            <Button Grid.Row="0" Grid.Column="0"
+                            <Button
                                     WidthRequest="120"
                                     HeightRequest="40"
                                     Text="Cancel"
                                     Margin="10,0,0,0"
                                     Clicked="Cancel_Clicked"/>
 
-                            <Button Grid.Row="0" Grid.Column="1" 
+                            <Button
                                     WidthRequest="120"
                                     HeightRequest="40"
                                     Text="Save"
