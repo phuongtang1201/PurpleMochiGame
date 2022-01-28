@@ -181,7 +181,9 @@
                     </StackLayout>
 
                         <FlexLayout 
-                        Padding="5"
+                        Margin="20,0,20,0"
+                        BackgroundColor="LightGray"
+                        Padding="10"
                         Wrap="Wrap"
                         JustifyContent="SpaceAround"
                         AlignContent="SpaceAround"
