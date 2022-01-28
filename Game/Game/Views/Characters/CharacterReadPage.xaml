@@ -82,7 +82,7 @@
                                          Padding="10,0,15,0"
                                          BackgroundColor="LightGray"
                                          WidthRequest="250">
-                            <Frame OutlineColor="Black" Padding="1">
+                            
                                 <Grid ColumnSpacing="1" 
                                 RowSpacing="1">
 
@@ -193,7 +193,7 @@
                                        Text="{Binding Data.GetDamageTotalString}"
                                        Style="{StaticResource ValueStyle}"/>
                                 </Grid>
-                            </Frame>
+                            
                         </StackLayout>
                     </StackLayout>
 
