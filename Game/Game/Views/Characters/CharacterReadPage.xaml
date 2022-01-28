@@ -76,7 +76,7 @@
                                        Style="{StaticResource ValueStyle}"/>
 
                             </Grid>
-                        
+                        </StackLayout>
 
                         <StackLayout
                                          Margin="20,0,20,0"
@@ -195,7 +195,6 @@
                                        Style="{StaticResource ValueStyle}"/>
                                 </Grid>
                             </StackLayout>
-                        </StackLayout>
 
 
                             <FlexLayout 
