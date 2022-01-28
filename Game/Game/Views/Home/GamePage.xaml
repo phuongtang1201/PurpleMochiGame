@@ -36,7 +36,7 @@
                         <ColumnDefinition Width="auto" />
                     </Grid.ColumnDefinitions> 
                     
-                    <Button 
+                    <Button Grid.Row="0" Grid.Column="0"
                         Text="Village"
                         WidthRequest="200"
                         HeightRequest="40"
