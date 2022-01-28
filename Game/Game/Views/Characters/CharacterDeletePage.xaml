@@ -6,11 +6,6 @@
              mc:Ignorable="d"
              x:Class="Game.Views.CharacterDeletePage"
              Title="{Binding Title}">
-    
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" IconImageSource="icon_cancel.png"/>
-        <ToolbarItem Text="Delete" Clicked="Delete_Clicked" IconImageSource="icon_delete.png"/>
-    </ContentPage.ToolbarItems>
 
     <ScrollView>
         <StackLayout Spacing="10">
@@ -109,7 +104,7 @@
                         Style="{StaticResource LabelStyle}"/>
 
                 <Label Grid.Row="4" Grid.Column="1"
-                                Text="{Binding Data.DefenseValue}" 
+                                Text="{Binding Data.Defense}" 
                                 Style="{StaticResource ValueStyle}"/>
 
                 <Label Grid.Row="5" Grid.Column="0"

@@ -2,16 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Game.Views.VillagePage"
-             >
+             Title="Village">
 
     <ContentPage.Content>
 
         <ScrollView Orientation="Vertical" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Padding="10">
 
-            <FlexLayout x:Name="flexLayout"
-                        Wrap="Wrap"
-                        JustifyContent="SpaceAround"
-                        AlignContent="SpaceAround">
+            <StackLayout Spacing="10">
 
                 <StackLayout Style="{StaticResource CardImageTextBox}">
 
@@ -28,45 +25,46 @@
 
                 <StackLayout Style="{StaticResource CardImageTextBox}">
 
-                    <ImageButton
-                                Source="item.png"
-                                Style="{StaticResource ImageLargeStyle}"
-                                Clicked="MonstersButton_Clicked"/>
+                    <Image Source="item.png" Style="{StaticResource ImageLargeStyle}"
+                       HorizontalOptions="CenterAndExpand" />
 
-                    <Label 
-                                Text="Monsters"
-                                Style="{StaticResource CenterMessageStyle}"/>
+                    <Button
+                        Text="Monsters"
+                        WidthRequest="200"
+                        HeightRequest="40"
+                        FontSize="Title"
+                        CornerRadius="10"
+                        Clicked="MonstersButton_Clicked"/>
 
                 </StackLayout>
 
 
                 <StackLayout Style="{StaticResource CardImageTextBox}">
 
-                    <ImageButton
-                                Source="item.png"
-                                Style="{StaticResource ImageLargeStyle}"
-                                Clicked="ItemsButton_Clicked"/>
-
-                    <Label 
-                                Text="Items"
-                                Style="{StaticResource CenterMessageStyle}"/>
+                    <Image Source="item.png" Style="{StaticResource ImageLargeStyle}"
+                       HorizontalOptions="CenterAndExpand" />
+                    
+                    <Button
+                        Text="Items"
+                        WidthRequest="200"
+                        HeightRequest="40"
+                        FontSize="Title"
+                        CornerRadius="10"
+                        Clicked="ItemsButton_Clicked"/>
+                    
                 </StackLayout>
 
+                <Button 
+                        Text="Leaderboard"
+                        Clicked="ScoresButton_Clicked"
+                        WidthRequest="400"
+                        HeightRequest="60"
+                        FontSize="Title"
+                        TextColor="Black"
+                        CornerRadius="15"
+                        Margin="0,20,0,0"/>
 
-                <StackLayout Style="{StaticResource CardImageTextBox}">
-
-                    <ImageButton
-                                Source="item.png"
-                                Style="{StaticResource ImageLargeStyle}"
-                                Clicked="ScoresButton_Clicked"/>
-
-                    <Label 
-                                Text="Scores"
-                                Style="{StaticResource CenterMessageStyle}"/>
-
-                </StackLayout>
-
-            </FlexLayout>
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
