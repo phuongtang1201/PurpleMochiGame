@@ -34,7 +34,7 @@
 
                             <Grid
                                   RowSpacing="1"
-                                  ColumnSpacing="2"
+                                  ColumnSpacing="3"
                                   VerticalOptions="Center">
 
                                 <Grid.RowDefinitions>
@@ -76,13 +76,14 @@
                                        Style="{StaticResource ValueStyle}"/>
 
                             </Grid>
+                        
 
-                            <StackLayout
+                        <StackLayout
                                          Margin="20,0,20,0"
                                          Padding="10,0,15,0"
                                          BackgroundColor="LightGray"
                                          WidthRequest="250">
-                            
+
                                 <Grid ColumnSpacing="5" 
                                       RowSpacing="2">
 
@@ -193,12 +194,11 @@
                                        Text="{Binding Data.GetDamageTotalString}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                 </Grid>
-                            
+                            </StackLayout>
                         </StackLayout>
-                    </StackLayout>
 
 
-                    <FlexLayout 
+                            <FlexLayout 
                         Margin="5"
                         Wrap="Wrap"
                         JustifyContent="SpaceAround"
