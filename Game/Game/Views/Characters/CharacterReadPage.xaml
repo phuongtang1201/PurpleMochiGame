@@ -114,83 +114,83 @@
                                        Style="{StaticResource LabelStyle}"/>
 
                                     <Label Grid.Column="0" Grid.Row="1"
-                                       Text="Attack" 
+                                       Text="Attack"
                                        Style="{StaticResource LabelStyle}"/>
                                     <Label Grid.Column="1" Grid.Row="1"
-                                       Text="{Binding Data.Attack}" 
+                                       Text="{Binding Data.Attack}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="2" Grid.Row="1"
-                                       Text="{Binding Data.GetAttackLevelBonus}" 
+                                       Text="{Binding Data.GetAttackLevelBonus}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="3" Grid.Row="1"
-                                       Text="{Binding Data.GetAttackItemBonus}"  
+                                       Text="{Binding Data.GetAttackItemBonus}"  HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="4" Grid.Row="1"
-                                       Text="{Binding Data.GetAttackTotal}"  
+                                       Text="{Binding Data.GetAttackTotal}"  HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
 
                                     <Label Grid.Column="0" Grid.Row="2"
                                        Text="Defense" 
                                        Style="{StaticResource LabelStyle}"/>
                                     <Label Grid.Column="1" Grid.Row="2"
-                                       Text="{Binding Data.Defense}" 
+                                       Text="{Binding Data.Defense}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="2" Grid.Row="2"
-                                       Text="{Binding Data.GetDefenseLevelBonus}" 
+                                       Text="{Binding Data.GetDefenseLevelBonus}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="3" Grid.Row="2"
-                                       Text="{Binding Data.GetDefenseItemBonus}"  
+                                       Text="{Binding Data.GetDefenseItemBonus}"  HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="4" Grid.Row="2"
-                                       Text="{Binding Data.GetDefenseTotal}"  
+                                       Text="{Binding Data.GetDefenseTotal}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
 
                                     <Label Grid.Column="0" Grid.Row="3"
                                        Text="Speed" 
                                        Style="{StaticResource LabelStyle}"/>
                                     <Label Grid.Column="1" Grid.Row="3"
-                                       Text="{Binding Data.Speed}" 
+                                       Text="{Binding Data.Speed}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="2" Grid.Row="3"
-                                       Text="{Binding Data.GetSpeedLevelBonus}" 
+                                       Text="{Binding Data.GetSpeedLevelBonus}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="3" Grid.Row="3"
-                                       Text="{Binding Data.GetSpeedItemBonus}"  
+                                       Text="{Binding Data.GetSpeedItemBonus}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="4" Grid.Row="3"
-                                       Text="{Binding Data.GetSpeedTotal}"  
+                                       Text="{Binding Data.GetSpeedTotal}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
 
                                     <Label Grid.Column="0" Grid.Row="4"
                                        Text="Max Health" 
                                        Style="{StaticResource LabelStyle}"/>
                                     <Label Grid.Column="1" Grid.Row="4"
-                                       Text="{Binding Data.MaxHealth}" 
+                                       Text="{Binding Data.MaxHealth}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="2" Grid.Row="4"
-                                       Text="{Binding Data.GetMaxHealthLevelBonus}" 
+                                       Text="{Binding Data.GetMaxHealthLevelBonus}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="3" Grid.Row="4"
-                                       Text="{Binding Data.GetMaxHealthItemBonus}"  
+                                       Text="{Binding Data.GetMaxHealthItemBonus}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="4" Grid.Row="4"
-                                       Text="{Binding Data.GetMaxHealthTotal}"  
+                                       Text="{Binding Data.GetMaxHealthTotal}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
 
                                     <Label Grid.Column="0" Grid.Row="5"
                                        Text="Damage" 
                                        Style="{StaticResource LabelStyle}"/>
                                     <Label Grid.Column="1" Grid.Row="5"
-                                       Text="-" 
+                                       Text="-" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="2" Grid.Row="5"
-                                       Text="{Binding Data.GetDamageLevelBonus}" 
+                                       Text="{Binding Data.GetDamageLevelBonus}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="3" Grid.Row="5"
-                                       Text="{Binding Data.GetDamageItemBonusString}"  
+                                       Text="{Binding Data.GetDamageItemBonusString}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Column="4" Grid.Row="5"
-                                       Text="{Binding Data.GetDamageTotalString}"
+                                       Text="{Binding Data.GetDamageTotalString}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                                 </Grid>
                             
