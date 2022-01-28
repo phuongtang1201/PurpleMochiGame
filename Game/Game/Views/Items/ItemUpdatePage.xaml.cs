@@ -110,7 +110,7 @@ namespace Game.Views
         /// <param name="e"></param>
         public void Range_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
         {
-            RangeValue.Text = String.Format("{0}", Convert.ToInt32(e.NewValue));
+            RangeValue.Text = string.Format("{0}", Convert.ToInt32(e.NewValue));
         }
 
         /// <summary>
@@ -120,7 +120,7 @@ namespace Game.Views
         /// <param name="e"></param>
         public void Value_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
         {
-            ValueValue.Text = String.Format("{0}", Convert.ToInt32(e.NewValue));
+            ValueValue.Text = string.Format("{0}", Convert.ToInt32(e.NewValue));
         }
 
         /// <summary>
@@ -130,7 +130,7 @@ namespace Game.Views
         /// <param name="e"></param>
         public void Damage_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
         {
-            DamageValue.Text = String.Format("{0}", Convert.ToInt32(e.NewValue));
+            DamageValue.Text = string.Format("{0}", Convert.ToInt32(e.NewValue));
         }
     }
 }
