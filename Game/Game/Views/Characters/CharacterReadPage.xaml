@@ -83,7 +83,7 @@
                                          BackgroundColor="LightGray"
                                          WidthRequest="250">
                             
-                                <Grid ColumnSpacing="3" 
+                                <Grid ColumnSpacing="5" 
                                       RowSpacing="2">
 
                                     <Grid.ColumnDefinitions>
