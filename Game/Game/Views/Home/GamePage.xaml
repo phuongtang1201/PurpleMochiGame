@@ -9,6 +9,10 @@
         <ScrollView Orientation="Vertical" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Padding="10">
 
             <StackLayout Spacing="40">
+                <Image Source="item.png"
+                       HeightRequest="300"
+                       WidthRequest="300"
+                       HorizontalOptions="CenterAndExpand" />
 
                 <StackLayout Style="{StaticResource CardImageTextBox}">
 
