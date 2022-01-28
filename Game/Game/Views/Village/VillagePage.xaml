@@ -8,7 +8,7 @@
 
         <ScrollView Orientation="Vertical" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Padding="10">
 
-            <StackLayout Spacing="10">
+            <StackLayout Spacing="40">
 
                 <StackLayout Style="{StaticResource CardImageTextBox}">
 
