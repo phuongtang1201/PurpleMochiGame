@@ -68,6 +68,13 @@
                                        Text="{Binding Data.Level}" 
                                        Style="{StaticResource ValueStyle}"/>
 
+                                <Label Grid.Row="3" Grid.Column="0"
+                                       Text="Max Health:" 
+                                       Style="{StaticResource HeaderStyle}"/>
+                                <Label Grid.Row="3" Grid.Column="1"
+                                       Text="{Binding Data.GetMaxHealthTotal}" 
+                                       Style="{StaticResource ValueStyle}"/>
+
                             </Grid>
 
                             
