@@ -31,9 +31,8 @@
 
                 <ScrollView>
                     <StackLayout Style="{StaticResource OuterBoxStack}"
-                Spacing="10">
+                                 Spacing="10">
 
-                        <StackLayout HorizontalOptions="Center">
                             <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
                             <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" HorizontalOptions="CenterAndExpand"/>
@@ -52,12 +51,11 @@
                            HorizontalOptions="Start"
                            Style="{StaticResource LabelStyle}"/>
 
-                            <Entry Text="{Binding Data.Description}" 
+                        <Entry Text="{Binding Data.Description}" 
                             TextChanged="Entry_CheckNotEmpty"
                             Style="{StaticResource EntryStyle}"
                             WidthRequest="300"
                             HorizontalOptions="Start"/>
-                        </StackLayout>
 
                         <Grid
                     RowSpacing="1"
