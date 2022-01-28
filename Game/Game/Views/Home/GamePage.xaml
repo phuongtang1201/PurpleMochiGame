@@ -25,7 +25,13 @@
                         Margin="0,20,0,0"/>
 
                 <StackLayout Orientation="Horizontal">
-                    
+                    <Button
+                        Text="Village"
+                        WidthRequest="200"
+                        HeightRequest="40"
+                        FontSize="Title"
+                        CornerRadius="10"
+                        Clicked="VillageButton_Clicked"/>
                 </StackLayout>
 
                 <StackLayout Style="{StaticResource CardImageTextBox}">
