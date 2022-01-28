@@ -169,32 +169,28 @@
                             </Grid>
                         </StackLayout>
 
-                        <Grid
+                        <StackLayout
+                            Style="{StaticResource HorizontalStack}" 
+                            HorizontalOptions="Center">
+                            <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
                     VerticalOptions="Center">
 
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto" />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="auto"/>
-                            </Grid.ColumnDefinitions>
-
-                            <Button Grid.Row="0" Grid.Column="0"
+                                <Button 
                             WidthRequest="50"
                             HeightRequest="50"
                             HorizontalOptions="Start"
                             Text="Cancel"
                             Clicked="Cancel_Clicked"/>
 
-                            <Button Grid.Row="0" Grid.Column="1"
+                                <Button 
                             WidthRequest="50"
                             HeightRequest="50"
                             HorizontalOptions="End"
                             Text="Save"
                             Clicked="Save_Clicked"/>
-                        </Grid>
+                        </StackLayout>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
