@@ -171,8 +171,8 @@ namespace Game.GameRules
             var datalist = new List<CharacterModel>()
             {
                 new CharacterModel {
-                    Name = "Mike",
-                    Description = "Archer Wannabe",
+                    Name = "Lisa",
+                    Description = "Brings sweetness to everyone by her desert",
                     Level = 1,
                     MaxHealth = 5,
                     ImageURI = "elf1.png",
@@ -186,8 +186,8 @@ namespace Game.GameRules
                 },
 
                 new CharacterModel {
-                    Name = "Tim",
-                    Description = "Hawk eye",
+                    Name = "John",
+                    Description = "Can make delicious cake.",
                     Level = 1,
                     MaxHealth = 5,
                     ImageURI = "elf2.png",
@@ -201,8 +201,8 @@ namespace Game.GameRules
                 },
 
                 new CharacterModel {
-                    Name = "Doug",
-                    Description = "Warrior in training",
+                    Name = "Sam",
+                    Description = "Go to get yummy Italian pizza.",
                     Level = 1,
                     MaxHealth = 8,
                     ImageURI = "elf4.png",
@@ -217,31 +217,31 @@ namespace Game.GameRules
 
                 new CharacterModel {
                     Name = "Sue",
-                    Description = "A strong Warrior",
+                    Description = "Brings premium sushi with line chef level",
                     Level = 4,
                     MaxHealth = 38,
                     ImageURI = "elf3.png"
                 },
 
                 new CharacterModel {
-                    Name = "Jea",
-                    Description = "Come and get me",
+                    Name = "Nick",
+                    Description = "Makes fresh vegan food.",
                     Level = 5,
                     MaxHealth = 43,
                     ImageURI = "elf5.png"
                 },
 
                 new CharacterModel {
-                    Name = "Darren",
-                    Description = "The Wiz",
+                    Name = "Bob",
+                    Description = "A pasta chef",
                     Level = 5,
                     MaxHealth = 43,
                     ImageURI = "elf6.png"
                 },
 
                 new CharacterModel {
-                    Name = "Dani",
-                    Description = "A powerfull Cleric",
+                    Name = "Jade",
+                    Description = "A gastropub chef",
                     Level = 5,
                     MaxHealth = 43,
                     ImageURI = "elf7.png"
