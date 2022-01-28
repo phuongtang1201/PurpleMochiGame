@@ -44,9 +44,13 @@
                                 Style="{StaticResource ImageLargeStyle}"
                                 Clicked="ItemsButton_Clicked"/>
 
-                    <Label 
-                                Text="Items"
-                                Style="{StaticResource CenterMessageStyle}"/>
+                    <Button
+                        Text="Items"
+                        WidthRequest="200"
+                        HeightRequest="40"
+                        FontSize="Title"
+                        CornerRadius="10"
+                        Clicked="ItemsButton_Clicked"/>
                 </StackLayout>
 
                 <Button 
