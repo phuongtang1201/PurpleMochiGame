@@ -34,7 +34,6 @@
                                   RowSpacing="1" 
                                   ColumnSpacing="3"
                                   VerticalOptions="Center"
-                                  WidthRequest="300"
                                   HorizontalOptions="Center">
 
                                 <Grid.RowDefinitions>
