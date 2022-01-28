@@ -13,16 +13,16 @@
                 <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}"/>
 
                 <Grid
-                    RowSpacing="1"
-                    ColumnSpacing="2"
-                    HorizontalOptions="Center">
+                    RowSpacing="2"
+                    ColumnSpacing="4"
+                    HorizontalOptions="CenterAndExpand">
 
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="100" />
-                        <ColumnDefinition Width="225" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
                     </Grid.ColumnDefinitions>
 
                     <BoxView Grid.ColumnSpan="2"
@@ -30,7 +30,7 @@
                              Color="LightGray" />
 
                     <Label Grid.Row="0" Grid.Column="0"
-                           Text="Name : " 
+                           Text="Name:" 
                            Style="{StaticResource LabelStyle}"/>
 
                     <Label Grid.Row="0" Grid.Column="1"
@@ -43,7 +43,7 @@
                              Color="LightGray" />
                     
                     <Label Grid.Row="1" Grid.Column="0"
-                           Text="Description : " 
+                           Text="Description:" 
                            Style="{StaticResource LabelStyle}"/>
 
                     <Label Grid.Row="1" Grid.Column="1"
@@ -54,17 +54,17 @@
             </StackLayout>
 
             <Grid
-                    RowSpacing="1"
-                    ColumnSpacing="2"
-                    HorizontalOptions="Center">
+                    RowSpacing="4"
+                    ColumnSpacing="8"
+                    HorizontalOptions="CenterAndExpand">
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="75" />
-                    <ColumnDefinition Width="250" />
-                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
                 </Grid.ColumnDefinitions>
 
                 <BoxView Grid.ColumnSpan="3"
