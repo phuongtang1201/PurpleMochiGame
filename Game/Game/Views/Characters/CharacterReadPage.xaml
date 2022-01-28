@@ -60,7 +60,7 @@
                                        Text="{Binding Data.Description}"
                                        LineBreakMode="WordWrap"
                                        Style="{StaticResource ValueStyle}"/>
-                                
+
                                 <Label Grid.Row="2" Grid.Column="0"
                                        Text="Level:" 
                                        Style="{StaticResource HeaderStyle}"/>
@@ -77,9 +77,11 @@
 
                             </Grid>
 
-                            
-
-                            <StackLayout Style="{StaticResource HorizontalStack}">
+                            <StackLayout
+                                         Margin="20,0,20,0"
+                                         Padding="10,0,15,0"
+                                         BackgroundColor="LightGray"
+                                         WidthRequest="250">
                             <Frame OutlineColor="Black" Padding="1">
                                 <Grid ColumnSpacing="1" 
                                 RowSpacing="1"
