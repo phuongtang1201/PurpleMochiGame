@@ -110,9 +110,8 @@
                                         x:Name="AttributePicker"/>
 
                                 <Label Grid.Row="4" Grid.Column="0"
-                           Text="Range"
-                           Style="{StaticResource LabelStyle}"
-                           HorizontalOptions="Start"/>
+                                       Text="Range"
+                                       Style="{StaticResource LabelStyle}"/>
 
                                 <Slider Grid.Row="4" Grid.Column="1" x:Name="RangeValue2"
                             WidthRequest="100" Minimum="0" Maximum="9"
