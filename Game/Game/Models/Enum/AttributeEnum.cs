@@ -95,13 +95,33 @@ namespace Game.Models
 
         /// <summary>
         /// Returns a list of strings of the enum for Attribute
-        /// Removes the unknown
+        /// Removes the unknown, changes MaxHealth/CurrentHealth to ToMessage string
         /// </summary>
         public static List<string> GetListCharacter
         {
             get
             {
-                var myList = Enum.GetNames(typeof(AttributeEnum)).ToList().Where(m => m.ToString().Equals("Unknown") == false).ToList();
+
+                Array itemNames = System.Enum.GetNames(typeof(AttributeEnum));
+                
+                List<string> myList = new List<string>();
+                for (int i = 0; i < itemNames.Length; i++)
+                {
+                    if (!itemNames.GetValue(i).ToString().Equals("Unknown"))
+                    {
+                        if (itemNames.GetValue(i).ToString().Equals("MaxHealth"))
+                        {
+                            var temp = AttributeEnum.MaxHealth;
+                            myList.Add(temp.ToMessage());
+                        } else if (itemNames.GetValue(i).ToString().Equals("CurrentHealth"))
+                        {
+                            var temp = AttributeEnum.CurrentHealth;
+                            myList.Add(temp.ToMessage());
+                        }
+                        else
+                            myList.Add(itemNames.GetValue(i).ToString());
+                    }
+                }
                 return myList;
             }
         }
