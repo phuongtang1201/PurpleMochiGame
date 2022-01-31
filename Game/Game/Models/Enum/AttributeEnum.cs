@@ -101,7 +101,13 @@ namespace Game.Models
         {
             get
             {
-                var myList = Enum.GetNames(typeof(AttributeEnum)).ToList().Where(m => m.ToString().Equals("Unknown") == false).ToList();
+                //var myList = Enum.GetNames(typeof(AttributeEnum)).ToList().Where(m => m.ToString().Equals("Unknown") == false).ToList();
+                var myList = new List<string>();
+                foreach (AttributeEnum attribute in Enum.GetValues(typeof(AttributeEnum)))
+                {
+                    if (attribute != AttributeEnum.Unknown)
+                        myList.Add(attribute.ToMessage());
+                }
                 return myList;
             }
         }
