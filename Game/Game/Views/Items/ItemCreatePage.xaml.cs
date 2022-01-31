@@ -174,6 +174,9 @@ namespace Game.Views
         /// <param name="e"></param>
         public void RangeDamage_OnPickerValueChanged(object sender, EventArgs e)
         {
+            RangeValue2.IsVisible = true;
+            DamageValue2.IsVisible = true;
+
             if (LocationPicker.SelectedIndex != 5)
             {
                 RangeValue.Text = string.Format("0");
@@ -182,11 +185,6 @@ namespace Game.Views
                 DamageValue2.Value = 0;
                 RangeValue2.IsVisible = false;
                 DamageValue2.IsVisible = false;
-            }
-            else
-            {
-                RangeValue2.IsVisible = true;
-                DamageValue2.IsVisible = true;
             }
         }
     }
