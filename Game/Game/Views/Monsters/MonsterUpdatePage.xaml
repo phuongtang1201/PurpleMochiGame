@@ -81,6 +81,10 @@
                                 <Label Grid.Row="1" Grid.Column="0"
                                     Text="Image" 
                                     Style="{StaticResource LabelStyle}"/>
+
+                                <StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource HorizontalStack}" 
+                                             HorizontalOptions="FillAndExpand">
+                                </StackLayout>
                             </Grid>
                         </StackLayout>
 
