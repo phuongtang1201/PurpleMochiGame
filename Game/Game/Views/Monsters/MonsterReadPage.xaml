@@ -179,6 +179,18 @@
                             <Label Grid.Column="0" Grid.Row="6"
                                     Text="Damage" 
                                     Style="{StaticResource LabelStyle}"/>
+                            <Label Grid.Column="1" Grid.Row="6"
+                                       Text="-" HorizontalOptions="Center"
+                                       Style="{StaticResource ValueStyle}"/>
+                            <Label Grid.Column="2" Grid.Row="6"
+                                       Text="{Binding Data.GetDamageLevelBonus}" HorizontalOptions="Center"
+                                       Style="{StaticResource ValueStyle}"/>
+                            <Label Grid.Column="3" Grid.Row="6"
+                                       Text="{Binding Data.GetDamageItemBonusString}" HorizontalOptions="Center"
+                                       Style="{StaticResource ValueStyle}"/>
+                            <Label Grid.Column="4" Grid.Row="6"
+                                       Text="{Binding Data.GetDamageTotalString}" HorizontalOptions="Center"
+                                       Style="{StaticResource ValueStyle}"/>
 
                         </Grid>
                     </StackLayout>
