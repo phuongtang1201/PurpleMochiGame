@@ -36,6 +36,13 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
+
+                    <Frame CornerRadius="5"
+                           BackgroundColor="LightGray"
+                           BorderColor="LightGray"
+                           WidthRequest="100">
+                        
+                    </Frame>
                 </Grid>
 
                 <Label Text="Score Name" 
