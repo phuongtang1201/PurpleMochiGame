@@ -99,8 +99,12 @@ namespace Game.Views
                 ViewModel.Data.ImageURI = new MonsterModel().ImageURI;
             }
 
-            MessagingCenter.Send(this, "Create", ViewModel.Data);
-            _ = await Navigation.PopModalAsync();
+            //Does not allow to save if either null Name or Description
+            if (!Warning_Not_Null_Message.IsVisible)
+            {
+                MessagingCenter.Send(this, "Create", ViewModel.Data);
+                _ = await Navigation.PopModalAsync();
+            }
         }
 
         /// <summary>
