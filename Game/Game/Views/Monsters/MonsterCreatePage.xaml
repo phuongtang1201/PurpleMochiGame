@@ -61,6 +61,19 @@
                             Margin="20,0,20,0"
                             Padding="10,0,15,0"
                             BackgroundColor="LightGray">
+
+                            <Grid
+                                RowSpacing="1"
+                                ColumnSpacing="2"
+                                VerticalOptions="Center">
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                            </Grid>
                         </StackLayout>
 
                         <StackLayout
