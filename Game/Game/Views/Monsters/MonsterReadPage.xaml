@@ -13,7 +13,7 @@
     </ContentPage.ToolbarItems>
 
     <AbsoluteLayout
-        HorizontalOptions="FillAndExpand"
+        HorizontalOptions="CenterAndExpand"
         VerticalOptions="FillAndExpand"
         >
 
@@ -28,6 +28,11 @@
 
                         <Label Text="Read Page" Style="{StaticResource HeaderStyle}"/>
 
+                    </StackLayout>
+                    <StackLayout Margin="60,0,60,0" >
+                        <Image Source="{Binding Data.ImageURI}" 
+                                Style="{StaticResource ImageLargeStyle}"
+                                HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
             </ScrollView>
