@@ -34,13 +34,13 @@
                 <Label Text="Score" 
                         Style="{StaticResource LabelStyle}"/>
 
-                <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                <StackLayout Style="{StaticResource HorizontalStack}">
 
                     <Label 
                         Text="{Binding Data.ScoreTotal, Mode=TwoWay}" 
                         x:Name="ScoreValue"
                         Style="{StaticResource ValueStyle}"
-                        Padding="20,0,0,0"
+                        Padding="20,0,20,0"
                         HorizontalOptions="Start"
                         HorizontalTextAlignment="Start"/>
 
