@@ -48,7 +48,9 @@
                                 TextChanged="Entry_CheckNotEmpty"/>
                         </StackLayout>
 
-                        <StackLayout>
+                        <StackLayout
+                            Style="{StaticResource HorizontalStack}" 
+                            HorizontalOptions="Center">
 
                             <Button
                             Text="Cancel"
