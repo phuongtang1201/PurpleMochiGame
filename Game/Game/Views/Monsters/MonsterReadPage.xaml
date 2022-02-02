@@ -99,6 +99,10 @@
                             <Label Grid.Column="0" Grid.Row="1"
                                     Text="Attribute" 
                                     Style="{StaticResource LabelStyle}"/>
+                            <Label Grid.Column="1" Grid.Row="1"
+                                    Text="Base Value" 
+                                    Style="{StaticResource LabelStyle}"/>
+                           
                         </Grid>
                     </StackLayout>
 
