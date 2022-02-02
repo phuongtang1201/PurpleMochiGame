@@ -56,6 +56,35 @@ namespace Game.Views
 
             return true;
         }
+        /// <summary>
+        /// Check the entry box to guarantee entering a not null value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Entry_CheckNotEmpty(object sender, ValueChangedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(ViewModel.Data.Name))
+            {
+                Warning_Not_Null_Message.IsVisible = true;
+                return;
+            }
+
+            if (!string.IsNullOrEmpty(ViewModel.Data.Name))
+            {
+                Warning_Not_Null_Message.IsVisible = false;
+            }
+
+            if (string.IsNullOrEmpty(ViewModel.Data.Description))
+            {
+                Warning_Not_Null_Message.IsVisible = true;
+                return;
+            }
+
+            if (!string.IsNullOrEmpty(ViewModel.Data.Description))
+            {
+                Warning_Not_Null_Message.IsVisible = false;
+            }
+        }
 
         /// <summary>
         /// Save by calling for Create
