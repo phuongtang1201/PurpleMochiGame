@@ -132,7 +132,7 @@ namespace Game.Views
         /// <param name="e"></param>
         public void Defense_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
         {
-            // DefenseValue.Text = String.Format("{0}", Convert.ToInt32(e.NewValue));
+            DefenseValue.Text = String.Format("{0}", Convert.ToInt32(e.NewValue));
         }
 
         ///// <summary>
