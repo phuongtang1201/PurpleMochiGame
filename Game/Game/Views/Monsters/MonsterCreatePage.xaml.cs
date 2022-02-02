@@ -124,7 +124,7 @@ namespace Game.Views
         /// <param name="e"></param>
         public void Attack_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
         {
-            
+            AttackValue.Text = String.Format("{0}", e.NewValue);
         }
 
         ///// <summary>
