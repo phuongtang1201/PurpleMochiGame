@@ -49,16 +49,19 @@
                             Style="{StaticResource LabelStyle}"/>
                     </Frame>
 
-                    <Frame CornerRadius="5"
+                    <Frame Grid.Row="1" Grid.Column="0"
+                           CornerRadius="5"
                            BackgroundColor="orange"
                            BorderColor="orange"
-                           WidthRequest="200">
+                           WidthRequest="300">
 
+                        <Entry Grid.Row="1" Grid.Column="0"
+                            Text="{Binding Data.Name}" 
+                            Style="{StaticResource EntryStyle}"/>
                     </Frame>
                 </Grid>
 
-                <Entry Text="{Binding Data.Name}" 
-                        Style="{StaticResource EntryStyle}"/>
+                
 
                 <Label Text="Score" 
                         Style="{StaticResource LabelStyle}"/>
