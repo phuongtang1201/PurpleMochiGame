@@ -117,6 +117,16 @@ namespace Game.Views
             _ = await Navigation.PopModalAsync();
         }
 
+        /// <summary>
+        /// Catch the change to the Slider for Attack
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Attack_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            
+        }
+
         ///// <summary>
         ///// 
         ///// Randomize the Monster
