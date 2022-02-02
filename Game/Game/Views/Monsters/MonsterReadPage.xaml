@@ -108,6 +108,9 @@
                             <Label Grid.Column="3" Grid.Row="1"
                                     Text="Item Bonus" 
                                     Style="{StaticResource LabelStyle}"/>
+                            <Label Grid.Column="4" Grid.Row="1"
+                                       Text="Total Value" 
+                                       Style="{StaticResource LabelStyle}"/>
                         </Grid>
                     </StackLayout>
 
