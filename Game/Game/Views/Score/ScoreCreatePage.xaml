@@ -47,6 +47,13 @@
                             Text="Score Name" 
                             Style="{StaticResource LabelStyle}"/>
                     </Frame>
+
+                    <Frame CornerRadius="5"
+                           BackgroundColor="orange"
+                           BorderColor="orange"
+                           WidthRequest="200">
+
+                    </Frame>
                 </Grid>
 
                 <Entry Text="{Binding Data.Name}" 
