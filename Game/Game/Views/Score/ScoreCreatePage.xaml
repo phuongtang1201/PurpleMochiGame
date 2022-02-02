@@ -41,12 +41,13 @@
                            BackgroundColor="LightGray"
                            BorderColor="LightGray"
                            WidthRequest="100">
-                        
+
+                        <Label Grid.Row="0" Grid.Column="0"
+                            HorizontalOptions="Center"
+                            Text="Score Name" 
+                            Style="{StaticResource LabelStyle}"/>
                     </Frame>
                 </Grid>
-
-                <Label Text="Score Name" 
-                        Style="{StaticResource LabelStyle}"/>
 
                 <Entry Text="{Binding Data.Name}" 
                         Style="{StaticResource EntryStyle}"/>
