@@ -121,6 +121,8 @@
                                     HorizontalOptions="End"
                                     HorizontalTextAlignment="End"/>
                                 </StackLayout>
+
+                                <Label Text="Defense" Style="{StaticResource LabelStyle}"/>
                             </StackLayout>
                         </StackLayout>
 
