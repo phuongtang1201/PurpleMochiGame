@@ -33,6 +33,8 @@
                     <StackLayout Style="{StaticResource OuterBoxStack}" Spacing="10">
 
                         <StackLayout Margin="60,0,60,0">
+                            <Image Source="{Binding Data.ImageURI, Mode=TwoWay}" Style="{StaticResource ImageLargeStyle}" 
+                                   HorizontalOptions="Center"/>
                         </StackLayout>
                     </StackLayout>
                 </ScrollView>
