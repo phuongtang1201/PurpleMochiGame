@@ -61,6 +61,13 @@
                             Margin="10,0,0,0"
                             WidthRequest="120"
                             HeightRequest="40"/>
+
+                    <Button
+                            Text="Create"
+                            Clicked="Save_Clicked"
+                            WidthRequest="120"
+                            HeightRequest="40"
+                            Margin="20,0,0,0"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
