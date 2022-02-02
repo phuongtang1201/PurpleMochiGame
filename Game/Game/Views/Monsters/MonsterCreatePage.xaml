@@ -35,6 +35,10 @@
                         <StackLayout Margin="60,0,60,0">
                             <Image Source="{Binding Data.ImageURI, Mode=TwoWay}" Style="{StaticResource ImageLargeStyle}" 
                                    HorizontalOptions="Center"/>
+
+                            <Label 
+                                Text="Name" 
+                                Style="{StaticResource LabelStyle}"/>
                         </StackLayout>
                     </StackLayout>
                 </ScrollView>
