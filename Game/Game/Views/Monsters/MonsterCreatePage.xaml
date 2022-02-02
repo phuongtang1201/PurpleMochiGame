@@ -84,6 +84,10 @@
 
                                 <StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource HorizontalStack}" 
                                              HorizontalOptions="FillAndExpand">
+
+                                    <Image 
+                                        Source="{Binding Data.ImageURI, Mode=TwoWay}"
+                                        Style="{StaticResource ImageSmallStyle}"/>
                                 </StackLayout>
                             </Grid>
                         </StackLayout>
