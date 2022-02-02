@@ -96,7 +96,9 @@
                             <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5"
                                     Text="Statistics"
                                     Style="{StaticResource HeaderStyle}"/>
-                            
+                            <Label Grid.Column="0" Grid.Row="1"
+                                    Text="Attribute" 
+                                    Style="{StaticResource LabelStyle}"/>
                         </Grid>
                     </StackLayout>
 
