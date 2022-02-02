@@ -52,9 +52,15 @@
                         ValueChanged="Score_OnSliderValueChanged"/>
                 </StackLayout>
 
-                <StackLayout
-                            Style="{StaticResource HorizontalStack}" 
+                <StackLayout Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
+
+                    <Button
+                            Text="Cancel"
+                            Clicked="Cancel_Clicked"
+                            Margin="10,0,0,0"
+                            WidthRequest="120"
+                            HeightRequest="40"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
