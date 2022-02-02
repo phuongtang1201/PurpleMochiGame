@@ -60,19 +60,21 @@
                             Style="{StaticResource EntryStyle}"/>
                     </Frame>
 
-                    <Frame Grid.Row="0" Grid.Column="0"
+                    <Frame Grid.Row="2" Grid.Column="0"
                            CornerRadius="5"
                            BackgroundColor="LightGray"
                            BorderColor="LightGray"
                            WidthRequest="100">
 
+                        <Label Grid.Row="2" Grid.Column="0"
+                            Text="Score" 
+                            Style="{StaticResource LabelStyle}"/>
                     </Frame>
                 </Grid>
 
                 
 
-                <Label Text="Score" 
-                        Style="{StaticResource LabelStyle}"/>
+                
 
                 <StackLayout Style="{StaticResource HorizontalStack}">
 
