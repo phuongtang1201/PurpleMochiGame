@@ -60,6 +60,12 @@
                                     Text="{Binding Data.Description}"
                                     LineBreakMode="WordWrap"
                                     Style="{StaticResource ValueStyle}"/>
+                            <Label Grid.Row="2" Grid.Column="0"
+                                    Text="Level:" 
+                                    Style="{StaticResource HeaderStyle}"/>
+                            <Label Grid.Row="2" Grid.Column="1"
+                                    Text="{Binding Data.Level}" 
+                                    Style="{StaticResource ValueStyle}"/>
                         </Grid>
                     </StackLayout>
                 </StackLayout>
