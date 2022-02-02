@@ -160,6 +160,10 @@
                                     Text="{Binding Data.GetSpeedTotal}" HorizontalOptions="Center"
                                     Style="{StaticResource ValueStyle}"/>
 
+                            <Label Grid.Column="0" Grid.Row="5"
+                                    Text="Max Health" 
+                                    Style="{StaticResource LabelStyle}"/>
+
                         </Grid>
                     </StackLayout>
 
