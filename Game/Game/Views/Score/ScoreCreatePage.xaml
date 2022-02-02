@@ -30,6 +30,9 @@
 
                 <Entry Text="{Binding Data.Name}" 
                         Style="{StaticResource EntryStyle}"/>
+
+                <Label Text="Score" 
+                        Style="{StaticResource LabelStyle}"/>
                 <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
@@ -44,9 +47,7 @@
 
                     
 
-                    <Label Grid.Row="1" Grid.Column="0"
-                        Text="Score" 
-                        Style="{StaticResource LabelStyle}"/>
+                    
                     
                     <Entry Grid.Row="1" Grid.Column="1"
                         Text="{Binding Data.ScoreTotal}" 
