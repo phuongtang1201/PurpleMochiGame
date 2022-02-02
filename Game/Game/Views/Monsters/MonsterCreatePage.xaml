@@ -99,6 +99,9 @@
                                     Style="{StaticResource LabelStyle}"/>
                                 
                             </Grid>
+
+                            <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
+                            </StackLayout>
                         </StackLayout>
 
                         <StackLayout
