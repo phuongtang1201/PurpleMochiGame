@@ -127,6 +127,16 @@ namespace Game.Views
             AttackValue.Text = String.Format("{0}", Convert.ToInt32(e.NewValue));
         }
 
+        /// <summary>
+        /// Catch the change to the Slider for Defense
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Defense_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            
+        }
+
         ///// <summary>
         ///// 
         ///// Randomize the Monster
