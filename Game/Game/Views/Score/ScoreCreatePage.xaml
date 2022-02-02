@@ -34,9 +34,11 @@
                 <Label Text="Score" 
                         Style="{StaticResource LabelStyle}"/>
 
-                <Entry Text="{Binding Data.ScoreTotal}" 
+                <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                   
+                    <Entry Text="{Binding Data.ScoreTotal}" 
                         Style="{StaticResource EntryStyle}"/>
-                
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
