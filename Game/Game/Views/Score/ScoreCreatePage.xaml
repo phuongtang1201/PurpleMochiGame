@@ -36,25 +36,7 @@
 
                 <Entry Text="{Binding Data.ScoreTotal}" 
                         Style="{StaticResource EntryStyle}"/>
-                <Grid
-                    RowSpacing="1"
-                    ColumnSpacing="2"
-                    VerticalOptions="Center">
-
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="auto" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="auto"/>
-                    </Grid.ColumnDefinitions>
-
-
-
-
-
-                    
-
-                </Grid>
+                
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
