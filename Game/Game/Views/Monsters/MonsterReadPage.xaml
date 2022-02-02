@@ -105,6 +105,9 @@
                             <Label Grid.Column="2" Grid.Row="1"
                                     Text="Level Bonus" 
                                     Style="{StaticResource LabelStyle}"/>
+                            <Label Grid.Column="3" Grid.Row="1"
+                                    Text="Item Bonus" 
+                                    Style="{StaticResource LabelStyle}"/>
                         </Grid>
                     </StackLayout>
 
