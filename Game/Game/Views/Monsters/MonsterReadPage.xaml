@@ -176,6 +176,10 @@
                                        Text="{Binding Data.GetMaxHealthTotal}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
 
+                            <Label Grid.Column="0" Grid.Row="6"
+                                    Text="Damage" 
+                                    Style="{StaticResource LabelStyle}"/>
+
                         </Grid>
                     </StackLayout>
 
