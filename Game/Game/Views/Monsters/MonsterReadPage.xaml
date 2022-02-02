@@ -144,6 +144,10 @@
                                     Text="{Binding Data.GetDefenseTotal}" HorizontalOptions="Center"
                                     Style="{StaticResource ValueStyle}"/>
 
+                            <Label Grid.Column="0" Grid.Row="4"
+                                    Text="Speed" 
+                                    Style="{StaticResource LabelStyle}"/>
+
                         </Grid>
                     </StackLayout>
 
