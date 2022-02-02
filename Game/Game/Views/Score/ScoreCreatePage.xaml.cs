@@ -62,5 +62,15 @@ namespace Game.Views
         {
             _ = await Navigation.PopModalAsync();
         }
+
+        /// <summary>
+        /// Catch the change to the Slider for Score
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Score_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            ScoreValue.Text = String.Format("{0}", Convert.ToInt32(e.NewValue));
+        }
     }
 }
