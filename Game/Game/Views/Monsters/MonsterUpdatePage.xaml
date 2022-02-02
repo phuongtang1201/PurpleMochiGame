@@ -46,6 +46,10 @@
                                 Text="{Binding Data.Name, Mode=TwoWay}" 
                                 Style="{StaticResource EntryStyle}"
                                 TextChanged="Entry_CheckNotEmpty"/>
+
+                            <Label 
+                                Text="Description" 
+                                Style="{StaticResource LabelStyle}"/>
                         </StackLayout>
 
                         <StackLayout
