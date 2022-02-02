@@ -127,6 +127,10 @@
                             <Label Grid.Column="4" Grid.Row="2"
                                     Text="{Binding Data.GetAttackTotal}"  HorizontalOptions="Center"
                                     Style="{StaticResource ValueStyle}"/>
+
+                            <Label Grid.Column="0" Grid.Row="3"
+                                    Text="Defense" 
+                                    Style="{StaticResource LabelStyle}"/>
                         </Grid>
                     </StackLayout>
 
