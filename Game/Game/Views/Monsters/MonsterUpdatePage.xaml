@@ -35,6 +35,8 @@
                         <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
                         <StackLayout Margin="60,0,60,0">
+                            <Image Source="{Binding Data.ImageURI, Mode=TwoWay}" Style="{StaticResource ImageLargeStyle}" 
+                                   HorizontalOptions="Center"/>
                         </StackLayout>
 
                         <StackLayout
