@@ -51,6 +51,11 @@
                         MinimumTrackColor="Black"                           
                         ValueChanged="Score_OnSliderValueChanged"/>
                 </StackLayout>
+
+                <StackLayout
+                            Style="{StaticResource HorizontalStack}" 
+                            HorizontalOptions="Center">
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
