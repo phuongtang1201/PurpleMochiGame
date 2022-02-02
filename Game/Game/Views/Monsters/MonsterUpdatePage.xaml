@@ -135,6 +135,8 @@
                                     HorizontalOptions="End"
                                     HorizontalTextAlignment="End"/>
                                 </StackLayout>
+
+                                <Label Text="Speed" Style="{StaticResource LabelStyle}"/>
                             </StackLayout>
                         </StackLayout>
 
