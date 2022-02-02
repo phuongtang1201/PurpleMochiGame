@@ -105,6 +105,13 @@
                                 <Label Text="Attack" Style="{StaticResource LabelStyle}"/>
 
                                 <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+
+                                    <Slider
+                                    Value="{Binding Data.Attack, Mode=TwoWay}" WidthRequest="220"
+                                    Minimum="0" Maximum="9"
+                                    MaximumTrackColor="Black"
+                                    MinimumTrackColor="Black"
+                                    ValueChanged="Attack_OnSliderValueChanged"/>
                                 </StackLayout>
                             </StackLayout>
                         </StackLayout>
