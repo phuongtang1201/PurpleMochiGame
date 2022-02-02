@@ -96,6 +96,9 @@
                             </Grid>
 
                             <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
+                                
+                                <Label Text="Attack" Style="{StaticResource LabelStyle}"/>
+
                             </StackLayout>
                         </StackLayout>
 
