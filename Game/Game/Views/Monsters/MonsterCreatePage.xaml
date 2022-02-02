@@ -47,6 +47,10 @@
                                 Style="{StaticResource EntryStyle}"
                                 TextChanged="Entry_CheckNotEmpty"/>
                         </StackLayout>
+
+                        <StackLayout>
+                            
+                        </StackLayout>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
