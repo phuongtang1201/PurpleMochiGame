@@ -35,9 +35,14 @@
                         Style="{StaticResource LabelStyle}"/>
 
                 <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
-                   
-                    <Entry Text="{Binding Data.ScoreTotal}" 
-                        Style="{StaticResource EntryStyle}"/>
+
+                    <Label 
+                                    Text="{Binding Data.ScoreTotal, Mode=TwoWay}" 
+                                    x:Name="ScoreValue"
+                                    Style="{StaticResource ValueStyle}"
+                                    Padding="20,0,0,0"
+                                    HorizontalOptions="Start"
+                                    HorizontalTextAlignment="Start"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
