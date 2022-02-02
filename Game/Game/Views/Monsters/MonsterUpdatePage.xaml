@@ -41,6 +41,11 @@
                             <Label 
                                 Text="Name" 
                                 Style="{StaticResource LabelStyle}"/>
+
+                            <Entry 
+                                Text="{Binding Data.Name, Mode=TwoWay}" 
+                                Style="{StaticResource EntryStyle}"
+                                TextChanged="Entry_CheckNotEmpty"/>
                         </StackLayout>
 
                         <StackLayout
