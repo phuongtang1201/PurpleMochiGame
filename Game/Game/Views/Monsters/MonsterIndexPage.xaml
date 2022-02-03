@@ -57,6 +57,17 @@
                                        Style="{StaticResource ListStyle}"
                                        FontSize="Micro"/>
 
+                                    <StackLayout Grid.Column="1" Grid.Row="2"
+                                    Orientation="Horizontal">
+
+                                        <Label Text="{Binding Path=Attack, StringFormat= '{0:G} Attack'}" 
+                                        Style="{StaticResource ListStyle}"/>
+
+                                        <Label Text="{Binding Path=MaxHealth, StringFormat= '{0:G} hp'}" 
+                                        Style="{StaticResource ListStyle}"/>
+
+                                    </StackLayout>
+
 
                                 </Grid>
                             </Frame>
