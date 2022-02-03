@@ -52,7 +52,7 @@ namespace Game.Views
             await Navigation.PushAsync(new ScoreReadPage(new GenericViewModel<ScoreModel>(data)));
 
             // Manually deselect item.
-            DataListView.SelectedItem = null;
+            ScoresListView.SelectedItem = null;
         }
 
         /// <summary>
