@@ -91,6 +91,42 @@
                             <Label Text="{Binding Data.GetSpeedTotal}"
                                    Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
+                        <Grid
+                         RowSpacing="1"
+                         ColumnSpacing="2"
+                         HorizontalOptions="Center">    
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="100" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                           Text="Are you sure you want to delete this character?" 
+                           LineBreakMode="WordWrap"
+                           Style="{StaticResource MessageStyle}"/>
+
+                            <Button Grid.Row="1" Grid.Column="0"
+                                Text="Yes" 
+                                Clicked="Delete_Clicked" 
+                                HorizontalOptions="Center"
+                                FontSize="Medium"
+                                BorderWidth="1" 
+                                BorderColor="black">
+                            </Button>
+
+                            <Button Grid.Row="1" Grid.Column="1"
+                                Text="No" 
+                                Clicked="Cancel_Clicked" 
+                                HorizontalOptions="Center"
+                                FontSize="Medium"
+                                BorderWidth="1" 
+                                BorderColor="black">
+                            </Button>
+                        </Grid>
 
 
 
