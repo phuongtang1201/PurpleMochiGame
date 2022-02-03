@@ -62,8 +62,7 @@
                         </StackLayout>
                         <Frame Margin="20,0,20,0" 
                                  BackgroundColor="LightGray"
-                           BorderColor="LightGray"
-                           CornerRadius="5"
+                           OutlineColor="LightGray"
                                  Padding="10,0,15,0">
                             <StackLayout>
                                 <Grid
