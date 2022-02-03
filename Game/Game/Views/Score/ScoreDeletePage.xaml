@@ -25,8 +25,7 @@
 
                             <Frame
                            BackgroundColor="LightGray"
-                           OutlineColor="LightGray"
-                           WidthRequest="100">
+                           OutlineColor="LightGray">
 
                                 <Label 
                             Text="{Binding Data.Name}" 
