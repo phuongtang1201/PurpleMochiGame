@@ -112,7 +112,7 @@
                         Style="{StaticResource LabelStyle}"/>
 
                 <Label Grid.Row="5" Grid.Column="1"
-                                Text="{Binding Data.Speed}" 
+                                Text="{Binding Data.GetSpeedTotal}" 
                                 Style="{StaticResource ValueStyle}"/>
             </Grid>
             <Grid
