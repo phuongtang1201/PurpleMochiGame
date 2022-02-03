@@ -65,9 +65,8 @@
                             Margin="20,0,20,0"
                             Padding="10,0,15,0"
                             BackgroundColor="LightGray"
-                            BorderColor="LightGray"
-                            WidthRequest="250"
-                            CornerRadius="5">
+                            OutlineColor="LightGray"
+                            WidthRequest="250">
                             <StackLayout>
 
                             <Label Text="Statistics"
