@@ -80,6 +80,11 @@
 
                             <Label Text="{Binding Data.GetAttackTotal}"
                                    Style="{StaticResource ValueStyle}"/>
+                            <Label Text="Defense:"
+                                   Style="{StaticResource LabelStyle}"/>
+
+                            <Label Text="{Binding Data.GetDefenseTotal}"
+                                   Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
 
 
