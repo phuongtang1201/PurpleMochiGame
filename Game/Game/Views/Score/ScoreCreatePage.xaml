@@ -70,6 +70,14 @@
                             Text="Score" 
                             Style="{StaticResource LabelStyle}"/>
                     </Frame>
+
+                    <Frame Grid.Row="3" Grid.Column="0"
+                           CornerRadius="5"
+                           BackgroundColor="orange"
+                           BorderColor="orange"
+                           WidthRequest="30">
+
+                    </Frame>
                 </Grid>
 
                 
