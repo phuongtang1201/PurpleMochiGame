@@ -22,6 +22,17 @@
                                  Spacing="10">
 
                         <StackLayout Margin="60,0,60,0" >
+
+                            <Frame CornerRadius="5"
+                           BackgroundColor="LightGray"
+                           BorderColor="LightGray"
+                           WidthRequest="100">
+
+                                <Label 
+                            Text="{Binding Data.Name}" 
+                            Style="{StaticResource LabelStyle}"/>
+                            </Frame>
+                            
                             <StackLayout Style="{StaticResource HorizontalStack}">
                                 <Label 
                        Text="Name : " 
