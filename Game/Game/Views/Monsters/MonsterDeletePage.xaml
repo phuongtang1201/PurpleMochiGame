@@ -57,6 +57,17 @@
                                        Style="{StaticResource ValueStyle}"/>
                             </Grid>
                         </StackLayout>
+                        <StackLayout
+                            Margin="20,0,20,0"
+                            Padding="10,0,15,0"
+                            BackgroundColor="LightGray"
+                            WidthRequest="250">
+
+                            <Label Text="Statistics"
+                                       Style="{StaticResource HeaderStyle}"/>
+                        </StackLayout>
+
+
 
                     </StackLayout>
                 </ScrollView>
