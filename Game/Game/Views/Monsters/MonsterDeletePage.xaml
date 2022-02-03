@@ -85,6 +85,11 @@
 
                             <Label Text="{Binding Data.GetDefenseTotal}"
                                    Style="{StaticResource ValueStyle}"/>
+                            <Label Text="Speed:"
+                                   Style="{StaticResource LabelStyle}"/>
+
+                            <Label Text="{Binding Data.GetSpeedTotal}"
+                                   Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
 
 
