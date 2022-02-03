@@ -21,7 +21,7 @@
                     <StackLayout Style="{StaticResource OuterBoxStack}"
                                  Spacing="10">
 
-                        <StackLayout>
+                        <StackLayout Margin="60,0,60,0" >
                             <StackLayout Style="{StaticResource HorizontalStack}">
                                 <Label 
                        Text="Name : " 
