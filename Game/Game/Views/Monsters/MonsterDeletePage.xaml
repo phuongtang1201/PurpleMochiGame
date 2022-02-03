@@ -6,9 +6,8 @@
              mc:Ignorable="d"
              x:Class="Game.Views.MonsterDeletePage"
              Title="{Binding Title}">
-    
+
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" IconImageSource="icon_cancel.png"/>
         <ToolbarItem Text="Delete" Clicked="Delete_Clicked" IconImageSource="icon_delete.png"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
@@ -94,7 +93,7 @@
                         <Grid
                          RowSpacing="1"
                          ColumnSpacing="2"
-                         HorizontalOptions="Center">    
+                         HorizontalOptions="Center">
 
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="auto" />
@@ -127,9 +126,7 @@
                                 BorderColor="black">
                             </Button>
                         </Grid>
-
-
-
+                        
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
