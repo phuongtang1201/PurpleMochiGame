@@ -23,14 +23,15 @@
 
                         <StackLayout Margin="60,0,60,0" >
 
-                            <Frame CornerRadius="5"
+                            <Frame
                            BackgroundColor="LightGray"
-                           BorderColor="LightGray"
+                           OutlineColor="LightGray"
                            WidthRequest="100">
 
                                 <Label 
                             Text="{Binding Data.Name}" 
-                            Style="{StaticResource LabelStyle}"/>
+                            Style="{StaticResource LabelStyle}"
+                                    />
                             </Frame>
                             
                             <StackLayout Style="{StaticResource HorizontalStack}">
