@@ -25,52 +25,37 @@
             <StackLayout Style="{StaticResource OuterBoxStack}"
                 Spacing="10">
 
-                <Grid
-                    RowSpacing="1"
-                    ColumnSpacing="2"
-                    VerticalOptions="Center">
+                <StackLayout Orientation="Vertical">
 
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="auto" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="auto"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Frame Grid.Row="0" Grid.Column="0"
-                           CornerRadius="5"
+                    <Frame CornerRadius="5"
                            BackgroundColor="LightGray"
                            BorderColor="LightGray"
                            WidthRequest="100">
 
-                        <Label Grid.Row="0" Grid.Column="0"
+                        <Label 
                             HorizontalOptions="Center"
                             Text="Score Name" 
                             Style="{StaticResource LabelStyle}"/>
                     </Frame>
 
-                    <Frame Grid.Row="1" Grid.Column="0"
-                           CornerRadius="5"
+                    <Frame CornerRadius="5"
                            BackgroundColor="orange"
                            BorderColor="orange"
                            WidthRequest="300">
 
-                        <Entry Grid.Row="1" Grid.Column="0"
-                            Text="{Binding Data.Name}" 
+                        <Entry Text="{Binding Data.Name}" 
                             Style="{StaticResource EntryStyle}"/>
                     </Frame>
 
-                    <Frame Grid.Row="2" Grid.Column="0"
-                           CornerRadius="5"
+                    <Frame CornerRadius="5"
                            BackgroundColor="LightGray"
                            BorderColor="LightGray"
                            WidthRequest="100">
 
-                        <Label Grid.Row="2" Grid.Column="0"
-                            Text="Score" 
+                        <Label Text="Score" 
                             Style="{StaticResource LabelStyle}"/>
                     </Frame>
-                </Grid>
+                </StackLayout>
 
                 <StackLayout Style="{StaticResource HorizontalStack}">
 
