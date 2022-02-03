@@ -33,6 +33,16 @@
                                    HorizontalOptions="Center" />
                             </Frame>
 
+                            <Frame
+                           BackgroundColor="LightGray"
+                           OutlineColor="LightGray">
+
+                                <Label 
+                            Text="Score Details" 
+                            Style="{StaticResource LabelStyle}"
+                                   HorizontalOptions="Center" />
+                            </Frame>
+
                             <StackLayout Style="{StaticResource HorizontalStack}">
                                 <Label 
                         Text="Game Date:"
