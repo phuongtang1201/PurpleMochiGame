@@ -51,7 +51,12 @@
                                     <Label Grid.Column="1" Grid.Row="0"
                                        Text="{Binding Name}" 
                                        Style="{StaticResource ListStyle}"/>
-                                    
+
+                                    <Label Grid.Column="1" Grid.Row="1"
+                                       Text="{Binding Description}" 
+                                       Style="{StaticResource ListStyle}"
+                                       FontSize="Micro"/>
+
 
                                 </Grid>
                             </Frame>
