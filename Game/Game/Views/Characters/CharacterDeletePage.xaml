@@ -96,7 +96,7 @@
                         Style="{StaticResource LabelStyle}"/>
 
                 <Label Grid.Row="3" Grid.Column="1"
-                                Text="{Binding Data.Attack}" 
+                                Text="{Binding Data.GetAttackTotal}" 
                                 Style="{StaticResource ValueStyle}"/>
 
                 <Label Grid.Row="4" Grid.Column="0"
