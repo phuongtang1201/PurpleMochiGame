@@ -72,23 +72,19 @@
                     </Frame>
                 </Grid>
 
-                
-
-                
-
                 <StackLayout Style="{StaticResource HorizontalStack}">
 
                     <Frame 
                            CornerRadius="5"
                            BackgroundColor="orange"
                            BorderColor="orange"
-                           WidthRequest="50">
+                           WidthRequest="45">
 
                         <Label 
                             Text="{Binding Data.ScoreTotal, Mode=TwoWay}" 
                             x:Name="ScoreValue"
                             Style="{StaticResource ValueStyle}"
-                            Padding="20,0,20,0"
+                            Padding="10,0,10,0"
                             HorizontalOptions="Start"
                             HorizontalTextAlignment="Start"/>
                     </Frame>
