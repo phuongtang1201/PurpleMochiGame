@@ -70,6 +70,11 @@
 
                             <Label Text="{Binding Data.Level}"
                                    Style="{StaticResource ValueStyle}"/>
+                            <Label Text="Max Health:"
+                                   Style="{StaticResource LabelStyle}"/>
+
+                            <Label Text="{Binding Data.GetMaxHealthTotal}"
+                                   Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
 
 
