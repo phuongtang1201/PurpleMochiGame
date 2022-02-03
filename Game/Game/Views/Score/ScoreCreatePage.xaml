@@ -75,8 +75,15 @@
                            CornerRadius="5"
                            BackgroundColor="orange"
                            BorderColor="orange"
-                           WidthRequest="30">
+                           WidthRequest="50">
 
+                        <Label Grid.Row="3" Grid.Column="0"
+                            Text="{Binding Data.ScoreTotal, Mode=TwoWay}" 
+                            x:Name="ScoreValue"
+                            Style="{StaticResource ValueStyle}"
+                            Padding="20,0,20,0"
+                            HorizontalOptions="Start"
+                            HorizontalTextAlignment="Start"/>
                     </Frame>
                 </Grid>
 
@@ -86,13 +93,7 @@
 
                 <StackLayout Style="{StaticResource HorizontalStack}">
 
-                    <Label 
-                        Text="{Binding Data.ScoreTotal, Mode=TwoWay}" 
-                        x:Name="ScoreValue"
-                        Style="{StaticResource ValueStyle}"
-                        Padding="20,0,20,0"
-                        HorizontalOptions="Start"
-                        HorizontalTextAlignment="Start"/>
+                    
 
                     <Slider
                         Value="{Binding Data.ScoreTotal, Mode=TwoWay}" WidthRequest="220"
