@@ -11,13 +11,28 @@
         <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" IconImageSource="icon_cancel.png"/>
         <ToolbarItem Text="Delete" Clicked="Delete_Clicked" IconImageSource="icon_delete.png"/>
     </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="FillAndExpand">
+            <StackLayout Style="{StaticResource VerticalStack}"
+                    AbsoluteLayout.LayoutBounds="1,1,1,1" 
+                    AbsoluteLayout.LayoutFlags="All">
+                <ScrollView>
+                    <StackLayout Style="{StaticResource VerticalStack}"
+                                 Spacing="10">
 
-    <ScrollView>
-        <StackLayout Style="{StaticResource OuterBoxStack}"
-                Spacing="10">
+                        <Label Text="Delete Page" Style="{StaticResource HeaderStyle}"/>
+                        <StackLayout Margin="60,0,60,0" >
 
-            <Label Text="Delete Page" Style="{StaticResource HeaderStyle}"/>
-            
-        </StackLayout>
-    </ScrollView>
+                            <Image Source="{Binding Data.ImageURI}" 
+                                       Style="{StaticResource ImageLargeStyle}"
+                                       HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
 </ContentPage>
+    
