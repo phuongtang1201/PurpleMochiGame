@@ -65,6 +65,11 @@
 
                             <Label Text="Statistics"
                                        Style="{StaticResource HeaderStyle}"/>
+                            <Label Text="Level:"
+                                   Style="{StaticResource LabelStyle}"/>
+
+                            <Label Text="{Binding Data.Level}"
+                                   Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
 
 
