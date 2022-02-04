@@ -28,7 +28,7 @@
                            OutlineColor="LightGray">
 
                                 <Label 
-                            Text="{Binding Data.Name}" 
+                            Text="Score Name" 
                             Style="{StaticResource LabelStyle}"
                                    HorizontalOptions="Center" />
                             </Frame>
