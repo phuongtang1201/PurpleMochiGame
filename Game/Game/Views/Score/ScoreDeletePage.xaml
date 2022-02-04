@@ -167,32 +167,7 @@
 
                     </Frame>
 
-                    <Grid
-                    RowSpacing="1"
-                    ColumnSpacing="2"
-                    VerticalOptions="Center">
-
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto" />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="auto"/>
-                            </Grid.ColumnDefinitions>
-
-
-                        </Grid>
-
-                        <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label 
-                        Text="Game Date:"
-                        Style="{StaticResource LabelStyle}"/>
-
-                            <Label 
-                        Text="{Binding Data.GameDate}"
-                        Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
-
-                        <StackLayout Style="{StaticResource HorizontalStack}">
+                    <StackLayout Style="{StaticResource HorizontalStack}">
                             <Label 
                         Text="AutoBattle:"                      
                         Style="{StaticResource LabelStyle}"/>
