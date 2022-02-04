@@ -110,7 +110,7 @@
                     OutlineColor="LightGray"
                     WidthRequest="250">
                         <StackLayout>
-                            <Label Text="Chef's killed"
+                            <Label Text="Chefs killed"
                            Style="{StaticResource HeaderStyle}"/>
                             <Label 
                     Text="{Binding Data.CharacterAtDeathList}" 
