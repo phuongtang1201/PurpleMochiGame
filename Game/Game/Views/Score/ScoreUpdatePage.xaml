@@ -27,7 +27,16 @@
             <StackLayout Style="{StaticResource OuterBoxStack}"
                 Spacing="10">
 
-                <Label Text="Update Page" Style="{StaticResource HeaderStyle}"/>
+                <Frame HorizontalOptions="Start"
+                    CornerRadius="5"
+                    BackgroundColor="LightGray"
+                    BorderColor="LightGray"
+                    WidthRequest="100">
+
+                    <Label HorizontalOptions="Center"
+                        Text="Score Name" 
+                        Style="{StaticResource LabelStyle}"/>
+                </Frame>
 
                 <Grid
                     RowSpacing="1"
