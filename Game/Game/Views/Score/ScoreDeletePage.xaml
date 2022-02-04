@@ -20,9 +20,11 @@
                 Spacing="10"
                 HorizontalOptions="CenterAndExpand">
 
-                    <Frame
-                           BackgroundColor="LightGray"
-                           OutlineColor="LightGray">
+                    <Frame BackgroundColor="LightGray"
+                   BorderColor="LightGray"
+                   Margin="20,0,20,0"
+                   Padding="5,0,100,9"
+                   HorizontalOptions="Start">
 
                             <Label 
                             Text="Score Name" 
