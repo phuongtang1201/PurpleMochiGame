@@ -55,6 +55,14 @@
                     Padding="5,5,0,0"
                     HeightRequest="500"
                     WidthRequest="400">
+
+                    <Frame HorizontalOptions="Start"
+                           CornerRadius="5"
+                           BackgroundColor="LightGray"
+                           BorderColor="LightGray"
+                           WidthRequest="100">
+
+                    </Frame>
                 </Frame>
                 <Grid
                     RowSpacing="1"
