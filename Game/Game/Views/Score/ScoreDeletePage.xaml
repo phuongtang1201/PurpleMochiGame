@@ -34,6 +34,16 @@
                             </Frame>
 
                             <Frame
+                    CornerRadius="5"
+                    BackgroundColor="orange"
+                    BorderColor="orange"
+                    WidthRequest="300">
+
+                                <Entry Text="{Binding Data.Name}" 
+                           Style="{StaticResource EntryStyle}"/>
+                            </Frame>
+
+                            <Frame
                            BackgroundColor="LightGray"
                            OutlineColor="LightGray">
 
