@@ -62,6 +62,9 @@
                            BorderColor="LightGray"
                            WidthRequest="100">
 
+                        <Label HorizontalOptions="Center"
+                               Text="Score Details" 
+                               Style="{StaticResource LabelStyle}"/>
                     </Frame>
                 </Frame>
                 <Grid
