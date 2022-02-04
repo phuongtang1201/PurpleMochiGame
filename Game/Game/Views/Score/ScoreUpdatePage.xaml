@@ -113,6 +113,14 @@
                             <Label Text="{Binding Data.MonsterSlainNumber}"
                                 Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
+
+                        <StackLayout Style="{StaticResource HorizontalStack}">
+                            <Label Text="Total Experience Gained: "
+                                Style="{StaticResource LabelStyle}"/>
+
+                            <Label Text="{Binding Data.ExperienceGainedTotal}" 
+                                Style="{StaticResource ValueStyle}"/>
+                        </StackLayout>
                     </StackLayout>
                     
                 </Frame>
@@ -132,20 +140,6 @@
                 </Grid>
 
                 
-
-                
-
-                
-
-                <StackLayout Style="{StaticResource HorizontalStack}">
-                    <Label 
-                    Text="Total Experience Gained:"
-                    Style="{StaticResource LabelStyle}"/>
-
-                    <Label 
-                    Text="{Binding Data.ExperienceGainedTotal}" 
-                    Style="{StaticResource ValueStyle}"/>
-                </StackLayout>
 
                 <Label 
                 Text="Characters at Death:"
