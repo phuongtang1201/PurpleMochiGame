@@ -31,13 +31,14 @@
                         Style="{StaticResource HeaderStyle}"/>
                     </Frame>
 
-                        <Frame
-                    CornerRadius="5"
-                    BackgroundColor="orange"
-                    BorderColor="orange"
-                    WidthRequest="300">
+                    <Frame
+                    Margin="20,0,20,0"
+                    Padding="10,0,15,0"
+                    BackgroundColor="LightGray"
+                    OutlineColor="LightGray"
+                    WidthRequest="250">
 
-                            <Entry Text="{Binding Data.Name}" 
+                        <Entry Text="{Binding Data.Name}" 
                            Style="{StaticResource EntryStyle}"/>
                         </Frame>
 
