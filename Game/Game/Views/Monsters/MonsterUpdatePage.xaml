@@ -59,8 +59,7 @@
 
                         <StackLayout
                             Margin="20,0,20,0"
-                            Padding="10,0,15,0"
-                            BackgroundColor="LightGray">
+                            Padding="10,0,15,0">
 
                             <Grid
                                 RowSpacing="1"
@@ -73,6 +72,10 @@
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
+
+                                <BoxView BackgroundColor="LightGray"
+                                         CornerRadius="5" Grid.ColumnSpan="2"
+                                         Grid.RowSpan="2"></BoxView>
 
                                 <Label Grid.Row="0" Grid.Column="0"
                                     Text="Statistics" 
