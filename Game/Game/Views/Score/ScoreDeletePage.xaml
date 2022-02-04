@@ -168,15 +168,6 @@
                     </Frame>
 
                     <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label 
-                        Text="Score:" 
-                        Style="{StaticResource LabelStyle}"/>
-                            <Label 
-                        Text="{Binding Data.ScoreTotal}"
-                        Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
-
-                    <StackLayout Style="{StaticResource HorizontalStack}">
                         <Label 
                         Text="Number of Rounds:"                      
                         Style="{StaticResource LabelStyle}"/>
