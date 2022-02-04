@@ -13,7 +13,8 @@
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
-        <StackLayout Style="{StaticResource OuterBoxStack}">
+        <StackLayout Style="{StaticResource OuterBoxStack}"
+                     WidthRequest="550">
 
             <ListView x:Name="ItemsListView" 
                     ItemsSource="{Binding Dataset}"
