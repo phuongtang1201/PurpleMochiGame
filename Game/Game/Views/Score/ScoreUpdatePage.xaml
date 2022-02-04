@@ -188,20 +188,16 @@
                                 BorderColor="LightGray"
                                 WidthRequest="110">
 
-                                
+                                <Label HorizontalOptions="Center"
+                                    Text="Items dropped" 
+                                    Style="{StaticResource LabelStyle}"/>
                             </Frame>
+
+                            <Label Text="{Binding Data.ItemsDroppedList}" 
+                                Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
                     </Frame>
                     
-
-                    <Label 
-                Text="Items Dropped:"
-                Style="{StaticResource LabelStyle}"/>
-                    <Label 
-                Text="{Binding Data.ItemsDroppedList}"
-                Style="{StaticResource ValueStyle}"/>
-
-
                     <StackLayout
                             Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
