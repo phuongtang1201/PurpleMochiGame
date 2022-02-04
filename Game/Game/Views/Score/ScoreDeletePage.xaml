@@ -138,6 +138,15 @@
                     BackgroundColor="LightGray"
                     OutlineColor="LightGray"
                     WidthRequest="250">
+
+                        <StackLayout>
+                            <Label Text="Food Monsters Killed"
+                           Style="{StaticResource HeaderStyle}"/>
+                            <Label 
+                            Text="{Binding Data.MonstersKilledList}" 
+                            Style="{StaticResource ValueStyle}"/>
+                        </StackLayout>
+                        
                     </Frame>
 
                     <Grid
