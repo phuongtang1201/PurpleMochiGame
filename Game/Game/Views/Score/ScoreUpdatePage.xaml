@@ -143,18 +143,12 @@
                                 <Label HorizontalOptions="Center"
                                     Text="Chef's killed" 
                                     Style="{StaticResource LabelStyle}"/>
- 
                             </Frame>
+
+                            <Label Text="{Binding Data.CharacterAtDeathList}" 
+                                    Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
                     </Frame>
-
-
-                    <Label 
-                Text="Characters at Death:"
-                Style="{StaticResource LabelStyle}"/>
-                    <Label 
-                Text="{Binding Data.CharacterAtDeathList}" 
-                Style="{StaticResource ValueStyle}"/>
 
                     <Label 
                 Text="Monsters Killed:"
