@@ -167,9 +167,18 @@
 
                     </Frame>
 
-                    <StackLayout 
-                HorizontalOptions="Center" 
-                Padding="20">
+                    <Grid
+                         RowSpacing="1"
+                         ColumnSpacing="2"
+                         HorizontalOptions="Center">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="100" />
+                        </Grid.ColumnDefinitions>
 
                         <Label Text="Are you sure you want to delete this?" Style="{StaticResource MessageStyle}"/>
 
@@ -182,7 +191,7 @@
                     BorderColor="black">
                         </Button>
 
-                    </StackLayout>
+                    </Grid>
                 </StackLayout>
             </ScrollView>
         </AbsoluteLayout>
