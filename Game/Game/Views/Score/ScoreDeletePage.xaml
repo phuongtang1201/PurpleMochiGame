@@ -38,9 +38,11 @@
                     OutlineColor="LightGray"
                     WidthRequest="250">
 
-                        <Entry Text="{Binding Data.Name}" 
-                           Style="{StaticResource EntryStyle}"/>
-                        </Frame>
+                        <StackLayout>
+                            <Label Text="Score Details"
+                           Style="{StaticResource HeaderStyle}"/>
+                        </StackLayout>
+                    </Frame>
 
                         <Frame HorizontalOptions="Start"
                     CornerRadius="5"
