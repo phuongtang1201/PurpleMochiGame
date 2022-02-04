@@ -155,6 +155,16 @@
                     BackgroundColor="LightGray"
                     OutlineColor="LightGray"
                     WidthRequest="250">
+
+                        <StackLayout>
+                            <Label 
+                    Text="Items Dropped"
+                    Style="{StaticResource HeaderStyle}"/>
+                            <Label 
+                    Text="{Binding Data.ItemsDroppedList}"
+                    Style="{StaticResource ValueStyle}"/>
+                        </StackLayout>
+
                     </Frame>
 
                     <Grid
