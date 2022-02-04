@@ -41,6 +41,9 @@
                         <StackLayout>
                             <Label Text="Score Details"
                            Style="{StaticResource HeaderStyle}"/>
+
+                            <StackLayout Style="{StaticResource HorizontalStack}">
+                            </StackLayout>
                         </StackLayout>
                     </Frame>
 
