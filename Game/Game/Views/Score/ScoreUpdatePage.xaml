@@ -181,7 +181,9 @@
                         Padding="5,5,0,0"
                         WidthRequest="250">
 
-                      
+                        <StackLayout Orientation="Vertical">
+                            
+                        </StackLayout>
                     </Frame>
                     
 
