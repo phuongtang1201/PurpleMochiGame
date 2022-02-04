@@ -47,7 +47,15 @@
                     <Entry Text="{Binding Data.Name}" 
                            Style="{StaticResource EntryStyle}"/>
                 </Frame>
-                
+
+                <Frame HorizontalOptions="Start"
+                    CornerRadius="5"
+                    BackgroundColor="orange"
+                    BorderColor="orange"
+                    Padding="5,5,0,0"
+                    HeightRequest="500"
+                    WidthRequest="400">
+                </Frame>
                 <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
