@@ -24,8 +24,6 @@
 
                     <StackLayout Style="{StaticResource VerticalStack}">
 
-                        <Label Text="Read Page" Style="{StaticResource HeaderStyle}"/>
-
                     </StackLayout>
                     <StackLayout Margin="60,0,60,0" >
                         <Image Source="{Binding Data.ImageURI}" 
