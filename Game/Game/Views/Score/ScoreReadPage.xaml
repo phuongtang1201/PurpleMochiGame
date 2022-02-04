@@ -133,24 +133,19 @@
                     OutlineColor="LightGray"
                     WidthRequest="250">
                 <StackLayout>
-
+                    <Label 
+                    Text="Items Dropped:"
+                    Style="{StaticResource HeaderStyle}"/>
+                    <Label 
+                    Text="{Binding Data.ItemsDroppedList}"
+                    Style="{StaticResource ValueStyle}"/>
                 </StackLayout>
             </Frame>
 
 
-            <Label 
-                Text="Monsters Killed:"
-                Style="{StaticResource LabelStyle}"/>
-            <Label 
-                Text="{Binding Data.MonstersKilledList}" 
-                Style="{StaticResource ValueStyle}"/>
+            
 
-            <Label 
-                Text="Items Dropped:"
-                Style="{StaticResource LabelStyle}"/>
-            <Label 
-                Text="{Binding Data.ItemsDroppedList}"
-                Style="{StaticResource ValueStyle}"/>
+            
 
         </StackLayout>
     </ScrollView>
