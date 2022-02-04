@@ -102,6 +102,16 @@
                         Style="{StaticResource ValueStyle}"/>
                             </StackLayout>
 
+                            <StackLayout Style="{StaticResource HorizontalStack}">
+                                <Label 
+                        Text="Total Experience Gained:"
+                        Style="{StaticResource LabelStyle}"/>
+
+                                <Label 
+                        Text="{Binding Data.ExperienceGainedTotal}" 
+                        Style="{StaticResource ValueStyle}"/>
+                            </StackLayout>
+
                         </StackLayout>
                     </Frame>
 
