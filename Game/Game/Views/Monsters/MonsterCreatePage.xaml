@@ -58,10 +58,12 @@
                                 TextChanged="Entry_CheckNotEmpty"/>
                         </StackLayout>
 
+                        <Frame
+                            BackgroundColor="LightGray"
+                            OutlineColor="LightGray">
                         <StackLayout
                             Margin="20,0,20,0"
-                            Padding="10,0,15,0"
-                            BackgroundColor="LightGray">
+                            Padding="10,0,15,0">
 
                             <Grid
                                 RowSpacing="1"
@@ -164,6 +166,7 @@
                                 </StackLayout>
                             </StackLayout>
                         </StackLayout>
+                        </Frame>
 
                         <StackLayout
                             Style="{StaticResource HorizontalStack}" 
