@@ -112,7 +112,31 @@
                     Style="{StaticResource ValueStyle}"/>
                 </StackLayout>
             </Frame>
-           
+            <Frame
+                    Margin="20,0,20,0"
+                    Padding="10,0,15,0"
+                    BackgroundColor="LightGray"
+                    OutlineColor="LightGray"
+                    WidthRequest="250">
+                <StackLayout>
+                    <Label Text="Food Monsters Killed"
+                           Style="{StaticResource HeaderStyle}"/>
+                    <Label 
+                            Text="{Binding Data.MonstersKilledList}" 
+                            Style="{StaticResource ValueStyle}"/>   
+                </StackLayout>
+            </Frame>
+            <Frame
+                    Margin="20,0,20,0"
+                    Padding="10,0,15,0"
+                    BackgroundColor="LightGray"
+                    OutlineColor="LightGray"
+                    WidthRequest="250">
+                <StackLayout>
+
+                </StackLayout>
+            </Frame>
+
 
             <Label 
                 Text="Monsters Killed:"
