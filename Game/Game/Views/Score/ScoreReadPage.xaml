@@ -53,6 +53,14 @@
                         Text="{Binding Data.AutoBattle}"
                         Style="{StaticResource ValueStyle}"/>
                     </StackLayout>
+                    <StackLayout Style="{StaticResource HorizontalStack}">
+                        <Label 
+                        Text="Score:" 
+                        Style="{StaticResource LabelStyle}"/>
+                        <Label 
+                        Text="{Binding Data.ScoreTotal}"
+                        Style="{StaticResource ValueStyle}"/>
+                    </StackLayout>
                 </StackLayout>
             </Frame>
 
