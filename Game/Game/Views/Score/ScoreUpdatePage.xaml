@@ -54,7 +54,7 @@
                     BorderColor="orange"
                     Padding="5,5,0,0"
                     HeightRequest="500"
-                    WidthRequest="400">
+                    WidthRequest="250">
 
                         <StackLayout Orientation="Vertical">
                             <Frame HorizontalOptions="Start"
