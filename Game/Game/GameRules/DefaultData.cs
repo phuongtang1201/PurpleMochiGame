@@ -172,7 +172,7 @@ namespace Game.GameRules
             {
                 new CharacterModel {
                     Name = "Lisa",
-                    Description = "Brings sweetness to everyone by her desert",
+                    Description = "Brings sweetness to everyone by her dessert",
                     Level = 1,
                     MaxHealth = 5,
                     ImageURI = "elf1.png",
