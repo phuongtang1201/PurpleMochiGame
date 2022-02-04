@@ -65,6 +65,16 @@
                                Text="Score Details" 
                                Style="{StaticResource LabelStyle}"/>
                         </Frame>
+
+                        <StackLayout Style="{StaticResource HorizontalStack}">
+                            <Label 
+                    Text="Game Date:"
+                    Style="{StaticResource LabelStyle}"/>
+
+                            <Label 
+                    Text="{Binding Data.GameDate}"
+                    Style="{StaticResource ValueStyle}"/>
+                        </StackLayout>
                     </StackLayout>
                     
                 </Frame>
@@ -84,15 +94,7 @@
                 </Grid>
 
 
-                <StackLayout Style="{StaticResource HorizontalStack}">
-                    <Label 
-                    Text="Game Date:"
-                    Style="{StaticResource LabelStyle}"/>
-
-                    <Label 
-                    Text="{Binding Data.GameDate}"
-                    Style="{StaticResource ValueStyle}"/>
-                </StackLayout>
+                
 
                 <StackLayout Style="{StaticResource HorizontalStack}">
                     <Label 
