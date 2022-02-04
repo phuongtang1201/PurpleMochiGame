@@ -20,10 +20,19 @@
             <Frame BackgroundColor="LightGray"
                    BorderColor="LightGray"
                    Padding="5,0,100,9">
-            <Label 
-                Text="{Binding Data.Name}" 
-                Style="{StaticResource HeaderStyle}"
+                <Label 
+                    Text="{Binding Data.Name}" 
+                    Style="{StaticResource HeaderStyle}"
                 />
+            </Frame>
+            <Frame
+                    Margin="20,0,20,0"
+                    Padding="10,0,15,0"
+                    BackgroundColor="LightGray"
+                    OutlineColor="LightGray"
+                    WidthRequest="250">
+                <Label Text="Score Details"
+                       Style="{StaticResource HeaderStyle}"/>
             </Frame>
 
 
