@@ -43,14 +43,24 @@
                            Style="{StaticResource EntryStyle}"/>
                             </Frame>
 
-                            <Frame
-                           BackgroundColor="LightGray"
-                           OutlineColor="LightGray">
+                            <Frame HorizontalOptions="Start"
+                    CornerRadius="5"
+                    BackgroundColor="orange"
+                    BorderColor="orange"
+                    Padding="5,5,0,0"
+                    HeightRequest="500"
+                    WidthRequest="400">
 
-                                <Label 
-                            Text="Score Details" 
-                            Style="{StaticResource LabelStyle}"
-                                   HorizontalOptions="Center" />
+                                <Frame HorizontalOptions="Start"
+                           CornerRadius="5"
+                           BackgroundColor="LightGray"
+                           BorderColor="LightGray"
+                           WidthRequest="100">
+
+                                    <Label HorizontalOptions="Center"
+                               Text="Score Details" 
+                               Style="{StaticResource LabelStyle}"/>
+                                </Frame>
                             </Frame>
 
                             <StackLayout Style="{StaticResource HorizontalStack}">
