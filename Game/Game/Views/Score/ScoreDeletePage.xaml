@@ -185,13 +185,22 @@
                            LineBreakMode="WordWrap"
                            Style="{StaticResource MessageStyle}"/>
 
-                        <Button 
-                    Text="Yes" 
-                    Clicked="Delete_Clicked" 
-                    HorizontalOptions="Center"
-                    FontSize="Medium"
-                    BorderWidth="1" 
-                    BorderColor="black">
+                        <Button Grid.Row="1" Grid.Column="0"
+                                Text="Yes" 
+                                Clicked="Delete_Clicked" 
+                                HorizontalOptions="Center"
+                                FontSize="Medium"
+                                BorderWidth="1" 
+                                BorderColor="black">
+                        </Button>
+
+                        <Button Grid.Row="1" Grid.Column="1"
+                                Text="No" 
+                                Clicked="Cancel_Clicked" 
+                                HorizontalOptions="Center"
+                                FontSize="Medium"
+                                BorderWidth="1" 
+                                BorderColor="black">
                         </Button>
 
                     </Grid>
