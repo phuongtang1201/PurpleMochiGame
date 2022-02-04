@@ -26,11 +26,10 @@
                    Padding="5,0,100,9"
                    HorizontalOptions="Start">
 
-                            <Label 
-                            Text="Score Name" 
-                            Style="{StaticResource LabelStyle}"
-                                   HorizontalOptions="Center" />
-                        </Frame>
+                        <Label 
+                        Text="{Binding Data.Name}" 
+                        Style="{StaticResource HeaderStyle}"/>
+                    </Frame>
 
                         <Frame
                     CornerRadius="5"
