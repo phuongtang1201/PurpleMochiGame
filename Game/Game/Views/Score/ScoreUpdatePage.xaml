@@ -173,6 +173,12 @@
                 Style="{StaticResource ValueStyle}"/>
 
 
+                <StackLayout
+                            Style="{StaticResource HorizontalStack}" 
+                            HorizontalOptions="Center">
+
+                    
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
