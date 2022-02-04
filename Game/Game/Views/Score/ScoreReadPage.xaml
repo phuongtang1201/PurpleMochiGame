@@ -31,8 +31,20 @@
                     BackgroundColor="LightGray"
                     OutlineColor="LightGray"
                     WidthRequest="250">
-                <Label Text="Score Details"
-                       Style="{StaticResource HeaderStyle}"/>
+                <StackLayout>
+                    <Label Text="Score Details"
+                           Style="{StaticResource HeaderStyle}"/>
+                    
+                    <StackLayout Style="{StaticResource HorizontalStack}">
+                        <Label 
+                        Text="Game Date:"
+                        Style="{StaticResource LabelStyle}"/>
+
+                        <Label 
+                        Text="{Binding Data.GameDate}"
+                        Style="{StaticResource ValueStyle}"/>
+                    </StackLayout>
+                </StackLayout>
             </Frame>
 
 
