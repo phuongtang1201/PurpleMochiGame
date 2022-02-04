@@ -150,6 +150,16 @@
                         </StackLayout>
                     </Frame>
 
+                    <Frame HorizontalOptions="Start"
+                    CornerRadius="5"
+                    BackgroundColor="orange"
+                    BorderColor="orange"
+                    Padding="5,5,0,0"
+                    WidthRequest="250">
+
+                        
+                    </Frame>
+
                     <Label 
                 Text="Monsters Killed:"
                 Style="{StaticResource LabelStyle}"/>
