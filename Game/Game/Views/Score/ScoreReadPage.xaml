@@ -70,6 +70,15 @@
                         Text="{Binding Data.RoundCount}"
                         Style="{StaticResource ValueStyle}"/>
                     </StackLayout>
+                    <StackLayout Style="{StaticResource HorizontalStack}">
+                        <Label 
+                        Text="Number of Turns:"  
+                        Style="{StaticResource LabelStyle}"/>
+
+                        <Label 
+                        Text="{Binding Data.TurnCount}"
+                        Style="{StaticResource ValueStyle}"/>
+                    </StackLayout>
                 </StackLayout>
             </Frame>
 
@@ -80,15 +89,7 @@
             
            
 
-            <StackLayout Style="{StaticResource HorizontalStack}">
-                <Label 
-                    Text="Number of Turns:"  
-                    Style="{StaticResource LabelStyle}"/>
-
-                <Label 
-                    Text="{Binding Data.TurnCount}"
-                    Style="{StaticResource ValueStyle}"/>
-            </StackLayout>
+           
 
             <StackLayout Style="{StaticResource HorizontalStack}">
                 <Label 
