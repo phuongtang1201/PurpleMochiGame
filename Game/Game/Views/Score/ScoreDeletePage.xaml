@@ -72,6 +72,16 @@
                         Text="{Binding Data.ScoreTotal}"
                         Style="{StaticResource ValueStyle}"/>
                             </StackLayout>
+
+                            <StackLayout Style="{StaticResource HorizontalStack}">
+                                <Label 
+                        Text="Number of Rounds:"                      
+                        Style="{StaticResource LabelStyle}"/>
+
+                                <Label 
+                        Text="{Binding Data.RoundCount}"
+                        Style="{StaticResource ValueStyle}"/>
+                            </StackLayout>
                             
                             
 
