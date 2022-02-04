@@ -38,6 +38,15 @@
                         Style="{StaticResource LabelStyle}"/>
                 </Frame>
 
+                <Frame HorizontalOptions="Start"
+                    CornerRadius="5"
+                    BackgroundColor="orange"
+                    BorderColor="orange"
+                    WidthRequest="300">
+
+                    
+                </Frame>
+                
                 <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
