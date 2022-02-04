@@ -61,59 +61,43 @@
                         Text="{Binding Data.ScoreTotal}"
                         Style="{StaticResource ValueStyle}"/>
                     </StackLayout>
+                    <StackLayout Style="{StaticResource HorizontalStack}">
+                        <Label 
+                        Text="Number of Rounds:"                      
+                        Style="{StaticResource LabelStyle}"/>
+
+                        <Label 
+                        Text="{Binding Data.RoundCount}"
+                        Style="{StaticResource ValueStyle}"/>
+                    </StackLayout>
+                    <StackLayout Style="{StaticResource HorizontalStack}">
+                        <Label 
+                        Text="Number of Turns:"  
+                        Style="{StaticResource LabelStyle}"/>
+
+                        <Label 
+                        Text="{Binding Data.TurnCount}"
+                        Style="{StaticResource ValueStyle}"/>
+                    </StackLayout>
+                    <StackLayout Style="{StaticResource HorizontalStack}">
+                        <Label 
+                        Text="Number of Monsters Slain:"
+                        Style="{StaticResource LabelStyle}"/>
+                        <Label 
+                        Text="{Binding Data.MonsterSlainNumber}"
+                        Style="{StaticResource ValueStyle}"/>
+                    </StackLayout>
+                    <StackLayout Style="{StaticResource HorizontalStack}">
+                        <Label 
+                        Text="Total Experience Gained:"
+                        Style="{StaticResource LabelStyle}"/>
+
+                        <Label 
+                        Text="{Binding Data.ExperienceGainedTotal}" 
+                        Style="{StaticResource ValueStyle}"/>
+                    </StackLayout>
                 </StackLayout>
             </Frame>
-
-
-            
-
-            <StackLayout Style="{StaticResource HorizontalStack}">
-                <Label 
-                    Text="Score:" 
-                    Style="{StaticResource LabelStyle}"/>
-                <Label 
-                    Text="{Binding Data.ScoreTotal}"
-                    Style="{StaticResource ValueStyle}"/>
-            </StackLayout>
-            
-            <StackLayout Style="{StaticResource HorizontalStack}">
-                <Label 
-                    Text="Number of Rounds:"                      
-                    Style="{StaticResource LabelStyle}"/>
-
-                <Label 
-                    Text="{Binding Data.RoundCount}"
-                    Style="{StaticResource ValueStyle}"/>
-            </StackLayout>
-
-            <StackLayout Style="{StaticResource HorizontalStack}">
-                <Label 
-                    Text="Number of Turns:"  
-                    Style="{StaticResource LabelStyle}"/>
-
-                <Label 
-                    Text="{Binding Data.TurnCount}"
-                    Style="{StaticResource ValueStyle}"/>
-            </StackLayout>
-
-            <StackLayout Style="{StaticResource HorizontalStack}">
-                <Label 
-                    Text="Number of Monsters Slain:"
-                    Style="{StaticResource LabelStyle}"/>
-                <Label 
-                    Text="{Binding Data.MonsterSlainNumber}"
-                    Style="{StaticResource ValueStyle}"/>
-            </StackLayout>
-
-            <StackLayout Style="{StaticResource HorizontalStack}">
-                <Label 
-                    Text="Total Experience Gained:"
-                    Style="{StaticResource LabelStyle}"/>
-
-                <Label 
-                    Text="{Binding Data.ExperienceGainedTotal}" 
-                    Style="{StaticResource ValueStyle}"/>
-            </StackLayout>
 
             <Label 
                 Text="Characters at Death:"
