@@ -169,16 +169,6 @@
 
                     <StackLayout Style="{StaticResource HorizontalStack}">
                             <Label 
-                        Text="AutoBattle:"                      
-                        Style="{StaticResource LabelStyle}"/>
-
-                            <Label 
-                        Text="{Binding Data.AutoBattle}"
-                        Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
-
-                        <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label 
                         Text="Score:" 
                         Style="{StaticResource LabelStyle}"/>
                             <Label 
