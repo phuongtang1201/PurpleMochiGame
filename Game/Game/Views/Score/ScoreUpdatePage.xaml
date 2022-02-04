@@ -177,6 +177,13 @@
                             Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
 
+                    <Button WidthRequest="120"
+                                    HeightRequest="40"
+                                    Margin="10,0,0,0"
+                                    CornerRadius="5"
+                                    Text="Cancel"
+                                    Clicked="Cancel_Clicked"/>
+
                     
                 </StackLayout>
             </StackLayout>
