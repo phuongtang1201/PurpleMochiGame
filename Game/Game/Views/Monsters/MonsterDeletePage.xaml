@@ -54,40 +54,43 @@
                                        Style="{StaticResource ValueStyle}"/>
                             </Grid>
                         </StackLayout>
-                        <StackLayout
+                        <Frame
                             Margin="20,0,20,0"
                             Padding="10,0,15,0"
                             BackgroundColor="LightGray"
+                            OutlineColor="LightGray">
+                            <StackLayout                            
                             WidthRequest="250">
 
-                            <Label Text="Statistics"
+                                <Label Text="Statistics"
                                        Style="{StaticResource HeaderStyle}"/>
-                            <Label Text="Level:"
-                                   Style="{StaticResource LabelStyle}"/>
 
-                            <Label Text="{Binding Data.Level}"
-                                   Style="{StaticResource ValueStyle}"/>
-                            <Label Text="Max Health:"
+                                <Label Text="Level:"
                                    Style="{StaticResource LabelStyle}"/>
-
-                            <Label Text="{Binding Data.GetMaxHealthTotal}"
+                                <Label Text="{Binding Data.Level}"
                                    Style="{StaticResource ValueStyle}"/>
-                            <Label Text="Attack:"
+
+                                <Label Text="Max Health:"
                                    Style="{StaticResource LabelStyle}"/>
-
-                            <Label Text="{Binding Data.GetAttackTotal}"
+                                <Label Text="{Binding Data.GetMaxHealthTotal}"
                                    Style="{StaticResource ValueStyle}"/>
-                            <Label Text="Defense:"
+
+                                <Label Text="Attack:"
                                    Style="{StaticResource LabelStyle}"/>
-
-                            <Label Text="{Binding Data.GetDefenseTotal}"
+                                <Label Text="{Binding Data.GetAttackTotal}"
                                    Style="{StaticResource ValueStyle}"/>
-                            <Label Text="Speed:"
+
+                                <Label Text="Defense:"
                                    Style="{StaticResource LabelStyle}"/>
-
-                            <Label Text="{Binding Data.GetSpeedTotal}"
+                                <Label Text="{Binding Data.GetDefenseTotal}"
                                    Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
+
+                                <Label Text="Speed:"
+                                   Style="{StaticResource LabelStyle}"/>
+                                <Label Text="{Binding Data.GetSpeedTotal}"
+                                   Style="{StaticResource ValueStyle}"/>
+                            </StackLayout>
+                        </Frame>
                         <Grid
                          RowSpacing="1"
                          ColumnSpacing="2"
@@ -124,7 +127,7 @@
                                 BorderColor="black">
                             </Button>
                         </Grid>
-                        
+
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
