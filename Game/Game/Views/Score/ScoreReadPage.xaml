@@ -98,7 +98,17 @@
                     </StackLayout>
                 </StackLayout>
             </Frame>
-
+            <Frame
+                    Margin="20,0,20,0"
+                    Padding="10,0,15,0"
+                    BackgroundColor="LightGray"
+                    OutlineColor="LightGray"
+                    WidthRequest="250">
+                <StackLayout>
+                    <Label Text="Chef's killed"
+                           Style="{StaticResource HeaderStyle}"/>
+                </StackLayout>
+            </Frame>
             <Label 
                 Text="Characters at Death:"
                 Style="{StaticResource LabelStyle}"/>
