@@ -134,7 +134,14 @@
                     WidthRequest="250">
 
                         <StackLayout Orientation="Vertical">
+                            <Frame HorizontalOptions="Start"
+                                CornerRadius="5"
+                                BackgroundColor="LightGray"
+                                BorderColor="LightGray"
+                                WidthRequest="100">
 
+ 
+                            </Frame>
                         </StackLayout>
                     </Frame>
 
