@@ -261,38 +261,38 @@ namespace Game.GameRules
             var datalist = new List<MonsterModel>()
             {
                 new MonsterModel {
-                    Name = "Green Troll",
-                    Description = "Big and Ugly",
+                    Name = "Rotten Egg",
+                    Description = "Small and smelly",
                     ImageURI = "troll1.png",
                 },
 
                 new MonsterModel {
-                    Name = "Old Troll",
-                    Description = "Old and Powerfull",
+                    Name = "Spiny Pineapple",
+                    Description = "It'll prick you",
                     ImageURI = "troll2.png",
                 },
 
                 new MonsterModel {
-                    Name = "Dainty Troll",
-                    Description = "and fast",
+                    Name = "Moldy Rice",
+                    Description = "Death on impact",
                     ImageURI = "troll3.png",
                 },
 
                 new MonsterModel {
-                    Name = "Troll's Troll",
-                    Description = "wozer",
+                    Name = "Yogurt",
+                    Description = "May the Schwartz be with you",
                     ImageURI = "troll4.png",
                 },
 
                 new MonsterModel {
-                    Name = "Warrior Troll",
-                    Description = "with sword",
+                    Name = "Gefilte Fish",
+                    Description = "A taste even a mom can't love",
                     ImageURI = "troll5.png",
                 },
 
                 new MonsterModel {
-                    Name = "Ax Troll",
-                    Description = "with Hat and Ax",
+                    Name = "Spicy Strawberry",
+                    Description = "Zesty",
                     ImageURI = "troll6.png",
                 },
             };
