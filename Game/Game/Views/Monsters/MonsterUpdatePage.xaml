@@ -74,8 +74,8 @@
                                 </Grid.ColumnDefinitions>
 
                                 <BoxView BackgroundColor="LightGray"
-                                         CornerRadius="5" Grid.ColumnSpan="2"
-                                         Grid.RowSpan="2"></BoxView>
+                                         CornerRadius="5" Grid.ColumnSpan="5"
+                                         Grid.RowSpan="3"></BoxView>
 
                                 <Label Grid.Row="0" Grid.Column="0"
                                     Text="Statistics" 
