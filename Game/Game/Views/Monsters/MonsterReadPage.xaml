@@ -70,10 +70,11 @@
                                     Style="{StaticResource ValueStyle}"/>
                         </Grid>
                     </StackLayout>
-                    <StackLayout
+                    <Frame
                         Margin="20,0,20,0"
                         Padding="10,0,15,0"
-                        BackgroundColor="LightGray">
+                        BackgroundColor="LightGray"
+                        OutlineColor="LightGray">
 
                         <Grid ColumnSpacing="5" 
                               RowSpacing="2">
@@ -189,7 +190,7 @@
                                        Style="{StaticResource ValueStyle}"/>
 
                         </Grid>
-                    </StackLayout>
+                    </Frame>
                     <StackLayout
                             Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
