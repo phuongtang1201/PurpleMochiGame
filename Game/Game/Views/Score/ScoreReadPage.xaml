@@ -15,18 +15,17 @@
 
     <ScrollView>
         <StackLayout Style="{StaticResource OuterBoxStack}"
-            Spacing="10">
+            Spacing="10"
+            HorizontalOptions="Center">
+            <Frame BackgroundColor="LightGray"
+                   BorderColor="LightGray"
+                   Padding="5,0,100,9">
+            <Label 
+                Text="{Binding Data.Name}" 
+                Style="{StaticResource HeaderStyle}"
+                />
+            </Frame>
 
-            
-
-            <StackLayout Style="{StaticResource HorizontalStack}">
-                <Label 
-                   Text="Name : " 
-                    Style="{StaticResource LabelStyle}"/>
-                <Label 
-                    Text="{Binding Data.Name}" 
-                    Style="{StaticResource ValueStyle}"/>
-            </StackLayout>
 
             <StackLayout Style="{StaticResource HorizontalStack}">
                 <Label 
