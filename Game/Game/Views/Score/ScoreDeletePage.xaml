@@ -122,17 +122,19 @@
                     OutlineColor="LightGray"
                     WidthRequest="250">
 
-                        <Frame HorizontalOptions="Start"
-                           CornerRadius="5"
-                           BackgroundColor="LightGray"
-                           BorderColor="LightGray"
-                           WidthRequest="100">
+                        <StackLayout>
+                            <Label Text="Chefs killed"
+                           Style="{StaticResource HeaderStyle}"/>
+                            <Label 
+                    Text="{Binding Data.CharacterAtDeathList}" 
+                    Style="{StaticResource ValueStyle}"/>
+                        </StackLayout>
 
-                                <Label HorizontalOptions="Center"
+
+                        <Label HorizontalOptions="Center"
                                Text="Score Details" 
                                Style="{StaticResource LabelStyle}"/>
-                            </Frame>
-                        </Frame>
+                    </Frame>
 
                         <Grid
                     RowSpacing="1"
