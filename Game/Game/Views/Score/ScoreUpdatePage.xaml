@@ -140,6 +140,9 @@
                                 BorderColor="LightGray"
                                 WidthRequest="100">
 
+                                <Label HorizontalOptions="Center"
+                                    Text="Chef's killed" 
+                                    Style="{StaticResource LabelStyle}"/>
  
                             </Frame>
                         </StackLayout>
