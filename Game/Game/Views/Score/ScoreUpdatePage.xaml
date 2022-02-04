@@ -141,7 +141,7 @@
                                 WidthRequest="100">
 
                                 <Label HorizontalOptions="Center"
-                                    Text="Chef's killed" 
+                                    Text="Chefs killed" 
                                     Style="{StaticResource LabelStyle}"/>
                             </Frame>
 
