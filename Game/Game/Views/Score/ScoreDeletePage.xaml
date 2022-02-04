@@ -20,9 +20,7 @@
                 Spacing="10"
                 HorizontalOptions="CenterAndExpand">
 
-                    <StackLayout Margin="60,0,60,0" >
-
-                        <Frame
+                    <Frame
                            BackgroundColor="LightGray"
                            OutlineColor="LightGray">
 
@@ -106,16 +104,14 @@
                         Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
 
-                        <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label 
+                    <StackLayout Style="{StaticResource HorizontalStack}">
+                        <Label 
                         Text="Number of Rounds:"                      
                         Style="{StaticResource LabelStyle}"/>
 
-                            <Label 
+                        <Label 
                         Text="{Binding Data.RoundCount}"
                         Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
-
                     </StackLayout>
 
                     <StackLayout 
