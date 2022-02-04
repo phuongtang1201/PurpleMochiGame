@@ -96,12 +96,11 @@
                                         Text="{Binding Data.ImageURI, Mode=TwoWay}" 
                                         Style="{StaticResource EntryStyle}"/>
                                 </StackLayout>
-                            </Grid>
 
+                                <Label Grid.Row="2" Grid.Column="0" Text="Attack" Style="{StaticResource LabelStyle}"/>
 
-                            <Label Text="Attack" Style="{StaticResource LabelStyle}"/>
-
-                            <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                            <StackLayout Grid.Row="2" Grid.Column="1" 
+                                         Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
                                 <Slider
                                     Value="{Binding Data.Attack, Mode=TwoWay}" WidthRequest="220"
                                     Minimum="0" Maximum="9"
@@ -109,7 +108,7 @@
                                     MinimumTrackColor="Black"
                                     ValueChanged="Attack_OnSliderValueChanged"/>
 
-                                <Label 
+                                <Label
                                     Text="{Binding Data.Attack, Mode=TwoWay}" 
                                     x:Name="AttackValue"
                                     Style="{StaticResource ValueStyle}"
@@ -118,9 +117,9 @@
                                     HorizontalTextAlignment="End"/>
                             </StackLayout>
 
-                            <Label Text="Defense" Style="{StaticResource LabelStyle}"/>
+                            <Label Grid.Row="3" Grid.Column="0" Text="Defense" Style="{StaticResource LabelStyle}"/>
 
-                            <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                            <StackLayout Grid.Row="3" Grid.Column="1" Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
                                 <Slider
                                     Value="{Binding Data.Defense, Mode=TwoWay}" WidthRequest="220"
@@ -138,9 +137,9 @@
                                     HorizontalTextAlignment="End"/>
                             </StackLayout>
 
-                            <Label Text="Speed" Style="{StaticResource LabelStyle}"/>
+                            <Label Grid.Row="4" Grid.Column="0" Text="Speed" Style="{StaticResource LabelStyle}"/>
 
-                            <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                            <StackLayout Grid.Row="4" Grid.Column="1" Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
                                 <Slider
                                     Value="{Binding Data.Speed, Mode=TwoWay}" WidthRequest="220"
                                     Minimum="0" Maximum="9"
@@ -156,6 +155,7 @@
                                     HorizontalOptions="End"
                                     HorizontalTextAlignment="End"/>
                             </StackLayout>
+                            </Grid>
                         </StackLayout>
 
                         <StackLayout
