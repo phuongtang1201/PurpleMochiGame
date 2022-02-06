@@ -210,7 +210,7 @@
                             WidthRequest="120"
                             HeightRequest="40"/>
                             <Button
-                            Text="Save"
+                            Text="Create"
                             Clicked="Save_Clicked"
                             WidthRequest="120"
                             HeightRequest="40"
