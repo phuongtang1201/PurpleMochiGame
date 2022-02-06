@@ -59,11 +59,19 @@
                                 Text="Description" 
                                 Style="{StaticResource LabelStyle}"/>
 
-                            <Entry 
-                                Text="{Binding Data.Description, Mode=TwoWay}" 
-                                Style="{StaticResource EntryStyle}"
-                                TextChanged="Entry_CheckNotEmpty"/>
-                            
+                            <Frame 
+                                    CornerRadius="5"
+                                    BackgroundColor="orange"
+                                    BorderColor="orange"
+                                    WidthRequest="300"
+                                    HeightRequest="65">
+
+                                <Entry
+                                    Text="{Binding Data.Description, Mode=TwoWay}" 
+                                    Style="{StaticResource EntryStyle}"
+                                    TextChanged="Entry_CheckNotEmpty"/>
+                            </Frame>
+
                             <ImageButton 
                                 x:Name="RollDice"
                                 Style="{StaticResource ImageLargeStyle}"
