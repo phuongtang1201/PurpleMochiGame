@@ -211,6 +211,7 @@
                             HeightRequest="40"/>
                             <Button
                             Text="Create"
+                            CornerRadius="5"
                             Clicked="Save_Clicked"
                             WidthRequest="120"
                             HeightRequest="40"
