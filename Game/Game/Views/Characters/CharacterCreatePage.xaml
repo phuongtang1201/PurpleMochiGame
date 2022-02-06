@@ -66,9 +66,11 @@
                                     WidthRequest="300"
                                     HeightRequest="65">
 
-                                <Entry
+                                <Editor
                                     Text="{Binding Data.Description, Mode=TwoWay}" 
                                     Style="{StaticResource EntryStyle}"
+                                    VerticalOptions="Start"
+                                    HeightRequest="65"
                                     TextChanged="Entry_CheckNotEmpty"/>
                             </Frame>
 
