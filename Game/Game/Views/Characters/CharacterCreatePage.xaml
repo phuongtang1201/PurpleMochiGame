@@ -57,6 +57,8 @@
 
                             <Label 
                                 Text="Description" 
+                                WidthRequest="300"
+                                HorizontalOptions="Center"
                                 Style="{StaticResource LabelStyle}"/>
 
                             <Frame 
