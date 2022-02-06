@@ -41,10 +41,17 @@
                                 Text="Name" 
                                 Style="{StaticResource LabelStyle}"/>
 
-                            <Entry 
-                                Text="{Binding Data.Name, Mode=TwoWay}" 
-                                Style="{StaticResource EntryStyle}"
-                                TextChanged="Entry_CheckNotEmpty"/>
+                            <Frame 
+                                    CornerRadius="5"
+                                    BackgroundColor="orange"
+                                    BorderColor="orange"
+                                    WidthRequest="300">
+
+                                <Entry 
+                                    Text="{Binding Data.Name, Mode=TwoWay}" 
+                                    Style="{StaticResource EntryStyle}"
+                                    TextChanged="Entry_CheckNotEmpty"/>
+                            </Frame>
 
                             <Label 
                                 Text="Description" 
