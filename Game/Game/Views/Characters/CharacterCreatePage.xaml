@@ -39,6 +39,8 @@
                                    HorizontalOptions="Center"/>
                             <Label 
                                 Text="Name" 
+                                WidthRequest="300"
+                                HorizontalOptions="Center"
                                 Style="{StaticResource LabelStyle}"/>
 
                             <Frame 
