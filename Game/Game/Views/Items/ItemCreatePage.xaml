@@ -183,7 +183,7 @@
                             <Button
                                     WidthRequest="120"
                                     HeightRequest="40"
-                                    Text="Save"
+                                    Text="Create"
                                     Margin="10,0,0,0"
                                     Clicked="Save_Clicked"/>
                         </StackLayout>
