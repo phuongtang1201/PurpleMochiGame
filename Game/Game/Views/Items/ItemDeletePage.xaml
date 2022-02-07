@@ -7,9 +7,6 @@
              x:Class="Game.Views.ItemDeletePage"
              Title="{Binding Title}">
 
-    <ContentPage.ToolbarItems>
-    </ContentPage.ToolbarItems>
-
     <ScrollView>
         <StackLayout Spacing="10">
             <StackLayout HorizontalOptions="Center">
