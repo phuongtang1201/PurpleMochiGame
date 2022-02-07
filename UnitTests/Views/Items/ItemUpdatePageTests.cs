@@ -131,7 +131,7 @@ namespace UnitTests.Views
         }
 
         [Test]
-        public void ItemUpdatePage_Range_OnStepperValueChanged_Default_Should_Pass()
+        public void ItemUpdatePage_Range_OnSliderValueChanged_Default_Should_Pass()
         {
             // Arrange
             var data = new ItemModel();
@@ -144,7 +144,7 @@ namespace UnitTests.Views
             var args = new ValueChangedEventArgs(oldRange, newRange);
 
             // Act
-            page.Range_OnStepperValueChanged(null, args);
+            page.Range_OnSliderValueChanged(null, args);
 
             // Reset
 
