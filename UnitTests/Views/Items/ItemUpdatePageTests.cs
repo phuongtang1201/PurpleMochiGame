@@ -153,7 +153,7 @@ namespace UnitTests.Views
         }
 
         [Test]
-        public void ItemUpdatePage_Damage_OnStepperDamageChanged_Default_Should_Pass()
+        public void ItemUpdatePage_Damage_OnSliderDamageChanged_Default_Should_Pass()
         {
             // Arrange
             var data = new ItemModel();
@@ -166,7 +166,7 @@ namespace UnitTests.Views
             var args = new ValueChangedEventArgs(oldDamage, newDamage);
 
             // Act
-            page.Damage_OnStepperValueChanged(null, args);
+            page.Damage_OnSliderValueChanged(null, args);
 
             // Reset
 
