@@ -14,8 +14,7 @@
         <StackLayout Spacing="10">
             <StackLayout HorizontalOptions="Center">
 
-                <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}"
-                       HorizontalOptions="CenterAndExpand" />
+                <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" />
 
                 <Grid
                     RowSpacing="1"
