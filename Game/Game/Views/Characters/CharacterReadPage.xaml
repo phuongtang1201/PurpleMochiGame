@@ -7,9 +7,6 @@
              x:Class="Game.Views.CharacterReadPage"
              Title="{Binding Title}">
 
-    <ContentPage.ToolbarItems>
-    </ContentPage.ToolbarItems>
-
     <ContentPage.Content>
     <AbsoluteLayout
         HorizontalOptions="CenterAndExpand"
