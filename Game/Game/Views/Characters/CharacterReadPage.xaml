@@ -190,7 +190,7 @@
                                          Color="LightGray" CornerRadius="5"/>
                                 <Label Grid.Column="0" Grid.Row="0"
                                        Text="Items Box" FontSize="Small"
-                                       Padding="5,0,0,0" Margin="20,0,20,-10" />
+                                       Padding="5,0,0,0" />
                                 <FlexLayout Grid.Column="0" Grid.Row="1"
                                             Margin="20,0,20,0"
                                             Padding="10" Wrap="Wrap"
