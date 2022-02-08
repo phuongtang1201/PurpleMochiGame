@@ -83,14 +83,15 @@
                                        Text="Statistics" 
                                        Style="{StaticResource HeaderStyle}" />
 
+                                <Label Grid.Row="2" Grid.Column="0"
+                                       Text="Location:" 
+                                       Style="{StaticResource LabelStyle}"/>
+                                
+                                <Label Grid.Row="2" Grid.Column="1"
+                                       Text="{Binding Data.Location}"
+                                       Style="{StaticResource ValueStyle}"/>
+
                                
-
-                                <Label Text="Location:"
-                                   Style="{StaticResource LabelStyle}"/>
-
-                                <Label Text="{Binding Data.Location}"
-                                   Style="{StaticResource ValueStyle}"/>
-
                                 <Label Text="Attribute:"
                                    Style="{StaticResource LabelStyle}"/>
 
