@@ -75,7 +75,7 @@
                                        Style="{StaticResource ValueStyle}"/>
                                 
                                 </Grid>
-                            </StackLayout>
+                            
                             <Frame
                         Margin="20,0,20,0"
                         Padding="10,0,15,0"
@@ -197,7 +197,8 @@
 
                                 </Grid>
                             </Frame>
-                            <StackLayout
+                        </StackLayout>
+                        <StackLayout
                             Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
                                 <Button
