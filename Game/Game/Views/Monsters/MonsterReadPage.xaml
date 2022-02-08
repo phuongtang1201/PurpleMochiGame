@@ -7,9 +7,6 @@
              x:Class="Game.Views.MonsterReadPage"
              Title="{Binding Title}">
 
-    <ContentPage.ToolbarItems>
-    </ContentPage.ToolbarItems>
-
     <AbsoluteLayout
         HorizontalOptions="CenterAndExpand"
         VerticalOptions="FillAndExpand"
