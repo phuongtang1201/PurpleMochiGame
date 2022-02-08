@@ -8,10 +8,8 @@
              Title="{Binding Title}">
 
     <ContentPage.Content>
-    <AbsoluteLayout
-        HorizontalOptions="CenterAndExpand"
-        VerticalOptions="FillAndExpand"
-        >
+    <AbsoluteLayout HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="FillAndExpand">
 
         <StackLayout Style="{StaticResource VerticalStack}"
                     AbsoluteLayout.LayoutBounds="1,1,1,1" 
@@ -78,10 +76,8 @@
                                        Text="{Binding Data.Level}" 
                                        Style="{StaticResource ValueStyle}"/>
 
-                                <StackLayout>
 
-
-                                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5"
+                                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5"
                                        Text="Statistics"
                                        Style="{StaticResource HeaderStyle}"/>
 
@@ -215,7 +211,6 @@
                             HeightRequest="40"
                             Margin="20,0,0,0"/>
                         </StackLayout>
-                    </StackLayout>
                     </StackLayout>
             </ScrollView>
         </StackLayout>
