@@ -216,11 +216,13 @@
                                    Style="{StaticResource MessageStyle}"/>
 
                             <Button Grid.Row="1" Grid.Column="0"
+                                    WidthRequest="100"
                                     Text="Yes" Clicked="Delete_Clicked" 
                                     HorizontalOptions="Center" FontSize="Medium"
                                     BorderWidth="1" BorderColor="black" />
 
                             <Button Grid.Row="1" Grid.Column="1"
+                                    WidthRequest="100"
                                     Text="No" Clicked="Cancel_Clicked" 
                                     HorizontalOptions="Center" FontSize="Medium"
                                     BorderWidth="1" BorderColor="black" />
