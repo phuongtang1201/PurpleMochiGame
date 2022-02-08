@@ -65,6 +65,12 @@
                                 <Label Grid.Row="2" Grid.Column="0"
                                        Text="Statistics" Padding="5,0,0,0"
                                        Style="{StaticResource HeaderStyle}"/>
+
+                                <Label Grid.Row="3" Grid.Column="0"
+                                       Text="Level:" Padding="5,0,0,0"
+                                       Style="{StaticResource LabelStyle}"/>
+                                
+                                
                             </Grid>
                         </StackLayout>
                         <Frame
