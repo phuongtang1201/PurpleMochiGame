@@ -56,8 +56,8 @@
                                        Style="{StaticResource ValueStyle}" />
 
 
-                            <BoxView Grid.ColumnSpan="3"
-                             Grid.RowSpan="7"
+                            <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+                             Grid.RowSpan="6"
                              Color="LightGray"
                          CornerRadius="5"/>
 
