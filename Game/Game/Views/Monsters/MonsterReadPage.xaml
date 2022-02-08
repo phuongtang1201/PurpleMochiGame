@@ -61,11 +61,12 @@
                                 <BoxView Grid.Row="2" Grid.Column="0" 
                                          Grid.ColumnSpan="5" Grid.RowSpan="8"
                                          Color="LightGray" CornerRadius="5"/>
-                                
+
                                 <Label Grid.Row="2" Grid.Column="0"
-                                    Text="Level:" 
-                                    Style="{StaticResource HeaderStyle}"/>
-                                    <Label Grid.Row="2" Grid.Column="1"
+                                       Text="Statistics" Padding="5,0,0,0"
+                                       Style="{StaticResource HeaderStyle}"/>
+
+                                <Label Grid.Row="2" Grid.Column="1"
                                     Text="{Binding Data.Level}" 
                                     Style="{StaticResource ValueStyle}"/>
                                     <Label Grid.Row="3" Grid.Column="0"
