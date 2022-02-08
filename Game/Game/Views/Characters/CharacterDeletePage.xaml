@@ -8,154 +8,158 @@
              Title="{Binding Title}">
 
     <ContentPage.Content>
-        <ScrollView>
-            <StackLayout Spacing="10">
-                <StackLayout HorizontalOptions="Center">
-                    <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}"/>
+        <AbsoluteLayout
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="FillAndExpand">
+            <ScrollView>
+                <StackLayout Spacing="10">
+                    <StackLayout HorizontalOptions="Center">
+                        <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}"/>
 
-                    <Grid
+                        <Grid
                     RowSpacing="2"
                     ColumnSpacing="4"
                     HorizontalOptions="CenterAndExpand">
 
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="auto"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="auto" />
-                            <ColumnDefinition Width="auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                            </Grid.ColumnDefinitions>
 
-                        <BoxView Grid.ColumnSpan="2"
+                            <BoxView Grid.ColumnSpan="2"
                              Grid.RowSpan="1"
                              Color="LightGray"
                              CornerRadius="5"/>
 
-                        <Label Grid.Row="0" Grid.Column="0"
+                            <Label Grid.Row="0" Grid.Column="0"
                            Text="Name:" 
                            Style="{StaticResource LabelStyle}"/>
 
-                        <Label Grid.Row="0" Grid.Column="1"
+                            <Label Grid.Row="0" Grid.Column="1"
                            Text="{Binding Data.Name}" 
                            Style="{StaticResource ValueStyle}"/>
 
-                        <BoxView Grid.Row="1" Grid.Column="0"
+                            <BoxView Grid.Row="1" Grid.Column="0"
                              Grid.ColumnSpan="2"
                              Grid.RowSpan="1"
                              Color="LightGray" 
                              CornerRadius="5"/>
 
-                        <Label Grid.Row="1" Grid.Column="0"
+                            <Label Grid.Row="1" Grid.Column="0"
                            Text="Description:" 
                            Style="{StaticResource LabelStyle}"/>
 
-                        <Label Grid.Row="1" Grid.Column="1"
+                            <Label Grid.Row="1" Grid.Column="1"
                            Text="{Binding Data.Description}" 
                            Style="{StaticResource ValueStyle}"/>
 
-                    </Grid>
-                </StackLayout>
+                        </Grid>
+                    </StackLayout>
 
-                <Grid
+                    <Grid
                     RowSpacing="4"
                     ColumnSpacing="8"
                     HorizontalOptions="CenterAndExpand">
 
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="auto" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="auto" />
-                        <ColumnDefinition Width="auto" />
-                        <ColumnDefinition Width="auto" />
-                    </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                        </Grid.ColumnDefinitions>
 
-                    <BoxView Grid.ColumnSpan="3"
+                        <BoxView Grid.ColumnSpan="3"
                              Grid.RowSpan="7"
                              Color="LightGray"
                          CornerRadius="5"/>
 
-                    <Label Grid.Row="0" Grid.Column="0"
+                        <Label Grid.Row="0" Grid.Column="0"
                         Text="Statistics" 
                         Style="{StaticResource LabelStyle}" />
 
-                    <Label Grid.Row="1" Grid.Column="0"
+                        <Label Grid.Row="1" Grid.Column="0"
                         Text="Level: " 
                         Style="{StaticResource LabelStyle}"/>
 
-                    <Label Grid.Row="2" Grid.Column="1"
+                        <Label Grid.Row="2" Grid.Column="1"
                                 Text="{Binding Data.Level}" 
                                 Style="{StaticResource ValueStyle}"/>
 
-                    <Label Grid.Row="2" Grid.Column="0"
+                        <Label Grid.Row="2" Grid.Column="0"
                         Text="Max Health: " 
                         Style="{StaticResource LabelStyle}"/>
 
-                    <Label Grid.Row="1" Grid.Column="1"
+                        <Label Grid.Row="1" Grid.Column="1"
                                 Text="{Binding Data.GetMaxHealthTotal}" 
                                 Style="{StaticResource ValueStyle}"/>
 
-                    <Label Grid.Row="3" Grid.Column="0"
+                        <Label Grid.Row="3" Grid.Column="0"
                         Text="Attack: " 
                         Style="{StaticResource LabelStyle}"/>
 
-                    <Label Grid.Row="3" Grid.Column="1"
+                        <Label Grid.Row="3" Grid.Column="1"
                                 Text="{Binding Data.GetAttackTotal}" 
                                 Style="{StaticResource ValueStyle}"/>
 
-                    <Label Grid.Row="4" Grid.Column="0"
+                        <Label Grid.Row="4" Grid.Column="0"
                         Text="Defense: " 
                         Style="{StaticResource LabelStyle}"/>
 
-                    <Label Grid.Row="4" Grid.Column="1"
+                        <Label Grid.Row="4" Grid.Column="1"
                                 Text="{Binding Data.GetDefenseTotal}" 
                                 Style="{StaticResource ValueStyle}"/>
 
-                    <Label Grid.Row="5" Grid.Column="0"
+                        <Label Grid.Row="5" Grid.Column="0"
                         Text="Speed: " 
                         Style="{StaticResource LabelStyle}"/>
 
-                    <Label Grid.Row="5" Grid.Column="1"
+                        <Label Grid.Row="5" Grid.Column="1"
                                 Text="{Binding Data.GetSpeedTotal}" 
                                 Style="{StaticResource ValueStyle}"/>
-                </Grid>
-                <Grid
+                    </Grid>
+                    <Grid
                      RowSpacing="1"
                      ColumnSpacing="2"
                      HorizontalOptions="Center">
 
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="auto" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="100" />
-                        <ColumnDefinition Width="100" />
-                    </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="100" />
+                        </Grid.ColumnDefinitions>
 
-                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
                        Text="Are you sure you want to delete this character?" 
                        LineBreakMode="WordWrap"
                        Style="{StaticResource MessageStyle}"/>
 
-                    <Button Grid.Row="1" Grid.Column="0"
+                        <Button Grid.Row="1" Grid.Column="0"
                 Text="Yes" 
                 Clicked="Delete_Clicked" 
                 HorizontalOptions="Center"
                 FontSize="Medium"
                 BorderWidth="1" 
                 BorderColor="black">
-                    </Button>
+                        </Button>
 
-                    <Button Grid.Row="1" Grid.Column="1"
+                        <Button Grid.Row="1" Grid.Column="1"
                 Text="No" 
                 Clicked="Cancel_Clicked" 
                 HorizontalOptions="Center"
                 FontSize="Medium"
                 BorderWidth="1" 
                 BorderColor="black">
-                    </Button>
-                </Grid>
-            </StackLayout>
-        </ScrollView>
+                        </Button>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
