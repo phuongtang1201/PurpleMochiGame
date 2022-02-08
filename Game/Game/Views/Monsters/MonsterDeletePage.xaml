@@ -61,6 +61,10 @@
                                 <BoxView Grid.Row="2" Grid.Column="0" 
                                          Grid.ColumnSpan="5" Grid.RowSpan="8"
                                          Color="LightGray" CornerRadius="5"/>
+
+                                <Label Grid.Row="2" Grid.Column="0"
+                                       Text="Statistics" Padding="5,0,0,0"
+                                       Style="{StaticResource HeaderStyle}"/>
                             </Grid>
                         </StackLayout>
                         <Frame
