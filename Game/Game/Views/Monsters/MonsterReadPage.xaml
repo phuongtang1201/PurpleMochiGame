@@ -8,19 +8,18 @@
              Title="{Binding Title}">
 
     <ContentPage.Content>
-        <AbsoluteLayout
-        HorizontalOptions="CenterAndExpand"
-        VerticalOptions="FillAndExpand"
-        >
+        <AbsoluteLayout HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="FillAndExpand">
 
             <StackLayout Style="{StaticResource VerticalStack}"
-                    AbsoluteLayout.LayoutBounds="1,1,1,1" 
-                    AbsoluteLayout.LayoutFlags="All">
+                         AbsoluteLayout.LayoutBounds="1,1,1,1" 
+                         AbsoluteLayout.LayoutFlags="All">
 
                 <ScrollView x:Name="ScrollView">
                     <StackLayout Style="{StaticResource OuterBoxStack}">
 
-                        <StackLayout Style="{StaticResource VerticalStack}">
+                        <StackLayout Style="{StaticResource VerticalStack}"
+                                     Spacing="10">
 
                         </StackLayout>
                         <StackLayout Margin="60,0,60,0" >
