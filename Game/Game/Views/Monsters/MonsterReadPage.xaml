@@ -66,9 +66,14 @@
                                        Text="Statistics" Padding="5,0,0,0"
                                        Style="{StaticResource HeaderStyle}"/>
 
+                                <Label Grid.Row="3" Grid.Column="0"
+                                       Text="Level:" Padding="5,0,0,0"
+                                       Style="{StaticResource LabelStyle}"/>
+
                                 <Label Grid.Row="2" Grid.Column="1"
                                     Text="{Binding Data.Level}" 
                                     Style="{StaticResource ValueStyle}"/>
+                                
                                     <Label Grid.Row="3" Grid.Column="0"
                                     Text="Max Health:" 
                                     Style="{StaticResource HeaderStyle}"/>
