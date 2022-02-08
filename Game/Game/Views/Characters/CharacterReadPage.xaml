@@ -108,35 +108,35 @@
                                        Text="{Binding Data.GetAttackTotal}"  HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
 
-                                    <Label Grid.Column="0" Grid.Row="3"
+                                <Label Grid.Column="0" Grid.Row="6"
                                        Text="Defense" 
                                        Style="{StaticResource LabelStyle}"/>
-                                    <Label Grid.Column="1" Grid.Row="3"
+                                <Label Grid.Column="1" Grid.Row="6"
                                        Text="{Binding Data.Defense}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
-                                    <Label Grid.Column="2" Grid.Row="3"
+                                <Label Grid.Column="2" Grid.Row="6"
                                        Text="{Binding Data.GetDefenseLevelBonus}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
-                                    <Label Grid.Column="3" Grid.Row="3"
+                                <Label Grid.Column="3" Grid.Row="6"
                                        Text="{Binding Data.GetDefenseItemBonus}"  HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
-                                    <Label Grid.Column="4" Grid.Row="3"
+                                <Label Grid.Column="4" Grid.Row="6"
                                        Text="{Binding Data.GetDefenseTotal}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
 
-                                    <Label Grid.Column="0" Grid.Row="4"
+                                <Label Grid.Column="0" Grid.Row="4"
                                        Text="Speed" 
                                        Style="{StaticResource LabelStyle}"/>
-                                    <Label Grid.Column="1" Grid.Row="4"
+                                <Label Grid.Column="1" Grid.Row="4"
                                        Text="{Binding Data.Speed}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
-                                    <Label Grid.Column="2" Grid.Row="4"
+                                <Label Grid.Column="2" Grid.Row="4"
                                        Text="{Binding Data.GetSpeedLevelBonus}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
-                                    <Label Grid.Column="3" Grid.Row="4"
+                                <Label Grid.Column="3" Grid.Row="4"
                                        Text="{Binding Data.GetSpeedItemBonus}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
-                                    <Label Grid.Column="4" Grid.Row="4"
+                                <Label Grid.Column="4" Grid.Row="4"
                                        Text="{Binding Data.GetSpeedTotal}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
 
