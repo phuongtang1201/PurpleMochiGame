@@ -116,17 +116,14 @@
                                        Style="{StaticResource ValueStyle}"/>
 
 
-                                <Label Text="Value:"
-                                   Style="{StaticResource LabelStyle}"/>
+                                <Label Grid.Row="6" Grid.Column="0"
+                                       Text="Damage:" 
+                                       Style="{StaticResource LabelStyle}"/>
 
-                                <Label Text="{Binding Data.Value}" 
-                                   Style="{StaticResource ValueStyle}"/>
+                                <Label Grid.Row="6" Grid.Column="1"
+                                       Text="{Binding Data.Damage}"
+                                       Style="{StaticResource ValueStyle}"/>
 
-                                <Label Text="Damage:"
-                                   Style="{StaticResource LabelStyle}"/>
-
-                                <Label Text="{Binding Data.Damage}"
-                                   Style="{StaticResource ValueStyle}"/>
                             </Grid>
                         </Frame>
                         <StackLayout
