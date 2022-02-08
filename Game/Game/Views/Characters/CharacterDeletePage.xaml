@@ -24,7 +24,7 @@
                                    HorizontalOptions="Center" />
 
                             <Grid
-                                  RowSpacing="1" 
+                                  RowSpacing="3" 
                                   ColumnSpacing="3"
                                   VerticalOptions="Center"
                                   HorizontalOptions="Center">
