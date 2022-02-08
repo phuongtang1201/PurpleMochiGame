@@ -37,7 +37,8 @@
                                     <ColumnDefinition Width="auto" />
                                 </Grid.ColumnDefinitions>
 
-                                <BoxView Grid.ColumnSpan="2" Grid.RowSpan="1"
+                                <BoxView Grid.Row="0" Grid.Column="0"
+                                         Grid.ColumnSpan="2"
                                          Color="LightGray" CornerRadius="5" />
 
                                 <Label Grid.Row="0" Grid.Column="0" 
@@ -48,7 +49,7 @@
                                        Style="{StaticResource ValueStyle}"/>
 
                                 <BoxView Grid.Row="1" Grid.Column="0"
-                                         Grid.ColumnSpan="2" Grid.RowSpan="1"
+                                         Grid.ColumnSpan="2"
                                          Color="LightGray" CornerRadius="5" />
 
                                 <Label Grid.Row="1" Grid.Column="0" 
