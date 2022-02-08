@@ -173,17 +173,15 @@
                             </Grid>
                         </StackLayout>
 
-                            <Grid
-                         RowSpacing="1"
-                         ColumnSpacing="2"
-                         HorizontalOptions="Center">
+                        <Grid RowSpacing="1" ColumnSpacing="2"
+                              HorizontalOptions="Center">
 
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="auto" />
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="100" />
-                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="150" />
+                                <ColumnDefinition Width="150" />
                             </Grid.ColumnDefinitions>
 
                             <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
