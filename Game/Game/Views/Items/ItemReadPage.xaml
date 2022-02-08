@@ -62,12 +62,9 @@
                         </StackLayout>
 
                         <Frame
-                            Margin="20,0,20,0"
-                            Padding="10,0,15,0"
-                            BackgroundColor="LightGray"
-                            OutlineColor="LightGray"
-                            WidthRequest="250">
-                            <Grid
+                            Style="{StaticResource StatisticsFrame}">
+                            <StackLayout>
+                               <Grid
                                   RowSpacing="1"
                                   ColumnSpacing="2"
                                   VerticalOptions="Center">
@@ -125,6 +122,7 @@
                                        Style="{StaticResource ValueStyle}"/>
 
                             </Grid>
+                            </StackLayout>
                         </Frame>
                         <StackLayout
                             Style="{StaticResource HorizontalStack}" 
