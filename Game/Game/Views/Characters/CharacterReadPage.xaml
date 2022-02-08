@@ -41,7 +41,7 @@
                                          Color="LightGray" CornerRadius="5" />
 
                                 <Label Grid.Row="0" Grid.Column="0" 
-                                       Text="Name:" Style="{StaticResource HeaderStyle}" />
+                                       Text="Name:" Style="{StaticResource LabelStyle}" />
 
                                 <Label Grid.Row="0" Grid.Column="1" 
                                        Text="{Binding Data.Name}"
