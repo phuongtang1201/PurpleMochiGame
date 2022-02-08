@@ -67,41 +67,54 @@
                             BackgroundColor="LightGray"
                             OutlineColor="LightGray"
                             WidthRequest="250">
-                            <StackLayout>
+                            <Grid
+                                  RowSpacing="1"
+                                  ColumnSpacing="2"
+                                  VerticalOptions="Center">
 
-                            <Label Text="Statistics"
-                                       Style="{StaticResource HeaderStyle}"/>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto" />
+                                </Grid.ColumnDefinitions>
 
-                            <Label Text="Location:"
+                                <Label Grid.Row="0" Grid.Column="0"
+                                       Text="Statistics" 
+                                       Style="{StaticResource HeaderStyle}" />
+
+                               
+
+                                <Label Text="Location:"
                                    Style="{StaticResource LabelStyle}"/>
 
-                            <Label Text="{Binding Data.Location}"
+                                <Label Text="{Binding Data.Location}"
                                    Style="{StaticResource ValueStyle}"/>
 
-                            <Label Text="Attribute:"
+                                <Label Text="Attribute:"
                                    Style="{StaticResource LabelStyle}"/>
 
-                            <Label Text="{Binding Data.Attribute}"
+                                <Label Text="{Binding Data.Attribute}"
                                    Style="{StaticResource ValueStyle}"/>
 
-                            <Label Text="Range:"
+                                <Label Text="Range:"
                                    Style="{StaticResource LabelStyle}"/>
 
-                            <Label Text="{Binding Data.Range}"
+                                <Label Text="{Binding Data.Range}"
                                    Style="{StaticResource ValueStyle}"/>
 
-                            <Label Text="Value:"
+                                <Label Text="Value:"
                                    Style="{StaticResource LabelStyle}"/>
 
-                            <Label Text="{Binding Data.Value}" 
+                                <Label Text="{Binding Data.Value}" 
                                    Style="{StaticResource ValueStyle}"/>
 
-                            <Label Text="Damage:"
+                                <Label Text="Damage:"
                                    Style="{StaticResource LabelStyle}"/>
 
-                            <Label Text="{Binding Data.Damage}"
+                                <Label Text="{Binding Data.Damage}"
                                    Style="{StaticResource ValueStyle}"/>
-                            </StackLayout>
+                            </Grid>
                         </Frame>
                         <StackLayout
                             Style="{StaticResource HorizontalStack}" 
