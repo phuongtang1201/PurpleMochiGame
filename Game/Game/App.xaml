@@ -453,6 +453,17 @@
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
                 <Setter Property="BorderColor" Value="{StaticResource SecondaryBackgroundColor}" />
             </Style>
+
+            <Style TargetType="Frame"
+                   x:Key="StatisticsFrame">
+                   <Setter Property="Margin" Value="20,0,20,0"/>
+                   <Setter Property="Padding" Value="10,0,15,0" />
+                   <Setter Property="BackgroundColor" Value="LightGray"/>
+                   <Setter Property="OutlineColor" Value="LightGray"/>
+             </Style>
+
+                 
+                   
             
             <!-- Grid -->
             <Style TargetType="Grid">
