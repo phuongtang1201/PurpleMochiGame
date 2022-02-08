@@ -20,15 +20,15 @@
                                  Spacing="10">
 
                         <StackLayout Margin="60,0,60,0" >
+                            
                                 <Image Source="{Binding Data.ImageURI}" 
-                                Style="{StaticResource ImageLargeStyle}"
-                                HorizontalOptions="Center"/>
-                                <Grid
-                                  RowSpacing="1" 
-                                  ColumnSpacing="3"
-                                  VerticalOptions="Center"
-                                  HorizontalOptions="Center">
-                                    <Grid.RowDefinitions>
+                                       Style="{StaticResource ImageLargeStyle}"
+                                       HorizontalOptions="Center"/>
+
+                            <Grid RowSpacing="4" ColumnSpacing="7"
+                                  VerticalOptions="Center" HorizontalOptions="Center">
+                                
+                                <Grid.RowDefinitions>
                                         <RowDefinition Height="auto" />
                                     </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
