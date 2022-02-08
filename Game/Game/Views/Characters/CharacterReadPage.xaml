@@ -78,13 +78,7 @@
                                        Text="{Binding Data.Level}" 
                                        Style="{StaticResource ValueStyle}"/>
 
-
-                                <Frame
-                            Margin="20,0,20,0"
-                            Padding="10,0,15,0"
-                            BackgroundColor="LightGray"
-                            OutlineColor="LightGray">
-                            <StackLayout>
+                                <StackLayout>
 
 
                                     <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5"
@@ -186,10 +180,8 @@
                                     <Label Grid.Column="4" Grid.Row="6"
                                        Text="{Binding Data.GetDamageTotalString}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
-                                </Grid>
-                            </StackLayout>
-                            
-                        </Frame>
+                            </Grid>
+                        </StackLayout>
 
                         <Label
                             Text="Items Box"
