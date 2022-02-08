@@ -26,13 +26,13 @@
                                    HorizontalOptions="Center"/>
 
                             <Grid RowSpacing="4" ColumnSpacing="3"
-                                  VerticalOptions="Center" HorizontalOptions="Center">
+                                  VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
 
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto" />
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="150" />
+                                    <ColumnDefinition Width="100" />
                                     <ColumnDefinition Width="auto" />
                                 </Grid.ColumnDefinitions>
 
