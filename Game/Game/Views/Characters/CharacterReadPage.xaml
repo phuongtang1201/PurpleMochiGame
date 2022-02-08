@@ -177,24 +177,29 @@
                                        Text="{Binding Data.GetDamageTotalString}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                             </Grid>
+
+                            <Grid RowSpacing="4" ColumnSpacing="7"
+                                  VerticalOptions="Center" HorizontalOptions="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto" />
+                                    <RowDefinition Height="auto" />
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0" Grid.Row="0"
+                                       Text="Items Box" FontSize="Small"
+                                       Padding="10,0,0,0" Margin="20,0,20,-10"
+                                       BackgroundColor="LightGray" />
+                                <FlexLayout Grid.Column="0" Grid.Row="1"
+                                            Margin="20,0,20,0"
+                                            BackgroundColor="LightGray"
+                                            Padding="10" Wrap="Wrap"
+                                            JustifyContent="SpaceAround"
+                                            AlignContent="SpaceAround"
+                                            x:Name="ItemBox">
+                                </FlexLayout>
+                            </Grid>
                         </StackLayout>
 
-                        <Label
-                            Text="Items Box"
-                            FontSize="Small"
-                            Padding="10,0,0,0"
-                            Margin="20,0,20,-10"
-                            BackgroundColor="LightGray"
-                            />
-                        <FlexLayout 
-                            Margin="20,0,20,0"
-                            BackgroundColor="LightGray"
-                            Padding="10"
-                            Wrap="Wrap"
-                            JustifyContent="SpaceAround"
-                            AlignContent="SpaceAround"
-                            x:Name="ItemBox">
-                        </FlexLayout>
+                        
                         <StackLayout
                             Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
