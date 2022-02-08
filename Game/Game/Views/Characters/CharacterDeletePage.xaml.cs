@@ -64,7 +64,7 @@ namespace Game.Views
         {
             // Defualt Image is the Plus
             var ImageSource = "icon_cancel.png";
-            var ClickableButton = true;
+            //var ClickableButton = true;
 
             var data = ViewModel.Data.GetItemByLocation(location);
             if (data == null)
@@ -73,7 +73,7 @@ namespace Game.Views
                 data = new ItemModel { Location = location, ImageURI = ImageSource };
 
                 // Turn off click action
-                ClickableButton = false;
+                //ClickableButton = false;
             }
 
             // Hookup the Image Button to show the Item picture
@@ -83,11 +83,11 @@ namespace Game.Views
                 Source = data.ImageURI
             };
 
-            if (ClickableButton)
-            {
+            //if (ClickableButton)
+            //{
                 // Add a event to the user can click the item and see more
-                ItemButton.Clicked += (sender, args) => ShowPopup(data);
-            }
+                //ItemButton.Clicked += (sender, args) => ShowPopup(data);
+            //}
 
             // Add the Display Text for the item
             var ItemLabel = new Label
@@ -118,8 +118,8 @@ namespace Game.Views
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public bool ShowPopup(ItemModel data)
-        {
+        //public bool ShowPopup(ItemModel data)
+        //{
 
 
             //// Close the popup after 3 seconds
@@ -127,8 +127,8 @@ namespace Game.Views
             //        PopupLoadingView.IsVisible = false;
             //        return true; }); 
 
-            return false;
-        }
+            //return false;
+        //}
 
         /// <summary>
         /// When the user clicks the close in the Popup
@@ -137,9 +137,9 @@ namespace Game.Views
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public void ClosePopup_Clicked(object sender, EventArgs e)
-        {
-        }
+        //public void ClosePopup_Clicked(object sender, EventArgs e)
+        //{
+        //}
 
         /// <summary>
         /// Save calls to Update
