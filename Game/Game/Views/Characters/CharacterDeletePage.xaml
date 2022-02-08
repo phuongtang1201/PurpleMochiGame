@@ -74,13 +74,7 @@
                                        Text="{Binding Data.Level}" 
                                        Style="{StaticResource ValueStyle}"/>
 
-                                <Label Grid.Row="4" Grid.Column="0"
-                                       Text="Max Health:  " 
-                                       Style="{StaticResource LabelStyle}"/>
-
-                                <Label Grid.Row="4" Grid.Column="1"
-                                       Text="{Binding Data.GetMaxHealthTotal}" 
-                                       Style="{StaticResource ValueStyle}"/>
+                                
 
                                 <Label Grid.Row="5" Grid.Column="0"
                                        Text="Attack:" 
