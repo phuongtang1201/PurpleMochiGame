@@ -15,7 +15,7 @@
                        HorizontalOptions="CenterAndExpand" />
 
                 <Button 
-                        Text="Dungeon"
+                        Text="Kitchen"
                         Clicked="DungeonButton_Clicked"
                         WidthRequest="400"
                         HeightRequest="60"
