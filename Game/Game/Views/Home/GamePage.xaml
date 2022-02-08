@@ -28,7 +28,7 @@
                     Orientation="Horizontal"
                     HorizontalOptions="Center">
                     <Button 
-                        Text="Kitchen"
+                        Text="Restaurant"
                         WidthRequest="195"
                         HeightRequest="40"
                         FontSize="Subtitle"
