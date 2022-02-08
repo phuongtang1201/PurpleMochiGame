@@ -55,6 +55,7 @@
 
                                 <Label Grid.Row="1" Grid.Column="1"
                                        Text="{Binding Data.Description}" 
+                                       LineBreakMode="WordWrap"
                                        Style="{StaticResource ValueStyle}" />
                                 
                                 <BoxView Grid.Row="2" Grid.Column="0" 
