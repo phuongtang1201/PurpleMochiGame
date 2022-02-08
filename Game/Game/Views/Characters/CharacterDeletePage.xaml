@@ -24,9 +24,10 @@
                                    HorizontalOptions="Center" />
 
                             <Grid
-                    RowSpacing="2"
-                    ColumnSpacing="4"
-                    HorizontalOptions="CenterAndExpand">
+                                  RowSpacing="1" 
+                                  ColumnSpacing="3"
+                                  VerticalOptions="Center"
+                                  HorizontalOptions="Center">
 
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto"/>
