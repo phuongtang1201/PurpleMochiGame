@@ -44,7 +44,8 @@
                                          Color="LightGray" CornerRadius="5" />
 
                                 <Label Grid.Row="0" Grid.Column="0" 
-                                       Text="Name:" Style="{StaticResource LabelStyle}" />
+                                       Text="Name:" Padding="5,0,0,0"
+                                       Style="{StaticResource LabelStyle}" />
     
                                 <Label Grid.Row="0" Grid.Column="1" 
                                        Grid.ColumnSpan="5"
@@ -56,7 +57,7 @@
                                          Color="LightGray" CornerRadius="5" />
 
                                 <Label Grid.Row="1" Grid.Column="0" 
-                                       Text="Description:"
+                                       Text="Description:" Padding="5,0,0,0"
                                        Style="{StaticResource LabelStyle}" />
 
                                 <Label Grid.Row="1" Grid.Column="1" 
@@ -70,11 +71,11 @@
                                          Color="LightGray" CornerRadius="5"/>
 
                                 <Label Grid.Row="2" Grid.Column="0"
-                                       Text="Statistics" 
+                                       Text="Statistics" Padding="5,0,0,0"
                                        Style="{StaticResource HeaderStyle}"/>
 
                                 <Label Grid.Row="3" Grid.Column="0"
-                                       Text="Level:" 
+                                       Text="Level:" Padding="5,0,0,0"
                                        Style="{StaticResource LabelStyle}"/>
 
                                 <Label Grid.Row="3" Grid.Column="1"
@@ -82,7 +83,7 @@
                                        Style="{StaticResource ValueStyle}"/>
 
                                 <Label Grid.Column="0" Grid.Row="4"
-                                       Text="Attribute" 
+                                       Text="Attribute" Padding="5,0,0,0"
                                        Style="{StaticResource LabelStyle}"/>
                                 <Label Grid.Column="1" Grid.Row="4"
                                        Text="Base Value" 
@@ -98,7 +99,7 @@
                                        Style="{StaticResource LabelStyle}"/>
 
                                 <Label Grid.Column="0" Grid.Row="5"
-                                       Text="Attack"
+                                       Text="Attack" Padding="5,0,0,0"
                                        Style="{StaticResource LabelStyle}"/>
                                 <Label Grid.Column="1" Grid.Row="5"
                                        Text="{Binding Data.Attack}" HorizontalOptions="Center"
@@ -114,7 +115,7 @@
                                        Style="{StaticResource ValueStyle}"/>
 
                                 <Label Grid.Column="0" Grid.Row="6"
-                                       Text="Defense" 
+                                       Text="Defense" Padding="5,0,0,0"
                                        Style="{StaticResource LabelStyle}"/>
                                 <Label Grid.Column="1" Grid.Row="6"
                                        Text="{Binding Data.Defense}" HorizontalOptions="Center"
@@ -130,7 +131,7 @@
                                        Style="{StaticResource ValueStyle}"/>
 
                                 <Label Grid.Column="0" Grid.Row="7"
-                                       Text="Speed" 
+                                       Text="Speed" Padding="5,0,0,0"
                                        Style="{StaticResource LabelStyle}"/>
                                 <Label Grid.Column="1" Grid.Row="7"
                                        Text="{Binding Data.Speed}" HorizontalOptions="Center"
@@ -146,7 +147,7 @@
                                        Style="{StaticResource ValueStyle}"/>
 
                                 <Label Grid.Column="0" Grid.Row="8"
-                                       Text="Max Health" 
+                                       Text="Max Health" Padding="5,0,0,0"
                                        Style="{StaticResource LabelStyle}"/>
                                 <Label Grid.Column="1" Grid.Row="8"
                                        Text="{Binding Data.MaxHealth}" HorizontalOptions="Center"
@@ -162,7 +163,7 @@
                                        Style="{StaticResource ValueStyle}"/>
 
                                 <Label Grid.Column="0" Grid.Row="9"
-                                       Text="Damage" 
+                                       Text="Damage" Padding="5,0,0,0"
                                        Style="{StaticResource LabelStyle}"/>
                                 <Label Grid.Column="1" Grid.Row="9"
                                        Text="-" HorizontalOptions="Center"
@@ -189,7 +190,7 @@
                                          Color="LightGray" CornerRadius="5"/>
                                 <Label Grid.Column="0" Grid.Row="0"
                                        Text="Items Box" FontSize="Small"
-                                       Padding="10,0,0,0" Margin="20,0,20,-10" />
+                                       Padding="5,0,0,0" Margin="20,0,20,-10" />
                                 <FlexLayout Grid.Column="0" Grid.Row="1"
                                             Margin="20,0,20,0"
                                             Padding="10" Wrap="Wrap"
