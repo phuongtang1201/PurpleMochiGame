@@ -10,8 +10,7 @@
 
             <StackLayout Spacing="10">
                 <Image Source="item.png"
-                       HeightRequest="300"
-                       WidthRequest="300"
+                       Style="{StaticResource ImageSmallStyle}"
                        HorizontalOptions="CenterAndExpand" />
 
                 <Button 
