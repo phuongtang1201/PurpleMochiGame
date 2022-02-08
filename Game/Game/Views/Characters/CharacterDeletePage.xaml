@@ -29,11 +29,14 @@
                                   VerticalOptions="Center" HorizontalOptions="Center">
 
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto" />
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="150" />
+                                    <ColumnDefinition Width="100" />
                                     <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="100" />
                                 </Grid.ColumnDefinitions>
 
                                 <BoxView Grid.Row="0" Grid.Column="0"
