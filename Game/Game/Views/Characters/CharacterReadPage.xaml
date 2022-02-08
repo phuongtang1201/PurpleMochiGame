@@ -37,9 +37,11 @@
                                     <ColumnDefinition Width="auto" />
                                 </Grid.ColumnDefinitions>
 
+                                <BoxView Grid.ColumnSpan="2" Grid.RowSpan="1"
+                                         Color="LightGray" CornerRadius="5" />
+
                                 <Label Grid.Row="0" Grid.Column="0" 
-                                       Text="Name:"
-                                       Style="{StaticResource HeaderStyle}"/>
+                                       Text="Name:" Style="{StaticResource HeaderStyle}" />
 
                                 <Label Grid.Row="0" Grid.Column="1" 
                                        Text="{Binding Data.Name}"
