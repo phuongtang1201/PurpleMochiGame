@@ -140,19 +140,19 @@
                                        Text="{Binding Data.GetSpeedTotal}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
 
-                                    <Label Grid.Column="0" Grid.Row="5"
+                                <Label Grid.Column="0" Grid.Row="8"
                                        Text="Max Health" 
                                        Style="{StaticResource LabelStyle}"/>
-                                    <Label Grid.Column="1" Grid.Row="5"
+                                <Label Grid.Column="1" Grid.Row="8"
                                        Text="{Binding Data.MaxHealth}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
-                                    <Label Grid.Column="2" Grid.Row="5"
+                                <Label Grid.Column="2" Grid.Row="8"
                                        Text="{Binding Data.GetMaxHealthLevelBonus}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
-                                    <Label Grid.Column="3" Grid.Row="5"
+                                <Label Grid.Column="3" Grid.Row="8"
                                        Text="{Binding Data.GetMaxHealthItemBonus}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
-                                    <Label Grid.Column="4" Grid.Row="5"
+                                <Label Grid.Column="4" Grid.Row="8"
                                        Text="{Binding Data.GetMaxHealthTotal}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
 
