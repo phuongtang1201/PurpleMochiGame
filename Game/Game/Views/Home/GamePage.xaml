@@ -28,7 +28,7 @@
                     Orientation="Horizontal"
                     HorizontalOptions="Center">
                     <Button 
-                        Text="Village"
+                        Text="Kitchen"
                         WidthRequest="195"
                         HeightRequest="40"
                         FontSize="Subtitle"
