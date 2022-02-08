@@ -44,6 +44,7 @@
                                        Text="Name:" Style="{StaticResource LabelStyle}" />
 
                                 <Label Grid.Row="0" Grid.Column="1" 
+                                       Grid.ColumnSpan="5"
                                        Text="{Binding Data.Name}"
                                        Style="{StaticResource ValueStyle}"/>
 
@@ -56,6 +57,7 @@
                                        Style="{StaticResource LabelStyle}" />
 
                                 <Label Grid.Row="1" Grid.Column="1" 
+                                       Grid.ColumnSpan="5"
                                        Text="{Binding Data.Description}"
                                        LineBreakMode="WordWrap"
                                        Style="{StaticResource ValueStyle}"/>
