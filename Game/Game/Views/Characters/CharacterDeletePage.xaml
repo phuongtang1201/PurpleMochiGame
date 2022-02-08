@@ -10,20 +10,22 @@
     <ContentPage.Content>
         <AbsoluteLayout HorizontalOptions="CenterAndExpand"
                         VerticalOptions="FillAndExpand">
+            
             <StackLayout Style="{StaticResource VerticalStack}"
                          AbsoluteLayout.LayoutBounds="1,1,1,1" 
                          AbsoluteLayout.LayoutFlags="All">
 
                 <ScrollView>
-
-                    <StackLayout Style="{StaticResource OuterBoxStack}" Spacing="10">
+                    <StackLayout Style="{StaticResource OuterBoxStack}" 
+                                 Spacing="10">
+                        
                         <StackLayout Margin="60,0,60,0">
                             
                             <Image Source="{Binding Data.ImageURI}"
                                    Style="{StaticResource ImageLargeStyle}"
                                    HorizontalOptions="Center" />
 
-                            <Grid RowSpacing="4" ColumnSpacing="3"
+                            <Grid RowSpacing="4" ColumnSpacing="7"
                                   VerticalOptions="Center" HorizontalOptions="Center">
 
                                 <Grid.RowDefinitions>
