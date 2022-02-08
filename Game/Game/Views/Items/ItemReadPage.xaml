@@ -91,12 +91,16 @@
                                        Text="{Binding Data.Location}"
                                        Style="{StaticResource ValueStyle}"/>
 
-                               
-                                <Label Text="Attribute:"
-                                   Style="{StaticResource LabelStyle}"/>
+                                <Label Grid.Row="3" Grid.Column="0"
+                                       Text="Attribute:" 
+                                       Style="{StaticResource LabelStyle}"/>
 
-                                <Label Text="{Binding Data.Attribute}"
-                                   Style="{StaticResource ValueStyle}"/>
+                                <Label Grid.Row="3" Grid.Column="1"
+                                       Text="{Binding Data.Attribute}"
+                                       Style="{StaticResource ValueStyle}"/>
+
+
+                                
 
                                 <Label Text="Range:"
                                    Style="{StaticResource LabelStyle}"/>
