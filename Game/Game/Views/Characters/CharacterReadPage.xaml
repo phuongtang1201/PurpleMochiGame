@@ -25,7 +25,7 @@
                                    Style="{StaticResource ImageLargeStyle}"
                                    HorizontalOptions="Center"/>
 
-                            <Grid RowSpacing="4" ColumnSpacing="5"
+                            <Grid RowSpacing="4" ColumnSpacing="7"
                                   VerticalOptions="Center" HorizontalOptions="Center">
 
                                 <Grid.RowDefinitions>
