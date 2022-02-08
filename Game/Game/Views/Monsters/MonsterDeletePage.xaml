@@ -69,19 +69,12 @@
                                 <Label Grid.Row="3" Grid.Column="0"
                                        Text="Level:" Padding="5,0,0,0"
                                        Style="{StaticResource LabelStyle}"/>
-                                
-                                
+
+
                             </Grid>
                         </StackLayout>
-                        <Frame
-                            Margin="20,0,20,0"
-                            Padding="10,0,15,0"
-                            BackgroundColor="LightGray"
-                            OutlineColor="LightGray">
-                            <StackLayout                            
-                            WidthRequest="250">
 
-                                <Label Text="Statistics"
+                        <Label Text="Statistics"
                                        Style="{StaticResource HeaderStyle}"/>
 
                                 <Label Text="Level:"
@@ -109,8 +102,7 @@
                                 <Label Text="{Binding Data.GetSpeedTotal}"
                                    Style="{StaticResource ValueStyle}"/>
                             </StackLayout>
-                        </Frame>
-                        <Grid
+                            <Grid
                          RowSpacing="1"
                          ColumnSpacing="2"
                          HorizontalOptions="Center">
