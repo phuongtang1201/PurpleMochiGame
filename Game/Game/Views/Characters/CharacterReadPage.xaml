@@ -79,7 +79,7 @@
                                        Style="{StaticResource ValueStyle}"/>
 
                             </Grid>
-                        </StackLayout>
+                        
 
                         <Frame
                             Margin="20,0,20,0"
@@ -203,6 +203,7 @@
                                        Style="{StaticResource ValueStyle}"/>
                                 </Grid>
                             </StackLayout>
+                            
                         </Frame>
 
                         <Label
@@ -237,6 +238,7 @@
                             HeightRequest="40"
                             Margin="20,0,0,0"/>
                         </StackLayout>
+                    </StackLayout>
                     </StackLayout>
             </ScrollView>
         </StackLayout>
