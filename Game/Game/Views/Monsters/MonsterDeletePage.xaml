@@ -78,34 +78,6 @@
                             </Grid>
                         </StackLayout>
 
-                        <Label Text="Statistics"
-                                       Style="{StaticResource HeaderStyle}"/>
-
-                                <Label Text="Level:"
-                                   Style="{StaticResource LabelStyle}"/>
-                                <Label Text="{Binding Data.Level}"
-                                   Style="{StaticResource ValueStyle}"/>
-
-                                <Label Text="Max Health:"
-                                   Style="{StaticResource LabelStyle}"/>
-                                <Label Text="{Binding Data.GetMaxHealthTotal}"
-                                   Style="{StaticResource ValueStyle}"/>
-
-                                <Label Text="Attack:"
-                                   Style="{StaticResource LabelStyle}"/>
-                                <Label Text="{Binding Data.GetAttackTotal}"
-                                   Style="{StaticResource ValueStyle}"/>
-
-                                <Label Text="Defense:"
-                                   Style="{StaticResource LabelStyle}"/>
-                                <Label Text="{Binding Data.GetDefenseTotal}"
-                                   Style="{StaticResource ValueStyle}"/>
-
-                                <Label Text="Speed:"
-                                   Style="{StaticResource LabelStyle}"/>
-                                <Label Text="{Binding Data.GetSpeedTotal}"
-                                   Style="{StaticResource ValueStyle}"/>
-                            </StackLayout>
                             <Grid
                          RowSpacing="1"
                          ColumnSpacing="2"
