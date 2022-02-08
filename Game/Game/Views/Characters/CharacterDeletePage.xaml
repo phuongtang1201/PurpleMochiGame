@@ -16,7 +16,7 @@
 
                 <ScrollView>
 
-                    <StackLayout Spacing="10">
+                    <StackLayout Style="{StaticResource OuterBoxStack}" Spacing="10">
                         <StackLayout HorizontalOptions="Center">
                             <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}"/>
 
