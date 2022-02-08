@@ -28,25 +28,28 @@
                             <Grid RowSpacing="4" ColumnSpacing="5"
                                   VerticalOptions="Center" HorizontalOptions="Center">
 
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto" />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="100" />
-                                <ColumnDefinition Width="auto" />
-                            </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="100" />
+                                </Grid.ColumnDefinitions>
 
-                            <BoxView Grid.Row="0" Grid.Column="0"
-                                     Grid.ColumnSpan="5"
-                                     Color="LightGray" CornerRadius="5" />
+                                <BoxView Grid.Row="0" Grid.Column="0"
+                                         Grid.ColumnSpan="5"
+                                         Color="LightGray" CornerRadius="5" />
 
-                            <Label Grid.Row="0" Grid.Column="0" 
-                                   Text="Name:" Style="{StaticResource LabelStyle}" />
-
-                            <Label Grid.Row="0" Grid.Column="1" 
-                                   Grid.ColumnSpan="5"
-                                   Text="{Binding Data.Name}"
-                                   Style="{StaticResource ValueStyle}"/>
+                                <Label Grid.Row="0" Grid.Column="0" 
+                                       Text="Name:" Style="{StaticResource LabelStyle}" />
+    
+                                <Label Grid.Row="0" Grid.Column="1" 
+                                       Grid.ColumnSpan="5"
+                                       Text="{Binding Data.Name}"
+                                       Style="{StaticResource ValueStyle}"/>
 
                                 <BoxView Grid.Row="1" Grid.Column="0"
                                          Grid.ColumnSpan="5"
