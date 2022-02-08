@@ -173,23 +173,15 @@
                                 </Grid>
 
                         </StackLayout>
-                        <StackLayout
-                            Style="{StaticResource HorizontalStack}" 
-                            HorizontalOptions="Center">
-                                <Button
-                            Text="Delete"
-                            Clicked="Delete_Clicked"
-                            Margin="10,0,0,0"
-                            WidthRequest="120"
-                            HeightRequest="40"/>
-                                <Button
-                            Text="Update"
-                            Clicked="Update_Clicked"
-                            WidthRequest="120"
-                            HeightRequest="40"
-                            Margin="20,0,0,0"/>
-                            </StackLayout>
-
+                        <StackLayout Style="{StaticResource HorizontalStack}" 
+                                     HorizontalOptions="Center">
+                            <Button Text="Delete" Clicked="Delete_Clicked"
+                                    Margin="10,0,0,0"
+                                    WidthRequest="120" HeightRequest="40"/>
+                            <Button Text="Update" Clicked="Update_Clicked"
+                                    WidthRequest="120" HeightRequest="40"
+                                    Margin="20,0,0,0"/>
+                        </StackLayout>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
