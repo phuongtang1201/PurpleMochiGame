@@ -54,7 +54,7 @@
 
                                 <Label Grid.Row="1" Grid.Column="0" 
                                        Text="Description:"
-                                       Style="{StaticResource HeaderStyle}"/>
+                                       Style="{StaticResource LabelStyle}" />
 
                                 <Label Grid.Row="1" Grid.Column="1" 
                                        Text="{Binding Data.Description}"
