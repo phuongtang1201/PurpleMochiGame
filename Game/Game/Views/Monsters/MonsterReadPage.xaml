@@ -90,23 +90,23 @@
                                        Text="Total Value" 
                                        Style="{StaticResource LabelStyle}"/>
 
-                                    <Label Grid.Column="0" Grid.Row="2"
-                                    Text="Attack"
-                                    Style="{StaticResource LabelStyle}"/>
-                                    <Label Grid.Column="1" Grid.Row="2"
-                                    Text="{Binding Data.Attack}" HorizontalOptions="Center"
-                                    Style="{StaticResource ValueStyle}"/>
-                                    <Label Grid.Column="2" Grid.Row="2"
-                                    Text="{Binding Data.GetAttackLevelBonus}" HorizontalOptions="Center"
-                                    Style="{StaticResource ValueStyle}"/>
-                                    <Label Grid.Column="3" Grid.Row="2"
-                                    Text="{Binding Data.GetAttackItemBonus}"  HorizontalOptions="Center"
-                                    Style="{StaticResource ValueStyle}"/>
-                                    <Label Grid.Column="4" Grid.Row="2"
-                                    Text="{Binding Data.GetAttackTotal}"  HorizontalOptions="Center"
-                                    Style="{StaticResource ValueStyle}"/>
+                                <Label Grid.Column="0" Grid.Row="5"
+                                       Text="Attack" Padding="5,0,0,0"
+                                       Style="{StaticResource LabelStyle}"/>
+                                <Label Grid.Column="1" Grid.Row="5"
+                                       Text="{Binding Data.Attack}" HorizontalOptions="Center"
+                                       Style="{StaticResource ValueStyle}"/>
+                                <Label Grid.Column="2" Grid.Row="5"
+                                       Text="{Binding Data.GetAttackLevelBonus}" HorizontalOptions="Center"
+                                       Style="{StaticResource ValueStyle}"/>
+                                <Label Grid.Column="3" Grid.Row="5"
+                                       Text="{Binding Data.GetAttackItemBonus}"  HorizontalOptions="Center"
+                                       Style="{StaticResource ValueStyle}"/>
+                                <Label Grid.Column="4" Grid.Row="5"
+                                       Text="{Binding Data.GetAttackTotal}"  HorizontalOptions="Center"
+                                       Style="{StaticResource ValueStyle}"/>
 
-                                    <Label Grid.Column="0" Grid.Row="3"
+                                <Label Grid.Column="0" Grid.Row="3"
                                     Text="Defense" 
                                     Style="{StaticResource LabelStyle}"/>
                                     <Label Grid.Column="1" Grid.Row="3"
