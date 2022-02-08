@@ -24,12 +24,9 @@
                             <Image Source="{Binding Data.ImageURI}" 
                                    Style="{StaticResource ImageLargeStyle}"
                                    HorizontalOptions="Center"/>
-                            
-                            <Grid
-                                  RowSpacing="1" 
-                                  ColumnSpacing="3"
-                                  VerticalOptions="Center"
-                                  HorizontalOptions="Center">
+
+                            <Grid RowSpacing="4" ColumnSpacing="7"
+                                  VerticalOptions="Center" HorizontalOptions="Center">
 
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto" />
