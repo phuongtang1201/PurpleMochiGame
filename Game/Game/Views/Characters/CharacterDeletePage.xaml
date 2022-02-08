@@ -121,6 +121,22 @@
                                 <Label Grid.Column="4" Grid.Row="6"
                                        Text="{Binding Data.GetDefenseTotal}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
+
+                                <Label Grid.Column="0" Grid.Row="7"
+                                       Text="Speed" Padding="5,0,0,0"
+                                       Style="{StaticResource LabelStyle}"/>
+                                <Label Grid.Column="1" Grid.Row="7"
+                                       Text="{Binding Data.Speed}" HorizontalOptions="Center"
+                                       Style="{StaticResource ValueStyle}"/>
+                                <Label Grid.Column="2" Grid.Row="7"
+                                       Text="{Binding Data.GetSpeedLevelBonus}" HorizontalOptions="Center"
+                                       Style="{StaticResource ValueStyle}"/>
+                                <Label Grid.Column="3" Grid.Row="7"
+                                       Text="{Binding Data.GetSpeedItemBonus}" HorizontalOptions="Center"
+                                       Style="{StaticResource ValueStyle}"/>
+                                <Label Grid.Column="4" Grid.Row="7"
+                                       Text="{Binding Data.GetSpeedTotal}" HorizontalOptions="Center"
+                                       Style="{StaticResource ValueStyle}"/>
                                 
                                 
                             </Grid>
