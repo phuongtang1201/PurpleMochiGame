@@ -73,16 +73,10 @@
                                 <Label Grid.Row="3" Grid.Column="1"
                                        Text="{Binding Data.Level}" 
                                        Style="{StaticResource ValueStyle}"/>
-                                
-                                </Grid>
-                            
-                            <Frame
-                        Margin="20,0,20,0"
-                        Padding="10,0,15,0"
-                        BackgroundColor="LightGray"
-                        OutlineColor="LightGray">
 
-                                <Grid ColumnSpacing="5" 
+                            </Grid>
+
+                            <Grid ColumnSpacing="5" 
                               RowSpacing="2">
 
                                     <Grid.ColumnDefinitions>
@@ -196,7 +190,7 @@
                                        Style="{StaticResource ValueStyle}"/>
 
                                 </Grid>
-                            </Frame>
+
                         </StackLayout>
                         <StackLayout
                             Style="{StaticResource HorizontalStack}" 
