@@ -514,9 +514,14 @@
                    <Setter Property="OutlineColor" Value="LightGray"/>
              </Style>
 
-                 
-                   
-            
+            <Style TargetType="Frame"
+                    x:Key="NameFrameStyle">
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="BackgroundColor" Value="orange"/>
+                <Setter Property="BorderColor" Value="orange"/>
+                <Setter Property="WidthRequest" Value="300"/>
+            </Style>
+
             <!-- Grid -->
             <Style TargetType="Grid">
                 <Setter Property="ColumnSpacing" Value="0" />
