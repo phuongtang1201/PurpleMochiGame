@@ -195,7 +195,15 @@
                 <Setter Property="HorizontalTextAlignment" Value="Center" />
                 <Setter Property="HorizontalOptions" Value="Center" />
             </Style>
-            
+
+            <Style TargetType="Label"
+                x:Key="SliderValueStyle"
+                BasedOn="{StaticResource ValueStyle}">
+                <Setter Property="Padding" Value="20,0,0,0"/>
+                <Setter Property="HorizontalTextAlignment" Value="End" />
+                    <Setter Property="HorizontalOptions" Value="End" />
+            </Style>
+
             <!-- Image -->
             <Style TargetType="Image"
                 x:Key="ImageExtraExtraLargeStyle">
