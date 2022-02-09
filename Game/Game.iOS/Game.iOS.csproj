@@ -311,7 +311,7 @@
     <BundleResource Include="Resources\chefblue100px.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ChefGreen100px.png" />
+    <BundleResource Include="Resources\chefgreen100px.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ChefOrange100px.png" />
