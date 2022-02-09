@@ -56,6 +56,26 @@
                                          Grid.ColumnSpan="2" Grid.RowSpan="6"
                                          Color="LightGray" CornerRadius="5"/>
 
+                                <Label Grid.Row="2" Grid.Column="0"
+                                       Text="Statistics" Margin="5,0,5,0"
+                                       Style="{StaticResource HeaderStyle}" />
+
+                                <Label Grid.Row="3" Grid.Column="0"
+                                       Text="Location:" 
+                                       Style="{StaticResource GrayBoxStyle}"/>
+
+                                <Label Grid.Row="3" Grid.Column="1"
+                                       Text="{Binding Data.Location}"
+                                       Style="{StaticResource ValueStyle}"/>
+
+                                <Label Grid.Row="4" Grid.Column="0"
+                                       Text="Attribute:" 
+                                       Style="{StaticResource GrayBoxStyle}"/>
+
+                                <Label Grid.Row="4" Grid.Column="1"
+                                       Text="{Binding Data.Attribute}"
+                                       Style="{StaticResource ValueStyle}"/>
+
                                 <BoxView Grid.ColumnSpan="2"
                              Grid.RowSpan="2"
                              Style="{StaticResource YesNoBoxView}"/>
