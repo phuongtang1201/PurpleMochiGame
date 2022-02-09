@@ -332,7 +332,7 @@
     <BundleResource Include="Resources\garlic100px.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Lettuce100px.png" />
+    <BundleResource Include="Resources\lettuce100px.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Pineapple.png" />
