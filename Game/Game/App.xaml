@@ -329,6 +329,7 @@
                 <Setter Property="Margin" Value="0,5,0,5"/>
                 <Setter Property="HeightRequest" Value="30"/>
             </Style>
+            
             <Style TargetType="Button"
                    x:Key="YesNoButton">
                 <Setter Property="FontSize" Value="Medium"/>
@@ -340,7 +341,17 @@
                 <Setter Property= "BorderColor" Value="Gray"/>
                 <Setter Property= "BackgroundColor" Value="Gray"/>
             </Style>
-            
+
+            <Style TargetType="Button"
+                   x:Key="CancelUpdateDeleteButton">
+                <Setter Property="WidthRequest" Value="120"/>
+                <Setter Property="HeightRequest" Value="40"/>
+                <Setter Property="Margin" Value="10,0,0,0"/>
+                <Setter Property= "CornerRadius" Value="5"/>
+                <Setter Property= "BorderColor" Value="Gray"/>
+                <Setter Property= "BackgroundColor" Value="Gray"/>
+            </Style>
+
             <!-- BoxView -->
             <Style TargetType="BoxView"
                    x:Key="YesNoBoxView">
