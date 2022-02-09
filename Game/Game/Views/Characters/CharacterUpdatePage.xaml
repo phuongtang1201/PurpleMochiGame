@@ -125,6 +125,7 @@
                                     <Label Text="Attack" Style="{StaticResource LabelStyle}"/>
 
                                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                                        
                                         <Slider Style="{StaticResource SliderStyle}"
                                                 Value="{Binding Data.Attack, Mode=TwoWay}"
                                                 ValueChanged="Attack_OnSliderValueChanged"/>
@@ -142,6 +143,7 @@
                                     <Label Text="Defense" Style="{StaticResource LabelStyle}"/>
 
                                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                                        
                                         <Slider Style="{StaticResource SliderStyle}"
                                                 Value="{Binding Data.Defense, Mode=TwoWay}"
                                                 ValueChanged="Defense_OnSliderValueChanged"/>
@@ -159,12 +161,10 @@
                                     <Label Text="Speed" Style="{StaticResource LabelStyle}"/>
 
                                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
-                                        <Slider
-                                        Value="{Binding Data.Speed, Mode=TwoWay}" WidthRequest="220"
-                                        Minimum="0" Maximum="9"
-                                        MaximumTrackColor="Black"
-                                        MinimumTrackColor="Black"
-                                        ValueChanged="Speed_OnSliderValueChanged"/>
+
+                                        <Slider Style="{StaticResource SliderStyle}"
+                                                Value="{Binding Data.Speed, Mode=TwoWay}"
+                                                ValueChanged="Speed_OnSliderValueChanged"/>
 
                                         <Label 
                                     Text="{Binding Data.Speed, Mode=TwoWay}" 
