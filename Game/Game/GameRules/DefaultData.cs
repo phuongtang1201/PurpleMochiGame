@@ -18,7 +18,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Spatula",
                     Description = "Has a long reach.",
-                    ImageURI = "sword1.png",
+                    ImageURI = "icon_new.png",
                     Range = 1,
                     Damage = 4,
                     Value = 6,
@@ -28,7 +28,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Cookbook",
                     Description = "Turn enemies into food (Maximum Health)" ,
-                    ImageURI = "sword2.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 3,
                     Value = 5,
@@ -38,7 +38,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Rolling Pin",
                     Description = "Can also be used to make cookies (Attack)",
-                    ImageURI = "sword3.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 6,
                     Value = 4,
@@ -48,7 +48,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Mixer",
                     Description = "Cook more in less time (Speed)",
-                    ImageURI = "sword4.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 4,
@@ -58,7 +58,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Thermometer",
                     Description = "Cook more in less time (Speed)",
-                    ImageURI = "sword6.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 3,
@@ -68,7 +68,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Sneakers",
                     Description = "More speed, less haste (Speed)",
-                    ImageURI = "sword7.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 1,
                     Value = 4,
@@ -78,7 +78,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Coffee",
                     Description = "Restore your energy (Current Health)",
-                    ImageURI = "sword8.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 3,
@@ -88,7 +88,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Snack",
                     Description = "Restore your energy (Current Health)",
-                    ImageURI = "sword9.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 5,
@@ -98,7 +98,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Chef's Hat",
                     Description = "For the more experienced (Maximum Health)",
-                    ImageURI = "sword10.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 7,
@@ -108,7 +108,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Hair Net",
                     Description = "(Defense)",
-                    ImageURI = "sword11.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 2,
@@ -118,7 +118,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Ice",
                     Description = "Put some on that burn (Current Health)",
-                    ImageURI = "shield1.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 3,
@@ -128,7 +128,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Bib",
                     Description = "(Defense)",
-                    ImageURI = "shield1.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 2,
@@ -138,7 +138,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Bow Tie",
                     Description = "(Maximum Health)",
-                    ImageURI = "shield1.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 5,
@@ -148,7 +148,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Chef's Knife",
                     Description = "Handle with care (Attack)",
-                    ImageURI = "shield1.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 7,
@@ -158,7 +158,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Torch",
                     Description = "Light it up (Attack)",
-                    ImageURI = "shield1.png",
+                    ImageURI = "icon_new.png",
                     Range = 5,
                     Damage = 7,
                     Value = 8,
@@ -168,7 +168,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Spray Bottle",
                     Description = "(Attack)",
-                    ImageURI = "shield1.png",
+                    ImageURI = "icon_new.png",
                     Range = 7,
                     Damage = 1,
                     Value = 3,
@@ -178,7 +178,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Chef's Jacket",
                     Description = "(Maximum Health)",
-                    ImageURI = "shield1.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 8,
@@ -188,7 +188,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Apron",
                     Description = "Keeps stains at bay (Defense)",
-                    ImageURI = "shield1.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 5,
@@ -198,7 +198,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Tank Top",
                     Description = "Doesn't bog you down (Speed)",
-                    ImageURI = "shield1.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 3,
@@ -208,7 +208,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Rubber Gloves",
                     Description = "(Speed)",
-                    ImageURI = "shield1.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 2,
@@ -218,7 +218,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Oven Mitts",
                     Description = "(Defense)",
-                    ImageURI = "shield1.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 5,
@@ -228,7 +228,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Hand Lotion",
                     Description = "(Current Health)",
-                    ImageURI = "shield1.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 5,
@@ -238,7 +238,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Rubber Boots",
                     Description = "(Defense)",
-                    ImageURI = "shield1.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 2,
                     Value = 6,
@@ -248,7 +248,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Loafers",
                     Description = "(Maximum Health)",
-                    ImageURI = "shield1.png",
+                    ImageURI = "icon_new.png",
                     Range = 0,
                     Damage = 0,
                     Value = 6,
