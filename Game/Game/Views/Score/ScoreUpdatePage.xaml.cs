@@ -50,8 +50,12 @@ namespace Game.Views
         /// <param name="e"></param>
         public async void Save_Clicked(object sender, EventArgs e)
         {
-            MessagingCenter.Send(this, "Update", ViewModel.Data);
-            _ = await Navigation.PopModalAsync();
+            // Check the name is not null
+            if (!Warning_Not_Null_Message.IsVisible)
+            {
+                MessagingCenter.Send(this, "Update", ViewModel.Data);
+                _ = await Navigation.PopModalAsync();
+            }
         }
 
         /// <summary>
