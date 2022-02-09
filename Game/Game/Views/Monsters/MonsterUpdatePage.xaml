@@ -74,10 +74,6 @@
                                         <ColumnDefinition Width="auto"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <BoxView BackgroundColor="LightGray"
-                                         CornerRadius="5" Grid.ColumnSpan="3"
-                                         Grid.RowSpan="5"></BoxView>
-
                                     <Label Grid.Row="0" Grid.Column="0"
                                     Text="Statistics" 
                                     Style="{StaticResource HeaderStyle}"/>
