@@ -343,4 +343,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\Strawberry100px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Watermelon100px.png" />
+  </ItemGroup>
 </Project>
