@@ -57,9 +57,12 @@
 
                             <Frame Style="{StaticResource DescriptionFrameStyle}">
 
-                                <Entry Text="{Binding Data.Description}" 
-                                   TextChanged="Entry_CheckNotEmpty"
-                                   Style="{StaticResource EntryStyle}"/>
+                                <Editor
+                                    Text="{Binding Data.Description, Mode=TwoWay}" 
+                                    Style="{StaticResource EntryStyle}"
+                                    VerticalOptions="Start"
+                                    HeightRequest="65"
+                                    TextChanged="Entry_CheckNotEmpty"/>
 
                             </Frame>
  
