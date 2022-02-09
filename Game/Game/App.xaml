@@ -120,6 +120,13 @@
             </Style>
 
             <Style TargetType="Label"
+                x:Key="GrayBoxStyle"
+                BasedOn="{StaticResource LabelBaseStyle}">
+                <Setter Property="FontSize" Value="Micro" />
+                <Setter Property="Padding" Value="5,5,5,5"/>
+            </Style>
+
+            <Style TargetType="Label"
                 x:Key="ValueStyle"
                 BasedOn="{StaticResource LabelStyle}">
                 <Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
