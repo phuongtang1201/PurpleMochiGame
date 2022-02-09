@@ -51,6 +51,10 @@
                                        Text="{Binding Data.Description}"
                                        LineBreakMode="WordWrap"
                                        Style="{StaticResource ValueStyle}"/>
+
+                                <BoxView Grid.Row="2" Grid.Column="0" 
+                                         Grid.ColumnSpan="2" Grid.RowSpan="6"
+                                         Color="LightGray" CornerRadius="5"/>
                             </Grid>
 
                             <Grid
