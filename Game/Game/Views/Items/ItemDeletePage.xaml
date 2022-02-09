@@ -47,9 +47,10 @@
                                        Text="Description:"
                                        Style="{StaticResource GrayBoxStyle}"/>
 
-                                <Label Grid.Row="1" Grid.Column="1"
-                           Text="{Binding Data.Description}" 
-                           Style="{StaticResource ValueStyle}"/>
+                                <Label Grid.Row="1" Grid.Column="1" 
+                                       Text="{Binding Data.Description}"
+                                       LineBreakMode="WordWrap"
+                                       Style="{StaticResource ValueStyle}"/>
                             </Grid>
 
                             <Grid
