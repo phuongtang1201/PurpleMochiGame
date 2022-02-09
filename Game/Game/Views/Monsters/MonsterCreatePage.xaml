@@ -59,8 +59,7 @@
                         </StackLayout>
 
                         <Frame
-                            BackgroundColor="LightGray"
-                            OutlineColor="LightGray">
+                            Style="{StaticResource StatisticsFrame}">
                         <StackLayout
                             Margin="20,0,20,0"
                             Padding="10,0,15,0">
