@@ -576,7 +576,13 @@
                 <Setter Property="PlaceholderColor" Value="{StaticResource TriciaryTextColor}" />
                 <Setter Property="AutoSize" Value="TextChanges" />
             </Style>
-            
+
+            <Style TargetType="Editor"
+                   x:Key="EditorDescriptionStyle">
+                <Setter Property="VerticalOptions" Value="Start" />
+                <Setter Property="HeightRequest" Value="65" />
+            </Style>
+
             <!-- Slider -->
             <Style TargetType="Slider"
                    x:Key="SliderStyle">
