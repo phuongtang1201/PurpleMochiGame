@@ -159,12 +159,10 @@
                                                 Value="{Binding Data.Damage, Mode=TwoWay}"
                                                 ValueChanged="Damage_OnSliderValueChanged"/>
 
-                                        <Label Text="{Binding Data.Damage}" 
-                                       x:Name="DamageValue"
-                                       Style="{StaticResource ValueStyle}"
-                                       Padding="20,0,0,0"
-                                       HorizontalOptions="End"
-                                       HorizontalTextAlignment="End"/>
+                                        <Label Style="{StaticResource SliderValueStyle}"
+                                               Text="{Binding Data.Damage, Mode=TwoWay}" 
+                                               x:Name="DamageValue"/>
+
                                     </StackLayout>
 
                                 </StackLayout>
