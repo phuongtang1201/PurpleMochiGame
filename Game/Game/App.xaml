@@ -281,6 +281,13 @@
                 BasedOn="{StaticResource ImageBattleSmallStyle}">
             </Style>
 
+            <Style TargetType="Label"
+                   x:Key="WarningDeleteLabelStyle"
+                   BasedOn="{StaticResource MessageStyle}">
+                <Setter Property="Padding" Value="10,0,10,0"/>
+                <Setter Property="LineBreakMode" Value="WordWrap"/>
+            </Style>
+
             <!-- ImageButton -->
             <Style TargetType="ImageButton">
                 <Setter Property="HeightRequest" Value="150" />
