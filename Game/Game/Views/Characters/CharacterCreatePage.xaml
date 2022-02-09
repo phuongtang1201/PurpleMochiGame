@@ -58,12 +58,7 @@
                                 HorizontalOptions="Center"
                                 Style="{StaticResource LabelStyle}"/>
 
-                            <Frame 
-                                    CornerRadius="5"
-                                    BackgroundColor="orange"
-                                    BorderColor="orange"
-                                    WidthRequest="300"
-                                    HeightRequest="65">
+                            <Frame Style="{StaticResource DescriptionFrameStyle}">
 
                                 <Editor
                                     Text="{Binding Data.Description, Mode=TwoWay}" 
