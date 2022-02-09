@@ -52,9 +52,14 @@
                             <Label Text="Description"
                                    Style="{StaticResource HeaderStyle}" />
 
-                            <Entry Text="{Binding Data.Description, Mode=TwoWay}"
+                            <Frame Style="{StaticResource DescriptionFrameStyle}">
+
+                                <Entry Text="{Binding Data.Description, Mode=TwoWay}"
                                    TextChanged="Entry_CheckNotEmpty"
                                    Style="{StaticResource EntryStyle}" />
+
+                            </Frame>
+                            
 
                         </StackLayout>
 
