@@ -76,11 +76,9 @@
                             HorizontalTextAlignment="Start"/>
                     </Frame>
 
-                    <Slider
-                        Value="{Binding Data.ScoreTotal, Mode=TwoWay}" WidthRequest="220"
-                        Minimum="0" Maximum="500"
-                        MaximumTrackColor="Black"
-                        MinimumTrackColor="Black"                           
+                    <Slider Style="{StaticResource SliderStyle}"
+                        Value="{Binding Data.ScoreTotal, Mode=TwoWay}"
+                        Maximum="500"                         
                         ValueChanged="Score_OnSliderValueChanged"/>
                 </StackLayout>
 
