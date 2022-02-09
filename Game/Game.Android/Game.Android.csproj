@@ -275,5 +275,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ChefPurple100px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ChefWhite.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
