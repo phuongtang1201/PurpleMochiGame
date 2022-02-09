@@ -180,6 +180,7 @@
     <Content Include="ring1.png" />
     <Content Include="ring2.png" />
     <Content Include="rollingpin.png" />
+    <Content Include="salt.png" />
     <Content Include="score.png" />
     <Content Include="shield1.png" />
     <Content Include="shield2.png" />
