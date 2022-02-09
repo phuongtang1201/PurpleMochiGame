@@ -349,4 +349,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\foodfightlogo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\apron.png" />
+  </ItemGroup>
 </Project>
