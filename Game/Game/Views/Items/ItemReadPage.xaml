@@ -36,16 +36,16 @@
                                 </Grid.ColumnDefinitions>
 
                                 <Label Grid.Row="0" Grid.Column="0" 
-                                       Text="Item Name:" Padding="5,0,0,0"
-                                       Style="{StaticResource LabelStyle}"/>
+                                       Text="Item Name:"
+                                       Style="{StaticResource GrayBoxStyle}"/>
 
                                 <Label Grid.Row="0" Grid.Column="1" 
                                        Text="{Binding Data.Name}"
                                        Style="{StaticResource ValueStyle}"/>
 
                                 <Label Grid.Row="1" Grid.Column="0" 
-                                       Text="Description:" Padding="5,0,0,0"
-                                       Style="{StaticResource LabelStyle}"/>
+                                       Text="Description:"
+                                       Style="{StaticResource GrayBoxStyle}"/>
 
                                 <Label Grid.Row="1" Grid.Column="1" 
                                        Text="{Binding Data.Description}"
@@ -57,12 +57,12 @@
                                          Color="LightGray" CornerRadius="5"/>
 
                                 <Label Grid.Row="2" Grid.Column="0"
-                                       Text="Statistics" 
+                                       Text="Statistics" Margin="5,0,5,0"
                                        Style="{StaticResource HeaderStyle}" />
 
                                 <Label Grid.Row="3" Grid.Column="0"
                                        Text="Location:" 
-                                       Style="{StaticResource LabelStyle}"/>
+                                       Style="{StaticResource GrayBoxStyle}"/>
 
                                 <Label Grid.Row="3" Grid.Column="1"
                                        Text="{Binding Data.Location}"
@@ -70,7 +70,7 @@
 
                                 <Label Grid.Row="4" Grid.Column="0"
                                        Text="Attribute:" 
-                                       Style="{StaticResource LabelStyle}"/>
+                                       Style="{StaticResource GrayBoxStyle}"/>
 
                                 <Label Grid.Row="4" Grid.Column="1"
                                        Text="{Binding Data.Attribute}"
@@ -78,7 +78,7 @@
 
                                 <Label Grid.Row="5" Grid.Column="0"
                                        Text="Range:" 
-                                       Style="{StaticResource LabelStyle}"/>
+                                       Style="{StaticResource GrayBoxStyle}"/>
 
                                 <Label Grid.Row="5" Grid.Column="1"
                                        Text="{Binding Data.Range}"
@@ -86,7 +86,7 @@
 
                                 <Label Grid.Row="6" Grid.Column="0"
                                        Text="Value:" 
-                                       Style="{StaticResource LabelStyle}"/>
+                                       Style="{StaticResource GrayBoxStyle}"/>
 
                                 <Label Grid.Row="6" Grid.Column="1"
                                        Text="{Binding Data.Value}"
@@ -94,7 +94,7 @@
 
                                 <Label Grid.Row="7" Grid.Column="0"
                                        Text="Damage:" 
-                                       Style="{StaticResource LabelStyle}"/>
+                                       Style="{StaticResource GrayBoxStyle}"/>
 
                                 <Label Grid.Row="7" Grid.Column="1"
                                        Text="{Binding Data.Damage}"
@@ -103,21 +103,17 @@
                             </Grid>
                         </StackLayout>
                         
-                        <StackLayout
-                            Style="{StaticResource HorizontalStack}" 
-                            HorizontalOptions="Center">
-                            <Button
-                            Text="Delete"
-                            Clicked="Delete_Clicked"
-                            Margin="10,0,0,0"
-                            WidthRequest="120"
-                            HeightRequest="40"/>
-                            <Button
-                            Text="Update"
-                            Clicked="Update_Clicked"
-                            WidthRequest="120"
-                            HeightRequest="40"
-                            Margin="20,0,0,0"/>
+                        <StackLayout Style="{StaticResource HorizontalStack}" 
+                                     HorizontalOptions="Center">
+                            
+                            <Button Text="Delete"
+                                    Clicked="Delete_Clicked"
+                                    Margin="10,0,0,0"
+                                    WidthRequest="120" HeightRequest="40"/>
+                            <Button Text="Update"
+                                    Clicked="Update_Clicked"
+                                    WidthRequest="120" HeightRequest="40"
+                                    Margin="20,0,0,0"/>
                         </StackLayout>
                     </StackLayout>
                 </ScrollView>
