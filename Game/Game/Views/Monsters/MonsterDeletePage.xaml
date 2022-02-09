@@ -198,11 +198,8 @@
                                     Style="{StaticResource YesNoButton}"/>
 
                             <Button Grid.Row="1" Grid.Column="1"
-                                    WidthRequest="100"
                                     Text="No" Clicked="Cancel_Clicked" 
-                                    HorizontalOptions="Center" FontSize="Medium"
-                                    VerticalOptions="Center"
-                                    BorderWidth="1" BorderColor="black" />
+                                    Style="{StaticResource YesNoButton}"/>
 
                         </Grid>
 
