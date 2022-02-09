@@ -22,6 +22,9 @@ namespace Game.Views
         // Hold the current location selected
         public ItemLocationEnum PopupLocationEnum = ItemLocationEnum.Unknown;
 
+        // Hold a copy of the original data for Cancel to use
+        public MonsterModel DataCopy;
+
         // Empty Constructor for UTs
         public MonsterUpdatePage(bool UnitTest) { }
 
@@ -33,6 +36,8 @@ namespace Game.Views
             InitializeComponent();
 
             BindingContext = this.ViewModel = data;
+
+            DataCopy = new MonsterModel(data.Data);
 
             this.ViewModel.Title = "Update " + data.Title;
 
@@ -119,6 +124,7 @@ namespace Game.Views
         /// <param name="e"></param>
         public async void Cancel_Clicked(object sender, EventArgs e)
         {
+            ViewModel.Data.Update(DataCopy);
             _ = await Navigation.PopModalAsync();
         }
 
