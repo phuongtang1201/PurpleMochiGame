@@ -34,6 +34,10 @@ namespace Game.Views
             BindingContext = this.ViewModel = data;
 
             this.ViewModel.Title = "Create";
+
+            //This message will show if either the name entry box is empty
+            Warning_Not_Null_Message.Text = "Please enter a valid input.";
+            Warning_Not_Null_Message.IsVisible = false;
         }
 
         /// <summary>
