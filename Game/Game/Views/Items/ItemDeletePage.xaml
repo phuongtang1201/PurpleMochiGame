@@ -25,10 +25,8 @@
                                    Style="{StaticResource ImageExtraLargeStyle}" 
                                    HorizontalOptions="Center"/>
 
-                            <Grid
-                    RowSpacing="1"
-                    ColumnSpacing="2"
-                    HorizontalOptions="Center">
+                            <Grid RowSpacing="4" ColumnSpacing="7"
+                                  VerticalOptions="Center" HorizontalOptions="Center">
 
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto" />
