@@ -130,13 +130,9 @@
                                                 Value="{Binding Data.Attack, Mode=TwoWay}"
                                                 ValueChanged="Attack_OnSliderValueChanged"/>
 
-                                        <Label 
-                                    Text="{Binding Data.Attack, Mode=TwoWay}" 
-                                    x:Name="AttackValue"
-                                    Style="{StaticResource ValueStyle}"
-                                    Padding="20,0,0,0"
-                                    HorizontalOptions="End"
-                                    HorizontalTextAlignment="End"/>
+                                        <Label Style="{StaticResource SliderValueStyle}"
+                                               Text="{Binding Data.Attack, Mode=TwoWay}" 
+                                               x:Name="AttackValue"/>
 
                                     </StackLayout>
 
