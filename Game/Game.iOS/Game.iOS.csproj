@@ -358,4 +358,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\nonslip.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\rollingpin.png" />
+  </ItemGroup>
 </Project>
