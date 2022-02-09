@@ -55,10 +55,14 @@
                             <Label Text="Description" 
                                    Style="{StaticResource LabelStyle}"/>
 
-                            <Entry Text="{Binding Data.Description}" 
+                            <Frame Style="{StaticResource DescriptionFrameStyle}">
+
+                                <Entry Text="{Binding Data.Description}" 
                                    TextChanged="Entry_CheckNotEmpty"
                                    Style="{StaticResource EntryStyle}"/>
 
+                            </Frame>
+ 
                         </StackLayout>
 
                         <Frame
