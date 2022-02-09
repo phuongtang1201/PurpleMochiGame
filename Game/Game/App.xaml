@@ -520,8 +520,8 @@
                 <Setter Property="BackgroundColor" Value="orange"/>
                 <Setter Property="BorderColor" Value="orange"/>
                 <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="HeightRequest" Value="39"/>
             </Style>
-
             <!-- Grid -->
             <Style TargetType="Grid">
                 <Setter Property="ColumnSpacing" Value="0" />
