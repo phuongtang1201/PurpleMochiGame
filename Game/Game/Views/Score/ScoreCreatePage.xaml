@@ -45,6 +45,7 @@
                            WidthRequest="300">
 
                         <Entry Text="{Binding Data.Name}" 
+                               TextChanged="Entry_CheckNotEmpty"
                             Style="{StaticResource EntryStyle}"/>
                     </Frame>
 
