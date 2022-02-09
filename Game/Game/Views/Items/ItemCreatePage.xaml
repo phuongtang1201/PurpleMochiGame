@@ -129,6 +129,7 @@
                                         <Label Style="{StaticResource SliderValueStyle}"
                                                Text="{Binding Data.Range, Mode=TwoWay}" 
                                                x:Name="RangeValue"/>
+                                        
                                     </StackLayout>
 
                                     <Label Text="Value"
@@ -141,12 +142,10 @@
                                                 Value="{Binding Data.Value, Mode=TwoWay}"
                                                 ValueChanged="Value_OnSliderValueChanged"/>
 
-                                        <Label Text="{Binding Data.Value}" 
-                                       x:Name="ValueValue"
-                                       Style="{StaticResource ValueStyle}"
-                                       Padding="20,0,0,0"
-                                       HorizontalOptions="End"
-                                       HorizontalTextAlignment="End"/>
+                                        <Label Style="{StaticResource SliderValueStyle}"
+                                               Text="{Binding Data.Value, Mode=TwoWay}" 
+                                               x:Name="ValueValue"/>
+ 
                                     </StackLayout>
 
                                     <Label 
