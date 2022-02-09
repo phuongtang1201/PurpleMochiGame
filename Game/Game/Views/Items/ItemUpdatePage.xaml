@@ -122,12 +122,10 @@
 
                                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
-                                        <Slider Grid.Row="4" Grid.Column="1" x:Name="RangeValue2"
-                                        WidthRequest="220" Minimum="0" Maximum="9"
-                                        Value="{Binding Data.Range, Mode=TwoWay}"  
-                                        MaximumTrackColor="Black"
-                                        MinimumTrackColor="Black"
-                                        ValueChanged = "Range_OnSliderValueChanged" />
+                                        <Slider Style="{StaticResource SliderStyle}"
+                                                x:Name ="RangeValue2" 
+                                                Value="{Binding Data.Range, Mode=TwoWay}"
+                                                ValueChanged="Range_OnSliderValueChanged"/>
 
                                         <Label 
                                         Text="{Binding Data.Range}" 
