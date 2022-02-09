@@ -336,9 +336,11 @@
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property="VerticalOptions" Value="Center"/>
                 <Setter Property="BorderWidth" Value="1"/>
-                <Setter Property= "BorderColor" Value="Black"/>
-              
+                <Setter Property= "CornerRadius" Value="5"/>
+                <Setter Property= "BorderColor" Value="Gray"/>
+                <Setter Property= "BackgroundColor" Value="Gray"/>
             </Style>
+            
             <!-- BoxView -->
             <Style TargetType="BoxView"
                    x:Key="YesNoBoxView">
