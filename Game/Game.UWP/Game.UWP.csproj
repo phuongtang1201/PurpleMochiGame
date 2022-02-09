@@ -168,6 +168,7 @@
     <Content Include="icon_save.png" />
     <Content Include="item.png" />
     <Content Include="items.png" />
+    <Content Include="knife.png" />
     <Content Include="knight.png" />
     <Content Include="Lettuce100px.png" />
     <Content Include="neck1.png" />
