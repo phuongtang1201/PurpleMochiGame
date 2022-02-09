@@ -352,4 +352,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\apron.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\knife.png" />
+  </ItemGroup>
 </Project>
