@@ -22,9 +22,10 @@
     <ContentPage.Content>
 
         <ScrollView>
-            <StackLayout Style="{StaticResource OuterBoxStack}"
-                Spacing="10">
+            <StackLayout Style="{StaticResource OuterBoxStack}" Spacing="10">
 
+                <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
+                
                 <StackLayout Orientation="Vertical">
 
                     <Frame CornerRadius="5"
