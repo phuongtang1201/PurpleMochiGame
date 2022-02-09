@@ -76,6 +76,30 @@
                                        Text="{Binding Data.Attribute}"
                                        Style="{StaticResource ValueStyle}"/>
 
+                                <Label Grid.Row="5" Grid.Column="0"
+                                       Text="Range:" 
+                                       Style="{StaticResource GrayBoxStyle}"/>
+
+                                <Label Grid.Row="5" Grid.Column="1"
+                                       Text="{Binding Data.Range}"
+                                       Style="{StaticResource ValueStyle}"/>
+
+                                <Label Grid.Row="6" Grid.Column="0"
+                                       Text="Value:" 
+                                       Style="{StaticResource GrayBoxStyle}"/>
+
+                                <Label Grid.Row="6" Grid.Column="1"
+                                       Text="{Binding Data.Value}"
+                                       Style="{StaticResource ValueStyle}"/>
+
+                                <Label Grid.Row="7" Grid.Column="0"
+                                       Text="Damage:" 
+                                       Style="{StaticResource GrayBoxStyle}"/>
+
+                                <Label Grid.Row="7" Grid.Column="1"
+                                       Text="{Binding Data.Damage}"
+                                       Style="{StaticResource ValueStyle}"/>
+
                                 <BoxView Grid.ColumnSpan="2"
                              Grid.RowSpan="2"
                              Style="{StaticResource YesNoBoxView}"/>
