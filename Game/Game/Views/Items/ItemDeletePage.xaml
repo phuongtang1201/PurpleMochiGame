@@ -100,25 +100,38 @@
                                        Text="{Binding Data.Damage}"
                                        Style="{StaticResource ValueStyle}"/>
 
-                                <BoxView Grid.ColumnSpan="2"
+                            </Grid>
+                        </StackLayout>
+
+                        <Grid RowSpacing="1" ColumnSpacing="2"
+                              HorizontalOptions="Center">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="150" />
+                                <ColumnDefinition Width="150" />
+                            </Grid.ColumnDefinitions>
+
+                            <BoxView Grid.ColumnSpan="2"
                              Grid.RowSpan="2"
                              Style="{StaticResource YesNoBoxView}"/>
 
-                                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  
+                            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  
                            Text="Are you sure you want to delete this item?" 
                            Style="{StaticResource WarningDeleteLabelStyle}"/>
 
-                                <Button Grid.Row="1" Grid.Column="0"
+                            <Button Grid.Row="1" Grid.Column="0"
                             Text="Yes" Clicked="Delete_Clicked" 
                             Style="{StaticResource YesNoButton}">
-                                </Button>
+                            </Button>
 
-                                <Button Grid.Row="1" Grid.Column="1"
+                            <Button Grid.Row="1" Grid.Column="1"
                             Text="No" Clicked="Cancel_Clicked" 
                             Style="{StaticResource YesNoButton}">
-                                </Button>
-                            </Grid>
-                        </StackLayout>
+                            </Button>
+                        </Grid>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
