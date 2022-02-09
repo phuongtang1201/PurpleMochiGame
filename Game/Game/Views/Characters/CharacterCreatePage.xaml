@@ -44,10 +44,7 @@
                                 Style="{StaticResource LabelStyle}"/>
 
                             <Frame 
-                                    CornerRadius="5"
-                                    BackgroundColor="orange"
-                                    BorderColor="orange"
-                                    WidthRequest="300">
+                                Style="{StaticResource NameFrameStyle}">
 
                                 <Entry 
                                     Text="{Binding Data.Name, Mode=TwoWay}" 
