@@ -27,7 +27,7 @@ namespace Game.GameRules
 
                 new ItemModel {
                     Name = "Cookbook",
-                    Description = "Records all secrets of ingredients. Increase chef's defense." ,
+                    Description = "Records all secrets of ingredients. Increases chef's defense." ,
                     ImageURI = "sword2.png",
                     Range = 3,
                     Damage = 0,
@@ -37,7 +37,7 @@ namespace Game.GameRules
 
                 new ItemModel {
                     Name = "Rolling pin",
-                    Description = "Powerfull weapon. Increase chef's attack",
+                    Description = "Powerful weapon. Increases chef's attack",
                     ImageURI = "sword3.png",
                     Range = 4,
                     Damage = 4,
@@ -124,6 +124,136 @@ namespace Game.GameRules
                     Value = 5,
                     Location = ItemLocationEnum.Head,
                     Attribute = AttributeEnum.CurrentHealth},
+
+                new ItemModel {
+                    Name = "1",
+                    Description = "Increases ingredient's health",
+                    ImageURI = "shield1.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 5,
+                    Location = ItemLocationEnum.Head,
+                    Attribute = AttributeEnum.CurrentHealth},
+
+                new ItemModel {
+                    Name = "2",
+                    Description = "Increases ingredient's health",
+                    ImageURI = "shield1.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 5,
+                    Location = ItemLocationEnum.Head,
+                    Attribute = AttributeEnum.CurrentHealth},
+
+                new ItemModel {
+                    Name = "3",
+                    Description = "Increases ingredient's health",
+                    ImageURI = "shield1.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 5,
+                    Location = ItemLocationEnum.Head,
+                    Attribute = AttributeEnum.CurrentHealth},
+
+                new ItemModel {
+                    Name = "4",
+                    Description = "Increases ingredient's health",
+                    ImageURI = "shield1.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 5,
+                    Location = ItemLocationEnum.Head,
+                    Attribute = AttributeEnum.CurrentHealth},
+
+                new ItemModel {
+                    Name = "5",
+                    Description = "Increases ingredient's health",
+                    ImageURI = "shield1.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 5,
+                    Location = ItemLocationEnum.Head,
+                    Attribute = AttributeEnum.CurrentHealth},
+
+                new ItemModel {
+                    Name = "6",
+                    Description = "Increases ingredient's health",
+                    ImageURI = "shield1.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 5,
+                    Location = ItemLocationEnum.Head,
+                    Attribute = AttributeEnum.CurrentHealth},
+
+                new ItemModel {
+                    Name = "7",
+                    Description = "Increases ingredient's health",
+                    ImageURI = "shield1.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 5,
+                    Location = ItemLocationEnum.Head,
+                    Attribute = AttributeEnum.CurrentHealth},
+
+                new ItemModel {
+                    Name = "8",
+                    Description = "Increases ingredient's health",
+                    ImageURI = "shield1.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 5,
+                    Location = ItemLocationEnum.Head,
+                    Attribute = AttributeEnum.CurrentHealth},
+
+                new ItemModel {
+                    Name = "9",
+                    Description = "Increases ingredient's health",
+                    ImageURI = "shield1.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 5,
+                    Location = ItemLocationEnum.Head,
+                    Attribute = AttributeEnum.CurrentHealth},
+
+                new ItemModel {
+                    Name = "10",
+                    Description = "Increases ingredient's health",
+                    ImageURI = "shield1.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 5,
+                    Location = ItemLocationEnum.Head,
+                    Attribute = AttributeEnum.CurrentHealth},
+
+                new ItemModel {
+                    Name = "11",
+                    Description = "Increases ingredient's health",
+                    ImageURI = "shield1.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 5,
+                    Location = ItemLocationEnum.Head,
+                    Attribute = AttributeEnum.CurrentHealth},
+
+                new ItemModel {
+                    Name = "12",
+                    Description = "Increases ingredient's health",
+                    ImageURI = "shield1.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 5,
+                    Location = ItemLocationEnum.Head,
+                    Attribute = AttributeEnum.CurrentHealth},
+
+                new ItemModel {
+                    Name = "13",
+                    Description = "Increases ingredient's health",
+                    ImageURI = "shield1.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 5,
+                    Location = ItemLocationEnum.Head,
+                    Attribute = AttributeEnum.CurrentHealth}
 
             };
 
