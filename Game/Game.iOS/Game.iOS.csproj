@@ -367,4 +367,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\salt.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\vinegar.png" />
+  </ItemGroup>
 </Project>
