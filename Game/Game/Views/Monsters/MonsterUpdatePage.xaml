@@ -127,13 +127,9 @@
                                                 Value="{Binding Data.Defense, Mode=TwoWay}"
                                                 ValueChanged="Defense_OnSliderValueChanged"/>
 
-                                        <Label 
-                                    Text="{Binding Data.Defense, Mode=TwoWay}" 
-                                    x:Name="DefenseValue"
-                                    Style="{StaticResource ValueStyle}"
-                                    Padding="20,0,0,0"
-                                    HorizontalOptions="End"
-                                    HorizontalTextAlignment="End"/>
+                                        <Label Style="{StaticResource SliderValueStyle}"
+                                               Text="{Binding Data.Defense, Mode=TwoWay}" 
+                                               x:Name="DefenseValue"/>
                                     </StackLayout>
 
                                     <Label Text="Speed" Style="{StaticResource LabelStyle}"/>
