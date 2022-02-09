@@ -55,11 +55,14 @@
                                 Text="Description" 
                                 Style="{StaticResource LabelStyle}"/>
 
-                            <Entry 
+                            <Frame Style="{StaticResource DescriptionFrameStyle}">
+                                <Entry 
                                 Text="{Binding Data.Description, Mode=TwoWay}" 
                                 Style="{StaticResource EntryStyle}"
                                 
                                 TextChanged="Entry_CheckNotEmpty"/>
+                            </Frame>
+                            
                         </StackLayout>
 
                         <Frame
