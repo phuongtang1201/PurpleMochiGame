@@ -146,14 +146,11 @@
 
                                 <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
-                                    <Slider
-                                    Value="{Binding Data.Speed, Mode=TwoWay}" WidthRequest="220"
-                                    Minimum="0" Maximum="9"
-                                    MaximumTrackColor="Black"
-                                    MinimumTrackColor="Black"
-                                    ValueChanged="Speed_OnSliderValueChanged"/>
+                                        <Slider Style="{StaticResource SliderStyle}"
+                                                Value="{Binding Data.Speed, Mode=TwoWay}"
+                                                ValueChanged="Speed_OnSliderValueChanged"/>
 
-                                    <Label 
+                                        <Label 
                                     Text="{Binding Data.Speed, Mode=TwoWay}" 
                                     x:Name="SpeedValue"
                                     Style="{StaticResource ValueStyle}"
