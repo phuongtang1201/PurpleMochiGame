@@ -442,36 +442,54 @@ namespace Game.GameRules
                 new MonsterModel {
                     Name = "Rotten Egg",
                     Description = "Small and smelly",
+                    Attack = 3,
+                    Defense = 3,
+                    Speed = 3,
                     ImageURI = "icon_new.png",
                 },
 
                 new MonsterModel {
                     Name = "Spiny Pineapple",
                     Description = "It'll prick you",
+                    Attack = 3,
+                    Defense = 3,
+                    Speed = 3,
                     ImageURI = "icon_new.png",
                 },
 
                 new MonsterModel {
                     Name = "Moldy Rice",
                     Description = "Death on impact",
+                    Attack = 3,
+                    Defense = 3,
+                    Speed = 3,
                     ImageURI = "icon_new.png",
                 },
 
                 new MonsterModel {
                     Name = "Yogurt",
                     Description = "May the Schwartz be with you",
+                    Attack = 3,
+                    Defense = 3,
+                    Speed = 3,
                     ImageURI = "icon_new.png",
                 },
 
                 new MonsterModel {
                     Name = "Gefilte Fish",
                     Description = "A taste even a mom can't love",
+                    Attack = 3,
+                    Defense = 3,
+                    Speed = 3,
                     ImageURI = "icon_new.png",
                 },
 
                 new MonsterModel {
                     Name = "Spicy Strawberry",
                     Description = "Zesty",
+                    Attack = 3,
+                    Defense = 3,
+                    Speed = 3,
                     ImageURI = "icon_new.png",
                 },
             };
