@@ -58,9 +58,6 @@
 
                             </Grid>
 
-                        
-
-                            <StackLayout>
                                 <Grid
                                   RowSpacing="1"
                                   ColumnSpacing="2"
@@ -119,7 +116,7 @@
                                        Style="{StaticResource ValueStyle}"/>
 
                                 </Grid>
-                            </StackLayout>
+
                         </StackLayout>
                         <StackLayout
                             Style="{StaticResource HorizontalStack}" 
