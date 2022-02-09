@@ -110,12 +110,9 @@
 
                                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
-                                        <Slider Grid.Row="2" Grid.Column="1"
-                                    Value="{Binding Data.Attack, Mode=TwoWay}" WidthRequest="220"
-                                    Minimum="0" Maximum="9"
-                                    MaximumTrackColor="Black"
-                                    MinimumTrackColor="Black"
-                                    ValueChanged="Attack_OnSliderValueChanged"/>
+                                        <Slider Style="{StaticResource SliderStyle}"
+                                                Value="{Binding Data.Attack, Mode=TwoWay}"
+                                                ValueChanged="Attack_OnSliderValueChanged"/>
 
                                         <Label 
                                     Text="{Binding Data.Attack, Mode=TwoWay}" 
