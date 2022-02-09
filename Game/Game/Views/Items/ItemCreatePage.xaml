@@ -89,9 +89,6 @@
                                         <Label Text="Image" 
                                            Style="{StaticResource LabelStyle}"/>
 
-                                        <Image Source="{Binding Data.ImageURI}"
-                                           Style="{StaticResource ImageSmallStyle}"/>
-
                                     </StackLayout>
 
                                     <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
