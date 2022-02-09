@@ -39,14 +39,13 @@
                         Style="{StaticResource LabelStyle}"/>
                     </Frame>
 
-                    <Frame HorizontalOptions="Start"
-                    CornerRadius="5"
-                    BackgroundColor="orange"
-                    BorderColor="orange"
-                    WidthRequest="300">
+                    <Frame 
+                        Style="{StaticResource NameFrameStyle}">
 
-                        <Entry Text="{Binding Data.Name}" 
-                           Style="{StaticResource EntryStyle}"/>
+                        <Entry 
+                            Text="{Binding Data.Name, Mode=TwoWay}" 
+                            Style="{StaticResource EntryStyle}"
+                            TextChanged="Entry_CheckNotEmpty"/>
                     </Frame>
 
                     <Frame HorizontalOptions="Start"
