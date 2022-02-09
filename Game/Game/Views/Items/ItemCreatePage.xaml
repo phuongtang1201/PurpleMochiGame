@@ -40,9 +40,14 @@
                             <Label Text="Item Name"
                                    Style="{StaticResource HeaderStyle}" />
 
-                            <Entry Text="{Binding Data.Name, Mode=TwoWay}"
-                                   TextChanged="Entry_CheckNotEmpty"
-                                   Style="{StaticResource EntryStyle}" />
+                            <Frame 
+                                Style="{StaticResource NameFrameStyle}">
+
+                                <Entry 
+                                    Text="{Binding Data.Name, Mode=TwoWay}" 
+                                    Style="{StaticResource EntryStyle}"
+                                    TextChanged="Entry_CheckNotEmpty"/>
+                            </Frame>
 
                             <Label Text="Description"
                                    Style="{StaticResource HeaderStyle}" />
