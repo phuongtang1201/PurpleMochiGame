@@ -305,7 +305,7 @@ namespace Game.GameRules
                     Description = "Brings sweetness to everyone by her dessert",
                     Level = 1,
                     MaxHealth = 5,
-                    ImageURI = "elf1.png",
+                    ImageURI = "icon_new.png",
                     Head = HeadString,
                     Necklass = NecklassString,
                     PrimaryHand = PrimaryHandString,
@@ -320,7 +320,7 @@ namespace Game.GameRules
                     Description = "Can make delicious cake.",
                     Level = 1,
                     MaxHealth = 5,
-                    ImageURI = "elf2.png",
+                    ImageURI = "icon_new.png",
                     Head = HeadString,
                     Necklass = NecklassString,
                     PrimaryHand = PrimaryHandString,
@@ -335,7 +335,7 @@ namespace Game.GameRules
                     Description = "Go to get yummy Italian pizza.",
                     Level = 1,
                     MaxHealth = 8,
-                    ImageURI = "elf4.png",
+                    ImageURI = "icon_new.png",
                     Head = HeadString,
                     Necklass = NecklassString,
                     PrimaryHand = PrimaryHandString,
@@ -350,7 +350,14 @@ namespace Game.GameRules
                     Description = "Brings premium sushi with line chef level",
                     Level = 4,
                     MaxHealth = 38,
-                    ImageURI = "elf3.png"
+                    ImageURI = "icon_new.png",
+                    Head = HeadString,
+                    Necklass = NecklassString,
+                    PrimaryHand = PrimaryHandString,
+                    OffHand = OffHandString,
+                    Feet = FeetString,
+                    RightFinger = RightFingerString,
+                    LeftFinger = LeftFingerString,
                 },
 
                 new CharacterModel {
@@ -358,7 +365,14 @@ namespace Game.GameRules
                     Description = "Makes fresh vegan food.",
                     Level = 5,
                     MaxHealth = 43,
-                    ImageURI = "elf5.png"
+                    ImageURI = "icon_new.png",
+                    Head = HeadString,
+                    Necklass = NecklassString,
+                    PrimaryHand = PrimaryHandString,
+                    OffHand = OffHandString,
+                    Feet = FeetString,
+                    RightFinger = RightFingerString,
+                    LeftFinger = LeftFingerString,
                 },
 
                 new CharacterModel {
@@ -366,7 +380,14 @@ namespace Game.GameRules
                     Description = "A pasta chef",
                     Level = 5,
                     MaxHealth = 43,
-                    ImageURI = "elf6.png"
+                    ImageURI = "icon_new.png",
+                    Head = HeadString,
+                    Necklass = NecklassString,
+                    PrimaryHand = PrimaryHandString,
+                    OffHand = OffHandString,
+                    Feet = FeetString,
+                    RightFinger = RightFingerString,
+                    LeftFinger = LeftFingerString,
                 },
 
                 new CharacterModel {
@@ -374,7 +395,14 @@ namespace Game.GameRules
                     Description = "A gastropub chef",
                     Level = 5,
                     MaxHealth = 43,
-                    ImageURI = "elf7.png"
+                    ImageURI = "icon_new.png",
+                    Head = HeadString,
+                    Necklass = NecklassString,
+                    PrimaryHand = PrimaryHandString,
+                    OffHand = OffHandString,
+                    Feet = FeetString,
+                    RightFinger = RightFingerString,
+                    LeftFinger = LeftFingerString,
                 }
             };
 
