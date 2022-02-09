@@ -188,10 +188,7 @@
                         <Button Grid.Row="1" Grid.Column="0"
                                 Text="Yes" 
                                 Clicked="Delete_Clicked" 
-                                HorizontalOptions="Center"
-                                FontSize="Medium"
-                                BorderWidth="1" 
-                                BorderColor="black">
+                                Style="{StaticResource YesNoButton}">
                         </Button>
 
                         <Button Grid.Row="1" Grid.Column="1"
