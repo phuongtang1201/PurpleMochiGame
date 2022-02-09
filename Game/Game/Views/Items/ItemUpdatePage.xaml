@@ -90,8 +90,6 @@
 
                                         <Label Text="Image" 
                                            Style="{StaticResource LabelStyle}"/>
-                                        <Image Source="{Binding Data.ImageURI}"
-                                           Style="{StaticResource ImageSmallStyle}"/>
 
                                     </StackLayout>
 
