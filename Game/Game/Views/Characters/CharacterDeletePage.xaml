@@ -207,7 +207,7 @@
 
                             <BoxView Grid.Row="0" Grid.Column="0" 
                                      Grid.RowSpan="2" Grid.ColumnSpan="2"
-                                     Color="LightGray" CornerRadius="5"/>
+                                     Style="{StaticResource YesNoBoxView}"/>
 
                             <Label Grid.Row="0" Grid.Column="0" 
                                    Grid.ColumnSpan="2"
@@ -222,11 +222,9 @@
                                     BorderWidth="1" BorderColor="black" />
 
                             <Button Grid.Row="1" Grid.Column="1"
-                                    WidthRequest="100"
+                                    
                                     Text="No" Clicked="Cancel_Clicked" 
-                                    HorizontalOptions="Center" FontSize="Medium"
-                                    VerticalOptions="Center"
-                                    BorderWidth="1" BorderColor="black" />
+                                     Style="{StaticResource YesNoButton}"/>
 
                         </Grid>
                     </StackLayout>
