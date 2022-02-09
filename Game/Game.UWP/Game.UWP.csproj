@@ -139,6 +139,7 @@
     <Content Include="ChefBlue100px.png" />
     <Content Include="ChefGreen100px.png" />
     <Content Include="ChefOrange100px.png" />
+    <Content Include="ChefPurple100px.png" />
     <Content Include="d10.png" />
     <Content Include="d20_2.png" />
     <Content Include="dungeon_door.png" />
