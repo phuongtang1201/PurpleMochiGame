@@ -142,13 +142,9 @@
                                     <Label Text="Defense" Style="{StaticResource LabelStyle}"/>
 
                                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
-
-                                        <Slider
-                                        Value="{Binding Data.Defense, Mode=TwoWay}" WidthRequest="220"
-                                        Minimum="0" Maximum="9"
-                                        MaximumTrackColor="Black"
-                                        MinimumTrackColor="Black"
-                                        ValueChanged="Defense_OnSliderValueChanged"/>
+                                        <Slider Style="{StaticResource SliderStyle}"
+                                                Value="{Binding Data.Defense, Mode=TwoWay}"
+                                                ValueChanged="Defense_OnSliderValueChanged"/>
 
                                         <Label 
                                     Text="{Binding Data.Defense, Mode=TwoWay}" 
