@@ -22,7 +22,7 @@
                         <StackLayout Margin="60,0,60,0" >
                             
                                 <Image Source="{Binding Data.ImageURI}" 
-                                       Style="{StaticResource ImageLargeStyle}"
+                                       Style="{StaticResource ImageExtraLargeStyle}"
                                        HorizontalOptions="Center"/>
 
                             <Grid RowSpacing="4" ColumnSpacing="7"
