@@ -160,12 +160,10 @@
 
                                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
-                                        <Slider Grid.Row="6" Grid.Column="1"
-                                        x:Name="DamageValue2" WidthRequest="220" Minimum="0" Maximum="9"
-                                        Value="{Binding Data.Damage, Mode=TwoWay}"  
-                                        MaximumTrackColor="Black"
-                                        MinimumTrackColor="Black"
-                                        ValueChanged = "Damage_OnSliderValueChanged" />
+                                        <Slider Style="{StaticResource SliderStyle}"
+                                                x:Name ="DamageValue2" 
+                                                Value="{Binding Data.Damage, Mode=TwoWay}"
+                                                ValueChanged="Damage_OnSliderValueChanged"/>
 
                                         <Label Text="{Binding Data.Damage}" 
                                        x:Name="DamageValue"
