@@ -112,65 +112,74 @@
                                         ItemsSource="{x:Static local:AttributeEnumHelper.GetListCharacter}" 
                                         SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
                                         x:Name="AttributePicker"/>
+                                </Grid>
 
-                                    <Label Grid.Row="4" Grid.Column="0"
-                                       Text="Range"
-                                       Style="{StaticResource LabelStyle}"/>
+                                <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
 
-                                    <Slider Grid.Row="4" Grid.Column="1" x:Name="RangeValue2"
+                                    <Label 
+                                        Text="Range" 
+                                       Style="{StaticResource LabelStyle}" />
+
+                                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+
+                                        <Slider Grid.Row="4" Grid.Column="1" x:Name="RangeValue2"
                                         WidthRequest="220" Minimum="0" Maximum="9"
                                         Value="{Binding Data.Range, Mode=TwoWay}"  
                                         MaximumTrackColor="Black"
                                         MinimumTrackColor="Black"
                                         ValueChanged = "Range_OnSliderValueChanged" />
 
-                                    <Label Grid.Row="4" Grid.Column="2"
-                                       Text="{Binding Data.Range}" 
-                                       x:Name="RangeValue"
-                                       Style="{StaticResource ValueStyle}"
-                                       Padding="0,0,10,0"
-                                       HorizontalOptions="End"
-                                       HorizontalTextAlignment="End"/>
+                                        <Label 
+                                        Text="{Binding Data.Range}" 
+                                        x:Name="RangeValue"
+                                        Style="{StaticResource ValueStyle}"
+                                        Padding="20,0,0,0"
+                                        HorizontalOptions="End"
+                                        HorizontalTextAlignment="End"/>
+                                    </StackLayout>
 
-                                    <Label Grid.Row="5" Grid.Column="0"
-                                       Text="Value"
+                                    <Label Text="Value"
                                        Style="{StaticResource LabelStyle}"/>
 
-                                    <Slider Grid.Row="5" Grid.Column="1"
+                                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+
+                                        <Slider Grid.Row="5" Grid.Column="1"
                                         x:Name="ValueValue2" WidthRequest="220" Minimum="0" Maximum="9"
                                         Value="{Binding Data.Value, Mode=TwoWay}"  
                                         MaximumTrackColor="Black"
                                         MinimumTrackColor="Black"
                                         ValueChanged = "Value_OnSliderValueChanged" />
 
-                                    <Label Grid.Row="5" Grid.Column="2"
-                                       Text="{Binding Data.Value}" 
+                                        <Label Text="{Binding Data.Value}" 
                                        x:Name="ValueValue"
                                        Style="{StaticResource ValueStyle}"
-                                       Padding="0,0,10,0"
+                                       Padding="20,0,0,0"
                                        HorizontalOptions="End"
                                        HorizontalTextAlignment="End"/>
+                                    </StackLayout>
 
-                                    <Label Grid.Row="6" Grid.Column="0"
-                                       Text="Damage" 
-                                       Style="{StaticResource LabelStyle}"/>
+                                    <Label 
+                                        Text="Damage" 
+                                        Style="{StaticResource LabelStyle}"/>
 
-                                    <Slider Grid.Row="6" Grid.Column="1"
+                                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+
+                                        <Slider Grid.Row="6" Grid.Column="1"
                                         x:Name="DamageValue2" WidthRequest="220" Minimum="0" Maximum="9"
                                         Value="{Binding Data.Damage, Mode=TwoWay}"  
                                         MaximumTrackColor="Black"
                                         MinimumTrackColor="Black"
                                         ValueChanged = "Damage_OnSliderValueChanged" />
 
-                                    <Label Grid.Row="6" Grid.Column="2"
-                                       Text="{Binding Data.Damage}" 
+                                        <Label Text="{Binding Data.Damage}" 
                                        x:Name="DamageValue"
                                        Style="{StaticResource ValueStyle}"
-                                       Padding="0,0,10,0"
+                                       Padding="20,0,0,0"
                                        HorizontalOptions="End"
                                        HorizontalTextAlignment="End"/>
+                                    </StackLayout>
 
-                                </Grid>
+                                </StackLayout>
                             </StackLayout>
                         </Frame>
 
