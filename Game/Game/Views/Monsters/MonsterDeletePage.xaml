@@ -191,9 +191,7 @@
                             <Label Grid.Row="0" Grid.Column="0" 
                                    Grid.ColumnSpan="2"
                                    Text="Are you sure you want to delete this character?" 
-                                   Padding="10,0,10,0"
-                                   LineBreakMode="WordWrap"
-                                   Style="{StaticResource MessageStyle}"/>
+                                   Style="{StaticResource WarningDeleteLabelStyle}"/>
 
                             <Button Grid.Row="1" Grid.Column="0"
                                     WidthRequest="100"
