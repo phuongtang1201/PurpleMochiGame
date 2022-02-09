@@ -60,10 +60,8 @@
                                 />
 
                         </StackLayout>
-                        <Frame Margin="20,0,20,0" 
-                                 BackgroundColor="LightGray"
-                           OutlineColor="LightGray"
-                                 Padding="10,0,15,0">
+                        <Frame 
+                            Style="{StaticResource StatisticsFrame}">
                             <StackLayout>
                                 <Grid
                             RowSpacing="1"
