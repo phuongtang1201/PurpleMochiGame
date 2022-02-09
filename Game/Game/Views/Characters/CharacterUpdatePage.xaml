@@ -53,9 +53,14 @@
                                 Style="{StaticResource LabelStyle}"/>
 
                             <Frame Style="{StaticResource DescriptionFrameStyle}">
-                                <Entry Text="{Binding Data.Description, Mode=TwoWay}" 
-                                Style="{StaticResource EntryStyle}"
-                                TextChanged="Entry_CheckNotEmpty"/>
+                                
+                                <Editor
+                                    Text="{Binding Data.Description, Mode=TwoWay}" 
+                                    Style="{StaticResource EntryStyle}"
+                                    VerticalOptions="Start"
+                                    HeightRequest="65"
+                                    TextChanged="Entry_CheckNotEmpty"/>
+                                
                             </Frame>
 
                             <ImageButton 
