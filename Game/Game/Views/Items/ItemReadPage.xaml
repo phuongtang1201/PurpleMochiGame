@@ -60,70 +60,67 @@
 
                         </StackLayout>
 
-                        <Frame
-                            Style="{StaticResource StatisticsFrame}">
                             <StackLayout>
-                               <Grid
+                                <Grid
                                   RowSpacing="1"
                                   ColumnSpacing="2"
                                   VerticalOptions="Center">
 
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="auto" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="auto" />
-                                </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                    </Grid.ColumnDefinitions>
 
-                                <Label Grid.Row="0" Grid.Column="0"
+                                    <Label Grid.Row="0" Grid.Column="0"
                                        Text="Statistics" 
                                        Style="{StaticResource HeaderStyle}" />
 
-                                <Label Grid.Row="2" Grid.Column="0"
+                                    <Label Grid.Row="2" Grid.Column="0"
                                        Text="Location:" 
                                        Style="{StaticResource LabelStyle}"/>
-                                
-                                <Label Grid.Row="2" Grid.Column="1"
+
+                                    <Label Grid.Row="2" Grid.Column="1"
                                        Text="{Binding Data.Location}"
                                        Style="{StaticResource ValueStyle}"/>
 
-                                <Label Grid.Row="3" Grid.Column="0"
+                                    <Label Grid.Row="3" Grid.Column="0"
                                        Text="Attribute:" 
                                        Style="{StaticResource LabelStyle}"/>
 
-                                <Label Grid.Row="3" Grid.Column="1"
+                                    <Label Grid.Row="3" Grid.Column="1"
                                        Text="{Binding Data.Attribute}"
                                        Style="{StaticResource ValueStyle}"/>
 
-                                <Label Grid.Row="4" Grid.Column="0"
+                                    <Label Grid.Row="4" Grid.Column="0"
                                        Text="Range:" 
                                        Style="{StaticResource LabelStyle}"/>
 
-                                <Label Grid.Row="4" Grid.Column="1"
+                                    <Label Grid.Row="4" Grid.Column="1"
                                        Text="{Binding Data.Range}"
                                        Style="{StaticResource ValueStyle}"/>
 
-                                <Label Grid.Row="5" Grid.Column="0"
+                                    <Label Grid.Row="5" Grid.Column="0"
                                        Text="Value:" 
                                        Style="{StaticResource LabelStyle}"/>
 
-                                <Label Grid.Row="5" Grid.Column="1"
+                                    <Label Grid.Row="5" Grid.Column="1"
                                        Text="{Binding Data.Value}"
                                        Style="{StaticResource ValueStyle}"/>
 
 
-                                <Label Grid.Row="6" Grid.Column="0"
+                                    <Label Grid.Row="6" Grid.Column="0"
                                        Text="Damage:" 
                                        Style="{StaticResource LabelStyle}"/>
 
-                                <Label Grid.Row="6" Grid.Column="1"
+                                    <Label Grid.Row="6" Grid.Column="1"
                                        Text="{Binding Data.Damage}"
                                        Style="{StaticResource ValueStyle}"/>
 
-                            </Grid>
+                                </Grid>
                             </StackLayout>
-                        </Frame>
-                        <StackLayout
+                            <StackLayout
                             Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
                             <Button
