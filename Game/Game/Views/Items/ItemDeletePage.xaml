@@ -10,74 +10,80 @@
     <ContentPage.Content>
         <AbsoluteLayout HorizontalOptions="CenterAndExpand"
                         VerticalOptions="FillAndExpand">
-            <ScrollView>
-                <StackLayout Spacing="10">
-                    <StackLayout HorizontalOptions="Center">
 
-                        <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" />
+            <StackLayout Style="{StaticResource VerticalStack}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,1" 
+                         AbsoluteLayout.LayoutFlags="All">
 
-                        <Grid
+                <ScrollView>
+                    <StackLayout Spacing="10">
+                        <StackLayout HorizontalOptions="Center">
+
+                            <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageLargeStyle}" />
+
+                            <Grid
                     RowSpacing="1"
                     ColumnSpacing="2"
                     HorizontalOptions="Center">
 
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto" />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="100" />
-                                <ColumnDefinition Width="225" />
-                            </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="225" />
+                                </Grid.ColumnDefinitions>
 
-                            <Label Grid.Row="0" Grid.Column="0" Text="Name:" 
+                                <Label Grid.Row="0" Grid.Column="0" Text="Name:" 
                            Style="{StaticResource LabelStyle}"/>
 
-                            <Label Grid.Row="0" Grid.Column="1"
+                                <Label Grid.Row="0" Grid.Column="1"
                            Text="{Binding Data.Name}" 
                            Style="{StaticResource ValueStyle}"/>
 
-                            <Label Grid.Row="1" Grid.Column="0" Text="Description:" 
+                                <Label Grid.Row="1" Grid.Column="0" Text="Description:" 
                            Style="{StaticResource LabelStyle}"/>
 
-                            <Label Grid.Row="1" Grid.Column="1"
+                                <Label Grid.Row="1" Grid.Column="1"
                            Text="{Binding Data.Description}" 
                            Style="{StaticResource ValueStyle}"/>
-                        </Grid>
+                            </Grid>
 
-                        <Grid
+                            <Grid
                      RowSpacing="1"
                      ColumnSpacing="2"
                      HorizontalOptions="Center">
 
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto" />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="150" />
-                                <ColumnDefinition Width="150" />
-                            </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150" />
+                                    <ColumnDefinition Width="150" />
+                                </Grid.ColumnDefinitions>
 
-                            <BoxView Grid.ColumnSpan="2"
+                                <BoxView Grid.ColumnSpan="2"
                              Grid.RowSpan="2"
                              Style="{StaticResource YesNoBoxView}"/>
 
-                            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  
+                                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  
                            Text="Are you sure you want to delete this item?" 
                            Style="{StaticResource WarningDeleteLabelStyle}"/>
 
-                            <Button Grid.Row="1" Grid.Column="0"
+                                <Button Grid.Row="1" Grid.Column="0"
                             Text="Yes" Clicked="Delete_Clicked" 
                             Style="{StaticResource YesNoButton}">
-                            </Button>
+                                </Button>
 
-                            <Button Grid.Row="1" Grid.Column="1"
+                                <Button Grid.Row="1" Grid.Column="1"
                             Text="No" Clicked="Cancel_Clicked" 
                             Style="{StaticResource YesNoButton}">
-                            </Button>
-                        </Grid>
+                                </Button>
+                            </Grid>
+                        </StackLayout>
                     </StackLayout>
-                </StackLayout>
-            </ScrollView>
+                </ScrollView>
+            </StackLayout>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
