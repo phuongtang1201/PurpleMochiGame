@@ -171,16 +171,12 @@
                             </StackLayout>
                         </Frame>
 
-                        <StackLayout
-                            Style="{StaticResource HorizontalStack}" 
+                        <StackLayout Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
 
-                            <Button
-                                    WidthRequest="120"
-                                    HeightRequest="40"
-                                    Text="Cancel"
-                                    Margin="10,0,0,0"
-                                    Clicked="Cancel_Clicked"/>
+                            <Button Style="{StaticResource CancelUpdateDeleteButton}" 
+                                Text="Cancel"
+                                Clicked="Cancel_Clicked"/>
 
                             <Button
                                     WidthRequest="120"
