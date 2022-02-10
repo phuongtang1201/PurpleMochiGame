@@ -476,12 +476,12 @@ namespace Game.GameRules
                 },
 
                 new MonsterModel {
-                    Name = "Gefilte Fish",
+                    Name = "Steak",
                     Description = "A taste even a mom can't love",
                     Attack = 3,
                     Defense = 3,
                     Speed = 3,
-                    ImageURI = "icon_new.png",
+                    ImageURI = "steak100px.png",
                 },
 
                 new MonsterModel {
