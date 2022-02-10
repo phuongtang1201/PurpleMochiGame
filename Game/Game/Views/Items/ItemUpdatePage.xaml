@@ -112,11 +112,11 @@
 
                                 <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
 
-                                    <Label 
-                                        Text="Range" 
-                                       Style="{StaticResource LabelStyle}" />
+                                    <StackLayout Style="{StaticResource SliderStacklayoutStyle}">
 
-                                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                                        <Label 
+                                            Text="Range" 
+                                            Style="{StaticResource LabelStyle}" />
 
                                         <Slider Style="{StaticResource SliderStyle}"
                                                 x:Name ="RangeValue2" 
