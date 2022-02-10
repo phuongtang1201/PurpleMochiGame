@@ -135,16 +135,10 @@
                     WidthRequest="250">
 
                         <StackLayout Orientation="Vertical">
-                            <Frame HorizontalOptions="Start"
-                                CornerRadius="5"
-                                BackgroundColor="LightGray"
-                                BorderColor="LightGray"
-                                WidthRequest="150">
 
-                                <Label HorizontalOptions="Center"
+                            <Label HorizontalOptions="Center"
                                     Text="Food Monsters killed" 
                                     Style="{StaticResource LabelStyle}"/>
-                            </Frame>
 
                             <Label Text="{Binding Data.MonstersKilledList}" 
                                 Style="{StaticResource ValueStyle}"/>
