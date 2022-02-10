@@ -145,7 +145,7 @@
                     Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
                     </Frame>
-                    
+
                     <StackLayout Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
 
@@ -158,12 +158,6 @@
                             Clicked="Update_Clicked"/>
 
                     </StackLayout>
-
-
-
-
-
-
                 </StackLayout>
             </ScrollView>
         </AbsoluteLayout>
