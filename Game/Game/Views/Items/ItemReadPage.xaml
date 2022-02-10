@@ -31,6 +31,13 @@
                                        Text="{Binding Data.Name}"/>
                             </Frame>
 
+                            <Frame Style="{StaticResource DescriptionFrameStyle}">
+
+                                <Label Style="{StaticResource ValueStyle}"
+                                       Text="{Binding Data.Description}"
+                                       LineBreakMode="WordWrap"/>
+                            </Frame>
+
                             <Grid RowSpacing="4" ColumnSpacing="7"
                                   VerticalOptions="Center" HorizontalOptions="Center">
 
@@ -40,11 +47,6 @@
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="auto" />
                                 </Grid.ColumnDefinitions>
-
-                                <Label Grid.Row="1" Grid.Column="1" 
-                                       Text="{Binding Data.Description}"
-                                       LineBreakMode="WordWrap"
-                                       Style="{StaticResource ValueStyle}"/>
 
                                 <BoxView Grid.Row="2" Grid.Column="0" 
                                          Grid.ColumnSpan="2" Grid.RowSpan="6"
