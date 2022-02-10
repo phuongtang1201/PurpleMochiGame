@@ -110,7 +110,7 @@
                                                x:Name="AttackValue"/>
                                     </StackLayout>
 
-                                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                                    <StackLayout Style="{StaticResource SliderStacklayoutStyle}">
 
                                         <Label Text="Defense" Style="{StaticResource LabelStyle}"/>
 
