@@ -148,7 +148,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Chef's Knife",
                     Description = "Handle with care (Attack)",
-                    ImageURI = "icon_new.png",
+                    ImageURI = "knife.png",
                     Range = 0,
                     Damage = 0,
                     Value = 7,
