@@ -141,15 +141,15 @@
                                         <Label Style="{StaticResource SliderValueStyle}"
                                                Text="{Binding Data.Value, Mode=TwoWay}" 
                                                x:Name="ValueValue"/>
- 
+
                                     </StackLayout>
 
-                                    <Label 
-                                        Text="Damage" 
-                                        Style="{StaticResource LabelStyle}"/>
+                                    <StackLayout Style="{StaticResource SliderStacklayoutStyle}">
 
-                                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
-
+                                        <Label 
+                                            Text="Damage" 
+                                            Style="{StaticResource LabelStyle}"/>
+                                        
                                         <Slider Style="{StaticResource SliderStyle}"
                                                 x:Name ="DamageValue2" 
                                                 Value="{Binding Data.Damage, Mode=TwoWay}"
