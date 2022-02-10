@@ -564,7 +564,7 @@
             </Style>
 
             <Style TargetType="Frame"
-                    x:Key="ImageFrameStyle">
+                    x:Key="ImageLevelFrameStyle">
                 <Setter Property="CornerRadius" Value="5"/>
                 <Setter Property="BackgroundColor" Value="orange"/>
                 <Setter Property="BorderColor" Value="orange"/>
