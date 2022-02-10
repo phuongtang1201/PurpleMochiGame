@@ -207,14 +207,11 @@
                             <Button Style="{StaticResource CancelUpdateDeleteButton}" 
                             Text="Cancel"
                             Clicked="Cancel_Clicked"/>
-                            
-                            <Button
+
+                            <Button Style="{StaticResource CancelUpdateDeleteButton}" 
                             Text="Create"
-                            CornerRadius="5"
-                            Clicked="Save_Clicked"
-                            WidthRequest="120"
-                            HeightRequest="40"
-                            Margin="20,0,0,0"/>
+                            Clicked="Save_Clicked"/>
+
                         </StackLayout>
 
                     </StackLayout>
