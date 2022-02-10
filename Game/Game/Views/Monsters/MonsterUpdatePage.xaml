@@ -83,9 +83,12 @@
                                     <StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource HorizontalStack}" 
                                              HorizontalOptions="FillAndExpand">
 
-                                        <Entry 
-                                        Text="{Binding Data.ImageURI, Mode=TwoWay}" 
-                                        Style="{StaticResource EntryStyle}"/>
+                                        <Frame Style="{StaticResource ImageLevelFrameStyle}">
+
+                                            <Entry 
+                                                Text="{Binding Data.ImageURI, Mode=TwoWay}" 
+                                                Style="{StaticResource EntryStyle}"/>
+                                        </Frame>
                                     </StackLayout>
 
                                 </Grid>
