@@ -20,7 +20,7 @@
                 <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
                    
                     <Image
-                         Source="item.png"
+                         Source="foodfightlogo.png"
                          Style="{StaticResource ImageExtraExtraLargeStyle}"/>
                 
                 </StackLayout>
