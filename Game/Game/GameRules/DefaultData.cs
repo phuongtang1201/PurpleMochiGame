@@ -467,12 +467,12 @@ namespace Game.GameRules
                 },
 
                 new MonsterModel {
-                    Name = "Yogurt",
+                    Name = "Lettuce",
                     Description = "May the Schwartz be with you",
                     Attack = 3,
                     Defense = 3,
                     Speed = 3,
-                    ImageURI = "icon_new.png",
+                    ImageURI = "lettuce100px.png",
                 },
 
                 new MonsterModel {
