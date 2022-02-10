@@ -188,7 +188,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Apron",
                     Description = "Keeps stains at bay (Defense)",
-                    ImageURI = "icon_new.png",
+                    ImageURI = "apron.png",
                     Range = 0,
                     Damage = 0,
                     Value = 5,
