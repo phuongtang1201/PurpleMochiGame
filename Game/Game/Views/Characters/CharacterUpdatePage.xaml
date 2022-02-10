@@ -136,10 +136,10 @@
 
                                     </StackLayout>
 
-                                    <Label Text="Defense" Style="{StaticResource LabelStyle}"/>
-
                                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
-                                        
+
+                                        <Label Text="Defense" Style="{StaticResource LabelStyle}"/>
+
                                         <Slider Style="{StaticResource SliderStyle}"
                                                 Value="{Binding Data.Defense, Mode=TwoWay}"
                                                 ValueChanged="Defense_OnSliderValueChanged"/>
