@@ -45,16 +45,10 @@
                     WidthRequest="250">
 
                         <StackLayout Orientation="Vertical">
-                            <Frame HorizontalOptions="Start"
-                           CornerRadius="5"
-                           BackgroundColor="LightGray"
-                           BorderColor="LightGray"
-                           WidthRequest="100">
 
-                                <Label HorizontalOptions="Center"
+                            <Label HorizontalOptions="Center"
                                Text="Score Details" 
                                Style="{StaticResource LabelStyle}"/>
-                            </Frame>
 
                             <StackLayout Style="{StaticResource HorizontalStack}">
                                 <Label Text="Game Date:"
