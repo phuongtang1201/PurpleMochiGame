@@ -149,20 +149,17 @@
                         </Frame>
                         
 
-                        <StackLayout
-                            Style="{StaticResource HorizontalStack}" 
+                        <StackLayout Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
 
                             <Button Style="{StaticResource CancelUpdateDeleteButton}" 
                             Text="Cancel"
                             Clicked="Cancel_Clicked"/>
 
-                            <Button
+                            <Button Style="{StaticResource CancelUpdateDeleteButton}" 
                             Text="Update"
-                            Clicked="Save_Clicked"
-                            WidthRequest="120"
-                            HeightRequest="40"
-                            Margin="20,0,0,0"/>
+                            Clicked="Save_Clicked"/>
+                            
                         </StackLayout>
                     </StackLayout>
                 </ScrollView>
