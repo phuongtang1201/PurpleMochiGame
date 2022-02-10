@@ -492,7 +492,16 @@ namespace Game.GameRules
                     Speed = 3,
                     ImageURI = "strawberry100px.png",
                 },
-                 
+
+                new MonsterModel {
+                    Name = "Sour Strawberry",
+                    Description = "Zesty",
+                    Attack = 3,
+                    Defense = 3,
+                    Speed = 3,
+                    ImageURI = "watermelon100px.png",
+                },
+
 
             };
 
