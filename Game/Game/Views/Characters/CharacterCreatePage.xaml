@@ -48,12 +48,6 @@
                                     TextChanged="Entry_CheckNotEmpty"/>
                             </Frame>
 
-                            <Label 
-                                Text="Description" 
-                                WidthRequest="300"
-                                HorizontalOptions="Center"
-                                Style="{StaticResource LabelStyle}"/>
-
                             <Frame Style="{StaticResource DescriptionFrameStyle}">
 
                                 <Editor Style="{StaticResource EditorDescriptionStyle}"
