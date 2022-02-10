@@ -101,9 +101,8 @@
                                         Style="{StaticResource ImageLevelFrameStyle}">
 
                                         <Picker Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
-                                        ItemsSource="{x:Static local_enum:ItemLocationEnumHelper.GetListCharacter}" 
+                                        ItemsSource="{x:Static local:ItemLocationEnumHelper.GetListCharacter}" 
                                         SelectedItem="{Binding Data.Location, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
-                                        SelectedIndexChanged="RangeDamage_OnPickerValueChanged"
                                         x:Name="LocationPicker"/>
                                     </Frame>
 
