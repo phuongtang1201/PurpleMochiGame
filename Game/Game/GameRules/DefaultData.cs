@@ -68,7 +68,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Sneakers",
                     Description = "More speed, less haste (Speed)",
-                    ImageURI = "icon_new.png",
+                    ImageURI = "nonslip.png",
                     Range = 0,
                     Damage = 1,
                     Value = 4,
