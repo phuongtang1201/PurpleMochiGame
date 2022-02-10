@@ -182,15 +182,13 @@
                         x:Name="ItemBox">
                         </FlexLayout>
 
-                        <StackLayout
-                            Style="{StaticResource HorizontalStack}" 
+                        <StackLayout Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
-                            <Button
+
+                            <Button Style="{StaticResource CancelUpdateDeleteButton}" 
                             Text="Cancel"
-                            Clicked="Cancel_Clicked"
-                            Margin="10,0,0,0"
-                            WidthRequest="120"
-                            HeightRequest="40"/>
+                            Clicked="Cancel_Clicked"/>
+
                             <Button
                             Text="Update"
                             Clicked="Save_Clicked"
