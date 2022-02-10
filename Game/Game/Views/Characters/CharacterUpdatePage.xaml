@@ -69,8 +69,7 @@
                                 <Grid
                             RowSpacing="1"
                             ColumnSpacing="2"
-                            VerticalOptions="Center"
-                            >
+                            VerticalOptions="Center">
 
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="auto" />
@@ -116,7 +115,7 @@
 
                                 <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
 
-                                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                                    <StackLayout Style="{StaticResource SliderStacklayoutStyle}">
 
                                         <Label Text="Attack" Style="{StaticResource LabelStyle}"/>
 
