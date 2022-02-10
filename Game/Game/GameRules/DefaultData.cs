@@ -38,7 +38,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Rolling Pin",
                     Description = "Can also be used to make cookies (Attack)",
-                    ImageURI = "icon_new.png",
+                    ImageURI = "rollingpin.png",
                     Range = 0,
                     Damage = 6,
                     Value = 4,
