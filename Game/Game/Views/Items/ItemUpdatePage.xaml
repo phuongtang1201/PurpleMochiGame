@@ -99,10 +99,14 @@
                                        Text="Location" 
                                        Style="{StaticResource LabelStyle}"/>
 
-                                    <Picker Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
+                                    <Frame Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
+                                        Style="{StaticResource ImageLevelFrameStyle}">
+
+                                        <Picker Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
                                         ItemsSource="{x:Static local:ItemLocationEnumHelper.GetListCharacter}" 
                                         SelectedItem="{Binding Data.Location, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
                                         x:Name="LocationPicker"/>
+                                    </Frame>
 
                                     <Label Grid.Row="3" Grid.Column="0"
                                        Text="Attribute" 
