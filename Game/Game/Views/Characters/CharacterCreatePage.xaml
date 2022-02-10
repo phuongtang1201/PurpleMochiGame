@@ -55,12 +55,11 @@
                                     TextChanged="Entry_CheckNotEmpty"/>
                             </Frame>
 
-                            <ImageButton 
-                                x:Name="RollDice"
-                                Style="{StaticResource ImageLargeStyle}"
-                                WidthRequest="70" HeightRequest="70"
-                                Source="d10.png"
-                                Clicked="RollDice_Clicked"/>
+                            <ImageButton x:Name="RollDice"
+                                         Style="{StaticResource ImageLargeStyle}"
+                                         WidthRequest="70" HeightRequest="70"
+                                         Source="icon_new.png"
+                                         Clicked="RollDice_Clicked"/>
                             
                         </StackLayout>
 
