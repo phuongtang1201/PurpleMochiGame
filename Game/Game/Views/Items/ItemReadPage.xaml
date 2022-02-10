@@ -35,10 +35,6 @@
                                     <ColumnDefinition Width="auto" />
                                 </Grid.ColumnDefinitions>
 
-                                <Label Grid.Row="0" Grid.Column="0" 
-                                       Text="Item Name:"
-                                       Style="{StaticResource GrayBoxStyle}"/>
-
                                 <Label Grid.Row="0" Grid.Column="1" 
                                        Text="{Binding Data.Name}"
                                        Style="{StaticResource ValueStyle}"/>
