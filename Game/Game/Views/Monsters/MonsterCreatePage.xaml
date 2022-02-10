@@ -120,7 +120,7 @@
                                                x:Name="AttackValue"/>
                                 </StackLayout>
 
-                                <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
                                         <Label Text="Defense" Style="{StaticResource LabelStyle}"/>
 
@@ -131,11 +131,11 @@
                                         <Label Style="{StaticResource SliderValueStyle}"
                                                Text="{Binding Data.Defense, Mode=TwoWay}" 
                                                x:Name="DefenseValue"/>
-                                </StackLayout>
+                                    </StackLayout>
 
-                                <Label Text="Speed" Style="{StaticResource LabelStyle}"/>
+                                    <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
-                                <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                                        <Label Text="Speed" Style="{StaticResource LabelStyle}"/>
 
                                         <Slider Style="{StaticResource SliderStyle}"
                                                 Value="{Binding Data.Speed, Mode=TwoWay}"
