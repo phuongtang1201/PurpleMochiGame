@@ -194,12 +194,10 @@
                             Text="Cancel"
                             Clicked="Cancel_Clicked"/>
 
-                        <Button WidthRequest="120"
-                                    HeightRequest="40"
-                                    Margin="10,0,0,0"
-                                    CornerRadius="5"
-                                    Text="Update"
-                                    Clicked="Save_Clicked"/>
+                        <Button Style="{StaticResource CancelUpdateDeleteButton}" 
+                            Text="Update"
+                            Clicked="Save_Clicked"/>
+                        
                     </StackLayout>
                 </StackLayout>
             </ScrollView>
