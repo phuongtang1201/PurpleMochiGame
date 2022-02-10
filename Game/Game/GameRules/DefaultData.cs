@@ -515,7 +515,7 @@ namespace Game.GameRules
                 },
 
                 new MonsterModel {
-                    Name = "Sour Strawberry",
+                    Name = "Sour Watermelon",
                     Description = "Zesty",
                     Attack = 3,
                     Defense = 3,
