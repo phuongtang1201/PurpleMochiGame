@@ -28,7 +28,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Cookbook",
                     Description = "Turn enemies into food (Maximum Health)" ,
-                    ImageURI = "icon_new.png",
+                    ImageURI = "cookbook.png",
                     Range = 0,
                     Damage = 3,
                     Value = 5,
