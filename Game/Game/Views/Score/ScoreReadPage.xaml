@@ -152,13 +152,11 @@
                         <Button Style="{StaticResource CancelUpdateDeleteButton}" 
                             Text="Delete"
                             Clicked="Delete_Clicked"/>
-                        
-                        <Button
+
+                        <Button Style="{StaticResource CancelUpdateDeleteButton}" 
                             Text="Update"
-                            Clicked="Update_Clicked"
-                            WidthRequest="120"
-                            HeightRequest="40"
-                            Margin="20,0,0,0"/>
+                            Clicked="Update_Clicked"/>
+
                     </StackLayout>
 
 
