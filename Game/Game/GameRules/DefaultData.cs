@@ -253,7 +253,28 @@ namespace Game.GameRules
                     Damage = 0,
                     Value = 6,
                     Location = ItemLocationEnum.Feet,
+                    Attribute = AttributeEnum.MaxHealth},
+
+                 new ItemModel {
+                    Name = "Salt",
+                    Description = "Attack",
+                    ImageURI = "salt.png",
+                    Range = 4,
+                    Damage = 2,
+                    Value = 6,
+                    Location = ItemLocationEnum.PrimaryHand,
+                    Attribute = AttributeEnum.Attack},
+
+                  new ItemModel {
+                    Name = "Vinegar",
+                    Description = "(Maximum Health)",
+                    ImageURI = "vinegar.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 6,
+                    Location = ItemLocationEnum.Feet,
                     Attribute = AttributeEnum.MaxHealth}
+
 
             };
 
