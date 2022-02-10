@@ -454,7 +454,7 @@ namespace Game.GameRules
                     Attack = 3,
                     Defense = 3,
                     Speed = 3,
-                    ImageURI = "icon_new.png",
+                    ImageURI = "pineapple.png",
                 },
 
                 new MonsterModel {
