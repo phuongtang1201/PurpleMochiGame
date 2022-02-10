@@ -458,12 +458,12 @@ namespace Game.GameRules
                 },
 
                 new MonsterModel {
-                    Name = "Moldy Rice",
+                    Name = "Garlic",
                     Description = "Death on impact",
                     Attack = 3,
                     Defense = 3,
                     Speed = 3,
-                    ImageURI = "icon_new.png",
+                    ImageURI = "garlic100px.png",
                 },
 
                 new MonsterModel {
@@ -492,6 +492,8 @@ namespace Game.GameRules
                     Speed = 3,
                     ImageURI = "strawberry100px.png",
                 },
+                 
+
             };
 
             return datalist;
