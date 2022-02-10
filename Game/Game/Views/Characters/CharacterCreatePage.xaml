@@ -89,11 +89,7 @@
                                     <StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource HorizontalStack}" 
                                              HorizontalOptions="FillAndExpand">
 
-                                        <Frame 
-                                            CornerRadius="5"
-                                            BackgroundColor="orange"
-                                            BorderColor="orange"
-                                            WidthRequest="300">                                 
+                                        <Frame Style="{StaticResource ImageLevelFrameStyle}">                             
 
                                             <Entry 
                                                 Text="{Binding Data.ImageURI, Mode=TwoWay}" 
@@ -108,10 +104,7 @@
                                     Style="{StaticResource LabelStyle}"/>
 
                                     <Frame Grid.Row="2" Grid.Column="1"
-                                            CornerRadius="5"
-                                            BackgroundColor="orange"
-                                            BorderColor="orange"
-                                            WidthRequest="300">
+                                        Style="{StaticResource ImageLevelFrameStyle}">
 
                                         <Picker Grid.Row="2" Grid.Column="1"
                                             SelectedItem="{Binding SelectedItemProperty}" 
