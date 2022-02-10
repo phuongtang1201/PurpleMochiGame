@@ -153,17 +153,10 @@
                         WidthRequest="250">
 
                         <StackLayout Orientation="Vertical">
-                            <Frame HorizontalOptions="Start"
-                                CornerRadius="5"
-                                BackgroundColor="LightGray"
-                                BorderColor="LightGray"
-                                WidthRequest="110">
-
-                                <Label HorizontalOptions="Center"
+                            <Label HorizontalOptions="Center"
                                     Text="Items dropped" 
                                     Style="{StaticResource LabelStyle}"/>
-                            </Frame>
-
+                            
                             <Label Text="{Binding Data.ItemsDroppedList}" 
                                 Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
