@@ -46,9 +46,6 @@
                                     TextChanged="Entry_CheckNotEmpty"/>
                             </Frame>
 
-                            <Label Text="Description"
-                                   Style="{StaticResource HeaderStyle}" />
-
                             <Frame Style="{StaticResource DescriptionFrameStyle}">
 
                                 <Editor Style="{StaticResource EditorDescriptionStyle}"
