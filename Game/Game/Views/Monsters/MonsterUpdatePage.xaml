@@ -38,10 +38,6 @@
                             <Image Source="{Binding Data.ImageURI, Mode=TwoWay}" Style="{StaticResource ImageExtraLargeStyle}" 
                                    HorizontalOptions="Center"/>
 
-                            <Label 
-                                Text="Name" 
-                                Style="{StaticResource LabelStyle}"/>
-
                             <Frame 
                                 Style="{StaticResource NameFrameStyle}">
 
