@@ -136,7 +136,7 @@
 
             <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand">
                 
-                <Image Source="d20_2.png" Style="{StaticResource ImageLargeStyle}"/>
+                <Image Source="icon_new.png" Style="{StaticResource ImageLargeStyle}"/>
                 
             </StackLayout>
 
