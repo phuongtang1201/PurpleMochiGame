@@ -28,17 +28,6 @@
 
                     <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
-                    <Frame HorizontalOptions="Start"
-                    CornerRadius="5"
-                    BackgroundColor="LightGray"
-                    BorderColor="LightGray"
-                    WidthRequest="100">
-
-                        <Label HorizontalOptions="Center"
-                        Text="Score Name" 
-                        Style="{StaticResource LabelStyle}"/>
-                    </Frame>
-
                     <Frame 
                         Style="{StaticResource NameFrameStyle}">
 
