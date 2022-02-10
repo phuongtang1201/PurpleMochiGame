@@ -25,6 +25,12 @@
                                    Style="{StaticResource ImageLargeStyle}"
                                    HorizontalOptions="Center"/>
 
+                            <Frame Style="{StaticResource NameFrameStyle}">
+
+                                <Label Style="{StaticResource ValueStyle}"
+                                       Text="{Binding Data.Name}"/>
+                            </Frame>
+
                             <Grid RowSpacing="4" ColumnSpacing="7"
                                   VerticalOptions="Center" HorizontalOptions="Center">
 
@@ -38,11 +44,6 @@
                                     <ColumnDefinition Width="auto" />
                                     <ColumnDefinition Width="100" />
                                 </Grid.ColumnDefinitions>
-
-                                <Label Grid.Row="0" Grid.Column="1" 
-                                       Grid.ColumnSpan="5"
-                                       Text="{Binding Data.Name}"
-                                       Style="{StaticResource ValueStyle}"/>
 
                                 <Label Grid.Row="1" Grid.Column="1" 
                                        Grid.ColumnSpan="5"
