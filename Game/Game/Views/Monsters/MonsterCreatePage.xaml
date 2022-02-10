@@ -59,11 +59,9 @@
 
                         <Frame
                             Style="{StaticResource StatisticsFrame}">
-                        <StackLayout
-                            Margin="20,0,20,0"
-                            Padding="10,0,15,0">
+                            <StackLayout>
 
-                            <Grid
+                                <Grid
                                 RowSpacing="1"
                                 ColumnSpacing="2"
                                 VerticalOptions="Center">
@@ -99,7 +97,7 @@
 
                             <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
 
-                                <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+                                    <StackLayout Style="{StaticResource SliderStacklayoutStyle}">
 
                                         <Label Text="Attack" Style="{StaticResource LabelStyle}"/>
 
@@ -110,7 +108,7 @@
                                         <Label Style="{StaticResource SliderValueStyle}"
                                                Text="{Binding Data.Attack, Mode=TwoWay}" 
                                                x:Name="AttackValue"/>
-                                </StackLayout>
+                                    </StackLayout>
 
                                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
 
