@@ -37,14 +37,8 @@
                             TextChanged="Entry_CheckNotEmpty"/>
                     </Frame>
 
-                    <Frame CornerRadius="5"
-                           BackgroundColor="LightGray"
-                           BorderColor="LightGray"
-                           WidthRequest="100">
-
-                        <Label Text="Score" 
+                    <Label Text="Score" 
                             Style="{StaticResource LabelStyle}"/>
-                    </Frame>
                 </StackLayout>
 
                 <StackLayout Style="{StaticResource HorizontalStack}">
