@@ -18,9 +18,9 @@ namespace Game.Models
         {
             PlayerType = PlayerTypeEnum.Monster;
             Guid = Id;
-            Name = "Tomato";
-            Description = "Attack of the Killer Tomato";
-            Attack = 1;
+            Name = "Monster Name";
+            Description = "Monster Description";
+            Attack = 0;
             Difficulty = DifficultyEnum.Average;
             UniqueItem = null;
             ImageURI = "icon_new.png";
