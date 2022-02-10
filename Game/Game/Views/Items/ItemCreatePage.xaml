@@ -111,10 +111,15 @@
                                        Text="Attribute" 
                                        Style="{StaticResource LabelStyle}"/>
 
-                                    <Picker Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
+                                    <Frame Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
+                                        Style="{StaticResource ImageLevelFrameStyle}">
+
+                                        <Picker Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
                                         ItemsSource="{x:Static local_enum:AttributeEnumHelper.GetListCharacter}" 
                                         SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
                                         x:Name="AttributePicker"/>
+                                    </Frame>
+ 
                                 </Grid>
 
                                 <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
