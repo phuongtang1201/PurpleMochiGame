@@ -106,9 +106,9 @@
 
                                 <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
 
-                                    <Label Text="Attack" Style="{StaticResource LabelStyle}"/>
-
                                     <StackLayout Style="{StaticResource HorizontalStack}" Padding="10,0,10,0">
+
+                                        <Label Text="Attack" Style="{StaticResource LabelStyle}"/>
 
                                         <Slider Style="{StaticResource SliderStyle}"
                                                 Value="{Binding Data.Attack, Mode=TwoWay}"
