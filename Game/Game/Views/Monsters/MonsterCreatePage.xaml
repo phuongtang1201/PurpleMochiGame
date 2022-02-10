@@ -87,13 +87,9 @@
                                         <Entry 
                                         Text="{Binding Data.ImageURI, Mode=TwoWay}" 
                                         Style="{StaticResource EntryStyle}"/>
-                                </StackLayout>
+                                    </StackLayout>
 
-                                <Label Grid.Row="2" Grid.Column="0"
-                                    Text="Level" 
-                                    Style="{StaticResource LabelStyle}"/>
-                                
-                            </Grid>
+                                </Grid>
 
                             <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
 
