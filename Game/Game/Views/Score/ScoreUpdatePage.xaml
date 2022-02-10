@@ -117,17 +117,11 @@
                     WidthRequest="250">
 
                         <StackLayout Orientation="Vertical">
-                            <Frame HorizontalOptions="Start"
-                                CornerRadius="5"
-                                BackgroundColor="LightGray"
-                                BorderColor="LightGray"
-                                WidthRequest="100">
 
-                                <Label HorizontalOptions="Center"
+                            <Label HorizontalOptions="Center"
                                     Text="Chefs killed" 
                                     Style="{StaticResource LabelStyle}"/>
-                            </Frame>
-
+                            
                             <Label Text="{Binding Data.CharacterAtDeathList}" 
                                     Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
