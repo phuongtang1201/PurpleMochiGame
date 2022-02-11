@@ -23,7 +23,7 @@
                 -->
 
             <Color x:Key="PageBackgroundColor">#dcc06d</Color> <!--page-->
-            <Color x:Key="ViewBackgroundColor">green</Color> <!--top navigation bar-->
+            <Color x:Key="ViewBackgroundColor">#5b98b2</Color> <!--top navigation bar-->
             <Color x:Key="NavigationBarColor">orange</Color> <!--?-->
 
             <Color x:Key="PrimaryBackgroundColor">red</Color> <!--?-->
