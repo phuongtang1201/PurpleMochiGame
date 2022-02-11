@@ -16,8 +16,7 @@
                         VerticalOptions="FillAndExpand">
             
             <ScrollView>
-                <StackLayout Style="{StaticResource OuterBoxStack}"
-                             HorizontalOptions="CenterAndExpand">
+                <StackLayout Style="{StaticResource OuterBoxStack}">
                     
                     <Frame Style="{StaticResource NameFrameStyle}"
                            Margin="20,0,20,0"
