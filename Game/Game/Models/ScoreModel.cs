@@ -19,6 +19,9 @@ namespace Game.Models
     /// </summary>
     public class ScoreModel : BaseModel<ScoreModel>
     {
+        // The Name of the Item 
+        public string Name { get; set; } = "Score Name";
+
         // This battle number, incremental int from the last int in the database
         public int BattleNumber { get; set; }
 
