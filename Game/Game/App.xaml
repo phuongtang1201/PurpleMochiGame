@@ -496,8 +496,8 @@
 
             <Style TargetType="Frame" x:Key="NameFrameStyle">
                 <Setter Property="CornerRadius" Value="5"/>
-                <Setter Property="BackgroundColor" Value="orange"/>
-                <Setter Property="BorderColor" Value="orange"/>
+                <Setter Property="BackgroundColor" Value="#bbbbbe"/>
+                <Setter Property="BorderColor" Value="#bbbbbe"/>
                 <Setter Property="WidthRequest" Value="300"/>
                 <Setter Property="HeightRequest" Value="39"/>
             </Style>
