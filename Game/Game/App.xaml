@@ -348,6 +348,7 @@
             <Style TargetType="StackLayout" x:Key="OuterBoxStack"
                    BasedOn="{StaticResource VerticalStack}">
                 <Setter Property="Spacing" Value="10" />
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
             </Style>
 
             <Style TargetType="StackLayout" x:Key="CardImageTextBox">

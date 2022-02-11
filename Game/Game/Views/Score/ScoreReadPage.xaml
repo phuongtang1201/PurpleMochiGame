@@ -17,7 +17,6 @@
             
             <ScrollView>
                 <StackLayout Style="{StaticResource OuterBoxStack}"
-                             Spacing="10"
                              HorizontalOptions="CenterAndExpand">
                     
                     <Frame Style="{StaticResource NameFrameStyle}"
