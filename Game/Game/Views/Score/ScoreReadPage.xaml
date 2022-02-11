@@ -114,23 +114,29 @@
                            Margin="20,0,20,0"
                            Padding="5,0,100,9"
                            HorizontalOptions="Start">
-                        <StackLayout>
+
+                        <StackLayout Orientation="Vertical">
+                            
                             <Label Text="Food Monsters Killed"
                                    Style="{StaticResource HeaderStyle}"/>
                             <Label Text="{Binding Data.MonstersKilledList}" 
                                    Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
+                        
                     </Frame>
+                    
                     <Frame Style="{StaticResource GrayBoxFrame}"
                            Margin="20,0,20,0"
                            Padding="5,0,100,9"
                            HorizontalOptions="Start">
-                        <StackLayout>
+
+                        <StackLayout Orientation="Vertical">
                             <Label Text="Items Dropped"
                                    Style="{StaticResource HeaderStyle}"/>
                             <Label Text="{Binding Data.ItemsDroppedList}"
                                    Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
+                        
                     </Frame>
 
                     <StackLayout Style="{StaticResource HorizontalStack}" 
