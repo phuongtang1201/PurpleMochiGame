@@ -42,7 +42,8 @@
                         </Frame>
 
                         <Label Text="Score" 
-                               Style="{StaticResource LabelStyle}"/>
+                               Margin="20,0,20,0"
+                               Style="{StaticResource HeaderStyle}"/>
                     </StackLayout>
 
                     <StackLayout Style="{StaticResource HorizontalStack}">
