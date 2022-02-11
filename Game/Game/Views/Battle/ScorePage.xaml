@@ -12,7 +12,7 @@
             <Button Clicked="CloseButton_Clicked" Text="Close"/>
 
             <StackLayout Style="{StaticResource HorizontalStack}">
-                <Label Text="Score : " Style="{StaticResource MessageStyle}"/>
+                <Label Text="Score: " Style="{StaticResource MessageStyle}"/>
                 <Label Text="0" x:Name="TotalScore" Style="{StaticResource MessageStyle}"/>
             </StackLayout>
 
@@ -32,9 +32,9 @@
                                     AlignContent="Start"
                                     Wrap="Wrap"/>
 
-            <Label Text="Items" Style="{StaticResource MessageStyle}"/>
+            <Label Text="Equipment" Style="{StaticResource MessageStyle}"/>
                 <StackLayout Style="{StaticResource HorizontalStack}">
-                    <Label Text="Collected : " Style="{StaticResource LabelStyle}"/>
+                    <Label Text="Collected: " Style="{StaticResource LabelStyle}"/>
                     <Label Text="0" x:Name="TotalCollected" Style="{StaticResource ValueStyle}"/>
                 </StackLayout>
                 <FlexLayout x:Name="ItemListFrame"
