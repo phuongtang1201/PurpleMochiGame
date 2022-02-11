@@ -24,13 +24,13 @@
 
                         <Frame Style="{StaticResource NameFrameStyle}">
 
-                            <Label Style="{StaticResource ValueStyle}"
+                            <Label Style="{StaticResource GrayBoxStyle}"
                                    Text="{Binding Data.Name}"/>
                         </Frame>
 
                         <Frame Style="{StaticResource DescriptionFrameStyle}">
 
-                            <Label Style="{StaticResource ValueStyle}"
+                            <Label Style="{StaticResource GrayBoxStyle}"
                                    Text="{Binding Data.Description}"
                                    LineBreakMode="WordWrap"/>
 
