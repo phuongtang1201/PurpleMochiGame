@@ -103,11 +103,11 @@
                                     </Frame>
 
                                     <Label Grid.Row="3" Grid.Column="0"
-                                           Text="Max Health" 
+                                           Text="Max Health" Margin="0,0,10,0"
                                            Style="{StaticResource LabelStyle}"/>
 
                                     <Label Grid.Row="3" Grid.Column="1"
-                                           x:Name="MaxHealthValue"
+                                           x:Name="MaxHealthValue" Margin="10,0,0,0"
                                            Text="{Binding Data.MaxHealth, StringFormat= '{0:G} hp'}" 
                                            Style="{StaticResource ValueStyle}"/>
                                 </Grid>
