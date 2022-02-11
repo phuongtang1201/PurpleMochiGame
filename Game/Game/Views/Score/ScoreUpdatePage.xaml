@@ -45,9 +45,8 @@
 
                         <StackLayout Orientation="Vertical">
 
-                            <Label HorizontalOptions="Center"
-                                   Text="Score Details" 
-                                   Style="{StaticResource LabelStyle}"/>
+                            <Label Text="Score Details" 
+                                   Style="{StaticResource HeaderStyle}"/>
 
                             <StackLayout Style="{StaticResource HorizontalStack}">
                                 <Label Text="Game Date:"
