@@ -54,7 +54,7 @@
 
                         <Slider Style="{StaticResource SliderStyle}"
                                 Value="{Binding Data.ScoreTotal, Mode=TwoWay}"
-                                WidthRequest="230"
+                                WidthRequest="150"
                                 Maximum="500"                         
                                 ValueChanged="Score_OnSliderValueChanged"/>
                     </StackLayout>
