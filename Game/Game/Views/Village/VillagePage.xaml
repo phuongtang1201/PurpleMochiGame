@@ -47,7 +47,7 @@
                        HorizontalOptions="CenterAndExpand" />
                     
                     <Button
-                        Text="Items"
+                        Text="Equipment"
                         WidthRequest="200"
                         HeightRequest="40"
                         FontSize="Title"
