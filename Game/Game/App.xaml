@@ -498,7 +498,7 @@
 
             <Style TargetType="Frame" x:Key="StatisticsFrame">
                    <Setter Property="Margin" Value="20,0,20,0"/>
-                   <Setter Property="Padding" Value="10,0,15,0" />
+                   <Setter Property="Padding" Value="5" />
                    <Setter Property="BackgroundColor" Value="#bbbbbe"/>
                    <Setter Property="OutlineColor" Value="#bbbbbe"/>
              </Style>
