@@ -114,7 +114,7 @@
                     <Frame Style="{StaticResource GrayBoxFrame}">
 
                         <StackLayout>
-                            <Label Text="Items Dropped"
+                            <Label Text="Equipment Dropped"
                                    Style="{StaticResource HeaderStyle}"/>
                             <Label Text="{Binding Data.ItemsDroppedList}"
                                    Style="{StaticResource ValueStyle}"/>
