@@ -26,9 +26,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Frame OutlineColor="LightGray"
-                                   BackgroundColor="LightGray"
-                                   WidthRequest="450">
+                            <Frame Style="{StaticResource NameFrameStyle}">
                                 
                                 <Grid ColumnSpacing="5" RowSpacing="1">
                                     <Grid.ColumnDefinitions>
