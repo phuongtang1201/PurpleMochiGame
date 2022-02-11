@@ -26,12 +26,10 @@
                         <Label Text="{Binding Data.Name}" 
                                Style="{StaticResource HeaderStyle}"/>
                     </Frame>
-                    <Frame
-                    Margin="20,0,20,0"
-                    Padding="10,0,15,0"
-                    BackgroundColor="LightGray"
-                    OutlineColor="LightGray"
-                    WidthRequest="250">
+                    <Frame Style="{StaticResource GrayBoxFrame}"
+                           Margin="20,0,20,0"
+                           Padding="10,0,15,0"
+                           WidthRequest="250">
                         <StackLayout>
                             <Label Text="Score Details"
                            Style="{StaticResource HeaderStyle}"/>
