@@ -75,6 +75,15 @@
             </Style>
 
             <!--Global Styles for Views-->
+            
+            <!-- List View -->
+            <Style TargetType="ListView" x:Key="IndexStyle">
+                <Setter Property="HasUnevenRows" Value="True" />
+                <Setter Property="RowHeight" Value="85" />
+                <Setter Property="Margin" Value="10" />
+                <Setter Property="CachingStrategy" Value="RecycleElement" />
+                <Setter Property="ItemSelected" Value="OnItemSelected" />
+            </Style>
 
             <!-- Scroll View -->
 
