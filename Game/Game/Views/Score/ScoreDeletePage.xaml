@@ -26,13 +26,13 @@
 
                     <Frame Style="{StaticResource GrayBoxFrame}">
 
-                        <StackLayout>
+                        <StackLayout Orientation="Vertical">
                             <Label Text="Score Details"
                                    Style="{StaticResource HeaderStyle}"/>
 
                             <StackLayout Style="{StaticResource HorizontalStack}">
 
-                                <Label Text="Game Date: "
+                                <Label Text="Game Date:"
                                        Style="{StaticResource LabelStyle}"/>
 
                                 <Label Text="{Binding Data.GameDate}"
