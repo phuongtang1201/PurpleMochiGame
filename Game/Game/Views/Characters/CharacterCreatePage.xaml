@@ -101,64 +101,75 @@
                                                 SelectedIndexChanged="Level_Changed"
                                                 x:Name="LevelPicker"/>
                                     </Frame>
-
-                                    <Label Grid.Row="3" Grid.Column="0"
-                                           Text="Max Health" Margin="0,0,10,0"
-                                           Style="{StaticResource LabelStyle}"/>
-
-                                    <Label Grid.Row="3" Grid.Column="1"
-                                           x:Name="MaxHealthValue" Margin="10,0,0,0"
-                                           Text="{Binding Data.MaxHealth, StringFormat= '{0:G} hp'}" 
-                                           Style="{StaticResource ValueStyle}"/>
+                                   
                                 </Grid>
 
-                                <StackLayout Style="{StaticResource VerticalStack}" 
-                                             HorizontalOptions="FillAndExpand">
+                                <Grid RowSpacing="1" ColumnSpacing="2"
+                                      VerticalOptions="Center">
 
-                                    <StackLayout Style="{StaticResource SliderStacklayoutStyle}">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="270"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
 
-                                        <Label Text="Attack" Style="{StaticResource LabelStyle}"/>
+                                    <Label Grid.Row="0" Grid.Column="0"
+                                           Text="Max Health" Margin="0,0,20,0"
+                                           LineBreakMode="WordWrap"
+                                           Style="{StaticResource LabelStyle}"/>
 
-                                        <Slider Style="{StaticResource SliderStyle}"
-                                                Value="{Binding Data.Attack, Mode=TwoWay}"
-                                                ValueChanged="Attack_OnSliderValueChanged"/>
+                                    <Label Grid.Row="0" Grid.Column="1"
+                                           Grid.ColumnSpan="2"
+                                           x:Name="MaxHealthValue"
+                                           Text="{Binding Data.MaxHealth, StringFormat= '{0:G} hp'}" 
+                                           Style="{StaticResource ValueStyle}"/>
 
-                                        <Label Style="{StaticResource SliderValueStyle}"
-                                               Text="{Binding Data.Attack, Mode=TwoWay}" 
-                                               x:Name="AttackValue"/>
+                                    <Label Grid.Row="1" Grid.Column="0" 
+                                           Text="Attack" Style="{StaticResource LabelStyle}"/>
 
-                                    </StackLayout>
+                                    <Slider Grid.Row="1" Grid.Column="1" 
+                                            Style="{StaticResource SliderStyle}"
+                                            Value="{Binding Data.Attack, Mode=TwoWay}"
+                                            ValueChanged="Attack_OnSliderValueChanged"/>
 
-                                    <StackLayout Style="{StaticResource SliderStacklayoutStyle}">
+                                    <Label Grid.Row="1" Grid.Column="2" 
+                                           Style="{StaticResource SliderValueStyle}"
+                                           Text="{Binding Data.Attack, Mode=TwoWay}" 
+                                           x:Name="AttackValue"/>
 
-                                        <Label Text="Defense" Style="{StaticResource LabelStyle}"/>
+                                    <Label Grid.Row="2" Grid.Column="0" 
+                                           Text="Defense" Style="{StaticResource LabelStyle}"/>
 
-                                        <Slider Style="{StaticResource SliderStyle}"
-                                                Value="{Binding Data.Defense, Mode=TwoWay}"
-                                                ValueChanged="Defense_OnSliderValueChanged"/>
+                                    <Slider Grid.Row="2" Grid.Column="1" 
+                                            Style="{StaticResource SliderStyle}"
+                                            Value="{Binding Data.Defense, Mode=TwoWay}"
+                                            ValueChanged="Defense_OnSliderValueChanged"/>
 
-                                        <Label Style="{StaticResource SliderValueStyle}"
-                                               Text="{Binding Data.Defense, Mode=TwoWay}" 
-                                               x:Name="DefenseValue"/>
+                                    <Label Grid.Row="2" Grid.Column="2" 
+                                           Style="{StaticResource SliderValueStyle}"
+                                           Text="{Binding Data.Defense, Mode=TwoWay}" 
+                                           x:Name="DefenseValue"/>
 
-                                    </StackLayout>
+                                    <Label Grid.Row="3" Grid.Column="0" 
+                                           Text="Speed" Style="{StaticResource LabelStyle}"/>
 
-                                    <StackLayout Style="{StaticResource SliderStacklayoutStyle}">
+                                    <Slider Grid.Row="3" Grid.Column="1" 
+                                            Style="{StaticResource SliderStyle}"
+                                            Value="{Binding Data.Speed, Mode=TwoWay}"
+                                            ValueChanged="Speed_OnSliderValueChanged"/>
 
-                                        <Label Text="Speed" Style="{StaticResource LabelStyle}"/>
+                                    <Label Grid.Row="3" Grid.Column="2" 
+                                           Style="{StaticResource SliderValueStyle}"
+                                           Text="{Binding Data.Speed, Mode=TwoWay}" 
+                                           x:Name="SpeedValue"/>
 
-                                        <Slider Style="{StaticResource SliderStyle}"
-                                                Value="{Binding Data.Speed, Mode=TwoWay}"
-                                                ValueChanged="Speed_OnSliderValueChanged"/>
-
-                                        <Label Style="{StaticResource SliderValueStyle}"
-                                               Text="{Binding Data.Speed, Mode=TwoWay}" 
-                                               x:Name="SpeedValue"/>
-
-                                    </StackLayout>
-                                </StackLayout>
+                                </Grid>
                             </StackLayout>
                         </Frame>
+                        
                         <Grid HorizontalOptions="Center">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="39" />
