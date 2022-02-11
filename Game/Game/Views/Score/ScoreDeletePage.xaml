@@ -16,23 +16,15 @@
                         VerticalOptions="FillAndExpand">
 
             <ScrollView>
-                <StackLayout Style="{StaticResource OuterBoxStack}"
-                             Spacing="10"
-                             HorizontalOptions="CenterAndExpand">
+                <StackLayout Style="{StaticResource OuterBoxStack}">
 
-                    <Frame Style="{StaticResource NameFrameStyle}"
-                           Margin="20,0,20,0"
-                           Padding="5,0,0,0"
-                           HorizontalOptions="Start">
+                    <Frame Style="{StaticResource NameFrameStyle}">
 
                         <Label Text="{Binding Data.Name}" 
                                Style="{StaticResource HeaderStyle}"/>
                     </Frame>
 
-                    <Frame Style="{StaticResource GrayBoxFrame}"
-                           Margin="20,0,20,0"
-                           Padding="5,0,0,0"
-                           HorizontalOptions="Start">
+                    <Frame Style="{StaticResource GrayBoxFrame}">
 
                         <StackLayout>
                             <Label Text="Score Details"
