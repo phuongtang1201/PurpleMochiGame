@@ -28,8 +28,7 @@
                     </Frame>
                     <Frame Style="{StaticResource GrayBoxFrame}"
                            Margin="20,0,20,0"
-                           Padding="10,0,15,0"
-                           WidthRequest="250">
+                           Padding="5,0,100,9">
                         <StackLayout>
                             <Label Text="Score Details"
                            Style="{StaticResource HeaderStyle}"/>
