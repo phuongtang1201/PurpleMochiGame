@@ -89,10 +89,7 @@
                         </StackLayout>
                     </Frame>
 
-                    <Frame Style="{StaticResource GrayBoxFrame}"
-                           Margin="20,0,20,0"
-                           Padding="5,0,0,0"
-                           HorizontalOptions="Start">
+                    <Frame Style="{StaticResource GrayBoxFrame}">
 
                         <StackLayout>
                             <Label Text="Chefs killed"
@@ -103,10 +100,7 @@
 
                     </Frame>
 
-                    <Frame Style="{StaticResource GrayBoxFrame}"
-                           Margin="20,0,20,0"
-                           Padding="5,0,0,0"
-                           HorizontalOptions="Start">
+                    <Frame Style="{StaticResource GrayBoxFrame}">
 
                         <StackLayout>
                             <Label Text="Food Monsters Killed"
@@ -117,10 +111,7 @@
                         
                     </Frame>
 
-                    <Frame Style="{StaticResource GrayBoxFrame}"
-                           Margin="20,0,20,0"
-                           Padding="5,0,0,0"
-                           HorizontalOptions="Start">
+                    <Frame Style="{StaticResource GrayBoxFrame}">
 
                         <StackLayout>
                             <Label Text="Items Dropped"
