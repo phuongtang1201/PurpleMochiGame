@@ -33,7 +33,7 @@
                         <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
                         <Image Source="{Binding Data.ImageURI, Mode=TwoWay}" Style="{StaticResource ImageExtraLargeStyle}" 
-                                   HorizontalOptions="Center"/>
+                               HorizontalOptions="Center"/>
 
                             <Frame Style="{StaticResource EntryFrameStyle}">
 
@@ -50,10 +50,10 @@
                             </Frame>
 
                         <ImageButton x:Name="RollDice"
-                                         Style="{StaticResource ImageLargeStyle}"
-                                         WidthRequest="70" HeightRequest="70"
-                                         Source="icon_new.png"
-                                         Clicked="RollDice_Clicked"/>
+                                     Style="{StaticResource ImageLargeStyle}"
+                                     WidthRequest="70" HeightRequest="70"
+                                     Source="icon_new.png"
+                                     Clicked="RollDice_Clicked"/>
 
                         <Frame Style="{StaticResource StatisticsFrame}">
 
@@ -161,10 +161,10 @@
                         <Grid HorizontalOptions="Center">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="39" />
-                                <RowDefinition Height="350" />
+                                <RowDefinition Height="auto" />
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="350"/>
+                                <ColumnDefinition Width="auto"/>
                             </Grid.ColumnDefinitions>
                             <BoxView Grid.Row="0" Grid.Column="0" 
                                      Grid.RowSpan="2"
