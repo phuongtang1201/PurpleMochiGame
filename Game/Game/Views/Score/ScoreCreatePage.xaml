@@ -23,56 +23,60 @@
         <AbsoluteLayout HorizontalOptions="CenterAndExpand"
                         VerticalOptions="FillAndExpand">
 
-            <ScrollView>
-                <StackLayout Style="{StaticResource OuterBoxStack}">
+            <StackLayout Style="{StaticResource VerticalStack}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,1" 
+                         AbsoluteLayout.LayoutFlags="All">
+                <ScrollView>
+                    <StackLayout Style="{StaticResource OuterBoxStack}">
 
-                    <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
+                        <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
-                    <Frame Style="{StaticResource EntryFrameStyle}">
+                        <Frame Style="{StaticResource EntryFrameStyle}">
 
-                        <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
+                            <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
                                Style="{StaticResource EntryStyle}"
                                TextChanged="Entry_CheckNotEmpty"/>
-                    </Frame>
+                        </Frame>
 
-                    <Label Text="Score" 
+                        <Label Text="Score" 
                            Margin="20,0,20,0"
                            Style="{StaticResource HeaderStyle}"/>
 
-                    <StackLayout Style="{StaticResource HorizontalStack}">
+                        <StackLayout Style="{StaticResource HorizontalStack}">
 
-                        <Frame Style="{StaticResource EntryFrameStyle}"
+                            <Frame Style="{StaticResource EntryFrameStyle}"
                                WidthRequest="45">
 
-                            <Label Text="{Binding Data.ScoreTotal, Mode=TwoWay}" 
+                                <Label Text="{Binding Data.ScoreTotal, Mode=TwoWay}" 
                                    x:Name="ScoreValue"
                                    Style="{StaticResource ValueStyle}"
                                    Padding="10,0,10,0"
                                    HorizontalOptions="Start"
                                    HorizontalTextAlignment="Start"/>
-                        </Frame>
+                            </Frame>
 
-                        <Slider Style="{StaticResource SliderStyle}"
+                            <Slider Style="{StaticResource SliderStyle}"
                                 Value="{Binding Data.ScoreTotal, Mode=TwoWay}"
                                 WidthRequest="150"
                                 Maximum="500"                         
                                 ValueChanged="Score_OnSliderValueChanged"/>
-                    </StackLayout>
+                        </StackLayout>
 
-                    <StackLayout Style="{StaticResource HorizontalStack}" 
+                        <StackLayout Style="{StaticResource HorizontalStack}" 
                                  HorizontalOptions="Center">
 
-                        <Button Style="{StaticResource CancelUpdateDeleteButton}" 
+                            <Button Style="{StaticResource CancelUpdateDeleteButton}" 
                                 Text="Cancel"
                                 Clicked="Cancel_Clicked"/>
 
-                        <Button Style="{StaticResource CancelUpdateDeleteButton}" 
+                            <Button Style="{StaticResource CancelUpdateDeleteButton}" 
                                 Text="Create"
                                 Clicked="Save_Clicked"/>
 
+                        </StackLayout>
                     </StackLayout>
-                </StackLayout>
-            </ScrollView>
+                </ScrollView>
+            </StackLayout>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
