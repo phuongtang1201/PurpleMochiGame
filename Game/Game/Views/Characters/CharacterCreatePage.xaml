@@ -20,14 +20,12 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <AbsoluteLayout
-        HorizontalOptions="FillAndExpand"
-        VerticalOptions="FillAndExpand"
-        >
+        <AbsoluteLayout HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
 
             <StackLayout Style="{StaticResource VerticalStack}"
-                    AbsoluteLayout.LayoutBounds="1,1,1,1" 
-                    AbsoluteLayout.LayoutFlags="All">
+                         AbsoluteLayout.LayoutBounds="1,1,1,1" 
+                         AbsoluteLayout.LayoutFlags="All">
 
                 <ScrollView>
                     <StackLayout Style="{StaticResource OuterBoxStack}" Spacing="10">
@@ -39,20 +37,18 @@
                             <Image Source="{Binding Data.ImageURI, Mode=TwoWay}" Style="{StaticResource ImageExtraLargeStyle}" 
                                    HorizontalOptions="Center"/>
 
-                            <Frame 
-                                Style="{StaticResource NameFrameStyle}">
+                            <Frame Style="{StaticResource EntryFrameStyle}">
 
-                                <Entry 
-                                    Text="{Binding Data.Name, Mode=TwoWay}" 
-                                    Style="{StaticResource EntryStyle}"
-                                    TextChanged="Entry_CheckNotEmpty"/>
+                                <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
+                                       Style="{StaticResource EntryStyle}"
+                                       TextChanged="Entry_CheckNotEmpty"/>
                             </Frame>
 
                             <Frame Style="{StaticResource DescriptionFrameStyle}">
 
                                 <Editor Style="{StaticResource EditorDescriptionStyle}"
-                                    Text="{Binding Data.Description, Mode=TwoWay}" 
-                                    TextChanged="Entry_CheckNotEmpty"/>
+                                        Text="{Binding Data.Description, Mode=TwoWay}" 
+                                        TextChanged="Entry_CheckNotEmpty"/>
                             </Frame>
 
                             <ImageButton x:Name="RollDice"
@@ -66,10 +62,8 @@
                         <Frame
                             Style="{StaticResource StatisticsFrame}">
                             <StackLayout>
-                                <Grid
-                                RowSpacing="1"
-                                ColumnSpacing="2"
-                                VerticalOptions="Center">
+                                <Grid RowSpacing="1" ColumnSpacing="2"
+                                      VerticalOptions="Center">
 
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="auto" />
@@ -79,47 +73,46 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Row="0" Grid.Column="0"
-                                    Text="Statistics" 
-                                    Style="{StaticResource HeaderStyle}"/>
+                                           Text="Statistics" 
+                                           Style="{StaticResource HeaderStyle}"/>
 
                                     <Label Grid.Row="1" Grid.Column="0"
-                                    Text="Image" 
-                                    Style="{StaticResource LabelStyle}"/>
+                                           Text="Image" 
+                                           Style="{StaticResource LabelStyle}"/>
 
                                     <StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource HorizontalStack}" 
-                                             HorizontalOptions="FillAndExpand">
+                                                 HorizontalOptions="FillAndExpand">
 
                                         <Frame Style="{StaticResource ImageLevelFrameStyle}">                             
 
-                                            <Entry 
-                                                Text="{Binding Data.ImageURI, Mode=TwoWay}" 
-                                                Style="{StaticResource EntryStyle}"/>
+                                            <Entry Text="{Binding Data.ImageURI, Mode=TwoWay}" 
+                                                   Style="{StaticResource EntryStyle}"/>
                                         </Frame>
                                         
 
                                     </StackLayout>
 
                                     <Label Grid.Row="2" Grid.Column="0"
-                                    Text="Level" 
-                                    Style="{StaticResource LabelStyle}"/>
+                                           Text="Level" 
+                                           Style="{StaticResource LabelStyle}"/>
 
                                     <Frame Grid.Row="2" Grid.Column="1"
-                                        Style="{StaticResource ImageLevelFrameStyle}">
+                                           Style="{StaticResource ImageLevelFrameStyle}">
 
                                         <Picker Grid.Row="2" Grid.Column="1"
-                                            SelectedItem="{Binding SelectedItemProperty}" 
-                                            SelectedIndexChanged="Level_Changed"
-                                            x:Name="LevelPicker"/>
+                                                SelectedItem="{Binding SelectedItemProperty}" 
+                                                SelectedIndexChanged="Level_Changed"
+                                                x:Name="LevelPicker"/>
                                     </Frame>
 
                                     <Label Grid.Row="3" Grid.Column="0"
-                                    Text="Max Health" 
-                                    Style="{StaticResource LabelStyle}"/>
+                                           Text="Max Health" 
+                                           Style="{StaticResource LabelStyle}"/>
 
                                     <Label Grid.Row="3" Grid.Column="1"
-                                    x:Name="MaxHealthValue"
-                                    Text="{Binding Data.MaxHealth, StringFormat= '{0:G} hp'}" 
-                                    Style="{StaticResource ValueStyle}"/>
+                                           x:Name="MaxHealthValue"
+                                           Text="{Binding Data.MaxHealth, StringFormat= '{0:G} hp'}" 
+                                           Style="{StaticResource ValueStyle}"/>
                                 </Grid>
 
                                 <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
@@ -168,33 +161,29 @@
                                 </StackLayout>
                             </StackLayout>
                         </Frame>
-                        <Label
-                            Text="Items Box"
-                            FontSize="Small"
-                            Padding="10,0,0,0"
-                            Margin="20,0,20,-10"
-                            BackgroundColor="LightGray"
-                            />
-                        <FlexLayout 
-                            Margin="20,0,20,0"
-                            BackgroundColor="LightGray"
-                            Padding="10"
-                            Wrap="Wrap"
-                            JustifyContent="SpaceAround"
-                            AlignContent="SpaceAround"
-                            x:Name="ItemBox">
+                        <Label Text="Items Box"
+                               FontSize="Small"
+                               Padding="10,0,0,0"
+                               Margin="20,0,20,-10"
+                               BackgroundColor="LightGray" />
+                        <FlexLayout Margin="20,0,20,0"
+                                    BackgroundColor="LightGray"
+                                    Padding="10"
+                                    Wrap="Wrap"
+                                    JustifyContent="SpaceAround"
+                                    AlignContent="SpaceAround"
+                                    x:Name="ItemBox">
                         </FlexLayout>
-                        <StackLayout
-                            Style="{StaticResource HorizontalStack}" 
-                            HorizontalOptions="Center">
+                        <StackLayout Style="{StaticResource HorizontalStack}" 
+                                     HorizontalOptions="Center">
 
                             <Button Style="{StaticResource CancelUpdateDeleteButton}" 
-                            Text="Cancel"
-                            Clicked="Cancel_Clicked"/>
+                                    Text="Cancel"
+                                    Clicked="Cancel_Clicked"/>
 
                             <Button Style="{StaticResource CancelUpdateDeleteButton}" 
-                            Text="Create"
-                            Clicked="Save_Clicked"/>
+                                    Text="Create"
+                                    Clicked="Save_Clicked"/>
 
                         </StackLayout>
 
@@ -204,17 +193,15 @@
 
             <!--The Item Popup-->
             <StackLayout x:Name="PopupItemSelector" 
-                 BackgroundColor="{StaticResource PageBackgroundColor}" 
-                 IsVisible="false" 
-                 AbsoluteLayout.LayoutBounds=".5, .5,.5,.5" 
-                 AbsoluteLayout.LayoutFlags="All">
+                         BackgroundColor="{StaticResource PageBackgroundColor}" 
+                         IsVisible="false" 
+                         AbsoluteLayout.LayoutBounds=".5, .5,.5,.5" 
+                         AbsoluteLayout.LayoutFlags="All">
 
-                <StackLayout 
-                    VerticalOptions="CenterAndExpand" 
-                    HorizontalOptions="CenterAndExpand"
-                    WidthRequest="300"
-                    HeightRequest="300"
-                    >
+                <StackLayout VerticalOptions="CenterAndExpand" 
+                             HorizontalOptions="CenterAndExpand"
+                             WidthRequest="300"
+                             HeightRequest="300">
 
                     <Frame  BorderColor="{StaticResource TriciaryTextColor}" Padding="1">
                         <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" Padding="2">
@@ -222,12 +209,11 @@
                             <Label x:Name="PopupLocationValue" Style="{StaticResource PopupItemTextStyle}" />
 
                             <ListView x:Name="PopupLocationItemListView" 
-                                CachingStrategy="RecycleElement"
-                                ItemSelected="OnPopupItemSelected"
-                                HasUnevenRows="true"
-                                Margin="5,0,5,0"
-                                RowHeight="80"
-                                >
+                                      CachingStrategy="RecycleElement"
+                                      ItemSelected="OnPopupItemSelected"
+                                      HasUnevenRows="true"
+                                      Margin="5,0,5,0"
+                                      RowHeight="80">
 
                                 <ListView.ItemTemplate>
                             <DataTemplate>
@@ -243,14 +229,14 @@
                                             <RowDefinition Height="auto"/>
                                         </Grid.RowDefinitions>
 
-                                        <Image  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
-                                            Source="{Binding ImageURI}"
-                                            Style="{StaticResource ImageSmallStyle}"
-                                            VerticalOptions="CenterAndExpand"/>
+                                        <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
+                                               Source="{Binding ImageURI}"
+                                               Style="{StaticResource ImageSmallStyle}"
+                                               VerticalOptions="CenterAndExpand"/>
 
                                         <Label Grid.Column="1" Grid.Row="0"
-                                            Text="{Binding Name}" 
-                                            Style="{StaticResource ListStyle}"/>
+                                               Text="{Binding Name}" 
+                                               Style="{StaticResource ListStyle}"/>
 
                                         <StackLayout Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
                                             <Label Text="{Binding Attribute}" Style="{StaticResource ListStyle}"/>
@@ -258,9 +244,9 @@
                                         </StackLayout>
 
                                         <Label Grid.Column="1" Grid.Row="2"
-                                                Text="{Binding Description}" 
-                                                Style="{StaticResource ListStyle}"
-                                                FontSize="Micro"/>
+                                               Text="{Binding Description}" 
+                                               Style="{StaticResource ListStyle}"
+                                               FontSize="Micro"/>
                                     </Grid>
                                 </ViewCell>
                             </DataTemplate>
@@ -268,8 +254,8 @@
                             </ListView>
 
                             <Button x:Name="PopupCloseButton" 
-                                Clicked="ClosePopup_Clicked" 
-                                Text="Close"/>
+                                    Clicked="ClosePopup_Clicked" 
+                                    Text="Close"/>
                         </StackLayout>
                     </Frame>
                 </StackLayout>
