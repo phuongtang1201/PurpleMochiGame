@@ -501,7 +501,7 @@
                 <Setter Property="BackgroundColor" Value="#bbbbbe"/>
                 <Setter Property="BorderColor" Value="#bbbbbe"/>
                 <Setter Property="Margin" Value="20,0,20,0" />
-                
+                <Setter Property="Padding" Value="5" />
             </Style>
 
             <Style TargetType="Frame" x:Key="EntryFrameStyle">
