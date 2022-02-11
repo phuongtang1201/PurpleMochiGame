@@ -50,7 +50,7 @@
 
                         <Frame Style="{StaticResource EntryFrameStyle}"
                                WidthRequest="45"
-                               Margin="5">
+                               Margin="20,0,20,0">
 
                             <Label Text="{Binding Data.ScoreTotal, Mode=TwoWay}" 
                                    x:Name="ScoreValue"
@@ -61,21 +61,21 @@
                         </Frame>
 
                         <Slider Style="{StaticResource SliderStyle}"
-                        Value="{Binding Data.ScoreTotal, Mode=TwoWay}"
-                        Maximum="500"                         
-                        ValueChanged="Score_OnSliderValueChanged"/>
+                                Value="{Binding Data.ScoreTotal, Mode=TwoWay}"
+                                Maximum="500"                         
+                                ValueChanged="Score_OnSliderValueChanged"/>
                     </StackLayout>
 
                     <StackLayout Style="{StaticResource HorizontalStack}" 
-                            HorizontalOptions="Center">
+                                 HorizontalOptions="Center">
 
                         <Button Style="{StaticResource CancelUpdateDeleteButton}" 
-                            Text="Cancel"
-                            Clicked="Cancel_Clicked"/>
+                                Text="Cancel"
+                                Clicked="Cancel_Clicked"/>
 
                         <Button Style="{StaticResource CancelUpdateDeleteButton}" 
-                            Text="Create"
-                            Clicked="Save_Clicked"/>
+                                Text="Create"
+                                Clicked="Save_Clicked"/>
 
                     </StackLayout>
                 </StackLayout>
