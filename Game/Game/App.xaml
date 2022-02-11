@@ -29,7 +29,7 @@
             <Color x:Key="PrimaryBackgroundColor">red</Color> <!--?-->
             <Color x:Key="SecondaryBackgroundColor">#5b98b2</Color> <!--buttons-->
             <Color x:Key="TriciaryBackgroundColor">#000000</Color> <!--button outline-->
-            <Color x:Key="LightBackgroundColor">orange</Color> <!--entry box/picker-->
+            <Color x:Key="LightBackgroundColor">#bbbbbe</Color> <!--entry box/picker-->
 
             <Color x:Key="PrimaryTextColor">black</Color>
             <Color x:Key="SecondaryTextColor">black</Color>
