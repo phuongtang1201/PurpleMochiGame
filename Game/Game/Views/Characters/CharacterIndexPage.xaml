@@ -16,13 +16,12 @@
         <StackLayout Style="{StaticResource OuterBoxStack}">
 
             <ListView x:Name="CharactersListView" 
-                    ItemsSource="{Binding Dataset}"
-                    IsRefreshing="{Binding IsBusy, Mode=OneWay}"
-                    RefreshCommand="{Binding LoadItemsCommand}"
-                    CachingStrategy="RecycleElement"
-                    ItemSelected="OnItemSelected"
-                    HasUnevenRows="true"
-                    RowHeight="80">
+                      Style="{StaticResource IndexStyle}"
+                      ItemsSource="{Binding Dataset}"
+                      IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                      RefreshCommand="{Binding LoadItemsCommand}"
+                      CachingStrategy="RecycleElement"
+                      ItemSelected="OnItemSelected">
                 
                 <ListView.ItemTemplate>
                     <DataTemplate>
