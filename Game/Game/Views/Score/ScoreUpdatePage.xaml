@@ -30,7 +30,6 @@
 
                     <Frame Style="{StaticResource EntryFrameStyle}"
                            Margin="20,0,20,0"
-                           Padding="5,0,100,9"
                            HorizontalOptions="Start">
 
                         <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
@@ -40,7 +39,7 @@
 
                     <Frame Style="{StaticResource GrayBoxFrame}"
                            Margin="20,0,20,0"
-                           Padding="5,0,100,9"
+                           Padding="5,0,0,0"
                            HorizontalOptions="Start">
 
                         <StackLayout Orientation="Vertical">
@@ -109,7 +108,7 @@
 
                     <Frame Style="{StaticResource GrayBoxFrame}"
                            Margin="20,0,20,0"
-                           Padding="5,0,100,9"
+                           Padding="5,0,0,0"
                            HorizontalOptions="Start">
 
                         <StackLayout Orientation="Vertical">
@@ -124,7 +123,7 @@
 
                     <Frame Style="{StaticResource GrayBoxFrame}"
                            Margin="20,0,20,0"
-                           Padding="5,0,100,9"
+                           Padding="5,0,0,0"
                            HorizontalOptions="Start">
 
                         <StackLayout Orientation="Vertical">
@@ -139,7 +138,7 @@
 
                     <Frame Style="{StaticResource GrayBoxFrame}"
                            Margin="20,0,20,0"
-                           Padding="5,0,100,9"
+                           Padding="5,0,0,0"
                            HorizontalOptions="Start">
 
                         <StackLayout Orientation="Vertical">
