@@ -519,6 +519,7 @@
                 <Setter Property="BorderColor" Value="#bbbbbe"/>
                 <Setter Property="WidthRequest" Value="300"/>
                 <Setter Property="Padding" Value="5" />
+                <Setter Property="Margin" Value="20,0,20,0" />
             </Style>
 
             <Style TargetType="Frame" x:Key="DescriptionFrameStyle">
