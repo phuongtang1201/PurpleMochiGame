@@ -33,8 +33,9 @@
                            Margin="20,0,20,0"
                            Padding="5,0,100,9"
                            HorizontalOptions="Start">
-                        
-                        <StackLayout>
+
+                        <StackLayout Orientation="Vertical">
+                            
                             <Label Text="Score Details"
                            Style="{StaticResource HeaderStyle}"/>
 
