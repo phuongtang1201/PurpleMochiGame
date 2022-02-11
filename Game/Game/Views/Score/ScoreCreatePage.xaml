@@ -28,7 +28,7 @@
 
                 <StackLayout Orientation="Vertical">
 
-                    <Frame Style="{StaticResource NameFrameStyle}"
+                    <Frame Style="{StaticResource EntryFrameStyle}"
                            Margin="20,0,20,0"
                            Padding="5,0,100,9"
                            HorizontalOptions="Start">
