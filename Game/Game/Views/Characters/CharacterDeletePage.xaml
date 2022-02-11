@@ -28,15 +28,15 @@
                                    Text="{Binding Data.Name}"/>
                         </Frame>
 
-                            <Frame Style="{StaticResource DescriptionFrameStyle}">
+                        <Frame Style="{StaticResource DescriptionFrameStyle}">
 
-                                <Label Style="{StaticResource ValueStyle}"
-                                       Text="{Binding Data.Description}"
-                                       LineBreakMode="WordWrap"/>
+                            <Label Style="{StaticResource ValueStyle}"
+                                   Text="{Binding Data.Description}"
+                                   LineBreakMode="WordWrap"/>
 
                             </Frame>
                             
-                            <Grid RowSpacing="4" ColumnSpacing="7"
+                            <Grid RowSpacing="1" ColumnSpacing="2"
                                   VerticalOptions="Center" HorizontalOptions="Center">
 
                                 <Grid.RowDefinitions>
