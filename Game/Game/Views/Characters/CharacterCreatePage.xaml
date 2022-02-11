@@ -44,7 +44,7 @@
                                        TextChanged="Entry_CheckNotEmpty"/>
                             </Frame>
 
-                            <Frame Style="{StaticResource DescriptionFrameStyle}">
+                            <Frame Style="{StaticResource DescriptionEntryFrameStyle}">
 
                                 <Editor Style="{StaticResource EditorDescriptionStyle}"
                                         Text="{Binding Data.Description, Mode=TwoWay}" 
@@ -61,6 +61,7 @@
 
                         <Frame
                             Style="{StaticResource StatisticsFrame}">
+                            
                             <StackLayout>
                                 <Grid RowSpacing="1" ColumnSpacing="2"
                                       VerticalOptions="Center">
@@ -83,7 +84,7 @@
                                     <StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource HorizontalStack}" 
                                                  HorizontalOptions="FillAndExpand">
 
-                                        <Frame Style="{StaticResource ImageLevelFrameStyle}">                             
+                                        <Frame Style="{StaticResource EntryFrameStyle}">                             
 
                                             <Entry Text="{Binding Data.ImageURI, Mode=TwoWay}" 
                                                    Style="{StaticResource EntryStyle}"/>
