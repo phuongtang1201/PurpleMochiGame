@@ -28,9 +28,7 @@
 
                     <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
-                    <StackLayout Orientation="Vertical">
-
-                        <Frame Style="{StaticResource EntryFrameStyle}"
+                    <Frame Style="{StaticResource EntryFrameStyle}"
                            Margin="20,0,20,0"                          
                            HorizontalOptions="Start">
 
@@ -39,10 +37,9 @@
                                    TextChanged="Entry_CheckNotEmpty"/>
                         </Frame>
 
-                        <Label Text="Score" 
+                    <Label Text="Score" 
                                Margin="20,0,20,0"
                                Style="{StaticResource HeaderStyle}"/>
-                    </StackLayout>
 
                     <StackLayout Style="{StaticResource HorizontalStack}">
 
