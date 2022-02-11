@@ -48,7 +48,7 @@
                                    Style="{StaticResource HeaderStyle}"/>
 
                             <StackLayout Style="{StaticResource HorizontalStack}">
-                                <Label Text="Game Date:"
+                                <Label Text="Game Date: "
                                        Style="{StaticResource LabelStyle}"/>
 
                                 <Label Text="{Binding Data.GameDate}"
@@ -56,7 +56,7 @@
                             </StackLayout>
 
                             <StackLayout Style="{StaticResource HorizontalStack}">
-                                <Label Text="AutoBattle:"                      
+                                <Label Text="AutoBattle: "                      
                                        Style="{StaticResource LabelStyle}"/>
 
                                 <Label Text="{Binding Data.AutoBattle}"
@@ -64,7 +64,7 @@
                             </StackLayout>
 
                             <StackLayout Style="{StaticResource HorizontalStack}">
-                                <Label Text="Score:" 
+                                <Label Text="Score: " 
                                        Style="{StaticResource LabelStyle}"/>
 
                                 <Label Text="{Binding Data.ScoreTotal}"
@@ -80,7 +80,7 @@
                             </StackLayout>
 
                             <StackLayout Style="{StaticResource HorizontalStack}">
-                                <Label Text="Number of Turns:"  
+                                <Label Text="Number of Turns: "  
                                        Style="{StaticResource LabelStyle}"/>
 
                                 <Label Text="{Binding Data.TurnCount}"
