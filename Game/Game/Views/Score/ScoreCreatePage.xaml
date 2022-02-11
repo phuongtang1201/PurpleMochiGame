@@ -28,35 +28,34 @@
 
                 <StackLayout Orientation="Vertical">
 
-                    <Frame 
-                        Style="{StaticResource NameFrameStyle}">
+                    <Frame Style="{StaticResource NameFrameStyle}"
+                           Margin="20,0,20,0"
+                           Padding="5,0,100,9"
+                           HorizontalOptions="Start">
 
-                        <Entry 
-                            Text="{Binding Data.Name, Mode=TwoWay}" 
-                            Style="{StaticResource EntryStyle}"
-                            TextChanged="Entry_CheckNotEmpty"/>
+                        <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
+                               Style="{StaticResource EntryStyle}"
+                               TextChanged="Entry_CheckNotEmpty"/>
                     </Frame>
 
                     <Label Text="Score" 
-                            Style="{StaticResource LabelStyle}"/>
+                           Style="{StaticResource LabelStyle}"/>
                 </StackLayout>
 
                 <StackLayout Style="{StaticResource HorizontalStack}">
 
-                    <Frame 
-                           CornerRadius="5"
+                    <Frame CornerRadius="5"
                            BackgroundColor="orange"
                            BorderColor="orange"
                            WidthRequest="45"
                            Margin="5">
 
-                        <Label 
-                            Text="{Binding Data.ScoreTotal, Mode=TwoWay}" 
-                            x:Name="ScoreValue"
-                            Style="{StaticResource ValueStyle}"
-                            Padding="10,0,10,0"
-                            HorizontalOptions="Start"
-                            HorizontalTextAlignment="Start"/>
+                        <Label Text="{Binding Data.ScoreTotal, Mode=TwoWay}" 
+                               x:Name="ScoreValue"
+                               Style="{StaticResource ValueStyle}"
+                               Padding="10,0,10,0"
+                               HorizontalOptions="Start"
+                               HorizontalTextAlignment="Start"/>
                     </Frame>
 
                     <Slider Style="{StaticResource SliderStyle}"
