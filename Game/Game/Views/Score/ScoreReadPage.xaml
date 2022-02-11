@@ -104,19 +104,15 @@
                                    Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
                     </Frame>
-                    <Frame
-                    Margin="20,0,20,0"
-                    Padding="10,0,15,0"
-                    BackgroundColor="LightGray"
-                    OutlineColor="LightGray"
-                    WidthRequest="250">
+                    <Frame Style="{StaticResource NameFrameStyle}"
+                           Margin="20,0,20,0"
+                           Padding="5,0,100,9"
+                           HorizontalOptions="Start">
                         <StackLayout>
-                            <Label 
-                    Text="Items Dropped:"
-                    Style="{StaticResource HeaderStyle}"/>
-                            <Label 
-                    Text="{Binding Data.ItemsDroppedList}"
-                    Style="{StaticResource ValueStyle}"/>
+                            <Label Text="Items Dropped:"
+                                   Style="{StaticResource HeaderStyle}"/>
+                            <Label Text="{Binding Data.ItemsDroppedList}"
+                                   Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
                     </Frame>
 
@@ -124,12 +120,12 @@
                             HorizontalOptions="Center">
 
                         <Button Style="{StaticResource CancelUpdateDeleteButton}" 
-                            Text="Delete"
-                            Clicked="Delete_Clicked"/>
+                                Text="Delete"
+                                Clicked="Delete_Clicked"/>
 
                         <Button Style="{StaticResource CancelUpdateDeleteButton}" 
-                            Text="Update"
-                            Clicked="Update_Clicked"/>
+                                Text="Update"
+                                Clicked="Update_Clicked"/>
 
                     </StackLayout>
                 </StackLayout>
