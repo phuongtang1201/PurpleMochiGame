@@ -23,7 +23,8 @@
         <AbsoluteLayout HorizontalOptions="CenterAndExpand"
                         VerticalOptions="FillAndExpand">
             <ScrollView>
-                <StackLayout Style="{StaticResource OuterBoxStack}" Spacing="10">
+                <StackLayout Style="{StaticResource OuterBoxStack}" Spacing="10"
+                             HorizontalOptions="CenterAndExpand">
 
                     <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
