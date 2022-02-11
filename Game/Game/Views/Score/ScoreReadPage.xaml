@@ -24,10 +24,7 @@
                                Style="{StaticResource HeaderStyle}"/>
                     </Frame>
                     
-                    <Frame Style="{StaticResource GrayBoxFrame}"
-                           Margin="20,0,20,0"
-                           Padding="5,0,0,0"
-                           HorizontalOptions="Start">
+                    <Frame Style="{StaticResource GrayBoxFrame}">
 
                         <StackLayout Orientation="Vertical">
                             
