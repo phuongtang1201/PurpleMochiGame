@@ -18,8 +18,7 @@
             <ScrollView>
                 <StackLayout Style="{StaticResource OuterBoxStack}">
                     
-                    <Frame Style="{StaticResource NameFrameStyle}"
-                           HorizontalOptions="Start">
+                    <Frame Style="{StaticResource NameFrameStyle}">
                         
                         <Label Text="{Binding Data.Name}" 
                                Style="{StaticResource HeaderStyle}"/>
