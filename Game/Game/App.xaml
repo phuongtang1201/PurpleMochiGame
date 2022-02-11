@@ -26,7 +26,7 @@
             <Color x:Key="ViewBackgroundColor">#5b98b2</Color> <!--top navigation bar-->
             <Color x:Key="NavigationBarColor">#5b98b2</Color> <!--?-->
 
-            <Color x:Key="PrimaryBackgroundColor">red</Color> <!--?-->
+            <Color x:Key="PrimaryBackgroundColor">#bbbbbe</Color> <!--?-->
             <Color x:Key="SecondaryBackgroundColor">#5b98b2</Color> <!--buttons-->
             <Color x:Key="TriciaryBackgroundColor">#000000</Color> <!--button outline-->
             <Color x:Key="LightBackgroundColor">#bbbbbe</Color> <!--entry box/picker-->
