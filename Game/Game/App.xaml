@@ -33,7 +33,7 @@
 
             <Color x:Key="PrimaryTextColor">black</Color>
             <Color x:Key="SecondaryTextColor">black</Color>
-            <Color x:Key="TriciaryTextColor">#bbbbbe</Color>
+            <Color x:Key="TriciaryTextColor">black</Color>
 
             <Color x:Key="TransparentColor">Transparent</Color>
 
@@ -310,7 +310,7 @@
                 <Setter Property="VerticalOptions" Value="Center"/>
                 <Setter Property="BorderWidth" Value="1"/>
                 <Setter Property= "CornerRadius" Value="5"/>
-                <Setter Property= "BorderColor" Value="#bbbbbe"/>
+                <Setter Property= "BorderColor" Value="#bbbbbe"/> <!-- blue?-->
                 <Setter Property= "BackgroundColor" Value="#bbbbbe"/>
             </Style>
 
@@ -319,7 +319,7 @@
                 <Setter Property="HeightRequest" Value="40"/>
                 <Setter Property="Margin" Value="10,0,0,0"/>
                 <Setter Property= "CornerRadius" Value="5"/>
-                <Setter Property= "BorderColor" Value="#bbbbbe"/>
+                <Setter Property= "BorderColor" Value="#bbbbbe"/> <!--blue?-->
                 <Setter Property= "BackgroundColor" Value="#bbbbbe"/>
             </Style>
 
