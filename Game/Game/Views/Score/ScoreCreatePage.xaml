@@ -32,8 +32,7 @@
                     <StackLayout Orientation="Vertical">
 
                         <Frame Style="{StaticResource EntryFrameStyle}"
-                           Margin="20,0,20,0"
-                           Padding="5,0,100,9"
+                           Margin="20,0,20,0"                          
                            HorizontalOptions="Start">
 
                             <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
@@ -62,6 +61,7 @@
 
                         <Slider Style="{StaticResource SliderStyle}"
                                 Value="{Binding Data.ScoreTotal, Mode=TwoWay}"
+                                WidthRequest="230"
                                 Maximum="500"                         
                                 ValueChanged="Score_OnSliderValueChanged"/>
                     </StackLayout>
