@@ -164,26 +164,25 @@
                             </StackLayout>
                         </Frame>
 
-                        <Grid RowSpacing="4" ColumnSpacing="7"
-                                  VerticalOptions="Center" HorizontalOptions="Center">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="auto" />
-                                    <RowDefinition Height="auto" />
-                                </Grid.RowDefinitions>
-                                <BoxView Grid.Row="0" Grid.Column="0" 
-                                         Grid.RowSpan="2"
-                                         Color="LightGray" CornerRadius="5"/>
-                                <Label Grid.Column="0" Grid.Row="0"
-                                       Text="Equipment" FontSize="Small"
-                                       Padding="5,0,0,0" />
-                                <FlexLayout Grid.Column="0" Grid.Row="1"
-                                            Margin="20,0,20,0"
-                                            Padding="10" Wrap="Wrap"
-                                            JustifyContent="SpaceAround"
-                                            AlignContent="SpaceAround"
-                                            x:Name="ItemBox">
-                                </FlexLayout>
-                            </Grid>
+                        <Grid HorizontalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="39" />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            <BoxView Grid.Row="0" Grid.Column="0" 
+                                     Grid.RowSpan="2"
+                                     Style="{StaticResource YesNoBoxView}" />
+                            <Label Grid.Column="0" Grid.Row="0"
+                                   Text="Equipment" FontSize="Small"
+                                   Padding="5" />
+                            <FlexLayout Grid.Column="0" Grid.Row="1"
+                                        Margin="20,0,20,0"
+                                        Padding="10" Wrap="Wrap"
+                                        JustifyContent="SpaceAround"
+                                        AlignContent="SpaceAround"
+                                        x:Name="ItemBox">
+                            </FlexLayout>
+                        </Grid>
                             
                         
                         <Grid RowSpacing="1" ColumnSpacing="2"
