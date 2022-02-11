@@ -19,8 +19,6 @@
                 <StackLayout Style="{StaticResource OuterBoxStack}">
                     
                     <Frame Style="{StaticResource NameFrameStyle}"
-                           Margin="20,0,20,0"
-                           Padding="5,0,0,0"
                            HorizontalOptions="Start">
                         
                         <Label Text="{Binding Data.Name}" 
