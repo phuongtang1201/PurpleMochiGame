@@ -308,6 +308,7 @@
                 <Setter Property="WidthRequest" Value="100"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Padding" Value="0,0,0,2" />
                 <Setter Property="BorderWidth" Value="1"/>
                 <Setter Property= "CornerRadius" Value="5"/>
                 <Setter Property= "BorderColor" Value="#bbbbbe"/> <!-- blue?-->
