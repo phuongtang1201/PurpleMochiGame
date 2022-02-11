@@ -502,6 +502,12 @@
                 <Setter Property="HeightRequest" Value="39"/>
             </Style>
 
+            <Style TargetType="Frame" x:Key="GrayBoxFrame">
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="BackgroundColor" Value="#bbbbbe"/>
+                <Setter Property="BorderColor" Value="#bbbbbe"/>
+            </Style>
+
             <Style TargetType="Frame" x:Key="DescriptionFrameStyle">
                 <Setter Property="CornerRadius" Value="5"/>
                 <Setter Property="BackgroundColor" Value="orange"/>
