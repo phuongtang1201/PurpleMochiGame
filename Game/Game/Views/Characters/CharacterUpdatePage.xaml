@@ -164,7 +164,7 @@
                             </StackLayout>
                         </Frame>
                         <Label
-                            Text="Items Box"
+                            Text="Equipment"
                             FontSize="Small"
                             Padding="10,0,0,0"
                             Margin="20,0,20,-10"
