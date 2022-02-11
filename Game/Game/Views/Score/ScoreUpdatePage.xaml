@@ -129,9 +129,8 @@
 
                         <StackLayout Orientation="Vertical">
 
-                            <Label HorizontalOptions="Center"
-                                   Text="Food Monsters killed" 
-                                   Style="{StaticResource LabelStyle}"/>
+                            <Label Text="Food Monsters killed" 
+                                   Style="{StaticResource HeaderStyle}"/>
 
                             <Label Text="{Binding Data.MonstersKilledList}" 
                                    Style="{StaticResource ValueStyle}"/>
@@ -144,9 +143,8 @@
                            HorizontalOptions="Start">
 
                         <StackLayout Orientation="Vertical">
-                            <Label HorizontalOptions="Center"
-                                   Text="Items dropped" 
-                                   Style="{StaticResource LabelStyle}"/>
+                            <Label Text="Items dropped" 
+                                   Style="{StaticResource HeaderStyle}"/>
                             
                             <Label Text="{Binding Data.ItemsDroppedList}" 
                                    Style="{StaticResource ValueStyle}"/>
