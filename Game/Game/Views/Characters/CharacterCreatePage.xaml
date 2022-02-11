@@ -31,10 +31,8 @@
                     <StackLayout Style="{StaticResource OuterBoxStack}">
 
                         <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
-                        
-                        <StackLayout Margin="60,0,60,0">
-                            
-                            <Image Source="{Binding Data.ImageURI, Mode=TwoWay}" Style="{StaticResource ImageExtraLargeStyle}" 
+
+                        <Image Source="{Binding Data.ImageURI, Mode=TwoWay}" Style="{StaticResource ImageExtraLargeStyle}" 
                                    HorizontalOptions="Center"/>
 
                             <Frame Style="{StaticResource EntryFrameStyle}">
@@ -51,13 +49,11 @@
                                         TextChanged="Entry_CheckNotEmpty"/>
                             </Frame>
 
-                            <ImageButton x:Name="RollDice"
+                        <ImageButton x:Name="RollDice"
                                          Style="{StaticResource ImageLargeStyle}"
                                          WidthRequest="70" HeightRequest="70"
                                          Source="icon_new.png"
                                          Clicked="RollDice_Clicked"/>
-                            
-                        </StackLayout>
 
                         <Frame Style="{StaticResource StatisticsFrame}">
 
