@@ -22,7 +22,7 @@
                     
                     <Frame Style="{StaticResource NameFrameStyle}"
                            Margin="20,0,20,0"
-                           Padding="5,0,100,9"
+                           Padding="5,0,0,0"
                            HorizontalOptions="Start">
                         
                         <Label Text="{Binding Data.Name}" 
@@ -31,7 +31,7 @@
                     
                     <Frame Style="{StaticResource GrayBoxFrame}"
                            Margin="20,0,20,0"
-                           Padding="5,0,100,9"
+                           Padding="5,0,0,0"
                            HorizontalOptions="Start">
 
                         <StackLayout Orientation="Vertical">
@@ -97,7 +97,7 @@
                     </Frame>
                     <Frame Style="{StaticResource GrayBoxFrame}"
                            Margin="20,0,20,0"
-                           Padding="5,0,100,9"
+                           Padding="5,0,0,0"
                            HorizontalOptions="Start">
 
                         <StackLayout Orientation="Vertical">
@@ -112,7 +112,7 @@
                     
                     <Frame Style="{StaticResource GrayBoxFrame}"
                            Margin="20,0,20,0"
-                           Padding="5,0,100,9"
+                           Padding="5,0,0,0"
                            HorizontalOptions="Start">
 
                         <StackLayout Orientation="Vertical">
@@ -127,7 +127,7 @@
                     
                     <Frame Style="{StaticResource GrayBoxFrame}"
                            Margin="20,0,20,0"
-                           Padding="5,0,100,9"
+                           Padding="5,0,0,0"
                            HorizontalOptions="Start">
 
                         <StackLayout Orientation="Vertical">
