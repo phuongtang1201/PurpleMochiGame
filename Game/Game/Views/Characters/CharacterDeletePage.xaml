@@ -42,7 +42,7 @@
                             <StackLayout>
 
                                 <Grid RowSpacing="1" ColumnSpacing="2"
-                                  VerticalOptions="Center" HorizontalOptions="Center">
+                                      VerticalOptions="Center">
 
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="auto" />
@@ -54,10 +54,6 @@
                                         <ColumnDefinition Width="auto" />
                                         <ColumnDefinition Width="100" />
                                     </Grid.ColumnDefinitions>
-
-                                    <BoxView Grid.Row="2" Grid.Column="0" 
-                                         Grid.ColumnSpan="5" Grid.RowSpan="8"
-                                         Color="LightGray" CornerRadius="5"/>
 
                                     <Label Grid.Row="2" Grid.Column="0"
                                        Text="Statistics" Padding="5,0,0,0"
