@@ -82,7 +82,7 @@
                             </StackLayout>
                         </StackLayout>
                     </Frame>
-                    <Frame Style="{StaticResource NameFrameStyle}"
+                    <Frame Style="{StaticResource GrayBoxFrame}"
                            Margin="20,0,20,0"
                            Padding="5,0,100,9"
                            HorizontalOptions="Start">
@@ -93,7 +93,7 @@
                                    Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
                     </Frame>
-                    <Frame Style="{StaticResource NameFrameStyle}"
+                    <Frame Style="{StaticResource GrayBoxFrame}"
                            Margin="20,0,20,0"
                            Padding="5,0,100,9"
                            HorizontalOptions="Start">
@@ -104,12 +104,12 @@
                                    Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
                     </Frame>
-                    <Frame Style="{StaticResource NameFrameStyle}"
+                    <Frame Style="{StaticResource GrayBoxFrame}"
                            Margin="20,0,20,0"
                            Padding="5,0,100,9"
                            HorizontalOptions="Start">
                         <StackLayout>
-                            <Label Text="Items Dropped:"
+                            <Label Text="Items Dropped"
                                    Style="{StaticResource HeaderStyle}"/>
                             <Label Text="{Binding Data.ItemsDroppedList}"
                                    Style="{StaticResource ValueStyle}"/>
