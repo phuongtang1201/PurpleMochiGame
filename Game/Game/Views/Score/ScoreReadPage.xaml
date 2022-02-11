@@ -102,7 +102,7 @@
 
                         <StackLayout Orientation="Vertical">
                             
-                            <Label Text="Chefs killed"
+                            <Label Text="Chefs Killed"
                                    Style="{StaticResource HeaderStyle}"/>
                             <Label Text="{Binding Data.CharacterAtDeathList}" 
                                    Style="{StaticResource ValueStyle}"/>
