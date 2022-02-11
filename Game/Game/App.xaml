@@ -32,8 +32,8 @@
             <Color x:Key="LightBackgroundColor">orange</Color>
 
             <Color x:Key="PrimaryTextColor">black</Color>
-            <Color x:Key="SecondaryTextColor">darkblue</Color>
-            <Color x:Key="TriciaryTextColor">darkgreen</Color>
+            <Color x:Key="SecondaryTextColor">black</Color>
+            <Color x:Key="TriciaryTextColor">#bbbbbe</Color>
 
             <Color x:Key="TransparentColor">Transparent</Color>
 
