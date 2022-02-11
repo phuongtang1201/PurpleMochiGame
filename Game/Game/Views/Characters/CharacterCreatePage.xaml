@@ -165,7 +165,7 @@
                         <Grid HorizontalOptions="Center">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="39" />
-                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="350" />
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="350"/>
