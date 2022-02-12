@@ -44,8 +44,7 @@
                             <StackLayout>
 
                                 <Grid RowSpacing="1" ColumnSpacing="2"
-                                      VerticalOptions="Center"
-                                      Padding="5">
+                                      VerticalOptions="Center">
 
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="auto" />
@@ -60,7 +59,7 @@
                                            Style="{StaticResource HeaderStyle}" />
 
                                     <Label Grid.Row="1" Grid.Column="0"
-                                       Text="Level:"
+                                       Text="Level"
                                        Style="{StaticResource LabelStyle}"/>
 
                                     <Label Grid.Row="1" Grid.Column="1"
