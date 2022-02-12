@@ -3,6 +3,8 @@ using Xamarin.Forms.Xaml;
 
 using Game.Views;
 
+[assembly: ExportFont("futura medium condensed bt.ttf", Alias = "Futura")]
+
 namespace Game
 {
     /// <summary>
