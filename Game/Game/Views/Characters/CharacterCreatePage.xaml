@@ -35,14 +35,16 @@
                         <Image Source="{Binding Data.ImageURI, Mode=TwoWay}" Style="{StaticResource ImageExtraLargeStyle}" 
                                HorizontalOptions="Center"/>
 
-                            <Frame Style="{StaticResource EntryFrameStyle}">
+                            <Frame Style="{StaticResource EntryFrameStyle}"
+                                   Margin="40,0,40,0">
 
                                 <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
                                        Style="{StaticResource EntryStyle}"
                                        TextChanged="Entry_CheckNotEmpty"/>
                             </Frame>
 
-                            <Frame Style="{StaticResource DescriptionEntryFrameStyle}">
+                            <Frame Style="{StaticResource DescriptionEntryFrameStyle}"
+                                   Margin="40,0,40,0">
 
                                 <Editor Style="{StaticResource EditorDescriptionStyle}"
                                         Text="{Binding Data.Description, Mode=TwoWay}" 
