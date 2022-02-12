@@ -44,13 +44,14 @@
                                    TextChanged="Entry_CheckNotEmpty"/>
                         </Frame>
 
-                            <Frame Style="{StaticResource DescriptionFrameStyle}">
+                        <Frame Style="{StaticResource DescriptionEntryFrameStyle}"
+                               Margin="40,0,40,0">
 
-                                <Editor Style="{StaticResource EditorDescriptionStyle}"
+                            <Editor Style="{StaticResource EditorDescriptionStyle}"
                                     Text="{Binding Data.Description, Mode=TwoWay}" 
                                     TextChanged="Entry_CheckNotEmpty"/>
 
-                            </Frame>
+                        </Frame>
 
                             <ImageButton x:Name="RollDice"
                                          Style="{StaticResource ImageLargeStyle}"
