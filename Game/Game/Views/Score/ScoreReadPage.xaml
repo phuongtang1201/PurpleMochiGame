@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Game.Views.ScoreReadPage"
-             Title="{Binding Title}">
+             Title="{Binding Data.Name}">
 
     <ContentPage.ToolbarItems>
 
