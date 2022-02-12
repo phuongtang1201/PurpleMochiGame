@@ -19,7 +19,7 @@
                     <StackLayout Style="{StaticResource OuterBoxStack}">
 
                         <Image Source="{Binding Data.ImageURI}"
-                               Style="{StaticResource ImageLargeStyle}"
+                               Style="{StaticResource ImageExtraLargeStyle}"
                                HorizontalOptions="Center" />
 
                         <Frame Style="{StaticResource NameFrameStyle}">
