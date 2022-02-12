@@ -28,21 +28,23 @@
                     <StackLayout Style="{StaticResource OuterBoxStack}">
 
                         <Image Source="{Binding Data.ImageURI}"
-                                   Style="{StaticResource ImageExtraLargeStyle}" 
-                                   HorizontalOptions="Center"/>
+                               Style="{StaticResource ImageExtraLargeStyle}" 
+                               HorizontalOptions="Center"/>
 
-                            <Frame Style="{StaticResource NameFrameStyle}">
+                        <Frame Style="{StaticResource NameFrameStyle}"
+                               Margin="40,0,40,0">
 
-                                <Label Style="{StaticResource ValueStyle}"
-                                       Text="{Binding Data.Name}"/>
-                            </Frame>
+                            <Label Style="{StaticResource ValueStyle}"
+                                   Text="{Binding Data.Name}"/>
+                        </Frame>
 
-                            <Frame Style="{StaticResource DescriptionFrameStyle}">
+                        <Frame Style="{StaticResource DescriptionFrameStyle}"
+                               Margin="40,0,40,0">
 
-                                <Label Style="{StaticResource ValueStyle}"
-                                       Text="{Binding Data.Description}"
-                                       LineBreakMode="WordWrap"/>
-                            </Frame>
+                            <Label Style="{StaticResource ValueStyle}"
+                                   Text="{Binding Data.Description}"
+                                   LineBreakMode="WordWrap"/>
+                        </Frame>
 
                         <Grid RowSpacing="4" ColumnSpacing="7"
                                   VerticalOptions="Center" HorizontalOptions="Center">
