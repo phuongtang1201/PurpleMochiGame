@@ -43,7 +43,8 @@
 
                             <Label Style="{StaticResource LabelStyle}"
                                    Text="{Binding Data.Description}"
-                                   LineBreakMode="WordWrap"/>
+                                   LineBreakMode="WordWrap"
+                                   VerticalOptions="Start"/>
                             </Frame>
 
                         <Frame Style="{StaticResource StatisticsFrame}">
