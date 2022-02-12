@@ -123,7 +123,7 @@
 
                                     <Label Grid.Row="0" Grid.Column="0" 
                                            Text="Range" 
-                                           Style="{StaticResource LabelStyle}" />
+                                           Style="{StaticResource GrayBoxStyle}" />
 
                                     <Slider Grid.Row="0" Grid.Column="1" 
                                             Style="{StaticResource SliderStyle}"
@@ -138,7 +138,7 @@
 
                                     <Label Grid.Row="1" Grid.Column="0" 
                                            Text="Value"
-                                           Style="{StaticResource LabelStyle}"/>
+                                           Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Slider Grid.Row="1" Grid.Column="1" 
                                             Style="{StaticResource SliderStyle}"
@@ -153,7 +153,7 @@
 
                                     <Label Grid.Row="2" Grid.Column="0"
                                            Text="Damage" 
-                                           Style="{StaticResource LabelStyle}"/>
+                                           Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Slider Grid.Row="2" Grid.Column="1" 
                                             Style="{StaticResource SliderStyle}"
