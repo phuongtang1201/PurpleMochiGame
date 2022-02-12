@@ -172,7 +172,17 @@
                                 </Grid>
                             </StackLayout>
                         </Frame>
-                        
+
+                        <Grid HorizontalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="39" />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+
                         <Label
                             Text="Equipment"
                             FontSize="Small"
