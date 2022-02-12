@@ -71,20 +71,23 @@
                                            Text="Image" 
                                            Style="{StaticResource LabelStyle}"/>
 
-                                    <Frame Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
-                                        Style="{StaticResource ImageLevelFrameStyle}">
+                                    <StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource HorizontalStack}" 
+                                                 HorizontalOptions="FillAndExpand">
 
-                                        <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
-                                               Text="{Binding Data.ImageURI, Mode=TwoWay}" 
-                                               Style="{StaticResource EntryStyle}" />
-                                    </Frame>
+                                        <Frame Style="{StaticResource EntryFrameStyle}">
+
+                                            <Entry Text="{Binding Data.ImageURI, Mode=TwoWay}" 
+                                                   Style="{StaticResource EntryStyle}"/>
+
+                                        </Frame>
+                                    </StackLayout>
 
                                     <Label Grid.Row="2" Grid.Column="0"
-                                       Text="Location" 
-                                       Style="{StaticResource LabelStyle}"/>
+                                           Text="Location" 
+                                           Style="{StaticResource LabelStyle}"/>
 
-                                    <Frame Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
-                                        Style="{StaticResource ImageLevelFrameStyle}">
+                                    <Frame Grid.Row="2" Grid.Column="1"
+                                           Style="{StaticResource EntryFrameStyle}">
 
                                         <Picker Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
                                         ItemsSource="{x:Static local:ItemLocationEnumHelper.GetListCharacter}" 
