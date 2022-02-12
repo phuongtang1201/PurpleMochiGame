@@ -587,6 +587,7 @@
             <!-- Editor-->
             <Style TargetType="Editor">
                 <Setter Property="FontSize" Value="Small" />
+                <Setter Property="FontFamily" Value="Futura" />
                 <Setter Property="HorizontalOptions" Value="FillAndExpand" />
                 <Setter Property="VerticalOptions" Value="StartAndExpand" />
                 <Setter Property="Margin" Value="0" />
