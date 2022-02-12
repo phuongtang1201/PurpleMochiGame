@@ -22,25 +22,28 @@
                                Style="{StaticResource ImageExtraLargeStyle}"
                                HorizontalOptions="Center"/>
 
-                            <Frame Style="{StaticResource NameFrameStyle}"
-                                   Margin="40,0,40,0">
-
-                                <Label Style="{StaticResource GrayBoxStyle}"
+                        <Frame Style="{StaticResource NameFrameStyle}"
+                               Margin="40,0,40,0">
+                            
+                            <Label Style="{StaticResource GrayBoxStyle}"
                                        Text="{Binding Data.Name}"/>
-                            </Frame>
+                        </Frame>
 
-                            <Frame Style="{StaticResource DescriptionFrameStyle}"
-                                   Margin="40,0,40,0">
+                        <Frame Style="{StaticResource DescriptionFrameStyle}"
+                               Margin="40,0,40,0">
 
-                                <Label Style="{StaticResource GrayBoxStyle}"
-                                       Text="{Binding Data.Description}"
-                                        VerticalOptions="Start"
-                                        LineBreakMode="WordWrap"/>
+                            <Label Style="{StaticResource GrayBoxStyle}"
+                                   Text="{Binding Data.Description}"
+                                    VerticalOptions="Start"
+                                    LineBreakMode="WordWrap"/>
 
                         </Frame>
 
+                        <Frame Style="{StaticResource StatisticsFrame}">
+                            
+                            
                             <Grid RowSpacing="4" ColumnSpacing="7"
-                                  VerticalOptions="Center" HorizontalOptions="Center">
+                              VerticalOptions="Center" HorizontalOptions="Center">
 
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto" />
@@ -165,7 +168,7 @@
                                        Text="{Binding Data.GetDamageTotalString}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                             </Grid>
-
+                        </Frame>
                         <Grid RowSpacing="4" ColumnSpacing="7"
                                   VerticalOptions="Center" HorizontalOptions="Center">
                             <Grid.RowDefinitions>
