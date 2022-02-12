@@ -110,6 +110,15 @@
                                 <Grid RowSpacing="1" ColumnSpacing="2"
                                       VerticalOptions="Center">
 
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="270"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+
                                     <Label Grid.Row="3" Grid.Column="0"
                                 Text="Max Health" 
                                 Style="{StaticResource LabelStyle}"/>
