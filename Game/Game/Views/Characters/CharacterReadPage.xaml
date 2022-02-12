@@ -32,11 +32,12 @@
                             <Frame Style="{StaticResource DescriptionFrameStyle}"
                                    Margin="40,0,40,0">
 
-                                <Label Style="{StaticResource ValueStyle}"
+                                <Label Style="{StaticResource GrayBoxStyle}"
                                        Text="{Binding Data.Description}"
-                                       LineBreakMode="WordWrap"/>
+                                        VerticalOptions="Start"
+                                        LineBreakMode="WordWrap"/>
 
-                            </Frame>
+                        </Frame>
 
                             <Grid RowSpacing="4" ColumnSpacing="7"
                                   VerticalOptions="Center" HorizontalOptions="Center">
