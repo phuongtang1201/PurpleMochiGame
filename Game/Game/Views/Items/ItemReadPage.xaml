@@ -38,12 +38,17 @@
                                    Text="{Binding Data.Name}"/>
                         </Frame>
 
-                            <Frame Style="{StaticResource DescriptionFrameStyle}">
+                        <Frame Style="{StaticResource DescriptionFrameStyle}"
+                               Margin="40,0,40,0">
 
-                                <Label Style="{StaticResource ValueStyle}"
-                                       Text="{Binding Data.Description}"
-                                       LineBreakMode="WordWrap"/>
+                            <Label Style="{StaticResource LabelStyle}"
+                                   Text="{Binding Data.Description}"
+                                   LineBreakMode="WordWrap"/>
                             </Frame>
+
+                        <Frame Style="{StaticResource StatisticsFrame}">
+
+                        </Frame>
 
                         <Grid RowSpacing="4" ColumnSpacing="7"
                                   VerticalOptions="Center" HorizontalOptions="Center">
