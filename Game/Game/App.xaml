@@ -318,8 +318,8 @@
                 <Setter Property="Padding" Value="0,0,0,2" />
                 <Setter Property="BorderWidth" Value="1"/>
                 <Setter Property= "CornerRadius" Value="5"/>
-                <Setter Property= "BorderColor" Value="#bbbbbe"/> <!-- blue?-->
-                <Setter Property= "BackgroundColor" Value="#bbbbbe"/>
+                <Setter Property= "BorderColor" Value="{StaticResource SecondaryBackgroundColor}"/>
+                <Setter Property= "BackgroundColor" Value="{StaticResource SecondaryBackgroundColor}"/>
             </Style>
 
             <Style TargetType="Button" x:Key="CancelUpdateDeleteButton">
@@ -327,13 +327,13 @@
                 <Setter Property="HeightRequest" Value="40"/>
                 <Setter Property="Margin" Value="10,0,0,0"/>
                 <Setter Property= "CornerRadius" Value="5"/>
-                <Setter Property= "BorderColor" Value="#bbbbbe"/> <!--blue?-->
-                <Setter Property= "BackgroundColor" Value="#bbbbbe"/>
+                <Setter Property= "BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
+                <Setter Property= "BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
             </Style>
 
             <!-- BoxView -->
             <Style TargetType="BoxView" x:Key="YesNoBoxView">
-                <Setter Property="Color" Value="#bbbbbe"/>
+                <Setter Property="Color" Value="{StaticResource PrimaryBackgroundColor}"/>
                 <Setter Property="CornerRadius" Value="5"/>
             </Style>
 
@@ -499,14 +499,14 @@
             <Style TargetType="Frame" x:Key="StatisticsFrame">
                    <Setter Property="Margin" Value="20,0,20,0"/>
                    <Setter Property="Padding" Value="5" />
-                   <Setter Property="BackgroundColor" Value="#bbbbbe"/>
-                   <Setter Property="OutlineColor" Value="#bbbbbe"/>
+                   <Setter Property="BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
+                   <Setter Property="OutlineColor" Value="{StaticResource PrimaryBackgroundColor}"/>
              </Style>
 
             <Style TargetType="Frame" x:Key="NameFrameStyle">
                 <Setter Property="CornerRadius" Value="5"/>
-                <Setter Property="BackgroundColor" Value="#bbbbbe"/>
-                <Setter Property="BorderColor" Value="#bbbbbe"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
+                <Setter Property="BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
                 <Setter Property="Margin" Value="20,0,20,0" />
                 <Setter Property="Padding" Value="5" />
                 <Setter Property="HorizontalOptions" Value="FillAndExpand" />
@@ -514,16 +514,16 @@
 
             <Style TargetType="Frame" x:Key="EntryFrameStyle">
                 <Setter Property="CornerRadius" Value="5"/>
-                <Setter Property="BackgroundColor" Value="#bbbbbe"/>
-                <Setter Property="BorderColor" Value="#bbbbbe"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
+                <Setter Property="BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
                 <Setter Property="Margin" Value="20,0,20,0" />
                 <Setter Property="HorizontalOptions" Value="FillAndExpand" />
             </Style>
 
             <Style TargetType="Frame" x:Key="GrayBoxFrame">
                 <Setter Property="CornerRadius" Value="5"/>
-                <Setter Property="BackgroundColor" Value="#bbbbbe"/>
-                <Setter Property="BorderColor" Value="#bbbbbe"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
+                <Setter Property="BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
                 <Setter Property="WidthRequest" Value="300"/>
                 <Setter Property="Padding" Value="5" />
                 <Setter Property="Margin" Value="20,0,20,0" />
@@ -532,8 +532,8 @@
 
             <Style TargetType="Frame" x:Key="DescriptionFrameStyle">
                 <Setter Property="CornerRadius" Value="5"/>
-                <Setter Property="BackgroundColor" Value="#bbbbbe"/>
-                <Setter Property="BorderColor" Value="#bbbbbe"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
+                <Setter Property="BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
                 <Setter Property="HorizontalOptions" Value="FillAndExpand" />
                 <Setter Property="Margin" Value="20,0,20,0" />
                 <Setter Property="Padding" Value="5" />
@@ -542,8 +542,8 @@
 
             <Style TargetType="Frame" x:Key="DescriptionEntryFrameStyle">
                 <Setter Property="CornerRadius" Value="5"/>
-                <Setter Property="BackgroundColor" Value="#bbbbbe"/>
-                <Setter Property="BorderColor" Value="#bbbbbe"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
+                <Setter Property="BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
                 <Setter Property="HeightRequest" Value="65"/>
                 <Setter Property="HorizontalOptions" Value="FillAndExpand" />
                 <Setter Property="Margin" Value="20,0,20,0" />
@@ -551,8 +551,8 @@
 
             <Style TargetType="Frame" x:Key="ImageLevelFrameStyle">
                 <Setter Property="CornerRadius" Value="5"/>
-                <Setter Property="BackgroundColor" Value="#bbbbbe"/>
-                <Setter Property="BorderColor" Value="#bbbbbe"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
+                <Setter Property="BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
                 <Setter Property="WidthRequest" Value="300"/>
                 <Setter Property="HeightRequest" Value="39"/>
             </Style>
@@ -604,6 +604,7 @@
                 <Setter Property="Maximum" Value="9"/>
                 <Setter Property="MinimumTrackColor" Value="Black"/>
                 <Setter Property="MaximumTrackColor" Value="Black"/>
+                <Setter Property="ThumbColor" Value="{StaticResource SecondaryBackgroundColor}" />
             </Style>
 
             <!-- Stepper -->
