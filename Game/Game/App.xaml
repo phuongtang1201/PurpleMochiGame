@@ -599,7 +599,7 @@
 
             <!-- Slider -->
             <Style TargetType="Slider" x:Key="SliderStyle">
-                <Setter Property="WidthRequest" Value="270" />
+                <Setter Property="WidthRequest" Value="230" />
                 <Setter Property="Minimum" Value="0"/>
                 <Setter Property="Maximum" Value="9"/>
                 <Setter Property="MinimumTrackColor" Value="Black"/>
