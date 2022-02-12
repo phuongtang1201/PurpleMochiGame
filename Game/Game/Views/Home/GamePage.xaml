@@ -6,41 +6,39 @@
 
     <ContentPage.Content>
 
-        <ScrollView Orientation="Vertical" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Padding="10">
+        <ScrollView Orientation="Vertical" 
+                    HorizontalScrollBarVisibility="Never" 
+                    VerticalScrollBarVisibility="Never">
 
             <StackLayout Spacing="10">
                 <Image Source="item.png"
                        Style="{StaticResource ImageExtraLargeStyle}"
                        HorizontalOptions="CenterAndExpand" />
 
-                <Button 
-                        Text="Kitchen"
+                <Button Text="Kitchen"
                         Clicked="DungeonButton_Clicked"
-                        WidthRequest="400"
+                        WidthRequest="385"
                         HeightRequest="60"
                         FontSize="Title"
                         TextColor="Black"
                         CornerRadius="15"
                         Margin="0,20,0,0"/>
 
-                <StackLayout
-                    Orientation="Horizontal"
-                    HorizontalOptions="Center">
-                    <Button 
-                        Text="Restaurant"
-                        WidthRequest="195"
-                        HeightRequest="40"
-                        FontSize="Subtitle"
-                        CornerRadius="10"
-                        Clicked="VillageButton_Clicked"/>
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="Center">
+                    <Button Text="Restaurant"
+                            WidthRequest="190"
+                            HeightRequest="40"
+                            FontSize="Subtitle"
+                            CornerRadius="10"
+                            Clicked="VillageButton_Clicked"/>
 
-                    <Button 
-                        Text="Auto-Battle"
-                        WidthRequest="195"
-                        HeightRequest="40"
-                        FontSize="Subtitle"
-                        CornerRadius="10"
-                        Clicked="AutobattleButton_Clicked"/>
+                    <Button Text="Auto-Battle"
+                            WidthRequest="190"
+                            HeightRequest="40"
+                            FontSize="Subtitle"
+                            CornerRadius="10"
+                            Clicked="AutobattleButton_Clicked"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
