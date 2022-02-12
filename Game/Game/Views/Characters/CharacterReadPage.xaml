@@ -66,21 +66,21 @@
                                        Text="{Binding Data.Level}" 
                                        Style="{StaticResource ValueStyle}"/>
 
-                                    <Label Grid.Column="0" Grid.Row="4"
-                                       Text="Attribute" Padding="5,0,0,0"
+                                    <Label Grid.Column="0" Grid.Row="2"
+                                       Text="Attribute"
                                        Style="{StaticResource LabelStyle}"/>
-                                <Label Grid.Column="1" Grid.Row="4"
+                                    <Label Grid.Column="1" Grid.Row="2"
                                        Text="Base Value" 
-                                       Style="{StaticResource LabelStyle}"/>
-                                <Label Grid.Column="2" Grid.Row="4"
+                                       Style="{StaticResource GrayBoxStyle}"/>
+                                    <Label Grid.Column="2" Grid.Row="2"
                                        Text="Level Bonus" 
-                                       Style="{StaticResource LabelStyle}"/>
-                                <Label Grid.Column="3" Grid.Row="4"
+                                       Style="{StaticResource GrayBoxStyle}"/>
+                                    <Label Grid.Column="3" Grid.Row="2"
                                        Text="Item Bonus" 
-                                       Style="{StaticResource LabelStyle}"/>
-                                <Label Grid.Column="4" Grid.Row="4"
+                                       Style="{StaticResource GrayBoxStyle}"/>
+                                    <Label Grid.Column="4" Grid.Row="2"
                                        Text="Total Value" 
-                                       Style="{StaticResource LabelStyle}"/>
+                                       Style="{StaticResource GrayBoxStyle}"/>
 
                                 <Label Grid.Column="0" Grid.Row="5"
                                        Text="Attack" Padding="5,0,0,0"
