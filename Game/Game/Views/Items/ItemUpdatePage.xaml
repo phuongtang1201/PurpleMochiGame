@@ -4,8 +4,9 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             xmlns:local_helpers="clr-namespace:Game.Helpers"
              xmlns:local="using:Game.Models"
+             xmlns:local_helpers="clr-namespace:Game.Helpers"
+             xmlns:local_enum="clr-namespace:Game.Models"
              x:Class="Game.Views.ItemUpdatePage"
              Title="{Binding Title}">
 
@@ -28,7 +29,7 @@
                          AbsoluteLayout.LayoutFlags="All">
 
                 <ScrollView>
-                    <StackLayout Style="{StaticResource OuterBoxStack}"\>
+                    <StackLayout Style="{StaticResource OuterBoxStack}">
 
                         <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
@@ -52,66 +53,63 @@
 
                         </Frame>
 
-                        <Frame
-                            Style="{StaticResource StatisticsFrame}">
+                        <Frame Style="{StaticResource StatisticsFrame}">
                             <StackLayout>
 
-                                <Grid
-                              RowSpacing="1"
-                              ColumnSpacing="2"
-                              HorizontalOptions="Center">
+                                <Grid RowSpacing="1" ColumnSpacing="2"
+                                      VerticalOptions="Center">
 
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="auto" />
                                     </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto" />
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Row="0" Grid.Column="0"
-                                       Text="Statistics" 
-                                       Style="{StaticResource HeaderStyle}"/>
+                                           Grid.ColumnSpan="2"
+                                           Text="Statistics" 
+                                           Style="{StaticResource HeaderStyle}" />
 
-                                    <StackLayout Grid.Row="1" Grid.Column="0" Style="{StaticResource HorizontalStack}" 
-                                             HorizontalOptions="FillAndExpand">
-
-                                        <Label Text="Image" 
+                                    <Label Grid.Row="1" Grid.Column="0"
+                                           Text="Image" 
                                            Style="{StaticResource LabelStyle}"/>
+
+                                    <StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource HorizontalStack}" 
+                                                 HorizontalOptions="FillAndExpand">
+
+                                        <Frame Style="{StaticResource EntryFrameStyle}">
+
+                                            <Entry Text="{Binding Data.ImageURI, Mode=TwoWay}" 
+                                                   Style="{StaticResource EntryStyle}"/>
+
+                                        </Frame>
 
                                     </StackLayout>
 
-                                    <Frame Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
-                                        Style="{StaticResource ImageLevelFrameStyle}">
-
-                                        <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
-                                               Text="{Binding Data.ImageURI, Mode=TwoWay}" 
-                                               Style="{StaticResource EntryStyle}" />
-                                    </Frame>
-
                                     <Label Grid.Row="2" Grid.Column="0"
-                                       Text="Location" 
-                                       Style="{StaticResource LabelStyle}"/>
+                                           Text="Location" 
+                                           Style="{StaticResource LabelStyle}"/>
 
-                                    <Frame Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
-                                        Style="{StaticResource ImageLevelFrameStyle}">
+                                    <Frame Grid.Row="2" Grid.Column="1"
+                                           Grid.ColumnSpan="2"
+                                           Style="{StaticResource EntryFrameStyle}">
 
-                                        <Picker Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
-                                        ItemsSource="{x:Static local:ItemLocationEnumHelper.GetListCharacter}" 
-                                        SelectedItem="{Binding Data.Location, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
-                                        x:Name="LocationPicker"/>
+                                        <Picker ItemsSource="{x:Static local:ItemLocationEnumHelper.GetListCharacter}" 
+                                                SelectedItem="{Binding Data.Location, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
+                                                x:Name="LocationPicker" MinimumWidthRequest="150"/>
                                     </Frame>
 
-                                    <Label Grid.Row="3" Grid.Column="0"
-                                       Text="Attribute" 
-                                       Style="{StaticResource LabelStyle}"/>
+                                    <Label Grid.Row="3" Grid.Column="0" 
+                                           Text="Attribute" 
+                                           Style="{StaticResource LabelStyle}"/>
 
                                     <Frame Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
-                                        Style="{StaticResource ImageLevelFrameStyle}">
+                                           Style="{StaticResource EntryFrameStyle}">
 
-                                        <Picker Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
-                                        ItemsSource="{x:Static local:AttributeEnumHelper.GetListCharacter}" 
-                                        SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
-                                        x:Name="AttributePicker"/>
+                                        <Picker ItemsSource="{x:Static local_enum:AttributeEnumHelper.GetListCharacter}" 
+                                                SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
+                                                x:Name="AttributePicker" MinimumWidthRequest="150"/>
                                     </Frame>
                                 </Grid>
 
