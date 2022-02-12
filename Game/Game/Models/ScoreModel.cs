@@ -20,7 +20,7 @@ namespace Game.Models
     public class ScoreModel : BaseModel<ScoreModel>
     {
         // The Name of the Item 
-        public new string Name { get; set; } = "Score Name";
+        //public new string Name { get; set; } = "Score Name";
 
         // This battle number, incremental int from the last int in the database
         public int BattleNumber { get; set; }
@@ -79,6 +79,7 @@ namespace Game.Models
         /// </summary>
         public ScoreModel()
         {
+            Name = "Score Name";
             GameDate = DateTime.Now;    // Set to be now by default.
             AutoBattle = false;         //assume user battle
 
