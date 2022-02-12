@@ -92,20 +92,19 @@
 
                                         <Picker ItemsSource="{x:Static local:ItemLocationEnumHelper.GetListCharacter}" 
                                                 SelectedItem="{Binding Data.Location, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
-                                                x:Name="LocationPicker" MinimumHeightRequest="150"/>
+                                                x:Name="LocationPicker" MinimumWidthRequest="150"/>
                                     </Frame>
 
                                     <Label Grid.Row="3" Grid.Column="0" 
-                                       Text="Attribute" 
-                                       Style="{StaticResource LabelStyle}"/>
+                                           Text="Attribute" 
+                                           Style="{StaticResource LabelStyle}"/>
 
                                     <Frame Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
-                                        Style="{StaticResource ImageLevelFrameStyle}">
+                                           Style="{StaticResource EntryFrameStyle}">
 
-                                        <Picker Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
-                                        ItemsSource="{x:Static local_enum:AttributeEnumHelper.GetListCharacter}" 
-                                        SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
-                                        x:Name="AttributePicker"/>
+                                        <Picker ItemsSource="{x:Static local_enum:AttributeEnumHelper.GetListCharacter}" 
+                                                SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
+                                                x:Name="AttributePicker" MinimumWidthRequest="150"/>
                                     </Frame>
  
                                 </Grid>
