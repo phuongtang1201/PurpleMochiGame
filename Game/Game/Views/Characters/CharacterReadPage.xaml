@@ -8,20 +8,17 @@
              Title="{Binding Title}">
 
     <ContentPage.Content>
-    <AbsoluteLayout HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="FillAndExpand">
+        <AbsoluteLayout HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="FillAndExpand">
 
-        <StackLayout Style="{StaticResource VerticalStack}"
-                    AbsoluteLayout.LayoutBounds="1,1,1,1" 
-                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Style="{StaticResource VerticalStack}"
+                        AbsoluteLayout.LayoutBounds="1,1,1,1" 
+                        AbsoluteLayout.LayoutFlags="All">
 
-            <ScrollView x:Name="ScrollView">
-                <StackLayout Style="{StaticResource OuterBoxStack}"
-                             Spacing="10">
+                <ScrollView x:Name="ScrollView">
+                    <StackLayout Style="{StaticResource OuterBoxStack}">
 
-                        <StackLayout Margin="60,0,60,0" >
-
-                            <Image Source="{Binding Data.ImageURI}" 
+                        <Image Source="{Binding Data.ImageURI}" 
                                    Style="{StaticResource ImageExtraLargeStyle}"
                                    HorizontalOptions="Center"/>
 
@@ -166,27 +163,26 @@
                                        Style="{StaticResource ValueStyle}"/>
                             </Grid>
 
-                            <Grid RowSpacing="4" ColumnSpacing="7"
+                        <Grid RowSpacing="4" ColumnSpacing="7"
                                   VerticalOptions="Center" HorizontalOptions="Center">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="auto" />
-                                    <RowDefinition Height="auto" />
-                                </Grid.RowDefinitions>
-                                <BoxView Grid.Row="0" Grid.Column="0" 
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            <BoxView Grid.Row="0" Grid.Column="0" 
                                          Grid.RowSpan="2"
                                          Color="LightGray" CornerRadius="5"/>
-                                <Label Grid.Column="0" Grid.Row="0"
+                            <Label Grid.Column="0" Grid.Row="0"
                                        Text="Equipment" FontSize="Small"
                                        Padding="5,0,0,0" />
-                                <FlexLayout Grid.Column="0" Grid.Row="1"
+                            <FlexLayout Grid.Column="0" Grid.Row="1"
                                             Margin="20,0,20,0"
                                             Padding="10" Wrap="Wrap"
                                             JustifyContent="SpaceAround"
                                             AlignContent="SpaceAround"
                                             x:Name="ItemBox">
-                                </FlexLayout>
-                            </Grid>
-                        </StackLayout>
+                            </FlexLayout>
+                        </Grid>
 
                         <StackLayout Style="{StaticResource HorizontalStack}" 
                                      HorizontalOptions="Center">
