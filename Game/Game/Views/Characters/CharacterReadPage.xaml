@@ -42,11 +42,11 @@
                         <Frame Style="{StaticResource StatisticsFrame}">
 
                             <StackLayout>
-                                
-                            <Grid RowSpacing="4" ColumnSpacing="7"
-                              VerticalOptions="Center" HorizontalOptions="Center">
 
-                                <Grid.RowDefinitions>
+                                <Grid RowSpacing="1" ColumnSpacing="2"
+                                      VerticalOptions="Center">
+
+                                    <Grid.RowDefinitions>
                                     <RowDefinition Height="auto" />
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
