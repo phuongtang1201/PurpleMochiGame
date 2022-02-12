@@ -25,7 +25,7 @@
                             <Frame Style="{StaticResource NameFrameStyle}"
                                    Margin="40,0,40,0">
 
-                                <Label Style="{StaticResource ValueStyle}"
+                                <Label Style="{StaticResource GrayBoxStyle}"
                                        Text="{Binding Data.Name}"/>
                             </Frame>
 
