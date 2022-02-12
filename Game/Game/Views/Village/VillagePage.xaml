@@ -15,12 +15,8 @@
                     <Image Source="item.png" Style="{StaticResource ImageLargeStyle}"
                        HorizontalOptions="CenterAndExpand" />
 
-                    <Button
+                    <Button Style="{StaticResource VillageButton}"
                         Text="Characters"
-                        WidthRequest="200"
-                        HeightRequest="40"
-                        FontSize="Title"
-                        CornerRadius="10"
                         Clicked="CharactersButton_Clicked"/>
 
                 </StackLayout>
