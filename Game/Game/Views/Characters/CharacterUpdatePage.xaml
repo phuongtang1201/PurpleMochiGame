@@ -201,23 +201,6 @@
                             </FlexLayout>
                         </Grid>
 
-                        <Label
-                            Text="Equipment"
-                            FontSize="Small"
-                            Padding="10,0,0,0"
-                            Margin="20,0,20,-10"
-                            BackgroundColor="LightGray"
-                            />
-                        <FlexLayout 
-                        Margin="20,0,20,0"
-                        BackgroundColor="LightGray"
-                        Padding="10"
-                        Wrap="Wrap"
-                        JustifyContent="SpaceAround"
-                        AlignContent="SpaceAround"
-                        x:Name="ItemBox">
-                        </FlexLayout>
-
                         <StackLayout Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
 
