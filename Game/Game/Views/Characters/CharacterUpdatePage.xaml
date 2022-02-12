@@ -181,6 +181,12 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="auto"/>
                             </Grid.ColumnDefinitions>
+
+                            <BoxView Grid.Row="0" Grid.Column="0" 
+                                     Grid.RowSpan="2"
+                                     Style="{StaticResource YesNoBoxView}" />
+                            
+                            
                         </Grid>
 
                         <Label
