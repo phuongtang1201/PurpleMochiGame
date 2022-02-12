@@ -78,12 +78,14 @@
                                            Style="{StaticResource HeaderStyle}"/>
 
                                     <Label Grid.Row="1" Grid.Column="0"
-                                Text="Image" 
-                                Style="{StaticResource LabelStyle}"/>
+                                           Text="Image" 
+                                           Style="{StaticResource LabelStyle}"/>
 
-                                    <StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource HorizontalStack}" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Grid.Row="1" Grid.Column="1" 
+                                                 Style="{StaticResource HorizontalStack}" 
+                                                 HorizontalOptions="FillAndExpand">
 
-                                        <Frame Style="{StaticResource ImageLevelFrameStyle}">
+                                        <Frame Style="{StaticResource EntryFrameStyle}">
 
                                             <Entry 
                                                 Text="{Binding Data.ImageURI, Mode=TwoWay}" 
