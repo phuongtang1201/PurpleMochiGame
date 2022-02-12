@@ -30,12 +30,8 @@
                     <Image Source="item.png" Style="{StaticResource ImageLargeStyle}"
                        HorizontalOptions="CenterAndExpand" />
 
-                    <Button
+                    <Button Style="{StaticResource VillageButton}"
                         Text="Monsters"
-                        WidthRequest="200"
-                        HeightRequest="40"
-                        FontSize="Title"
-                        CornerRadius="10"
                         Clicked="MonstersButton_Clicked"/>
 
                 </StackLayout>
