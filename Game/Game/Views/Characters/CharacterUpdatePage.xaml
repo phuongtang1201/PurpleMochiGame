@@ -119,14 +119,16 @@
                                         <ColumnDefinition Width="auto"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <Label Grid.Row="3" Grid.Column="0"
-                                Text="Max Health" 
-                                Style="{StaticResource LabelStyle}"/>
+                                    <Label Grid.Row="0" Grid.Column="0"
+                                           Text="Max Health" Margin="0,0,20,0"
+                                           LineBreakMode="WordWrap"
+                                           Style="{StaticResource LabelStyle}"/>
 
-                                    <Label Grid.Row="3" Grid.Column="1"
-                                x:Name="MaxHealthValue"
-                                Text="{Binding Data.MaxHealth, StringFormat= '{0:G} hp'}" 
-                                Style="{StaticResource ValueStyle}"/>
+                                    <Label Grid.Row="0" Grid.Column="1"
+                                           Grid.ColumnSpan="2"
+                                           x:Name="MaxHealthValue"
+                                           Text="{Binding Data.MaxHealth, StringFormat= '{0:G} hp'}" 
+                                           Style="{StaticResource ValueStyle}"/>
                                 </Grid>
 
                                 <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
