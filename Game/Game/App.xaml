@@ -628,6 +628,7 @@
                 <Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
                 <Setter Property="TitleColor" Value="{StaticResource PrimaryTextColor}" />
                 <Setter Property="FontSize" Value="Small" />
+                <Setter Property="FontFamily" Value="Futura" />
                 <Setter Property="FontAttributes" Value="None" />
                 <Setter Property="BackgroundColor" Value="{StaticResource LightBackgroundColor}" />
             </Style>
