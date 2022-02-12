@@ -30,18 +30,18 @@
                         <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
                         <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageExtraLargeStyle}" 
-                                   HorizontalOptions="Center"/>
+                               HorizontalOptions="Center"/>
 
-                            <Frame 
-                                Style="{StaticResource NameFrameStyle}">
+                        <Frame Style="{StaticResource EntryFrameStyle}"
+                                   Margin="40,0,40,0">
 
-                                <Entry 
-                                    Text="{Binding Data.Name, Mode=TwoWay}" 
-                                    Style="{StaticResource EntryStyle}"
-                                    TextChanged="Entry_CheckNotEmpty"/>
+                            <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
+                                   Style="{StaticResource EntryStyle}"
+                                   TextChanged="Entry_CheckNotEmpty"/>
                             </Frame>
 
-                        <Frame Style="{StaticResource DescriptionFrameStyle}">
+                        <Frame Style="{StaticResource DescriptionEntryFrameStyle}"
+                                   Margin="40,0,40,0">
 
                             <Editor Style="{StaticResource EditorDescriptionStyle}"
                                     Text="{Binding Data.Description, Mode=TwoWay}" 
@@ -49,14 +49,11 @@
 
                         </Frame>
 
-                        <Frame
-                            Style="{StaticResource StatisticsFrame}">
+                        <Frame Style="{StaticResource StatisticsFrame}">
                             <StackLayout>
 
-                                <Grid
-                                  RowSpacing="1"
-                                  ColumnSpacing="2"
-                                  VerticalOptions="Center">
+                                <Grid RowSpacing="1" ColumnSpacing="2"
+                                      VerticalOptions="Center">
 
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="auto" />
@@ -66,16 +63,13 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Row="0" Grid.Column="0"
-                                       Text="Statistics" 
-                                       Style="{StaticResource HeaderStyle}" />
+                                           Grid.ColumnSpan="2"
+                                           Text="Statistics" 
+                                           Style="{StaticResource HeaderStyle}" />
 
-                                    <StackLayout Grid.Row="1" Grid.Column="0" Style="{StaticResource HorizontalStack}" 
-                                             HorizontalOptions="FillAndExpand">
-
-                                        <Label Text="Image" 
+                                    <Label Grid.Row="1" Grid.Column="0"
+                                           Text="Image" 
                                            Style="{StaticResource LabelStyle}"/>
-
-                                    </StackLayout>
 
                                     <Frame Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
                                         Style="{StaticResource ImageLevelFrameStyle}">
