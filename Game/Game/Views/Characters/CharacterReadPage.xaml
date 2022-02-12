@@ -40,8 +40,9 @@
                         </Frame>
 
                         <Frame Style="{StaticResource StatisticsFrame}">
-                            
-                            
+
+                            <StackLayout>
+                                
                             <Grid RowSpacing="4" ColumnSpacing="7"
                               VerticalOptions="Center" HorizontalOptions="Center">
 
@@ -168,6 +169,7 @@
                                        Text="{Binding Data.GetDamageTotalString}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
                             </Grid>
+                            </StackLayout>
                         </Frame>
                         <Grid RowSpacing="4" ColumnSpacing="7"
                                   VerticalOptions="Center" HorizontalOptions="Center">
