@@ -20,17 +20,15 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <AbsoluteLayout
-        HorizontalOptions="FillAndExpand"
-        VerticalOptions="FillAndExpand"
-        >
+        <AbsoluteLayout HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="FillAndExpand">
 
             <StackLayout Style="{StaticResource VerticalStack}"
-                    AbsoluteLayout.LayoutBounds="1,1,1,1" 
-                    AbsoluteLayout.LayoutFlags="All">
+                         AbsoluteLayout.LayoutBounds="1,1,1,1" 
+                         AbsoluteLayout.LayoutFlags="All">
 
                 <ScrollView>
-                    <StackLayout Style="{StaticResource OuterBoxStack}" Spacing="10">
+                    <StackLayout Style="{StaticResource OuterBoxStack}">
 
                         <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
                         
