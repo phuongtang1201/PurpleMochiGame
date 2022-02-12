@@ -120,26 +120,26 @@
                                         <ColumnDefinition Width="230"/>
                                         <ColumnDefinition Width="auto"/>
                                     </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Row="0" Grid.Column="0" 
+                                           Text="Range" 
+                                           Style="{StaticResource LabelStyle}" />
+
+                                    <Slider Grid.Row="0" Grid.Column="1" 
+                                            Style="{StaticResource SliderStyle}"
+                                            x:Name ="RangeValue2" 
+                                            Value="{Binding Data.Range, Mode=TwoWay}"
+                                            ValueChanged="Range_OnSliderValueChanged"/>
+
+                                    <Label Grid.Row="0" Grid.Column="2" 
+                                           Style="{StaticResource SliderValueStyle}"
+                                           Text="{Binding Data.Range, Mode=TwoWay}" 
+                                           x:Name="RangeValue"/>
                                 </Grid>
 
                                 <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
 
-                                    <StackLayout Style="{StaticResource SliderStacklayoutStyle}">
-
-                                        <Label 
-                                            Text="Range" 
-                                            Style="{StaticResource LabelStyle}" />
-
-                                        <Slider Style="{StaticResource SliderStyle}"
-                                                x:Name ="RangeValue2" 
-                                                Value="{Binding Data.Range, Mode=TwoWay}"
-                                                ValueChanged="Range_OnSliderValueChanged"/>
-
-                                        <Label Style="{StaticResource SliderValueStyle}"
-                                               Text="{Binding Data.Range, Mode=TwoWay}" 
-                                               x:Name="RangeValue"/>
-                                        
-                                    </StackLayout>
+                                    
 
                                     <StackLayout Style="{StaticResource SliderStacklayoutStyle}">
 
