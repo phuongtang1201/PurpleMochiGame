@@ -31,13 +31,12 @@
                     <StackLayout Style="{StaticResource OuterBoxStack}">
 
                         <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
-                        
-                        <StackLayout Margin="60,0,60,0">
-                            <Image Source="{Binding Data.ImageURI, Mode=TwoWay}" Style="{StaticResource ImageExtraLargeStyle}" 
+
+                            <Image Source="{Binding Data.ImageURI, Mode=TwoWay}" 
+                                   Style="{StaticResource ImageExtraLargeStyle}" 
                                    HorizontalOptions="Center"/>
 
-                            <Frame 
-                                Style="{StaticResource NameFrameStyle}">
+                            <Frame Style="{StaticResource NameFrameStyle}">
 
                                 <Entry 
                                     Text="{Binding Data.Name, Mode=TwoWay}" 
@@ -45,15 +44,13 @@
                                     TextChanged="Entry_CheckNotEmpty"/>
                             </Frame>
 
-                            <Frame Style="{StaticResource DescriptionFrameStyle}">
+                        <Frame Style="{StaticResource DescriptionFrameStyle}">
 
-                                <Editor Style="{StaticResource EditorDescriptionStyle}"
+                            <Editor Style="{StaticResource EditorDescriptionStyle}"
                                     Text="{Binding Data.Description, Mode=TwoWay}" 
                                     TextChanged="Entry_CheckNotEmpty"/>
 
-                            </Frame>
-                            
-                        </StackLayout>
+                        </Frame>
 
                         <Frame
                             Style="{StaticResource StatisticsFrame}">
