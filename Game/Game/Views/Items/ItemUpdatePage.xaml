@@ -20,44 +20,37 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <AbsoluteLayout
-        HorizontalOptions="FillAndExpand"
-        VerticalOptions="FillAndExpand"
-        >
+        <AbsoluteLayout HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="FillAndExpand">
 
             <StackLayout Style="{StaticResource VerticalStack}"
-                    AbsoluteLayout.LayoutBounds="1,1,1,1" 
-                    AbsoluteLayout.LayoutFlags="All">
+                         AbsoluteLayout.LayoutBounds="1,1,1,1" 
+                         AbsoluteLayout.LayoutFlags="All">
 
                 <ScrollView>
-                    <StackLayout Style="{StaticResource OuterBoxStack}"
-                                 Spacing="10">
+                    <StackLayout Style="{StaticResource OuterBoxStack}"\>
 
                         <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
-                        <StackLayout Margin="60,0,60,0">
-
-                            <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageExtraLargeStyle}" 
+                        <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageExtraLargeStyle}" 
                                    HorizontalOptions="Center"/>
 
-                            <Frame 
-                                Style="{StaticResource NameFrameStyle}">
+                        <Frame Style="{StaticResource EntryFrameStyle}"
+                               Margin="40,0,40,0">
 
-                                <Entry 
-                                    Text="{Binding Data.Name, Mode=TwoWay}" 
-                                    Style="{StaticResource EntryStyle}"
-                                    TextChanged="Entry_CheckNotEmpty"/>
+                            <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
+                                   Style="{StaticResource EntryStyle}"
+                                   TextChanged="Entry_CheckNotEmpty"/>
                             </Frame>
 
-                            <Frame Style="{StaticResource DescriptionFrameStyle}">
+                        <Frame Style="{StaticResource DescriptionEntryFrameStyle}"
+                                   Margin="40,0,40,0">
 
-                                <Editor Style="{StaticResource EditorDescriptionStyle}"
+                            <Editor Style="{StaticResource EditorDescriptionStyle}"
                                     Text="{Binding Data.Description, Mode=TwoWay}" 
                                     TextChanged="Entry_CheckNotEmpty"/>
 
-                            </Frame>
- 
-                        </StackLayout>
+                        </Frame>
 
                         <Frame
                             Style="{StaticResource StatisticsFrame}">
