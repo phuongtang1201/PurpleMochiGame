@@ -310,7 +310,15 @@
                 <Setter Property="Margin" Value="0,5,0,5"/>
                 <Setter Property="HeightRequest" Value="30"/>
             </Style>
-            
+
+            <Style TargetType="Button"
+                 x:Key="VillageButton">
+                <Setter Property="WidthRequest" Value="200"/>
+                <Setter Property="HeightRequest" Value="40"/>
+                <Setter Property="FontSize" Value="Title"/>
+                <Setter Property="CornerRadius" Value="10"/>
+            </Style>
+
             <!--CRUDI styles-->
             <Style TargetType="Button" x:Key="YesNoButton">
                 <Setter Property="FontSize" Value="Medium"/>
