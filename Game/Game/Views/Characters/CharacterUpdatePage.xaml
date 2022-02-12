@@ -129,6 +129,14 @@
                                            x:Name="MaxHealthValue"
                                            Text="{Binding Data.MaxHealth, StringFormat= '{0:G} hp'}" 
                                            Style="{StaticResource ValueStyle}"/>
+
+                                    <Label Grid.Row="1" Grid.Column="0" 
+                                           Text="Attack" Style="{StaticResource LabelStyle}"/>
+
+                                    <Slider Grid.Row="1" Grid.Column="1" 
+                                            Style="{StaticResource SliderStyle}"
+                                            Value="{Binding Data.Attack, Mode=TwoWay}"
+                                            ValueChanged="Attack_OnSliderValueChanged"/>
                                 </Grid>
 
                                 <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="FillAndExpand">
