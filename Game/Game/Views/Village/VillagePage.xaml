@@ -16,7 +16,7 @@
                        HorizontalOptions="CenterAndExpand" />
 
                     <Button Style="{StaticResource VillageButton}"
-                        Text="Characters"
+                        Text="Chefs"
                         Clicked="CharactersButton_Clicked"/>
 
                 </StackLayout>
