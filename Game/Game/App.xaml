@@ -80,7 +80,6 @@
             <Style TargetType="ListView" x:Key="IndexStyle">
                 <Setter Property="HasUnevenRows" Value="True" />
                 <Setter Property="RowHeight" Value="85" />
-                <Setter Property="Margin" Value="10" />
             </Style>
 
             <!-- Scroll View -->
