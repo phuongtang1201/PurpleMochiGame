@@ -60,7 +60,7 @@
 
                                     <Label Grid.Row="1" Grid.Column="0"
                                        Text="Level"
-                                       Style="{StaticResource LabelStyle}"/>
+                                       Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Label Grid.Row="1" Grid.Column="1"
                                        Text="{Binding Data.Level}" 
@@ -68,7 +68,7 @@
 
                                     <Label Grid.Column="0" Grid.Row="2"
                                        Text="Attribute"
-                                       Style="{StaticResource LabelStyle}"/>
+                                       Style="{StaticResource GrayBoxStyle}"/>
                                     <Label Grid.Column="1" Grid.Row="2"
                                        Text="Base Value" 
                                        Style="{StaticResource GrayBoxStyle}"/>
@@ -84,7 +84,7 @@
 
                                     <Label Grid.Column="0" Grid.Row="3"
                                        Text="Attack"
-                                       Style="{StaticResource LabelStyle}"/>
+                                       Style="{StaticResource GrayBoxStyle}"/>
                                     <Label Grid.Column="1" Grid.Row="3"
                                        Text="{Binding Data.Attack}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
@@ -100,7 +100,7 @@
 
                                     <Label Grid.Column="0" Grid.Row="4"
                                            Text="Defense"
-                                           Style="{StaticResource LabelStyle}"/>
+                                           Style="{StaticResource GrayBoxStyle}"/>
                                     <Label Grid.Column="1" Grid.Row="4"
                                            Text="{Binding Data.Defense}" HorizontalOptions="Center"
                                            Style="{StaticResource ValueStyle}"/>
@@ -116,7 +116,7 @@
 
                                     <Label Grid.Column="0" Grid.Row="5"
                                        Text="Speed"
-                                       Style="{StaticResource LabelStyle}"/>
+                                       Style="{StaticResource GrayBoxStyle}"/>
                                     <Label Grid.Column="1" Grid.Row="5"
                                        Text="{Binding Data.Speed}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
@@ -132,7 +132,7 @@
 
                                     <Label Grid.Column="0" Grid.Row="6"
                                        Text="Max Health"
-                                       Style="{StaticResource LabelStyle}"/>
+                                       Style="{StaticResource GrayBoxStyle}"/>
                                     <Label Grid.Column="1" Grid.Row="6"
                                        Text="{Binding Data.MaxHealth}" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
@@ -148,7 +148,7 @@
 
                                     <Label Grid.Column="0" Grid.Row="7"
                                        Text="Damage"
-                                       Style="{StaticResource LabelStyle}"/>
+                                       Style="{StaticResource GrayBoxStyle}"/>
                                     <Label Grid.Column="1" Grid.Row="7"
                                        Text="-" HorizontalOptions="Center"
                                        Style="{StaticResource ValueStyle}"/>
