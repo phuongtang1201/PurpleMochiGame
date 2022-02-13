@@ -83,9 +83,6 @@
                                            Text="Level Bonus" 
                                            Style="{StaticResource StatisticsStyle}"/>
                                     <Label Grid.Column="3" Grid.Row="2"
-                                           Text="Item Bonus" 
-                                           Style="{StaticResource StatisticsStyle}"/>
-                                    <Label Grid.Column="4" Grid.Row="2"
                                            Text="Total Value" 
                                            Style="{StaticResource StatisticsStyle}"/>
 
@@ -99,10 +96,7 @@
                                            Text="{Binding Data.GetAttackLevelBonus}"
                                            Style="{StaticResource StatisticsStyle}"/>
                                     <Label Grid.Column="3" Grid.Row="3"
-                                           Text="{Binding Data.GetAttackItemBonus}"
-                                           Style="{StaticResource StatisticsStyle}"/>
-                                    <Label Grid.Column="4" Grid.Row="3"
-                                           Text="{Binding Data.GetAttackTotal}"
+                                           Text="{Binding Data.GetAttackTotal}" 
                                            Style="{StaticResource StatisticsStyle}"/>
 
                                     <Label Grid.Column="0" Grid.Row="4"
@@ -115,10 +109,7 @@
                                            Text="{Binding Data.GetDefenseLevelBonus}"
                                            Style="{StaticResource StatisticsStyle}"/>
                                     <Label Grid.Column="3" Grid.Row="4"
-                                           Text="{Binding Data.GetDefenseItemBonus}"
-                                           Style="{StaticResource StatisticsStyle}"/>
-                                    <Label Grid.Column="4" Grid.Row="4"
-                                           Text="{Binding Data.GetDefenseTotal}"
+                                           Text="{Binding Data.GetDefenseTotal}" 
                                            Style="{StaticResource StatisticsStyle}"/>
 
                                     <Label Grid.Column="0" Grid.Row="5"
@@ -131,10 +122,7 @@
                                            Text="{Binding Data.GetSpeedLevelBonus}" 
                                            Style="{StaticResource StatisticsStyle}"/>
                                     <Label Grid.Column="3" Grid.Row="5"
-                                           Text="{Binding Data.GetSpeedItemBonus}" 
-                                           Style="{StaticResource StatisticsStyle}"/>
-                                    <Label Grid.Column="4" Grid.Row="5"
-                                           Text="{Binding Data.GetSpeedTotal}" 
+                                           Text="{Binding Data.GetSpeedTotal}"
                                            Style="{StaticResource StatisticsStyle}"/>
 
                                     <Label Grid.Column="0" Grid.Row="6"
@@ -147,9 +135,6 @@
                                            Text="{Binding Data.GetMaxHealthLevelBonus}"
                                            Style="{StaticResource StatisticsStyle}"/>
                                     <Label Grid.Column="3" Grid.Row="6"
-                                           Text="{Binding Data.GetMaxHealthItemBonus}"
-                                           Style="{StaticResource StatisticsStyle}"/>
-                                    <Label Grid.Column="4" Grid.Row="6"
                                            Text="{Binding Data.GetMaxHealthTotal}"
                                            Style="{StaticResource StatisticsStyle}"/>
 
@@ -163,10 +148,7 @@
                                            Text="{Binding Data.GetDamageLevelBonus}" 
                                            Style="{StaticResource StatisticsStyle}"/>
                                     <Label Grid.Column="3" Grid.Row="7"
-                                           Text="{Binding Data.GetDamageItemBonusString}" 
-                                           Style="{StaticResource StatisticsStyle}"/>
-                                    <Label Grid.Column="4" Grid.Row="7"
-                                           Text="{Binding Data.GetDamageTotalString}"
+                                           Text="{Binding Data.GetDamageTotalString}" 
                                            Style="{StaticResource StatisticsStyle}"/>
 
                                 </Grid>
