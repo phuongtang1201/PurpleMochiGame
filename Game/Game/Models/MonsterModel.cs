@@ -18,7 +18,7 @@ namespace Game.Models
         {
             PlayerType = PlayerTypeEnum.Monster;
             Guid = Id;
-            Name = "Monster Name";
+            Name = "Mutant Food Name";
             Description = "Monster Description";
             Attack = 0;
             Difficulty = DifficultyEnum.Average;
