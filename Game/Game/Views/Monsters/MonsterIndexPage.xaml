@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Name="BrowseItemsPage"
              x:Class="Game.Views.MonsterIndexPage"
-             Title="Monster Index">
+             Title="Mutant Food Index">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Clicked="Add_Clicked" IconImageSource="icon_add.png"/>
