@@ -26,26 +26,26 @@
                          AbsoluteLayout.LayoutFlags="All">
 
                 <ScrollView x:Name="ScrollView">
-                    <StackLayout Style="{StaticResource OuterBoxStack}"
-                                 Spacing="10">
+                    <StackLayout Style="{StaticResource OuterBoxStack}">
 
-                        <StackLayout Margin="60,0,60,0" >
-                            
-                                <Image Source="{Binding Data.ImageURI}" 
+                        <Image Source="{Binding Data.ImageURI}" 
                                        Style="{StaticResource ImageExtraLargeStyle}"
                                        HorizontalOptions="Center"/>
 
-                            <Frame Style="{StaticResource NameFrameStyle}">
+                            <Frame Style="{StaticResource NameFrameStyle}"
+                                   Margin="40,0,40,0">
 
                                 <Label Style="{StaticResource ValueStyle}"
                                        Text="{Binding Data.Name}"/>
                             </Frame>
 
-                            <Frame Style="{StaticResource DescriptionFrameStyle}">
+                            <Frame Style="{StaticResource DescriptionFrameStyle}"
+                                   Margin="40,0,40,0">
 
                                 <Label Style="{StaticResource ValueStyle}"
                                        Text="{Binding Data.Description}"
-                                       LineBreakMode="WordWrap"/>
+                                       LineBreakMode="WordWrap"
+                                       />
 
                             </Frame>
 
@@ -177,7 +177,6 @@
 
                                 </Grid>
 
-                        </StackLayout>
                         <StackLayout Style="{StaticResource HorizontalStack}" 
                                      HorizontalOptions="Center">
 
