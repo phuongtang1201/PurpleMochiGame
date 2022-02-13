@@ -215,7 +215,7 @@
 
                             <Label Grid.Row="0" Grid.Column="0" 
                                    Grid.ColumnSpan="2"
-                                   Text="Are you sure you want to delete this character?" 
+                                   Text="Are you sure you want to delete this chef?" 
                                    Style="{StaticResource WarningDeleteLabelStyle}"/>
 
                             <Button Grid.Row="1" Grid.Column="0"
