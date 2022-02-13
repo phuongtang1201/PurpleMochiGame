@@ -45,7 +45,7 @@
                                 <Label Style="{StaticResource ValueStyle}"
                                        Text="{Binding Data.Description}"
                                        LineBreakMode="WordWrap"
-                                       />
+                                       VerticalOptions="Start" />
 
                             </Frame>
 
