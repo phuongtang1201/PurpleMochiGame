@@ -138,6 +138,7 @@
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="battleboard.png" />
     <Content Include="chefblue100px.png" />
+    <Content Include="chefblue100px2x.png" />
     <Content Include="chefgreen100px.png" />
     <Content Include="cheforange100px.png" />
     <Content Include="chefpurple100px.png" />
