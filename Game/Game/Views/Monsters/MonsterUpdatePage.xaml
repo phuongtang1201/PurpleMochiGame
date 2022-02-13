@@ -86,50 +86,70 @@
                                         </Frame>
                                     </StackLayout>
                                 </Grid>
+                                <Grid RowSpacing="1" ColumnSpacing="2"
+                                      VerticalOptions="Center">
 
-                                <Label Text="Attack" Style="{StaticResource LabelStyle}"/>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="230"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
 
-                                        <Slider Style="{StaticResource SliderStyle}"
-                                                Value="{Binding Data.Attack, Mode=TwoWay}"
-                                                ValueChanged="Attack_OnSliderValueChanged"/>
+                                    <Label Grid.Row="0" Grid.Column="0" 
+                                           Text="Attack" Style="{StaticResource LabelStyle}"/>
 
-                                <Label Style="{StaticResource SliderValueStyle}"
-                                               Text="{Binding Data.Attack, Mode=TwoWay}" 
-                                               x:Name="AttackValue"/>
+                                    <Slider Grid.Row="0" Grid.Column="1" 
+                                            Style="{StaticResource SliderStyle}"
+                                            Value="{Binding Data.Attack, Mode=TwoWay}"
+                                            ValueChanged="Attack_OnSliderValueChanged"/>
 
-                                <Label Text="Defense" Style="{StaticResource LabelStyle}"/>
+                                    <Label Grid.Row="0" Grid.Column="2" 
+                                           Style="{StaticResource SliderValueStyle}"
+                                           Text="{Binding Data.Attack, Mode=TwoWay}" 
+                                           x:Name="AttackValue"/>
 
-                                        <Slider Style="{StaticResource SliderStyle}"
-                                                Value="{Binding Data.Defense, Mode=TwoWay}"
-                                                ValueChanged="Defense_OnSliderValueChanged"/>
+                                    <Label Grid.Row="1" Grid.Column="0" 
+                                           Text="Defense" Style="{StaticResource LabelStyle}"/>
 
-                                <Label Style="{StaticResource SliderValueStyle}"
-                                               Text="{Binding Data.Defense, Mode=TwoWay}" 
-                                               x:Name="DefenseValue"/>
+                                    <Slider Grid.Row="1" Grid.Column="1" 
+                                            Style="{StaticResource SliderStyle}"
+                                            Value="{Binding Data.Defense, Mode=TwoWay}"
+                                            ValueChanged="Defense_OnSliderValueChanged"/>
 
-                                <Label Text="Speed" Style="{StaticResource LabelStyle}"/>
+                                    <Label Grid.Row="1" Grid.Column="2" 
+                                           Style="{StaticResource SliderValueStyle}"
+                                           Text="{Binding Data.Defense, Mode=TwoWay}" 
+                                           x:Name="DefenseValue"/>
 
-                                        <Slider Style="{StaticResource SliderStyle}"
-                                                Value="{Binding Data.Speed, Mode=TwoWay}"
-                                                ValueChanged="Speed_OnSliderValueChanged"/>
+                                    <Label Grid.Row="2" Grid.Column="0" 
+                                           Text="Speed" Style="{StaticResource LabelStyle}"/>
 
-                                <Label Style="{StaticResource SliderValueStyle}"
-                                               Text="{Binding Data.Speed, Mode=TwoWay}" 
-                                               x:Name="SpeedValue"/>
+                                    <Slider Grid.Row="2" Grid.Column="1" 
+                                            Style="{StaticResource SliderStyle}"
+                                            Value="{Binding Data.Speed, Mode=TwoWay}"
+                                            ValueChanged="Speed_OnSliderValueChanged"/>
+
+                                    <Label Grid.Row="2" Grid.Column="2" Style="{StaticResource SliderValueStyle}"
+                                           Text="{Binding Data.Speed, Mode=TwoWay}" 
+                                           x:Name="SpeedValue"/>
+
+                                </Grid>
                             </StackLayout>
                         </Frame>
                         
-
                         <StackLayout Style="{StaticResource HorizontalStack}" 
-                            HorizontalOptions="Center">
+                                     HorizontalOptions="Center">
 
                             <Button Style="{StaticResource CancelUpdateDeleteButton}" 
-                            Text="Cancel"
-                            Clicked="Cancel_Clicked"/>
+                                    Text="Cancel"
+                                    Clicked="Cancel_Clicked"/>
 
                             <Button Style="{StaticResource CancelUpdateDeleteButton}" 
-                            Text="Update"
-                            Clicked="Save_Clicked"/>
+                                    Text="Update"
+                                    Clicked="Save_Clicked"/>
                             
                         </StackLayout>
                     </StackLayout>
