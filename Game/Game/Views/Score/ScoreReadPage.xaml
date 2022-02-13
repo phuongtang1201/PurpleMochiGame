@@ -71,7 +71,7 @@
                             </StackLayout>
                             
                             <StackLayout Style="{StaticResource HorizontalStack}">
-                                <Label Text="Number of Monsters Slain:"
+                                <Label Text="Number of Mutant Food Slain:"
                                        Style="{StaticResource GrayBoxStyle}"/>
                                 <Label Text="{Binding Data.MonsterSlainNumber}"
                                        Style="{StaticResource ValueStyle}"/>
@@ -103,7 +103,7 @@
 
                         <StackLayout Orientation="Vertical">
                             
-                            <Label Text="Food Monsters Killed"
+                            <Label Text="Mutant Food Killed"
                                    Style="{StaticResource HeaderStyle}"/>
                             <Label Text="{Binding Data.MonstersKilledList}" 
                                    Style="{StaticResource ValueStyle}"/>
