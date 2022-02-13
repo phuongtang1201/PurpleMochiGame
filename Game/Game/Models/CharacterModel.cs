@@ -19,7 +19,7 @@ namespace Game.Models
         {
             PlayerType = PlayerTypeEnum.Character;
             Guid = Id;
-            Name = "Character Name";
+            Name = "Chef Name";
             Description = "Character Description";
             Level = 1;
             ImageURI = ItemService.DefaultImageURI;
