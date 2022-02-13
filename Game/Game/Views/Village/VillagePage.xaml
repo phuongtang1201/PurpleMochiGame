@@ -27,7 +27,7 @@
                        HorizontalOptions="CenterAndExpand" />
 
                     <Button Style="{StaticResource VillageButton}"
-                        Text="Monsters"
+                        Text="Mutant Food"
                         Clicked="MonstersButton_Clicked"/>
 
                 </StackLayout>
