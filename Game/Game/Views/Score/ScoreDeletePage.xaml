@@ -103,7 +103,7 @@
                     <Frame Style="{StaticResource GrayBoxFrame}">
 
                         <StackLayout>
-                            <Label Text="Food Monsters Killed"
+                            <Label Text="Mutant Food Killed"
                                    Style="{StaticResource HeaderStyle}"/>
                             <Label Text="{Binding Data.MonstersKilledList}" 
                                    Style="{StaticResource ValueStyle}"/>
