@@ -70,16 +70,16 @@
                                        Text="Attribute"
                                        Style="{StaticResource GrayBoxStyle}"/>
                                     <Label Grid.Column="1" Grid.Row="2"
-                                       Text="Base Value" 
+                                       Text="Base Value"  HorizontalOptions="Center"
                                        Style="{StaticResource GrayBoxStyle}"/>
                                     <Label Grid.Column="2" Grid.Row="2"
-                                       Text="Level Bonus" 
+                                       Text="Level Bonus"  HorizontalOptions="Center"
                                        Style="{StaticResource GrayBoxStyle}"/>
                                     <Label Grid.Column="3" Grid.Row="2"
-                                       Text="Item Bonus" 
+                                       Text="Item Bonus"  HorizontalOptions="Center"
                                        Style="{StaticResource GrayBoxStyle}"/>
                                     <Label Grid.Column="4" Grid.Row="2"
-                                       Text="Total Value" 
+                                       Text="Total Value"  HorizontalOptions="Center"
                                        Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Label Grid.Column="0" Grid.Row="3"
