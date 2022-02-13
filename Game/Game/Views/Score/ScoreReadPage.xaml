@@ -12,130 +12,131 @@
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
-        <AbsoluteLayout HorizontalOptions="CenterAndExpand"
-                        VerticalOptions="FillAndExpand">
-            
-            <ScrollView>
-                <StackLayout Style="{StaticResource OuterBoxStack}">
-                    
-                    <Frame Style="{StaticResource NameFrameStyle}">
-                        
-                        <Label Text="{Binding Data.Name}" 
+        <ScrollView 
+            Orientation="Vertical" 
+            HorizontalScrollBarVisibility="Never" 
+            VerticalScrollBarVisibility="Never" 
+            HorizontalOptions="CenterAndExpand"
+            Padding="10">
+            <StackLayout Style="{StaticResource OuterBoxStack}">
+
+                <Frame Style="{StaticResource NameFrameStyle}">
+
+                    <Label Text="{Binding Data.Name}" 
                                Style="{StaticResource HeaderStyle}"/>
-                    </Frame>
-                    
-                    <Frame Style="{StaticResource GrayBoxFrame}">
+                </Frame>
 
-                        <StackLayout Orientation="Vertical">
-                            
-                            <Label Text="Score Details"
+                <Frame Style="{StaticResource GrayBoxFrame}">
+
+                    <StackLayout Orientation="Vertical">
+
+                        <Label Text="Score Details"
                                    Style="{StaticResource HeaderStyle}"/>
 
-                            <StackLayout Style="{StaticResource HorizontalStack}">
-                                <Label Text="Game Date:"
+                        <StackLayout Style="{StaticResource HorizontalStack}">
+                            <Label Text="Game Date:"
                                        Style="{StaticResource GrayBoxStyle}"/>
 
-                                <Label Text="{Binding Data.GameDate}"
+                            <Label Text="{Binding Data.GameDate}"
                                        Style="{StaticResource ValueStyle}"/>
-                            </StackLayout>
-                            
-                            <StackLayout Style="{StaticResource HorizontalStack}">
-                                <Label Text="AutoBattle:"                      
-                                       Style="{StaticResource GrayBoxStyle}"/>
-
-                                <Label Text="{Binding Data.AutoBattle}"
-                                       Style="{StaticResource ValueStyle}"/>
-                            </StackLayout>
-                            
-                            <StackLayout Style="{StaticResource HorizontalStack}">
-                                <Label Text="Score:" 
-                                       Style="{StaticResource GrayBoxStyle}"/>
-                                <Label Text="{Binding Data.ScoreTotal}"
-                                       Style="{StaticResource ValueStyle}"/>
-                            </StackLayout>
-                            
-                            <StackLayout Style="{StaticResource HorizontalStack}">
-                                <Label Text="Number of Rounds:"                      
-                                       Style="{StaticResource GrayBoxStyle}"/>
-
-                                <Label Text="{Binding Data.RoundCount}"
-                                       Style="{StaticResource ValueStyle}"/>
-                            </StackLayout>
-                            
-                            <StackLayout Style="{StaticResource HorizontalStack}">
-                                <Label Text="Number of Turns:"  
-                                       Style="{StaticResource GrayBoxStyle}"/>
-
-                                <Label Text="{Binding Data.TurnCount}"
-                                       Style="{StaticResource ValueStyle}"/>
-                            </StackLayout>
-                            
-                            <StackLayout Style="{StaticResource HorizontalStack}">
-                                <Label Text="Number of Mutant Food Slain:"
-                                       Style="{StaticResource GrayBoxStyle}"/>
-                                <Label Text="{Binding Data.MonsterSlainNumber}"
-                                       Style="{StaticResource ValueStyle}"/>
-                            </StackLayout>
-                            
-                            <StackLayout Style="{StaticResource HorizontalStack}">
-                                <Label Text="Total Experience Gained:"
-                                       Style="{StaticResource GrayBoxStyle}"/>
-
-                                <Label Text="{Binding Data.ExperienceGainedTotal}" 
-                                       Style="{StaticResource ValueStyle}"/>
-                            </StackLayout>
-                            
                         </StackLayout>
-                    </Frame>
-                    <Frame Style="{StaticResource GrayBoxFrame}">
 
-                        <StackLayout Orientation="Vertical">
-                            
-                            <Label Text="Chefs Killed"
+                        <StackLayout Style="{StaticResource HorizontalStack}">
+                            <Label Text="AutoBattle:"                      
+                                       Style="{StaticResource GrayBoxStyle}"/>
+
+                            <Label Text="{Binding Data.AutoBattle}"
+                                       Style="{StaticResource ValueStyle}"/>
+                        </StackLayout>
+
+                        <StackLayout Style="{StaticResource HorizontalStack}">
+                            <Label Text="Score:" 
+                                       Style="{StaticResource GrayBoxStyle}"/>
+                            <Label Text="{Binding Data.ScoreTotal}"
+                                       Style="{StaticResource ValueStyle}"/>
+                        </StackLayout>
+
+                        <StackLayout Style="{StaticResource HorizontalStack}">
+                            <Label Text="Number of Rounds:"                      
+                                       Style="{StaticResource GrayBoxStyle}"/>
+
+                            <Label Text="{Binding Data.RoundCount}"
+                                       Style="{StaticResource ValueStyle}"/>
+                        </StackLayout>
+
+                        <StackLayout Style="{StaticResource HorizontalStack}">
+                            <Label Text="Number of Turns:"  
+                                       Style="{StaticResource GrayBoxStyle}"/>
+
+                            <Label Text="{Binding Data.TurnCount}"
+                                       Style="{StaticResource ValueStyle}"/>
+                        </StackLayout>
+
+                        <StackLayout Style="{StaticResource HorizontalStack}">
+                            <Label Text="Number of Mutant Food Slain:"
+                                       Style="{StaticResource GrayBoxStyle}"/>
+                            <Label Text="{Binding Data.MonsterSlainNumber}"
+                                       Style="{StaticResource ValueStyle}"/>
+                        </StackLayout>
+
+                        <StackLayout Style="{StaticResource HorizontalStack}">
+                            <Label Text="Total Experience Gained:"
+                                       Style="{StaticResource GrayBoxStyle}"/>
+
+                            <Label Text="{Binding Data.ExperienceGainedTotal}" 
+                                       Style="{StaticResource ValueStyle}"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <Frame Style="{StaticResource GrayBoxFrame}">
+
+                    <StackLayout Orientation="Vertical">
+
+                        <Label Text="Chefs Killed"
                                    Style="{StaticResource HeaderStyle}"/>
-                            <Label Text="{Binding Data.CharacterAtDeathList}" 
+                        <Label Text="{Binding Data.CharacterAtDeathList}" 
                                    Style="{StaticResource ValueStyle}"/>
-                            
-                        </StackLayout>
-                    </Frame>
-                    
-                    <Frame Style="{StaticResource GrayBoxFrame}">
 
-                        <StackLayout Orientation="Vertical">
-                            
-                            <Label Text="Mutant Food Killed"
+                    </StackLayout>
+                </Frame>
+
+                <Frame Style="{StaticResource GrayBoxFrame}">
+
+                    <StackLayout Orientation="Vertical">
+
+                        <Label Text="Mutant Food Killed"
                                    Style="{StaticResource HeaderStyle}"/>
-                            <Label Text="{Binding Data.MonstersKilledList}" 
+                        <Label Text="{Binding Data.MonstersKilledList}" 
                                    Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
-                        
-                    </Frame>
-                    
-                    <Frame Style="{StaticResource GrayBoxFrame}">
+                    </StackLayout>
 
-                        <StackLayout Orientation="Vertical">
-                            <Label Text="Equipment Dropped"
+                </Frame>
+
+                <Frame Style="{StaticResource GrayBoxFrame}">
+
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Equipment Dropped"
                                    Style="{StaticResource HeaderStyle}"/>
-                            <Label Text="{Binding Data.ItemsDroppedList}"
+                        <Label Text="{Binding Data.ItemsDroppedList}"
                                    Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
-                        
-                    </Frame>
+                    </StackLayout>
 
-                    <StackLayout Style="{StaticResource HorizontalStack}" 
+                </Frame>
+
+                <StackLayout Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
 
-                        <Button Style="{StaticResource CancelUpdateDeleteButton}" 
+                    <Button Style="{StaticResource CancelUpdateDeleteButton}" 
                                 Text="Delete"
                                 Clicked="Delete_Clicked"/>
 
-                        <Button Style="{StaticResource CancelUpdateDeleteButton}" 
+                    <Button Style="{StaticResource CancelUpdateDeleteButton}" 
                                 Text="Update"
                                 Clicked="Update_Clicked"/>
 
-                    </StackLayout>
                 </StackLayout>
-            </ScrollView>
-        </AbsoluteLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
