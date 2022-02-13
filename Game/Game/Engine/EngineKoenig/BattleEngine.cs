@@ -2,6 +2,7 @@
 using Game.Engine.EngineInterfaces;
 using Game.Engine.EngineModels;
 using Game.Models;
+using Game.ViewModels;
 
 namespace Game.Engine.EngineKoenig
 {
@@ -51,6 +52,9 @@ namespace Game.Engine.EngineKoenig
             {
                 AutoBattle = isAutoBattle
             };
+
+            // Add Score to track characters/monsters/items
+            ScoreIndexViewModel.Instance.Dataset.Add(EngineSettings.BattleScore);
 
             BattleRunning = true;
 
