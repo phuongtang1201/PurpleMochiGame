@@ -73,7 +73,7 @@
 
                                     <Label Grid.Row="1" Grid.Column="1"
                                        Text="{Binding Data.Level}" 
-                                       Style="{StaticResource ValueStyle}"/>
+                                       Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Label Grid.Column="0" Grid.Row="2"
                                        Text="Attribute"
