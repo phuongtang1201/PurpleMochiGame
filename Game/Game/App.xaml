@@ -372,7 +372,7 @@
                 <Setter Property="HeightRequest" Value="40"/>
             </Style>
 
-            <Style TargetType="Button" x:Key="CancelUpdateDeleteImageButton">
+            <Style TargetType="ImageButton" x:Key="CancelUpdateDeleteImageButton">
                 <Setter Property="WidthRequest" Value="120"/>
                 <Setter Property="HeightRequest" Value="40"/>
             </Style>
