@@ -854,7 +854,7 @@ namespace UnitTests.Models
 
 
             // Assert
-            Assert.AreEqual("1D 1", result);
+            Assert.AreEqual("1", result);
         }
 
         [Test]
