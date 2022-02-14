@@ -47,6 +47,24 @@ namespace Game.Views
 
             //This will make the range and damage invisible until primary hand is selected
             RangeDamageGrid.IsVisible = false;
+
+            //Added item to ImagePicker
+            GenerateImagePicker();
+        }
+
+        /// <summary>
+        /// Added all possible images for selection to ImagePicker
+        /// </summary>
+        private void GenerateImagePicker()
+        {
+            ImagePicker.Items.Add("knife.png");
+            ImagePicker.Items.Add("cookbook.png");
+            ImagePicker.Items.Add("apron.png");
+            ImagePicker.Items.Add("nonslip.png");
+            ImagePicker.Items.Add("rollingpin.png");
+            ImagePicker.Items.Add("salt.png");
+            ImagePicker.Items.Add("vinegar.png");
+
         }
 
         /// <summary>
@@ -157,5 +175,7 @@ namespace Game.Views
                 RangeDamageGrid.IsVisible = true;
             }
         }
+
+        
     }
 }
