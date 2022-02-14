@@ -179,6 +179,7 @@
     <Content Include="lettuce100px.png" />
     <Content Include="neck1.png" />
     <Content Include="neck2.png" />
+    <Content Include="no.png" />
     <Content Include="nonslip.png" />
     <Content Include="pineapple.png" />
     <Content Include="Properties\Default.rd.xml" />
