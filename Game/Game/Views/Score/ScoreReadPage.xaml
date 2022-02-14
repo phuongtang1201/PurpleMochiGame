@@ -162,9 +162,9 @@
                 <StackLayout Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
 
-                    <Button Style="{StaticResource CancelUpdateDeleteButton}" 
-                                Text="Delete"
-                                Clicked="Delete_Clicked"/>
+                    <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
+                                         Source="delete.png"
+                                         Clicked="Delete_Clicked"/>
 
                     <Button Style="{StaticResource CancelUpdateDeleteButton}" 
                                 Text="Update"
