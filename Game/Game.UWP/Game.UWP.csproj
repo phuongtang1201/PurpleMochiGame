@@ -224,6 +224,7 @@
     <Content Include="villageleaderboard.png" />
     <Content Include="vinegar.png" />
     <Content Include="watermelon100px.png" />
+    <Content Include="yes.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
