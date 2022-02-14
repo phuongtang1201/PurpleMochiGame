@@ -59,10 +59,7 @@
 
                                         <Label Text="{Binding Path=Attack, StringFormat= '{0:G} Attack'}" 
                                                Style="{StaticResource ListStyle}"/>
-
-                                        <Label Text="{Binding Path=MaxHealth, StringFormat= '{0:G} hp'}" 
-                                               Style="{StaticResource ListStyle}"/>
-
+                                        
                                     </StackLayout>
 
 
