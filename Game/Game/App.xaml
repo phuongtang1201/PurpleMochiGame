@@ -366,6 +366,12 @@
                 <Setter Property="HeightRequest" Value="40"/>
             </Style>
 
+            <Style TargetType="ImageButton"
+                 x:Key="HomeImageButton">
+                <Setter Property="WidthRequest" Value="190"/>
+                <Setter Property="HeightRequest" Value="40"/>
+            </Style>
+
             <!-- BoxView -->
             <Style TargetType="BoxView" x:Key="YesNoBoxView">
                 <Setter Property="Color" Value="{StaticResource PrimaryBackgroundColor}"/>
