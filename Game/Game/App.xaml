@@ -349,6 +349,16 @@
                 <Setter Property= "BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
                 <Setter Property= "BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
             </Style>
+            
+            <!-- ImageButton-->
+            <Style TargetType="ImageButton" x:Key="YesNoImageButton">
+                <Setter Property="WidthRequest" Value="100"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Padding" Value="0,0,0,2" />
+                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property= "CornerRadius" Value="5"/>
+            </Style>
 
             <!-- BoxView -->
             <Style TargetType="BoxView" x:Key="YesNoBoxView">
