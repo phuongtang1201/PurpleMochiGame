@@ -38,7 +38,7 @@ namespace Game.Views
             this.ViewModel.Title = "Update " + data.Title;
 
             //This message will show if either the name entry box or description entry box is empty
-            Warning_Not_Null_Message.Text = "Please enter a valid input.";
+            Warning_Not_Null_Message.Text = "Please give us a valid input.";
             Warning_Not_Null_Message.IsVisible = false;
 
             //Need to make the SelectedItem a string, so it can select the correct item.
