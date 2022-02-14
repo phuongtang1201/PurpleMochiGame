@@ -79,12 +79,28 @@ namespace Game.Views
                 ViewModel.Data.ImageURI = Services.ItemService.DefaultImageURI;
             }
 
+            //Check all pickers is not null
+            CheckPickerNotNull();
+
             // Check the name and description is not null
             if (!Warning_Not_Null_Message.IsVisible)
             {
                 MessagingCenter.Send(this, "Create", ViewModel.Data);
                 _ = await Navigation.PopModalAsync();
             }
+        }
+        /// <summary>
+        /// Check all pickers: Image, Location, Attribute is not null
+        /// </summary>
+        public void CheckPickerNotNull()
+        {
+            Warning_Not_Null_Message.IsVisible = false;
+            if (!string.IsNullOrEmpty(LocationPicker.SelectedItem.ToString()) && LocationPicker.SelectedItem.ToString() == "Unknown")
+            {
+                Warning_Not_Null_Message.IsVisible = true;
+            }
+            
+
         }
 
         /// <summary>
