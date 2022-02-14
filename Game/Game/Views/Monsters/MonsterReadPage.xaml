@@ -120,29 +120,16 @@
                                            Text="{Binding Data.GetSpeedTotal}"
                                            Style="{StaticResource StatisticsStyle}"/>
 
-                                    <Label Grid.Column="0" Grid.Row="6"
-                                           Text="Max Health"
-                                           Style="{StaticResource GrayBoxStyle}"/>
-                                    <Label Grid.Column="1" Grid.Row="6"
-                                           Text="{Binding Data.MaxHealth}"
-                                           Style="{StaticResource StatisticsStyle}"/>
-                                    <Label Grid.Column="2" Grid.Row="6"
-                                           Text="{Binding Data.GetMaxHealthLevelBonus}"
-                                           Style="{StaticResource StatisticsStyle}"/>
-                                    <Label Grid.Column="3" Grid.Row="6"
-                                           Text="{Binding Data.GetMaxHealthTotal}"
-                                           Style="{StaticResource StatisticsStyle}"/>
-
-                                    <Label Grid.Column="0" Grid.Row="7"
+                                    <Label Grid.Column="0" Grid.Row="5"
                                            Text="Damage"
                                            Style="{StaticResource GrayBoxStyle}"/>
-                                    <Label Grid.Column="1" Grid.Row="7"
+                                    <Label Grid.Column="1" Grid.Row="5"
                                            Text="-" 
                                            Style="{StaticResource StatisticsStyle}"/>
-                                    <Label Grid.Column="2" Grid.Row="7"
+                                    <Label Grid.Column="2" Grid.Row="5"
                                            Text="{Binding Data.GetDamageLevelBonus}" 
                                            Style="{StaticResource StatisticsStyle}"/>
-                                    <Label Grid.Column="3" Grid.Row="7"
+                                    <Label Grid.Column="3" Grid.Row="5"
                                            Text="{Binding Data.GetDamageTotalString}" 
                                            Style="{StaticResource StatisticsStyle}"/>
 
