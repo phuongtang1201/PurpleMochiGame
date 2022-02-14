@@ -230,6 +230,15 @@ namespace Game.Views
             //Remove warning message if exists
             CheckPickerNotNull();
         }
+        /// <summary>
+        /// Remove warning message if user select an attribute
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Attribute_OnPickerValueChanged(object sender, EventArgs e)
+        {
+            CheckPickerNotNull();
+        }
 
         /// <summary>
         /// Save the selected item to ImageURI
