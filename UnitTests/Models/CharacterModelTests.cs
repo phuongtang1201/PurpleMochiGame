@@ -923,7 +923,7 @@ namespace UnitTests.Models
             _ = Game.Helpers.DiceHelper.DisableForcedRolls();
 
             // Assert
-            Assert.AreEqual("1D 1", result);
+            Assert.AreEqual("1", result);
         }
 
         [Test]
