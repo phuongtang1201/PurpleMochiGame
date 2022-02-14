@@ -47,14 +47,14 @@ namespace Game.Views
             RangeDamageGrid.IsVisible = false;
 
             //Added item to ImagePicker
-            GenerateImagPicker();
+            GenerateImagePicker();
 
             
         }
         /// <summary>
         /// Added all possible images for selection to ImagePicker
         /// </summary>
-        private void GenerateImagPicker()
+        private void GenerateImagePicker()
         {
             ImagePicker.Items.Add("knife.png");
             ImagePicker.Items.Add("cookbook.png");
@@ -204,6 +204,14 @@ namespace Game.Views
             }
         }
 
-      
+        /// <summary>
+        /// Save the selected item to ImageURI
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Image_OnPickerValueChanged(object sender, EventArgs e)
+        {
+            ViewModel.Data.ImageURI = ImagePicker.SelectedItem.ToString();
+        }
     }
 }
