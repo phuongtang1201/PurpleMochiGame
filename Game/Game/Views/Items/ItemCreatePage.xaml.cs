@@ -103,7 +103,11 @@ namespace Game.Views
             {
                 Warning_Not_Null_Message.IsVisible = true;
             }
-           
+            if (ImagePicker.SelectedIndex == -1)
+            {
+                Warning_Not_Null_Message.IsVisible = true;
+            }
+
 
         }
 
