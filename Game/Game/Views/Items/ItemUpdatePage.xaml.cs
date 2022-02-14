@@ -44,6 +44,9 @@ namespace Game.Views
             //Need to make the SelectedItem a string, so it can select the correct item.
             LocationPicker.SelectedItem = data.Data.Location.ToString();
             AttributePicker.SelectedItem = data.Data.Attribute.ToString();
+
+            //This will make the range and damage invisible until primary hand is selected
+            RangeDamageGrid.IsVisible = false;
         }
 
         /// <summary>
@@ -138,6 +141,21 @@ namespace Game.Views
         public void Damage_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
         {
             DamageValue.Text = string.Format("{0}", Convert.ToInt32(e.NewValue));
+        }
+
+        /// <summary>
+        /// Remove Range and Damage Steppers if Location isn't PrimaryHand
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void RangeDamage_OnPickerValueChanged(object sender, EventArgs e)
+        {
+            RangeDamageGrid.IsVisible = false;
+
+            if (LocationPicker.SelectedIndex == 5)
+            {
+                RangeDamageGrid.IsVisible = true;
+            }
         }
     }
 }
