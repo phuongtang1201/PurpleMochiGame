@@ -81,17 +81,13 @@
                                            Text="Image*" 
                                            Style="{StaticResource LabelStyle}"/>
 
-                                    <StackLayout Grid.Row="1" Grid.Column="1" 
-                                                 Style="{StaticResource HorizontalStack}" 
-                                                 HorizontalOptions="FillAndExpand">
-
-                                        <Frame Style="{StaticResource EntryFrameStyle}">
-
-                                            <Entry Text="{Binding Data.ImageURI, Mode=TwoWay}" 
-                                                   Style="{StaticResource EntryStyle}"/>
-                                        </Frame>
-
-                                    </StackLayout>
+                                    <Frame Grid.Row="1" Grid.Column="1"
+                                           Grid.ColumnSpan="2"
+                                           Style="{StaticResource EntryFrameStyle}">
+                                        <Picker SelectedItem="{Binding SelectedItemProperty}" 
+                                                SelectedIndexChanged="Image_OnPickerValueChanged"
+                                                x:Name="ImagePicker" MinimumWidthRequest="150"/>
+                                    </Frame>
 
                                     <Label Grid.Row="2" Grid.Column="0"
                                            Text="Level*" 
