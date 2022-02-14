@@ -421,4 +421,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\homeleaderboard.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\no.png" />
+  </ItemGroup>
 </Project>
