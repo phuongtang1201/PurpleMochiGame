@@ -24,9 +24,9 @@
                          Style="{StaticResource ImageExtraExtraLargeStyle}"/>
                 
                 </StackLayout>
-                
-                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="70,15,70,0"> 
-               
+
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="70,15,70,0">
+
                     <Button
                         Text="PLAY"
                         FontSize="Title"
@@ -37,15 +37,9 @@
                         Clicked="GameButton_Clicked"
                         Margin="0,20,0,0"/>
 
-                    <Button 
-                        Text="LEADERBOARD"
-                        Clicked="ScoresButton_Clicked"
-                        WidthRequest="190"
-                        HeightRequest="40"
-                        FontSize="Title"
-                        TextColor="Black"
-                        CornerRadius="15"
-                        Margin="0,20,0,0"/>
+                    <ImageButton Source="homeleaderboard.png"
+                             Clicked="ScoresButton_Clicked"/>
+
                     <Button
                         Text="ABOUT"
                         Clicked="AboutButton_Clicked"
@@ -55,11 +49,8 @@
                         TextColor="Black"
                         CornerRadius="15"
                         Margin="0,20,0,0"/>
-                    
+
                 </StackLayout>
-
-                
-
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
