@@ -166,16 +166,6 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.Attack},
 
                 new ItemModel {
-                    Name = "Spray Bottle",
-                    Description = "(Attack)",
-                    ImageURI = "icon_new.png",
-                    Range = 7,
-                    Damage = 1,
-                    Value = 3,
-                    Location = ItemLocationEnum.PrimaryHand,
-                    Attribute = AttributeEnum.Attack},
-
-                new ItemModel {
                     Name = "Chef's Jacket",
                     Description = "(Maximum Health)",
                     ImageURI = "icon_new.png",
@@ -244,16 +234,6 @@ namespace Game.GameRules
                     Value = 6,
                     Location = ItemLocationEnum.Feet,
                     Attribute = AttributeEnum.Defense},
-
-                new ItemModel {
-                    Name = "Loafers",
-                    Description = "(Maximum Health)",
-                    ImageURI = "icon_new.png",
-                    Range = 0,
-                    Damage = 0,
-                    Value = 6,
-                    Location = ItemLocationEnum.Feet,
-                    Attribute = AttributeEnum.MaxHealth},
 
                  new ItemModel {
                     Name = "Salt",
