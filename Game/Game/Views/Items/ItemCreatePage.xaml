@@ -30,7 +30,8 @@
                         <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
                         <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageExtraLargeStyle}" 
-                               HorizontalOptions="Center"/>
+                               HorizontalOptions="Center"
+                               x:Name="LargeImage"/>
 
                         <Frame Style="{StaticResource EntryFrameStyle}"
                                    Margin="40,0,40,0">
