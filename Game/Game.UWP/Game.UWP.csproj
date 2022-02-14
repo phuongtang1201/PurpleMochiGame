@@ -196,6 +196,7 @@
     <Content Include="rollingpin.png" />
     <Content Include="salt.png" />
     <Content Include="score.png" />
+    <Content Include="settings.png" />
     <Content Include="shield1.png" />
     <Content Include="shield2.png" />
     <Content Include="shield3.png" />
