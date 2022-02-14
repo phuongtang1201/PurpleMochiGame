@@ -42,6 +42,8 @@ namespace Game.Views
             //Need to make the SelectedItem a string, so it can select the correct item.
             LocationPicker.SelectedItem = ViewModel.Data.Location.ToString();
             AttributePicker.SelectedItem = ViewModel.Data.Attribute.ToString();
+
+            RangeDamageGrid.IsVisible = false;
         }
 
         /// <summary>
@@ -174,17 +176,11 @@ namespace Game.Views
         /// <param name="e"></param>
         public void RangeDamage_OnPickerValueChanged(object sender, EventArgs e)
         {
-            RangeValue2.IsVisible = true;
-            DamageValue2.IsVisible = true;
+            RangeDamageGrid.IsVisible = false;
 
-            if (LocationPicker.SelectedIndex != 5)
+            if (LocationPicker.SelectedIndex == 5)
             {
-                RangeValue.Text = string.Format("0");
-                DamageValue.Text = string.Format("0");
-                RangeValue2.Value = 0;
-                DamageValue2.Value = 0;
-                RangeValue2.IsVisible = false;
-                DamageValue2.IsVisible = false;
+                RangeDamageGrid.IsVisible = true;
             }
         }
     }
