@@ -83,6 +83,9 @@ namespace Game.Views
                 ViewModel.Data.ImageURI = Services.ItemService.DefaultImageURI;
             }
 
+            //chek all pickers not null
+            CheckPickerNotNull();
+
             // Check the name and description is not null
             if (!Warning_Not_Null_Message.IsVisible)
             {
@@ -102,6 +105,27 @@ namespace Game.Views
             // Put copy back
             ViewModel.Data.Update(DataCopy);
             _ = await Navigation.PopModalAsync();
+        }
+        /// <summary>
+        /// Check all pickers: Image, Location, Attribute is not null
+        /// </summary>
+        public void CheckPickerNotNull()
+        {
+            Warning_Not_Null_Message.IsVisible = false;
+            if (!string.IsNullOrEmpty(LocationPicker.SelectedItem.ToString()) && LocationPicker.SelectedItem.ToString() == "Unknown")
+            {
+                Warning_Not_Null_Message.IsVisible = true;
+            }
+            if (!string.IsNullOrEmpty(AttributePicker.SelectedItem.ToString()) && AttributePicker.SelectedItem.ToString() == "Unknown")
+            {
+                Warning_Not_Null_Message.IsVisible = true;
+            }
+            if (ImagePicker.SelectedIndex == -1)
+            {
+                Warning_Not_Null_Message.IsVisible = true;
+            }
+
+
         }
         /// <summary>
         /// Check the entry box to guarantee entering a not null value
