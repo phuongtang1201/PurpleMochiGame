@@ -176,6 +176,15 @@ namespace Game.Views
             }
         }
 
-        
+        /// <summary>
+        /// Save the selected item to ImageURI
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Image_OnPickerValueChanged(object sender, EventArgs e)
+        {
+            ViewModel.Data.ImageURI = ImagePicker.SelectedItem.ToString();
+        }
+
     }
 }
