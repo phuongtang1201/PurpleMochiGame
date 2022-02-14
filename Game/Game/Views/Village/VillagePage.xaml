@@ -44,15 +44,10 @@
 
                 </StackLayout>
 
-                <Button 
-                        Text="Leaderboard"
-                        Clicked="ScoresButton_Clicked"
-                        WidthRequest="400"
-                        HeightRequest="60"
-                        FontSize="Title"
-                        TextColor="Black"
-                        CornerRadius="15"
-                        Margin="0,20,0,0"/>
+                <ImageButton Source="villageleaderboard.png"
+                    Clicked="ScoresButton_Clicked"
+                    WidthRequest="400"
+                    HeightRequest="60"/>
 
             </StackLayout>
         </ScrollView>
