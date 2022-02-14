@@ -161,7 +161,7 @@ namespace UnitTests.Models
             // Reset
 
             // Assert 
-            Assert.AreEqual(true, result.Contains("Character Name"));
+            Assert.AreEqual(true, result.Contains("Chef Name"));
         }
 
         [Test]
