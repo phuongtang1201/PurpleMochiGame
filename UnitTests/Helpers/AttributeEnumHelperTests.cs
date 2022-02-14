@@ -26,6 +26,7 @@ namespace UnitTests.Helpers
 
             // Act
 
+            var temp = "";
             // Make sure each item is in the list
             foreach (var item in myDataList)
             {
@@ -33,15 +34,16 @@ namespace UnitTests.Helpers
                 //{
                 //    continue;
                 //}
-                Console.Write("Item: ");
-                Console.WriteLine(item);
+                temp = item;
+                if (temp.Equals("Current Health"))
+                    temp = "CurrentHealth";
+                if (temp.Equals("Max Health"))
+                    temp = "MaxHealth";
 
                 var found = false;
                 foreach (var expected in myExpectedList)
                 {
-                    Console.Write("Expected: ");
-                    Console.WriteLine(expected);
-                    if (item == expected)
+                    if (temp == expected)
                     {
                         found = true;
                         break;
@@ -49,7 +51,7 @@ namespace UnitTests.Helpers
                 }
 
                 // Assert
-                Assert.AreEqual(true, found, "item : " + item + TestContext.CurrentContext.Test.Name);
+                Assert.AreEqual(true, found, "item : " + temp + TestContext.CurrentContext.Test.Name);
             }
 
             // reverse it, to make sure the list has each item
@@ -59,11 +61,18 @@ namespace UnitTests.Helpers
                 var found = false;
                 {
                     foreach (var item in myDataList)
-                        if (item == expected)
+                    {
+                        temp = item;
+                        if (temp.Equals("Current Health"))
+                            temp = "CurrentHealth";
+                        if (temp.Equals("Max Health"))
+                            temp = "MaxHealth";
+                        if (temp == expected)
                         {
                             found = true;
                             break;
                         }
+                    }
                 }
 
                 // Assert
