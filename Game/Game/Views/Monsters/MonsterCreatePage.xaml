@@ -145,11 +145,11 @@
                             <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
                                          Source="cancel.png"
                                          Clicked="Cancel_Clicked"/>
-                            
-                            <Button Style="{StaticResource CancelUpdateDeleteButton}" 
-                                    Text="Create"
-                                    Clicked="Save_Clicked"/>
-                            
+
+                            <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
+                                         Source="create.png"
+                                         Clicked="Save_Clicked"/>
+                           
                         </StackLayout>
                     </StackLayout>
                 </ScrollView>
