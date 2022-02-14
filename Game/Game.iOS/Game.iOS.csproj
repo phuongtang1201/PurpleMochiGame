@@ -415,4 +415,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\mutantfood.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="settings.png" />
+  </ItemGroup>
 </Project>
