@@ -884,7 +884,7 @@ namespace UnitTests.Models
             _ = DiceHelper.DisableForcedRolls();
 
             // Assert
-            Assert.AreEqual("1 + 1D 1", result);
+            Assert.AreEqual("2", result);
         }
 
         [Test]
