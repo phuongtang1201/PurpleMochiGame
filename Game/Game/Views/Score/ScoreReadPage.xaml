@@ -166,9 +166,9 @@
                                          Source="delete.png"
                                          Clicked="Delete_Clicked"/>
 
-                    <Button Style="{StaticResource CancelUpdateDeleteButton}" 
-                                Text="Update"
-                                Clicked="Update_Clicked"/>
+                    <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
+                                         Source="update.png"
+                                         Clicked="Update_Clicked"/>
 
                 </StackLayout>
             </StackLayout>
