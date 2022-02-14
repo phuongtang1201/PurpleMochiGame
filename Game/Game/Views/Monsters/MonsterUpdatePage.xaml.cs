@@ -145,7 +145,17 @@ namespace Game.Views
             _ = await Navigation.PopModalAsync();
         }
 
-       
+        /// <summary>
+        /// Save the selected item to ImageURI
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Image_OnPickerValueChanged(object sender, EventArgs e)
+        {
+            ViewModel.Data.ImageURI = ImagePicker.SelectedItem.ToString();
+
+        }
+
 
         /// <summary>
         /// Catch the change to the Slider for Attack
