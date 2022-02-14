@@ -212,6 +212,7 @@ namespace Game.Views
         public void Image_OnPickerValueChanged(object sender, EventArgs e)
         {
             ViewModel.Data.ImageURI = ImagePicker.SelectedItem.ToString();
+            LargeImage.Source = ViewModel.Data.ImageURI;
         }
     }
 }
