@@ -226,6 +226,9 @@ namespace Game.Views
             {
                 RangeDamageGrid.IsVisible = true;
             }
+
+            //Remove warning message if exists
+            CheckPickerNotNull();
         }
 
         /// <summary>
