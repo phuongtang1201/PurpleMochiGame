@@ -77,6 +77,19 @@ namespace Game.Views
 
             return true;
         }
+
+        /// <summary>
+        /// Check all pickers: Image, Location, Attribute is not null
+        /// </summary>
+        public void CheckPickerNotNull()
+        {
+            Warning_Not_Null_Message.IsVisible = false;
+         
+            if (ImagePicker.SelectedIndex == -1)
+            {
+                Warning_Not_Null_Message.IsVisible = true;
+            }
+        }
         /// <summary>
         /// Check the entry box to guarantee entering a not null value
         /// </summary>
@@ -119,6 +132,8 @@ namespace Game.Views
             {
                 ViewModel.Data.ImageURI = new MonsterModel().ImageURI;
             }
+            //check image is selected
+            CheckPickerNotNull();
 
             //Does not allow to save if either null Name or Description
             if (!Warning_Not_Null_Message.IsVisible)
