@@ -35,16 +35,9 @@
                                  Style="{StaticResource HomeImageButton}"
                                  Clicked="ScoresButton_Clicked"/>
 
-                    <Button
-                        Text="ABOUT"
-                        Clicked="AboutButton_Clicked"
-                        WidthRequest="190"
-                        HeightRequest="40"
-                        FontSize="Title"
-                        TextColor="Black"
-                        CornerRadius="15"
-                        Margin="0,20,0,0"/>
-
+                    <ImageButton Source="about.png"
+                                 Style="{StaticResource HomeImageButton}"
+                                 Clicked="AboutButton_Clicked"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
