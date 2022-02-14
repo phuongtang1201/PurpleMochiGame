@@ -38,10 +38,10 @@
                     <Image Source="item.png" Style="{StaticResource ImageLargeStyle}"
                        HorizontalOptions="CenterAndExpand" />
 
-                    <Button Style="{StaticResource VillageButton}"
-                        Text="Equipment"
+                    <ImageButton Style="{StaticResource VillageImageButton}"
+                        Source="equipment.png"
                         Clicked="ItemsButton_Clicked"/>
-                    
+
                 </StackLayout>
 
                 <Button 
