@@ -33,10 +33,14 @@ namespace UnitTests.Helpers
                 //{
                 //    continue;
                 //}
+                Console.Write("Item: ");
+                Console.WriteLine(item);
 
                 var found = false;
                 foreach (var expected in myExpectedList)
                 {
+                    Console.Write("Expected: ");
+                    Console.WriteLine(expected);
                     if (item == expected)
                     {
                         found = true;

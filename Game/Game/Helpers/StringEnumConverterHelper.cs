@@ -55,6 +55,10 @@ namespace Game.Helpers
             if (value is string)
             {
                 var aa = targetType.GetType();
+                if (value.Equals("Current Health"))
+                    value = "CurrentHealth";
+                if (value.Equals("Max Health"))
+                    value = "MaxHealth";
                 var myReturn = Enum.Parse((targetType), value.ToString());
                 return myReturn;
             }
