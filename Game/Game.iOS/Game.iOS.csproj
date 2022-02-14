@@ -397,4 +397,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\restaurant.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\autobattle.png" />
+  </ItemGroup>
 </Project>
