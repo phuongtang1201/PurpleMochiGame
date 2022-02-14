@@ -99,7 +99,11 @@ namespace Game.Views
             {
                 Warning_Not_Null_Message.IsVisible = true;
             }
-            
+            if (!string.IsNullOrEmpty(AttributePicker.SelectedItem.ToString()) && AttributePicker.SelectedItem.ToString() == "Unknown")
+            {
+                Warning_Not_Null_Message.IsVisible = true;
+            }
+           
 
         }
 
