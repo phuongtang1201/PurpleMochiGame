@@ -220,6 +220,7 @@
     <Content Include="troll6.png" />
     <Content Include="update.png" />
     <Content Include="village.png" />
+    <Content Include="villageleaderboard.png" />
     <Content Include="vinegar.png" />
     <Content Include="watermelon100px.png" />
   </ItemGroup>
