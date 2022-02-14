@@ -391,4 +391,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\play.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\villageleaderboard.png" />
+  </ItemGroup>
 </Project>
