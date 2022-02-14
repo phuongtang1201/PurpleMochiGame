@@ -436,4 +436,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\update.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\create.png" />
+  </ItemGroup>
 </Project>
