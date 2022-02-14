@@ -16,8 +16,7 @@
             Orientation="Vertical" 
             HorizontalScrollBarVisibility="Never" 
             VerticalScrollBarVisibility="Never" 
-            HorizontalOptions="CenterAndExpand"
-            Padding="10">
+            HorizontalOptions="CenterAndExpand">
             <StackLayout Style="{StaticResource OuterBoxStack}">
 
                 <Frame Style="{StaticResource NameFrameStyle}">
