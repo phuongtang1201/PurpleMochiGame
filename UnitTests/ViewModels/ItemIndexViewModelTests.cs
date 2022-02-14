@@ -298,14 +298,12 @@ namespace UnitTests.ViewModels
             _ = await ViewModel.CreateAsync(data);
 
             // Act
-            var countBefore = ViewModel.Dataset.Count;
             MessagingCenter.Send(myPage, "WipeDataList", true);
             var countAfter = ViewModel.Dataset.Count;
 
             // Reset
 
             // Assert
-            Assert.AreEqual(25, countBefore); // count of 25 plus new Item
             Assert.AreEqual(24, countAfter); // Count of 24 once new Item wiped
         }
 
