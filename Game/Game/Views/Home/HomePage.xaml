@@ -6,17 +6,11 @@
     <ContentPage.Content>
         <ScrollView
             HorizontalOptions="CenterAndExpand">
-            
+
             <StackLayout
                 VerticalOptions="Center"
                 HorizontalOptions="Center">
-                <Button
-                    WidthRequest="60" HeightRequest="60"
-                    Text="Settings"
-                    FontSize="Micro"
-                    HorizontalOptions="End"
-                    CornerRadius="50"/>
-                
+
                 <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
                    
                     <Image
@@ -38,6 +32,9 @@
                     <ImageButton Source="about.png"
                                  Style="{StaticResource HomeImageButton}"
                                  Clicked="AboutButton_Clicked"/>
+
+                    <ImageButton Source="settings.png"
+                                 Style="{StaticResource HomeImageButton}"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
