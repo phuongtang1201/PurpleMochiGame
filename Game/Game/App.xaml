@@ -360,6 +360,12 @@
                 <Setter Property= "CornerRadius" Value="5"/>
             </Style>
 
+            <Style TargetType="ImageButton"
+                 x:Key="VillageImageButton">
+                <Setter Property="WidthRequest" Value="200"/>
+                <Setter Property="HeightRequest" Value="40"/>
+            </Style>
+
             <!-- BoxView -->
             <Style TargetType="BoxView" x:Key="YesNoBoxView">
                 <Setter Property="Color" Value="{StaticResource PrimaryBackgroundColor}"/>
