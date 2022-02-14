@@ -55,7 +55,22 @@ namespace Game.Views
             this.ViewModel.Data.Level = 1;
             // LevelPicker.SelectedIndex = ViewModel.Data.Level - 1;
 
+            //Added item to ImagePicker
+            GenerateImagePicker();
+
             _ = UpdatePageBindingContext();
+        }
+        /// <summary>
+        /// Added all possible images for selection to ImagePicker
+        /// </summary>
+        private void GenerateImagePicker()
+        {
+            ImagePicker.Items.Add("chefblue100px.png");
+            ImagePicker.Items.Add("chefgreen100px.png");
+            ImagePicker.Items.Add("cheforange100px.png");
+            ImagePicker.Items.Add("chefpurple100px.png");
+            ImagePicker.Items.Add("chefwhite.png");
+            ImagePicker.Items.Add("chefyellow100px.png");
         }
 
         /// <summary>
@@ -168,6 +183,7 @@ namespace Game.Views
         {
             _ = await Navigation.PopModalAsync();
         }
+        
 
         /// <summary>
         /// Catch the change to the Stepper for Attack
