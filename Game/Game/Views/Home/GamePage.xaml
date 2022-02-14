@@ -22,12 +22,11 @@
 
                 <StackLayout Orientation="Horizontal"
                              HorizontalOptions="Center">
-                    <Button Text="Restaurant"
-                            WidthRequest="190"
-                            HeightRequest="40"
-                            FontSize="Subtitle"
-                            CornerRadius="10"
-                            Clicked="VillageButton_Clicked"/>
+
+                    <ImageButton Source="restaurant.png"
+                             Clicked="VillageButton_Clicked"
+                             WidthRequest="190"
+                             HeightRequest="40"/>
 
                     <Button Text="Auto-Battle"
                             WidthRequest="190"
