@@ -45,14 +45,31 @@ namespace Game.Views
             Warning_Not_Null_Message.Text = "Please enter a valid input.";
             Warning_Not_Null_Message.IsVisible = false;
 
+            //Added item to ImagePicker
+            GenerateImagePicker();
+
             _ = UpdatePageBindingContext();
         }
 
         /// <summary>
-        /// Redo the Binding to cause a refresh
+        /// Added all possible images for selection to ImagePicker
         /// </summary>
-        /// <returns></returns>
-        public bool UpdatePageBindingContext()
+        private void GenerateImagePicker()
+        {
+            ImagePicker.Items.Add("eggs100px.png");
+            ImagePicker.Items.Add("garlic100px.png");
+            ImagePicker.Items.Add("lettuce100px.png");
+            ImagePicker.Items.Add("steak100px.png");
+            ImagePicker.Items.Add("pineapple.png");
+            ImagePicker.Items.Add("strawberry100px.png");
+            ImagePicker.Items.Add("watermelon100px.png");
+        }
+
+            /// <summary>
+            /// Redo the Binding to cause a refresh
+            /// </summary>
+            /// <returns></returns>
+            public bool UpdatePageBindingContext()
         {
             // Temp store off the Difficulty
             var difficulty = this.ViewModel.Data.Difficulty;
@@ -127,6 +144,8 @@ namespace Game.Views
             ViewModel.Data.Update(DataCopy);
             _ = await Navigation.PopModalAsync();
         }
+
+       
 
         /// <summary>
         /// Catch the change to the Slider for Attack
