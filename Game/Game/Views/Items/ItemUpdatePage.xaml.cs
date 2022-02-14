@@ -202,8 +202,7 @@ namespace Game.Views
                 RangeDamageGrid.IsVisible = true;
             }
 
-            //Remove warning message if user select a location
-            CheckPickerNotNull();
+            
         }
 
         /// <summary>
