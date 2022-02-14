@@ -162,6 +162,7 @@
     <Content Include="elf5.png" />
     <Content Include="elf6.png" />
     <Content Include="elf7.png" />
+    <Content Include="equipment.png" />
     <Content Include="feet1.png" />
     <Content Include="feet2.png" />
     <Content Include="foodfightlogo.png" />
