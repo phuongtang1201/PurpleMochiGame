@@ -186,6 +186,7 @@
     <Content Include="nonslip.png" />
     <Content Include="pineapple.png" />
     <Content Include="Properties\Default.rd.xml" />
+    <Content Include="restaurant.png" />
     <Content Include="ring1.png" />
     <Content Include="ring2.png" />
     <Content Include="rollingpin.png" />
