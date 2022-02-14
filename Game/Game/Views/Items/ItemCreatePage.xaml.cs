@@ -237,6 +237,7 @@ namespace Game.Views
         {
             ViewModel.Data.ImageURI = ImagePicker.SelectedItem.ToString();
             LargeImage.Source = ViewModel.Data.ImageURI;
+            CheckPickerNotNull();
         }
     }
 }
