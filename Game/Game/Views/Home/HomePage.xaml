@@ -27,18 +27,13 @@
 
                 <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="70,15,70,0">
 
-                    <Button
-                        Text="PLAY"
-                        FontSize="Title"
-                        TextColor="Black"
-                        WidthRequest="190"
-                        HeightRequest="40"
-                        CornerRadius="15"
-                        Clicked="GameButton_Clicked"
-                        Margin="0,20,0,0"/>
+                    <ImageButton Source="play.png"
+                                 Style="{StaticResource HomeImageButton}"
+                                 Clicked="GameButton_Clicked"/>
 
                     <ImageButton Source="homeleaderboard.png"
-                             Clicked="ScoresButton_Clicked"/>
+                                 Style="{StaticResource HomeImageButton}"
+                                 Clicked="ScoresButton_Clicked"/>
 
                     <Button
                         Text="ABOUT"
