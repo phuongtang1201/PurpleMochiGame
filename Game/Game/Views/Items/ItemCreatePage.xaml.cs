@@ -2,6 +2,7 @@
 using Game.ViewModels;
 
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 
 using Xamarin.Forms;
@@ -44,6 +45,25 @@ namespace Game.Views
             AttributePicker.SelectedItem = ViewModel.Data.Attribute.ToString();
 
             RangeDamageGrid.IsVisible = false;
+
+            //Added item to ImagePicker
+            GenerateImagPicker();
+
+            
+        }
+        /// <summary>
+        /// Added all possible images for selection to ImagePicker
+        /// </summary>
+        private void GenerateImagPicker()
+        {
+            ImagePicker.Items.Add("knife.png");
+            ImagePicker.Items.Add("cookbook.png");
+            ImagePicker.Items.Add("apron.png");
+            ImagePicker.Items.Add("nonslip.png");
+            ImagePicker.Items.Add("rollingpin.png");
+            ImagePicker.Items.Add("salt.png");
+            ImagePicker.Items.Add("vinegar.png");
+
         }
 
         /// <summary>
@@ -183,5 +203,7 @@ namespace Game.Views
                 RangeDamageGrid.IsVisible = true;
             }
         }
+
+      
     }
 }
