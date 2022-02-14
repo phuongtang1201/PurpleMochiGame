@@ -15,8 +15,8 @@
                     <Image Source="item.png" Style="{StaticResource ImageLargeStyle}"
                        HorizontalOptions="CenterAndExpand" />
 
-                    <Button Style="{StaticResource VillageButton}"
-                        Text="Chefs"
+                    <ImageButton Style="{StaticResource VillageImageButton}"
+                        Source="chefs.png"
                         Clicked="CharactersButton_Clicked"/>
 
                 </StackLayout>
