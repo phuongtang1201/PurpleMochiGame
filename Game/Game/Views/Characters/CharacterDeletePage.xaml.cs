@@ -41,6 +41,7 @@ namespace Game.Views
         public void AddItemsToDisplay()
         {
             var FlexList = ItemBox.Children.ToList();
+
             foreach (var data in FlexList)
             {
                 _ = ItemBox.Children.Remove(data);
@@ -112,34 +113,6 @@ namespace Game.Views
 
             return ItemStack;
         }
-
-        /// <summary>
-        /// Show the Popup for the Item
-        /// </summary>
-        /// <param name="data"></param>
-        /// <returns></returns>
-        //public bool ShowPopup(ItemModel data)
-        //{
-
-
-            //// Close the popup after 3 seconds
-            //Device.StartTimer(TimeSpan.FromSeconds(3), () => { 
-            //        PopupLoadingView.IsVisible = false;
-            //        return true; }); 
-
-            //return false;
-        //}
-
-        /// <summary>
-        /// When the user clicks the close in the Popup
-        /// hide the view
-        /// show the scroll view
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        //public void ClosePopup_Clicked(object sender, EventArgs e)
-        //{
-        //}
 
         /// <summary>
         /// Save calls to Update
