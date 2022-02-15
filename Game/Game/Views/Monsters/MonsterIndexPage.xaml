@@ -51,14 +51,13 @@
 
                                     <Label Grid.Column="1" Grid.Row="1"
                                            Text="{Binding Description}" 
-                                           Style="{StaticResource ListStyle}"
-                                           FontSize="Micro"/>
+                                           Style="{StaticResource ListDescription}"/>
 
                                     <StackLayout Grid.Column="1" Grid.Row="2"
                                                  Orientation="Horizontal">
 
                                         <Label Text="{Binding Path=Attack, StringFormat= '{0:G} Attack'}" 
-                                               Style="{StaticResource ListStyle}"/>
+                                               Style="{StaticResource ListDescription}"/>
                                         
                                     </StackLayout>
 
