@@ -349,8 +349,8 @@
 
             <Style TargetType="ImageButton"
                  x:Key="VillageImageButton">
-                <Setter Property="WidthRequest" Value="200"/>
-                <Setter Property="HeightRequest" Value="40"/>
+                <Setter Property="WidthRequest" Value="153"/>
+                <Setter Property="HeightRequest" Value="49"/>
             </Style>
 
             <Style TargetType="ImageButton"
