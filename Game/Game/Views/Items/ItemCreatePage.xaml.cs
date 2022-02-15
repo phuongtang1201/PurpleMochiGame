@@ -40,6 +40,10 @@ namespace Game.Views
             Warning_Not_Null_Message.Text = "Please give us a valid input.";
             Warning_Not_Null_Message.IsVisible = false;
 
+            //This message will show if either image, location or attribute box is not selected
+            Warning_Select_Message.Text = "Please select an item.";
+            Warning_Select_Message.IsVisible = false;
+
             //Need to make the SelectedItem a string, so it can select the correct item.
             LocationPicker.SelectedItem = ViewModel.Data.Location.ToString();
             AttributePicker.SelectedItem = ViewModel.Data.Attribute.ToString();
@@ -83,7 +87,7 @@ namespace Game.Views
             CheckPickerNotNull();
 
             // Check the name and description is not null
-            if (!Warning_Not_Null_Message.IsVisible)
+            if (!Warning_Not_Null_Message.IsVisible && !Warning_Select_Message.IsVisible)
             {
                 MessagingCenter.Send(this, "Create", ViewModel.Data);
                 _ = await Navigation.PopModalAsync();
@@ -94,18 +98,18 @@ namespace Game.Views
         /// </summary>
         public void CheckPickerNotNull()
         {
-            Warning_Not_Null_Message.IsVisible = false;
+            Warning_Select_Message.IsVisible = false;
             if (!string.IsNullOrEmpty(LocationPicker.SelectedItem.ToString()) && LocationPicker.SelectedItem.ToString() == "Unknown")
             {
-                Warning_Not_Null_Message.IsVisible = true;
+                Warning_Select_Message.IsVisible = true;
             }
             if (!string.IsNullOrEmpty(AttributePicker.SelectedItem.ToString()) && AttributePicker.SelectedItem.ToString() == "Unknown")
             {
-                Warning_Not_Null_Message.IsVisible = true;
+                Warning_Select_Message.IsVisible = true;
             }
             if (ImagePicker.SelectedIndex == -1)
             {
-                Warning_Not_Null_Message.IsVisible = true;
+                Warning_Select_Message.IsVisible = true;
             }
 
 
