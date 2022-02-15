@@ -66,17 +66,18 @@
                                            Text="Statistics" 
                                            Style="{StaticResource HeaderStyle}"/>
 
-                                    
-
                                     <Label Grid.Column="0" Grid.Row="1"
                                            Text="Attribute"
                                            Style="{StaticResource GrayBoxStyle}"/>
+                                    
                                     <Label Grid.Column="1" Grid.Row="1"
                                            Text="Base Value" 
                                            Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="2" Grid.Row="1"
                                            Text="Level Bonus" 
                                            Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="3" Grid.Row="1"
                                            Text="Total Value" 
                                            Style="{StaticResource StatisticsStyle}"/>
@@ -84,12 +85,15 @@
                                     <Label Grid.Column="0" Grid.Row="2"
                                            Text="Attack"
                                            Style="{StaticResource GrayBoxStyle}"/>
+                                    
                                     <Label Grid.Column="1" Grid.Row="2"
                                            Text="{Binding Data.Attack}" 
                                            Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="2" Grid.Row="2"
                                            Text="{Binding Data.GetAttackLevelBonus}" 
                                            Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="3" Grid.Row="2"
                                            Text="{Binding Data.GetAttackTotal}" 
                                            Style="{StaticResource StatisticsStyle}"/>
@@ -97,12 +101,15 @@
                                     <Label Grid.Column="0" Grid.Row="3"
                                            Text="Defense"
                                            Style="{StaticResource GrayBoxStyle}"/>
+                                    
                                     <Label Grid.Column="1" Grid.Row="3"
                                            Text="{Binding Data.Defense}" 
                                            Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="2" Grid.Row="3"
                                            Text="{Binding Data.GetDefenseLevelBonus}"
                                            Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="3" Grid.Row="3"
                                            Text="{Binding Data.GetDefenseTotal}" 
                                            Style="{StaticResource StatisticsStyle}"/>
@@ -110,12 +117,15 @@
                                     <Label Grid.Column="0" Grid.Row="4"
                                            Text="Speed"
                                            Style="{StaticResource GrayBoxStyle}"/>
+                                    
                                     <Label Grid.Column="1" Grid.Row="4"
                                            Text="{Binding Data.Speed}" 
                                            Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="2" Grid.Row="4"
                                            Text="{Binding Data.GetSpeedLevelBonus}" 
                                            Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="3" Grid.Row="4"
                                            Text="{Binding Data.GetSpeedTotal}"
                                            Style="{StaticResource StatisticsStyle}"/>
@@ -123,12 +133,15 @@
                                     <Label Grid.Column="0" Grid.Row="5"
                                            Text="Damage"
                                            Style="{StaticResource GrayBoxStyle}"/>
+                                    
                                     <Label Grid.Column="1" Grid.Row="5"
                                            Text="-" 
                                            Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="2" Grid.Row="5"
                                            Text="{Binding Data.GetDamageLevelBonus}" 
                                            Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="3" Grid.Row="5"
                                            Text="{Binding Data.GetDamageTotalString}" 
                                            Style="{StaticResource StatisticsStyle}"/>
