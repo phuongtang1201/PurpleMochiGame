@@ -18,6 +18,7 @@ namespace Game.Views
         // View Model for Score
         public readonly GenericViewModel<ScoreModel> ViewModel;
 
+        // Empty Constructor for UTs
         public ScoreReadPage(bool UnitTest) { }
 
         /// <summary>
