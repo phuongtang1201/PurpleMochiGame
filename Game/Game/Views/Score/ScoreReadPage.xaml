@@ -51,6 +51,7 @@
                         <StackLayout Style="{StaticResource HorizontalStack}">
                             <Label Text="Score:" 
                                        Style="{StaticResource GrayBoxStyle}"/>
+                            
                             <Label Text="{Binding Data.ScoreTotal}"
                                        Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
@@ -74,6 +75,7 @@
                         <StackLayout Style="{StaticResource HorizontalStack}">
                             <Label Text="Number of Mutant Food Slain:"
                                        Style="{StaticResource GrayBoxStyle}"/>
+                            
                             <Label Text="{Binding Data.MonsterSlainNumber}"
                                        Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
@@ -94,6 +96,7 @@
 
                         <Label Text="Chefs Killed"
                                    Style="{StaticResource HeaderStyle}"/>
+                        
                         <Label Text="{Binding Data.CharacterAtDeathList}" 
                                    Style="{StaticResource ValueStyle}"/>
 
