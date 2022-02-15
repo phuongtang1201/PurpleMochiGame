@@ -28,7 +28,7 @@
                     <StackLayout Style="{StaticResource OuterBoxStack}">
 
                         <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
-                        <Label x:Name="Warning_Select_Message" TextColor="Red"/>
+                        
 
                         <Image Source="{Binding Data.ImageURI}" Style="{StaticResource ImageExtraLargeStyle}" 
                                HorizontalOptions="Center"
@@ -68,6 +68,11 @@
                                            Grid.ColumnSpan="2"
                                            Text="Statistics" 
                                            Style="{StaticResource HeaderStyle}" />
+
+                                    <Label Grid.Row="0" Grid.Column="1"
+                                           Grid.ColumnSpan="2"
+                                           x:Name="Warning_Select_Message" Style="{StaticResource LabelStyle}" 
+                                           TextColor="Red"/>
 
                                     <Label Grid.Row="1" Grid.Column="0"
                                            Text="Image*" 
