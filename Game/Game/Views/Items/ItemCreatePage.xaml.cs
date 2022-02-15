@@ -48,6 +48,7 @@ namespace Game.Views
             LocationPicker.SelectedItem = ViewModel.Data.Location.ToString();
             AttributePicker.SelectedItem = ViewModel.Data.Attribute.ToString();
 
+            //The range and damage is invisible until primary hand is selected
             RangeDamageGrid.IsVisible = false;
 
             //Added item to ImagePicker
