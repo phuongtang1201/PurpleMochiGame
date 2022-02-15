@@ -47,19 +47,19 @@
 
                                     <Label Grid.Column="0" Grid.Row="1"
                                            Text="Rounds" 
-                                           Style="{StaticResource ListStyle}"/>
+                                           Style="{StaticResource ListDescription}"/>
 
                                     <Label Grid.Column="1" Grid.Row="1"
                                            Text="{Binding RoundCount}" 
-                                           Style="{StaticResource ListStyle}"/>
+                                           Style="{StaticResource ListDescription}"/>
 
                                     <Label Grid.Column="0" Grid.Row="2"
                                            Text="Score" 
-                                           Style="{StaticResource ListStyle}"/>
+                                           Style="{StaticResource ListDescription}"/>
 
                                     <Label Grid.Column="1" Grid.Row="2"
                                            Text="{Binding ScoreTotal}" 
-                                           Style="{StaticResource ListStyle}"/>
+                                           Style="{StaticResource ListDescription}"/>
 
                                 </Grid>
                             </Frame>
