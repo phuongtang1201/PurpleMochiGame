@@ -355,8 +355,8 @@
 
             <Style TargetType="ImageButton"
                  x:Key="HomeImageButton">
-                <Setter Property="WidthRequest" Value="190"/>
-                <Setter Property="HeightRequest" Value="40"/>
+                <Setter Property="WidthRequest" Value="153"/>
+                <Setter Property="HeightRequest" Value="49"/>
             </Style>
 
             <Style TargetType="ImageButton" x:Key="CancelUpdateDeleteImageButton">
