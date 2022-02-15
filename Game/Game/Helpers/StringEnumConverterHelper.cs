@@ -59,6 +59,18 @@ namespace Game.Helpers
                     value = "CurrentHealth";
                 if (value.Equals("Max Health"))
                     value = "MaxHealth";
+                if (value.Equals("Necklace"))
+                    value = "Necklass";
+                if (value.Equals("Primary Hand"))
+                    value = "PrimaryHand";
+                if (value.Equals("Off Hand"))
+                    value = "OffHand";
+                if (value.Equals("Right Pocket"))
+                    value = "RightFinger";
+                if (value.Equals("Left Pocket"))
+                    value = "LeftFinger";
+                if (value.Equals("Any Pocket"))
+                    value = "Finger";
                 var myReturn = Enum.Parse((targetType), value.ToString());
                 return myReturn;
             }

@@ -129,15 +129,22 @@ namespace Game.Models
         {
             get
             {
-                var myList = Enum.GetNames(typeof(ItemLocationEnum)).ToList();
-                var myReturn = myList.Where(a =>
-                                           a.ToString() != ItemLocationEnum.Unknown.ToString() &&
-                                            a.ToString() != ItemLocationEnum.Finger.ToString()
-                                            )
-                                            .OrderBy(a => a)
-                                            .ToList();
+                //var myList = Enum.GetNames(typeof(ItemLocationEnum)).ToList();
+                var myList = new List<string>();
+                foreach (ItemLocationEnum location in Enum.GetValues(typeof(ItemLocationEnum)))
+                {
+                    if (location != ItemLocationEnum.Unknown)
+                        myList.Add(location.ToMessage());
+                }
+                return myList;
+                //var myReturn = myList.Where(a =>
+                // a.ToString() != ItemLocationEnum.Unknown.ToString() &&
+                //   a.ToString() != ItemLocationEnum.Finger.ToString()
+                //   )
+                //   .OrderBy(a => a)
+                //   .ToList();
 
-                return myReturn;
+                // return myReturn;
             }
         }
 
