@@ -27,6 +27,7 @@ namespace Game.Views
         {
             await Navigation.PushAsync(new GamePage());
         }
+
         /// <summary>
 		/// Jump to the Scores
 		/// </summary>
@@ -36,6 +37,7 @@ namespace Game.Views
         {
             await Navigation.PushAsync(new ScoreIndexPage());
         }
+
         /// <summary>
 		/// Jump to the About page
 		/// </summary>
