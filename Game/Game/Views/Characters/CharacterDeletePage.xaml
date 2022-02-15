@@ -78,15 +78,19 @@
                                     <Label Grid.Column="0" Grid.Row="2"
                                        Text="Attribute"
                                        Style="{StaticResource GrayBoxStyle}"/>
+                                    
                                     <Label Grid.Column="1" Grid.Row="2"
                                        Text="Base Value" 
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="2" Grid.Row="2"
                                        Text="Level Bonus" 
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="3" Grid.Row="2"
                                        Text="Item Bonus" 
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="4" Grid.Row="2"
                                        Text="Total Value" 
                                        Style="{StaticResource StatisticsStyle}"/>
@@ -94,15 +98,19 @@
                                     <Label Grid.Column="0" Grid.Row="3"
                                        Text="Attack"
                                        Style="{StaticResource GrayBoxStyle}"/>
+                                    
                                     <Label Grid.Column="1" Grid.Row="3"
                                        Text="{Binding Data.Attack}" 
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="2" Grid.Row="3"
                                        Text="{Binding Data.GetAttackLevelBonus}" 
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="3" Grid.Row="3"
                                        Text="{Binding Data.GetAttackItemBonus}" 
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="4" Grid.Row="3"
                                        Text="{Binding Data.GetAttackTotal}" 
                                        Style="{StaticResource StatisticsStyle}"/>
@@ -110,15 +118,19 @@
                                     <Label Grid.Column="0" Grid.Row="4"
                                        Text="Defense"
                                        Style="{StaticResource GrayBoxStyle}"/>
+                                    
                                     <Label Grid.Column="1" Grid.Row="4"
                                        Text="{Binding Data.Defense}" 
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="2" Grid.Row="4"
                                        Text="{Binding Data.GetDefenseLevelBonus}" 
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="3" Grid.Row="4"
                                        Text="{Binding Data.GetDefenseItemBonus}" 
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="4" Grid.Row="4"
                                        Text="{Binding Data.GetDefenseTotal}" 
                                        Style="{StaticResource StatisticsStyle}"/>
@@ -126,15 +138,19 @@
                                     <Label Grid.Column="0" Grid.Row="5"
                                        Text="Speed"
                                        Style="{StaticResource GrayBoxStyle}"/>
+                                    
                                     <Label Grid.Column="1" Grid.Row="5"
                                        Text="{Binding Data.Speed}" 
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="2" Grid.Row="5"
                                        Text="{Binding Data.GetSpeedLevelBonus}" 
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="3" Grid.Row="5"
                                        Text="{Binding Data.GetSpeedItemBonus}" 
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="4" Grid.Row="5"
                                        Text="{Binding Data.GetSpeedTotal}" 
                                        Style="{StaticResource StatisticsStyle}"/>
@@ -142,15 +158,19 @@
                                     <Label Grid.Column="0" Grid.Row="6"
                                        Text="Max Health"
                                        Style="{StaticResource GrayBoxStyle}"/>
+                                    
                                     <Label Grid.Column="1" Grid.Row="6"
                                        Text="{Binding Data.MaxHealth}" 
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="2" Grid.Row="6"
                                        Text="{Binding Data.GetMaxHealthLevelBonus}" 
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="3" Grid.Row="6"
                                        Text="{Binding Data.GetMaxHealthItemBonus}"
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="4" Grid.Row="6"
                                        Text="{Binding Data.GetMaxHealthTotal}"
                                        Style="{StaticResource StatisticsStyle}"/>
@@ -158,15 +178,19 @@
                                     <Label Grid.Column="0" Grid.Row="7"
                                        Text="Damage"
                                        Style="{StaticResource GrayBoxStyle}"/>
+                                    
                                     <Label Grid.Column="1" Grid.Row="7"
                                        Text="-"
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="2" Grid.Row="7"
                                        Text="{Binding Data.GetDamageLevelBonus}"
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="3" Grid.Row="7"
                                        Text="{Binding Data.GetDamageItemBonusString}"
                                        Style="{StaticResource StatisticsStyle}"/>
+                                    
                                     <Label Grid.Column="4" Grid.Row="7"
                                        Text="{Binding Data.GetDamageTotalString}"
                                        Style="{StaticResource StatisticsStyle}"/>
@@ -182,12 +206,15 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="auto"/>
                             </Grid.ColumnDefinitions>
+                            
                             <BoxView Grid.Row="0" Grid.Column="0" 
                                      Grid.RowSpan="2"
                                      Style="{StaticResource YesNoBoxView}" />
+                            
                             <Label Grid.Column="0" Grid.Row="0"
                                    Text="Equipment" FontSize="Small"
                                    Padding="5" HorizontalOptions="Center" />
+                            
                             <FlexLayout Grid.Column="0" Grid.Row="1"
                                         Margin="20,0,20,0"
                                         Padding="10" Wrap="Wrap"
