@@ -64,6 +64,7 @@ namespace Game.Views
 
             _ = UpdatePageBindingContext();
         }
+
         /// <summary>
         /// Added all possible images for selection to ImagePicker
         /// </summary>
@@ -224,6 +225,7 @@ namespace Game.Views
         {
             AttackValue.Text = String.Format("{0}", e.NewValue);
         }
+
         /// <summary>
         /// Catch the change to the Slider for Attack
         /// </summary>
@@ -243,6 +245,7 @@ namespace Game.Views
         {
             DefenseValue.Text = String.Format("{0}", e.NewValue);
         }
+
         /// <summary>
         /// Catch the change to the Slider for Defense
         /// </summary>
@@ -262,6 +265,7 @@ namespace Game.Views
         {
             SpeedValue.Text = String.Format("{0}", e.NewValue);
         }
+
         /// <summary>
         /// Catch the change to the Slider for Speed
         /// </summary>
