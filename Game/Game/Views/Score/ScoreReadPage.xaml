@@ -12,168 +12,173 @@
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
-        <ScrollView 
-            Orientation="Vertical" 
-            HorizontalScrollBarVisibility="Never" 
-            VerticalScrollBarVisibility="Never" 
-            HorizontalOptions="CenterAndExpand">
-            <StackLayout Style="{StaticResource OuterBoxStack}">
+        <AbsoluteLayout HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="FillAndExpand">
 
-                <Frame Style="{StaticResource NameFrameStyle}">
+            <StackLayout Style="{StaticResource VerticalStack}"
+                        AbsoluteLayout.LayoutBounds="1,1,1,1" 
+                        AbsoluteLayout.LayoutFlags="All">
+                <ScrollView>
+                    <StackLayout Style="{StaticResource OuterBoxStack}">
 
-                    <Label Text="{Binding Data.Name}" 
+                        <Frame Style="{StaticResource NameFrameStyle}">
+
+                            <Label Text="{Binding Data.Name}" 
                                Style="{StaticResource HeaderStyle}"/>
-                </Frame>
+                        </Frame>
 
-                <Frame Style="{StaticResource GrayBoxFrame}">
+                        <Frame Style="{StaticResource GrayBoxFrame}">
 
-                    <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Vertical">
 
-                        <Label Text="Score Details"
+                                <Label Text="Score Details"
                                    Style="{StaticResource HeaderStyle}"/>
 
-                        <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label Text="Game Date:"
+                                <StackLayout Style="{StaticResource HorizontalStack}">
+                                    <Label Text="Game Date:"
                                        Style="{StaticResource GrayBoxStyle}"/>
 
-                            <Label Text="{Binding Data.GameDate}"
+                                    <Label Text="{Binding Data.GameDate}"
                                        Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
+                                </StackLayout>
 
-                        <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label Text="AutoBattle:"                      
+                                <StackLayout Style="{StaticResource HorizontalStack}">
+                                    <Label Text="AutoBattle:"                      
                                        Style="{StaticResource GrayBoxStyle}"/>
 
-                            <Label Text="{Binding Data.AutoBattle}"
+                                    <Label Text="{Binding Data.AutoBattle}"
                                        Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
+                                </StackLayout>
 
-                        <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label Text="Score:" 
-                                       Style="{StaticResource GrayBoxStyle}"/>
-                            
-                            <Label Text="{Binding Data.ScoreTotal}"
-                                       Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
-
-                        <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label Text="Number of Rounds:"                      
+                                <StackLayout Style="{StaticResource HorizontalStack}">
+                                    <Label Text="Score:" 
                                        Style="{StaticResource GrayBoxStyle}"/>
 
-                            <Label Text="{Binding Data.RoundCount}"
+                                    <Label Text="{Binding Data.ScoreTotal}"
                                        Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
+                                </StackLayout>
 
-                        <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label Text="Number of Turns:"  
+                                <StackLayout Style="{StaticResource HorizontalStack}">
+                                    <Label Text="Number of Rounds:"                      
                                        Style="{StaticResource GrayBoxStyle}"/>
 
-                            <Label Text="{Binding Data.TurnCount}"
+                                    <Label Text="{Binding Data.RoundCount}"
                                        Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
+                                </StackLayout>
 
-                        <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label Text="Number of Mutant Food Slain:"
-                                       Style="{StaticResource GrayBoxStyle}"/>
-                            
-                            <Label Text="{Binding Data.MonsterSlainNumber}"
-                                       Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
-
-                        <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label Text="Total Experience Gained:"
+                                <StackLayout Style="{StaticResource HorizontalStack}">
+                                    <Label Text="Number of Turns:"  
                                        Style="{StaticResource GrayBoxStyle}"/>
 
-                            <Label Text="{Binding Data.ExperienceGainedTotal}" 
+                                    <Label Text="{Binding Data.TurnCount}"
                                        Style="{StaticResource ValueStyle}"/>
-                        </StackLayout>
+                                </StackLayout>
 
-                    </StackLayout>
-                </Frame>
-                <Frame Style="{StaticResource GrayBoxFrame}">
+                                <StackLayout Style="{StaticResource HorizontalStack}">
+                                    <Label Text="Number of Mutant Food Slain:"
+                                       Style="{StaticResource GrayBoxStyle}"/>
 
-                    <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding Data.MonsterSlainNumber}"
+                                       Style="{StaticResource ValueStyle}"/>
+                                </StackLayout>
 
-                        <Label Text="Chefs Killed"
+                                <StackLayout Style="{StaticResource HorizontalStack}">
+                                    <Label Text="Total Experience Gained:"
+                                       Style="{StaticResource GrayBoxStyle}"/>
+
+                                    <Label Text="{Binding Data.ExperienceGainedTotal}" 
+                                       Style="{StaticResource ValueStyle}"/>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+                        <Frame Style="{StaticResource GrayBoxFrame}">
+
+                            <StackLayout Orientation="Vertical">
+
+                                <Label Text="Chefs Killed"
                                    Style="{StaticResource HeaderStyle}"/>
-                        
-                        <Label Text="{Binding Data.CharacterAtDeathList}" 
+
+                                <Label Text="{Binding Data.CharacterAtDeathList}" 
                                    Style="{StaticResource ValueStyle}"/>
 
-                    </StackLayout>
-                </Frame>
+                            </StackLayout>
+                        </Frame>
 
-                <Frame Style="{StaticResource GrayBoxFrame}">
+                        <Frame Style="{StaticResource GrayBoxFrame}">
 
-                    <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Vertical">
 
-                        <Label Text="Mutant Food Killed"
+                                <Label Text="Mutant Food Killed"
                                    Style="{StaticResource HeaderStyle}"/>
-                        <!--<Label Text="{Binding Data.MonstersKilledList}" 
+                                <!--<Label Text="{Binding Data.MonstersKilledList}" 
                                    Style="{StaticResource ValueStyle}"/>-->
 
-                        <CollectionView x:Name="MonstersListView" 
+                                <CollectionView x:Name="MonstersListView" 
                                       Style="{StaticResource IndexStyle}"
                                       ItemsSource="{Binding MonsterModelDeathList}">
-                            <!--IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                                    <!--IsRefreshing="{Binding IsBusy, Mode=OneWay}"
                                       RefreshCommand="{Binding LoadItemsCommand}"
-                                      CachingStrategy="RecycleElement"--><!-->-->
+                                      CachingStrategy="RecycleElement"-->
+                                    <!-->-->
 
-                            <CollectionView.ItemTemplate>
-                                <DataTemplate>
-                                    <ViewCell>
-                                        <Grid>
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition Height="1" />
-                                                <RowDefinition Height="*" />
-                                                <RowDefinition Height="1" />
-                                            
-                                            </Grid.RowDefinitions>
-                                            
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="*" />
-                                                <ColumnDefinition Width="2" />
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="1" />
+                                                        <RowDefinition Height="*" />
+                                                        <RowDefinition Height="1" />
 
-                                                
-                                            </Grid.ColumnDefinitions>
+                                                    </Grid.RowDefinitions>
+
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*" />
+                                                        <ColumnDefinition Width="2" />
+
+
+                                                    </Grid.ColumnDefinitions>
                                                     <Image Source="{Binding ImageURI}" 
                                                    Style="{StaticResource ImageSmallStyle}"
                                                     Aspect="AspectFit"
                                                            BackgroundColor="Crimson"/>
-                                        </Grid>
-                                        
-                                    </ViewCell>
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-                    </StackLayout>
+                                                </Grid>
 
-                </Frame>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </StackLayout>
 
-                <Frame Style="{StaticResource GrayBoxFrame}">
+                        </Frame>
 
-                    <StackLayout Orientation="Vertical">
-                        <Label Text="Equipment Dropped"
+                        <Frame Style="{StaticResource GrayBoxFrame}">
+
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="Equipment Dropped"
                                    Style="{StaticResource HeaderStyle}"/>
-                        <Label Text="{Binding Data.ItemsDroppedList}"
+                                <Label Text="{Binding Data.ItemsDroppedList}"
                                    Style="{StaticResource ValueStyle}"/>
-                    </StackLayout>
+                            </StackLayout>
 
-                </Frame>
+                        </Frame>
 
-                <StackLayout Style="{StaticResource HorizontalStack}" 
+                        <StackLayout Style="{StaticResource HorizontalStack}" 
                             HorizontalOptions="Center">
 
-                    <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
+                            <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
                                          Source="delete.png"
                                          Clicked="Delete_Clicked"/>
 
-                    <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
+                            <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
                                          Source="update.png"
                                          Clicked="Update_Clicked"/>
 
-                </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
             </StackLayout>
-        </ScrollView>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
