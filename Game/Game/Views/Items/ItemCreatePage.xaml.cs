@@ -53,9 +53,9 @@ namespace Game.Views
 
             //Added item to ImagePicker
             GenerateImagePicker();
-
             
         }
+
         /// <summary>
         /// Added all possible images for selection to ImagePicker
         /// </summary>
@@ -94,6 +94,7 @@ namespace Game.Views
                 _ = await Navigation.PopModalAsync();
             }
         }
+
         /// <summary>
         /// Check all pickers: Image, Location, Attribute is not null
         /// </summary>
@@ -112,7 +113,6 @@ namespace Game.Views
             {
                 Warning_Select_Message.IsVisible = true;
             }
-
 
         }
 
@@ -241,8 +241,9 @@ namespace Game.Views
         public void Image_OnPickerValueChanged(object sender, EventArgs e)
         {
             ViewModel.Data.ImageURI = ImagePicker.SelectedItem.ToString();
-            LargeImage.Source = ViewModel.Data.ImageURI;
-           
+
+            //The large image will change when the source changes
+            LargeImage.Source = ViewModel.Data.ImageURI;      
         }
     }
 }
