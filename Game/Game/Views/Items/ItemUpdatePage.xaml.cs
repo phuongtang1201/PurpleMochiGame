@@ -90,7 +90,7 @@ namespace Game.Views
             //chek all pickers not null
             CheckPickerNotNull();
 
-            // Check the name and description is not null
+            // Check the name and description and all pickers is not null
             if (!Warning_Not_Null_Message.IsVisible && !Warning_Select_Message.IsVisible)
             {
                 MessagingCenter.Send(this, "Update", ViewModel.Data);
@@ -110,6 +110,7 @@ namespace Game.Views
             ViewModel.Data.Update(DataCopy);
             _ = await Navigation.PopModalAsync();
         }
+
         /// <summary>
         /// Check all pickers: Image, Location, Attribute is not null
         /// </summary>
@@ -129,8 +130,8 @@ namespace Game.Views
                 Warning_Select_Message.IsVisible = true;
             }
 
-
         }
+
         /// <summary>
         /// Check the entry box to guarantee entering a not null value
         /// </summary>
@@ -162,6 +163,7 @@ namespace Game.Views
             }
 
         }
+
         /// <summary>
         /// Catch the change to the Slider for Range
         /// </summary>
