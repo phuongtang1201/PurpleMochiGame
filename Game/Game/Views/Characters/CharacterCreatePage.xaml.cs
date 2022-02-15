@@ -52,6 +52,10 @@ namespace Game.Views
             Warning_Not_Null_Message.Text = "Please enter a valid input.";
             Warning_Not_Null_Message.IsVisible = false;
 
+            //This message will show if either image, location or attribute box is not selected
+            Warning_Select_Message.Text = "Please select an item.";
+            Warning_Select_Message.IsVisible = false;
+
             this.ViewModel.Data.Level = 1;
             // LevelPicker.SelectedIndex = ViewModel.Data.Level - 1;
 
@@ -165,9 +169,11 @@ namespace Game.Views
             {
                 ViewModel.Data.ImageURI = new CharacterModel().ImageURI;
             }
+            //Check if image is selected
+            CheckPickerNotNull();
 
-            //Does not allow to save if either null Name or Description
-            if (!Warning_Not_Null_Message.IsVisible)
+            //Does not allow to save if either null Name or Description or image
+            if (!Warning_Not_Null_Message.IsVisible && !Warning_Select_Message.IsVisible)
             {
                 MessagingCenter.Send(this, "Create", ViewModel.Data);
                 _ = await Navigation.PopModalAsync();
@@ -183,6 +189,20 @@ namespace Game.Views
         {
             _ = await Navigation.PopModalAsync();
         }
+
+        /// <summary>
+        /// Check all pickers: Image is not null
+        /// </summary>
+        public void CheckPickerNotNull()
+        {
+            Warning_Select_Message.IsVisible = false;
+
+            if (ImagePicker.SelectedIndex == -1)
+            {
+                Warning_Select_Message.IsVisible = true;
+            }
+        }
+
         /// <summary>
         /// Save the selected item to ImageURI
         /// </summary>
