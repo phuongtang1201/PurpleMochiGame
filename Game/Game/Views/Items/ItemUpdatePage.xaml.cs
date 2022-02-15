@@ -38,8 +38,12 @@ namespace Game.Views
             this.ViewModel.Title = "Update " + data.Title;
 
             //This message will show if either the name entry box or description entry box is empty
-            Warning_Not_Null_Message.Text = "Please give us a valid input.";
+            Warning_Not_Null_Message.Text = "Please enter a valid input.";
             Warning_Not_Null_Message.IsVisible = false;
+
+            //This message will show if either the image, location or attribute is not selected
+            Warning_Select_Message.Text = "Please select an item.";
+            Warning_Select_Message.IsVisible = false;
 
             //Need to make the SelectedItem a string, so it can select the correct item.
             LocationPicker.SelectedItem = data.Data.Location.ToString();
@@ -87,7 +91,7 @@ namespace Game.Views
             CheckPickerNotNull();
 
             // Check the name and description is not null
-            if (!Warning_Not_Null_Message.IsVisible)
+            if (!Warning_Not_Null_Message.IsVisible && !Warning_Select_Message.IsVisible)
             {
                 MessagingCenter.Send(this, "Update", ViewModel.Data);
                 _ = await Navigation.PopModalAsync();
@@ -111,18 +115,18 @@ namespace Game.Views
         /// </summary>
         public void CheckPickerNotNull()
         {
-            Warning_Not_Null_Message.IsVisible = false;
+            Warning_Select_Message.IsVisible = false;
             if (!string.IsNullOrEmpty(LocationPicker.SelectedItem.ToString()) && LocationPicker.SelectedItem.ToString() == "Unknown")
             {
-                Warning_Not_Null_Message.IsVisible = true;
+                Warning_Select_Message.IsVisible = true;
             }
             if (!string.IsNullOrEmpty(AttributePicker.SelectedItem.ToString()) && AttributePicker.SelectedItem.ToString() == "Unknown")
             {
-                Warning_Not_Null_Message.IsVisible = true;
+                Warning_Select_Message.IsVisible = true;
             }
             if (ImagePicker.SelectedIndex == -1)
             {
-                Warning_Not_Null_Message.IsVisible = true;
+                Warning_Select_Message.IsVisible = true;
             }
 
 
@@ -200,9 +204,7 @@ namespace Game.Views
             if (LocationPicker.SelectedIndex == 5)
             {
                 RangeDamageGrid.IsVisible = true;
-            }
-
-            
+            }  
         }
 
         /// <summary>
@@ -214,7 +216,6 @@ namespace Game.Views
         {
             ViewModel.Data.ImageURI = ImagePicker.SelectedItem.ToString();
             LargeImage.Source = ViewModel.Data.ImageURI;
-            
         }
 
     }
