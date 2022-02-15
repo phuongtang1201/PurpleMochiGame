@@ -51,20 +51,19 @@
 
                                     <Label Grid.Column="1" Grid.Row="1"
                                            Text="{Binding Description}" 
-                                           Style="{StaticResource ListStyle}"
-                                           FontSize="Micro"/>
+                                           Style="{StaticResource ListDescription}"/>
 
                                     <StackLayout Grid.Column="1" Grid.Row="2"
                                                  Orientation="Horizontal">
 
                                         <Label Text="{Binding Location}"
-                                               Style="{StaticResource ListStyle}" />
+                                               Style="{StaticResource ListDescription}" />
 
                                         <Label Text="{Binding Attribute}" 
-                                               Style="{StaticResource ListStyle}"/>
+                                               Style="{StaticResource ListDescription}"/>
 
                                         <Label Text="{Binding Value}" 
-                                               Style="{StaticResource ListStyle}"/>
+                                               Style="{StaticResource ListDescription}"/>
 
                                     </StackLayout>
 
