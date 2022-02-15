@@ -14,12 +14,10 @@
 
             <!--
                 Light
-                    #BF895A
-                    #D9C6B0
-                    #733612
-                    #8C3D20
-                    #400D01
+                    #5b98b2
+                    #bbbbbe
                 Dark
+                    #000000
                 -->
 
             <Color x:Key="PageBackgroundColor">#5b98b2</Color> <!--page-->
