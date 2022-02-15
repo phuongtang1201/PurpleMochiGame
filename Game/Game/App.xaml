@@ -108,6 +108,11 @@
                 <Setter Property="FontSize" Value="Large" />
             </Style>
 
+            <Style TargetType="Label" x:Key="ListDescription"
+                   BasedOn="{StaticResource ListStyle}">
+                <Setter Property="FontSize" Value="Medium" />
+            </Style>
+
             <Style TargetType="Label" x:Key="HeaderStyle"
                    BasedOn="{StaticResource LabelBaseStyle}">
                 <Setter Property="BackgroundColor" Value="Transparent" />
