@@ -363,6 +363,7 @@
             <Style TargetType="ImageButton" x:Key="CancelUpdateDeleteImageButton">
                 <Setter Property="WidthRequest" Value="120"/>
                 <Setter Property="HeightRequest" Value="40"/>
+                <Setter Property="Margin" Value="10" />
             </Style>
 
             <!-- BoxView -->
