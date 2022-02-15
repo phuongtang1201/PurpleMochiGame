@@ -40,7 +40,8 @@
                             <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
                                    Style="{StaticResource EntryStyle}"
                                    TextChanged="Entry_CheckNotEmpty"/>
-                            </Frame>
+                            
+                        </Frame>
 
                         <Frame Style="{StaticResource DescriptionEntryFrameStyle}"
                                    Margin="40,0,40,0">
@@ -81,10 +82,13 @@
                                     <Frame Grid.Row="1" Grid.Column="1"
                                            Grid.ColumnSpan="2"
                                            Style="{StaticResource EntryFrameStyle}">
+                                        
                                         <Picker SelectedItem="{Binding SelectedItemProperty}" 
                                                 SelectedIndexChanged="Image_OnPickerValueChanged"
                                                 x:Name="ImagePicker" MinimumWidthRequest="150"/>
+                                        
                                     </Frame>
+                                    
                                     <Label Grid.Row="2" Grid.Column="0"
                                            Text="Location*" 
                                            Style="{StaticResource LabelStyle}"/>
@@ -92,12 +96,12 @@
                                     <Frame Grid.Row="2" Grid.Column="1"
                                            Grid.ColumnSpan="2"
                                            Style="{StaticResource EntryFrameStyle}">
+
                                         <Picker ItemsSource="{x:Static local:ItemLocationEnumHelper.GetListCharacter}" 
                                                 SelectedItem="{Binding Data.Location, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
                                                 SelectedIndexChanged="RangeDamage_OnPickerValueChanged"
                                                 x:Name="LocationPicker" MinimumWidthRequest="150"/>
 
-                                        
                                     </Frame>
 
                                     <Label Grid.Row="3" Grid.Column="0" 
@@ -140,7 +144,6 @@
                                            Style="{StaticResource SliderValueStyle}"
                                            Text="{Binding Data.Value, Mode=TwoWay}" 
                                            x:Name="ValueValue"/>
-                                    
 
                                 </Grid>
                                 <Grid RowSpacing="1" ColumnSpacing="2"
@@ -155,6 +158,7 @@
                                         <ColumnDefinition Width="230"/>
                                         <ColumnDefinition Width="auto"/>
                                     </Grid.ColumnDefinitions>
+                                    
                                     <Label Grid.Row="0" Grid.Column="0" 
                                            Text="Range" 
                                            Style="{StaticResource GrayBoxStyle}" />
@@ -169,7 +173,6 @@
                                            Style="{StaticResource SliderValueStyle}"
                                            Text="{Binding Data.Range, Mode=TwoWay}" 
                                            x:Name="RangeValue"/>
-
 
                                     <Label Grid.Row="1" Grid.Column="0"
                                            Text="Damage" 
