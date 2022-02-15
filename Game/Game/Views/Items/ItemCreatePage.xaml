@@ -109,7 +109,6 @@
 
                                         <Picker ItemsSource="{x:Static local_enum:AttributeEnumHelper.GetListCharacter}" 
                                                 SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}"  
-                                                SelectedIndexChanged="Attribute_OnPickerValueChanged"
                                                 x:Name="AttributePicker" MinimumWidthRequest="150"/>
                                     </Frame>
  
