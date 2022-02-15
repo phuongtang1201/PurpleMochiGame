@@ -94,6 +94,7 @@ namespace Game.Views
 
             return true;
         }
+
         /// <summary>
         /// Check the entry box to guarantee entering a not null value
         /// </summary>
@@ -120,6 +121,7 @@ namespace Game.Views
                 Warning_Not_Null_Message.IsVisible = false;
             }
         }
+
             /// <summary>
             /// The Level selected from the list
             /// Need to recalculate Max Health
@@ -212,6 +214,7 @@ namespace Game.Views
         {
             AttackValue.Text = string.Format("{0}", Convert.ToInt32(e.NewValue));
         }
+
         /// <summary>
         /// Catch the change to the Stepper for Defense
         /// </summary>
@@ -221,6 +224,7 @@ namespace Game.Views
         {
             DefenseValue.Text = string.Format("{0}", e.NewValue);
         }
+
         /// <summary>
         /// Catch the change to the Slider for Defense
         /// </summary>
