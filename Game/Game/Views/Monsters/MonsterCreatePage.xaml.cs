@@ -94,6 +94,7 @@ namespace Game.Views
                 Warning_Select_Message.IsVisible = true;
             }
         }
+
         /// <summary>
         /// Check the entry box to guarantee entering a not null value
         /// </summary>
