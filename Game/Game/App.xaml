@@ -340,6 +340,7 @@
             <!-- ImageButton-->
             <Style TargetType="ImageButton" x:Key="YesNoImageButton">
                 <Setter Property="WidthRequest" Value="100"/>
+                <Setter Property="HeightRequest" Value="40"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property="VerticalOptions" Value="Center"/>
                 <Setter Property="Padding" Value="0,0,0,2" />
