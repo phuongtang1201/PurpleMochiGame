@@ -230,11 +230,7 @@ namespace Game.Views
             {
                 RangeDamageGrid.IsVisible = true;
             }
-
-            //Remove warning message if exists
-            CheckPickerNotNull();
         }
-        
 
         /// <summary>
         /// Save the selected item to ImageURI
