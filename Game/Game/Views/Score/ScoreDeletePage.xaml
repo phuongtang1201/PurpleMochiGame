@@ -94,6 +94,7 @@
                         <StackLayout>
                             <Label Text="Chefs killed"
                                    Style="{StaticResource HeaderStyle}"/>
+                            
                             <Label Text="{Binding Data.CharacterAtDeathList}" 
                                    Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
@@ -105,6 +106,7 @@
                         <StackLayout>
                             <Label Text="Mutant Food Killed"
                                    Style="{StaticResource HeaderStyle}"/>
+                            
                             <Label Text="{Binding Data.MonstersKilledList}" 
                                    Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
@@ -116,6 +118,7 @@
                         <StackLayout>
                             <Label Text="Equipment Dropped"
                                    Style="{StaticResource HeaderStyle}"/>
+                            
                             <Label Text="{Binding Data.ItemsDroppedList}"
                                    Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
@@ -132,6 +135,7 @@
                             <ColumnDefinition Width="150" />
                             <ColumnDefinition Width="150" />
                         </Grid.ColumnDefinitions>
+                        
                         <BoxView Grid.Row="0" Grid.Column="0" 
                                  Grid.RowSpan="2" Grid.ColumnSpan="2"
                                  Style="{StaticResource YesNoBoxView}"/>
