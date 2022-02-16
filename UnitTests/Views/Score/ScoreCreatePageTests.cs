@@ -123,5 +123,25 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
         }
+
+        [Test]
+        public void ScoreCreatePage_Score_OnSliderValueChanged_Default_Should_Pass()
+        {
+            // Arrange
+
+            page = new ScoreCreatePage(new GenericViewModel<ScoreModel>(new ScoreModel()));
+            var oldRange = 0.0;
+            var newRange = 1.0;
+
+            var args = new ValueChangedEventArgs(oldRange, newRange);
+
+            // Act
+            page.Score_OnSliderValueChanged(null, args);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
     }
 }
