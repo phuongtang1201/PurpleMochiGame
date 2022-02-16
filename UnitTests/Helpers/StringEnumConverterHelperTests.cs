@@ -131,6 +131,18 @@ namespace UnitTests.Helpers
         }
 
         [Test]
+        public void StringEnumConvertBack_String_Off_Hand_Should_Pass()
+        {
+            var myConverter = new StringEnumConverter();
+
+            var myObject = "Off Hand";
+            var Result = myConverter.ConvertBack(myObject, typeof(ItemLocationEnum), null, null);
+            var Expected = ItemLocationEnum.OffHand;
+
+            Assert.AreEqual(Expected, Result, TestContext.CurrentContext.Test.Name);
+        }
+
+        [Test]
         public void StringEnumConvertBack_Enum_Should_Skip()
         {
             var myConverter = new StringEnumConverter();
