@@ -195,6 +195,7 @@
                    BasedOn="{StaticResource MessageStyle}">
                 <Setter Property="Padding" Value="10,0,10,0"/>
                 <Setter Property="LineBreakMode" Value="WordWrap"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
             </Style>
 
             <!-- Image -->
