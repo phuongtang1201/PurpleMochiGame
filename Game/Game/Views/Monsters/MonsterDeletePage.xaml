@@ -156,10 +156,6 @@
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="auto" />
                             </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="150" />
-                                <ColumnDefinition Width="150" />
-                            </Grid.ColumnDefinitions>
 
                             <BoxView Grid.Row="0" Grid.Column="0" 
                                      Grid.RowSpan="2" Grid.ColumnSpan="2"
