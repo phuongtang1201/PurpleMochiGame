@@ -18,6 +18,9 @@ namespace Game.Views
         // View Model for Score
         public readonly GenericViewModel<ScoreModel> ViewModel;
 
+        // This uses the Instance so it can be shared with other Battle Pages as needed
+        public BattleEngineViewModel EngineViewModel = BattleEngineViewModel.Instance;
+
         // Empty Constructor for UTs
         public ScoreReadPage(bool UnitTest) { }
 
@@ -30,8 +33,91 @@ namespace Game.Views
         public ScoreReadPage(GenericViewModel<ScoreModel> data)
         {
             InitializeComponent();
+            DrawOutput();
 
             BindingContext = this.ViewModel = data;
+        }
+
+        /// <summary>
+        /// Draw data for
+        /// Character
+        /// Monster
+        /// Item
+        /// </summary>
+        public void DrawOutput()
+        {
+
+            // Draw the Characters
+            foreach (var data in EngineViewModel.Engine.EngineSettings.BattleScore.CharacterModelDeathList)
+            {
+                CharacterListFrame.Children.Add(CreateCharacterDisplayBox(data));
+            }
+
+            //// Draw the Monsters
+            //foreach (var data in EngineViewModel.Engine.EngineSettings.BattleScore.MonsterModelDeathList.Distinct())
+            //{
+            //    MonsterListFrame.Children.Add(CreateMonsterDisplayBox(data));
+            //}
+
+            //// Draw the Items
+            //foreach (var data in EngineViewModel.Engine.EngineSettings.BattleScore.ItemModelDropList.Distinct())
+            //{
+            //    ItemListFrame.Children.Add(CreateItemDisplayBox(data));
+            //}
+
+            // Update Values in the UI
+            //TotalKilled.Text = EngineViewModel.Engine.EngineSettings.BattleScore.MonsterModelDeathList.Count().ToString();
+            //TotalCollected.Text = EngineViewModel.Engine.EngineSettings.BattleScore.ItemModelDropList.Count().ToString();
+            //TotalScore.Text = EngineViewModel.Engine.EngineSettings.BattleScore.ExperienceGainedTotal.ToString();
+        }
+
+        /// <summary>
+        /// Return a stack layout for the Characters
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public StackLayout CreateCharacterDisplayBox(PlayerInfoModel data)
+        {
+            if (data == null)
+            {
+                data = new PlayerInfoModel();
+            }
+
+            // Hookup the image
+            var PlayerImage = new Image
+            {
+                Style = (Style)Application.Current.Resources["ImageBattleMediumStyle"],
+                Source = data.ImageURI
+            };
+
+            // Add the Level
+            //var PlayerLevelLabel = new Label
+            //{
+            //    Text = "Level : " + data.Level,
+            //    Style = (Style)Application.Current.Resources["ValueStyleMicro"],
+            //    HorizontalOptions = LayoutOptions.Center,
+            //    HorizontalTextAlignment = TextAlignment.Center,
+            //    Padding = 0,
+            //    LineBreakMode = LineBreakMode.TailTruncation,
+            //    CharacterSpacing = 1,
+            //    LineHeight = 1,
+            //    MaxLines = 1,
+            //};
+
+            // Put the Image Button and Text inside a layout
+            var PlayerStack = new StackLayout
+            {
+                Style = (Style)Application.Current.Resources["ScoreCharacterInfoBox"],
+                HorizontalOptions = LayoutOptions.Center,
+                Padding = 0,
+                Spacing = 0,
+                Children = {
+                    PlayerImage,
+                    //PlayerLevelLabel,
+                },
+            };
+
+            return PlayerStack;
         }
 
         /// <summary>

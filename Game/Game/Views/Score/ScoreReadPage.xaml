@@ -102,6 +102,11 @@
                                 <Label Text="{Binding Data.CharacterAtDeathList}" 
                                    Style="{StaticResource ValueStyle}"/>
 
+                                <FlexLayout x:Name="CharacterListFrame"
+                                    JustifyContent="Start"
+                                    AlignContent="Start"
+                                    Wrap="Wrap"/>
+
                             </StackLayout>
                         </Frame>
 
