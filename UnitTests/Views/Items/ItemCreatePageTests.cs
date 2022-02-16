@@ -237,5 +237,22 @@ namespace UnitTests.Views
             Assert.IsTrue(true); // Got to here, so it happened...
         }
 
+        [Test]
+        public void ItemCreatePage_Entry_CheckNotEmpty_Null_Description_Should_Pass()
+        {
+            // Arrange
+            page.ViewModel.Data.Description = null;
+
+            // Act
+            page.Entry_CheckNotEmpty(null, null);
+
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
+
     }
 }
