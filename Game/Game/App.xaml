@@ -640,6 +640,7 @@
                 <Setter Property="Maximum" Value="9"/>
                 <Setter Property="MinimumTrackColor" Value="Black"/>
                 <Setter Property="MaximumTrackColor" Value="Black"/>
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
                 <Setter Property="ThumbColor" Value="{StaticResource SecondaryBackgroundColor}" />
             </Style>
 
