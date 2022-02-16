@@ -183,6 +183,25 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
         }
-    
-}
+        [Test]
+        public void ItemCreatePage_Range_OnSliderValueChanged_Default_Should_Pass()
+        {
+            // Arrange
+
+            page = new ItemCreatePage();
+            var oldRange = 0.0;
+            var newRange = 1.0;
+
+            var args = new ValueChangedEventArgs(oldRange, newRange);
+
+            // Act
+            page.Range_OnSliderValueChanged(null, args);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
+    }
 }
