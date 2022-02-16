@@ -145,5 +145,24 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
         }
+
+        [Test]
+        public void MonsterCreatePage_Speed_OnSliderValueChanged_Default_Should_Pass()
+        {
+            // Arrange
+            page = new MonsterCreatePage(new GenericViewModel<MonsterModel>(new MonsterModel()));
+            var oldSpeed = 0.0;
+            var newSpeed = 1.0;
+
+            var args = new ValueChangedEventArgs(oldSpeed, newSpeed);
+
+            // Act
+            page.Speed_OnSliderValueChanged(null, args);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
     }
 }
