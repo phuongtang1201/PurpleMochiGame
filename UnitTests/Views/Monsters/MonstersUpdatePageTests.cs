@@ -107,5 +107,24 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
         }
+
+        [Test]
+        public void MonsterUpdatePage_Attack_OnSliderValueChanged_Default_Should_Pass()
+        {
+            // Arrange
+            page = new MonsterUpdatePage(new GenericViewModel<MonsterModel>(new MonsterModel()));
+            var oldAttack = 0.0;
+            var newAttack = 1.0;
+
+            var args = new ValueChangedEventArgs(oldAttack, newAttack);
+
+            // Act
+            page.Attack_OnSliderValueChanged(null, args);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
     }
 }
