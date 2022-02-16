@@ -99,9 +99,6 @@
                                 <Label Text="Chefs Killed"
                                    Style="{StaticResource HeaderStyle}"/>
 
-                                <Label Text="{Binding Data.CharacterAtDeathList}" 
-                                   Style="{StaticResource ValueStyle}"/>
-
                                 <FlexLayout x:Name="CharacterListFrame"
                                     JustifyContent="Start"
                                     AlignContent="Start"
