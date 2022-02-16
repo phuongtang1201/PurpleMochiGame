@@ -47,6 +47,9 @@ namespace Game.Views
             //Added item to ImagePicker
             GenerateImagePicker();
 
+          //Binding image picker with the current value of ImageURI
+            ImagePicker.SelectedItem = ViewModel.Data?.ImageURI;
+
             _ = UpdatePageBindingContext();
         }
 
