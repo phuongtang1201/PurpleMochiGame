@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Linq;
 
 using Game.ViewModels;
 using Game.Models;
@@ -53,10 +54,19 @@ namespace Game.Views
                 CharacterListFrame.Children.Add(CreateCharacterDisplayBox(data));
             }
 
+            // Count duplicate Monsters
+            var Monsters = from monsters in EngineViewModel.Engine.EngineSettings.BattleScore.MonsterModelDeathList
+                           group monsters by monsters.ImageURI into duplicates
+                           orderby duplicates.Key
+                           let count = duplicates.Count()
+                           select new { Value = duplicates.First(), Count = count };
+
             // Draw the Monsters
-            foreach (var data in EngineViewModel.Engine.EngineSettings.BattleScore.MonsterModelDeathList)
+            for(var index = 0; index < Monsters.Count(); index++)
             {
-                MonsterListFrame.Children.Add(CreateMonsterDisplayBox(data));
+                var data = Monsters.ElementAt(index).Value;
+                var count = Monsters.ElementAt(index).Count;
+                MonsterListFrame.Children.Add(CreateMonsterDisplayBox(data, count));
             }
 
             // Draw the Items
@@ -125,7 +135,7 @@ namespace Game.Views
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public StackLayout CreateMonsterDisplayBox(PlayerInfoModel data)
+        public StackLayout CreateMonsterDisplayBox(PlayerInfoModel data, int count)
         {
             if (data == null)
             {
@@ -139,19 +149,19 @@ namespace Game.Views
                 Source = data.ImageURI
             };
 
-            //// Add the Level
-            //var PlayerLevelLabel = new Label
-            //{
-            //    Text = "Level : " + data.Level,
-            //    Style = (Style)Application.Current.Resources["ValueStyleMicro"],
-            //    HorizontalOptions = LayoutOptions.Center,
-            //    HorizontalTextAlignment = TextAlignment.Center,
-            //    Padding = 0,
-            //    LineBreakMode = LineBreakMode.TailTruncation,
-            //    CharacterSpacing = 1,
-            //    LineHeight = 1,
-            //    MaxLines = 1,
-            //};
+            // Add the number of duplicates for this monster
+            var PlayerDuplicatesLabel = new Label
+            {
+                Text = " x " + count,
+                Style = (Style)Application.Current.Resources["ValueStyleMicro"],
+                HorizontalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.Center,
+                Padding = 0,
+                LineBreakMode = LineBreakMode.TailTruncation,
+                CharacterSpacing = 1,
+                LineHeight = 1,
+                MaxLines = 1,
+            };
 
             // Put the Image Button and Text inside a layout
             var PlayerStack = new StackLayout
@@ -162,7 +172,7 @@ namespace Game.Views
                 Spacing = 0,
                 Children = {
                     PlayerImage,
-                    //PlayerLevelLabel,
+                    PlayerDuplicatesLabel,
                 },
             };
 
