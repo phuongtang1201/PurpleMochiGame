@@ -252,6 +252,25 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
         }
+        [Test]
+        public void ItemCreatePage_Image_OnPickerValueChanged_Default_Should_Pass()
+        {
+            // Arrange
+           
+            page = new ItemCreatePage();
+            var oldValue = 0.0;
+            var newValue = 1.0;
+
+            var args = new ValueChangedEventArgs(oldValue, newValue);
+
+            // Act
+            page.Image_OnPickerValueChanged(null, args);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
 
 
     }
