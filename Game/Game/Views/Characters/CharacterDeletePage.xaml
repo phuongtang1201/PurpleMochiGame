@@ -243,11 +243,13 @@
 
                             <ImageButton Grid.Row="1" Grid.Column="0"
                                          Source="yes.png"
+                                         HorizontalOptions="End"
                                          Clicked="Delete_Clicked"
                                          Style="{StaticResource YesNoImageButton}"/>
 
                             <ImageButton Grid.Row="1" Grid.Column="1"
                                          Source="no.png"
+                                         HorizontalOptions="Start"
                                          Clicked="Cancel_Clicked"
                                          Style="{StaticResource YesNoImageButton}"/>
 
