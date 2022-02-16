@@ -130,8 +130,6 @@
                             <StackLayout Orientation="Vertical">
                                 <Label Text="Equipment Dropped"
                                    Style="{StaticResource HeaderStyle}"/>
-                                <Label Text="{Binding Data.ItemsDroppedList}"
-                                   Style="{StaticResource ValueStyle}"/>
 
                                 <FlexLayout x:Name="ItemListFrame"
                                     JustifyContent="Start"
