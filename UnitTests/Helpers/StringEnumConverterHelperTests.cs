@@ -95,6 +95,18 @@ namespace UnitTests.Helpers
         }
 
         [Test]
+        public void StringEnumConvertBack_String_Max_Health_Should_Pass()
+        {
+            var myConverter = new StringEnumConverter();
+
+            var myObject = "Max Health";
+            var Result = myConverter.ConvertBack(myObject, typeof(AttributeEnum), null, null);
+            var Expected = AttributeEnum.MaxHealth;
+
+            Assert.AreEqual(Expected, Result, TestContext.CurrentContext.Test.Name);
+        }
+
+        [Test]
         public void StringEnumConvertBack_Enum_Should_Skip()
         {
             var myConverter = new StringEnumConverter();
