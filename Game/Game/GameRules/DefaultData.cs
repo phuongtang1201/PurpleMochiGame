@@ -345,7 +345,7 @@ namespace Game.GameRules
                     Attack = 1,
                     Defense = 3,
                     Speed = 7,
-                    ImageURI = "chefyellow100px.png",
+                    ImageURI = "chefyellow100px2x.png",
                     Head = HeadString,
                     Necklass = NecklassString,
                     PrimaryHand = PrimaryHandString,
