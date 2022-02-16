@@ -368,7 +368,6 @@
 
             <!-- BoxView -->
             <Style TargetType="BoxView" x:Key="YesNoBoxView">
-                <Setter Property="Color" Value="{StaticResource PrimaryBackgroundColor}"/>
                 <Setter Property="CornerRadius" Value="5"/>
             </Style>
 
