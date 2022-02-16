@@ -59,11 +59,11 @@ namespace Game.Views
                 MonsterListFrame.Children.Add(CreateMonsterDisplayBox(data));
             }
 
-            //// Draw the Items
-            //foreach (var data in EngineViewModel.Engine.EngineSettings.BattleScore.ItemModelDropList.Distinct())
-            //{
-            //    ItemListFrame.Children.Add(CreateItemDisplayBox(data));
-            //}
+            // Draw the Items
+            foreach (var data in EngineViewModel.Engine.EngineSettings.BattleScore.ItemModelDropList)
+            {
+                ItemListFrame.Children.Add(CreateItemDisplayBox(data));
+            }
 
             // Update Values in the UI
             //TotalKilled.Text = EngineViewModel.Engine.EngineSettings.BattleScore.MonsterModelDeathList.Count().ToString();
@@ -163,6 +163,40 @@ namespace Game.Views
                 Children = {
                     PlayerImage,
                     //PlayerLevelLabel,
+                },
+            };
+
+            return PlayerStack;
+        }
+
+        /// <summary>
+        /// Return a stack layout with the Player information inside
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public StackLayout CreateItemDisplayBox(ItemModel data)
+        {
+            if (data == null)
+            {
+                data = new ItemModel();
+            }
+
+            // Hookup the image
+            var PlayerImage = new Image
+            {
+                Style = (Style)Application.Current.Resources["ImageBattleSmallStyle"],
+                Source = data.ImageURI
+            };
+
+            // Put the Image Button and Text inside a layout
+            var PlayerStack = new StackLayout
+            {
+                Style = (Style)Application.Current.Resources["ScoreItemInfoBox"],
+                HorizontalOptions = LayoutOptions.Center,
+                Padding = 0,
+                Spacing = 0,
+                Children = {
+                    PlayerImage,
                 },
             };
 

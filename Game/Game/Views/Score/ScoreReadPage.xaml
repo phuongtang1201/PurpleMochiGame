@@ -170,6 +170,11 @@
                                    Style="{StaticResource HeaderStyle}"/>
                                 <Label Text="{Binding Data.ItemsDroppedList}"
                                    Style="{StaticResource ValueStyle}"/>
+
+                                <FlexLayout x:Name="ItemListFrame"
+                                    JustifyContent="Start"
+                                    AlignContent="Start"
+                                    Wrap="Wrap"/>
                             </StackLayout>
 
                         </Frame>
