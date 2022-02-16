@@ -119,6 +119,11 @@
                                 <!--<Label Text="{Binding Data.MonstersKilledList}" 
                                    Style="{StaticResource ValueStyle}"/>-->
 
+                                <FlexLayout x:Name="MonsterListFrame"
+                                    JustifyContent="Start"
+                                    AlignContent="Start"
+                                    Wrap="Wrap"/>
+
                                 <CollectionView x:Name="MonstersListView" 
                                       Style="{StaticResource IndexStyle}"
                                       ItemsSource="{Binding MonsterModelDeathList}">

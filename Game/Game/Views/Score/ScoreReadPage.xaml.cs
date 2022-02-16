@@ -53,11 +53,11 @@ namespace Game.Views
                 CharacterListFrame.Children.Add(CreateCharacterDisplayBox(data));
             }
 
-            //// Draw the Monsters
-            //foreach (var data in EngineViewModel.Engine.EngineSettings.BattleScore.MonsterModelDeathList.Distinct())
-            //{
-            //    MonsterListFrame.Children.Add(CreateMonsterDisplayBox(data));
-            //}
+            // Draw the Monsters
+            foreach (var data in EngineViewModel.Engine.EngineSettings.BattleScore.MonsterModelDeathList)
+            {
+                MonsterListFrame.Children.Add(CreateMonsterDisplayBox(data));
+            }
 
             //// Draw the Items
             //foreach (var data in EngineViewModel.Engine.EngineSettings.BattleScore.ItemModelDropList.Distinct())
@@ -108,6 +108,55 @@ namespace Game.Views
             var PlayerStack = new StackLayout
             {
                 Style = (Style)Application.Current.Resources["ScoreCharacterInfoBox"],
+                HorizontalOptions = LayoutOptions.Center,
+                Padding = 0,
+                Spacing = 0,
+                Children = {
+                    PlayerImage,
+                    //PlayerLevelLabel,
+                },
+            };
+
+            return PlayerStack;
+        }
+
+        /// <summary>
+        /// Return a stack layout for the Monsters
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public StackLayout CreateMonsterDisplayBox(PlayerInfoModel data)
+        {
+            if (data == null)
+            {
+                data = new PlayerInfoModel();
+            }
+
+            // Hookup the image
+            var PlayerImage = new Image
+            {
+                Style = (Style)Application.Current.Resources["PlayerBattleSmallStyle"],
+                Source = data.ImageURI
+            };
+
+            //// Add the Level
+            //var PlayerLevelLabel = new Label
+            //{
+            //    Text = "Level : " + data.Level,
+            //    Style = (Style)Application.Current.Resources["ValueStyleMicro"],
+            //    HorizontalOptions = LayoutOptions.Center,
+            //    HorizontalTextAlignment = TextAlignment.Center,
+            //    Padding = 0,
+            //    LineBreakMode = LineBreakMode.TailTruncation,
+            //    CharacterSpacing = 1,
+            //    LineHeight = 1,
+            //    MaxLines = 1,
+            //};
+
+            // Put the Image Button and Text inside a layout
+            var PlayerStack = new StackLayout
+            {
+                Style = (Style)Application.Current.Resources["ScoreMonsterInfoBox"],
                 HorizontalOptions = LayoutOptions.Center,
                 Padding = 0,
                 Spacing = 0,
