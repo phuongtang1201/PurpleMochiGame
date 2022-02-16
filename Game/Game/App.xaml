@@ -372,6 +372,11 @@
                 <Setter Property="CornerRadius" Value="5"/>
             </Style>
 
+            <Style TargetType="BoxView" x:Key="FlexLayoutBoxView">
+                <Setter Property="Color" Value="{StaticResource PrimaryBackgroundColor}"/>
+                <Setter Property="CornerRadius" Value="5"/>
+            </Style>
+
             <!-- Stack Layouts -->
             <Style TargetType="StackLayout" x:Key="HorizontalStack">
                 <Setter Property="Orientation" Value="Horizontal" />
