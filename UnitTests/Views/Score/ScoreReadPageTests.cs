@@ -106,5 +106,21 @@ namespace UnitTests.Views
             // Assert
             Assert.IsNotNull(newStack);
         }
+
+        [Test]
+        public void ScoreReadPage_Create_Item_Display_Box_Data_Null_Should_Pass()
+        {
+            // Arrange
+            ItemModel data = null;
+            // Act
+            StackLayout newStack = CreateItemDisplayBox(data, 1);
+
+            // Reset
+
+            // Assert
+            Assert.IsNotNull(newStack);
+        }
+
+
     }
 }
