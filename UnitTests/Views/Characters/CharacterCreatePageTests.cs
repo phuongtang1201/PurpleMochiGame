@@ -399,5 +399,27 @@ namespace UnitTests.Views
             Assert.IsTrue(true); // Got to here, so it happened...
         }
 
+        [Test]
+        public void CharacterCreatePage_Image_OnPickerValueChanged_Default_Should_Pass()
+        {
+            // Arrange
+            var data = new CharacterModel();
+            var ViewModel = new GenericViewModel<CharacterModel>(data);
+
+            page = new CharacterCreatePage(ViewModel);
+            var oldValue = 0.0;
+            var newValue = 1.0;
+
+            var args = new ValueChangedEventArgs(oldValue, newValue);
+
+            // Act
+            page.Image_OnPickerValueChanged(null, args);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
     }
 }
