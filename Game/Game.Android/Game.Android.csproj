@@ -386,5 +386,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\mutant_foods.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\auto_battle.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
