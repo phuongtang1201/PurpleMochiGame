@@ -27,7 +27,7 @@
                        HorizontalOptions="CenterAndExpand" />
 
                     <ImageButton Style="{StaticResource VillageImageButton}"
-                        Source="mutantfood.png"
+                        Source="mutant_foods.png"
                         Clicked="MonstersButton_Clicked"/>
 
                 </StackLayout>
