@@ -176,6 +176,7 @@
     <Content Include="hat1.png" />
     <Content Include="hat2.png" />
     <Content Include="homeleaderboard.png" />
+    <Content Include="home_leaderboard.png" />
     <Content Include="icon_add.png" />
     <Content Include="icon_cancel.png" />
     <Content Include="icon_delete.png" />
