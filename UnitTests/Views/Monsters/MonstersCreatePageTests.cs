@@ -196,5 +196,27 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
         }
+
+        [Test]
+        public void MonsterCreatePage_Image_OnPickerValueChanged_Default_Should_Pass()
+        {
+            // Arrange
+            var data = new MonsterModel();
+            var ViewModel = new GenericViewModel<MonsterModel>(data);
+
+            page = new MonsterCreatePage(ViewModel);
+            var oldValue = 0.0;
+            var newValue = 1.0;
+
+            var args = new ValueChangedEventArgs(oldValue, newValue);
+
+            // Act
+            page.Image_OnPickerValueChanged(null, args);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
     }
 }
