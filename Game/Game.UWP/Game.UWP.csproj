@@ -138,6 +138,7 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="autobattle.png" />
+    <Content Include="auto_battle.png" />
     <Content Include="battleboard.png" />
     <Content Include="cancel.png" />
     <Content Include="chefblue100px.png" />
