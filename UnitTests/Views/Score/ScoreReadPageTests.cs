@@ -108,6 +108,20 @@ namespace UnitTests.Views
         }
 
         [Test]
+        public void ScoreReadPage_Create_Character_Display_Box_Data_Not_Null_Should_Pass()
+        {
+            // Arrange
+            PlayerInfoModel data = new PlayerInfoModel();
+            data.ImageURI = "icon_new.png";
+            // Act
+            StackLayout newStack = CreateCharacterDisplayBox(data);
+            // Reset
+
+            // Assert
+            Assert.IsNotNull(newStack);
+        }
+
+        [Test]
         public void ScoreReadPage_Create_Item_Display_Box_Data_Null_Should_Pass()
         {
             // Arrange
