@@ -233,6 +233,7 @@
     <Content Include="update.png" />
     <Content Include="village.png" />
     <Content Include="villageleaderboard.png" />
+    <Content Include="village_leaderboard.png" />
     <Content Include="vinegar.png" />
     <Content Include="watermelon100px.png" />
     <Content Include="yes.png" />
