@@ -121,6 +121,36 @@ namespace UnitTests.Views
             Assert.IsNotNull(newStack);
         }
 
+        [Test]
+        public void ScoreReadPage_Create_Item_Display_Box_Four_Items_Should_Pass()
+        {
+            // Arrange
+            ItemModel data = null;
+            // Act
+            StackLayout newStack = CreateItemDisplayBox(data, 4);
+            var stackChildren = newStack.Children;
+            var methodLabel = new Label();
+            methodLabel = (Label)stackChildren[1];
 
+            var testLabel = new Label
+            {
+                Text = " x 4",
+                Style = (Style)Application.Current.Resources["ValueStyleMicro"],
+                HorizontalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.Center,
+                Padding = 0,
+                LineBreakMode = LineBreakMode.TailTruncation,
+                CharacterSpacing = 1,
+                LineHeight = 1,
+                MaxLines = 1,
+            };
+
+            Assert.AreEqual(methodLabel.Text, testLabel.Text);
+
+            // Reset
+
+            // Assert
+            Assert.IsNotNull(newStack);
+        }
     }
 }
