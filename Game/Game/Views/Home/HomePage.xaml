@@ -25,7 +25,7 @@
                                  Style="{StaticResource HomeImageButton}"
                                  Clicked="GameButton_Clicked"/>
 
-                    <ImageButton Source="homeleaderboard.png"
+                    <ImageButton Source="home_leaderboard.png"
                                  Style="{StaticResource HomeImageButton}"
                                  Clicked="ScoresButton_Clicked"/>
 
