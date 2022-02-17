@@ -34,8 +34,7 @@ namespace UnitTests.Helpers
             // Get Expected set
             var myList = Enum.GetNames(typeof(ItemLocationEnum)).ToList();
             var myExpectedList = myList.Where(a =>
-                                          a.ToString() != ItemLocationEnum.Unknown.ToString() &&
-                                           a.ToString() != ItemLocationEnum.Finger.ToString()
+                                          a.ToString() != ItemLocationEnum.Unknown.ToString()
                                             )
                                             .OrderBy(a => a)
                                             .ToList();
@@ -43,12 +42,28 @@ namespace UnitTests.Helpers
             // Act
 
             // Make sure each item is in the list
+            var temp = "";
             foreach (var item in myDataList)
             {
                 var found = false;
+                temp = item;
+                if (temp.Equals("Necklace"))
+                    temp = "Necklass";
+                if (temp.Equals("Primary Hand"))
+                    temp = "PrimaryHand";
+                if (temp.Equals("Off Hand"))
+                    temp = "OffHand";
+                if (temp.Equals("Any Pocket"))
+                    temp = "Finger";
+                if (temp.Equals("Right Pocket"))
+                    temp = "RightFinger";
+                if (temp.Equals("Left Pocket"))
+                    temp = "LeftFinger";
                 foreach (var expected in myExpectedList)
                 {
-                    if (item == expected)
+                    Console.Write("Expected: ");
+                    Console.WriteLine(expected);
+                    if (temp == expected)
                     {
                         found = true;
                         break;
@@ -58,19 +73,39 @@ namespace UnitTests.Helpers
                 // Assert
                 Assert.AreEqual(true, found, "item : " + item + TestContext.CurrentContext.Test.Name);
             }
-
+            Console.WriteLine();
+            Console.WriteLine("Expected to Item");
             // reverse it, to make sure the list has each item
             // Make sure each item is in the list
             foreach (var expected in myExpectedList)
             {
                 var found = false;
+                Console.Write("Expected: ");
+                Console.WriteLine(expected);
                 {
                     foreach (var item in myDataList)
-                        if (item == expected)
+                    {
+                        temp = item;
+                        if (temp.Equals("Necklace"))
+                            temp = "Necklass";
+                        if (temp.Equals("Primary Hand"))
+                            temp = "PrimaryHand";
+                        if (temp.Equals("Off Hand"))
+                            temp = "OffHand";
+                        if (temp.Equals("Any Pocket"))
+                            temp = "Finger";
+                        if (temp.Equals("Right Pocket"))
+                            temp = "RightFinger";
+                        if (temp.Equals("Left Pocket"))
+                            temp = "LeftFinger";
+                        Console.Write("Item: ");
+                        Console.WriteLine(item);
+                        if (temp == expected)
                         {
                             found = true;
                             break;
                         }
+                    }
                 }
 
                 // Assert
