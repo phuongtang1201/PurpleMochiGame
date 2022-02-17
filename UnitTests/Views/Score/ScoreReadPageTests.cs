@@ -21,7 +21,7 @@ namespace UnitTests.Views
         [SetUp]
         public void Setup()
         {
-            // Initilize Xamarin Forms
+            // Initialize Xamarin Forms
             MockForms.Init();
 
             //This is your App.xaml and App.xaml.cs, which can have resources, etc.
@@ -91,6 +91,20 @@ namespace UnitTests.Views
 
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
+        [Test]
+        public void ScoreReadPage_Create_Character_Display_Box_Data_Null_Should_Pass()
+        {
+            // Arrange
+            PlayerInfoModel data = null;
+            // Act
+            StackLayout newStack = CreateCharacterDisplayBox(data);
+
+            // Reset
+
+            // Assert
+            Assert.IsNotNull(newStack);
         }
     }
 }
