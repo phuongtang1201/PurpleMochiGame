@@ -44,7 +44,7 @@
 
                 </StackLayout>
 
-                <ImageButton Source="villageleaderboard.png"
+                <ImageButton Source="village_leaderboard.png"
                     Clicked="ScoresButton_Clicked"
                     WidthRequest="400"
                     HeightRequest="60"
