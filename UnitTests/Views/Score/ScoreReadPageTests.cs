@@ -145,12 +145,10 @@ namespace UnitTests.Views
                 MaxLines = 1,
             };
 
-            Assert.AreEqual(methodLabel.Text, testLabel.Text);
-
             // Reset
 
             // Assert
-            Assert.IsNotNull(newStack);
+            Assert.AreEqual(methodLabel.Text, testLabel.Text);
         }
     }
 }
