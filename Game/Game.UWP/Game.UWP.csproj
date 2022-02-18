@@ -164,6 +164,7 @@
     <Content Include="dungeon_door.png" />
     <Content Include="eggplant_2x.png" />
     <Content Include="eggs100px.png" />
+    <Content Include="eggs_2x.png" />
     <Content Include="elf1.png" />
     <Content Include="elf2.png" />
     <Content Include="elf3.png" />
