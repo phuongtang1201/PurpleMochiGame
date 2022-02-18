@@ -276,6 +276,23 @@ namespace UnitTests.Views
         }
 
         [Test]
+        public void BattlePage_DrawGameBoardAttackerDefender_CurrentAttacker_Valid_Should_Pass()
+        {
+            // Arrange
+
+            _ = BattleEngineViewModel.Instance.Engine.Round.SetCurrentAttacker(new PlayerInfoModel(new CharacterModel { Alive = false }));
+            _ = BattleEngineViewModel.Instance.Engine.Round.SetCurrentDefender(new PlayerInfoModel(new CharacterModel()));
+
+            // Act
+            page.DrawGameAttackerDefenderBoard();
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
+        [Test]
         public void BattlePage_DrawGameBoardAttackerDefender_Invalid_AttackerSource_Null_Should_Pass()
         {
             // Arrange
