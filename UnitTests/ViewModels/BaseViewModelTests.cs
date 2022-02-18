@@ -284,5 +284,20 @@ namespace UnitTests.ViewModels
             // Assert
             Assert.AreEqual(dataTest.Id, result.Id);
         }
+
+        [Test]
+        public async Task BaseViewModel_CreateUpdateAsync_Null_Should_Pass()
+        {
+            // Arrange
+            ItemModel viewModel = null;
+
+            // Act
+            var testAsync = await ViewModel.CreateUpdateAsync(viewModel);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true);
+        }
     }
 }
