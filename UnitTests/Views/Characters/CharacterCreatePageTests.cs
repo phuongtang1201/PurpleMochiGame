@@ -100,6 +100,7 @@ namespace UnitTests.Views
         {
             // Arrange
             page.ViewModel.Data.ImageURI = null;
+            Image_OnPickerValueChanged(null, null);
 
             // Act
             page.CheckPickerNotNull();
