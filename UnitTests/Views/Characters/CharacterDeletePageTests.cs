@@ -92,5 +92,19 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
         }
+
+        [Test]
+        public void CharacterDeletePage_Add_Items_To_Display_Should_Pass()
+        {
+            // Arrange
+
+            // Act
+            page.AddItemsToDisplay();
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
     }
 }
