@@ -2,6 +2,8 @@
 
 using Game;
 using Game.Views;
+using Game.ViewModels;
+using Game.Models;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Mocks;
@@ -287,6 +289,28 @@ namespace UnitTests.Views
 
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
+        [Test]
+        public void ItemUpdatePage_RangeDamage_OnPickerValueChanged1to5_Should_Pass()
+        {
+            // Arrange
+            var data = new ItemModel();
+            var ViewModel = new GenericViewModel<ItemModel>(data);
+
+            page = new ItemCreatePage();
+            var oldEnum = 1;
+            var newEnum = 5;
+
+            var args = new ValueChangedEventArgs(oldEnum, newEnum);
+
+            // Act
+            page.RangeDamage_OnPickerValueChanged(null, args);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true);
         }
 
 
