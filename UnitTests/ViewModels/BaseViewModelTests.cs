@@ -299,5 +299,19 @@ namespace UnitTests.ViewModels
             // Assert
             Assert.IsTrue(true);
         }
+
+        [Test]
+        public async Task BaseViewModel_CreateUpdateAsync_InValid_Null_Should_Fail()
+        {
+            // Arrange
+
+            // Act
+            var result = await ViewModel.CreateUpdateAsync(null);
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(false, result);  // Update returned Pass
+        }
     }
 }
