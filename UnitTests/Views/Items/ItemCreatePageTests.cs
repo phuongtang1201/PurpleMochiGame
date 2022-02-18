@@ -93,6 +93,23 @@ namespace UnitTests.Views
         }
 
         [Test]
+        public void ItemCreatePage_Save_Clicked_Should_Pass()
+        {
+            // Arrange
+            page.ViewModel.Data.ImageURI = "icon_new.png";
+            page.ViewModel.Data.Name = "Cookbook";
+            page.ViewModel.Data.Description = "All the recipes";
+
+            // Act
+            page.Save_Clicked(null, null);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
+        [Test]
         public void ItemCreatePage_OnBackButtonPressed_Valid_Should_Pass()
         {
             // Arrange
