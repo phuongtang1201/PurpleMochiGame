@@ -313,6 +313,26 @@ namespace UnitTests.Views
             Assert.IsTrue(true);
         }
 
+        [Test]
+        public void ItemUpdatePage_RangeDamage_OnPickerValueChanged5to0_Should_Pass()
+        {
+            // Arrange
+            var data = new ItemModel();
+            var ViewModel = new GenericViewModel<ItemModel>(data);
 
+            page = new ItemCreatePage();
+            var oldEnum = 5;
+            var newEnum = 0;
+
+            var args = new ValueChangedEventArgs(oldEnum, newEnum);
+
+            // Act
+            page.RangeDamage_OnPickerValueChanged(null, args);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true);
+        }
     }
 }
