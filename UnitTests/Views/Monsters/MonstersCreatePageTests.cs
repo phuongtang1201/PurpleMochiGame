@@ -52,6 +52,20 @@ namespace UnitTests.Views
         }
 
         [Test]
+        public void MonsterCreatePage_Constructor_Should_Pass()
+        {
+            // Arrange
+            MonsterModel data = new MonsterModel();
+            page = new MonsterCreatePage(new GenericViewModel<MonsterModel>(data));
+            // Act
+
+            // Reset
+
+            // Assert
+            Assert.IsNotNull(page);
+        }
+
+        [Test]
         public void MonsterCreatePage_Cancel_Clicked_Default_Should_Pass()
         {
             // Arrange
