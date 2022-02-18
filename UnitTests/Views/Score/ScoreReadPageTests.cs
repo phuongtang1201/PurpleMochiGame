@@ -178,5 +178,35 @@ namespace UnitTests.Views
             // Assert
             Assert.IsNotNull(newStack);
         }
+
+        [Test]
+        public void ScoreReadPage_Create_Monster_Display_Box_Four_Monsters_Should_Pass()
+        {
+            // Arrange
+            PlayerInfoModel data = new PlayerInfoModel();
+            data.ImageURI = "icon_new.png";
+            // Act
+            StackLayout newStack = CreateMonsterDisplayBox(data, 4);
+            var stackChildren = newStack.Children;
+            var methodLabel = new Label();
+            methodLabel = (Label)stackChildren[1];
+
+            var testLabel = new Label
+            {
+                Text = " x 4",
+                Style = (Style)Application.Current.Resources["ValueStyleMicro"],
+                HorizontalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.Center,
+                Padding = 0,
+                LineBreakMode = LineBreakMode.TailTruncation,
+                CharacterSpacing = 1,
+                LineHeight = 1,
+                MaxLines = 1,
+            };
+            // Reset
+
+            // Assert
+            Assert.AreEqual(methodLabel.Text, testLabel.Text);
+        }
     }
 }
