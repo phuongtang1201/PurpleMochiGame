@@ -164,5 +164,19 @@ namespace UnitTests.Views
             // Assert
             Assert.AreEqual(methodLabel.Text, testLabel.Text);
         }
+
+        [Test]
+        public void ScoreReadPage_Create_Monster_Display_Box_Data_Null_Should_Pass()
+        {
+            // Arrange
+            PlayerInfoModel data = null;
+            // Act
+            StackLayout newStack = CreateMonsterDisplayBox(data, 1);
+
+            // Reset
+
+            // Assert
+            Assert.IsNotNull(newStack);
+        }
     }
 }
