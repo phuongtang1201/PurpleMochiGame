@@ -94,6 +94,8 @@ namespace UnitTests.Views
             Assert.IsTrue(true); // Got to here, so it happened...
         }
 
+ 
+
         [Test]
         public void MonsterCreatePage_OnBackButtonPressed_Valid_Should_Pass()
         {
@@ -217,6 +219,23 @@ namespace UnitTests.Views
 
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
+        [Test]
+        public void MonsterCreatePage_Default_Item_Location_Should_Pass()
+        {
+            // Arrange
+            var data = new MonsterModel();
+            var ViewModel = new GenericViewModel<MonsterModel>(data);
+
+            page = new MonsterCreatePage(ViewModel);
+
+            // Act
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(page.PopupLocationEnum, ItemLocationEnum.Unknown);
         }
     }
 }
