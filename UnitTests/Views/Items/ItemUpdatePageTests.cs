@@ -190,6 +190,28 @@ namespace UnitTests.Views
         }
 
         [Test]
+        public void ItemUpdatePage_RangeDamage_OnPickerValueChanged_Should_Pass()
+        {
+            // Arrange
+            var data = new ItemModel();
+            var ViewModel = new GenericViewModel<ItemModel>(data);
+
+            page = new ItemUpdatePage(ViewModel);
+            var oldEnum = 1;
+            var newEnum = 5;
+
+            var args = new ValueChangedEventArgs(oldEnum, newEnum);
+
+            // Act
+            page.RangeDamage_OnPickerValueChanged(null, args);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true);
+        }
+
+        [Test]
         public void ItemUpdatePage_Entry_CheckNotEmpty_Null_Name_Should_Pass()
         {
             // Arrange
