@@ -108,7 +108,22 @@ namespace UnitTests.Views
             Assert.IsTrue(true); // Got to here, so it happened...
         }
 
- 
+        [Test]
+        public void MonsterCreatePage_Save_Clicked_Null_Picker_Should_Pass()
+        {
+            // Arrange
+            page.CheckPickerNotNull();
+
+            // Act
+            page.Save_Clicked(null, null);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
+
 
         [Test]
         public void MonsterCreatePage_OnBackButtonPressed_Valid_Should_Pass()
