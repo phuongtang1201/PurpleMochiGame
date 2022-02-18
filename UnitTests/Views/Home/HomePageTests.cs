@@ -16,7 +16,7 @@ namespace UnitTests.Views
         [SetUp]
         public void Setup()
         {
-            // Initilize Xamarin Forms
+            // Initialize Xamarin Forms
             MockForms.Init();
 
             //This is your App.xaml and App.xaml.cs, which can have resources, etc.
@@ -65,6 +65,19 @@ namespace UnitTests.Views
             // Arrange
             // Act
             page.ScoresButton_Clicked(null, null);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
+        [Test]
+        public void HomePage_AboutButton_Clicked_Default_Should_Pass()
+        {
+            // Arrange
+            // Act
+            page.AboutButton_Clicked(null, null);
 
             // Reset
 
