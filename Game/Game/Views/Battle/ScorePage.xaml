@@ -15,8 +15,11 @@
                     Style="{StaticResource CenterMessageLargeStyle}"
                     Text="0" 
                     x:Name="TotalScore"/>
+
+                <Label 
+                    Style="{StaticResource CenterMessageLargeStyle}"
+                    Text="Food Cooked"/>
                 
-            <Label Text="Monsters" Style="{StaticResource MessageStyle}"/>
                 <StackLayout Style="{StaticResource HorizontalStack}">
                     <Label Text="Killed : " Style="{StaticResource LabelStyle}"/>
                     <Label Text="0" x:Name="TotalKilled" Style="{StaticResource ValueStyle}"/>
