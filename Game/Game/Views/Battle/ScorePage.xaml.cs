@@ -34,12 +34,6 @@ namespace Game.Views
         public void DrawOutput()
         {
 
-            // Draw the Characters
-            foreach (var data in EngineViewModel.Engine.EngineSettings.BattleScore.CharacterModelDeathList)
-            {
-                CharacterListFrame.Children.Add(CreateCharacterDisplayBox(data));
-            }
-
             // Draw the Monsters
             foreach (var data in EngineViewModel.Engine.EngineSettings.BattleScore.MonsterModelDeathList.Distinct())
             {

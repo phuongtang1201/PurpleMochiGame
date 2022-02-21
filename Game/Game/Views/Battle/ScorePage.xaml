@@ -16,11 +16,6 @@
                     Text="0" 
                     x:Name="TotalScore"/>
                 
-            <FlexLayout x:Name="CharacterListFrame"
-                                    JustifyContent="Start"
-                                    AlignContent="Start"
-                                    Wrap="Wrap"/>
-
             <Label Text="Monsters" Style="{StaticResource MessageStyle}"/>
                 <StackLayout Style="{StaticResource HorizontalStack}">
                     <Label Text="Killed : " Style="{StaticResource LabelStyle}"/>
