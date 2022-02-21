@@ -8,14 +8,17 @@
             <StackLayout Style="{StaticResource VerticalStack}"
                          Spacing="20">
 
-                <Label 
+                <StackLayout>
+                    <Label 
                     Style="{StaticResource CenterMessageLargeStyle}"
                     Text="Your Score"/>
-                
-                <Label
+
+                    <Label
                     Style="{StaticResource CenterMessageExtraLargeStyle}"
                     Text="0" 
                     x:Name="TotalScore"/>
+                </StackLayout>
+     
 
                 <Label 
                     Style="{StaticResource CenterMessageLargeStyle}"
