@@ -34,7 +34,10 @@
                                     AlignContent="Start"
                                     Wrap="Wrap"/>
                 
-                <Button Clicked="CloseButton_Clicked" Text="Close"/>
+                <Button 
+                    Style="{StaticResource CancelUpdateDeleteButton}"
+                    Clicked="CloseButton_Clicked" 
+                    Text="Continue"/>
 
         </StackLayout>
         </ScrollView>
