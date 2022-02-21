@@ -36,8 +36,8 @@
 
                 <StackLayout>
                     <Label 
-                    Style="{StaticResource CenterMessageLargeStyle}"
-                    Text="Items Collected"/>
+                        Style="{StaticResource CenterMessageExtraLargeStyle}"
+                        Text="Items Collected"/>
 
                     <FlexLayout x:Name="ItemListFrame"
                                     JustifyContent="Start"
