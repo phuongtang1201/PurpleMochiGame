@@ -37,6 +37,7 @@
                 <Button 
                     Style="{StaticResource CancelUpdateDeleteButton}"
                     Clicked="CloseButton_Clicked" 
+                    HorizontalOptions="EndAndExpand"
                     Text="Continue"/>
 
         </StackLayout>
