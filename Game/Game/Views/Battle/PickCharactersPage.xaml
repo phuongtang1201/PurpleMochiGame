@@ -36,7 +36,7 @@
                                     <ViewCell>
 
                                         <Frame Style="{StaticResource NameFrameStyle}">
-                                            
+
                                             <Grid ColumnSpacing="5" RowSpacing="1">
                                                 <Grid.ColumnDefinitions>
                                                     <ColumnDefinition Width="auto"/>
@@ -68,21 +68,11 @@
 
                                             </Grid>
                                         </Frame>
-                                        
+
                                     </ViewCell>
                                 </DataTemplate>
                             </ListView.ItemTemplate>
                         </ListView>
-                    </StackLayout>
-
-                    <StackLayout HorizontalOptions="CenterAndExpand">
-
-                        <Label Text="Count" Style="{StaticResource CenterMessageStyle}"/>
-
-                        <Label Style="{StaticResource CenterMessageStyle}" 
-                            x:Name="PartyCountLabel"
-                            Text="0"/>
-
                     </StackLayout>
 
                     <StackLayout HorizontalOptions="End">
