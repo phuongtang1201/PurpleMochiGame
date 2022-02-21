@@ -11,10 +11,14 @@
                     Style="{StaticResource CenterMessageLargeStyle}"
                     Text="Your Score"/>
                 
+                <Label
+                    Style="{StaticResource CenterMessageLargeStyle}"
+                    Text="0" 
+                    x:Name="TotalScore"/>
+                
                 <StackLayout Style="{StaticResource HorizontalStack}">
-                <Label Text="Score: " Style="{StaticResource MessageStyle}"/>
-                <Label Text="0" x:Name="TotalScore" Style="{StaticResource MessageStyle}"/>
-            </StackLayout>
+                    <Label Text="Score: " Style="{StaticResource MessageStyle}"/>
+                </StackLayout>
 
             <Label Text="Characters" Style="{StaticResource MessageStyle}"/>
             <FlexLayout x:Name="CharacterListFrame"
