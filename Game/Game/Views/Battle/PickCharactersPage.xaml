@@ -68,12 +68,6 @@
                             x:Name="PartyCountLabel"
                             Text="0"/>
 
-                        <Button 
-                            x:Name="BeginBattleButton"
-                            Clicked="BattleButton_Clicked" 
-                            Text="Begin"
-                            IsEnabled="False"/>
-
                     </StackLayout>
 
                     <StackLayout HorizontalOptions="End">
@@ -118,8 +112,15 @@
                             </ListView.ItemTemplate>
                         </ListView>
                     </StackLayout>
-                </StackLayout>
 
+                    
+                </StackLayout>
+                <Button 
+                    Style="{StaticResource CancelUpdateDeleteButton}"
+                    x:Name="BeginBattleButton"
+                    Clicked="BattleButton_Clicked" 
+                    Text="Begin Battle"
+                    IsEnabled="False"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
