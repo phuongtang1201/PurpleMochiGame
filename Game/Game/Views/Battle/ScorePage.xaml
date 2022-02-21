@@ -17,9 +17,10 @@
                         Text="Your Score"/>
 
                     <Label
-                    Style="{StaticResource CenterMessageExtraLargeStyle}"
-                    Text="0" 
-                    x:Name="TotalScore"/>
+                        Style="{StaticResource CenterMessageExtraLargeStyle}"
+                        FontSize="60"
+                        Text="0" 
+                        x:Name="TotalScore"/>
                 </StackLayout>
 
                 <StackLayout>
