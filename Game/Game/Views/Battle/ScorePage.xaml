@@ -20,10 +20,6 @@
                     Style="{StaticResource CenterMessageLargeStyle}"
                     Text="Food Cooked"/>
                 
-                <StackLayout Style="{StaticResource HorizontalStack}">
-                    <Label Text="Killed : " Style="{StaticResource LabelStyle}"/>
-                    <Label Text="0" x:Name="TotalKilled" Style="{StaticResource ValueStyle}"/>
-                </StackLayout>
                 <FlexLayout x:Name="MonsterListFrame"
                                     JustifyContent="Start"
                                     AlignContent="Start"
