@@ -25,8 +25,8 @@
 
                 <StackLayout>
                     <Label 
-                    Style="{StaticResource CenterMessageLargeStyle}"
-                    Text="Food Cooked"/>
+                        Style="{StaticResource CenterMessageExtraLargeStyle}"
+                        Text="Food Cooked"/>
 
                     <FlexLayout x:Name="MonsterListFrame"
                                     JustifyContent="Center"
