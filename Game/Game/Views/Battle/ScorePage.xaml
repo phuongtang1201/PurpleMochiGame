@@ -25,7 +25,10 @@
                                     AlignContent="Start"
                                     Wrap="Wrap"/>
 
-            <Label Text="Equipment" Style="{StaticResource MessageStyle}"/>
+                <Label 
+                    Style="{StaticResource CenterMessageLargeStyle}"
+                    Text="Items Collected"/>
+                
                 <StackLayout Style="{StaticResource HorizontalStack}">
                     <Label Text="Collected: " Style="{StaticResource LabelStyle}"/>
                     <Label Text="0" x:Name="TotalCollected" Style="{StaticResource ValueStyle}"/>
