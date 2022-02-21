@@ -12,7 +12,7 @@
                     Text="Your Score"/>
                 
                 <Label
-                    Style="{StaticResource CenterMessageLargeStyle}"
+                    Style="{StaticResource CenterMessageExtraLargeStyle}"
                     Text="0" 
                     x:Name="TotalScore"/>
 
