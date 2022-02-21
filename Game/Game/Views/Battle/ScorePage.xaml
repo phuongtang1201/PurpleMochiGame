@@ -29,17 +29,18 @@
                                     AlignContent="Start"
                                     Wrap="Wrap"/>
                 </StackLayout>
-                    
 
-                <Label 
+                <StackLayout>
+                    <Label 
                     Style="{StaticResource CenterMessageLargeStyle}"
                     Text="Items Collected"/>
-                
-                <FlexLayout x:Name="ItemListFrame"
+
+                    <FlexLayout x:Name="ItemListFrame"
                                     JustifyContent="Start"
                                     AlignContent="Start"
                                     Wrap="Wrap"/>
-                
+                </StackLayout>
+
                 <Button 
                     Style="{StaticResource CancelUpdateDeleteButton}"
                     Clicked="CloseButton_Clicked" 
