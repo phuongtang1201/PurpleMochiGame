@@ -18,16 +18,18 @@
                     Text="0" 
                     x:Name="TotalScore"/>
                 </StackLayout>
-     
 
-                <Label 
+                <StackLayout>
+                    <Label 
                     Style="{StaticResource CenterMessageLargeStyle}"
                     Text="Food Cooked"/>
-                
-                <FlexLayout x:Name="MonsterListFrame"
+
+                    <FlexLayout x:Name="MonsterListFrame"
                                     JustifyContent="Center"
                                     AlignContent="Start"
                                     Wrap="Wrap"/>
+                </StackLayout>
+                    
 
                 <Label 
                     Style="{StaticResource CenterMessageLargeStyle}"
