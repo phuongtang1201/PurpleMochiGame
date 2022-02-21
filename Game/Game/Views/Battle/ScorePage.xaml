@@ -41,11 +41,16 @@
                                     Wrap="Wrap"/>
                 </StackLayout>
 
-                <Button 
-                    Style="{StaticResource CancelUpdateDeleteButton}"
-                    Clicked="CloseButton_Clicked" 
-                    HorizontalOptions="EndAndExpand"
-                    Text="Continue"/>
+                <StackLayout
+                    Orientation="Horizontal"
+                    VerticalOptions="EndAndExpand">
+                    
+                    <Button 
+                        Style="{StaticResource BattleButton}"
+                        Clicked="CloseButton_Clicked" 
+                        HorizontalOptions="EndAndExpand"
+                        Text="Continue"/>
+                </StackLayout>
 
         </StackLayout>
         </ScrollView>
