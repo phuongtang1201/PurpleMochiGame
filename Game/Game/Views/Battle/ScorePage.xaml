@@ -16,10 +16,6 @@
                     Text="0" 
                     x:Name="TotalScore"/>
                 
-                <StackLayout Style="{StaticResource HorizontalStack}">
-                    <Label Text="Score: " Style="{StaticResource MessageStyle}"/>
-                </StackLayout>
-
             <Label Text="Characters" Style="{StaticResource MessageStyle}"/>
             <FlexLayout x:Name="CharacterListFrame"
                                     JustifyContent="Start"
