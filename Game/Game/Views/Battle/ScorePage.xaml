@@ -12,8 +12,9 @@
 
                 <StackLayout>
                     <Label 
-                    Style="{StaticResource CenterMessageLargeStyle}"
-                    Text="Your Score"/>
+                        Style="{StaticResource CenterMessageExtraLargeStyle}"
+                        Padding="0,20,0,0"
+                        Text="Your Score"/>
 
                     <Label
                     Style="{StaticResource CenterMessageExtraLargeStyle}"
