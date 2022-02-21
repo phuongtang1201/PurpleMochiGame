@@ -21,7 +21,7 @@
                     Text="Food Cooked"/>
                 
                 <FlexLayout x:Name="MonsterListFrame"
-                                    JustifyContent="Start"
+                                    JustifyContent="Center"
                                     AlignContent="Start"
                                     Wrap="Wrap"/>
 
