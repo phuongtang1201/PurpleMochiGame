@@ -178,6 +178,11 @@
                 <Setter Property="FontSize" Value="Large" />
             </Style>
 
+            <Style TargetType="Label" x:Key="CenterMessageExtraLargeStyle"
+                   BasedOn="{StaticResource CenterMessageStyle}">
+                <Setter Property="FontSize" Value="50" />
+            </Style>
+
             <Style TargetType="Label" x:Key="PopupItemTextStyle"
                    BasedOn="{StaticResource ValueStyle}">
                 <Setter Property="HorizontalTextAlignment" Value="Center" />
