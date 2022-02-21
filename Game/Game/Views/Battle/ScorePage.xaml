@@ -16,7 +16,6 @@
                     Text="0" 
                     x:Name="TotalScore"/>
                 
-            <Label Text="Characters" Style="{StaticResource MessageStyle}"/>
             <FlexLayout x:Name="CharacterListFrame"
                                     JustifyContent="Start"
                                     AlignContent="Start"
