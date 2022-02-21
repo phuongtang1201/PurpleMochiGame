@@ -7,8 +7,6 @@
         <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
             <StackLayout Style="{StaticResource VerticalStack}">
 
-            <Label Text="Score Page" Style="{StaticResource CenterMessageLargeStyle}"/>
-
             <Button Clicked="CloseButton_Clicked" Text="Close"/>
 
             <StackLayout Style="{StaticResource HorizontalStack}">
