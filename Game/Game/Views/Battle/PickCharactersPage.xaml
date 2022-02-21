@@ -35,45 +35,38 @@
                                 <DataTemplate>
                                     <ViewCell>
 
-                                        <Frame 
-                                            Style="{StaticResource NameFrameStyle}"
-                                            BackgroundColor="Crimson"
-                                            BorderColor="Crimson"
-                                            Padding="1,1,1,1">
+                                        <Frame Style="{StaticResource NameFrameStyle}">
 
-                                            <Frame Style="{StaticResource NameFrameStyle}">
+                                            <Grid ColumnSpacing="5" RowSpacing="1">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="auto"/>
+                                                    <RowDefinition Height="auto"/>
+                                                    <RowDefinition Height="auto"/>
+                                                </Grid.RowDefinitions>
 
-                                                <Grid ColumnSpacing="5" RowSpacing="1">
-                                                    <Grid.ColumnDefinitions>
-                                                        <ColumnDefinition Width="auto"/>
-                                                        <ColumnDefinition Width="*"/>
-                                                    </Grid.ColumnDefinitions>
-                                                    <Grid.RowDefinitions>
-                                                        <RowDefinition Height="auto"/>
-                                                        <RowDefinition Height="auto"/>
-                                                        <RowDefinition Height="auto"/>
-                                                    </Grid.RowDefinitions>
-
-                                                    <Image  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
+                                                <Image  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
                                                     Source="{Binding ImageURI}"
                                                     Style="{StaticResource ImageMediumStyle}"
                                                     VerticalOptions="CenterAndExpand"/>
 
-                                                    <Label Grid.Column="1" Grid.Row="0"
+                                                <Label Grid.Column="1" Grid.Row="0"
                                                    Text="{Binding Name}" 
                                                    Style="{StaticResource ListStyle}"
                                                    FontAttributes="Bold"/>
 
-                                                    <Label Grid.Column="1" Grid.Row="1"
+                                                <Label Grid.Column="1" Grid.Row="1"
                                                    Text="{Binding Description}" 
                                                    Style="{StaticResource ListDescription}" />
 
-                                                    <Label Grid.Column="1" Grid.Row="2"
+                                                <Label Grid.Column="1" Grid.Row="2"
                                                     Text="{Binding Path=MaxHealth, StringFormat= '{0:G} hp'}" 
                                                     Style="{StaticResource ListStyle}"/>
 
-                                                </Grid>
-                                            </Frame>
+                                            </Grid>
                                         </Frame>
                                     </ViewCell>
                                 </DataTemplate>
