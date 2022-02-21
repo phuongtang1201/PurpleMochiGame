@@ -5,7 +5,8 @@
 
     <ContentPage.Content>
         <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
-            <StackLayout Style="{StaticResource VerticalStack}">
+            <StackLayout Style="{StaticResource VerticalStack}"
+                         Spacing="20">
 
                 <Label 
                     Style="{StaticResource CenterMessageLargeStyle}"
