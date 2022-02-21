@@ -7,7 +7,11 @@
         <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
             <StackLayout Style="{StaticResource VerticalStack}">
 
-            <StackLayout Style="{StaticResource HorizontalStack}">
+                <Label 
+                    Style="{StaticResource CenterMessageLargeStyle}"
+                    Text="Your Score"/>
+                
+                <StackLayout Style="{StaticResource HorizontalStack}">
                 <Label Text="Score: " Style="{StaticResource MessageStyle}"/>
                 <Label Text="0" x:Name="TotalScore" Style="{StaticResource MessageStyle}"/>
             </StackLayout>
