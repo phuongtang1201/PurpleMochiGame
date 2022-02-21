@@ -34,26 +34,30 @@
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <ViewCell>
-                                        <Grid>
 
-                                            <Image  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
+                                        <Frame Style="{StaticResource NameFrameStyle}">
+                                            <Grid>
+
+                                                <Image  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
                                                     Source="{Binding ImageURI}"
                                                     Style="{StaticResource ImageMediumStyle}"/>
 
-                                            <Label Grid.Column="1" Grid.Row="0"
+                                                <Label Grid.Column="1" Grid.Row="0"
                                                    Text="{Binding Name}" 
                                                    Style="{StaticResource ListStyle}"
                                                    FontAttributes="Bold"/>
 
-                                            <Label Grid.Column="1" Grid.Row="1"
+                                                <Label Grid.Column="1" Grid.Row="1"
                                                    Text="{Binding Path=Level, StringFormat='Level {0:G}'}" 
                                                    Style="{StaticResource ListStyle}"/>
 
-                                            <Label Grid.Column="1" Grid.Row="2"
+                                                <Label Grid.Column="1" Grid.Row="2"
                                                     Text="{Binding Path=MaxHealth, StringFormat= '{0:G} hp'}" 
                                                     Style="{StaticResource ListStyle}"/>
 
-                                        </Grid>
+                                            </Grid>
+                                        </Frame>
+                                        
                                     </ViewCell>
                                 </DataTemplate>
                             </ListView.ItemTemplate>
