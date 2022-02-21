@@ -6,7 +6,9 @@
     <ContentPage.Content>
         <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
             <StackLayout Style="{StaticResource VerticalStack}"
-                         Spacing="20">
+                         Spacing="30"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand">
 
                 <StackLayout>
                     <Label 
