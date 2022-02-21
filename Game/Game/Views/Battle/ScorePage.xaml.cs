@@ -121,18 +121,18 @@ namespace Game.Views
             };
 
             // Add the Level
-            var PlayerLevelLabel = new Label
-            {
-                Text = "Level : " + data.Level,
-                Style = (Style)Application.Current.Resources["ValueStyleMicro"],
-                HorizontalOptions = LayoutOptions.Center,
-                HorizontalTextAlignment = TextAlignment.Center,
-                Padding = 0,
-                LineBreakMode = LineBreakMode.TailTruncation,
-                CharacterSpacing = 1,
-                LineHeight = 1,
-                MaxLines = 1,
-            };
+            //var PlayerLevelLabel = new Label
+            //{
+            //    Text = "Level : " + data.Level,
+            //    Style = (Style)Application.Current.Resources["ValueStyleMicro"],
+            //    HorizontalOptions = LayoutOptions.Center,
+            //    HorizontalTextAlignment = TextAlignment.Center,
+            //    Padding = 0,
+            //    LineBreakMode = LineBreakMode.TailTruncation,
+            //    CharacterSpacing = 1,
+            //    LineHeight = 1,
+            //    MaxLines = 1,
+            //};
 
             // Put the Image Button and Text inside a layout
             var PlayerStack = new StackLayout
@@ -143,7 +143,7 @@ namespace Game.Views
                 Spacing = 0,
                 Children = {
                     PlayerImage,
-                    PlayerLevelLabel,
+                    //PlayerLevelLabel,
                 },
             };
 
