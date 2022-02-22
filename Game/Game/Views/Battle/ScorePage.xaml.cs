@@ -48,10 +48,19 @@ namespace Game.Views
                 MonsterListFrame.Children.Add(CreateMonsterDisplayBox(data, count));
             }
 
+            // Count duplicate Items
+            var Items = from items in EngineViewModel.Engine.EngineSettings.BattleScore.ItemModelDropList
+                        group items by items.ImageURI into duplicates
+                        orderby duplicates.Key
+                        let count = duplicates.Count()
+                        select new { Value = duplicates.First(), Count = count };
+
             // Draw the Items
-            foreach (var data in EngineViewModel.Engine.EngineSettings.BattleScore.ItemModelDropList.Distinct())
+            for (var index = 0; index < Monsters.Count(); index++)
             {
-                ItemListFrame.Children.Add(CreateItemDisplayBox(data));
+                var data = Items.ElementAt(index).Value;
+                var count = Items.ElementAt(index).Count;
+                ItemListFrame.Children.Add(CreateItemDisplayBox(data, count));
             }
 
             // Update Values in the UI
@@ -158,7 +167,7 @@ namespace Game.Views
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public StackLayout CreateItemDisplayBox(ItemModel data)
+        public StackLayout CreateItemDisplayBox(ItemModel data, int count)
         {
             if (data == null)
             {
@@ -172,6 +181,20 @@ namespace Game.Views
                 Source = data.ImageURI
             };
 
+            // Add the number of duplicates for this item
+            var PlayerDuplicatesLabel = new Label
+            {
+                Text = " x " + count,
+                Style = (Style)Application.Current.Resources["ValueStyleMicro"],
+                HorizontalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.Center,
+                Padding = 0,
+                LineBreakMode = LineBreakMode.TailTruncation,
+                CharacterSpacing = 1,
+                LineHeight = 1,
+                MaxLines = 1,
+            };
+
             // Put the Image Button and Text inside a layout
             var PlayerStack = new StackLayout
             {
@@ -181,6 +204,7 @@ namespace Game.Views
                 Spacing = 0,
                 Children = {
                     PlayerImage,
+                    PlayerDuplicatesLabel,
                 },
             };
 
