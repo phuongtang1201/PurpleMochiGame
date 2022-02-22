@@ -27,7 +27,7 @@
                     <DataTemplate>
                         <ViewCell>
                             
-                            <Frame Style="{StaticResource NameFrameStyle}">
+                            <Frame Style="{StaticResource CellFrameStyle}">
                                 
                                 <Grid ColumnSpacing="5" RowSpacing="1">
                                     <Grid.ColumnDefinitions>
