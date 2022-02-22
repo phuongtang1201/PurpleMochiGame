@@ -392,6 +392,7 @@
   <ItemGroup>
     <Content Include="carrots.png" />
     <Content Include="donut_boss.png" />
+    <AndroidResource Include="Resources\drawable\eggs.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
