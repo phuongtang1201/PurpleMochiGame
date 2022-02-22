@@ -568,6 +568,12 @@
                 <Setter Property="HorizontalOptions" Value="FillAndExpand" />
             </Style>
 
+            <Style TargetType="Frame" x:Key="CellFrameStyle"
+                   BasedOn="{StaticResource NameFrameStyle}">
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="Margin" Value="0,0,0,10" />
+            </Style>
+
             <Style TargetType="Frame" x:Key="EntryFrameStyle">
                 <Setter Property="CornerRadius" Value="5"/>
                 <Setter Property="BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
