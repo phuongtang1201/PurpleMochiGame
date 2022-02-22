@@ -11,7 +11,7 @@
                     VerticalScrollBarVisibility="Never">
 
             <StackLayout Spacing="10">
-                <Image Source="item.png"
+                <Image Source="foodfightlogo.png"
                        Style="{StaticResource ImageExtraLargeStyle}"
                        HorizontalOptions="CenterAndExpand" />
 
