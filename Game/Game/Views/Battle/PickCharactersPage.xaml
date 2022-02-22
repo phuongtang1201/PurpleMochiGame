@@ -118,7 +118,7 @@
                     Style="{StaticResource BattleButton}"
                     x:Name="BeginBattleButton"
                     Clicked="BattleButton_Clicked" 
-                    Text="Begin Battle"
+                    Text="Confirm"
                     IsEnabled="False"/>
             </StackLayout>
         </ScrollView>
