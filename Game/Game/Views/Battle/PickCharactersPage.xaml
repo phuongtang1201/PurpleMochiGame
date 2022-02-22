@@ -18,8 +18,6 @@
 
                     <StackLayout HorizontalOptions="Start">
 
-                        <Label Text="Characters" Style="{StaticResource CenterMessageStyle}"/>
-
                         <ListView 
                                 x:Name="CharactersListView" 
                                 ItemsSource="{Binding DatabaseCharacterList}"
