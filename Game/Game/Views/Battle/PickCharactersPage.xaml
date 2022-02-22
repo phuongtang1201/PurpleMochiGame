@@ -115,7 +115,7 @@
                 </StackLayout>
 
                 <Button 
-                    Style="{StaticResource CancelUpdateDeleteButton}"
+                    Style="{StaticResource BattleButton}"
                     x:Name="BeginBattleButton"
                     Clicked="BattleButton_Clicked" 
                     Text="Begin Battle"
