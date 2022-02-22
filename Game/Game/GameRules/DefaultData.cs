@@ -464,7 +464,7 @@ namespace Game.GameRules
                     Attack = 3,
                     Defense = 3,
                     Speed = 3,
-                    ImageURI = "garlic100px.png",
+                    ImageURI = "garlic.png",
                 },
 
                 new MonsterModel {
