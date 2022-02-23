@@ -6,7 +6,7 @@
 
     <ContentPage.Content>
         <StackLayout Style="{StaticResource VerticalStack}">
-            <Label Text="Pick Items Page"></Label>
+            <Label Text="Select Items"></Label>
 
             <Button Clicked="CloseButton_Clicked" Text="Close"></Button>
         </StackLayout>
