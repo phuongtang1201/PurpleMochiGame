@@ -56,16 +56,6 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.Speed},
 
                 new ItemModel {
-                    Name = "Thermometer",
-                    Description = "Cook more in less time (Speed)",
-                    ImageURI = "icon_new.png",
-                    Range = 0,
-                    Damage = 0,
-                    Value = 3,
-                    Location = ItemLocationEnum.Necklass,
-                    Attribute = AttributeEnum.Speed},
-
-                new ItemModel {
                     Name = "Sneakers",
                     Description = "More speed, less haste (Speed)",
                     ImageURI = "nonslip.png",
