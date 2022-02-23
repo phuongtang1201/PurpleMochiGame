@@ -216,14 +216,14 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.Defense},
 
                 new ItemModel {
-                    Name = "Hand Lotion",
-                    Description = "(Current Health)",
-                    ImageURI = "icon_new.png",
+                    Name = "Spatula",
+                    Description = "(Attack)",
+                    ImageURI = "spatula.png",
                     Range = 0,
                     Damage = 0,
                     Value = 5,
-                    Location = ItemLocationEnum.RightFinger,
-                    Attribute = AttributeEnum.CurrentHealth},
+                    Location = ItemLocationEnum.Head,
+                    Attribute = AttributeEnum.Attack},
 
                 new ItemModel {
                     Name = "Soap",
