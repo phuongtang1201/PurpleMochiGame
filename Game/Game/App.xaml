@@ -522,6 +522,7 @@
             </Style>
 
             <!-- Frame -->
+            
             <Style TargetType="Frame">
                 <Setter Property="Margin" Value="0" />
                 <Setter Property="Padding" Value="0" />
@@ -618,6 +619,15 @@
                 <Setter Property="HeightRequest" Value="39"/>
             </Style>
 
+            <Style TargetType="Frame" x:Key="BattleMessageFrameStyle">
+                <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
+                <Setter Property="BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
+                <Setter Property="Padding" Value="20"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property= "VerticalOptions" Value="Center"/>
+            </Style>
+            
             <!-- Grid -->
             <Style TargetType="Grid">
                 <Setter Property="ColumnSpacing" Value="0" />
