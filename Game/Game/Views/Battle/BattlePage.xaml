@@ -37,8 +37,7 @@
                         VerticalOptions="Start" 
                         HorizontalOptions="CenterAndExpand">
 
-                        <Label Text="Mutant Food" x:Name="MonsterLabel" 
-                               Style="{StaticResource CenterMessageStyle}" HorizontalOptions="CenterAndExpand"/>
+                      
                         <StackLayout x:Name="MonsterBox" Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand"/>
                         
                         <StackLayout x:Name="BattlePlayerVerticalBox"  Style="{StaticResource VerticalStack}" HorizontalOptions="Center">
