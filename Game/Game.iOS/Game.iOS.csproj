@@ -308,9 +308,6 @@
     <BundleResource Include="Resources\troll3.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\cheforange100px.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\chefpurple100px.png" />
   </ItemGroup>
   <ItemGroup>
