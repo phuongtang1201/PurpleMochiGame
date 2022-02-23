@@ -17,5 +17,12 @@ namespace Game.Views
         {
             InitializeComponent();
         }
+
+
+        public async void ScorePage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new ScorePage()));
+            _ = await Navigation.PopAsync();
+        }
     }
 }
