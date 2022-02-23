@@ -13,20 +13,17 @@
                 <StackLayout>
                     <Label 
                         Style="{StaticResource CenterMessageExtraLargeStyle}"
-                        Padding="0,20,0,0"
-                        Text="Your Score"/>
+                        Padding="0,20,0,0"/>
 
                     <Label
                         Style="{StaticResource CenterMessageExtraLargeStyle}"
                         FontSize="60"
-                        Text="0" 
-                        x:Name="TotalScore"/>
+                        Text="0"/>
                 </StackLayout>
 
                 <StackLayout>
                     <Label 
-                        Style="{StaticResource CenterMessageExtraLargeStyle}"
-                        Text="Food Cooked"/>
+                        Style="{StaticResource CenterMessageExtraLargeStyle}"/>
 
                     <FlexLayout x:Name="MonsterListFrame"
                                     JustifyContent="Center"
@@ -36,8 +33,7 @@
 
                 <StackLayout>
                     <Label 
-                        Style="{StaticResource CenterMessageExtraLargeStyle}"
-                        Text="Items Collected"/>
+                        Style="{StaticResource CenterMessageExtraLargeStyle}"/>
 
                     <FlexLayout x:Name="ItemListFrame"
                                     JustifyContent="Start"
