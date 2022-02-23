@@ -469,4 +469,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\sponge.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\woodenspoon.png" />
+  </ItemGroup>
 </Project>
