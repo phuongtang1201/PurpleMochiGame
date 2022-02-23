@@ -41,7 +41,7 @@
                                Style="{StaticResource CenterMessageStyle}" HorizontalOptions="CenterAndExpand"/>
                         <StackLayout x:Name="MonsterBox" Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand"/>
 
-                        <Label Text="Chefs"
+                        <Label Text="Chefs" x:Name="ChefLabel"
                                Style="{StaticResource CenterMessageStyle}" HorizontalOptions="CenterAndExpand"/>
                         <StackLayout x:Name="CharacterBox" Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand"/>
                     </StackLayout>
