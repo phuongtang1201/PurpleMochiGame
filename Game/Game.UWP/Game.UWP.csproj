@@ -241,7 +241,6 @@
     <Content Include="village_leaderboard.png" />
     <Content Include="vinegar.png" />
     <Content Include="watermelon.png" />
-    <Content Include="watermelon100px.png" />
     <Content Include="yes.png" />
   </ItemGroup>
   <ItemGroup>
