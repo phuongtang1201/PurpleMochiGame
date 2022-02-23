@@ -46,16 +46,6 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.Attack},
 
                 new ItemModel {
-                    Name = "Mixer",
-                    Description = "Cook more in less time (Speed)",
-                    ImageURI = "icon_new.png",
-                    Range = 0,
-                    Damage = 0,
-                    Value = 4,
-                    Location = ItemLocationEnum.OffHand,
-                    Attribute = AttributeEnum.Speed},
-
-                new ItemModel {
                     Name = "Sneakers",
                     Description = "More speed, less haste (Speed)",
                     ImageURI = "nonslip.png",
