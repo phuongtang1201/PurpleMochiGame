@@ -155,6 +155,7 @@
     <EmbeddedResource Include="chefwhite2x.png" />
     <Content Include="chefyellow100px.png" />
     <Content Include="chefyellow.png" />
+    <Content Include="coffee.png" />
     <Content Include="cookbook.png" />
     <Content Include="create.png" />
     <Content Include="d10.png" />
