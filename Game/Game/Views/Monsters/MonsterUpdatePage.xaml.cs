@@ -59,13 +59,18 @@ namespace Game.Views
         /// </summary>
         private void GenerateImagePicker()
         {
-            ImagePicker.Items.Add("eggs100px.png");
-            ImagePicker.Items.Add("garlic100px.png");
-            ImagePicker.Items.Add("lettuce100px.png");
-            ImagePicker.Items.Add("steak100px.png");
+            ImagePicker.Items.Add("carrots.png");
+            ImagePicker.Items.Add("donut_boss.png");
+            ImagePicker.Items.Add("eggplant.png");
+            ImagePicker.Items.Add("eggs.png");
+            ImagePicker.Items.Add("garlic.png");
+            ImagePicker.Items.Add("lettuce.png");
             ImagePicker.Items.Add("pineapple.png");
-            ImagePicker.Items.Add("strawberry100px.png");
-            ImagePicker.Items.Add("watermelon100px.png");
+            ImagePicker.Items.Add("pizza_boss.png");
+            ImagePicker.Items.Add("steak.png");
+            ImagePicker.Items.Add("strawberry.png");
+            ImagePicker.Items.Add("sushi_boss.png");
+            ImagePicker.Items.Add("watermelon.png");
         }
 
             /// <summary>
