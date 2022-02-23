@@ -40,6 +40,24 @@
                         <Label Text="Mutant Food" x:Name="MonsterLabel" 
                                Style="{StaticResource CenterMessageStyle}" HorizontalOptions="CenterAndExpand"/>
                         <StackLayout x:Name="MonsterBox" Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand"/>
+                        
+                        <StackLayout   Style="{StaticResource VerticalStack}">
+
+                            <StackLayout x:Name="CurrentCharacterBox" Style="{StaticResource PlayerBattleInfoBox}" HorizontalOptions="Start">
+                                <Image x:Name="CharacterImage" Source="knight.png" Style="{StaticResource ImageBattleMediumStyle}"/>
+                                <Label x:Name="CharacterName" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
+                                <Label x:Name="CharacterHealth" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
+                            </StackLayout>
+                            
+                            <StackLayout x:Name="CurrentMonsterBox" Style="{StaticResource PlayerBattleInfoBox}" HorizontalOptions="Start">
+                                <Image x:Name="MonsterImage" Source="knight.png" Style="{StaticResource ImageBattleMediumStyle}"/>
+                                <Label x:Name="MonsterName" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
+                                <Label x:Name="MonsterHealth" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
+                            </StackLayout>
+
+                           
+
+                        </StackLayout>
 
                         <Label Text="Chefs" x:Name="ChefLabel"
                                Style="{StaticResource CenterMessageStyle}" HorizontalOptions="CenterAndExpand"/>
