@@ -503,6 +503,15 @@ namespace Game.GameRules
                     ImageURI = "watermelon.png",
                 },
 
+                new MonsterModel {
+                    Name = "Fast Carrots",
+                    Description = "Very orange!",
+                    Attack = 3,
+                    Defense = 3,
+                    Speed = 3,
+                    ImageURI = "carrots.png",
+                },
+
 
             };
 
