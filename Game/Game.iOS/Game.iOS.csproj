@@ -457,4 +457,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\chefpurple.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\chefyellow.png" />
+  </ItemGroup>
 </Project>
