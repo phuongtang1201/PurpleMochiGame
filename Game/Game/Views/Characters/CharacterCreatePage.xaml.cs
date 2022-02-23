@@ -73,12 +73,12 @@ namespace Game.Views
         /// </summary>
         private void GenerateImagePicker()
         {
-            ImagePicker.Items.Add("chefblue100px.png");
-            ImagePicker.Items.Add("chefgreen100px.png");
-            ImagePicker.Items.Add("cheforange100px.png");
-            ImagePicker.Items.Add("chefpurple100px.png");
+            ImagePicker.Items.Add("chefblue.png");
+            ImagePicker.Items.Add("chefgreen.png");
+            ImagePicker.Items.Add("cheforange.png");
+            ImagePicker.Items.Add("chefpurple.png");
             ImagePicker.Items.Add("chefwhite.png");
-            ImagePicker.Items.Add("chefyellow100px.png");
+            ImagePicker.Items.Add("chefyellow.png");
         }
 
         /// <summary>
