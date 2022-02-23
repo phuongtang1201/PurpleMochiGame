@@ -543,7 +543,7 @@ namespace Game.Views
         /// </summary>
         public void DrawGameBoardAttackerDefenderSection()
         {
-            BattlePlayerBoxVersus.Text = "";
+           // BattlePlayerBoxVersus.Text = "";
            
 
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null)
@@ -602,7 +602,7 @@ namespace Game.Views
                 DefenderImage.BackgroundColor = Color.Red;
             }
 
-            BattlePlayerBoxVersus.Text = "vs";
+          //  BattlePlayerBoxVersus.Text = "vs";
         }
 
         /// <summary>
@@ -628,7 +628,7 @@ namespace Game.Views
             CharacterHealth.Text = string.Empty;
             CharacterImage.BackgroundColor = Color.Transparent;
 
-            BattlePlayerBoxVersus.Text = string.Empty;
+           // BattlePlayerBoxVersus.Text = string.Empty;
         }
 
         /// <summary>
