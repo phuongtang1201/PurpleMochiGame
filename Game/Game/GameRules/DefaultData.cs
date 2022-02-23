@@ -512,7 +512,14 @@ namespace Game.GameRules
                     ImageURI = "carrots.png",
                 },
 
-
+                new MonsterModel {
+                    Name = "Diva Eggplant",
+                    Description = "Born to dance",
+                    Attack = 3,
+                    Defense = 3,
+                    Speed = 3,
+                    ImageURI = "eggplant.png",
+                },
             };
 
             return datalist;
