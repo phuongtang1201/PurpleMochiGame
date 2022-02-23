@@ -4,9 +4,7 @@
              x:Class="Game.Views.BattleHomePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Score Page" Clicked="ScorePage_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
