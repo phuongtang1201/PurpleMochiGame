@@ -192,7 +192,7 @@
     <Content Include="knife.png" />
     <Content Include="knight.png" />
     <Content Include="lettuce100px.png" />
-    <EmbeddedResource Include="lettuce.png" />
+    <Content Include="lettuce.png" />
     <Content Include="mixingbowl_dice.png" />
     <Content Include="mutantfood.png" />
     <Content Include="mutant_foods.png" />
