@@ -888,15 +888,11 @@ namespace Game.Views
             switch (BattleEngineViewModel.Instance.Engine.EngineSettings.BattleStateEnum)
             {
                 case BattleStateEnum.Starting:
-                    CharacterBox.IsVisible = false;
-                    MonsterBox.IsVisible = false;
                     //GameUIDisplay.IsVisible = false;
                     AttackerAttack.Source = ActionEnum.Unknown.ToImageURI();
                     //StartBattleQuery.IsVisible = true;
-                    //StartBattleButton.IsVisible = true;
+                    StartBattleButton.IsVisible = true;
                     //CancelBattleButton.IsVisible = true;
-                    MonsterLabel.IsVisible = false;
-                    ChefLabel.IsVisible = false;
                     break;
 
                 case BattleStateEnum.NewRound:
