@@ -156,16 +156,6 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.Attack},
 
                 new ItemModel {
-                    Name = "Torch",
-                    Description = "Light it up (Attack)",
-                    ImageURI = "icon_new.png",
-                    Range = 5,
-                    Damage = 7,
-                    Value = 8,
-                    Location = ItemLocationEnum.PrimaryHand,
-                    Attribute = AttributeEnum.Attack},
-
-                new ItemModel {
                     Name = "Apron",
                     Description = "Keeps stains at bay (Defense)",
                     ImageURI = "apron.png",
