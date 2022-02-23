@@ -37,10 +37,12 @@
                         VerticalOptions="Start" 
                         HorizontalOptions="CenterAndExpand">
 
-                        <Label Text="Mutant Food" Style="{StaticResource CenterMessageStyle}" HorizontalOptions="CenterAndExpand"/>
+                        <Label Text="Mutant Food" x:Name="TrueFalseLabel" 
+                               Style="{StaticResource CenterMessageStyle}" HorizontalOptions="CenterAndExpand"/>
                         <StackLayout x:Name="MonsterBox" Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand"/>
 
-                        <Label Text="Chefs" Style="{StaticResource CenterMessageStyle}" HorizontalOptions="CenterAndExpand"/>
+                        <Label Text="Chefs" x:Name="TrueFalseLabel" 
+                               Style="{StaticResource CenterMessageStyle}" HorizontalOptions="CenterAndExpand"/>
                         <StackLayout x:Name="CharacterBox" Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand"/>
                     </StackLayout>
                 </StackLayout>
