@@ -78,7 +78,7 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Coffee",
                     Description = "Restore your energy (Current Health)",
-                    ImageURI = "icon_new.png",
+                    ImageURI = "coffee.png",
                     Range = 0,
                     Damage = 0,
                     Value = 3,
