@@ -51,7 +51,7 @@
                         Text="BACK"/>
                     <Button 
                         Style="{StaticResource BattleButton}"
-                        Clicked="CloseButton_Clicked" 
+                        Clicked="BeginButton_Clicked" 
                         HorizontalOptions="EndAndExpand"
                         Text="BEGIN"/>
                 </StackLayout>

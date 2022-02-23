@@ -222,16 +222,6 @@ namespace Game.Views
         }
 
         /// <summary>
-        /// Go back
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        public async void BackButton_Clicked(object sender, EventArgs e)
-        {
-            _ = await Navigation.PopModalAsync();
-        }
-
-        /// <summary>
         /// Close the Page
         /// </summary>
         /// <param name="sender"></param>
