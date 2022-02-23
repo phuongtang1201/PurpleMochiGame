@@ -27,7 +27,8 @@
                          HorizontalOptions="CenterAndExpand"
                          VerticalOptions="Center">
                 <Frame Style="{StaticResource StatisticsFrame}">
-                    <Label Text="Are you ready to begin?" />
+                    <Label Text="Are you ready to begin?"
+                           Style="{StaticResource LabelBaseStyle}"/>
                 </Frame>
             </StackLayout>
 
