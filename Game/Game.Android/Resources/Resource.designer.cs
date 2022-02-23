@@ -16952,10 +16952,13 @@ namespace Game.Droid
 			public const int vinegar = 2131165423;
 			
 			// aapt resource value: 0x7F0700F0
-			public const int watermelon100px = 2131165424;
+			public const int watermelon = 2131165424;
 			
 			// aapt resource value: 0x7F0700F1
-			public const int yes = 2131165425;
+			public const int watermelon100px = 2131165425;
+			
+			// aapt resource value: 0x7F0700F2
+			public const int yes = 2131165426;
 			
 			static Drawable()
 			{
