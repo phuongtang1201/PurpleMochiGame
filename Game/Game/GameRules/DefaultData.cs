@@ -18,10 +18,10 @@ namespace Game.GameRules
                 new ItemModel {
                     Name = "Spatula",
                     Description = "Has a long reach.",
-                    ImageURI = "icon_new.png",
-                    Range = 1,
-                    Damage = 4,
-                    Value = 6,
+                    ImageURI = "spatula.png",
+                    Range = 0,
+                    Damage = 0,
+                    Value = 4,
                     Location = ItemLocationEnum.PrimaryHand,
                     Attribute = AttributeEnum.Attack},
 
@@ -104,16 +104,6 @@ namespace Game.GameRules
                     Value = 3,
                     Location = ItemLocationEnum.RightFinger,
                     Attribute = AttributeEnum.Defense},
-
-                new ItemModel {
-                    Name = "Spatula",
-                    Description = "(Attack)",
-                    ImageURI = "spatula.png",
-                    Range = 0,
-                    Damage = 0,
-                    Value = 5,
-                    Location = ItemLocationEnum.Head,
-                    Attribute = AttributeEnum.Attack},
 
                 new ItemModel {
                     Name = "Soap",
