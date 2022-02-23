@@ -87,7 +87,8 @@
 
                         <Button x:Name="AttackButton" Clicked="AttackButton_Clicked" Text="Next Attack" IsVisible="False"/>
                         <Button x:Name="NextRoundButton" Clicked="NextRoundButton_Clicked" Text="Next Round" IsVisible="False"/>
-                        <Button x:Name="StartBattleButton" Clicked="StartButton_Clicked" Text="Start Battle" IsVisible="False"/>
+                        <Button x:Name="CancelBattleButton" Clicked="StartButton_Clicked" Text="BACK" IsVisible="False"/>
+                        <Button x:Name="StartBattleButton" Clicked="StartButton_Clicked" Text="BEGIN" IsVisible="False"/>
 
                     </StackLayout>
 
