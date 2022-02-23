@@ -148,7 +148,6 @@
     <Content Include="chefpurple.png" />
     <Content Include="chefs.png" />
     <Content Include="chefwhite.png" />
-    <EmbeddedResource Include="chefwhite2x.png" />
     <Content Include="chefyellow100px.png" />
     <Content Include="chefyellow.png" />
     <Content Include="coffee.png" />
