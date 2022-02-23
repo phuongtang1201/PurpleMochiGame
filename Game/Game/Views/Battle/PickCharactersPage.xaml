@@ -13,7 +13,7 @@
             <StackLayout Style="{StaticResource OuterBoxStack}">
 
                 <Label Text="Select Your Chefs" Style="{StaticResource CenterMessageLargeStyle}"/>
-
+                <Button Text="Temporary Battle Home Page" Clicked="BattleHomePage_Clicked"/>
                 <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand">
 
                     <StackLayout HorizontalOptions="Start">
