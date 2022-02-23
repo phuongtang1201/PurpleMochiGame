@@ -89,8 +89,10 @@
 
                         <Button x:Name="AttackButton" Clicked="AttackButton_Clicked" Text="Next Attack" IsVisible="False"/>
                         <Button x:Name="NextRoundButton" Clicked="NextRoundButton_Clicked" Text="Next Round" IsVisible="False"/>
-                        <Button x:Name="CancelBattleButton" Clicked="ExitButton_Clicked" Text="BACK" IsVisible="False"/>
-                        <Button x:Name="StartBattleButton" Clicked="StartButton_Clicked" Text="BEGIN" IsVisible="False"/>
+                        <Button x:Name="CancelBattleButton" Style="{StaticResource CancelUpdateDeleteButton}" 
+                                Clicked="ExitButton_Clicked" Text="BACK" IsVisible="False"/>
+                        <Button x:Name="StartBattleButton" Style="{StaticResource CancelUpdateDeleteButton}" 
+                                Clicked="StartButton_Clicked" Text="BEGIN" IsVisible="False"/>
 
                     </StackLayout>
 
