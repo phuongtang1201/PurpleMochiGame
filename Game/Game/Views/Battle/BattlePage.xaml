@@ -41,7 +41,7 @@
                                Style="{StaticResource CenterMessageStyle}" HorizontalOptions="CenterAndExpand"/>
                         <StackLayout x:Name="MonsterBox" Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand"/>
                         
-                        <StackLayout   Style="{StaticResource VerticalStack}">
+                        <StackLayout x:Name="BattlePlayerVerticalBox"  Style="{StaticResource VerticalStack}" HorizontalOptions="Center">
 
                             <StackLayout x:Name="CurrentCharacterBox" Style="{StaticResource PlayerBattleInfoBox}" HorizontalOptions="Start">
                                 <Image x:Name="CharacterImage" Source="knight.png" Style="{StaticResource ImageBattleMediumStyle}"/>
@@ -54,8 +54,6 @@
                                 <Label x:Name="MonsterName" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
                                 <Label x:Name="MonsterHealth" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
                             </StackLayout>
-
-                           
 
                         </StackLayout>
 
