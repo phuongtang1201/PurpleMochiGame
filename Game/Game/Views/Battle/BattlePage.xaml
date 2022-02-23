@@ -23,7 +23,12 @@
                 VerticalOptions="FillAndExpand">
             
             <!-- The Ready Page -->
-            <StackLayout x:Name="StartBattleQuery">
+            <StackLayout x:Name="StartBattleQuery"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="Center">
+                <Frame Style="{StaticResource StatisticsFrame}">
+                    
+                </Frame>
             </StackLayout>
 
             <!--The Game UI Screen -->
