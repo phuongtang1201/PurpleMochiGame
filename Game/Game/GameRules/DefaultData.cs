@@ -96,16 +96,6 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.CurrentHealth},
 
                 new ItemModel {
-                    Name = "Chef's Hat",
-                    Description = "For the more experienced (Maximum Health)",
-                    ImageURI = "icon_new.png",
-                    Range = 0,
-                    Damage = 0,
-                    Value = 7,
-                    Location = ItemLocationEnum.Head,
-                    Attribute = AttributeEnum.MaxHealth},
-
-                new ItemModel {
                     Name = "Chef's Knife",
                     Description = "Handle with care (Attack)",
                     ImageURI = "knife.png",
