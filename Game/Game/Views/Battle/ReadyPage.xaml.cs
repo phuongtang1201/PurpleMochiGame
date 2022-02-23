@@ -208,6 +208,30 @@ namespace Game.Views
         }
 
         /// <summary>
+        /// Jump to the Battle
+        /// 
+        /// Its Modal because don't want user to come back...
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public async void BeginButton_Clicked(object sender, EventArgs e)
+        {
+
+            await Navigation.PushModalAsync(new NavigationPage(new BattlePage()));
+            _ = await Navigation.PopAsync();
+        }
+
+        /// <summary>
+        /// Go back
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public async void BackButton_Clicked(object sender, EventArgs e)
+        {
+            _ = await Navigation.PopModalAsync();
+        }
+
+        /// <summary>
         /// Close the Page
         /// </summary>
         /// <param name="sender"></param>
