@@ -136,16 +136,6 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.Defense},
 
                 new ItemModel {
-                    Name = "Bow Tie",
-                    Description = "(Maximum Health)",
-                    ImageURI = "icon_new.png",
-                    Range = 0,
-                    Damage = 0,
-                    Value = 5,
-                    Location = ItemLocationEnum.Head,
-                    Attribute = AttributeEnum.MaxHealth},
-
-                new ItemModel {
                     Name = "Chef's Knife",
                     Description = "Handle with care (Attack)",
                     ImageURI = "knife.png",
