@@ -159,12 +159,12 @@
                     AbsoluteLayout.LayoutFlags="PositionProportional" 
                     x:Name="GameOverDisplay" 
                     IsVisible="false">
-                
-                <Frame Style="{StaticResource BattleMessageFrameStyle}">
-                    <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
-                        <Label Text="Thank you for Playing" Style="{StaticResource CenterMessageLargeStyle}"/>
 
-                        <Label Text="Check your score, or click Exit and return soon" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" MaxLines="5" Padding="20"/>
+                <Frame Style="{StaticResource BattleMessageFrameStyle}" Margin="70,0,0,0" >
+                    <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                        <Label Text="Game Over" Style="{StaticResource CenterMessageLargeStyle}"/>
+
+                        <Label Text="You've been cooked!" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" MaxLines="5" Padding="20"/>
 
                         <Button x:Name="ShowScoreButton" Clicked="ShowScoreButton_Clicked" Text="Score" WidthRequest="50"/>
 
@@ -172,6 +172,7 @@
 
                     </StackLayout>
                 </Frame>
+
             </StackLayout>
         </AbsoluteLayout>
     </ContentPage.Content>
