@@ -17,28 +17,17 @@
 
                     <Label
                         Style="{StaticResource CenterMessageExtraLargeStyle}"
-                        FontSize="60"
-                        Text="0"/>
+                        FontSize="60" />
                 </StackLayout>
 
                 <StackLayout>
                     <Label 
                         Style="{StaticResource CenterMessageExtraLargeStyle}"/>
-
-                    <FlexLayout x:Name="MonsterListFrame"
-                                    JustifyContent="Center"
-                                    AlignContent="Start"
-                                    Wrap="Wrap"/>
                 </StackLayout>
 
                 <StackLayout>
                     <Label 
                         Style="{StaticResource CenterMessageExtraLargeStyle}"/>
-
-                    <FlexLayout x:Name="ItemListFrame"
-                                    JustifyContent="Start"
-                                    AlignContent="Start"
-                                    Wrap="Wrap"/>
                 </StackLayout>
 
                 <StackLayout
