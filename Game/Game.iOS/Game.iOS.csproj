@@ -344,9 +344,6 @@
     <BundleResource Include="Resources\vinegar.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\cheforange100px2x.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\chefpurple100px2x.png" />
   </ItemGroup>
   <ItemGroup>
