@@ -544,6 +544,7 @@ namespace Game.Views
         public void DrawGameBoardAttackerDefenderSection()
         {
             BattlePlayerBoxVersus.Text = "";
+           
 
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null)
             {
@@ -560,7 +561,11 @@ namespace Game.Views
                 MonsterImage.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ImageURI;
                 MonsterName.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.Name;
                 MonsterHealth.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.GetCurrentHealthTotal.ToString() + " / " + BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.GetMaxHealthTotal.ToString();
-               
+
+                CharacterImage.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.ImageURI;
+                CharacterName.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.Name;
+                CharacterHealth.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetCurrentHealthTotal.ToString() + " / " + BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetMaxHealthTotal.ToString();
+
             }
 
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Character)
@@ -568,19 +573,10 @@ namespace Game.Views
                 CharacterImage.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ImageURI;
                 CharacterName.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.Name;
                 CharacterHealth.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.GetCurrentHealthTotal.ToString() + " / " + BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.GetMaxHealthTotal.ToString();
-            }
 
-            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Monster)
-            {
                 MonsterImage.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.ImageURI;
                 MonsterName.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.Name;
                 MonsterHealth.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetCurrentHealthTotal.ToString() + " / " + BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetMaxHealthTotal.ToString();
-            }
-            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Character)
-            {
-                CharacterImage.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.ImageURI;
-                CharacterName.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.Name;
-                CharacterHealth.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetCurrentHealthTotal.ToString() + " / " + BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetMaxHealthTotal.ToString();
             }
 
             AttackerImage.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ImageURI;
@@ -622,6 +618,15 @@ namespace Game.Views
             DefenderName.Text = string.Empty;
             DefenderHealth.Text = string.Empty;
             DefenderImage.BackgroundColor = Color.Transparent;
+
+            MonsterImage.Source = string.Empty;
+            MonsterName.Text = string.Empty;
+            MonsterHealth.Text = string.Empty;
+
+            CharacterImage.Source = string.Empty;
+            CharacterName.Text = string.Empty;
+            CharacterHealth.Text = string.Empty;
+            CharacterImage.BackgroundColor = Color.Transparent;
 
             BattlePlayerBoxVersus.Text = string.Empty;
         }
@@ -881,6 +886,7 @@ namespace Game.Views
             AttackButton.IsVisible = false;
             MessageDisplayBox.IsVisible = false;
             BattlePlayerInfomationBox.IsVisible = false;
+
         }
 
         /// <summary>
