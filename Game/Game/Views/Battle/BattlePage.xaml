@@ -89,6 +89,10 @@
 
                         <Button x:Name="AttackButton" Clicked="AttackButton_Clicked" Text="Next Attack" IsVisible="False"/>
                         <Button x:Name="NextRoundButton" Clicked="NextRoundButton_Clicked" Text="Next Round" IsVisible="False"/>
+                        <Button x:Name="CancelBattleButton" Style="{StaticResource CancelUpdateDeleteButton}" 
+                                    Clicked="ExitButton_Clicked" Text="BACK" IsVisible="False"/>
+                        <Button x:Name="StartBattleButton" Clicked="StartButton_Clicked" Text="BEGIN" IsVisible="False"
+                                    Style="{StaticResource CancelUpdateDeleteButton}" />
 
                     </StackLayout>
 
@@ -128,7 +132,7 @@
                 </StackLayout>
             </StackLayout>
 
-            <!-- The Ready Page -->
+            <!-- The Ready Page
             <StackLayout Style="{StaticResource HorizontalStack}"
                          x:Name="StartBattleQuery"
                          HorizontalOptions="CenterAndExpand"
@@ -146,7 +150,7 @@
                                     Clicked="StartButton_Clicked" Text="BEGIN" IsVisible="False"
                                     Style="{StaticResource CancelUpdateDeleteButton}" />
                 </Grid>
-            </StackLayout>
+            </StackLayout> -->
 
             <!--The Game Over Screen -->
             <StackLayout 
