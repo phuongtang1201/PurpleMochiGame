@@ -16874,91 +16874,88 @@ namespace Game.Droid
 			public const int strawberry = 2131165397;
 			
 			// aapt resource value: 0x7F0700D6
-			public const int strawberry100px = 2131165398;
+			public const int sword1 = 2131165398;
 			
 			// aapt resource value: 0x7F0700D7
-			public const int sword1 = 2131165399;
+			public const int sword10 = 2131165399;
 			
 			// aapt resource value: 0x7F0700D8
-			public const int sword10 = 2131165400;
+			public const int sword11 = 2131165400;
 			
 			// aapt resource value: 0x7F0700D9
-			public const int sword11 = 2131165401;
+			public const int sword2 = 2131165401;
 			
 			// aapt resource value: 0x7F0700DA
-			public const int sword2 = 2131165402;
+			public const int sword3 = 2131165402;
 			
 			// aapt resource value: 0x7F0700DB
-			public const int sword3 = 2131165403;
+			public const int sword4 = 2131165403;
 			
 			// aapt resource value: 0x7F0700DC
-			public const int sword4 = 2131165404;
+			public const int sword5 = 2131165404;
 			
 			// aapt resource value: 0x7F0700DD
-			public const int sword5 = 2131165405;
+			public const int sword6 = 2131165405;
 			
 			// aapt resource value: 0x7F0700DE
-			public const int sword6 = 2131165406;
+			public const int sword7 = 2131165406;
 			
 			// aapt resource value: 0x7F0700DF
-			public const int sword7 = 2131165407;
+			public const int sword8 = 2131165407;
 			
 			// aapt resource value: 0x7F0700E0
-			public const int sword8 = 2131165408;
+			public const int sword9 = 2131165408;
 			
 			// aapt resource value: 0x7F0700E1
-			public const int sword9 = 2131165409;
+			public const int test_custom_background = 2131165409;
 			
 			// aapt resource value: 0x7F0700E2
-			public const int test_custom_background = 2131165410;
+			public const int tooltip_frame_dark = 2131165410;
 			
 			// aapt resource value: 0x7F0700E3
-			public const int tooltip_frame_dark = 2131165411;
+			public const int tooltip_frame_light = 2131165411;
 			
 			// aapt resource value: 0x7F0700E4
-			public const int tooltip_frame_light = 2131165412;
+			public const int troll = 2131165412;
 			
 			// aapt resource value: 0x7F0700E5
-			public const int troll = 2131165413;
+			public const int troll1 = 2131165413;
 			
 			// aapt resource value: 0x7F0700E6
-			public const int troll1 = 2131165414;
+			public const int troll2 = 2131165414;
 			
 			// aapt resource value: 0x7F0700E7
-			public const int troll2 = 2131165415;
+			public const int troll3 = 2131165415;
 			
 			// aapt resource value: 0x7F0700E8
-			public const int troll3 = 2131165416;
+			public const int troll4 = 2131165416;
 			
 			// aapt resource value: 0x7F0700E9
-			public const int troll4 = 2131165417;
+			public const int troll5 = 2131165417;
 			
 			// aapt resource value: 0x7F0700EA
-			public const int troll5 = 2131165418;
+			public const int troll6 = 2131165418;
 			
 			// aapt resource value: 0x7F0700EB
-			public const int troll6 = 2131165419;
+			public const int update = 2131165419;
 			
 			// aapt resource value: 0x7F0700EC
-			public const int update = 2131165420;
-			
-			// aapt resource value: 0x7F0700ED
-			public const int village = 2131165421;
-			
-			// aapt resource value: 0x7F0700EF
-			public const int villageleaderboard = 2131165423;
+			public const int village = 2131165420;
 			
 			// aapt resource value: 0x7F0700EE
-			public const int village_leaderboard = 2131165422;
+			public const int villageleaderboard = 2131165422;
+			
+			// aapt resource value: 0x7F0700ED
+			public const int village_leaderboard = 2131165421;
+			
+			// aapt resource value: 0x7F0700EF
+			public const int vinegar = 2131165423;
 			
 			// aapt resource value: 0x7F0700F0
-			public const int vinegar = 2131165424;
+			public const int watermelon100px = 2131165424;
 			
 			// aapt resource value: 0x7F0700F1
-			public const int watermelon100px = 2131165425;
-			
-			// aapt resource value: 0x7F0700F2
-			public const int yes = 2131165426;
+			public const int yes = 2131165425;
 			
 			static Drawable()
 			{
