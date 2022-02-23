@@ -520,6 +520,15 @@ namespace Game.GameRules
                     Speed = 3,
                     ImageURI = "eggplant.png",
                 },
+
+                new MonsterModel {
+                    Name = "Donut Boss",
+                    Description = "You'll never see it coming",
+                    Attack = 7,
+                    Defense = 7,
+                    Speed = 7,
+                    ImageURI = "donut_boss.png",
+                },
             };
 
             return datalist;
