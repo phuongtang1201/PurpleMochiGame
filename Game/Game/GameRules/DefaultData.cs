@@ -500,7 +500,7 @@ namespace Game.GameRules
                     Attack = 3,
                     Defense = 3,
                     Speed = 3,
-                    ImageURI = "watermelon100px.png",
+                    ImageURI = "watermelon.png",
                 },
 
 
