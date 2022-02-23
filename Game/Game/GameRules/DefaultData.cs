@@ -186,16 +186,6 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.Defense},
 
                 new ItemModel {
-                    Name = "Tank Top",
-                    Description = "Doesn't bog you down (Speed)",
-                    ImageURI = "icon_new.png",
-                    Range = 0,
-                    Damage = 0,
-                    Value = 3,
-                    Location = ItemLocationEnum.LeftFinger,
-                    Attribute = AttributeEnum.Defense},
-
-                new ItemModel {
                     Name = "Wooden Spoon",
                     Description = "(Defense)",
                     ImageURI = "woodenspoon.png",
