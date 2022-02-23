@@ -155,13 +155,12 @@
             <!--The Game Over Screen -->
             <StackLayout 
                     Style="{StaticResource VerticalStack}"
-                    AbsoluteLayout.LayoutBounds="1,1,1,1" 
-                    AbsoluteLayout.LayoutFlags="All"
-                    HorizontalOptions="FillAndExpand"
+                    AbsoluteLayout.LayoutBounds="0.5,0.25,400,25"
+                    AbsoluteLayout.LayoutFlags="PositionProportional" 
                     x:Name="GameOverDisplay" 
                     IsVisible="false">
-                <Frame CornerRadius="10" OutlineColor="LightGray" 
-                   BackgroundColor="LightGray" Padding="15">
+                
+                <Frame Style="{StaticResource BattleMessageFrameStyle}">
                     <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
                         <Label Text="Thank you for Playing" Style="{StaticResource CenterMessageLargeStyle}"/>
 
