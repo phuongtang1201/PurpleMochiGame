@@ -55,7 +55,7 @@
                     </AbsoluteLayout>
                 </StackLayout>
 
-                <!-- The Ready Page -->
+                <!-- The Ready Page 
                 <StackLayout Style="{StaticResource HorizontalStack}"
                          x:Name="StartBattleQuery"
                          HorizontalOptions="CenterAndExpand"
@@ -73,7 +73,7 @@
                                     Clicked="StartButton_Clicked" Text="BEGIN" IsVisible="False"
                                     Style="{StaticResource CancelUpdateDeleteButton}" />
                     </Grid>
-                </StackLayout>
+                </StackLayout> -->
 
                 <!--The Bottom of the Battle UI  Holds the Player to Player boxes, Buttons, and the Messages-->
                 <StackLayout x:Name="BattleBottomBox" Style="{StaticResource BattleUIBottomBox}">
