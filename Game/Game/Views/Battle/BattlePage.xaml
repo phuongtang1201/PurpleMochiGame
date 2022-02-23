@@ -55,26 +55,6 @@
                     </AbsoluteLayout>
                 </StackLayout>
 
-                <!-- The Ready Page 
-                <StackLayout Style="{StaticResource HorizontalStack}"
-                         x:Name="StartBattleQuery"
-                         HorizontalOptions="CenterAndExpand"
-                         VerticalOptions="Center">
-                    <Grid>
-                        <BoxView Style="{StaticResource FlexLayoutBoxView}"
-                                     Grid.ColumnSpan="2" Grid.RowSpan="2" />
-                        <Label Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"
-                                   Grid.ColumnSpan="2" Text="Are you ready to begin?"
-                                   Style="{StaticResource GrayBoxStyle}"/>
-                        <Button Grid.Row="1" Grid.Column="0" x:Name="CancelBattleButton" 
-                                    Style="{StaticResource CancelUpdateDeleteButton}" 
-                                    Clicked="ExitButton_Clicked" Text="BACK" IsVisible="False"/>
-                        <Button Grid.Row="1" Grid.Column="1" x:Name="StartBattleButton" 
-                                    Clicked="StartButton_Clicked" Text="BEGIN" IsVisible="False"
-                                    Style="{StaticResource CancelUpdateDeleteButton}" />
-                    </Grid>
-                </StackLayout> -->
-
                 <!--The Bottom of the Battle UI  Holds the Player to Player boxes, Buttons, and the Messages-->
                 <StackLayout x:Name="BattleBottomBox" Style="{StaticResource BattleUIBottomBox}">
 
@@ -146,6 +126,26 @@
                         </StackLayout>
                     </StackLayout>
                 </StackLayout>
+            </StackLayout>
+
+            <!-- The Ready Page -->
+            <StackLayout Style="{StaticResource HorizontalStack}"
+                         x:Name="StartBattleQuery"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="Center">
+                <Grid>
+                    <BoxView Style="{StaticResource FlexLayoutBoxView}"
+                                     Grid.ColumnSpan="2" Grid.RowSpan="2" />
+                    <Label Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"
+                                   Grid.ColumnSpan="2" Text="Are you ready to begin?"
+                                   Style="{StaticResource GrayBoxStyle}"/>
+                    <Button Grid.Row="1" Grid.Column="0" x:Name="CancelBattleButton" 
+                                    Style="{StaticResource CancelUpdateDeleteButton}" 
+                                    Clicked="ExitButton_Clicked" Text="BACK" IsVisible="False"/>
+                    <Button Grid.Row="1" Grid.Column="1" x:Name="StartBattleButton" 
+                                    Clicked="StartButton_Clicked" Text="BEGIN" IsVisible="False"
+                                    Style="{StaticResource CancelUpdateDeleteButton}" />
+                </Grid>
             </StackLayout>
 
             <!--The Game Over Screen -->
