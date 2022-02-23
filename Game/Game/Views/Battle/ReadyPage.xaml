@@ -44,12 +44,16 @@
                 <StackLayout
                     Orientation="Horizontal"
                     VerticalOptions="EndAndExpand">
-                    
                     <Button 
                         Style="{StaticResource BattleButton}"
                         Clicked="CloseButton_Clicked" 
                         HorizontalOptions="EndAndExpand"
-                        Text="Continue"/>
+                        Text="BACK"/>
+                    <Button 
+                        Style="{StaticResource BattleButton}"
+                        Clicked="CloseButton_Clicked" 
+                        HorizontalOptions="EndAndExpand"
+                        Text="BEGIN"/>
                 </StackLayout>
 
         </StackLayout>
