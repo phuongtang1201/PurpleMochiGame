@@ -372,7 +372,6 @@
     <AndroidResource Include="Resources\drawable\auto_battle.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="donut_boss.png" />
     <AndroidResource Include="Resources\drawable\eggs.png" />
     <AndroidResource Include="Resources\drawable\garlic.png" />
     <AndroidResource Include="Resources\drawable\lettuce.png" />
