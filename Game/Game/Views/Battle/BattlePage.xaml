@@ -160,17 +160,19 @@
                     HorizontalOptions="FillAndExpand"
                     x:Name="GameOverDisplay" 
                     IsVisible="false">
+                <Frame CornerRadius="10" OutlineColor="LightGray" 
+                   BackgroundColor="LightGray" Padding="15">
+                    <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                        <Label Text="Thank you for Playing" Style="{StaticResource CenterMessageLargeStyle}"/>
 
-                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="10">
-                    <Label Text="Thank you for Playing" Style="{StaticResource CenterMessageLargeStyle}"/>
+                        <Label Text="Check your score, or click Exit and return soon" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" MaxLines="5" Padding="20"/>
 
-                    <Label Text="Check your score, or click Exit and return soon" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" MaxLines="5" Padding="20"/>
+                        <Button x:Name="ShowScoreButton" Clicked="ShowScoreButton_Clicked" Text="Score" WidthRequest="50"/>
 
-                    <Button x:Name="ShowScoreButton" Clicked="ShowScoreButton_Clicked" Text="Score" WidthRequest="50"/>
+                        <Button x:Name="ExitButton" Clicked="ExitButton_Clicked" Text="Exit" WidthRequest="50"></Button>
 
-                    <Button x:Name="ExitButton" Clicked="ExitButton_Clicked" Text="Exit" WidthRequest="50"></Button>
-
-                </StackLayout>
+                    </StackLayout>
+                </Frame>
             </StackLayout>
         </AbsoluteLayout>
     </ContentPage.Content>
