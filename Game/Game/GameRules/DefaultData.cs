@@ -206,12 +206,12 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.Speed},
 
                 new ItemModel {
-                    Name = "Oven Mitts",
+                    Name = "Sponge",
                     Description = "(Defense)",
-                    ImageURI = "icon_new.png",
+                    ImageURI = "sponge.png",
                     Range = 0,
                     Damage = 0,
-                    Value = 5,
+                    Value = 3,
                     Location = ItemLocationEnum.RightFinger,
                     Attribute = AttributeEnum.Defense},
 
