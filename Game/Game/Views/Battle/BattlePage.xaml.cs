@@ -889,6 +889,7 @@ namespace Game.Views
             {
                 case BattleStateEnum.Starting:
                     CharacterBox.IsVisible = false;
+                    MonsterBox.IsVisible = false;
                     //GameUIDisplay.IsVisible = false;
                     AttackerAttack.Source = ActionEnum.Unknown.ToImageURI();
                     //StartBattleQuery.IsVisible = true;
