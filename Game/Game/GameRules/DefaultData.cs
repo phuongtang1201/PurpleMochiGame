@@ -126,16 +126,6 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.CurrentHealth},
 
                 new ItemModel {
-                    Name = "Bib",
-                    Description = "(Defense)",
-                    ImageURI = "icon_new.png",
-                    Range = 0,
-                    Damage = 0,
-                    Value = 2,
-                    Location = ItemLocationEnum.Necklass,
-                    Attribute = AttributeEnum.Defense},
-
-                new ItemModel {
                     Name = "Chef's Knife",
                     Description = "Handle with care (Attack)",
                     ImageURI = "knife.png",
