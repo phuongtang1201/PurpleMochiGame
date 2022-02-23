@@ -282,9 +282,6 @@
     <AndroidResource Include="Resources\drawable\chefyellow100px.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lettuce100px.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\pineapple.png" />
   </ItemGroup>
   <ItemGroup>
