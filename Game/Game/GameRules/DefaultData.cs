@@ -196,14 +196,14 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.Defense},
 
                 new ItemModel {
-                    Name = "Rubber Gloves",
-                    Description = "(Speed)",
-                    ImageURI = "icon_new.png",
+                    Name = "Wooden Spoon",
+                    Description = "(Defense)",
+                    ImageURI = "woodenspoon.png",
                     Range = 0,
                     Damage = 0,
                     Value = 2,
-                    Location = ItemLocationEnum.RightFinger,
-                    Attribute = AttributeEnum.Speed},
+                    Location = ItemLocationEnum.OffHand,
+                    Attribute = AttributeEnum.Defense},
 
                 new ItemModel {
                     Name = "Sponge",
