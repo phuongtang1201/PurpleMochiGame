@@ -21,6 +21,10 @@
                 IsVisible="True"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand">
+            
+            <!-- The Ready Page -->
+            <StackLayout x:Name="StartBattleQuery">
+            </StackLayout>
 
             <!--The Game UI Screen -->
             <StackLayout VerticalOptions="FillAndExpand"
