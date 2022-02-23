@@ -86,16 +86,6 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.CurrentHealth},
 
                 new ItemModel {
-                    Name = "Snack",
-                    Description = "Restore your energy (Current Health)",
-                    ImageURI = "icon_new.png",
-                    Range = 0,
-                    Damage = 0,
-                    Value = 5,
-                    Location = ItemLocationEnum.Head,
-                    Attribute = AttributeEnum.CurrentHealth},
-
-                new ItemModel {
                     Name = "Chef's Knife",
                     Description = "Handle with care (Attack)",
                     ImageURI = "knife.png",
