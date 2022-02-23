@@ -896,6 +896,7 @@ namespace Game.Views
                     StartBattleButton.IsVisible = true;
                     CancelBattleButton.IsVisible = true;
                     MonsterLabel.IsVisible = false;
+                    ChefLabel.IsVisible = false;
                     break;
 
                 case BattleStateEnum.NewRound:
