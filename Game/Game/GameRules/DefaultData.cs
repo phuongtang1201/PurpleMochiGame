@@ -538,6 +538,15 @@ namespace Game.GameRules
                     Speed = 7,
                     ImageURI = "pizza_boss.png",
                 },
+
+                new MonsterModel {
+                    Name = "Sushi Boss",
+                    Description = "Something's fishy . . .",
+                    Attack = 7,
+                    Defense = 7,
+                    Speed = 7,
+                    ImageURI = "sushi_boss.png",
+                },
             };
 
             return datalist;
