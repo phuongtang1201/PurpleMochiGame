@@ -895,6 +895,7 @@ namespace Game.Views
                     //StartBattleQuery.IsVisible = true;
                     StartBattleButton.IsVisible = true;
                     CancelBattleButton.IsVisible = true;
+                    TrueFalseLabel.IsVisible = false;
                     break;
 
                 case BattleStateEnum.NewRound:
