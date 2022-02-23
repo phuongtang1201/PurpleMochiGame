@@ -16982,7 +16982,10 @@ namespace Game.Droid
 			public const int watermelon = 2131165433;
 			
 			// aapt resource value: 0x7F0700FA
-			public const int yes = 2131165434;
+			public const int woodenspoon = 2131165434;
+			
+			// aapt resource value: 0x7F0700FB
+			public const int yes = 2131165435;
 			
 			static Drawable()
 			{
