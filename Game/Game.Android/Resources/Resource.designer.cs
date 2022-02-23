@@ -16568,7 +16568,7 @@ namespace Game.Droid
 			public const int chefwhite = 2131165295;
 			
 			// aapt resource value: 0x7F070070
-			public const int chefyellow100px = 2131165296;
+			public const int chefyellow = 2131165296;
 			
 			// aapt resource value: 0x7F070071
 			public const int coffee = 2131165297;
