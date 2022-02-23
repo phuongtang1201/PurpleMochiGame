@@ -35,7 +35,7 @@
 
                 <StackLayout Style="{StaticResource CardImageTextBox}">
 
-                    <Image Source="item.png" Style="{StaticResource ImageLargeStyle}"
+                    <Image Source="cookbook.png" Style="{StaticResource ImageLargeStyle}"
                        HorizontalOptions="CenterAndExpand" />
 
                     <ImageButton Style="{StaticResource VillageImageButton}"
