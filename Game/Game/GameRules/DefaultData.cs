@@ -116,16 +116,6 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.Defense},
 
                 new ItemModel {
-                    Name = "Ice",
-                    Description = "Put some on that burn (Current Health)",
-                    ImageURI = "icon_new.png",
-                    Range = 0,
-                    Damage = 0,
-                    Value = 3,
-                    Location = ItemLocationEnum.OffHand,
-                    Attribute = AttributeEnum.CurrentHealth},
-
-                new ItemModel {
                     Name = "Chef's Knife",
                     Description = "Handle with care (Attack)",
                     ImageURI = "knife.png",
