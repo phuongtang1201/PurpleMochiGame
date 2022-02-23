@@ -166,11 +166,12 @@
 
                         <Label Text="You've been cooked!" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" MaxLines="5" Padding="20"/>
 
-                        <Button x:Name="ShowScoreButton" Clicked="ShowScoreButton_Clicked" Text="Score" WidthRequest="50"/>
+                        <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
+                            <Button x:Name="ShowScoreButton" Clicked="ShowScoreButton_Clicked" Text="Score" WidthRequest="50"/>
 
-                        <Button x:Name="ExitButton" Clicked="ExitButton_Clicked" Text="Exit" WidthRequest="50"></Button>
-
-                    </StackLayout>
+                            <Button x:Name="ExitButton" Clicked="ExitButton_Clicked" Text="Exit" WidthRequest="50"></Button>
+                         </StackLayout>
+            </StackLayout>
                 </Frame>
 
             </StackLayout>
