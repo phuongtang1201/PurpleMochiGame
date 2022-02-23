@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Game.Views.ReadyPage">
+
+    <ContentPage.Content>
+        <ScrollView HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
+            <StackLayout Style="{StaticResource VerticalStack}"
+                         Spacing="30"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand">
+
+                <StackLayout>
+                    <Label 
+                        Style="{StaticResource CenterMessageExtraLargeStyle}"
+                        Padding="0,20,0,0"
+                        Text="Your Score"/>
+
+                    <Label
+                        Style="{StaticResource CenterMessageExtraLargeStyle}"
+                        FontSize="60"
+                        Text="0" 
+                        x:Name="TotalScore"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label 
+                        Style="{StaticResource CenterMessageExtraLargeStyle}"
+                        Text="Food Cooked"/>
+
+                    <FlexLayout x:Name="MonsterListFrame"
+                                    JustifyContent="Center"
+                                    AlignContent="Start"
+                                    Wrap="Wrap"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label 
+                        Style="{StaticResource CenterMessageExtraLargeStyle}"
+                        Text="Items Collected"/>
+
+                    <FlexLayout x:Name="ItemListFrame"
+                                    JustifyContent="Start"
+                                    AlignContent="Start"
+                                    Wrap="Wrap"/>
+                </StackLayout>
+
+                <StackLayout
+                    Orientation="Horizontal"
+                    VerticalOptions="EndAndExpand">
+                    
+                    <Button 
+                        Style="{StaticResource BattleButton}"
+                        Clicked="CloseButton_Clicked" 
+                        HorizontalOptions="EndAndExpand"
+                        Text="Continue"/>
+                </StackLayout>
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
