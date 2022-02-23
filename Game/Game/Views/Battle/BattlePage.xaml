@@ -21,16 +21,6 @@
                 IsVisible="True"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand">
-            
-            <!-- The Ready Page -->
-            <StackLayout x:Name="StartBattleQuery"
-                         HorizontalOptions="CenterAndExpand"
-                         VerticalOptions="Center">
-                <Frame Style="{StaticResource StatisticsFrame}">
-                    <Label Text="Are you ready to begin?"
-                           Style="{StaticResource LabelBaseStyle}"/>
-                </Frame>
-            </StackLayout>
 
             <!--The Game UI Screen -->
             <StackLayout VerticalOptions="FillAndExpand"
@@ -94,6 +84,17 @@
                             </StackLayout>
                         </StackLayout>
                     </Frame>
+
+                    <!-- The Ready Page -->
+                    <StackLayout Style="{StaticResource HorizontalStack}"
+                         x:Name="StartBattleQuery"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="Center">
+                        <Frame Style="{StaticResource StatisticsFrame}">
+                            <Label Text="Are you ready to begin?"
+                           Style="{StaticResource LabelBaseStyle}"/>
+                        </Frame>
+                    </StackLayout>
 
                     <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand">
 
