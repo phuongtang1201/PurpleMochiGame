@@ -264,9 +264,6 @@
     <AndroidResource Include="Resources\drawable\troll4.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\chefpurple100px.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\chefwhite.png" />
   </ItemGroup>
   <ItemGroup>
