@@ -118,7 +118,7 @@ namespace Game.Views
         }
 
         /// <summary>
-        /// Jump to the Battle
+        /// Jump to the Ready page
         /// 
         /// Its Modal because don't want user to come back...
         /// </summary>
@@ -128,7 +128,8 @@ namespace Game.Views
         {
             CreateEngineCharacterList();
 
-            await Navigation.PushModalAsync(new NavigationPage(new BattlePage()));
+            //await Navigation.PushModalAsync(new NavigationPage(new BattlePage()));
+            await Navigation.PushModalAsync(new NavigationPage(new ReadyPage()));
             _ = await Navigation.PopAsync();
         }
 
