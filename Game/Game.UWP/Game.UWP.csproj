@@ -242,7 +242,6 @@
     <Content Include="vinegar.png" />
     <Content Include="watermelon.png" />
     <Content Include="watermelon100px.png" />
-    <Content Include="watermelon_2x.png" />
     <Content Include="yes.png" />
   </ItemGroup>
   <ItemGroup>
