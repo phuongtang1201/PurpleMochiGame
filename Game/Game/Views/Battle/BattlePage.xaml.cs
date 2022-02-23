@@ -892,7 +892,7 @@ namespace Game.Views
                     MonsterBox.IsVisible = false;
                     //GameUIDisplay.IsVisible = false;
                     AttackerAttack.Source = ActionEnum.Unknown.ToImageURI();
-                    //StartBattleQuery.IsVisible = true;
+                    StartBattleQuery.IsVisible = true;
                     StartBattleButton.IsVisible = true;
                     CancelBattleButton.IsVisible = true;
                     MonsterLabel.IsVisible = false;
