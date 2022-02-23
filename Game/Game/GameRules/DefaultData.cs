@@ -166,16 +166,6 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.Attack},
 
                 new ItemModel {
-                    Name = "Chef's Jacket",
-                    Description = "(Maximum Health)",
-                    ImageURI = "icon_new.png",
-                    Range = 0,
-                    Damage = 0,
-                    Value = 8,
-                    Location = ItemLocationEnum.LeftFinger,
-                    Attribute = AttributeEnum.MaxHealth},
-
-                new ItemModel {
                     Name = "Apron",
                     Description = "Keeps stains at bay (Defense)",
                     ImageURI = "apron.png",
