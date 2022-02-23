@@ -890,7 +890,9 @@ namespace Game.Views
                 case BattleStateEnum.Starting:
                     //GameUIDisplay.IsVisible = false;
                     AttackerAttack.Source = ActionEnum.Unknown.ToImageURI();
+                    //StartBattleQuery.IsVisible = true;
                     StartBattleButton.IsVisible = true;
+                    //CancelBattleButton.IsVisible = true;
                     break;
 
                 case BattleStateEnum.NewRound:
