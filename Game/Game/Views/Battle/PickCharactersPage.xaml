@@ -73,7 +73,7 @@
 
                 <StackLayout HorizontalOptions="End">
 
-                    <Label Text="Party" Style="{StaticResource CenterMessageStyle}"/>
+                    <Label Text="Kitchen Staff" Style="{StaticResource CenterMessageStyle}"/>
 
                     <ListView 
                                 x:Name="PartyListView" 
