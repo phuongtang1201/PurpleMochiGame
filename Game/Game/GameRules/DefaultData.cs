@@ -226,13 +226,13 @@ namespace Game.GameRules
                     Attribute = AttributeEnum.CurrentHealth},
 
                 new ItemModel {
-                    Name = "Rubber Boots",
+                    Name = "Soap",
                     Description = "(Defense)",
-                    ImageURI = "icon_new.png",
+                    ImageURI = "soap.png",
                     Range = 0,
                     Damage = 2,
                     Value = 6,
-                    Location = ItemLocationEnum.Feet,
+                    Location = ItemLocationEnum.LeftFinger,
                     Attribute = AttributeEnum.Defense},
 
                  new ItemModel {
