@@ -448,4 +448,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\eggplant.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\donut_boss.png" />
+  </ItemGroup>
 </Project>
