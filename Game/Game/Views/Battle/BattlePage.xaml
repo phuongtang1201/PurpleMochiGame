@@ -37,7 +37,6 @@
                         VerticalOptions="Start" 
                         HorizontalOptions="CenterAndExpand">
 
-                      
                         <StackLayout x:Name="MonsterBox" Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand"/>
                         
                         <StackLayout x:Name="BattlePlayerVerticalBox"  Style="{StaticResource VerticalStack}" HorizontalOptions="Center">
@@ -56,8 +55,6 @@
 
                         </StackLayout>
 
-                        <Label Text="Chefs" x:Name="ChefLabel"
-                               Style="{StaticResource CenterMessageStyle}" HorizontalOptions="CenterAndExpand"/>
                         <StackLayout x:Name="CharacterBox" Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand"/>
                     </StackLayout>
                 </StackLayout>
