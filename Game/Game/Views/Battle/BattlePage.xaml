@@ -46,7 +46,7 @@
                                 <Label x:Name="MonsterHealth" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
                             </StackLayout>
 
-                            <StackLayout HorizontalOptions="Center"  VerticalOptions="Center">
+                            <StackLayout HorizontalOptions="Center"   Margin="0,20,0,0" VerticalOptions="Center">
                                 <Image x:Name="AttackerAttack" Source="mapcell.png" Style="{StaticResource ImageSmallStyle}"/>
                             </StackLayout>
 
