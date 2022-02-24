@@ -79,7 +79,9 @@
 
                     <StackLayout Style="{StaticResource HorizontalStack}">
                         <Button Text="Heal"/>
-                       
+                        <Button Text="Move"/>
+                        
+
                     </StackLayout>
                 </StackLayout>
                 <!--The Bottom of the Battle UI  Holds the Player to Player boxes, Buttons, and the Messages-->
