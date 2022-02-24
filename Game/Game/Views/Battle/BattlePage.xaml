@@ -76,6 +76,11 @@
                         <Button Text="Change Mutant Food"/>
                         <Button Text="Buff"/>
                     </StackLayout>
+
+                    <StackLayout Style="{StaticResource HorizontalStack}">
+                        <Button Text="Heal"/>
+                       
+                    </StackLayout>
                 </StackLayout>
                 <!--The Bottom of the Battle UI  Holds the Player to Player boxes, Buttons, and the Messages-->
                 <StackLayout x:Name="BattleBottomBox" Style="{StaticResource BattleUIBottomBox}">
