@@ -579,9 +579,9 @@ namespace Game.Views
                 MonsterHealth.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetCurrentHealthTotal.ToString() + " / " + BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetMaxHealthTotal.ToString();
             }
 
-            AttackerImage.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ImageURI;
-            AttackerName.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.Name;
-            AttackerHealth.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.GetCurrentHealthTotal.ToString() + " / " + BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.GetMaxHealthTotal.ToString();
+            //AttackerImage.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ImageURI;
+            //AttackerName.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.Name;
+            //AttackerHealth.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.GetCurrentHealthTotal.ToString() + " / " + BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.GetMaxHealthTotal.ToString();
 
             // Show what action the Attacker used
             AttackerAttack.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.PreviousAction.ToImageURI();
@@ -592,14 +592,14 @@ namespace Game.Views
                 AttackerAttack.Source = item.ImageURI;
             }
 
-            DefenderImage.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.ImageURI;
-            DefenderName.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.Name;
-            DefenderHealth.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetCurrentHealthTotal.ToString() + " / " + BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetMaxHealthTotal.ToString();
+            //DefenderImage.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.ImageURI;
+            //DefenderName.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.Name;
+            //DefenderHealth.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetCurrentHealthTotal.ToString() + " / " + BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetMaxHealthTotal.ToString();
 
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.Alive == false)
             {
                 _ = UpdateMapGrid();
-                DefenderImage.BackgroundColor = Color.Red;
+             //   DefenderImage.BackgroundColor = Color.Red;
             }
 
           //  BattlePlayerBoxVersus.Text = "vs";
@@ -610,14 +610,14 @@ namespace Game.Views
         /// </summary>
         public void DrawGameBoardClear()
         {
-            AttackerImage.Source = string.Empty;
-            AttackerName.Text = string.Empty;
-            AttackerHealth.Text = string.Empty;
+            //AttackerImage.Source = string.Empty;
+            //AttackerName.Text = string.Empty;
+            //AttackerHealth.Text = string.Empty;
 
-            DefenderImage.Source = string.Empty;
-            DefenderName.Text = string.Empty;
-            DefenderHealth.Text = string.Empty;
-            DefenderImage.BackgroundColor = Color.Transparent;
+            //DefenderImage.Source = string.Empty;
+            //DefenderName.Text = string.Empty;
+            //DefenderHealth.Text = string.Empty;
+            //DefenderImage.BackgroundColor = Color.Transparent;
 
             MonsterImage.Source = string.Empty;
             MonsterName.Text = string.Empty;
@@ -885,7 +885,7 @@ namespace Game.Views
             StartBattleButton.IsVisible = false;
             AttackButton.IsVisible = false;
             MessageDisplayBox.IsVisible = false;
-            BattlePlayerInfomationBox.IsVisible = false;
+         //   BattlePlayerInfomationBox.IsVisible = false;
 
         }
 
@@ -947,7 +947,7 @@ namespace Game.Views
                 case BattleStateEnum.RoundOver:
                 case BattleStateEnum.Battling:
                     GameUIDisplay.IsVisible = true;
-                    BattlePlayerInfomationBox.IsVisible = true;
+            //        BattlePlayerInfomationBox.IsVisible = true;
                     MessageDisplayBox.IsVisible = true;
                     AttackButton.IsVisible = true;
                     break;
