@@ -354,6 +354,17 @@
                 <Setter Property= "BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
             </Style>
 
+            <Style TargetType="Button" x:Key="OptionBoxBattleButton">
+                <Setter Property="FontFamily" Value="Futura"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="WidthRequest" Value="160"/>
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="Margin" Value="10,0,0,0"/>
+                <Setter Property= "CornerRadius" Value="20"/>
+                <Setter Property= "BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
+                <Setter Property= "BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
+            </Style>
+
             <!-- ImageButton-->
             <Style TargetType="ImageButton" x:Key="YesNoImageButton">
                 <Setter Property="WidthRequest" Value="100"/>
