@@ -58,7 +58,7 @@
 
                         </StackLayout>
 
-                        <StackLayout x:Name="CharacterBox" Style="{StaticResource HorizontalStack}"HorizontalOptions="CenterAndExpand"/>
+                        <StackLayout x:Name="CharacterBox" Style="{StaticResource HorizontalStack}"  Margin="0,30,0,0" HorizontalOptions="CenterAndExpand"/>
                     </StackLayout>
                 </StackLayout>
 
