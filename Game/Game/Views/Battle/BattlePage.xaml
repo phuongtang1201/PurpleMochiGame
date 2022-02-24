@@ -71,19 +71,20 @@
                 </StackLayout>
 
                 <!-- This is the options box for chefs -->
-                <StackLayout x:Name="OptionBox">
-                    <StackLayout Style="{StaticResource HorizontalStack}">
-                        <Button Text="Change Mutant Food"/>
-                        <Button Text="Buff"/>
+                <StackLayout x:Name="OptionBox" Margin="20,0,20,0" IsVisible="false">
+                    <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
+                        <Button Text="Change Mutant Food" Style="{StaticResource OptionBoxBattleButton}"/>
+                        <Button Text="Buff" Style="{StaticResource OptionBoxBattleButton}"/>
                     </StackLayout>
 
-                    <StackLayout Style="{StaticResource HorizontalStack}">
-                        <Button Text="Heal"/>
-                        <Button Text="Move"/>
-                        <Button Text="Attack"/>
+                    <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
+                        <Button Text="Heal" Style="{StaticResource OptionBoxBattleButton}"/>
+                        <Button Text="Move" Style="{StaticResource OptionBoxBattleButton}"/>
+                        <Button Text="Attack" Style="{StaticResource OptionBoxBattleButton}"/>
 
                     </StackLayout>
                 </StackLayout>
+                
                 <!--The Bottom of the Battle UI  Holds the Player to Player boxes, Buttons, and the Messages-->
                 <StackLayout x:Name="BattleBottomBox" Style="{StaticResource BattleUIBottomBox}">
 
