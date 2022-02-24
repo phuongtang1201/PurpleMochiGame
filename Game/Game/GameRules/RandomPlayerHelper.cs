@@ -85,7 +85,7 @@ namespace Game.GameRules
         public static string GetMonsterName()
         {
 
-            List<String> FirstNameList = new List<String> { "Egg", "Onion", "Turnip", "Rutabaga", "Milk" };
+            List<String> FirstNameList = new List<String> { "Rotten Egg", "Spiny Pineapple", "Garlic", "Lettuce", "Steak", "Spicy Strawberry", "Sour Watermelon", "Fast Carrots", "Diva Eggplant", "Donut Boss", "Pizza Boss", "Sushi Boss" };
 
             var result = FirstNameList.ElementAt(DiceHelper.RollDice(1, FirstNameList.Count()) - 1);
 
