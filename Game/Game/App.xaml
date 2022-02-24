@@ -358,7 +358,8 @@
                 <Setter Property="FontFamily" Value="Futura"/>
                 <Setter Property="FontSize" Value="20"/>
                 <Setter Property="WidthRequest" Value="160"/>
-                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="HeightRequest" Value="40"/>
+                <Setter Property="MinimumWidthRequest" Value="100"/>
                 <Setter Property="Margin" Value="10,0,0,0"/>
                 <Setter Property= "CornerRadius" Value="20"/>
                 <Setter Property= "BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
