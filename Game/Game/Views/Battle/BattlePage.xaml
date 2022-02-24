@@ -80,7 +80,7 @@
                     <StackLayout Style="{StaticResource HorizontalStack}">
                         <Button Text="Heal"/>
                         <Button Text="Move"/>
-                        
+                        <Button Text="Attack"/>
 
                     </StackLayout>
                 </StackLayout>
