@@ -130,7 +130,7 @@ namespace Game.Views
 
             //await Navigation.PushModalAsync(new NavigationPage(new BattlePage()));
             await Navigation.PushModalAsync(new NavigationPage(new ReadyPage()));
-            _ = await Navigation.PopAsync();
+            //_ = await Navigation.PopAsync();
         }
         public async void BattleHomePage_Clicked(object sender, EventArgs e)
         {
