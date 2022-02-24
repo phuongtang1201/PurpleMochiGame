@@ -885,6 +885,7 @@ namespace Game.Views
             StartBattleButton.IsVisible = false;
             AttackButton.IsVisible = false;
             MessageDisplayBox.IsVisible = false;
+            OptionBox.IsVisible = false;
          //   BattlePlayerInfomationBox.IsVisible = false;
 
         }
@@ -950,6 +951,7 @@ namespace Game.Views
             //        BattlePlayerInfomationBox.IsVisible = true;
                     MessageDisplayBox.IsVisible = true;
                     AttackButton.IsVisible = true;
+                    OptionBox.IsVisible = true;
                     break;
 
                 // Based on the State disable buttons
