@@ -74,7 +74,7 @@
                 <StackLayout x:Name="OptionBox">
                     <StackLayout Style="{StaticResource HorizontalStack}">
                         <Button Text="Change Mutant Food"/>
-                        
+                        <Button Text="Buff"/>
                     </StackLayout>
                 </StackLayout>
                 <!--The Bottom of the Battle UI  Holds the Player to Player boxes, Buttons, and the Messages-->
