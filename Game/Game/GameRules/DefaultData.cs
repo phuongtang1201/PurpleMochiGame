@@ -19,9 +19,9 @@ namespace Game.GameRules
                     Name = "Spatula",
                     Description = "Has a long reach.",
                     ImageURI = "spatula.png",
-                    Range = 6,
+                    Range = 5,
                     Damage = 4,
-                    Value = 4,
+                    Value = 3,
                     Location = ItemLocationEnum.PrimaryHand,
                     Attribute = AttributeEnum.Attack},
                 
@@ -51,7 +51,7 @@ namespace Game.GameRules
                     ImageURI = "nonslip.png",
                     Range = 0,
                     Damage = 0,
-                    Value = 4,
+                    Value = 6,
                     Location = ItemLocationEnum.Feet,
                     Attribute = AttributeEnum.Speed},
                 
@@ -70,8 +70,8 @@ namespace Game.GameRules
                     Description = "Handle with care",
                     ImageURI = "knife.png",
                     Range = 4,
-                    Damage = 6,
-                    Value = 7,
+                    Damage = 8,
+                    Value = 6,
                     Location = ItemLocationEnum.PrimaryHand,
                     Attribute = AttributeEnum.Attack},
 
@@ -91,7 +91,7 @@ namespace Game.GameRules
                     ImageURI = "woodenspoon.png",
                     Range = 0,
                     Damage = 0,
-                    Value = 2,
+                    Value = 3,
                     Location = ItemLocationEnum.OffHand,
                     Attribute = AttributeEnum.Speed},
 
@@ -111,7 +111,7 @@ namespace Game.GameRules
                     ImageURI = "soap.png",
                     Range = 0,
                     Damage = 0,
-                    Value = 6,
+                    Value = 5,
                     Location = ItemLocationEnum.LeftFinger,
                     Attribute = AttributeEnum.CurrentHealth},
 
@@ -119,9 +119,9 @@ namespace Game.GameRules
                     Name = "Salt",
                     Description = "Rub some salt in it",
                     ImageURI = "salt.png",
-                    Range = 4,
+                    Range = 8,
                     Damage = 2,
-                    Value = 6,
+                    Value = 2,
                     Location = ItemLocationEnum.PrimaryHand,
                     Attribute = AttributeEnum.Attack},
 
@@ -131,7 +131,7 @@ namespace Game.GameRules
                     ImageURI = "vinegar.png",
                     Range = 0,
                     Damage = 0,
-                    Value = 6,
+                    Value = 4,
                     Location = ItemLocationEnum.Head,
                     Attribute = AttributeEnum.MaxHealth}
 
