@@ -181,12 +181,12 @@ namespace Game.GameRules
 
             var datalist = new List<CharacterModel>()
             {
-                new CharacterModel {
+                                new CharacterModel {
                     Name = "Linda",
-                    Description = "Combines quality with affordability (Gastropub)",
+                    Description = "Gastropub: Combines quality with affordability",
                     Level = 4,
-                    MaxHealth = 30,
-                    Attack = 6,
+                    MaxHealth = 25,
+                    Attack = 7,
                     Defense = 4,
                     Speed = 3,
                     ImageURI = "chefblue.png",
@@ -201,11 +201,11 @@ namespace Game.GameRules
 
                 new CharacterModel {
                     Name = "John",
-                    Description = "Meticulously creates sumptuous treats (Pastry)",
+                    Description = "Pastry: Meticulously creates sumptuous treats",
                     Level = 6,
-                    MaxHealth = 35,
-                    Attack = 7,
-                    Defense = 4,
+                    MaxHealth = 20,
+                    Attack = 4,
+                    Defense = 8,
                     Speed = 2,
                     ImageURI = "chefblue.png",
                     Head = HeadString,
@@ -219,12 +219,12 @@ namespace Game.GameRules
 
                 new CharacterModel {
                     Name = "Sam",
-                    Description = "(Fast Food)",
+                    Description = "Fast Food: Fast, cheap, or good; pick two",
                     Level = 1,
                     MaxHealth = 10,
-                    Attack = 1,
-                    Defense = 3,
-                    Speed = 7,
+                    Attack = 2,
+                    Defense = 4,
+                    Speed = 9,
                     ImageURI = "chefyellow.png",
                     Head = HeadString,
                     Necklass = NecklassString,
@@ -237,12 +237,12 @@ namespace Game.GameRules
 
                 new CharacterModel {
                     Name = "Sue",
-                    Description = "Fish beware (Sushi)",
+                    Description = "Sushi: Fish beware",
                     Level = 8,
-                    MaxHealth = 40,
+                    MaxHealth = 30,
                     Attack = 7,
-                    Defense = 4,
-                    Speed = 3,
+                    Defense = 6,
+                    Speed = 4,
                     ImageURI = "chefwhite.png",
                     Head = HeadString,
                     Necklass = NecklassString,
@@ -255,12 +255,12 @@ namespace Game.GameRules
 
                 new CharacterModel {
                     Name = "Skye",
-                    Description = "(Macrobiotic)",
+                    Description = "Macrobiotic: Heal the body and the soul",
                     Level = 4,
                     MaxHealth = 50,
-                    Attack = 5,
-                    Defense = 8,
-                    Speed = 2,
+                    Attack = 4,
+                    Defense = 9,
+                    Speed = 6,
                     ImageURI = "chefgreen.png",
                     Head = HeadString,
                     Necklass = NecklassString,
@@ -273,11 +273,11 @@ namespace Game.GameRules
 
                 new CharacterModel {
                     Name = "Pierre",
-                    Description = "You'll be waiting a while (Haute Cuisine)",
+                    Description = "Haute Cuisine: You'll be waiting a while",
                     Level = 9,
-                    MaxHealth = 40,
-                    Attack = 8,
-                    Defense = 5,
+                    MaxHealth = 35,
+                    Attack = 9,
+                    Defense = 4,
                     Speed = 1,
                     ImageURI = "chefpurple.png",
                     Head = HeadString,
@@ -291,12 +291,12 @@ namespace Game.GameRules
 
                 new CharacterModel {
                     Name = "Jade",
-                    Description = "Credits diet for incredible health (Vegan)",
+                    Description = "Vegan: Credits diet for incredible health",
                     Level = 3,
                     MaxHealth = 40,
-                    Attack = 4,
+                    Attack = 5,
                     Defense = 8,
-                    Speed = 3,
+                    Speed = 1,
                     ImageURI = "cheforange.png",
                     Head = HeadString,
                     Necklass = NecklassString,
