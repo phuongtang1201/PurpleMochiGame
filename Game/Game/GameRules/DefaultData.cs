@@ -17,7 +17,7 @@ namespace Game.GameRules
             {
                 new ItemModel {
                     Name = "Spatula",
-                    Description = "Has a long reach.",
+                    Description = "Has a long reach",
                     ImageURI = "spatula.png",
                     Range = 5,
                     Damage = 4,
