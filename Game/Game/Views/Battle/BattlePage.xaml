@@ -73,7 +73,7 @@
                 <!--The Bottom of the Battle UI  Holds the Player to Player boxes, Buttons, and the Messages-->
                 <StackLayout x:Name="BattleBottomBox" Style="{StaticResource BattleUIBottomBox}">
 
-                    <Frame x:Name="BattlePlayerInfomationBox"
+                    <!--<Frame x:Name="BattlePlayerInfomationBox"
                                 Style="{StaticResource PlayerBattleOuterFrame}"
                                 IsVisible="False">
 
@@ -93,7 +93,7 @@
                                 <Label x:Name="DefenderHealth" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
                             </StackLayout>
                         </StackLayout>
-                    </Frame>
+                    </Frame>-->
 
                     <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand">
 
