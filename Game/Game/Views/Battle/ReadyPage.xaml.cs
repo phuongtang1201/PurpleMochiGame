@@ -40,7 +40,7 @@ namespace Game.Views
         public async void BeginButton_Clicked(object sender, EventArgs e)
         {
 
-            await Navigation.PushModalAsync(new NavigationPage(new BattlePage()));
+            await Navigation.PushModalAsync(new NavigationPage(new NewRoundPage()));
             _ = await Navigation.PopAsync();
         }
 
