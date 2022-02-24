@@ -39,18 +39,18 @@
 
                         <StackLayout x:Name="MonsterBox" Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand"/>
 
-                        <StackLayout x:Name="BattlePlayerVerticalBox"  Style="{StaticResource VerticalStack}" HorizontalOptions="Center">
+                        <StackLayout x:Name="BattlePlayerVerticalBox" Margin="0,30,0,0"  Style="{StaticResource VerticalStack}" HorizontalOptions="Center">
                             <StackLayout x:Name="CurrentMonsterBox" Style="{StaticResource PlayerBattleInfoBox}" HorizontalOptions="Start">
                                 <Image x:Name="MonsterImage" Source="knight.png" Style="{StaticResource ImageBattleMediumStyle}"/>
                                 <Label x:Name="MonsterName" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
                                 <Label x:Name="MonsterHealth" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
                             </StackLayout>
 
-                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                            <StackLayout HorizontalOptions="Center"  VerticalOptions="Center">
                                 <Image x:Name="AttackerAttack" Source="mapcell.png" Style="{StaticResource ImageSmallStyle}"/>
                             </StackLayout>
-                            
-                            <StackLayout x:Name="CurrentCharacterBox" Style="{StaticResource PlayerBattleInfoBox}" HorizontalOptions="Start">
+
+                            <StackLayout x:Name="CurrentCharacterBox"  Style="{StaticResource PlayerBattleInfoBox}" HorizontalOptions="Start">
                                 <Image x:Name="CharacterImage" Source="knight.png" Style="{StaticResource ImageBattleMediumStyle}"/>
                                 <Label x:Name="CharacterName" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
                                 <Label x:Name="CharacterHealth" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
@@ -58,7 +58,7 @@
 
                         </StackLayout>
 
-                        <StackLayout x:Name="CharacterBox" Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand"/>
+                        <StackLayout x:Name="CharacterBox" Style="{StaticResource HorizontalStack}"HorizontalOptions="CenterAndExpand"/>
                     </StackLayout>
                 </StackLayout>
 
