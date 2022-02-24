@@ -24,10 +24,10 @@ namespace Game.GameRules
                     Value = 4,
                     Location = ItemLocationEnum.PrimaryHand,
                     Attribute = AttributeEnum.Attack},
-
+                
                 new ItemModel {
                     Name = "Cookbook",
-                    Description = "Turn enemies into food (Maximum Health)" ,
+                    Description = "Turn enemies into food" ,
                     ImageURI = "cookbook.png",
                     Range = 0,
                     Damage = 0,
@@ -37,27 +37,27 @@ namespace Game.GameRules
 
                 new ItemModel {
                     Name = "Rolling Pin",
-                    Description = "Can also be used to make cookies (Attack)",
+                    Description = "Can also be used to make cookies",
                     ImageURI = "rollingpin.png",
                     Range = 3,
                     Damage = 6,
                     Value = 4,
                     Location = ItemLocationEnum.PrimaryHand,
                     Attribute = AttributeEnum.Attack},
-
+                
                 new ItemModel {
                     Name = "Sneakers",
-                    Description = "More speed, less haste (Speed)",
+                    Description = "More speed, less haste",
                     ImageURI = "nonslip.png",
                     Range = 0,
                     Damage = 0,
                     Value = 4,
                     Location = ItemLocationEnum.Feet,
                     Attribute = AttributeEnum.Speed},
-
+                
                 new ItemModel {
                     Name = "Coffee",
-                    Description = "Restore your energy (Current Health)",
+                    Description = "Restore your energy",
                     ImageURI = "coffee.png",
                     Range = 0,
                     Damage = 0,
@@ -67,7 +67,7 @@ namespace Game.GameRules
 
                 new ItemModel {
                     Name = "Chef's Knife",
-                    Description = "Handle with care (Attack)",
+                    Description = "Handle with care",
                     ImageURI = "knife.png",
                     Range = 4,
                     Damage = 6,
@@ -77,27 +77,27 @@ namespace Game.GameRules
 
                 new ItemModel {
                     Name = "Apron",
-                    Description = "Keeps stains at bay (Defense)",
+                    Description = "Keeps stains at bay",
                     ImageURI = "apron.png",
                     Range = 0,
                     Damage = 0,
                     Value = 5,
-                    Location = ItemLocationEnum.LeftFinger,
+                    Location = ItemLocationEnum.Necklass,
                     Attribute = AttributeEnum.Defense},
-
+                
                 new ItemModel {
                     Name = "Wooden Spoon",
-                    Description = "(Defense)",
+                    Description = "Not so easy to break",
                     ImageURI = "woodenspoon.png",
                     Range = 0,
                     Damage = 0,
                     Value = 2,
                     Location = ItemLocationEnum.OffHand,
-                    Attribute = AttributeEnum.Defense},
+                    Attribute = AttributeEnum.Speed},
 
                 new ItemModel {
                     Name = "Sponge",
-                    Description = "(Defense)",
+                    Description = "No one ever squeezes the water out",
                     ImageURI = "sponge.png",
                     Range = 0,
                     Damage = 0,
@@ -107,17 +107,17 @@ namespace Game.GameRules
 
                 new ItemModel {
                     Name = "Soap",
-                    Description = "(Defense)",
+                    Description = "Cuts through grease",
                     ImageURI = "soap.png",
                     Range = 0,
                     Damage = 0,
                     Value = 6,
                     Location = ItemLocationEnum.LeftFinger,
-                    Attribute = AttributeEnum.Defense},
+                    Attribute = AttributeEnum.CurrentHealth},
 
                  new ItemModel {
                     Name = "Salt",
-                    Description = "Attack",
+                    Description = "Rub some salt in it",
                     ImageURI = "salt.png",
                     Range = 4,
                     Damage = 2,
@@ -127,12 +127,12 @@ namespace Game.GameRules
 
                   new ItemModel {
                     Name = "Vinegar",
-                    Description = "(Maximum Health)",
+                    Description = "Sanitize your cuts",
                     ImageURI = "vinegar.png",
                     Range = 0,
                     Damage = 0,
                     Value = 6,
-                    Location = ItemLocationEnum.Feet,
+                    Location = ItemLocationEnum.Head,
                     Attribute = AttributeEnum.MaxHealth}
 
 
