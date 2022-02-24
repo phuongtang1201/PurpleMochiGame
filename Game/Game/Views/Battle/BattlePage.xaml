@@ -50,7 +50,7 @@
                                 <Image x:Name="AttackerAttack" Source="mapcell.png" Style="{StaticResource ImageSmallStyle}"/>
                             </StackLayout>
 
-                            <StackLayout x:Name="CurrentCharacterBox"  Style="{StaticResource PlayerBattleInfoBox}" HorizontalOptions="Start">
+                            <StackLayout x:Name="CurrentCharacterBox"  Margin="0,20,0,0" Style="{StaticResource PlayerBattleInfoBox}" HorizontalOptions="Start">
                                 <Image x:Name="CharacterImage" Source="knight.png" Style="{StaticResource ImageBattleMediumStyle}"/>
                                 <Label x:Name="CharacterName" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
                                 <Label x:Name="CharacterHealth" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
