@@ -128,8 +128,8 @@ namespace Game.Views
         {
             CreateEngineCharacterList();
 
-            await Navigation.PushModalAsync(new NavigationPage(new BattlePage()));
-            //await Navigation.PushModalAsync(new NavigationPage(new ReadyPage()));
+            //await Navigation.PushModalAsync(new NavigationPage(new BattlePage()));
+            await Navigation.PushModalAsync(new NavigationPage(new ReadyPage()));
             _ = await Navigation.PopAsync();
         }
         public async void BattleHomePage_Clicked(object sender, EventArgs e)
