@@ -774,7 +774,12 @@ namespace Game.Views
 
             // Output The Message that if target is killed
             NotifyDeath.Text = string.Empty;
-            NotifyDeath.Text = string.Format("{0} \n{1}", BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.TurnDeathMessage, NotifyDeath.Text);
+            if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender?.Alive == false)
+            {
+                ChefKilledDisplay.IsVisible = true;
+                NotifyDeath.Text = string.Format("{0} \n{1}", BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.TurnDeathMessage, NotifyDeath.Text);
+            }
+            
 
             Debug.WriteLine(NotifyDeath.Text);
 
