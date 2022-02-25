@@ -56,7 +56,7 @@ namespace Game.Views
         }
 
         /// <summary>
-        /// Clear and Add the Characters that survived
+        /// Clear and Add the Characters that were killed
         /// </summary>
         public void DrawCharacterList()
         {
@@ -68,7 +68,7 @@ namespace Game.Views
             }
 
             // Draw the Characters
-            foreach (var data in BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterList)
+            foreach (var data in BattleEngineViewModel.Instance.Engine.EngineSettings.BattleScore.CharacterModelDeathList)
             {
                 CharacterListFrame.Children.Add(CreateMonsterDisplayBox(data));
             }
