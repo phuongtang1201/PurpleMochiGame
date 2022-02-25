@@ -32,7 +32,7 @@
                                     AlignContent="Start"
                                     Wrap="Wrap"/>
 
-                        <Label Text="Characters" Style="{StaticResource MessageStyle}"/>
+                        <Label Text="Chefs Cooked" Style="{StaticResource CenterMessageStyle}"/>
                         <FlexLayout x:Name="CharacterListFrame"
                                     JustifyContent="Start"
                                     AlignContent="Start"
