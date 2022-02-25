@@ -41,7 +41,7 @@
                                        Text="{Binding Data.Name}"/>
                         </Frame>
 
-                        <Frame Style="{StaticResource DescriptionEntryFrameStyle}"
+                        <Frame Style="{StaticResource DescriptionFrameStyle}"
                                Margin="40,0,40,0">
 
                             <Editor Style="{StaticResource EditorDescriptionStyle}"
