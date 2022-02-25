@@ -20,6 +20,7 @@
 
                             <ListView 
                                 x:Name="CharactersListView" 
+                                Style="{StaticResource IndexStyle}"
                                 ItemsSource="{Binding PartyCharacterList}"
                                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
                                 RefreshCommand="{Binding LoadItemsCommand}"
