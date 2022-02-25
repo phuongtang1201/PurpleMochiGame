@@ -410,20 +410,6 @@ namespace Game.Views
         }
 
         /// <summary>
-        /// Randomize Character Values and Items
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        public void RollDice_Clicked(object sender, EventArgs e)
-        {
-            _ = DiceAnimationHandeler();
-
-            _ = RandomizeCharacter();
-
-            return;
-        }
-
-        /// <summary>
         /// Randomize the Character, keep the level the same
         /// </summary>
         /// <returns></returns>
@@ -452,37 +438,6 @@ namespace Game.Views
             ViewModel.Data.ImageURI = RandomPlayerHelper.GetCharacterImage();
 
             _ = UpdatePageBindingContext();
-
-            return true;
-        }
-
-        /// <summary>
-        /// Setup the Dice Animation
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        public bool DiceAnimationHandeler()
-        {
-            // Animate the Rolling of the Dice
-            var image = RollDice;
-            uint duration = 1000;
-
-            var parentAnimation = new Animation();
-
-            // Grow the image Size
-            var scaleUpAnimation = new Animation(v => image.Scale = v, 1, 2, Easing.SpringIn);
-
-            // Spin the Image
-            var rotateAnimation = new Animation(v => image.Rotation = v, 0, 360);
-
-            // Shrink the Image
-            var scaleDownAnimation = new Animation(v => image.Scale = v, 2, 1, Easing.SpringOut);
-
-            parentAnimation.Add(0, 0.5, scaleUpAnimation);
-            parentAnimation.Add(0, 1, rotateAnimation);
-            parentAnimation.Add(0.5, 1, scaleDownAnimation);
-
-            parentAnimation.Commit(this, "ChildAnimations", 16, duration, null, null);
 
             return true;
         }
