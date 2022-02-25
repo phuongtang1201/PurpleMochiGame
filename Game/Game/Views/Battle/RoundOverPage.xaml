@@ -69,6 +69,10 @@
                             </Grid.ColumnDefinitions>
 
                             <Button Grid.Row="0" Grid.Column="0"
+                                    Style="{StaticResource BattleButton}"
+                                    Text="Change Items"/>
+
+                            <Button Grid.Row="0" Grid.Column="1"
                                     Clicked="CloseButton_Clicked" 
                                     Style="{StaticResource BattleButton}"
                                     Text="Next Round"/>
