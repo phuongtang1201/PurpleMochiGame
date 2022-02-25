@@ -42,7 +42,7 @@ namespace Game.Views
 
             DataCopy = new CharacterModel(data.Data);
 
-            this.ViewModel.Title = "Add Items to " + data.Title;
+            this.ViewModel.Title = "Equip " + data.Title;
         }
 
         /// <summary>
