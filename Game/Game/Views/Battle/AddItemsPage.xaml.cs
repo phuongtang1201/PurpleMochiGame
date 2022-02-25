@@ -29,12 +29,12 @@ namespace Game.Views
         public CharacterModel DataCopy;
 
         // Empty Constructor for UTs
-        public CharacterUpdatePage(bool UnitTest) { }
+        public AddItemsPage(bool UnitTest) { }
 
         /// <summary>
         /// Constructor for Create makes a new model
         /// </summary>
-        public CharacterUpdatePage(GenericViewModel<CharacterModel> data)
+        public AddItemsPage(GenericViewModel<CharacterModel> data)
         {
             InitializeComponent();
 
