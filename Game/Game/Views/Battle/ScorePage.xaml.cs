@@ -56,7 +56,7 @@ namespace Game.Views
                         select new { Value = duplicates.First(), Count = count };
 
             // Draw the Items
-            for (var index = 0; index < Monsters.Count(); index++)
+            for (var index = 0; index < Items.Count(); index++)
             {
                 var data = Items.ElementAt(index).Value;
                 var count = Items.ElementAt(index).Count;
