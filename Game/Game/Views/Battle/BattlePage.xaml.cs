@@ -779,6 +779,17 @@ namespace Game.Views
                 //Hide the gameboard
                 GameUIDisplay.IsVisible = false;
 
+                //If monster is killed, then shows success. Otherwise, shows fail
+                if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Character)
+                {
+                    FailOrSuccess.Text = "Fail!";
+                }
+
+                if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Monster)
+                {
+                    FailOrSuccess.Text = "Success!";
+                }
+
                 ChefKilledDisplay.IsVisible = true;
                 NotifyDeath.Text = string.Format("{0} \n{1}", BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.TurnDeathMessage, NotifyDeath.Text);
 
@@ -820,6 +831,9 @@ namespace Game.Views
 
             //Turn on the gameboard 
             GameUIDisplay.IsVisible = true;
+
+           
+
         }
         /// <summary>
         /// Battle Over, so Exit Button
