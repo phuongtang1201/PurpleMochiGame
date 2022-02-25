@@ -135,6 +135,26 @@
                                     <Label Grid.Column="4" Grid.Row="4"
                                            Text="{Binding Data.GetDefenseTotal}"
                                            Style="{StaticResource StatisticsStyle}"/>
+
+                                    <Label Grid.Column="0" Grid.Row="5"
+                                       Text="Speed"
+                                       Style="{StaticResource GrayBoxStyle}"/>
+
+                                    <Label Grid.Column="1" Grid.Row="5"
+                                       Text="{Binding Data.Speed}"
+                                       Style="{StaticResource StatisticsStyle}"/>
+
+                                    <Label Grid.Column="2" Grid.Row="5"
+                                       Text="{Binding Data.GetSpeedLevelBonus}"
+                                       Style="{StaticResource StatisticsStyle}"/>
+
+                                    <Label Grid.Column="3" Grid.Row="5"
+                                       Text="{Binding Data.GetSpeedItemBonus}"
+                                       Style="{StaticResource StatisticsStyle}"/>
+
+                                    <Label Grid.Column="4" Grid.Row="5"
+                                       Text="{Binding Data.GetSpeedTotal}"
+                                       Style="{StaticResource StatisticsStyle}"/>
                                     
                                     
                                 </Grid>
