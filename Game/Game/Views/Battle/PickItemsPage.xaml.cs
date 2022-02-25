@@ -24,6 +24,26 @@ namespace Game.Views
         }
 
         /// <summary>
+        /// The row selected from the list
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
+        public async void OnCharacterSelected(object sender, SelectedItemChangedEventArgs args)
+        {
+            CharacterModel data = args.SelectedItem as CharacterModel;
+            if (data == null)
+            {
+                return;
+            }
+
+            // Open the Read Page
+            await Navigation.PushAsync(new CharacterReadPage(new GenericViewModel<CharacterModel>(data)));
+
+            // Manually deselect Character.
+            CharactersListView.SelectedItem = null;
+        }
+
+        /// <summary>
         /// Quit the Battle
         /// 
         /// Quitting out
