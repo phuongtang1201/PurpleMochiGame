@@ -7,8 +7,7 @@
 
         <AbsoluteLayout
         HorizontalOptions="FillAndExpand"
-        VerticalOptions="FillAndExpand"
-        >
+        VerticalOptions="FillAndExpand">
 
             <StackLayout Style="{StaticResource VerticalStack}"
                     AbsoluteLayout.LayoutBounds="1,1,1,1" 
@@ -16,7 +15,10 @@
 
                 <ScrollView x:Name="ScrollView">
 
-                    <StackLayout Style="{StaticResource VerticalStack}">
+                    <StackLayout Style="{StaticResource VerticalStack}"
+                         Spacing="30"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand">
 
                         <Label Text="Round Cleared" Style="{StaticResource CenterMessageLargeStyle}"/>
 
