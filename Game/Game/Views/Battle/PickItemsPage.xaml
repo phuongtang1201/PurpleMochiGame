@@ -9,11 +9,14 @@
              Title="Assign Items">
 
     <ContentPage.Content>
-        <StackLayout Style="{StaticResource VerticalStack}">
-            <Label Text="Select Items"></Label>
+        <StackLayout>
+            <ScrollView VerticalScrollBarVisibility="Never">
+                <StackLayout Style="{StaticResource OuterBoxStack}">
+                    <Label Text="Select Items"></Label>
 
-            <Button Clicked="CloseButton_Clicked" Text="Close"></Button>
+                    <Button Clicked="CloseButton_Clicked" Text="Close"></Button>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
-        
     </ContentPage.Content>
 </ContentPage>
