@@ -827,12 +827,28 @@ namespace Game.Views
         /// <param name="e"></param>
         public void ContinueButton_Clicked(object sender, EventArgs e)
         {
+            //Turn off the TargetKilleDisplay
             ChefKilledDisplay.IsVisible = false;
 
             //Turn on the gameboard 
             GameUIDisplay.IsVisible = true;
 
-           
+            // if this target is the last chef. Then show the game over screen
+            if (BattleEngineViewModel.Instance.Engine.Round.RoundNextTurn() == RoundEnum.GameOver)
+            {
+                BattleEngineViewModel.Instance.Engine.EngineSettings.BattleStateEnum = BattleStateEnum.GameOver;
+
+                // Wrap up
+                _ = BattleEngineViewModel.Instance.Engine.EndBattle();
+
+                // Pause
+                _ = Task.Delay(WaitTime);
+
+                Debug.WriteLine("Game Over");
+
+                GameOver();
+                return;
+            }
 
         }
         /// <summary>
