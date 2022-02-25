@@ -9,16 +9,17 @@
              Title="{Binding Title}">
 
     <ContentPage.Content>
-        <ScrollView VerticalScrollBarVisibility="Never">
-            <StackLayout Style="{StaticResource OuterBoxStack}">
+        <StackLayout>
+            <ScrollView VerticalScrollBarVisibility="Never">
+                <StackLayout Style="{StaticResource OuterBoxStack}">
 
-                <Label Text="Select Your Chefs" Style="{StaticResource CenterMessageLargeStyle}"/>
-                <Button Text="Temporary Battle Home Page" Clicked="BattleHomePage_Clicked"/>
-                <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand">
+                    <Label Text="Select Your Chefs" Style="{StaticResource CenterMessageLargeStyle}"/>
+                    <Button Text="Temporary Battle Home Page" Clicked="BattleHomePage_Clicked"/>
+                    <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand">
 
-                    <StackLayout HorizontalOptions="Start">
+                        <StackLayout HorizontalOptions="Start">
 
-                        <ListView 
+                            <ListView 
                                 x:Name="CharactersListView" 
                                 ItemsSource="{Binding DatabaseCharacterList}"
                                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
@@ -27,55 +28,55 @@
                                 ItemSelected="OnDatabaseCharacterItemSelected"
                                 Margin="5,0,5,0">
 
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <ViewCell>
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
 
-                                        <Frame Style="{StaticResource CellFrameStyle}">
+                                            <Frame Style="{StaticResource CellFrameStyle}">
 
-                                            <Grid ColumnSpacing="5" RowSpacing="1">
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="auto"/>
-                                                    <ColumnDefinition Width="*"/>
-                                                </Grid.ColumnDefinitions>
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition Height="auto"/>
-                                                    <RowDefinition Height="auto"/>
-                                                    <RowDefinition Height="auto"/>
-                                                </Grid.RowDefinitions>
+                                                <Grid ColumnSpacing="5" RowSpacing="1">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="auto"/>
+                                                        <ColumnDefinition Width="*"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="auto"/>
+                                                        <RowDefinition Height="auto"/>
+                                                        <RowDefinition Height="auto"/>
+                                                    </Grid.RowDefinitions>
 
-                                                <Image  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
+                                                    <Image  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
                                                     Source="{Binding ImageURI}"
                                                     Style="{StaticResource ImageMediumStyle}"
                                                     VerticalOptions="CenterAndExpand"/>
 
-                                                <Label Grid.Column="1" Grid.Row="0"
+                                                    <Label Grid.Column="1" Grid.Row="0"
                                                    Text="{Binding Name}" 
                                                    Style="{StaticResource ListStyle}"
                                                    FontAttributes="Bold"/>
 
-                                                <Label Grid.Column="1" Grid.Row="1"
+                                                    <Label Grid.Column="1" Grid.Row="1"
                                                    Text="{Binding Description}" 
                                                    Style="{StaticResource ListDescription}" />
 
-                                                <Label Grid.Column="1" Grid.Row="2"
+                                                    <Label Grid.Column="1" Grid.Row="2"
                                                     Text="{Binding Path=MaxHealth, StringFormat= '{0:G} hp'}" 
                                                     Style="{StaticResource ListStyle}"/>
 
-                                            </Grid>
-                                        </Frame>
-                                    </ViewCell>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
+                                                </Grid>
+                                            </Frame>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>
                     </StackLayout>
-                </StackLayout>
 
-                <StackLayout HorizontalOptions="End">
+                    <StackLayout HorizontalOptions="End">
 
-                    <Label Text="Kitchen Staff" Style="{StaticResource CenterMessageStyle}"/>
+                        <Label Text="Kitchen Staff" Style="{StaticResource CenterMessageStyle}"/>
 
-                    <ListView 
+                        <ListView 
                                 x:Name="PartyListView" 
                                 ItemsSource="{Binding PartyCharacterList}"
                                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
@@ -86,41 +87,43 @@
                                 Margin="5,0,5,0"
                                 RowHeight="80">
 
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <Grid>
-                                        <Image  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid>
+                                            <Image  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
                                                     Source="{Binding ImageURI}"
                                                     Style="{StaticResource ImageMediumStyle}"/>
 
-                                        <Label Grid.Column="1" Grid.Row="0"
+                                            <Label Grid.Column="1" Grid.Row="0"
                                                    Text="{Binding Name}" 
                                                    Style="{StaticResource ListStyle}"
                                                    FontAttributes="Bold"/>
 
-                                        <Label Grid.Column="1" Grid.Row="1"
+                                            <Label Grid.Column="1" Grid.Row="1"
                                                    Text="{Binding Path=Level, StringFormat='Level {0:G}'}" 
                                                    Style="{StaticResource ListStyle}"/>
 
-                                        <Label Grid.Column="1" Grid.Row="2"
+                                            <Label Grid.Column="1" Grid.Row="2"
                                                     Text="{Binding Path=MaxHealth, StringFormat= '{0:G} hp'}" 
                                                     Style="{StaticResource ListStyle}"/>
 
-                                    </Grid>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
                 </StackLayout>
+            </ScrollView>
 
-                <Button 
+            <Button 
                     Style="{StaticResource BattleButton}"
                     x:Name="BeginBattleButton"
                     Clicked="BattleButton_Clicked" 
                     Text="Confirm"
-                    IsEnabled="False"/>
-            </StackLayout>
-        </ScrollView>
+                    IsEnabled="False"
+                    VerticalOptions="End"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
