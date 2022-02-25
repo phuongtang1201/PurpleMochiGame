@@ -43,12 +43,6 @@ namespace Game.Views
             DataCopy = new CharacterModel(data.Data);
 
             this.ViewModel.Title = "Add Items to " + data.Title;
-
-            // Load the values for the Level into the Picker
-            for (var i = 1; i <= LevelTableHelper.MaxLevel; i++)
-            {
-                LevelPicker.Items.Add(i.ToString());
-            }
         }
 
         /// <summary>
@@ -64,10 +58,6 @@ namespace Game.Views
             BindingContext = null;
             BindingContext = this.ViewModel;
 
-            // This resets the Picker to -1 index, need to reset it back
-            ViewModel.Data.Level = level;
-            LevelPicker.SelectedIndex = ViewModel.Data.Level - 1;
-
             ManageHealth();
 
             AddItemsToDisplay();
@@ -82,20 +72,6 @@ namespace Game.Views
         /// <param name="e"></param>
         public void Entry_CheckNotEmpty(object sender, ValueChangedEventArgs e)
         {
-        }
-
-            /// <summary>
-            /// The Level selected from the list
-            /// Need to recalculate Max Health
-            /// </summary>
-            /// <param name="sender"></param>
-            /// <param name="args"></param>
-            public void Level_Changed(object sender, EventArgs args)
-        {
-            // Change the Level
-            ViewModel.Data.Level = LevelPicker.SelectedIndex + 1;
-
-            ManageHealth();
         }
 
         /// <summary>

@@ -69,18 +69,13 @@
                                            Text="Statistics" 
                                            Style="{StaticResource HeaderStyle}"/>
 
-                                    <Label Grid.Row="2" Grid.Column="0"
-                                           Text="Level*" 
-                                           Style="{StaticResource LabelStyle}"/>
+                                    <Label Grid.Row="1" Grid.Column="0"
+                                       Text="Level"
+                                       Style="{StaticResource GrayBoxStyle}"/>
 
-                                    <Frame Grid.Row="2" Grid.Column="1"
-                                           Style="{StaticResource EntryFrameStyle}">
-
-                                        <Picker Grid.Row="2" Grid.Column="1"
-                                                SelectedItem="{Binding SelectedItemProperty}" 
-                                                SelectedIndexChanged="Level_Changed"
-                                                x:Name="LevelPicker"/>
-                                    </Frame>
+                                    <Label Grid.Row="1" Grid.Column="1"
+                                       Text="{Binding Data.Level}" 
+                                       Style="{StaticResource GrayBoxStyle}"/>
                                 </Grid>
 
                                 <Grid RowSpacing="1" ColumnSpacing="2"
