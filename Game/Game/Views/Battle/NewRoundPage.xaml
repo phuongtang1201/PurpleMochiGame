@@ -10,8 +10,6 @@
 
                 <Label Text="Beginning a Round" Style="{StaticResource CenterMessageLargeStyle}"/>
 
-                <Button Clicked="BeginButton_Clicked" Text="Begin"/>
-
                 <Label Text="Characters" Style="{StaticResource MessageLargeStyle}"/>
 
                 <FlexLayout x:Name="PartyListFrame"
