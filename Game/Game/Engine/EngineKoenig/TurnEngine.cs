@@ -325,6 +325,11 @@ namespace Game.Engine.EngineKoenig
             // Mark Status in output
             EngineSettings.BattleMessagesModel.TurnMessageSpecial = " and causes death. ";
 
+            //Notify the target is killed
+            EngineSettings.BattleMessagesModel.TurnDeathMessage = Target.Name + " has been cooked!";
+
+
+
             // Removing the 
             _ = EngineSettings.MapModel.RemovePlayerFromMap(Target);
 
