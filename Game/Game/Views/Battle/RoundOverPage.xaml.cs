@@ -29,9 +29,30 @@ namespace Game.Views
             // Update the Selected Number, this gets updated later when selected refresh happens
             TotalSelected.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.BattleScore.ItemModelSelectList.Count().ToString();
 
+            DrawMonsterList();
+
             DrawCharacterList();
 
             DrawItemLists();
+        }
+
+        /// <summary>
+        /// Draw the monsters killed
+        /// </summary>
+        public void DrawMonsterList()
+        {
+            //Clear and Populate the Monsters Remaining
+            var FlexList = MonsterListFrame.Children.ToList();
+            //foreach (var data in FlexList)
+            //{
+            //    _ = MonsterListFrame.Children.Remove(data);
+            //}
+
+            // Draw the Monsters
+            foreach (var data in BattleEngineViewModel.Instance.Engine.EngineSettings.MonsterList)
+            {
+                MonsterListFrame.Children.Add(CreateMonsterDisplayBox(data));
+            }
         }
 
         /// <summary>
@@ -49,7 +70,7 @@ namespace Game.Views
             // Draw the Characters
             foreach (var data in BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterList)
             {
-                CharacterListFrame.Children.Add(CreatePlayerDisplayBox(data));
+                CharacterListFrame.Children.Add(CreateMonsterDisplayBox(data));
             }
         }
 
@@ -106,7 +127,7 @@ namespace Game.Views
             }
         }
 
-        public StackLayout CreateMonsterDisplayBox(PlayerInfoModel data, int count)
+        public StackLayout CreateMonsterDisplayBox(PlayerInfoModel data)
         {
             if (data == null)
             {
@@ -120,20 +141,6 @@ namespace Game.Views
                 Source = data.ImageURI
             };
 
-            // Add the number of duplicates for this monster
-            var PlayerDuplicatesLabel = new Label
-            {
-                Text = " x " + count,
-                Style = (Style)Application.Current.Resources["ValueStyleMicro"],
-                HorizontalOptions = LayoutOptions.Center,
-                HorizontalTextAlignment = TextAlignment.Center,
-                Padding = 0,
-                LineBreakMode = LineBreakMode.TailTruncation,
-                CharacterSpacing = 1,
-                LineHeight = 1,
-                MaxLines = 1,
-            };
-
             // Put the Image Button and Text inside a layout
             var PlayerStack = new StackLayout
             {
@@ -143,7 +150,6 @@ namespace Game.Views
                 Spacing = 0,
                 Children = {
                     PlayerImage,
-                    PlayerDuplicatesLabel,
                 },
             };
 
