@@ -45,7 +45,7 @@ namespace Game.Views
                 return;
             }
 
-            // Open the Read Page
+            // Open the Update Page
             await Navigation.PushAsync(new CharacterUpdatePage(new GenericViewModel<CharacterModel>(data)));
 
             // Manually deselect Character.
