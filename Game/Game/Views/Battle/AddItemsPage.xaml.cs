@@ -219,26 +219,6 @@ namespace Game.Views
         }
 
         /// <summary>
-        /// Catch the change to the Stepper for Defense
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        public void Defense_OnStepperValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            DefenseValue.Text = string.Format("{0}", e.NewValue);
-        }
-
-        /// <summary>
-        /// Catch the change to the Slider for Defense
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        public void Defense_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            DefenseValue.Text = string.Format("{0}", Convert.ToInt32(e.NewValue));
-        }
-
-        /// <summary>
         /// The row selected from the list
         /// </summary>
         /// <param name="sender"></param>
