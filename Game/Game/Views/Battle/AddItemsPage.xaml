@@ -44,9 +44,10 @@
                         <Frame Style="{StaticResource DescriptionFrameStyle}"
                                Margin="40,0,40,0">
 
-                            <Editor Style="{StaticResource EditorDescriptionStyle}"
-                                    Text="{Binding Data.Description, Mode=TwoWay}" 
-                                    TextChanged="Entry_CheckNotEmpty"/>
+                            <Label Style="{StaticResource GrayBoxStyle}"
+                                   Text="{Binding Data.Description}"
+                                    VerticalOptions="Start"
+                                    LineBreakMode="WordWrap"/>
 
                         </Frame>
 
