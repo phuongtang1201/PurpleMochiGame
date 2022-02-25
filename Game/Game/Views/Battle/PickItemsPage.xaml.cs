@@ -28,7 +28,8 @@ namespace Game.Views
         {
             InitializeComponent();
 
-            BindingContext = ViewModel;
+            //BindingContext = ViewModel;
+            BindingContext = BattleEngineViewModel.Instance;
         }
 
         /// <summary>
