@@ -43,6 +43,8 @@ namespace Game.Views
             DataCopy = new CharacterModel(data.Data);
 
             this.ViewModel.Title = "Equip " + data.Title;
+
+            _ = UpdatePageBindingContext();
         }
 
         /// <summary>
