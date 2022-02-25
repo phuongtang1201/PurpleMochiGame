@@ -26,6 +26,9 @@
         // Turn Special Message
         public string TurnMessageSpecial = string.Empty;
 
+        //Turn Death Message to notify death
+        public string TurnDeathMessage = string.Empty;
+
         // Turn Experience Earned Message
         public string ExperienceEarned = string.Empty;
 
