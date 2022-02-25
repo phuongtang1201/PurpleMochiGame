@@ -115,6 +115,26 @@
                                     <Label Grid.Column="4" Grid.Row="3"
                                        Text="{Binding Data.GetAttackTotal}"
                                        Style="{StaticResource StatisticsStyle}" />
+
+                                    <Label Grid.Column="0" Grid.Row="4"
+                                           Text="Defense"
+                                           Style="{StaticResource GrayBoxStyle}"/>
+
+                                    <Label Grid.Column="1" Grid.Row="4"
+                                           Text="{Binding Data.Defense}"
+                                           Style="{StaticResource StatisticsStyle}"/>
+
+                                    <Label Grid.Column="2" Grid.Row="4"
+                                           Text="{Binding Data.GetDefenseLevelBonus}"
+                                           Style="{StaticResource StatisticsStyle}"/>
+
+                                    <Label Grid.Column="3" Grid.Row="4"
+                                           Text="{Binding Data.GetDefenseItemBonus}"
+                                           Style="{StaticResource StatisticsStyle}"/>
+
+                                    <Label Grid.Column="4" Grid.Row="4"
+                                           Text="{Binding Data.GetDefenseTotal}"
+                                           Style="{StaticResource StatisticsStyle}"/>
                                     
                                     
                                 </Grid>
