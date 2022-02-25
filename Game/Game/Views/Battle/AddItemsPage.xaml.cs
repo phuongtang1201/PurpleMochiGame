@@ -64,15 +64,6 @@ namespace Game.Views
         }
 
         /// <summary>
-        /// Check the entry box to guarantee entering a not null value
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        public void Entry_CheckNotEmpty(object sender, ValueChangedEventArgs e)
-        {
-        }
-
-        /// <summary>
         /// Save by calling for Create
         /// </summary>
         /// <param name="sender"></param>
