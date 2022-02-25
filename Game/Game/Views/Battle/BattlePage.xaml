@@ -214,7 +214,7 @@
                     <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
                         <Label Text="Fail!" Style="{StaticResource CenterMessageLargeStyle}"/>
 
-                        <Label Text="You've been cooked!" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" MaxLines="5" Padding="20"/>
+                        <Label x:Name="NotifyDeath" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" MaxLines="5" Padding="20"/>
 
                         
                     </StackLayout>

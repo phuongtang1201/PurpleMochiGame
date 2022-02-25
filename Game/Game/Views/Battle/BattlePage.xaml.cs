@@ -772,6 +772,11 @@ namespace Game.Views
 
             Debug.WriteLine(BattleMessages.Text);
 
+            // Output The Message that happened.
+            NotifyDeath.Text = string.Format("{0} \n{1}", BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.TurnDeathMessage, NotifyDeath.Text);
+
+            Debug.WriteLine(NotifyDeath.Text);
+
             if (!string.IsNullOrEmpty(BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.LevelUpMessage))
             {
                 BattleMessages.Text = string.Format("{0} \n{1}", BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.LevelUpMessage, BattleMessages.Text);
