@@ -64,6 +64,12 @@ namespace Game.Views
             _ = await Navigation.PopModalAsync();
         }
 
+        public async void NextPage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new ReadyPage()));
+            _ = await Navigation.PopAsync();
+        }
+
         /*/// <summary>
         /// Refresh the list on page appearing
         /// </summary>
