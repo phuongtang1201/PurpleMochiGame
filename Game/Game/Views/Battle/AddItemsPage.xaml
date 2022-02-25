@@ -147,19 +147,6 @@
                                            Text="{Binding Data.Defense, Mode=TwoWay}" 
                                            x:Name="DefenseValue"/>
 
-                                    <Label Grid.Row="3" Grid.Column="0" 
-                                           Text="Speed" Style="{StaticResource LabelStyle}"/>
-
-                                    <Slider Grid.Row="3" Grid.Column="1" 
-                                            Style="{StaticResource SliderStyle}"
-                                            Value="{Binding Data.Speed, Mode=TwoWay}"
-                                            ValueChanged="Speed_OnSliderValueChanged"/>
-
-                                    <Label Grid.Row="3" Grid.Column="2" 
-                                           Style="{StaticResource SliderValueStyle}"
-                                           Text="{Binding Data.Speed, Mode=TwoWay}" 
-                                           x:Name="SpeedValue"/>
-
                                 </Grid>
                             </StackLayout>
                         </Frame>
