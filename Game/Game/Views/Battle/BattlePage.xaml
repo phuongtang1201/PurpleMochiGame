@@ -40,6 +40,7 @@
                         <StackLayout x:Name="MonsterBox" Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand"/>
 
                         <StackLayout x:Name="BattlePlayerVerticalBox" Margin="0,30,0,0"  Style="{StaticResource VerticalStack}" HorizontalOptions="Center">
+                            
                             <StackLayout x:Name="CurrentMonsterBox" Style="{StaticResource PlayerBattleInfoBox}" HorizontalOptions="Start">
                                 <Image x:Name="MonsterImage" Source="strawberry.png" Style="{StaticResource ImageBattleMediumStyle}"/>
                                 <Label x:Name="MonsterName" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
@@ -195,11 +196,32 @@
                             <Button x:Name="ShowScoreButton" Clicked="ShowScoreButton_Clicked" Text="Score" WidthRequest="50"/>
 
                             <Button x:Name="ExitButton" Clicked="ExitButton_Clicked" Text="Exit" WidthRequest="50"></Button>
-                         </StackLayout>
-            </StackLayout>
-                </Frame>
+                        </StackLayout>
+                    </StackLayout>
 
+                </Frame>
             </StackLayout>
+
+            <!--The Monster Killed Screen -->
+            <StackLayout 
+                    Style="{StaticResource VerticalStack}"
+                    AbsoluteLayout.LayoutBounds="0.5,0.25,400,25"
+                    AbsoluteLayout.LayoutFlags="PositionProportional" 
+                    x:Name="ChefKilledDisplay" 
+                    IsVisible="false">
+
+                <Frame Style="{StaticResource BattleMessageFrameStyle}" Margin="70,0,0,0" >
+                    <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                        <Label Text="Fail!" Style="{StaticResource CenterMessageLargeStyle}"/>
+
+                        <Label Text="You've been cooked!" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" MaxLines="5" Padding="20"/>
+
+                        
+                    </StackLayout>
+
+                </Frame>
+            </StackLayout>
+
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
