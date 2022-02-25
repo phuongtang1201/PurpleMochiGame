@@ -62,7 +62,17 @@
                                     AlignContent="Start"
                                     Wrap="Wrap"/>
 
-                        <Button Clicked="CloseButton_Clicked" Text="Close"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Grid.Row="0" Grid.Column="0"
+                                    Clicked="CloseButton_Clicked" 
+                                    Text="Close"/>
+                        </Grid>
+                        
 
                     </StackLayout>
                 </ScrollView>
