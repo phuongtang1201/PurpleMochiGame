@@ -805,7 +805,15 @@ namespace Game.Views
         #endregion MessageHandelers
 
         #region PageHandelers
-
+        /// <summary>
+        /// When player click continue button, it will disable the target killed message UI
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void ContinueButton_Clicked(object sender, EventArgs e)
+        {
+            ChefKilledDisplay.IsVisible = false;
+        }
         /// <summary>
         /// Battle Over, so Exit Button
         /// Need to show this for the user to click on.
