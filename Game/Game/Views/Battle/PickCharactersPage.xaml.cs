@@ -43,7 +43,7 @@ namespace Game.Views
             //BindingContext = BattleEngineViewModel.Instance;
 
             // Clear the Database List and the Party List to start
-            //BattleEngineViewModel.Instance.PartyCharacterList.Clear();
+            BattleEngineViewModel.Instance.PartyCharacterList.Clear();
 
             UpdateNextButtonState();
         }
