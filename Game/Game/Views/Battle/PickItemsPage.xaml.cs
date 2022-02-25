@@ -15,12 +15,17 @@ namespace Game.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PickItemsPage : ContentPage
     {
+        // The view model, used for data binding
+        readonly CharacterIndexViewModel ViewModel = CharacterIndexViewModel.Instance;
+
         /// <summary>
         /// Constructor
         /// </summary>
         public PickItemsPage()
         {
             InitializeComponent();
+
+            BindingContext = ViewModel;
         }
 
         /// <summary>
