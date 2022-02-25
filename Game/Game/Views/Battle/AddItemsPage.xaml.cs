@@ -42,7 +42,7 @@ namespace Game.Views
 
             DataCopy = new CharacterModel(data.Data);
 
-            this.ViewModel.Title = "Update " + data.Title;
+            this.ViewModel.Title = "Add Items to " + data.Title;
 
             // Load the values for the Level into the Picker
             for (var i = 1; i <= LevelTableHelper.MaxLevel; i++)
