@@ -49,9 +49,6 @@ namespace Game.Views
             {
                 LevelPicker.Items.Add(i.ToString());
             }
-            //This message will show if either the name entry box or description entry box is empty
-            Warning_Not_Null_Message.Text = "Please enter a valid input.";
-            Warning_Not_Null_Message.IsVisible = false;
         }
 
         /// <summary>
@@ -85,24 +82,6 @@ namespace Game.Views
         /// <param name="e"></param>
         public void Entry_CheckNotEmpty(object sender, ValueChangedEventArgs e)
         {
-            if (string.IsNullOrEmpty(ViewModel.Data.Name))
-            {
-                Warning_Not_Null_Message.IsVisible = true;
-                return;
-            }
-            if (!string.IsNullOrEmpty(ViewModel.Data.Name))
-            {
-                Warning_Not_Null_Message.IsVisible = false;
-            }
-            if (string.IsNullOrEmpty(ViewModel.Data.Description))
-            {
-                Warning_Not_Null_Message.IsVisible = true;
-                return;
-            }
-            if (!string.IsNullOrEmpty(ViewModel.Data.Description))
-            {
-                Warning_Not_Null_Message.IsVisible = false;
-            }
         }
 
             /// <summary>
@@ -142,14 +121,6 @@ namespace Game.Views
             if (string.IsNullOrEmpty(ViewModel.Data.ImageURI))
             {
                 ViewModel.Data.ImageURI = new CharacterModel().ImageURI;
-            }
-
-            //Does not allow to save if either null Name or Description
-            if (!Warning_Not_Null_Message.IsVisible)
-            {
-                MessagingCenter.Send(this, "Create", ViewModel.Data);
-
-                _ = await Navigation.PopModalAsync();
             }
         }
 
