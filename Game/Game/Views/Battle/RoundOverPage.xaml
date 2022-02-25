@@ -38,7 +38,8 @@
                                     AlignContent="Start"
                                     Wrap="Wrap"/>
 
-                        <Label Text="Items Found" Style="{StaticResource MessageStyle}"/>
+                        <Label Text="Items Found" Style="{StaticResource CenterMessageStyle}"/>
+                        
                         <StackLayout Style="{StaticResource HorizontalStack}">
                             <Label Text="Found : " Style="{StaticResource LabelStyle}"/>
                             <Label Text="0" x:Name="TotalFound" Style="{StaticResource ValueStyle}"/>
