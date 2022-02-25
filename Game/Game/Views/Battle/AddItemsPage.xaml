@@ -37,9 +37,8 @@
                         <Frame Style="{StaticResource NameFrameStyle}"
                                    Margin="40,0,40,0">
 
-                            <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
-                                   Style="{StaticResource EntryStyle}"
-                                   TextChanged="Entry_CheckNotEmpty"/>
+                            <Label Style="{StaticResource GrayBoxStyle}"
+                                       Text="{Binding Data.Name}"/>
                         </Frame>
 
                         <Frame Style="{StaticResource DescriptionEntryFrameStyle}"
