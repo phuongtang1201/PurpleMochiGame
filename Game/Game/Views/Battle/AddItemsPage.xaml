@@ -78,30 +78,6 @@
                                        Style="{StaticResource GrayBoxStyle}"/>
                                 </Grid>
 
-                                <Grid RowSpacing="1" ColumnSpacing="2"
-                                      VerticalOptions="Center">
-
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="auto" />
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="auto"/>
-                                        <ColumnDefinition Width="230"/>
-                                        <ColumnDefinition Width="auto"/>
-                                    </Grid.ColumnDefinitions>
-
-                                    <Label Grid.Row="0" Grid.Column="0"
-                                           Text="Max Health" Margin="0,0,20,0"
-                                           LineBreakMode="WordWrap"
-                                           Style="{StaticResource LabelStyle}"/>
-
-                                    <Label Grid.Row="0" Grid.Column="1"
-                                           Grid.ColumnSpan="2"
-                                           x:Name="MaxHealthValue"
-                                           Text="{Binding Data.MaxHealth, StringFormat= '{0:G} hp'}" 
-                                           Style="{StaticResource ValueStyle}"/>
-
-                                </Grid>
                             </StackLayout>
                         </Frame>
 

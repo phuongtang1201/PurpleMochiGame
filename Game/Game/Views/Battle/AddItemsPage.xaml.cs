@@ -58,8 +58,6 @@ namespace Game.Views
             BindingContext = null;
             BindingContext = this.ViewModel;
 
-            ManageHealth();
-
             AddItemsToDisplay();
 
             return true;
@@ -72,18 +70,6 @@ namespace Game.Views
         /// <param name="e"></param>
         public void Entry_CheckNotEmpty(object sender, ValueChangedEventArgs e)
         {
-        }
-
-        /// <summary>
-        /// Change the Level Picker
-        /// </summary>
-        public void ManageHealth()
-        {
-            // Roll for new HP
-            ViewModel.Data.MaxHealth = RandomPlayerHelper.GetHealth(ViewModel.Data.Level);
-
-            // Show the Result
-            MaxHealthValue.Text = ViewModel.Data.MaxHealth.ToString();
         }
 
         /// <summary>
