@@ -24,5 +24,11 @@ namespace Game.Views
             await Navigation.PushModalAsync(new NavigationPage(new ScorePage()));
             _ = await Navigation.PopAsync();
         }
+
+        public async void PickItemsPage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new PickItemsPage()));
+            _ = await Navigation.PopAsync();
+        }
     }
 }
