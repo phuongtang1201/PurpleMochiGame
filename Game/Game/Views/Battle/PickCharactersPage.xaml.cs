@@ -136,7 +136,7 @@ namespace Game.Views
         public async void BattleHomePage_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new NavigationPage(new BattleHomePage()));
-            _ = await Navigation.PopAsync();
+           // _ = await Navigation.PopAsync();
         }
 
         /// <summary>
