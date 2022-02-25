@@ -776,8 +776,12 @@ namespace Game.Views
             NotifyDeath.Text = string.Empty;
             if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender?.Alive == false)
             {
+                //Hide the gameboard
+                GameUIDisplay.IsVisible = false;
+
                 ChefKilledDisplay.IsVisible = true;
                 NotifyDeath.Text = string.Format("{0} \n{1}", BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.TurnDeathMessage, NotifyDeath.Text);
+
             }
             
 
@@ -813,6 +817,9 @@ namespace Game.Views
         public void ContinueButton_Clicked(object sender, EventArgs e)
         {
             ChefKilledDisplay.IsVisible = false;
+
+            //Turn on the gameboard 
+            GameUIDisplay.IsVisible = true;
         }
         /// <summary>
         /// Battle Over, so Exit Button
