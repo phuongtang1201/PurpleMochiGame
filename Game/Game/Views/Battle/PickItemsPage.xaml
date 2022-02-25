@@ -18,6 +18,57 @@
 
                         <StackLayout HorizontalOptions="Start">
 
+                            <ListView 
+                                x:Name="CharactersListView" 
+                                ItemsSource="{Binding DatabaseCharacterList}"
+                                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                                RefreshCommand="{Binding LoadItemsCommand}"
+                                CachingStrategy="RecycleElement" Margin="5,0,5,0">
+                                <!--ItemSelected="OnCharacterItemSelected"-->
+                                
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+
+                                        <Frame Style="{StaticResource CellFrameStyle}">
+
+                                            <Grid ColumnSpacing="5" RowSpacing="1">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="auto"/>
+                                                    <RowDefinition Height="auto"/>
+                                                    <RowDefinition Height="auto"/>
+                                                </Grid.RowDefinitions>
+
+                                                <Image  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
+                                                    Source="{Binding ImageURI}"
+                                                    Style="{StaticResource ImageMediumStyle}"
+                                                    VerticalOptions="CenterAndExpand"/>
+
+                                                <Label Grid.Column="1" Grid.Row="0"
+                                                   Text="{Binding Name}" 
+                                                   Style="{StaticResource ListStyle}"
+                                                   FontAttributes="Bold"/>
+
+                                                <Label Grid.Column="1" Grid.Row="1"
+                                                   Text="{Binding Description}" 
+                                                   Style="{StaticResource ListDescription}" />
+
+                                                <Label Grid.Column="1" Grid.Row="2"
+                                                    Text="{Binding Path=MaxHealth, StringFormat= '{0:G} hp'}" 
+                                                    Style="{StaticResource ListStyle}"/>
+
+                                            </Grid>
+                                        </Frame>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                            </ListView>
+
+
 
                             <Button Clicked="CloseButton_Clicked" Text="Close"></Button>
                         </StackLayout>
