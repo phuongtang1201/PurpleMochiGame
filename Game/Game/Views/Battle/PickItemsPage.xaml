@@ -23,9 +23,9 @@
                                 ItemsSource="{Binding DatabaseCharacterList}"
                                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
                                 RefreshCommand="{Binding LoadItemsCommand}"
-                                CachingStrategy="RecycleElement" Margin="5,0,5,0">
-                                <!--ItemSelected="OnCharacterItemSelected"-->
-                                
+                                CachingStrategy="RecycleElement"
+                                ItemSelected="OnCharacterSelected"
+                                Margin="5,0,5,0">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <ViewCell>
