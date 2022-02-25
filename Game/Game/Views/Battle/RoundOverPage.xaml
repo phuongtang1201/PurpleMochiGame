@@ -20,8 +20,6 @@
                          VerticalOptions="FillAndExpand"
                          HorizontalOptions="FillAndExpand">
 
-                        <Label Text="Round Cleared" Style="{StaticResource CenterMessageLargeStyle}"/>
-
                         <Button Clicked="CloseButton_Clicked" Text="Close"/>
 
                         <StackLayout Style="{StaticResource HorizontalStack}">
