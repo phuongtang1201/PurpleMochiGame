@@ -205,14 +205,14 @@
             <!--The Monster Killed Screen -->
             <StackLayout 
                     Style="{StaticResource VerticalStack}"
-                    AbsoluteLayout.LayoutBounds="0.5,0.25,400,25"
+                    AbsoluteLayout.LayoutBounds="0.5,0.20,400,25"
                     AbsoluteLayout.LayoutFlags="PositionProportional" 
                     x:Name="ChefKilledDisplay" 
                     IsVisible="false">
 
-                <Frame Style="{StaticResource BattleMessageFrameStyle}" Margin="70,0,0,0" >
+                <Frame Style="{StaticResource BattleMessageFrameStyle}" Margin="40,0,0,0" >
                     <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
-                        <Label Text="Fail!" Style="{StaticResource CenterMessageLargeStyle}"/>
+                        <Label x:Name="FailOrSuccess" Style="{StaticResource CenterMessageLargeStyle}"/>
 
                         <Label x:Name="NotifyDeath" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" MaxLines="5" Padding="20"/>
 
