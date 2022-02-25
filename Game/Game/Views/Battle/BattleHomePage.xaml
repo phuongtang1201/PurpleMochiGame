@@ -6,6 +6,7 @@
         <StackLayout>
             <Button Text="Score Page" Clicked="ScorePage_Clicked"/>
             <Button Text="Pick Items Page" Clicked="PickItemsPage_Clicked"/>
+            <Button Text="Ready Page" Clicked="ReadyPage_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
