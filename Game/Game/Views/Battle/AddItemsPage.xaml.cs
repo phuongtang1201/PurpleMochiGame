@@ -197,27 +197,6 @@ namespace Game.Views
             LargeImage.Source = ViewModel.Data.ImageURI;
         }
 
-
-        /// <summary>
-        /// Catch the change to the Stepper for Attack
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        public void Attack_OnStepperValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            AttackValue.Text = string.Format("{0}", e.NewValue);
-        }
-
-        /// <summary>
-        /// Catch the change to the Slider for Attack
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        public void Attack_OnSliderValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            AttackValue.Text = string.Format("{0}", Convert.ToInt32(e.NewValue));
-        }
-
         /// <summary>
         /// The row selected from the list
         /// </summary>
