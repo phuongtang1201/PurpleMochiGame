@@ -12,9 +12,16 @@
         <StackLayout>
             <ScrollView VerticalScrollBarVisibility="Never">
                 <StackLayout Style="{StaticResource OuterBoxStack}">
-                    <Label Text="Select Items"></Label>
+                    <Label Text="Select Items" Style="{StaticResource CenterMessageLargeStyle}"/>
 
-                    <Button Clicked="CloseButton_Clicked" Text="Close"></Button>
+                    <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand">
+
+                        <StackLayout HorizontalOptions="Start">
+
+
+                            <Button Clicked="CloseButton_Clicked" Text="Close"></Button>
+                        </StackLayout>
+                    </StackLayout>
                 </StackLayout>
             </ScrollView>
         </StackLayout>
