@@ -207,7 +207,7 @@
                     Style="{StaticResource VerticalStack}"
                     AbsoluteLayout.LayoutBounds="0.5,0.20,400,25"
                     AbsoluteLayout.LayoutFlags="PositionProportional" 
-                    x:Name="ChefKilledDisplay" 
+                    x:Name="TargetKilledDisplay" 
                     IsVisible="false">
 
                 <Frame Style="{StaticResource BattleMessageFrameStyle}" Margin="40,0,0,0" >
