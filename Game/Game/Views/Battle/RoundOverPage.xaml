@@ -25,7 +25,8 @@
                             <Label Text="0" x:Name="TotalRound" Style="{StaticResource MessageStyle}"/>
                         </StackLayout>
 
-                        <Label Text="Food Cooked" Style="{StaticResource MessageStyle}"/>
+                        <Label 
+                            Text="Food Cooked" Style="{StaticResource CenterMessageStyle}"/>
                         <FlexLayout x:Name="MonsterListFrame"
                                     JustifyContent="Start"
                                     AlignContent="Start"
