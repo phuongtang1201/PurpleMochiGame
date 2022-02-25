@@ -52,26 +52,6 @@ namespace Game.Views
             //This message will show if either the name entry box or description entry box is empty
             Warning_Not_Null_Message.Text = "Please enter a valid input.";
             Warning_Not_Null_Message.IsVisible = false;
-
-            //Added item to ImagePicker
-            GenerateImagePicker();
-
-            _ = UpdatePageBindingContext();
-
-            //Binding image picker with the current value of ImageURI
-            ImagePicker.SelectedItem = ViewModel.Data.ImageURI.ToString();
-        }
-        /// <summary>
-        /// Added all possible images for selection to ImagePicker
-        /// </summary>
-        private void GenerateImagePicker()
-        {
-            ImagePicker.Items.Add("chefblue.png");
-            ImagePicker.Items.Add("chefgreen.png");
-            ImagePicker.Items.Add("cheforange.png");
-            ImagePicker.Items.Add("chefpurple.png");
-            ImagePicker.Items.Add("chefwhite.png");
-            ImagePicker.Items.Add("chefyellow.png");
         }
 
         /// <summary>
@@ -184,17 +164,6 @@ namespace Game.Views
             ViewModel.Data.Update(DataCopy);
 
             _ = await Navigation.PopModalAsync();
-        }
-
-        /// <summary>
-        /// Save the selected item to ImageURI
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        public void Image_OnPickerValueChanged(object sender, EventArgs e)
-        {
-            ViewModel.Data.ImageURI = ImagePicker.SelectedItem.ToString();
-            LargeImage.Source = ViewModel.Data.ImageURI;
         }
 
         /// <summary>
