@@ -26,6 +26,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\Battle\AddItemsPage.xaml.cs">
+      <DependentUpon>AddItemsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Battle\ReadyPage.xaml.cs">
       <DependentUpon>ReadyPage.xaml</DependentUpon>
     </Compile>
