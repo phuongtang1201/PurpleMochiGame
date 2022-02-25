@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Name="BrowseItemsPage"
              x:Class="Game.Views.PickItemsPage"
-             Title="Assign Items">
+             Title="">
 
     <ContentPage.Content>
         <StackLayout>
@@ -20,7 +20,7 @@
 
                             <ListView 
                                 x:Name="CharactersListView" 
-                                ItemsSource="{Binding DatabaseCharacterList}"
+                                ItemsSource="{Binding PartyCharacterList}"
                                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
                                 RefreshCommand="{Binding LoadItemsCommand}"
                                 CachingStrategy="RecycleElement"
