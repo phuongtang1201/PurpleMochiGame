@@ -43,13 +43,13 @@ namespace Game.Views
         {
             //Clear and Populate the Monsters Remaining
             var FlexList = MonsterListFrame.Children.ToList();
-            //foreach (var data in FlexList)
-            //{
-            //    _ = MonsterListFrame.Children.Remove(data);
-            //}
+            foreach (var data in FlexList)
+            {
+                _ = MonsterListFrame.Children.Remove(data);
+            }
 
             // Draw the Monsters
-            foreach (var data in BattleEngineViewModel.Instance.Engine.EngineSettings.MonsterList)
+            foreach (var data in BattleEngineViewModel.Instance.Engine.EngineSettings.BattleScore.MonsterModelDeathList)
             {
                 MonsterListFrame.Children.Add(CreateMonsterDisplayBox(data));
             }
