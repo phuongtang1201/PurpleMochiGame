@@ -790,7 +790,7 @@ namespace Game.Views
                     FailOrSuccess.Text = "Success!";
                 }
 
-                ChefKilledDisplay.IsVisible = true;
+                TargetKilledDisplay.IsVisible = true;
                 NotifyDeath.Text = string.Format("{0} \n{1}", BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.TurnDeathMessage, NotifyDeath.Text);
 
             }
@@ -828,7 +828,7 @@ namespace Game.Views
         public void ContinueButton_Clicked(object sender, EventArgs e)
         {
             //Turn off the TargetKilleDisplay
-            ChefKilledDisplay.IsVisible = false;
+            TargetKilledDisplay.IsVisible = false;
 
             //Turn on the gameboard 
             GameUIDisplay.IsVisible = true;
