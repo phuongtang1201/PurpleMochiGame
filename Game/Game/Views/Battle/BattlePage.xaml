@@ -216,7 +216,9 @@
 
                         <Label x:Name="NotifyDeath" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" MaxLines="5" Padding="20"/>
 
-                        
+                        <Button Text="Continue" Clicked="ContinueButton_Clicked" WidthRequest="50" HorizontalOptions="Center"/>
+
+
                     </StackLayout>
 
                 </Frame>
