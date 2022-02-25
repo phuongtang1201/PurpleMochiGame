@@ -102,7 +102,7 @@ namespace Game.GameRules
                     Range = 0,
                     Damage = 0,
                     Value = 3,
-                    Location = ItemLocationEnum.RightFinger,
+                    Location = ItemLocationEnum.Finger,
                     Attribute = AttributeEnum.Defense},
 
                 new ItemModel {
@@ -112,7 +112,7 @@ namespace Game.GameRules
                     Range = 0,
                     Damage = 0,
                     Value = 5,
-                    Location = ItemLocationEnum.LeftFinger,
+                    Location = ItemLocationEnum.Finger,
                     Attribute = AttributeEnum.CurrentHealth},
 
                  new ItemModel {
