@@ -122,6 +122,7 @@ namespace Game.Views
             {
                 ViewModel.Data.ImageURI = new CharacterModel().ImageURI;
             }
+            _ = await Navigation.PopModalAsync();
         }
 
         /// <summary>
