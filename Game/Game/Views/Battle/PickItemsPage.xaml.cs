@@ -1,6 +1,11 @@
 ﻿using System;
+using System.ComponentModel;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
+using Game.Models;
+using Game.ViewModels;
 
 namespace Game.Views
 {
@@ -17,6 +22,7 @@ namespace Game.Views
         {
             InitializeComponent();
         }
+
         /// <summary>
         /// Quit the Battle
         /// 
