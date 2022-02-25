@@ -40,7 +40,7 @@
                         Text="Items Collected"/>
 
                     <FlexLayout x:Name="ItemListFrame"
-                                    JustifyContent="Start"
+                                    JustifyContent="Center"
                                     AlignContent="Start"
                                     Wrap="Wrap"/>
                 </StackLayout>
