@@ -653,7 +653,14 @@
                 <Setter Property="VerticalOptions" Value="Fill" />
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
             </Style>
-            
+
+            <Style TargetType="Grid" x:Key="YesNoGridStyle">
+                <Setter Property="Margin" Value="50,0,50,0" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="RowSpacing" Value="1" />
+                <Setter Property="ColumnSpacing" Value="2" />
+            </Style>
+
             <!-- Entry -->
             <Style TargetType="Entry" x:Key="EntryStyle">
                 <Setter Property="FontSize" Value="Medium" />
