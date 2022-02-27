@@ -304,7 +304,7 @@ namespace UnitTests.ViewModels
             // Reset
 
             // Assert
-            Assert.AreEqual(24, countAfter); // Count of 24 once new Item wiped
+            Assert.AreEqual(12, countAfter); // Count of 12 once new Item wiped
         }
 
         [Test]
