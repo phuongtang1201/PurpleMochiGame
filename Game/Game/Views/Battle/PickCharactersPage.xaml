@@ -19,14 +19,14 @@
 
                         <StackLayout HorizontalOptions="Start">
 
-                            <ListView 
-                                x:Name="CharactersListView" 
-                                ItemsSource="{Binding DatabaseCharacterList}"
-                                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
-                                RefreshCommand="{Binding LoadItemsCommand}"
-                                CachingStrategy="RecycleElement"
-                                ItemSelected="OnDatabaseCharacterItemSelected"
-                                Margin="5,0,5,0">
+                            <ListView x:Name="CharactersListView" 
+                                      Style="{StaticResource IndexStyle}"
+                                      ItemsSource="{Binding DatabaseCharacterList}"
+                                      IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                                      RefreshCommand="{Binding LoadItemsCommand}"
+                                      CachingStrategy="RecycleElement"
+                                      ItemSelected="OnDatabaseCharacterItemSelected"
+                                      Margin="5,0,5,0">
 
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
@@ -45,23 +45,23 @@
                                                         <RowDefinition Height="auto"/>
                                                     </Grid.RowDefinitions>
 
-                                                    <Image  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
-                                                    Source="{Binding ImageURI}"
-                                                    Style="{StaticResource ImageMediumStyle}"
-                                                    VerticalOptions="CenterAndExpand"/>
+                                                    <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
+                                                           Source="{Binding ImageURI}"
+                                                           Style="{StaticResource ImageMediumStyle}"
+                                                           VerticalOptions="CenterAndExpand"/>
 
                                                     <Label Grid.Column="1" Grid.Row="0"
-                                                   Text="{Binding Name}" 
-                                                   Style="{StaticResource ListStyle}"
-                                                   FontAttributes="Bold"/>
+                                                           Text="{Binding Name}" 
+                                                           Style="{StaticResource ListStyle}"
+                                                           FontAttributes="Bold"/>
 
                                                     <Label Grid.Column="1" Grid.Row="1"
-                                                   Text="{Binding Description}" 
-                                                   Style="{StaticResource ListDescription}" />
+                                                           Text="{Binding Description}" 
+                                                           Style="{StaticResource ListDescription}" />
 
                                                     <Label Grid.Column="1" Grid.Row="2"
-                                                    Text="{Binding Path=MaxHealth, StringFormat= '{0:G} hp'}" 
-                                                    Style="{StaticResource ListStyle}"/>
+                                                           Text="{Binding Path=MaxHealth, StringFormat= '{0:G} hp'}" 
+                                                           Style="{StaticResource ListStyle}"/>
 
                                                 </Grid>
                                             </Frame>
@@ -76,24 +76,23 @@
 
                         <Label Text="Kitchen Staff" Style="{StaticResource CenterMessageStyle}"/>
 
-                        <ListView 
-                                x:Name="PartyListView" 
-                                ItemsSource="{Binding PartyCharacterList}"
-                                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
-                                RefreshCommand="{Binding LoadItemsCommand}"
-                                CachingStrategy="RecycleElement"
-                                ItemSelected="OnPartyCharacterItemSelected"
-                                HasUnevenRows="true"
-                                Margin="5,0,5,0"
-                                RowHeight="80">
+                        <ListView x:Name="PartyListView" 
+                                  ItemsSource="{Binding PartyCharacterList}"
+                                  IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                                  RefreshCommand="{Binding LoadItemsCommand}"
+                                  CachingStrategy="RecycleElement"
+                                  ItemSelected="OnPartyCharacterItemSelected"
+                                  HasUnevenRows="true"
+                                  Margin="5,0,5,0"
+                                  RowHeight="80">
 
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <ViewCell>
                                         <Grid>
-                                            <Image  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
-                                                    Source="{Binding ImageURI}"
-                                                    Style="{StaticResource ImageMediumStyle}"/>
+                                            <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
+                                                   Source="{Binding ImageURI}"
+                                                   Style="{StaticResource ImageMediumStyle}"/>
 
                                             <Label Grid.Column="1" Grid.Row="0"
                                                    Text="{Binding Name}" 
@@ -117,8 +116,7 @@
                 </StackLayout>
             </ScrollView>
 
-            <Button 
-                    Style="{StaticResource BattleButton}"
+            <Button Style="{StaticResource BattleButton}"
                     x:Name="BeginBattleButton"
                     Clicked="BattleButton_Clicked" 
                     Text="Confirm"
