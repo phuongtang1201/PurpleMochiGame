@@ -102,7 +102,7 @@ namespace UnitTests.Models
             // Reset
 
             // Assert
-            Assert.AreEqual("action_move.png", result);
+            Assert.AreEqual("nonslip.png", result);
         }
 
         [Test]
