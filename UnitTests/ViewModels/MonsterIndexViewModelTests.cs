@@ -290,7 +290,7 @@ namespace UnitTests.ViewModels
             // Reset
 
             // Assert
-            Assert.AreEqual(7, countAfter);
+            Assert.AreEqual(12, countAfter);
         }
 
         [Test]
