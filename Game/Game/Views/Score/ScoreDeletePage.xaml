@@ -129,8 +129,7 @@
 
                         </Frame>
 
-                        <Grid RowSpacing="1" ColumnSpacing="2"
-                          HorizontalOptions="Center">
+                        <Grid Style="{StaticResource YesNoGridStyle}">
 
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="auto" />
