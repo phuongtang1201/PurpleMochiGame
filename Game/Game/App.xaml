@@ -398,6 +398,8 @@
             <!-- BoxView -->
             <Style TargetType="BoxView" x:Key="YesNoBoxView">
                 <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="Background" Value="Transparent" />
             </Style>
 
             <Style TargetType="BoxView" x:Key="FlexLayoutBoxView">
