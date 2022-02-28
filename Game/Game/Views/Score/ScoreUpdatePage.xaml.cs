@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel;
-using System.Linq;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -20,9 +19,6 @@ namespace Game.Views
         // View Model for Score
         public readonly GenericViewModel<ScoreModel> ViewModel;
 
-        // This uses the Instance so it can be shared with other Battle Pages as needed
-        public BattleEngineViewModel EngineViewModel = BattleEngineViewModel.Instance;
-
         // Hold a copy of the original data for Cancel to use
         public ScoreModel DataCopy;
 
@@ -35,7 +31,6 @@ namespace Game.Views
         public ScoreUpdatePage(GenericViewModel<ScoreModel> data)
         {
             InitializeComponent();
-            DrawOutput();
 
             BindingContext = this.ViewModel = data;
 
@@ -91,57 +86,6 @@ namespace Game.Views
             {
                 Warning_Not_Null_Message.IsVisible = false;
             }
-        }
-
-        /// <summary>
-        /// Draw data for
-        /// Character
-        /// Monster
-        /// Item
-        /// </summary>
-        public void DrawOutput()
-        {
-
-            // Draw the Characters
-            foreach (var data in EngineViewModel.Engine.EngineSettings.BattleScore.CharacterModelDeathList)
-            {
-                CharacterListFrame.Children.Add(CreateCharacterDisplayBox(data));
-            }
-
-            // Count duplicate Monsters
-            var Monsters = from monsters in EngineViewModel.Engine.EngineSettings.BattleScore.MonsterModelDeathList
-                           group monsters by monsters.ImageURI into duplicates
-                           orderby duplicates.Key
-                           let count = duplicates.Count()
-                           select new { Value = duplicates.First(), Count = count };
-
-            // Draw the Monsters
-            for (var index = 0; index < Monsters.Count(); index++)
-            {
-                var data = Monsters.ElementAt(index).Value;
-                var count = Monsters.ElementAt(index).Count;
-                MonsterListFrame.Children.Add(CreateMonsterDisplayBox(data, count));
-            }
-
-            // Count duplicate Items
-            var Items = from items in EngineViewModel.Engine.EngineSettings.BattleScore.ItemModelDropList
-                        group items by items.ImageURI into duplicates
-                        orderby duplicates.Key
-                        let count = duplicates.Count()
-                        select new { Value = duplicates.First(), Count = count };
-
-            // Draw the Items
-            for (var index = 0; index < Monsters.Count(); index++)
-            {
-                var data = Items.ElementAt(index).Value;
-                var count = Items.ElementAt(index).Count;
-                ItemListFrame.Children.Add(CreateItemDisplayBox(data, count));
-            }
-
-            // Update Values in the UI
-            //TotalKilled.Text = EngineViewModel.Engine.EngineSettings.BattleScore.MonsterModelDeathList.Count().ToString();
-            //TotalCollected.Text = EngineViewModel.Engine.EngineSettings.BattleScore.ItemModelDropList.Count().ToString();
-            //TotalScore.Text = EngineViewModel.Engine.EngineSettings.BattleScore.ExperienceGainedTotal.ToString();
         }
 
         /// <summary>
