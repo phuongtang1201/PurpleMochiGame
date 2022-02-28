@@ -73,8 +73,7 @@
 
                                     <Label Grid.Row="0" Grid.Column="1"
                                            Grid.ColumnSpan="2"
-                                           x:Name="Warning_Select_Message"
-                                           Style="{StaticResource ValueStyle}"
+                                           x:Name="Warning_Select_Message" Style="{StaticResource LabelStyle}" 
                                            TextColor="Red"/>
                                     
                                     <Label Grid.Row="1" Grid.Column="0"
