@@ -23,7 +23,7 @@ namespace Game.Models
             Attack = 0;
             Difficulty = DifficultyEnum.Average;
             UniqueItem = null;
-            ImageURI = "icon_new.png";
+            ImageURI = "strawberry.png";
             ExperienceTotal = 0;
             ExperienceRemaining = LevelTableHelper.LevelDetailsList[Level + 1].Experience - 1;
 
