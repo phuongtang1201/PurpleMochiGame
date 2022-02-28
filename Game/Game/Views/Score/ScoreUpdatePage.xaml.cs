@@ -87,5 +87,54 @@ namespace Game.Views
                 Warning_Not_Null_Message.IsVisible = false;
             }
         }
+
+        /// <summary>
+        /// Return a stack layout with the Player information inside
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public StackLayout CreateItemDisplayBox(ItemModel data, int count)
+        {
+            if (data == null)
+            {
+                data = new ItemModel();
+            }
+
+            // Hookup the image
+            var PlayerImage = new Image
+            {
+                Style = (Style)Application.Current.Resources["ImageBattleSmallStyle"],
+                Source = data.ImageURI
+            };
+
+            // Add the number of duplicates for this item
+            var PlayerDuplicatesLabel = new Label
+            {
+                Text = " x " + count,
+                Style = (Style)Application.Current.Resources["ValueStyleMicro"],
+                HorizontalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.Center,
+                Padding = 0,
+                LineBreakMode = LineBreakMode.TailTruncation,
+                CharacterSpacing = 1,
+                LineHeight = 1,
+                MaxLines = 1,
+            };
+
+            // Put the Image Button and Text inside a layout
+            var PlayerStack = new StackLayout
+            {
+                Style = (Style)Application.Current.Resources["ScoreItemInfoBox"],
+                HorizontalOptions = LayoutOptions.Center,
+                Padding = 0,
+                Spacing = 0,
+                Children = {
+                    PlayerImage,
+                    PlayerDuplicatesLabel,
+                },
+            };
+
+            return PlayerStack;
+        }
     }
 }
