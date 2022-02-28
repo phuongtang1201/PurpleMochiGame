@@ -209,8 +209,9 @@ namespace Game.Engine.EngineGame
             // TODO: Teams, You need to implement your own Logic can not use mine.
             var Defender = EngineSettings.PlayerList
                 .Where(m => m.Alive && m.PlayerType == PlayerTypeEnum.Character)
-                .OrderBy(m => m.ListOrder).FirstOrDefault();
-
+                .OrderBy(m => m.Defense)
+                .FirstOrDefault();
+            
             return Defender;
         }
 
