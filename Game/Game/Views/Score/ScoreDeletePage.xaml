@@ -22,7 +22,8 @@
                 <ScrollView>
                     <StackLayout Style="{StaticResource OuterBoxStack}">
 
-                        <Frame Style="{StaticResource NameFrameStyle}">
+                        <Frame Style="{StaticResource GrayBoxFrame}"
+                               Margin="20,0,60,0">
 
                             <Label Text="{Binding Data.Name}" 
                                Style="{StaticResource HeaderStyle}"/>
@@ -134,10 +135,6 @@
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="auto" />
                             </Grid.RowDefinitions>
-
-                            <BoxView Grid.Row="0" Grid.Column="0" 
-                                 Grid.RowSpan="2" Grid.ColumnSpan="2"
-                                 Style="{StaticResource YesNoBoxView}"/>
 
                             <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
                                Text="Are you sure you want to delete this?" 
