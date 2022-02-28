@@ -662,6 +662,13 @@
                 <Setter Property="ColumnSpacing" Value="2" />
             </Style>
 
+            <Style TargetType="Grid" x:Key="FlexGridStyle">
+                <Setter Property="Margin" Value="20,0,20,0" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="RowSpacing" Value="1" />
+                <Setter Property="ColumnSpacing" Value="2" />
+            </Style>
+
             <!-- Entry -->
             <Style TargetType="Entry" x:Key="EntryStyle">
                 <Setter Property="FontSize" Value="Medium" />
