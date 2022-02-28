@@ -60,7 +60,7 @@
                                        Text="{Binding Path=Level, StringFormat='Level {0:G}'}" 
                                        Style="{StaticResource ListDescription}"/>
 
-                                        <Label Text="{Binding Path=MaxHealth, StringFormat= '{0:G} hp'}" 
+                                        <Label Text="{Binding Path=MaxHealth, StringFormat= '{0:G} Health'}" 
                                         Style="{StaticResource ListDescription}"/>
 
                                     </StackLayout>
