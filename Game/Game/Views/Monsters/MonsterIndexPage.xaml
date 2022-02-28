@@ -55,10 +55,10 @@
 
                                     <StackLayout Grid.Column="1" Grid.Row="2"
                                                  Orientation="Horizontal">
-
-                                        <Label Text="{Binding Path=Attack, StringFormat= '{0:G} Attack'}" 
-                                               Style="{StaticResource ListDescription}"/>
                                         
+                                        <Label Text="{Binding Path=GetAttackTotal, StringFormat='Attack {0:G}'}"
+                                               Style="{StaticResource ListDescription}" />
+
                                     </StackLayout>
 
 
