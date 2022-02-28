@@ -89,6 +89,40 @@ namespace Game.Views
         }
 
         /// <summary>
+        /// Return a stack layout for the Characters
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public StackLayout CreateCharacterDisplayBox(PlayerInfoModel data)
+        {
+            if (data == null)
+            {
+                data = new PlayerInfoModel();
+            }
+
+            // Hookup the image
+            var PlayerImage = new Image
+            {
+                Style = (Style)Application.Current.Resources["ImageBattleMediumStyle"],
+                Source = data.ImageURI
+            };
+
+            // Put the Image Button and Text inside a layout
+            var PlayerStack = new StackLayout
+            {
+                Style = (Style)Application.Current.Resources["ScoreCharacterInfoBox"],
+                HorizontalOptions = LayoutOptions.Center,
+                Padding = 0,
+                Spacing = 0,
+                Children = {
+                    PlayerImage,
+                },
+            };
+
+            return PlayerStack;
+        }
+
+        /// <summary>
         /// Return a stack layout for the Monsters
         /// </summary>
         /// <param name="data"></param>
