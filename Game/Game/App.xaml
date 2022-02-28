@@ -137,6 +137,7 @@
                 <Setter Property="FontSize" Value="Medium" />
                 <Setter Property="Padding" Value="5,0,5,0"/>
                 <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
             </Style>
 
             <Style TargetType="Label" x:Key="ValueStyle"
@@ -578,7 +579,7 @@
                 <Setter Property="CornerRadius" Value="5"/>
                 <Setter Property="BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
                 <Setter Property="BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
-                <Setter Property="Margin" Value="20,0,20,0" />
+                <Setter Property="Margin" Value="100,0,100,0" />
                 <Setter Property="Padding" Value="5" />
                 <Setter Property="HorizontalOptions" Value="FillAndExpand" />
             </Style>
@@ -592,7 +593,7 @@
                 <Setter Property="CornerRadius" Value="5"/>
                 <Setter Property="BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
                 <Setter Property="BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
-                <Setter Property="Margin" Value="20,0,20,0" />
+                <Setter Property="Margin" Value="100,0,100,0" />
                 <Setter Property="HorizontalOptions" Value="FillAndExpand" />
             </Style>
 
@@ -610,7 +611,7 @@
                 <Setter Property="BackgroundColor" Value="{StaticResource PrimaryBackgroundColor}"/>
                 <Setter Property="BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
                 <Setter Property="HorizontalOptions" Value="FillAndExpand" />
-                <Setter Property="Margin" Value="20,0,20,0" />
+                <Setter Property="Margin" Value="100,0,100,0" />
                 <Setter Property="Padding" Value="5" />
                 <Setter Property="HeightRequest" Value="65"/>
             </Style>
@@ -621,7 +622,7 @@
                 <Setter Property="BorderColor" Value="{StaticResource PrimaryBackgroundColor}"/>
                 <Setter Property="HeightRequest" Value="65"/>
                 <Setter Property="HorizontalOptions" Value="FillAndExpand" />
-                <Setter Property="Margin" Value="20,0,20,0" />
+                <Setter Property="Margin" Value="100,0,100,0" />
             </Style>
 
             <Style TargetType="Frame" x:Key="ImageLevelFrameStyle">

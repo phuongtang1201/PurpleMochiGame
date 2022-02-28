@@ -31,15 +31,13 @@
                                Style="{StaticResource ImageExtraLargeStyle}"
                                HorizontalOptions="Center" />
 
-                        <Frame Style="{StaticResource NameFrameStyle}"
-                               Margin="40,0,40,0">
+                        <Frame Style="{StaticResource NameFrameStyle}">
 
                             <Label Style="{StaticResource GrayBoxStyle}"
                                    Text="{Binding Data.Name}"/>
                         </Frame>
 
-                        <Frame Style="{StaticResource DescriptionFrameStyle}"
-                               Margin="40,0,40,0">
+                        <Frame Style="{StaticResource DescriptionFrameStyle}">
 
                             <Label Style="{StaticResource GrayBoxStyle}"
                                    Text="{Binding Data.Description}"

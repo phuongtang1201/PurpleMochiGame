@@ -36,16 +36,14 @@
                                x:Name="LargeImage"
                                HorizontalOptions="Center"/>
 
-                            <Frame Style="{StaticResource EntryFrameStyle}"
-                                   Margin="40,0,40,0">
+                            <Frame Style="{StaticResource EntryFrameStyle}">
 
                                 <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
                                        Style="{StaticResource EntryStyle}"
                                        TextChanged="Entry_CheckNotEmpty"/>
                             </Frame>
 
-                            <Frame Style="{StaticResource DescriptionEntryFrameStyle}"
-                                   Margin="40,0,40,0">
+                            <Frame Style="{StaticResource DescriptionEntryFrameStyle}">
 
                                 <Editor Style="{StaticResource EditorDescriptionStyle}"
                                         Text="{Binding Data.Description, Mode=TwoWay}" 
@@ -176,7 +174,8 @@
                             </StackLayout>
                         </Frame>
                         
-                        <Grid HorizontalOptions="Center">
+                        <Grid HorizontalOptions="Center"
+                              Margin="20,0,20,0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="39" />
                                 <RowDefinition Height="auto" />
