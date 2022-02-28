@@ -665,6 +665,7 @@
 
             <Style TargetType="Grid" x:Key="YesNoGridStyle">
                 <Setter Property="Margin" Value="20,0,20,0" />
+                <Setter Property="Padding" Value="30,0,30,0" />
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="RowSpacing" Value="1" />
                 <Setter Property="ColumnSpacing" Value="2" />
