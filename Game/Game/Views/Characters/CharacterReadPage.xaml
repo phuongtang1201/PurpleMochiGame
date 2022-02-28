@@ -226,7 +226,7 @@
 
                         <Grid Style="{StaticResource YesNoGridStyle}">
 
-                            <ImageButton Grid.Row="0" Grid.Column="1" 
+                            <ImageButton Grid.Row="0" Grid.Column="0" 
                                          Style="{StaticResource CancelUpdateDeleteImageButton}"
                                          Source="delete.png"
                                          Clicked="Delete_Clicked"/>
