@@ -58,6 +58,10 @@
                                         
                                         <Label Text="{Binding Path=GetAttackTotal, StringFormat='Attack {0:G}'}"
                                                Style="{StaticResource ListDescription}" />
+                                        <Label Text="{Binding Path=GetDefenseTotal, StringFormat='Defense {0:G}'}"
+                                               Style="{StaticResource ListDescription}" />
+                                        <Label Text="{Binding Path=GetSpeedTotal, StringFormat='Speed {0:G}'}"
+                                               Style="{StaticResource ListDescription}" />
 
                                     </StackLayout>
 
