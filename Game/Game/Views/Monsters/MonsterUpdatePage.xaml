@@ -138,19 +138,20 @@
                                 </Grid>
                             </StackLayout>
                         </Frame>
-                        
-                        <StackLayout Style="{StaticResource HorizontalStack}" 
-                                     HorizontalOptions="Center">
 
-                            <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
+                        <Grid Style="{StaticResource YesNoGridStyle}">
+
+                            <ImageButton Grid.Row="0" Grid.Column="0" 
+                                         Style="{StaticResource CancelUpdateDeleteImageButton}"
                                          Source="cancel.png"
                                          Clicked="Cancel_Clicked"/>
 
-                            <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
+                            <ImageButton Grid.Row="0" Grid.Column="1" 
+                                         Style="{StaticResource CancelUpdateDeleteImageButton}"
                                          Source="update.png"
                                          Clicked="Save_Clicked"/>
 
-                        </StackLayout>
+                        </Grid>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
