@@ -22,7 +22,8 @@ namespace Game.Models
             Name = "Chef Name";
             Description = "Chef Description";
             Level = 1;
-            ImageURI = ItemService.DefaultImageURI;
+            ImageURI = "chefwhite.png";
+            //ImageURI = ItemService.DefaultImageURI;
             ExperienceTotal = 0;
             ExperienceRemaining = LevelTableHelper.LevelDetailsList[Level + 1].Experience - 1;
 
