@@ -80,7 +80,7 @@
 
                                     <Label Grid.Row="1" Grid.Column="0"
                                            Text="Image*" 
-                                           Style="{StaticResource LabelStyle}"/>
+                                           Style="{StaticResource GrayBoxStyle}"/>
 
                                     
                                     <Frame Grid.Row="1" Grid.Column="1"
@@ -93,7 +93,7 @@
 
                                     <Label Grid.Row="2" Grid.Column="0"
                                            Text="Level*" 
-                                           Style="{StaticResource LabelStyle}"/>
+                                           Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Frame Grid.Row="2" Grid.Column="1"
                                            Style="{StaticResource EntryPickerStyle}">
@@ -121,16 +121,16 @@
                                     <Label Grid.Row="0" Grid.Column="0"
                                            Text="Max Health" Margin="0,0,20,0"
                                            LineBreakMode="WordWrap"
-                                           Style="{StaticResource LabelStyle}"/>
+                                           Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Label Grid.Row="0" Grid.Column="1"
                                            Grid.ColumnSpan="2"
                                            x:Name="MaxHealthValue"
                                            Text="{Binding Data.MaxHealth, StringFormat= '{0:G} hp'}" 
-                                           Style="{StaticResource ValueStyle}"/>
+                                           Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Label Grid.Row="1" Grid.Column="0" 
-                                           Text="Attack" Style="{StaticResource LabelStyle}"/>
+                                           Text="Attack" Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Slider Grid.Row="1" Grid.Column="1" 
                                             Style="{StaticResource SliderStyle}"
@@ -143,7 +143,7 @@
                                            x:Name="AttackValue"/>
 
                                     <Label Grid.Row="2" Grid.Column="0" 
-                                           Text="Defense" Style="{StaticResource LabelStyle}"/>
+                                           Text="Defense" Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Slider Grid.Row="2" Grid.Column="1" 
                                             Style="{StaticResource SliderStyle}"
@@ -156,7 +156,7 @@
                                            x:Name="DefenseValue"/>
 
                                     <Label Grid.Row="3" Grid.Column="0" 
-                                           Text="Speed" Style="{StaticResource LabelStyle}"/>
+                                           Text="Speed" Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Slider Grid.Row="3" Grid.Column="1" 
                                             Style="{StaticResource SliderStyle}"
