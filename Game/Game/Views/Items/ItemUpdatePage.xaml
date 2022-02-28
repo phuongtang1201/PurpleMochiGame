@@ -76,7 +76,7 @@
                                     
                                     <Label Grid.Row="1" Grid.Column="0"
                                            Text="Image*" 
-                                           Style="{StaticResource LabelStyle}"/>
+                                           Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Frame Grid.Row="1" Grid.Column="1"
                                            Grid.ColumnSpan="2"
@@ -90,7 +90,7 @@
 
                                     <Label Grid.Row="2" Grid.Column="0"
                                            Text="Location*" 
-                                           Style="{StaticResource LabelStyle}"/>
+                                           Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Frame Grid.Row="2" Grid.Column="1"
                                            Grid.ColumnSpan="2"
@@ -104,7 +104,7 @@
 
                                     <Label Grid.Row="3" Grid.Column="0" 
                                            Text="Attribute*" 
-                                           Style="{StaticResource LabelStyle}"/>
+                                           Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Frame Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
                                            Style="{StaticResource EntryPickerStyle}">
