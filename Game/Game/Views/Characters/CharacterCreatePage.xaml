@@ -173,9 +173,8 @@
                                 </Grid>
                             </StackLayout>
                         </Frame>
-                        
-                        <Grid HorizontalOptions="Center"
-                              Margin="20,0,20,0">
+
+                        <Grid Style="{StaticResource FlexGridStyle}">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="39" />
                                 <RowDefinition Height="auto" />
