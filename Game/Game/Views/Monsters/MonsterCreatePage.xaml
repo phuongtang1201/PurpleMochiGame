@@ -37,16 +37,14 @@
                                    x:Name="LargeImage"
                                    HorizontalOptions="Center"/>
 
-                        <Frame Style="{StaticResource EntryFrameStyle}"
-                                   Margin="40,0,40,0">
+                        <Frame Style="{StaticResource EntryFrameStyle}">
 
                             <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
                                    Style="{StaticResource EntryStyle}"
                                    TextChanged="Entry_CheckNotEmpty"/>
                         </Frame>
 
-                        <Frame Style="{StaticResource DescriptionEntryFrameStyle}"
-                                   Margin="40,0,40,0">
+                        <Frame Style="{StaticResource DescriptionEntryFrameStyle}">
 
                             <Editor Style="{StaticResource EditorDescriptionStyle}"
                                     Text="{Binding Data.Description, Mode=TwoWay}" 
@@ -68,23 +66,20 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Row="0" Grid.Column="0"
-                                           Grid.ColumnSpan="2"
                                            Text="Statistics" 
                                            Style="{StaticResource HeaderStyle}"/>
 
                                     <Label Grid.Row="0" Grid.Column="1"
-                                           Grid.ColumnSpan="2"
                                            x:Name="Warning_Select_Message" Style="{StaticResource LabelStyle}" 
-                                           TextColor="Red"
-                                           Padding="10,0,0,0"/>
+                                           TextColor="Red"/>
 
                                     <Label Grid.Row="1" Grid.Column="0"
                                            Text="Image*" 
-                                           Style="{StaticResource LabelStyle}"/>
+                                           Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Frame Grid.Row="1" Grid.Column="1"
                                            Grid.ColumnSpan="2"
-                                           Style="{StaticResource EntryFrameStyle}">
+                                           Style="{StaticResource EntryPickerStyle}">
                                         <Picker SelectedItem="{Binding SelectedItemProperty}" 
                                                 SelectedIndexChanged="Image_OnPickerValueChanged"
                                                 x:Name="ImagePicker" MinimumWidthRequest="150"/>
@@ -100,12 +95,12 @@
                                     </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"/>
-                                        <ColumnDefinition Width="230"/>
+                                        <ColumnDefinition Width="210"/>
                                         <ColumnDefinition Width="auto"/>
                                     </Grid.ColumnDefinitions>
 
                                     <Label Grid.Row="0" Grid.Column="0" 
-                                           Text="Attack" Style="{StaticResource LabelStyle}"/>
+                                           Text="Attack" Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Slider Grid.Row="0" Grid.Column="1" 
                                             Style="{StaticResource SliderStyle}"
@@ -118,7 +113,7 @@
                                            x:Name="AttackValue"/>
 
                                     <Label Grid.Row="1" Grid.Column="0" 
-                                           Text="Defense" Style="{StaticResource LabelStyle}"/>
+                                           Text="Defense" Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Slider Grid.Row="1" Grid.Column="1" 
                                             Style="{StaticResource SliderStyle}"
@@ -131,7 +126,7 @@
                                            x:Name="DefenseValue"/>
 
                                     <Label Grid.Row="2" Grid.Column="0" 
-                                           Text="Speed" Style="{StaticResource LabelStyle}"/>
+                                           Text="Speed" Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Slider Grid.Row="2" Grid.Column="1" 
                                             Style="{StaticResource SliderStyle}"
