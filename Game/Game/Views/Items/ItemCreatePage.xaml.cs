@@ -55,7 +55,8 @@ namespace Game.Views
             GenerateImagePicker();
 
             //Binding image picker with the current value of ImageURI
-            ImagePicker.SelectedItem = ViewModel.Data?.ImageURI;
+            //ImagePicker.SelectedItem = ViewModel.Data.ImageURI;
+            ImagePicker.SelectedItem = "vinegar.png";
         }
 
         /// <summary>
