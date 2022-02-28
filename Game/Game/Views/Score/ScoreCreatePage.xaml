@@ -32,7 +32,8 @@
 
                         <Label x:Name="Warning_Not_Null_Message" TextColor="Red"/>
 
-                        <Frame Style="{StaticResource EntryFrameStyle}">
+                        <Frame Style="{StaticResource EntryPickerStyle}"
+                               Margin="20,0,60,0">
 
                             <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
                                Style="{StaticResource EntryStyle}"
@@ -40,13 +41,13 @@
                         </Frame>
 
                         <Label Text="Score" 
-                           Margin="20,0,20,0"
-                           Style="{StaticResource HeaderStyle}"/>
+                               Margin="20,0,20,0"
+                               Style="{StaticResource GrayBoxStyle}"/>
 
                         <StackLayout Style="{StaticResource HorizontalStack}">
 
-                            <Frame Style="{StaticResource EntryFrameStyle}"
-                               WidthRequest="45">
+                            <Frame Style="{StaticResource EntryPickerStyle}"
+                                   WidthRequest="45">
 
                                 <Label Text="{Binding Data.ScoreTotal, Mode=TwoWay}" 
                                    x:Name="ScoreValue"
