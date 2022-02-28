@@ -715,7 +715,7 @@
                 <Setter Property="MinimumTrackColor" Value="Black"/>
                 <Setter Property="MaximumTrackColor" Value="Black"/>
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
-                <Setter Property="ThumbColor" Value="{StaticResource SecondaryBackgroundColor}" />
+                <Setter Property="ThumbColor" Value="#dcc06d" />
             </Style>
 
             <!-- Stepper -->
