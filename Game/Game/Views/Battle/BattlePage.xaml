@@ -81,7 +81,8 @@
                     <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
                         <Button Text="Heal" Style="{StaticResource OptionBoxBattleButton}"/>
                         <Button Text="Move" Style="{StaticResource OptionBoxBattleButton}"/>
-                        <Button Text="Attack" Style="{StaticResource OptionBoxBattleButton}"/>
+                        <Button Text="Attack" Style="{StaticResource OptionBoxBattleButton}"
+                                Clicked="AttackButton_Clicked"/>
 
                     </StackLayout>
                 </StackLayout>
