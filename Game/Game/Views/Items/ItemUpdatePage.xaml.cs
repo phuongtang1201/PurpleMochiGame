@@ -207,7 +207,7 @@ namespace Game.Views
         {
             RangeDamageGrid.IsVisible = false;
 
-            if (LocationPicker.SelectedIndex == 5)
+            if (LocationPicker.SelectedIndex == 2)
             {
                 RangeDamageGrid.IsVisible = true;
             }  
