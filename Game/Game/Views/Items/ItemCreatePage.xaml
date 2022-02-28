@@ -34,8 +34,7 @@
                                HorizontalOptions="Center"
                                x:Name="LargeImage"/>
 
-                        <Frame Style="{StaticResource EntryFrameStyle}"
-                                   Margin="40,0,40,0">
+                        <Frame Style="{StaticResource EntryFrameStyle}">
 
                             <Entry Text="{Binding Data.Name, Mode=TwoWay}" 
                                    Style="{StaticResource EntryStyle}"
@@ -43,8 +42,7 @@
                             
                         </Frame>
 
-                        <Frame Style="{StaticResource DescriptionEntryFrameStyle}"
-                                   Margin="40,0,40,0">
+                        <Frame Style="{StaticResource DescriptionEntryFrameStyle}">
 
                             <Editor Style="{StaticResource EditorDescriptionStyle}"
                                     Text="{Binding Data.Description, Mode=TwoWay}" 
@@ -81,7 +79,7 @@
 
                                     <Frame Grid.Row="1" Grid.Column="1"
                                            Grid.ColumnSpan="2"
-                                           Style="{StaticResource EntryFrameStyle}">
+                                           Style="{StaticResource EntryPickerStyle}">
                                         
                                         <Picker SelectedItem="{Binding SelectedItemProperty}" 
                                                 SelectedIndexChanged="Image_OnPickerValueChanged"
@@ -95,7 +93,7 @@
 
                                     <Frame Grid.Row="2" Grid.Column="1"
                                            Grid.ColumnSpan="2"
-                                           Style="{StaticResource EntryFrameStyle}">
+                                           Style="{StaticResource EntryPickerStyle}">
 
                                         <Picker ItemsSource="{x:Static local:ItemLocationEnumHelper.GetListCharacter}" 
                                                 SelectedItem="{Binding Data.Location, Converter={StaticResource StringEnum}, Mode=TwoWay}" 
@@ -109,7 +107,7 @@
                                            Style="{StaticResource GrayBoxStyle}"/>
 
                                     <Frame Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
-                                           Style="{StaticResource EntryFrameStyle}">
+                                           Style="{StaticResource EntryPickerStyle}">
 
                                         <Picker ItemsSource="{x:Static local_enum:AttributeEnumHelper.GetListCharacter}" 
                                                 SelectedItem="{Binding Data.Attribute, Converter={StaticResource StringEnum}, Mode=TwoWay}"  
