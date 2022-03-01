@@ -246,6 +246,12 @@ namespace Game.GameRules
 
             var rnd = DiceHelper.RollDice(1, MonsterIndexViewModel.Instance.Dataset.Count);
 
+            // Change Monster if a Boss Monster was selected
+            if(rnd > 8)
+            {
+                rnd -= 3;
+            }
+
             var result = new MonsterModel(MonsterIndexViewModel.Instance.Dataset.ElementAt(rnd - 1))
             {
                 Level = DiceHelper.RollDice(1, MaxLevel),
