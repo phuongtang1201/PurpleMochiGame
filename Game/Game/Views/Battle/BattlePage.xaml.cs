@@ -914,6 +914,7 @@ namespace Game.Views
             }
 
         }
+
         /// <summary>
         /// Click to select to use focused attack
         /// </summary>
@@ -921,27 +922,34 @@ namespace Game.Views
         /// <param name="e"></param>
         public void FocusedAttackButton_Clicked(object sender, EventArgs e)
         {
-            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Character)
-            {
-                return;
-            }
-            if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ItemsCount() == 0)
-            {
-                NextAttackExample();
-                return;
-            }
-           
-        }
-        /// <summary>
-        /// Perform a focused attack for attacker
-        /// </summary>
-        public void FocusedAttack()
-        {
             BattleEngineViewModel.Instance.Engine.EngineSettings.BattleStateEnum = BattleStateEnum.Battling;
 
             // Get the turn, set the current player and attacker to match
             SetAttackerAndDefender();
 
+            //if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Character)
+            //{
+            //    NextAttackExample();
+            //    return;
+            //}
+            if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ItemsCount() == 0)
+            {
+                NextAttackExample();
+                return;
+            }
+            FocusedAttack();
+
+            //Dropped the lowest value item
+            var droppedItem = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.DropLowestValueItem();
+            Debug.WriteLine("Uses Focused attack and drop "+ droppedItem.Name.ToString());
+        }
+
+        /// <summary>
+        /// Perform a focused attack for attacker
+        /// </summary>
+        public void FocusedAttack()
+        {
+           
             //Select action focused attack for this attacker
             BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.FocusedAttack;
 
