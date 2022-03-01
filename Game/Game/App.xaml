@@ -396,6 +396,17 @@
                 <Setter Property="Margin" Value="10" />
             </Style>
 
+            <Style TargetType="ImageButton" x:Key="PlayerBattleMediumImageButtonStyle">
+                <Setter Property="HeightRequest" Value="120" />
+                <Setter Property="WidthRequest" Value="120" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Aspect" Value="Fill" />
+                <Setter Property="HeightRequest" Value="75" />
+                <Setter Property="WidthRequest" Value="75" />
+            </Style>
+
             <!-- BoxView -->
             <Style TargetType="BoxView" x:Key="YesNoBoxView">
                 <Setter Property="CornerRadius" Value="5"/>
