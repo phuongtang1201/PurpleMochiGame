@@ -896,6 +896,92 @@ namespace Game.Models
 
             return myReturn;
         }
+        
+        /// <summary>
+        /// This will drop the item with lowest value
+        /// Return the dropped item
+        /// </summary>
+        /// <returns></returns>
+        public ItemModel DropLowestValueItem()
+        {
+            int Value =  Int32.MaxValue;
+            ItemModel myItem = GetItem(Head);
+            var Location = ItemLocationEnum.Head;
+
+            if(myItem != null)
+            {
+                if(myItem.Value < Value)
+                {
+                    Location = ItemLocationEnum.Head;
+                    Value = myItem.Value;
+                }
+               
+            }
+
+            myItem = GetItem(Necklass);
+            if (myItem != null)
+            {
+                if (myItem.Value < Value)
+                {
+                    Location = ItemLocationEnum.Necklass;
+                    Value = myItem.Value;
+                }
+                
+            }
+
+            myItem = GetItem(Feet);
+            if (myItem != null)
+            {
+                if (myItem.Value < Value)
+                {
+                    Location = ItemLocationEnum.Feet;
+                    Value = myItem.Value;
+                }
+            }
+
+            myItem = GetItem(RightFinger);
+            if (myItem != null)
+            {
+                if (myItem.Value < Value)
+                {
+                    Location = ItemLocationEnum.RightFinger;
+                    Value = myItem.Value;
+                }
+            }
+
+            myItem = GetItem(LeftFinger);
+            if (myItem != null)
+            {
+                if (myItem.Value < Value)
+                {
+                    Location = ItemLocationEnum.LeftFinger;
+                    Value = myItem.Value;
+                }
+            }
+           
+            myItem = GetItem(PrimaryHand);
+            if (myItem != null)
+            {
+                if (myItem.Value < Value)
+                {
+                    Location = ItemLocationEnum.PrimaryHand;
+                    Value = myItem.Value;
+                }
+            }
+
+            myItem = GetItem(OffHand);
+            if (myItem != null)
+            {
+                if (myItem.Value < Value)
+                {
+                    Location = ItemLocationEnum.OffHand;
+                    Value = myItem.Value;
+                }
+            }
+
+            RemoveItem(Location);
+            return myItem;
+        }
 
         // Walk all the Items on the Character.
         // Add together all Items that modify the Attribute Enum Passed in
