@@ -57,6 +57,7 @@ namespace Game.Views
 
             #region MonsterToggles
             AllowMonsterItemsSwitch.IsToggled = BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowMonsterItems;
+            AllowBossMonstersSwitch.IsToggled = BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowBossMonsters;
             #endregion
         }
 
@@ -172,5 +173,31 @@ namespace Game.Views
             BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowMonsterItems = false;
         }
 
+        private void AllowMonsterItems_Toggled(object sender, ToggledEventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// Toggle Monster Items
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void AllowBossMonsters_Toggled(object sender, EventArgs e)
+        {
+            // Flip the settings
+            if (AllowBossMonstersSwitch.IsToggled == true)
+            {
+                BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowBossMonsters = true;
+                return;
+            }
+
+            BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowMonsterItems = false;
+        }
+
+        private void AllowBossMonsters_Toggled(object sender, ToggledEventArgs e)
+        {
+
+        }
     }
 }

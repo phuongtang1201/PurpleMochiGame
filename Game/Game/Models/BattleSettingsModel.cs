@@ -22,5 +22,8 @@
 
         // Can monsters have Items and weapons?
         public bool AllowMonsterItems = false;
+
+        // Are Boss Monsters Allowed?
+        public bool AllowBossMonsters = false;
     }
 }
