@@ -50,6 +50,17 @@ namespace Game.Views
         }
 
         /// <summary>
+        /// Change settings, returning to the battle screen
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public async void SettingsButton_Clicked(object sender, EventArgs e)
+        {
+            //_ = await Navigation.PopModalAsync();
+            await Navigation.PushModalAsync(new NavigationPage(new BattleSettingsPage()));
+        }
+
+        /// <summary>
         /// Return a stack layout with the Player information inside
         /// </summary>
         /// <param name="data"></param>

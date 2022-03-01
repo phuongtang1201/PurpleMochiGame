@@ -8,6 +8,8 @@
 
             <StackLayout Style="{StaticResource VerticalStack}">
 
+                <Button Clicked="SettingsButton_Clicked" Text="Settings"/>
+
                 <Label Text="Beginning a Round" Style="{StaticResource CenterMessageLargeStyle}"/>
 
                 <Label Text="Characters" Style="{StaticResource MessageLargeStyle}"/>
