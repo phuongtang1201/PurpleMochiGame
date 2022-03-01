@@ -463,13 +463,16 @@ namespace Game.Engine.EngineGame
         /// </summary>
         public override List<ItemModel> GetRandomMonsterItemDrops(int round)
         {
-            // TODO: Teams, You need to implement your own modification to the Logic cannot use mine as is.
+            // Roll of dice depends on round
+            // Lower round, a greater range for dice roll
+            // Idea is to give less help the more the game goes on
+            var drops = 24 - round;
 
             // You decide how to drop monster items, level, etc.
 
-            // The Number drop can be Up to the Round Count, but may be less.  
+            // The Number drop can be up to the calculated value 
             // Negative results in nothing dropped
-            var NumberToDrop = (DiceHelper.RollDice(1, round + 1) - 1);
+            var NumberToDrop = (DiceHelper.RollDice(1, drops));
 
             var result = new List<ItemModel>();
 
