@@ -39,15 +39,6 @@
 
                             <Label Style="{StaticResource GrayBoxStyle}"
                                        Text="{Binding Data.Name}"/>
-                        </Frame>
-
-                        <Frame Style="{StaticResource DescriptionFrameStyle}"
-                               Margin="40,0,40,0">
-
-                            <Label Style="{StaticResource GrayBoxStyle}"
-                                   Text="{Binding Data.Description}"
-                                    VerticalOptions="Start"
-                                    LineBreakMode="WordWrap"/>
 
                         </Frame>
 
