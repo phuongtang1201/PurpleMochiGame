@@ -260,6 +260,36 @@ namespace Game.Engine.EngineGame
             {
                 return false;
             }
+            if(EngineSettings.CurrentAction == ActionEnum.FocusedAttack)
+            {
+                EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.Hit;
+                // It's a Hit
+
+                //Calculate Damage
+                EngineSettings.BattleMessagesModel.DamageAmount = Attacker.GetDamageRollValue();
+
+                
+                EngineSettings.BattleMessagesModel.DamageAmount *= 10;
+                
+
+                // Apply the Damage
+                _ = ApplyDamage(Target);
+
+                EngineSettings.BattleMessagesModel.TurnMessageSpecial = EngineSettings.BattleMessagesModel.GetCurrentHealthMessage();
+
+                // Check if Dead and Remove
+                _ = RemoveIfDead(Target);
+
+                // If it is a character apply the experience earned
+                _ = CalculateExperience(Attacker, Target);
+
+                EngineSettings.BattleMessagesModel.AttackStatus = " uses Focused Attack to ";
+                EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + EngineSettings.BattleMessagesModel.AttackStatus + Target.Name + EngineSettings.BattleMessagesModel.TurnMessageSpecial + EngineSettings.BattleMessagesModel.ExperienceEarned;
+                Debug.WriteLine(EngineSettings.BattleMessagesModel.TurnMessage);
+
+                return true;
+
+        }
 
             // Set Messages to empty
             _ = EngineSettings.BattleMessagesModel.ClearMessages();
