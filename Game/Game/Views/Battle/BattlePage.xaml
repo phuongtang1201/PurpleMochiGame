@@ -75,7 +75,7 @@
                 <StackLayout x:Name="OptionBox" Margin="20,0,20,0" IsVisible="false">
                     <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
                         <Button Text="Change Mutant Food" Style="{StaticResource OptionBoxBattleButton}"/>
-                        <Button Text="Buff" Style="{StaticResource OptionBoxBattleButton}"/>
+                        <Button Text="Focused Attack" Style="{StaticResource OptionBoxBattleButton}" Clicked="FocusedAttackButton_Clicked"/>
                     </StackLayout>
 
                     <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
