@@ -142,7 +142,22 @@ namespace Game.Views
             return PlayerStack;
         }
 
-        
+        /// <summary>
+        /// Select this monster as target
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public bool SelectMonster_Clicked(PlayerInfoModel data)
+        {
+            
+
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Character)
+            {
+                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender = data;
+            }
+            DrawGameBoardAttackerDefenderSection();
+            return true;
+        }
 
         /// <summary>
         /// Put the Player into a Display Box
