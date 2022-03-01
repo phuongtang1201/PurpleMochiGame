@@ -236,7 +236,7 @@ namespace Game.GameRules
         /// </summary>
         /// <param name="MaxLevel"></param>
         /// <returns></returns>
-        public static MonsterModel GetRandomMonster(int MaxLevel, bool Items = false)
+        public static MonsterModel GetRandomMonster(int MaxLevel, bool Items = false, bool Boss = false)
         {
             // If there are no Monsters in the system, return a default one
             if (MonsterIndexViewModel.Instance.Dataset.Count == 0)
@@ -246,10 +246,13 @@ namespace Game.GameRules
 
             var rnd = DiceHelper.RollDice(1, MonsterIndexViewModel.Instance.Dataset.Count);
 
-            // Change Monster if a Boss Monster was selected
-            if(rnd > 8)
+            if(Boss == false)
             {
-                rnd -= 3;
+                // Change Monster if a Boss Monster was selected
+                if (rnd > 8)
+                {
+                    rnd -= 3;
+                }
             }
 
             var result = new MonsterModel(MonsterIndexViewModel.Instance.Dataset.ElementAt(rnd - 1))
@@ -261,9 +264,9 @@ namespace Game.GameRules
                 Description = GetMonsterDescription(),
 
                 // Randomize the Attributes
-                Attack = GetAbilityValue(),
-                Speed = GetAbilityValue(),
-                Defense = GetAbilityValue(),
+                //Attack = GetAbilityValue(),
+                //Speed = GetAbilityValue(),
+                //Defense = GetAbilityValue(),
 
                 //ImageURI = GetMonsterImage(),
 
