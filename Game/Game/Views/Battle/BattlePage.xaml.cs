@@ -927,9 +927,63 @@ namespace Game.Views
             }
             if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ItemsCount() == 0)
             {
+                NextAttackExample();
                 return;
             }
            
+        }
+        /// <summary>
+        /// Perform a focused attack for attacker
+        /// </summary>
+        public void FocusedAttack()
+        {
+            BattleEngineViewModel.Instance.Engine.EngineSettings.BattleStateEnum = BattleStateEnum.Battling;
+
+            // Get the turn, set the current player and attacker to match
+            SetAttackerAndDefender();
+
+            //Select action focused attack for this attacker
+            BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.FocusedAttack;
+
+            // Hold the current state
+            var RoundCondition = BattleEngineViewModel.Instance.Engine.Round.RoundNextTurn();
+
+            // Output the Message of what happened.
+            GameMessage();
+
+            // Show the outcome on the Board
+            DrawGameAttackerDefenderBoard();
+
+            if (RoundCondition == RoundEnum.NewRound)
+            {
+                BattleEngineViewModel.Instance.Engine.EngineSettings.BattleStateEnum = BattleStateEnum.NewRound;
+
+                // Pause
+                _ = Task.Delay(WaitTime);
+
+                Debug.WriteLine("New Round");
+
+                // Show the Round Over, after that is cleared, it will show the New Round Dialog
+                ShowModalRoundOverPage();
+                return;
+            }
+
+            // Check for Game Over
+            if (RoundCondition == RoundEnum.GameOver)
+            {
+                BattleEngineViewModel.Instance.Engine.EngineSettings.BattleStateEnum = BattleStateEnum.GameOver;
+
+                // Wrap up
+                _ = BattleEngineViewModel.Instance.Engine.EndBattle();
+
+                // Pause
+                _ = Task.Delay(WaitTime);
+
+                Debug.WriteLine("Game Over");
+
+                GameOver();
+                return;
+            }
         }
         /// <summary>
         /// Battle Over, so Exit Button
