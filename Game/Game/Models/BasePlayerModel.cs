@@ -1030,6 +1030,65 @@ namespace Game.Models
             return myReturn.Trim();
         }
 
+        /// <summary>
+        /// Get count of Items
+        /// </summary>
+        /// <returns></returns>
+        public int ItemsCount()
+        {
+            var myReturn = 0;
+
+            var data = ItemIndexViewModel.Instance.GetItem(UniqueItem);
+            if (data != null)
+            {
+                myReturn += 1;
+            }
+
+            data = ItemIndexViewModel.Instance.GetItem(Head);
+            if (data != null)
+            {
+                myReturn += 1;
+            }
+
+            data = ItemIndexViewModel.Instance.GetItem(Necklass);
+            if (data != null)
+            {
+                myReturn += 1;
+            }
+
+            data = ItemIndexViewModel.Instance.GetItem(PrimaryHand);
+            if (data != null)
+            {
+                myReturn += 1;
+            }
+
+            data = ItemIndexViewModel.Instance.GetItem(OffHand);
+            if (data != null)
+            {
+                myReturn += 1;
+            }
+
+            data = ItemIndexViewModel.Instance.GetItem(RightFinger);
+            if (data != null)
+            {
+                myReturn += 1;
+            }
+
+            data = ItemIndexViewModel.Instance.GetItem(LeftFinger);
+            if (data != null)
+            {
+                myReturn += 1;
+            }
+
+            data = ItemIndexViewModel.Instance.GetItem(Feet);
+            if (data != null)
+            {
+                myReturn += 1;
+            }
+
+            return myReturn;
+        }
+
         #endregion Items
 
         #endregion Methods
