@@ -68,10 +68,6 @@ namespace Game.Engine.EngineGame
 
             switch (EngineSettings.CurrentAction)
             {
-                case ActionEnum.FocusedAttack:
-                    result = Attack(Attacker);
-                    break;
-
                 case ActionEnum.Attack:
                     result = Attack(Attacker);
                     break;
@@ -83,7 +79,6 @@ namespace Game.Engine.EngineGame
                 case ActionEnum.Move:
                     result = MoveAsTurn(Attacker);
                     break;
-
             }
 
             EngineSettings.BattleScore.TurnCount++;
@@ -261,35 +256,6 @@ namespace Game.Engine.EngineGame
             {
                 return false;
             }
-            //IF focused attack then 10X damage
-            if (EngineSettings.CurrentAction == ActionEnum.FocusedAttack)
-            {
-                EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.Hit;
-                // It's a Hit
-
-                //Calculate Damage
-                EngineSettings.BattleMessagesModel.DamageAmount = Attacker.GetDamageRollValue();
-
-                EngineSettings.BattleMessagesModel.DamageAmount *= 10;
-                
-
-                // Apply the Damage
-                _ = ApplyDamage(Target);
-
-                EngineSettings.BattleMessagesModel.TurnMessageSpecial = EngineSettings.BattleMessagesModel.GetCurrentHealthMessage();
-
-                // Check if Dead and Remove
-                _ = RemoveIfDead(Target);
-
-                // If it is a character apply the experience earned
-                _ = CalculateExperience(Attacker, Target);
-
-                EngineSettings.BattleMessagesModel.AttackStatus = " uses focus attacked to ";
-                EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + EngineSettings.BattleMessagesModel.AttackStatus + Target.Name + EngineSettings.BattleMessagesModel.TurnMessageSpecial + EngineSettings.BattleMessagesModel.ExperienceEarned;
-                Debug.WriteLine(EngineSettings.BattleMessagesModel.TurnMessage);
-
-                return true;
-            }
 
             // Set Messages to empty
             _ = EngineSettings.BattleMessagesModel.ClearMessages();
@@ -345,7 +311,6 @@ namespace Game.Engine.EngineGame
 
             return true;
         }
-       
 
         /// <summary>
         /// Target Died
