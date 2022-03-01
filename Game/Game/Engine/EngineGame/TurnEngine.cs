@@ -500,11 +500,12 @@ namespace Game.Engine.EngineGame
             // Roll of dice depends on round
             // Lower round, a greater range for dice roll
             // Idea is to give less help the more the game goes on
-            var drops = 24 - round;
-
-            // You decide how to drop monster items, level, etc.
+            var drops = 12 - round;
+            if (drops <= 0 && round < 20)
+                drops = 1;
 
             // The Number drop can be up to the calculated value 
+            // Will drop something until round 20
             // Negative results in nothing dropped
             var NumberToDrop = (DiceHelper.RollDice(1, drops));
 
