@@ -149,7 +149,10 @@ namespace Game.Views
         /// <returns></returns>
         public bool SelectMonster_Clicked(PlayerInfoModel data)
         {
-            
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null)
+            {
+                return false;
+            }
 
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Character)
             {
