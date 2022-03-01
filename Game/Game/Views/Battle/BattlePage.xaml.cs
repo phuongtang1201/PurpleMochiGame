@@ -914,9 +914,22 @@ namespace Game.Views
             }
 
         }
+        /// <summary>
+        /// Click to select to use focused attack
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void FocusedAttackButton_Clicked(object sender, EventArgs e)
         {
-
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Character)
+            {
+                return;
+            }
+            if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ItemsCount() == 0)
+            {
+                return;
+            }
+           
         }
         /// <summary>
         /// Battle Over, so Exit Button
