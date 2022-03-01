@@ -87,6 +87,10 @@
                     Message = "apron.png";
                     break;
 
+                case ActionEnum.FocusedAttack:
+                    Message = "rollingpin.png";
+                    break;
+
                 case ActionEnum.Unknown:
                 default:
                     break;
