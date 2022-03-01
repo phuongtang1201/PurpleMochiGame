@@ -16,7 +16,11 @@
         Move = 10,
 
         // Ability
-        Ability = 20
+        Ability = 20,
+
+        //Focused Attack
+        FocusedAttack = 25
+
     }
 
     /// <summary>
@@ -46,6 +50,10 @@
 
                 case ActionEnum.Ability:
                     Message = " Uses Ability ";
+                    break;
+
+                case ActionEnum.FocusedAttack:
+                    Message = " Uses Focused Attack ";
                     break;
 
                 case ActionEnum.Unknown:
