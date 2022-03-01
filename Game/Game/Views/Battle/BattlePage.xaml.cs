@@ -914,6 +914,10 @@ namespace Game.Views
             }
 
         }
+        public void FocusedAttackButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
         /// <summary>
         /// Battle Over, so Exit Button
         /// Need to show this for the user to click on.
