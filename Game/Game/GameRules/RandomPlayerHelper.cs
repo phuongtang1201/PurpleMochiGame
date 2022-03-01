@@ -257,7 +257,7 @@ namespace Game.GameRules
                 Level = DiceHelper.RollDice(1, MaxLevel),
 
                 // Randomize Name
-                Name = GetMonsterName(),
+                //Name = GetMonsterName(),
                 Description = GetMonsterDescription(),
 
                 // Randomize the Attributes
