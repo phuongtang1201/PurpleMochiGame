@@ -17,6 +17,9 @@
 
         // Ability
         Ability = 20
+
+        //Focused attack
+        FocusedAttack = 25;
     }
 
     /// <summary>
