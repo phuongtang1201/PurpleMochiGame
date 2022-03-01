@@ -172,25 +172,38 @@ namespace Game.Engine.EngineGame
                 return true;
             }
 
-            // If not needed, then role dice to see if other ability should be used
-            // <30% chance
-            if (DiceHelper.RollDice(1, 10) < 3)
+            // If not needed, find attacker's greatest weakness, then roll dice to see if
+            // ability should be applied; default is to roll dice for attack
+            if (Attacker.GetSpeed() < Attacker.GetDefense() && Attacker.GetSpeed() < Attacker.GetAttack())
             {
-                EngineSettings.CurrentActionAbility = Attacker.SelectAbilityToUse();
-
-                if (EngineSettings.CurrentActionAbility != AbilityEnum.Unknown)
+                if (DiceHelper.RollDice(1, 10) < 4)
                 {
-                    // Ability can , switch to unknown to exit
+                    EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
                     EngineSettings.CurrentAction = ActionEnum.Ability;
                     return true;
                 }
-
-                // No ability available
                 return false;
             }
-
-            // Don't try
-            return false;
+            else if (Attacker.GetDefense() < Attacker.GetSpeed() && Attacker.GetDefense() < Attacker.GetAttack())
+            {
+                if (DiceHelper.RollDice(1, 10) < 3)
+                {
+                    EngineSettings.CurrentActionAbility = AbilityEnum.Toughness;
+                    EngineSettings.CurrentAction = ActionEnum.Ability;
+                    return true;
+                }
+                return false;
+            }
+            else
+            {
+                if (DiceHelper.RollDice(1, 10) < 2)
+                {
+                    EngineSettings.CurrentActionAbility = AbilityEnum.Focus;
+                    EngineSettings.CurrentAction = ActionEnum.Ability;
+                    return true;
+                }
+                return false;
+            }
         }
 
         /// <summary>
