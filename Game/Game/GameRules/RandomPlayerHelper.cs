@@ -265,7 +265,7 @@ namespace Game.GameRules
                 Speed = GetAbilityValue(),
                 Defense = GetAbilityValue(),
 
-                ImageURI = GetMonsterImage(),
+                //ImageURI = GetMonsterImage(),
 
                 Difficulty = GetMonsterDifficultyValue()
             };
