@@ -6,6 +6,7 @@ using Game.Engine.EngineBase;
 using Game.Engine.EngineInterfaces;
 using Game.Engine.EngineModels;
 using Game.GameRules;
+using Game.Helpers;
 using Game.Models;
 
 namespace Game.Engine.EngineGame
@@ -92,20 +93,55 @@ namespace Game.Engine.EngineGame
 
             var TargetLevel = 1;
 
+            var maxTargetLevel = 1;
+
             if (EngineSettings.CharacterList.Count() > 0)
             {
                 // Get the Min Character Level (linq is soo cool....)
                 TargetLevel = Convert.ToInt32(EngineSettings.CharacterList.Min(m => m.Level));
+
+                // Get the Max Character Level
+                maxTargetLevel = Convert.ToInt32(EngineSettings.CharacterList.Max(m => m.Level));
             }
 
-            for (var i = 0; i < EngineSettings.MaxNumberPartyMonsters; i++)
+            // Allow Boss Monsters
+            if (EngineSettings.BattleSettingsModel.AllowBossMonsters && DiceHelper.RollDice(1, 10) > 5)
             {
-                var data = RandomPlayerHelper.GetRandomMonster(TargetLevel, EngineSettings.BattleSettingsModel.AllowMonsterItems, false);
+                if (maxTargetLevel < 16)
+                {
+                    maxTargetLevel += 3;
+                }
+                else
+                {
+                    maxTargetLevel = 20;
+                }
 
-                // Help identify which Monster it is
-                data.Name += " " + EngineSettings.MonsterList.Count() + 1;
+                var data = RandomPlayerHelper.GetRandomMonster(maxTargetLevel, EngineSettings.BattleSettingsModel.AllowMonsterItems, true);
+
+                var totalCharacterHP = 0;
+
+                for(int i = 0; i < EngineSettings.CharacterList.Count(); i++)
+                {
+                    totalCharacterHP += EngineSettings.CharacterList.ElementAt(i).GetMaxHealth();
+                }
+
+                data.MaxHealth = totalCharacterHP + 20;
+                data.CurrentHealth = data.MaxHealth;
 
                 EngineSettings.MonsterList.Add(new PlayerInfoModel(data));
+
+            }
+            else // Don't allow Boss Monsters
+            { 
+                for (var i = 0; i < EngineSettings.MaxNumberPartyMonsters; i++)
+                {
+                    var data = RandomPlayerHelper.GetRandomMonster(TargetLevel, EngineSettings.BattleSettingsModel.AllowMonsterItems, false);
+
+                    // Help identify which Monster it is
+                    data.Name += " " + EngineSettings.MonsterList.Count() + 1;
+
+                    EngineSettings.MonsterList.Add(new PlayerInfoModel(data));
+                }
             }
 
             return EngineSettings.MonsterList.Count();
