@@ -86,12 +86,14 @@ namespace Game.Views
             foreach (var data in MonsterBoxList)
             {
                 _ = MonsterBox.Children.Remove(data);
+              
             }
 
             // Draw the Monsters
             foreach (var data in BattleEngineViewModel.Instance.Engine.EngineSettings.PlayerList.Where(m => m.PlayerType == PlayerTypeEnum.Monster).ToList())
             {
-                MonsterBox.Children.Add(PlayerInfoDisplayBox(data));
+                MonsterBox.Children.Add(MonsterInfoDisplayBox(data));
+                
             }
 
             // Add one black PlayerInfoDisplayBox to hold space in case the list is empty
@@ -101,6 +103,46 @@ namespace Game.Views
             MonsterBox.Children.Add(PlayerInfoDisplayBox(null));
 
         }
+
+        /// <summary>
+        /// Put the Monster into a Display Box
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public StackLayout MonsterInfoDisplayBox(PlayerInfoModel data)
+        {
+            if (data == null)
+            {
+                data = new PlayerInfoModel
+                {
+                    ImageURI = ""
+                };
+            }
+
+            // Hookup the image
+            var PlayerImage = new ImageButton
+            {
+                Style = (Style)Application.Current.Resources["PlayerBattleMediumStyle"],
+                Source = data.ImageURI
+
+            };
+
+            //When click the button, select this monster as target
+            PlayerImage.Clicked += (sender, args) => SelectMonster_Clicked(data);
+
+            // Put the Image Button and Text inside a layout
+            var PlayerStack = new StackLayout
+            {
+                Style = (Style)Application.Current.Resources["PlayerBattleDisplayBox"],
+                Children = {
+                    PlayerImage,
+                },
+            };
+
+            return PlayerStack;
+        }
+
+        
 
         /// <summary>
         /// Put the Player into a Display Box
@@ -122,7 +164,9 @@ namespace Game.Views
             {
                 Style = (Style)Application.Current.Resources["PlayerBattleMediumStyle"],
                 Source = data.ImageURI
+                
             };
+            
 
             // Put the Image Button and Text inside a layout
             var PlayerStack = new StackLayout
@@ -132,6 +176,7 @@ namespace Game.Views
                     PlayerImage,
                 },
             };
+            
 
             return PlayerStack;
         }
