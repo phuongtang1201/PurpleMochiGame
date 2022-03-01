@@ -68,6 +68,10 @@ namespace Game.Engine.EngineGame
 
             switch (EngineSettings.CurrentAction)
             {
+                case ActionEnum.FocusedAttack:
+                    result = Attack(Attacker);
+                    break;
+
                 case ActionEnum.Attack:
                     result = Attack(Attacker);
                     break;
