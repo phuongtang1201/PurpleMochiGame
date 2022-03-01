@@ -136,6 +136,9 @@ namespace Game.Models
         // The Job for the Player
         public CharacterJobEnum Job { get; set; } = CharacterJobEnum.Unknown;
 
+        //Count the times using Focused Attack
+        public int CountFocusedAttackUsed { get; set; } = 0;
+
         #endregion PlayerAttributes
 
         #endregion Attributes
