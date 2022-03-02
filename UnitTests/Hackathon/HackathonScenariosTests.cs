@@ -157,7 +157,7 @@ namespace Scenario
         {
             /* 
             * Scenario Number:  
-            *      1
+            *      2
             *      
             * Description: 
             *      Force Doug always miss
@@ -178,9 +178,8 @@ namespace Scenario
             *      Default condition is sufficient
             * 
             * Validation:
-            *      Verify Battle Returned True
-            *      Verify Mike is not in the Player List
-            *      Verify Round Count is 1
+            *      Verify Doug attacked a Monster
+            *      Verify Doug missed the Monster
             *  
             */
 
