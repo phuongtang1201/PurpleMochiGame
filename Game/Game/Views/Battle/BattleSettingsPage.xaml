@@ -135,6 +135,18 @@
                     VerticalOptions="Center"
                     x:Name="AllowBossMonstersSwitch"
                     Toggled="AllowBossMonsters_Toggled"/>
+
+                <Label 
+                    Grid.Row="6" Grid.Column="0"
+                    Text="Allow Zombie Monsters" 
+                    Style="{DynamicResource LabelStyle}"/>
+
+                <Switch 
+                    Grid.Row="5" Grid.Column="1"
+                    HorizontalOptions="Start" 
+                    VerticalOptions="Center"
+                    x:Name="AllowZombieMonstersSwitch"
+                    Toggled="AllowZombieMonsters_Toggled"/>
             </Grid>
 
             <Button Clicked="CloseButton_Clicked" Text="Close" HorizontalOptions="CenterAndExpand"/>

@@ -195,7 +195,7 @@ namespace Game.Views
             BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowMonsterItems = false;
         }
 
-        private void AllowBossMonsters_Toggled(object sender, ToggledEventArgs e)
+        private void AllowZombieMonsters_Toggled(object sender, ToggledEventArgs e)
         {
 
         }
