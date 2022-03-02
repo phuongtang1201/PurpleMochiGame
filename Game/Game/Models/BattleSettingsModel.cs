@@ -25,5 +25,8 @@
 
         // Are Boss Monsters Allowed?
         public bool AllowBossMonsters = false;
+
+        // Can Monsters Respawn as Zombies?
+        public bool AllowZombieMonsters = false;
     }
 }
