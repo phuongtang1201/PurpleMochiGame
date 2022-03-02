@@ -281,9 +281,11 @@ namespace Game.Engine.EngineGame
                 //Calculate Damage
                 EngineSettings.BattleMessagesModel.DamageAmount = Attacker.GetDamageRollValue();
 
-                
+                //10X damage
                 EngineSettings.BattleMessagesModel.DamageAmount *= 10;
-                
+
+                //Increment the CountFocusedAttackedUsed
+                Attacker.CountFocusedAttackUsed++;
 
                 // Apply the Damage
                 _ = ApplyDamage(Target);
