@@ -244,15 +244,19 @@ namespace Game.GameRules
                 return new MonsterModel();
             }
 
-            var rnd = DiceHelper.RollDice(1, MonsterIndexViewModel.Instance.Dataset.Count);
+            //var rnd = DiceHelper.RollDice(1, MonsterIndexViewModel.Instance.Dataset.Count);
 
-            if(Boss == false)
+            int rnd;
+
+            // Boss Monsters allowed
+            if(Boss == true) 
             {
-                // Change Monster if a Boss Monster was selected
-                if (rnd > 8)
-                {
-                    rnd -= 3;
-                }
+                rnd = DiceHelper.RollDice(1, 3) + 9;
+            }
+            // Boss Monsters not allowed
+            else
+            {
+                rnd = DiceHelper.RollDice(1, MonsterIndexViewModel.Instance.Dataset.Count - 3);
             }
 
             var result = new MonsterModel(MonsterIndexViewModel.Instance.Dataset.ElementAt(rnd - 1))
