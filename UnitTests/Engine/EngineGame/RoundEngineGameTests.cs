@@ -725,26 +725,13 @@ namespace UnitTests.Engine.EngineGame
             Engine.EngineSettings.MonsterList.Clear();
 
             // Arrange
-
-            Engine.EngineSettings.BattleSettingsModel.AllowBossMonsters = true;
-
-            var Character1 = new CharacterModel
+            var Character = new CharacterModel
             {
                 Speed = 20,
                 Level = 1,
-                CurrentHealth = 20,
+                CurrentHealth = 1,
                 ExperienceTotal = 1,
-                Name = "Character1",
-                ListOrder = 1,
-            };
-
-            var Character2 = new CharacterModel
-            {
-                Speed = 20,
-                Level = 1,
-                CurrentHealth = 20,
-                ExperienceTotal = 1,
-                Name = "Character2",
+                Name = "Characer",
                 ListOrder = 1,
             };
 
@@ -753,11 +740,9 @@ namespace UnitTests.Engine.EngineGame
 
             Engine.EngineSettings.CharacterList.Clear();
 
-            Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character1));
-            Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character2));
+            Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character));
 
-
-            Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel());
+            //Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel(Character));
 
             // Make the List
             Engine.EngineSettings.PlayerList = Engine.Round.MakePlayerList();
@@ -768,7 +753,7 @@ namespace UnitTests.Engine.EngineGame
             // Reset
 
             // Assert
-            Assert.AreEqual(Engine.EngineSettings.MonsterList.Count, 1);
+            Assert.AreEqual(RoundEnum.NewRound, result);
         }
 
         [Test]
@@ -814,13 +799,26 @@ namespace UnitTests.Engine.EngineGame
             Engine.EngineSettings.MonsterList.Clear();
 
             // Arrange
-            var Character = new CharacterModel
+
+            Engine.EngineSettings.BattleSettingsModel.AllowBossMonsters = true;
+
+            var Character1 = new CharacterModel
             {
                 Speed = 20,
                 Level = 1,
-                CurrentHealth = 1,
+                CurrentHealth = 20,
                 ExperienceTotal = 1,
-                Name = "Characer",
+                Name = "Character1",
+                ListOrder = 1,
+            };
+
+            var Character2 = new CharacterModel
+            {
+                Speed = 20,
+                Level = 1,
+                CurrentHealth = 20,
+                ExperienceTotal = 1,
+                Name = "Character2",
                 ListOrder = 1,
             };
 
@@ -829,9 +827,11 @@ namespace UnitTests.Engine.EngineGame
 
             Engine.EngineSettings.CharacterList.Clear();
 
-            Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character));
+            Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character1));
+            Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character2));
 
-            Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel(Character));
+
+            Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel());
 
             // Make the List
             Engine.EngineSettings.PlayerList = Engine.Round.MakePlayerList();
@@ -842,7 +842,7 @@ namespace UnitTests.Engine.EngineGame
             // Reset
 
             // Assert
-            Assert.AreEqual(RoundEnum.NextTurn, result);
+            Assert.AreEqual(Engine.EngineSettings.MonsterList.Count, 1);
         }
         #endregion RoundNextTurn
 
