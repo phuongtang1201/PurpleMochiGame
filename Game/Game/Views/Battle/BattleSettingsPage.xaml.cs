@@ -192,7 +192,7 @@ namespace Game.Views
                 return;
             }
 
-            BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowMonsterItems = false;
+            BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowBossMonsters = false;
         }
 
         private void AllowBossMonsters_Toggled(object sender, ToggledEventArgs e)
@@ -214,10 +214,32 @@ namespace Game.Views
                 return;
             }
 
-            BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowMonsterItems = false;
+            BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters = false;
         }
 
         private void AllowZombieMonsters_Toggled(object sender, ToggledEventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// Allow slowest Characters to go first
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SlowestFirst_Toggled(object sender, EventArgs e)
+        {
+            // Flip the settings
+            if (AllowSlowestFirstSwitch.IsToggled == true)
+            {
+                BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowSlowestFirst = true;
+                return;
+            }
+
+            BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowSlowestFirst = false;
+        }
+
+        private void SlowestFirst_Toggled(object sender, ToggledEventArgs e)
         {
 
         }

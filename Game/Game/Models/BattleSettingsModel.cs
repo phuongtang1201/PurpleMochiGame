@@ -28,5 +28,8 @@
 
         // Can Monsters Respawn as Zombies?
         public bool AllowZombieMonsters = false;
+
+        // Can Slowest Characters Go First?
+        public bool AllowSlowestFirst = false;
     }
 }

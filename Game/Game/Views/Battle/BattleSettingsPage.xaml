@@ -147,6 +147,18 @@
                     VerticalOptions="Center"
                     x:Name="AllowZombieMonstersSwitch"
                     Toggled="AllowZombieMonsters_Toggled"/>
+
+                <Label 
+                    Grid.Row="7" Grid.Column="0"
+                    Text="Slowest First" 
+                    Style="{DynamicResource LabelStyle}"/>
+
+                <Switch 
+                    Grid.Row="7" Grid.Column="1"
+                    HorizontalOptions="Start" 
+                    VerticalOptions="Center"
+                    x:Name="AllowSlowestFirstSwitch"
+                    Toggled="SlowestFirst_Toggled"/>
             </Grid>
 
             <Button Clicked="CloseButton_Clicked" Text="Close" HorizontalOptions="CenterAndExpand"/>
