@@ -908,13 +908,15 @@ namespace Game.Models
         public ItemModel DropLowestValueItem()
         {
             int Value =  Int32.MaxValue;
-            ItemModel myItem = GetItem(Head);
+            ItemModel returnItem = GetItem(Head);
             var Location = ItemLocationEnum.Head;
 
+            ItemModel myItem = GetItem(Head);
             if(myItem != null)
             {
                 if(myItem.Value < Value)
                 {
+                    returnItem = myItem;
                     Location = ItemLocationEnum.Head;
                     Value = myItem.Value;
                 }
@@ -926,6 +928,7 @@ namespace Game.Models
             {
                 if (myItem.Value < Value)
                 {
+                    returnItem = myItem;
                     Location = ItemLocationEnum.Necklass;
                     Value = myItem.Value;
                 }
@@ -937,6 +940,7 @@ namespace Game.Models
             {
                 if (myItem.Value < Value)
                 {
+                    returnItem = myItem;
                     Location = ItemLocationEnum.Feet;
                     Value = myItem.Value;
                 }
@@ -947,6 +951,7 @@ namespace Game.Models
             {
                 if (myItem.Value < Value)
                 {
+                    returnItem = myItem;
                     Location = ItemLocationEnum.RightFinger;
                     Value = myItem.Value;
                 }
@@ -957,6 +962,7 @@ namespace Game.Models
             {
                 if (myItem.Value < Value)
                 {
+                    returnItem = myItem;
                     Location = ItemLocationEnum.LeftFinger;
                     Value = myItem.Value;
                 }
@@ -967,6 +973,7 @@ namespace Game.Models
             {
                 if (myItem.Value < Value)
                 {
+                    returnItem = myItem;
                     Location = ItemLocationEnum.PrimaryHand;
                     Value = myItem.Value;
                 }
@@ -977,13 +984,14 @@ namespace Game.Models
             {
                 if (myItem.Value < Value)
                 {
+                    returnItem = myItem;
                     Location = ItemLocationEnum.OffHand;
                     Value = myItem.Value;
                 }
             }
 
             RemoveItem(Location);
-            return myItem;
+            return returnItem;
         }
 
         // Walk all the Items on the Character.
