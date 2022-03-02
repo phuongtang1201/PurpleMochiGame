@@ -142,7 +142,7 @@
                     Style="{DynamicResource LabelStyle}"/>
 
                 <Switch 
-                    Grid.Row="5" Grid.Column="1"
+                    Grid.Row="6" Grid.Column="1"
                     HorizontalOptions="Start" 
                     VerticalOptions="Center"
                     x:Name="AllowZombieMonstersSwitch"
