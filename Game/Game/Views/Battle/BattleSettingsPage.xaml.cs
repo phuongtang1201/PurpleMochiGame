@@ -195,9 +195,21 @@ namespace Game.Views
             BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowMonsterItems = false;
         }
 
-        private void AllowZombieMonsters_Toggled(object sender, ToggledEventArgs e)
+        private void AllowBossMonsters_Toggled(object sender, ToggledEventArgs e)
         {
 
+        }
+
+        private void AllowZombieMonsters_Toggled(object sender, EventArgs e)
+        {
+            // Flip the settings
+            if (AllowZombieMonstersSwitch.IsToggled == true)
+            {
+                //BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters = true;
+                return;
+            }
+
+            BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowMonsterItems = false;
         }
     }
 }
