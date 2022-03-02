@@ -172,7 +172,7 @@ namespace Scenario
             *      Set Current Health to 1 so he is weak
             *  
             *      Startup Battle
-            *      Run Auto Battle
+            *      Called TurnAsAttack to verify Doug always miss
             * 
             * Test Conditions:
             *      Default condition is sufficient
