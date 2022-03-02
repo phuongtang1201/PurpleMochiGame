@@ -932,11 +932,21 @@ namespace Game.Views
             //    NextAttackExample();
             //    return;
             //}
+
+            //If no equipped items, then do the regular attack
             if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ItemsCount() == 0)
             {
                 NextAttackExample();
                 return;
             }
+
+            //Only allow one time using Focused Attack
+            if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.CountFocusedAttackUsed != 0)
+            {
+                NextAttackExample();
+                return;
+            }
+
             FocusedAttack();
 
             //Dropped the lowest value item
