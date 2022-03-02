@@ -200,7 +200,7 @@ namespace Scenario
                                 Name = "Doug",
                             });
 
-            EngineViewModel.Engine.EngineSettings.CharacterList.Add(CharacterPlayerDoug);     
+            EngineViewModel.Engine.EngineSettings.CharacterList.Add(CharacterPlayerDoug); 
 
             var Monster = new MonsterModel();
             var MonsterPlayer = new PlayerInfoModel(Monster);
@@ -318,5 +318,120 @@ namespace Scenario
 
         }
         #endregion Scenario14
-    }
+
+        #region Scenario17
+        [Test]
+        public async Task HackathonScenario_Scenario_17_Valid_Default_Should_Pass()
+        {
+            /* 
+            * Scenario Number:  
+            *      17
+            *      
+            * Description: 
+            *      When a Monster dies, it has a 20 percent chance of respawning as a zombie.
+            * 
+            * Changes Required (Classes, Methods etc.)  List Files, Methods, and Describe Changes: 
+            *      Changes in TurnEngine.cs: Add logic to TargetDied to see if Battle Settings are
+            *      set to allow zombie spawning and to roll a dice between 1 and 20 and proceed
+            *      if the result is less than 4.
+            *      
+            *      Added ReviveMonster method to TurnEngine.cs to set the Monster back to alive,
+            *      give it half health, and rename it to Zombie ____.
+            *      
+            *      Added AllowZombieMonsters toggle to BattleSettingsPage for testing.
+            *     
+            * 
+            * Test Algorithm:
+            *       Create a Character
+            *       Create a Monster
+            *       Set AllowZombieMonsters = true
+            *       Enable Forced Rolls to ensure that, on death, the Monster is a zombie
+            *  
+            *      Startup Battle
+            *      Run Auto Battle
+            * 
+            * Test Conditions:
+            *      Default condition is sufficient
+            * 
+            * Validation:
+            *       Verify that when AllowZombieMonsters is enabled and a dice roll of less than 4
+            *       is rolled a Monster is revived into a zombie
+            *       
+            *       Verify that the zombie Monster's name is Zombie Monster
+            *   
+            */
+
+            // Arrange
+            EngineViewModel.Engine.EngineSettings.MonsterList.Clear();
+            EngineViewModel.Engine.EngineSettings.CharacterList.Clear();
+
+            EngineViewModel.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters = true;
+
+            EngineViewModel.Engine.EngineSettings.MaxNumberPartyCharacters = 1;
+
+            var Character1 = new PlayerInfoModel(
+                new CharacterModel
+                {
+                    Speed = 20,
+                    Attack = 20,
+                    Level = 1,
+                    CurrentHealth = 20,
+                    ExperienceTotal = 1,
+                    ExperienceRemaining = 1,
+                    Name = "Character",
+                });
+
+            var Monster1 = new PlayerInfoModel(
+                new MonsterModel
+                {
+                    Speed = -1, // will go second
+                    Level = 1,
+                    CurrentHealth = 1, // will die on one hit
+                    ExperienceTotal = 1,
+                    Name = "Monster",
+                    ListOrder = 1,
+                });
+
+            // Add each model here to warm up and load it.
+            _ = Game.Helpers.DataSetsHelper.WarmUp();          
+
+            // Add character and monster
+            EngineViewModel.Engine.EngineSettings.CharacterList.Add(Character1);
+            EngineViewModel.Engine.EngineSettings.MonsterList.Add(Monster1);
+
+            // Character always hits
+            EngineViewModel.Engine.EngineSettings.BattleSettingsModel.CharacterHitEnum = HitStatusEnum.Hit;
+
+            // Act
+            _ = DiceHelper.EnableForcedRolls();
+            _ = DiceHelper.SetForcedRollValue(3);
+
+            var result = EngineViewModel.Engine.Round.Turn.TurnAsAttack(Character1, Monster1);
+            var status = EngineViewModel.Engine.EngineSettings.BattleMessagesModel.HitStatus;
+
+            // Reset
+            _ = DiceHelper.DisableForcedRolls();
+
+            // Assert
+            Assert.AreEqual(Monster1.Name, "Zombie Monster");
+            Assert.IsTrue(result);
+
+        }
+        #endregion Scenario17
+
+/*
+ * 
+
+    //Act
+    var result = await EngineViewModel.AutoBattleEngine.RunAutoBattle();
+
+    //Reset
+    EngineViewModel.Engine.EngineSettings.BattleSettingsModel.MonsterHitEnum = HitStatusEnum.Default;
+
+    //Assert
+    Assert.AreEqual(true, result);
+    Assert.AreEqual(null, EngineViewModel.Engine.EngineSettings.PlayerList.Find(m => m.Name.Equals("Mike")));
+    Assert.AreEqual(1, EngineViewModel.Engine.EngineSettings.BattleScore.RoundCount);*/
+
+}
 }
