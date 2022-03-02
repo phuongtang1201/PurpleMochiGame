@@ -319,6 +319,113 @@ namespace Scenario
         }
         #endregion Scenario14
 
+        #region Scenario16
+        [Test]
+        public async Task HackathonScenario_Scenario_16_Valid_Default_Should_Pass()
+        {
+            /* 
+            * Scenario Number:  
+            *      16
+            *      
+            * Description: 
+            *      The default ordering of Characters where the fastest goes first is reversed
+            * 
+            * Changes Required (Classes, Methods etc.)  List Files, Methods, and Describe Changes: 
+            *      Changes in RoundEngine.cs: Add logic to OrderPlayerListByTurnOrder and import
+            *      Game.ViewModels. Logic checks if Battle Settings are set to Slowest First and
+            *      if a dice roll set from 1 to 20 returns a number less than 4.
+            *      
+            *      Added AllowSlowestFirst bool to BattleSettingsModel to enable.
+            *     
+            * 
+            * Test Algorithm:
+            *       Create 4 Characters with wildly differing speeds
+            *       Create a Monster
+            *       Set AllowSlowestFirst = true
+            *       Enable Forced Rolls to ensure that the Characters are ordered slowest to fastest
+            *  
+            *      Start Round
+            * 
+            * Test Conditions:
+            *      Default condition is sufficient
+            * 
+            * Validation:
+            *       Verify that when AllowSlowestFirst is enabled and a dice roll of less than 4
+            *       is rolled the slowest Character is the first in the list
+            */
+
+            // Arrange
+
+            EngineViewModel.Engine.EngineSettings.BattleSettingsModel.AllowSlowestFirst = true;
+
+            EngineViewModel.Engine.EngineSettings.MaxNumberPartyCharacters = 4;
+
+            var Character1 = new PlayerInfoModel(
+                new CharacterModel
+                {
+                    Speed = 20,
+                    Attack = 20,
+                    Level = 1,
+                    CurrentHealth = 20,
+                    ExperienceTotal = 1,
+                    ExperienceRemaining = 1,
+                    Name = "Character1",
+                });
+
+            var Character2 = new PlayerInfoModel(
+                new CharacterModel
+                {
+                    Speed = 15,
+                    Attack = 20,
+                    Level = 1,
+                    CurrentHealth = 20,
+                    ExperienceTotal = 1,
+                    ExperienceRemaining = 1,
+                    Name = "Character2",
+                });
+
+            var Character3 = new PlayerInfoModel(
+                new CharacterModel
+                {
+                    Speed = 10,
+                    Attack = 20,
+                    Level = 1,
+                    CurrentHealth = 20,
+                    ExperienceTotal = 1,
+                    ExperienceRemaining = 1,
+                    Name = "Character3",
+                });
+
+            var Character4 = new PlayerInfoModel(
+                new CharacterModel
+                {
+                    Speed = 5,
+                    Attack = 20,
+                    Level = 1,
+                    CurrentHealth = 20,
+                    ExperienceTotal = 1,
+                    ExperienceRemaining = 1,
+                    Name = "Character4",
+                });
+
+            // Character always hits
+            EngineViewModel.Engine.EngineSettings.BattleSettingsModel.CharacterHitEnum = HitStatusEnum.Hit;
+
+            // Act
+            _ = DiceHelper.EnableForcedRolls();
+            _ = DiceHelper.SetForcedRollValue(3);
+
+
+            // Reset
+            _ = DiceHelper.DisableForcedRolls();
+
+            // Assert
+            //Assert.AreEqual(Monster1.Name, "Zombie Monster");
+            //Assert.IsTrue(result);
+
+        }
+        #endregion Scenario16
+
         #region Scenario17
         [Test]
         public async Task HackathonScenario_Scenario_17_Valid_Default_Should_Pass()
@@ -347,8 +454,7 @@ namespace Scenario
             *       Set AllowZombieMonsters = true
             *       Enable Forced Rolls to ensure that, on death, the Monster is a zombie
             *  
-            *      Startup Battle
-            *      Run Auto Battle
+            *      Set Character to guarantee hit Monster
             * 
             * Test Conditions:
             *      Default condition is sufficient

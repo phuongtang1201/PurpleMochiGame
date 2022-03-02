@@ -275,6 +275,8 @@ namespace Game.Engine.EngineGame
                 .ThenBy(a => a.Name)
                 .ThenBy(a => a.ListOrder)
                 .ToList();
+
+                return EngineSettings.PlayerList;
             }
             // Order is based by... 
             // Order by Speed (Descending)
