@@ -129,6 +129,37 @@ namespace Game.Models
         }
 
         /// <summary>
+        /// Add Player to the Map
+        /// Places it on an Empty Square
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public bool AddPlayerToMap(PlayerInfoModel data)
+        {
+            if (data == null)
+            {
+                return false;
+            }
+
+            MapModelLocation location = ReturnClosestEmptyLocation(MapGridLocation[0, 0]);
+            MapGridLocation[location.Row, location.Column].Player = data;
+
+            /* for (var x = 0; x < MapXAxiesCount; x++)
+             {
+                 for (var y = 0; y < MapYAxiesCount; y++)
+                 {
+                     if (IsEmptySquare(x, y))
+                     {
+                         MapGridLocation[x, y].Player = data;
+                         return true;
+                     }
+                 }
+             }*/
+
+            return true;
+        }
+
+        /// <summary>
         /// Remove the Player from the Map
         /// Replaces with Empty Square
         /// </summary>
