@@ -149,5 +149,73 @@ namespace Scenario
             Assert.AreEqual(1, EngineViewModel.Engine.EngineSettings.BattleScore.RoundCount);
         }
         #endregion Scenario1
+
+        #region Scenario2
+        [Test]
+        public async Task HackathonScenario_Scenario_2_Valid_Default_Should_Pass()
+        {
+            /* 
+            * Scenario Number:  
+            *      1
+            *      
+            * Description: 
+            *      Force Doug always miss
+            * 
+            * Changes Required (Classes, Methods etc.)  List Files, Methods, and Describe Changes: 
+            *      No Code changes requied 
+            * 
+            * Test Algrorithm:
+            *      Create Character named Doug
+            *      Set speed to -1 so he is really slow
+            *      Set Max health to 1 so he is weak
+            *      Set Current Health to 1 so he is weak
+            *  
+            *      Startup Battle
+            *      Run Auto Battle
+            * 
+            * Test Conditions:
+            *      Default condition is sufficient
+            * 
+            * Validation:
+            *      Verify Battle Returned True
+            *      Verify Mike is not in the Player List
+            *      Verify Round Count is 1
+            *  
+            */
+
+            //Arrange
+
+            // Set Character Conditions
+
+            EngineViewModel.Engine.EngineSettings.MaxNumberPartyCharacters = 1;
+
+            var CharacterPlayerDoug = new PlayerInfoModel(
+                            new CharacterModel
+                            {
+                                Speed = -1, // Will go last...
+                                Level = 1,
+                                CurrentHealth = 1,
+                                ExperienceTotal = 1,
+                                ExperienceRemaining = 1,
+                                Name = "Doug",
+                            });
+
+            EngineViewModel.Engine.EngineSettings.CharacterList.Add(CharacterPlayerDoug);     
+
+            var Monster = new MonsterModel();
+            var MonsterPlayer = new PlayerInfoModel(Monster);
+            EngineViewModel.Engine.EngineSettings.MonsterList.Add(MonsterPlayer);
+
+            // Act
+            var result = EngineViewModel.Engine.Round.Turn.TurnAsAttack(CharacterPlayerDoug, MonsterPlayer);
+            var status = EngineViewModel.Engine.EngineSettings.BattleMessagesModel.HitStatus;
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(true, result);
+            Assert.AreEqual(HitStatusEnum.Miss, status);
+        }
+        #endregion Scenario2
     }
 }
