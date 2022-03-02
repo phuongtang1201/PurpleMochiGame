@@ -210,7 +210,7 @@ namespace Game.Views
             // Flip the settings
             if (AllowZombieMonstersSwitch.IsToggled == true)
             {
-                //BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters = true;
+                BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters = true;
                 return;
             }
 
