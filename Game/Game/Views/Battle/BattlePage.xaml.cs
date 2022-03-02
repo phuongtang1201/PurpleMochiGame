@@ -840,7 +840,7 @@ namespace Game.Views
             if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender?.Alive == false)
             {
                 //Hide the gameboard
-                GameUIDisplay.IsVisible = false;
+                //GameUIDisplay.IsVisible = false;
 
                 //If monster is killed, then shows success. Otherwise, shows fail
                 if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Character)
