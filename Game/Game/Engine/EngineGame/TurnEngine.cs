@@ -373,17 +373,12 @@ namespace Game.Engine.EngineGame
         /// <returns></returns>
         public bool ReviveMonster(PlayerInfoModel Target)
         {
-            if (BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters
-                        && !Target.Name.Contains("Zombie"))
-            {
-                Target.Alive = true;
-                Target.CurrentHealth = Target.MaxHealth / 2;
-                Target.Name = "Zombie " + Target.Name;
-                //EngineSettings.MapModel.AddPlayerToMap(Target);
-                EngineSettings.MonsterList.Add(Target);
-                return true;
-            }
-            return false;
+            Target.Alive = true;
+            Target.CurrentHealth = Target.MaxHealth / 2;
+            Target.Name = "Zombie " + Target.Name;
+            EngineSettings.MapModel.AddPlayerToMap(Target);
+                //EngineSettings.MonsterList.Add(Target);
+            return true;
         }
         /// <summary>
         /// Target Died
@@ -438,9 +433,14 @@ namespace Game.Engine.EngineGame
                         //EngineSettings.MonsterList.Add(Target);
                         return true;
                     }*/
+                    if (BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters
+                        && !Target.Name.Contains("Zombie"))
+                    {
+                        return ReviveMonster(Target);
+                    }
 
-                    // Add one to the monsters killed count...
-                    EngineSettings.BattleScore.MonsterSlainNumber++;
+                        // Add one to the monsters killed count...
+                        EngineSettings.BattleScore.MonsterSlainNumber++;
 
                     // Add the MonsterModel to the killed list
                     EngineSettings.BattleScore.MonstersKilledList += Target.FormatOutput() + "\n";
