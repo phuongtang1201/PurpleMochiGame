@@ -577,6 +577,29 @@ namespace Game.Engine.EngineGame
         /// <returns></returns>
         public override ActionEnum DetermineActionChoice(PlayerInfoModel Attacker)
         {
+            //Autobattle players will choose to perform Focused Attack if the Monster they are
+            //fighting has current health of more than 5x the damage they can deal with an attack,
+            //and they have an item equipped
+            if (EngineSettings.BattleScore.AutoBattle == true)
+            {
+                // For Attack, Choose Who
+                EngineSettings.CurrentDefender = AttackChoice(Attacker);
+
+                if (EngineSettings.CurrentDefender == null)
+                {
+                    return ActionEnum.Attack;
+                }
+                string DamgeString = EngineSettings.CurrentDefender.GetDamageTotalString;
+                
+                if (EngineSettings.CurrentDefender.CurrentHealth > (int.Parse(DamgeString)* 5))
+                {
+                    if (Attacker.ItemsCount() > 0)
+                    {
+                        EngineSettings.CurrentAction = ActionEnum.FocusedAttack;
+                        return EngineSettings.CurrentAction;
+                    }
+                }
+            }
             return base.DetermineActionChoice(Attacker);
         }
 
