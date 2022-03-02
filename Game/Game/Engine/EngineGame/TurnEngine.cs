@@ -313,6 +313,12 @@ namespace Game.Engine.EngineGame
             // See if the Battle Settings Overrides the Roll
             EngineSettings.BattleMessagesModel.HitStatus = BattleSettingsOverride(Attacker);
 
+            //Force Doug to always miss
+            if (Attacker.Name == "Doug")
+            {
+                EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.Miss;
+            }
+
             switch (EngineSettings.BattleMessagesModel.HitStatus)
             {
                 case HitStatusEnum.Miss:
