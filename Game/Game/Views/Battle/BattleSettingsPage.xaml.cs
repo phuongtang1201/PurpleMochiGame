@@ -200,6 +200,11 @@ namespace Game.Views
 
         }
 
+        /// <summary>
+        /// Toggle Monsters respawning after death
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AllowZombieMonsters_Toggled(object sender, EventArgs e)
         {
             // Flip the settings
@@ -210,6 +215,11 @@ namespace Game.Views
             }
 
             BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowMonsterItems = false;
+        }
+
+        private void AllowZombieMonsters_Toggled(object sender, ToggledEventArgs e)
+        {
+
         }
     }
 }
