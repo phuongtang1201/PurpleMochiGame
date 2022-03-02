@@ -358,6 +358,9 @@ namespace Scenario
 
             EngineViewModel.Engine.EngineSettings.BattleSettingsModel.AllowSlowestFirst = true;
 
+            EngineViewModel.Engine.EngineSettings.CharacterList.Clear();
+            EngineViewModel.Engine.EngineSettings.MonsterList.Clear();
+
             EngineViewModel.Engine.EngineSettings.MaxNumberPartyCharacters = 4;
 
             var Character1 = new PlayerInfoModel(
@@ -408,20 +411,25 @@ namespace Scenario
                     Name = "Character4",
                 });
 
-            // Character always hits
-            EngineViewModel.Engine.EngineSettings.BattleSettingsModel.CharacterHitEnum = HitStatusEnum.Hit;
+            EngineViewModel.Engine.EngineSettings.CharacterList.Clear();
+
+            EngineViewModel.Engine.EngineSettings.CharacterList.Add(Character1);
+            EngineViewModel.Engine.EngineSettings.CharacterList.Add(Character2);
+            EngineViewModel.Engine.EngineSettings.CharacterList.Add(Character3);
+            EngineViewModel.Engine.EngineSettings.CharacterList.Add(Character4);
 
             // Act
             _ = DiceHelper.EnableForcedRolls();
             _ = DiceHelper.SetForcedRollValue(3);
-
+            EngineViewModel.Engine.EngineSettings.PlayerList = EngineViewModel.Engine.Round.MakePlayerList();
+            EngineViewModel.Engine.EngineSettings.PlayerList = EngineViewModel.Engine.Round.OrderPlayerListByTurnOrder();
 
             // Reset
             _ = DiceHelper.DisableForcedRolls();
 
             // Assert
-            //Assert.AreEqual(Monster1.Name, "Zombie Monster");
-            //Assert.IsTrue(result);
+            Assert.AreEqual(EngineViewModel.Engine.EngineSettings.PlayerList[3].Name, "Character1");
+            Assert.AreEqual(EngineViewModel.Engine.EngineSettings.PlayerList[0].Name, "Character4");
 
         }
         #endregion Scenario16
