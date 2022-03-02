@@ -3,6 +3,7 @@
 using Game.Models;
 using System.Threading.Tasks;
 using Game.ViewModels;
+using Game.Helpers;
 
 namespace Scenario
 {
@@ -230,13 +231,17 @@ namespace Scenario
             *      Rather than 6 monsters, 1 really tough monster is created for a given round.
             * 
             * Changes Required (Classes, Methods etc.)  List Files, Methods, and Describe Changes: 
-            *      No Code changes required 
+            *      Changes in RoundEngine.cs: Add logic to AddMonstersToRound to allow the 
+            *      creation of Boss Monsters if AllowBossMonsters toggle was selected.
+            *      
+            *      Changes in RandomPlayerHelper.cs: Add parameter for if Boss Monsters are allowed,
+            *      and if so create one.
+            *     
             * 
             * Test Algrorithm:
-            *      Create Character named Doug
-            *      Set speed to -1 so he is really slow
-            *      Set Max health to 1 so he is weak
-            *      Set Current Health to 1 so he is weak
+            *       Create 2 Characters
+            *       Set AllowBossMonsters = true
+            *       Enable Forced Rolls to ensure that the next round is a Boss level
             *  
             *      Startup Battle
             *      Run Auto Battle
@@ -245,9 +250,9 @@ namespace Scenario
             *      Default condition is sufficient
             * 
             * Validation:
-            *      Verify Battle Returned True
-            *      Verify Mike is not in the Player List
-            *      Verify Round Count is 1
+            *       Verify that when AllowBossMonsters is enabled and a dice roll of 6 
+            *       is rolled a single Monster is present in the round
+            *   
             *  
             */
 
@@ -285,14 +290,17 @@ namespace Scenario
             EngineViewModel.Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character1));
             EngineViewModel.Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character2));
 
+            _ = DiceHelper.EnableForcedRolls();
+            _ = DiceHelper.SetForcedRollValue(6);
 
             EngineViewModel.Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel());
 
             // Make the List
             EngineViewModel.Engine.EngineSettings.PlayerList = EngineViewModel.Engine.Round.MakePlayerList();
 
+            _ = DiceHelper.DisableForcedRolls();
+
             // Act
-            //var result = EngineViewModel.Engine.Round.RoundNextTurn();
             var result = EngineViewModel.Engine.EngineSettings.MonsterList.Count;
 
             // Reset
