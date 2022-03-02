@@ -163,7 +163,7 @@ namespace Scenario
             *      Force Doug always miss
             * 
             * Changes Required (Classes, Methods etc.)  List Files, Methods, and Describe Changes: 
-            *      No Code changes requied 
+            *      TurnEngie.cs: Forcess Attacker with name Doug always miss in TurnAsAttack()
             * 
             * Test Algrorithm:
             *      Create Character named Doug
