@@ -367,7 +367,6 @@ namespace Game.Engine.EngineGame
 
         /// <summary>
         /// Reset dead Monster to alive with half health
-        /// Place back in Monster List
         /// </summary>
         /// <param name="Target"></param>
         /// <returns></returns>
@@ -423,18 +422,10 @@ namespace Game.Engine.EngineGame
 
                 case PlayerTypeEnum.Monster:
                     //default:
-                    /*if (BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters
-                        && !Target.Name.Contains("Zombie"))
-                    {
-                        Target.Alive = true;
-                        Target.CurrentHealth = Target.MaxHealth / 2;
-                        Target.Name = "Zombie " + Target.Name;
-                        //EngineSettings.MapModel.AddPlayerToMap(Target);
-                        //EngineSettings.MonsterList.Add(Target);
-                        return true;
-                    }*/
+                    var d20 = DiceHelper.RollDice(1, 20);
+                    // 20% chance to revive
                     if (BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters
-                        && !Target.Name.Contains("Zombie"))
+                        && d20 < 4)
                     {
                         return ReviveMonster(Target);
                     }
