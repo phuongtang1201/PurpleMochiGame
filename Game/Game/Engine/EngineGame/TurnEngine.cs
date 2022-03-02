@@ -408,7 +408,7 @@ namespace Game.Engine.EngineGame
 
                 case PlayerTypeEnum.Monster:
                     //default:
-                    if (BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters
+                    /*if (BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters
                         && !Target.Name.Contains("Zombie"))
                     {
                         Target.Alive = true;
@@ -417,7 +417,7 @@ namespace Game.Engine.EngineGame
                         //EngineSettings.MapModel.AddPlayerToMap(Target);
                         //EngineSettings.MonsterList.Add(Target);
                         return true;
-                    }
+                    }*/
 
                     // Add one to the monsters killed count...
                     EngineSettings.BattleScore.MonsterSlainNumber++;
