@@ -366,6 +366,26 @@ namespace Game.Engine.EngineGame
         }
 
         /// <summary>
+        /// Reset dead Monster to alive with half health
+        /// Place back in Monster List
+        /// </summary>
+        /// <param name="Target"></param>
+        /// <returns></returns>
+        public bool ReviveMonster(PlayerInfoModel Target)
+        {
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters
+                        && !Target.Name.Contains("Zombie"))
+            {
+                Target.Alive = true;
+                Target.CurrentHealth = Target.MaxHealth / 2;
+                Target.Name = "Zombie " + Target.Name;
+                //EngineSettings.MapModel.AddPlayerToMap(Target);
+                EngineSettings.MonsterList.Add(Target);
+                return true;
+            }
+            return false;
+        }
+        /// <summary>
         /// Target Died
         /// 
         /// Process for death...
