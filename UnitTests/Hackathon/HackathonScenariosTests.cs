@@ -217,5 +217,90 @@ namespace Scenario
             Assert.AreEqual(HitStatusEnum.Miss, status);
         }
         #endregion Scenario2
+
+        #region Scenario14
+        [Test]
+        public async Task HackathonScenario_Scenario_14_Valid_Default_Should_Pass()
+        {
+            /* 
+            * Scenario Number:  
+            *      14
+            *      
+            * Description: 
+            *      Rather than 6 monsters, 1 really tough monster is created for a given round.
+            * 
+            * Changes Required (Classes, Methods etc.)  List Files, Methods, and Describe Changes: 
+            *      No Code changes required 
+            * 
+            * Test Algrorithm:
+            *      Create Character named Doug
+            *      Set speed to -1 so he is really slow
+            *      Set Max health to 1 so he is weak
+            *      Set Current Health to 1 so he is weak
+            *  
+            *      Startup Battle
+            *      Run Auto Battle
+            * 
+            * Test Conditions:
+            *      Default condition is sufficient
+            * 
+            * Validation:
+            *      Verify Battle Returned True
+            *      Verify Mike is not in the Player List
+            *      Verify Round Count is 1
+            *  
+            */
+
+            EngineViewModel.Engine.EngineSettings.MonsterList.Clear();
+
+            // Arrange
+
+            EngineViewModel.Engine.EngineSettings.BattleSettingsModel.AllowBossMonsters = true;
+
+            var Character1 = new CharacterModel
+            {
+                Speed = 20,
+                Level = 1,
+                CurrentHealth = 20,
+                ExperienceTotal = 1,
+                Name = "Character1",
+                ListOrder = 1,
+            };
+
+            var Character2 = new CharacterModel
+            {
+                Speed = 20,
+                Level = 1,
+                CurrentHealth = 20,
+                ExperienceTotal = 1,
+                Name = "Character2",
+                ListOrder = 1,
+            };
+
+            // Add each model here to warm up and load it.
+            _ = Game.Helpers.DataSetsHelper.WarmUp();
+
+            EngineViewModel.Engine.EngineSettings.CharacterList.Clear();
+
+            EngineViewModel.Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character1));
+            EngineViewModel.Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character2));
+
+
+            EngineViewModel.Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel());
+
+            // Make the List
+            EngineViewModel.Engine.EngineSettings.PlayerList = EngineViewModel.Engine.Round.MakePlayerList();
+
+            // Act
+            //var result = EngineViewModel.Engine.Round.RoundNextTurn();
+            var result = EngineViewModel.Engine.EngineSettings.MonsterList.Count;
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(result, 1);
+
+        }
+        #endregion Scenario14
     }
 }
