@@ -222,8 +222,7 @@ namespace Game.Engine.EngineGame
                 // Remember who just went...
                 EngineSettings.CurrentAttacker = GetNextPlayerTurn();
 
-                // Only Attack for now
-                EngineSettings.CurrentAction = ActionEnum.Attack;
+            
             }
 
             // Do the turn....
