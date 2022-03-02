@@ -362,8 +362,6 @@ namespace Scenario
             */
 
             // Arrange
-            EngineViewModel.Engine.EngineSettings.MonsterList.Clear();
-            EngineViewModel.Engine.EngineSettings.CharacterList.Clear();
 
             EngineViewModel.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters = true;
 
