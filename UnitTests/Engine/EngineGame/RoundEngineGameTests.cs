@@ -725,6 +725,58 @@ namespace UnitTests.Engine.EngineGame
             Engine.EngineSettings.MonsterList.Clear();
 
             // Arrange
+
+            Engine.EngineSettings.BattleSettingsModel.AllowBossMonsters = true;
+
+            var Character1 = new CharacterModel
+            {
+                Speed = 20,
+                Level = 1,
+                CurrentHealth = 20,
+                ExperienceTotal = 1,
+                Name = "Character1",
+                ListOrder = 1,
+            };
+
+            var Character2 = new CharacterModel
+            {
+                Speed = 20,
+                Level = 1,
+                CurrentHealth = 20,
+                ExperienceTotal = 1,
+                Name = "Character2",
+                ListOrder = 1,
+            };
+
+            // Add each model here to warm up and load it.
+            _ = Game.Helpers.DataSetsHelper.WarmUp();
+
+            Engine.EngineSettings.CharacterList.Clear();
+
+            Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character1));
+            Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character2));
+
+
+            Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel());
+
+            // Make the List
+            Engine.EngineSettings.PlayerList = Engine.Round.MakePlayerList();
+
+            // Act
+            var result = Engine.Round.RoundNextTurn();
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(Engine.EngineSettings.MonsterList.Count, 1);
+        }
+
+        [Test]
+        public void RoundEngine_RoundNextTurn_Valid_Characters_Monsters_Should_Return_NewRound()
+        {
+            Engine.EngineSettings.MonsterList.Clear();
+
+            // Arrange
             var Character = new CharacterModel
             {
                 Speed = 20,
@@ -742,7 +794,7 @@ namespace UnitTests.Engine.EngineGame
 
             Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character));
 
-            //Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel(Character));
+            Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel(Character));
 
             // Make the List
             Engine.EngineSettings.PlayerList = Engine.Round.MakePlayerList();
@@ -753,11 +805,11 @@ namespace UnitTests.Engine.EngineGame
             // Reset
 
             // Assert
-            Assert.AreEqual(RoundEnum.NewRound, result);
+            Assert.AreEqual(RoundEnum.NextTurn, result);
         }
 
         [Test]
-        public void RoundEngine_RoundNextTurn_Valid_Characters_Monsters_Should_Return_NewRound()
+        public void RoundEngine_RoundNextTurn_AllowBossMonsters_Should_Return_NewRound_With_Boss_Monster()
         {
             Engine.EngineSettings.MonsterList.Clear();
 
