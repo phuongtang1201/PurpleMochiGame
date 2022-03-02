@@ -242,6 +242,7 @@ namespace Scenario
             *       Create 2 Characters
             *       Set AllowBossMonsters = true
             *       Enable Forced Rolls to ensure that the next round is a Boss level
+            *       Force
             *  
             *      Startup Battle
             *      Run Auto Battle
@@ -252,8 +253,9 @@ namespace Scenario
             * Validation:
             *       Verify that when AllowBossMonsters is enabled and a dice roll of 6 
             *       is rolled a single Monster is present in the round
+            *       
+            *       Verify that the single Monster HP = Character 1 HP + Character 2 HP + 20
             *   
-            *  
             */
 
             EngineViewModel.Engine.EngineSettings.MonsterList.Clear();
@@ -303,10 +305,17 @@ namespace Scenario
             // Act
             var result = EngineViewModel.Engine.EngineSettings.MonsterList.Count;
 
+            var totalHP = 0;
+            for(int i = 0; i < EngineViewModel.Engine.EngineSettings.CharacterList.Count; i++)
+            {
+                totalHP += EngineViewModel.Engine.EngineSettings.CharacterList[i].CurrentHealth;
+            }
+
             // Reset
 
             // Assert
             Assert.AreEqual(result, 1);
+            Assert.AreEqual(totalHP + 20, 60);
 
         }
         #endregion Scenario14
