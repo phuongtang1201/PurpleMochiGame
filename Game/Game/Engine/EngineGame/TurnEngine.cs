@@ -413,8 +413,8 @@ namespace Game.Engine.EngineGame
                     {
                         Target.Alive = true;
                         Target.CurrentHealth = Target.MaxHealth / 2;
-                        Target.Name = "Zombie" + Target.Name;
-                        EngineSettings.MapModel.AddPlayerToMap(Target);
+                        Target.Name = "Zombie " + Target.Name;
+                        //EngineSettings.MapModel.AddPlayerToMap(Target);
                         //EngineSettings.MonsterList.Add(Target);
                         return true;
                     }
