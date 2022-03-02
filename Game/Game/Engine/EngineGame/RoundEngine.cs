@@ -8,6 +8,7 @@ using Game.Engine.EngineModels;
 using Game.GameRules;
 using Game.Helpers;
 using Game.Models;
+using Game.ViewModels;
 
 namespace Game.Engine.EngineGame
 {
@@ -263,8 +264,20 @@ namespace Game.Engine.EngineGame
         /// </summary>
         public override List<PlayerInfoModel> OrderPlayerListByTurnOrder()
         {
+            // Change order of turns 20 percent of the time if bool set to true
+            // Slowest first, the rest ordered as normal
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowSlowestFirst && DiceHelper.RollDice(1, 20) < 4)
+            {
+                EngineSettings.PlayerList = EngineSettings.PlayerList.OrderBy(a => a.GetSpeed())
+                .ThenByDescending(a => a.Level)
+                .ThenByDescending(a => a.ExperienceTotal)
+                .ThenByDescending(a => a.PlayerType)
+                .ThenBy(a => a.Name)
+                .ThenBy(a => a.ListOrder)
+                .ToList();
+            }
             // Order is based by... 
-            // Order by Speed (Desending)
+            // Order by Speed (Descending)
             // Then by Highest level (Descending)
             // Then by Highest Experience Points (Descending)
             // Then by Character before MonsterModel (enum assending)
