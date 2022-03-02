@@ -60,6 +60,9 @@ namespace Game.Engine.EngineGame
             // Make the BaseEngine.PlayerList
             _ = MakePlayerList();
 
+            //Reset the CountFocusedAttackUsed to each player
+            _ = ResetCountFocusedAttackUsed();
+
             // Set Order for the Round
             _ = OrderPlayerListByTurnOrder();
 
