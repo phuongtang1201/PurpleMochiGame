@@ -338,7 +338,7 @@ namespace Scenario
             *      Added ReviveMonster method to TurnEngine.cs to set the Monster back to alive,
             *      give it half health, and rename it to Zombie ____.
             *      
-            *      Added AllowZombieMonsters toggle to BattleSettingsPage for testing.
+            *      Added AllowZombieMonsters bool to BattleSettingsModel to enable.
             *     
             * 
             * Test Algorithm:
@@ -357,8 +357,8 @@ namespace Scenario
             *       Verify that when AllowZombieMonsters is enabled and a dice roll of less than 4
             *       is rolled a Monster is revived into a zombie
             *       
-            *       Verify that the zombie Monster's name is Zombie Monster
-            *   
+            *       Verify that Attack was completed successfully
+            *       Verify that the zombie Monster's name is Zombie Monster 
             */
 
             // Arrange
@@ -390,14 +390,7 @@ namespace Scenario
                     ExperienceTotal = 1,
                     Name = "Monster",
                     ListOrder = 1,
-                });
-
-            // Add each model here to warm up and load it.
-            _ = Game.Helpers.DataSetsHelper.WarmUp();          
-
-            // Add character and monster
-            EngineViewModel.Engine.EngineSettings.CharacterList.Add(Character1);
-            EngineViewModel.Engine.EngineSettings.MonsterList.Add(Monster1);
+                });       
 
             // Character always hits
             EngineViewModel.Engine.EngineSettings.BattleSettingsModel.CharacterHitEnum = HitStatusEnum.Hit;
