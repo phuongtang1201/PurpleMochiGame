@@ -480,5 +480,24 @@ namespace Game.Engine.EngineGame
             }
             return true;
         }
+
+        /// <summary>
+        /// Reset the CountFocusedAttackUsed to 0 for each new round
+        /// </summary>
+        /// <returns></returns>
+        public bool ResetCountFocusedAttackUsed()
+        {
+            foreach (var data in EngineSettings.PlayerList)
+            {
+                data.CountFocusedAttackUsed = 0;
+            }
+
+            foreach (var data in EngineSettings.CharacterList)
+            {
+                data.CountFocusedAttackUsed = 0;
+            }
+
+            return true;
+        }
     }
 }
