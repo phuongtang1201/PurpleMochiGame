@@ -415,6 +415,8 @@ namespace Game.Engine.EngineGame
                     found = EngineSettings.PlayerList.Remove(EngineSettings.PlayerList.Find(m => m.Guid.Equals(Target.Guid)));
 
                     return true;
+
+                
             }
         }
 
@@ -513,7 +515,7 @@ namespace Game.Engine.EngineGame
             // Roll of dice depends on round
             // Lower round, a greater range for dice roll
             // Idea is to give less help the more the game goes on
-            var drops = 12 - round;
+            var drops = 6 - round;
             if (drops <= 0 && round < 20)
                 drops = 1;
 
