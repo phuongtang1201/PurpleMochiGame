@@ -385,7 +385,7 @@ namespace Game.Engine.EngineGame
 
 
             // Removing the 
-            //_ = EngineSettings.MapModel.RemovePlayerFromMap(Target);
+            _ = EngineSettings.MapModel.RemovePlayerFromMap(Target);
 
             // INFO: Teams, Hookup your Boss if you have one...
 
@@ -393,7 +393,7 @@ namespace Game.Engine.EngineGame
             switch (Target.PlayerType)
             {
                 case PlayerTypeEnum.Character:
-                    _ = EngineSettings.MapModel.RemovePlayerFromMap(Target);
+
                     // Add the Character to the killed list
                     EngineSettings.BattleScore.CharacterAtDeathList += Target.FormatOutput() + "\n";
 
@@ -407,17 +407,17 @@ namespace Game.Engine.EngineGame
                     return true;
 
                 case PlayerTypeEnum.Monster:
-                //default:
+                    //default:
                     if (BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters
                         && !Target.Name.Contains("Zombie"))
                     {
                         Target.Alive = true;
                         Target.CurrentHealth = Target.MaxHealth / 2;
                         Target.Name = "Zombie" + Target.Name;
-                        return false;
+                        EngineSettings.MapModel.AddPlayerToMap(Target);
+                        //EngineSettings.MonsterList.Add(Target);
+                        return true;
                     }
-
-                    _ = EngineSettings.MapModel.RemovePlayerFromMap(Target);
 
                     // Add one to the monsters killed count...
                     EngineSettings.BattleScore.MonsterSlainNumber++;
