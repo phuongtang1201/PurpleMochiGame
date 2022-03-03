@@ -12,7 +12,7 @@
 
                 <StackLayout Style="{StaticResource HorizontalStack}"
                          HorizontalOptions="CenterAndExpand"
-                         VerticalOptions="Center">
+                         VerticalOptions="CenterAndExpand">
                     <Grid>
                         <BoxView Style="{StaticResource FlexLayoutBoxView}"
                                      Grid.ColumnSpan="2" Grid.RowSpan="2" />
