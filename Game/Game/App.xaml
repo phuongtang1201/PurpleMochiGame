@@ -274,6 +274,12 @@
                 <Setter Property="WidthRequest" Value="75" />
             </Style>
 
+            <Style TargetType="Image" x:Key="ImageBattleExtraLargeStyle"
+                   BasedOn="{StaticResource ImageLargeStyle}">
+                <Setter Property="HeightRequest" Value="120" />
+                <Setter Property="WidthRequest" Value="120" />
+            </Style>
+
             <Style TargetType="Image" x:Key="BattleMapPlayerSmallStyle"
                    BasedOn="{StaticResource ImageBattleSmallStyle}">
             </Style>
