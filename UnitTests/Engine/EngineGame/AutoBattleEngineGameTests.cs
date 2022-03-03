@@ -175,5 +175,24 @@ namespace UnitTests.Engine.EngineGame
             Assert.AreEqual(6, AutoBattleEngine.Battle.EngineSettings.CharacterList.Count);
         }
         #endregion CreateCharacterParty   
+
+        #region DetectInfinateLoop
+        [Test]
+        public void AutoBattleEngine_DetectInfinateLoop_InValid_RoundCount_More_Than_Max_Should_Return_True()
+        {
+            // Arrange
+            AutoBattleEngine.Battle.EngineSettings.BattleScore.RoundCount = AutoBattleEngine.Battle.EngineSettings.MaxRoundCount + 1;
+
+            // Act
+            var result = AutoBattleEngine.DetectInfinateLoop();
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(true, result);
+        }
+
+        
+        #endregion DetectInfinateLoop
     }
 }
