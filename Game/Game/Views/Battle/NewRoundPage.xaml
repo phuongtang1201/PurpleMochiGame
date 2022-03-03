@@ -28,7 +28,7 @@
 
                 <StackLayout Padding="1"></StackLayout>
 
-                <Button Clicked="BeginButton_Clicked" Text="Begin"/>
+                <Button Clicked="BeginButton_Clicked" Style="{StaticResource CancelUpdateDeleteButton}" Text="Begin"/>
                 
             </StackLayout>
         </ScrollView>
