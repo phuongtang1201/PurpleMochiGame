@@ -10,8 +10,6 @@
 
                 <Button Clicked="SettingsButton_Clicked" Style="{StaticResource CancelUpdateDeleteButton}" Text="Settings"/>
 
-                <Label Text="Beginning a Round" Style="{StaticResource CenterMessageLargeStyle}"/>
-
                 <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
                     <Grid>
                         <Label Grid.Row="0" Grid.Column="0"
