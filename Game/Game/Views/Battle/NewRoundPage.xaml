@@ -35,6 +35,10 @@
                     VerticalOptions="EndAndExpand">
 
                     <Button 
+                        Style="{StaticResource CancelUpdateDeleteButton}" 
+                        Text="Reassign Items"/>
+
+                    <Button 
                         Clicked="BeginButton_Clicked" 
                         Style="{StaticResource BattleButton}" 
                         Text="Continue"/>
