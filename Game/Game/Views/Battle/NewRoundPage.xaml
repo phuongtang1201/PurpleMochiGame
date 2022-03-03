@@ -8,8 +8,6 @@
 
             <StackLayout Style="{StaticResource VerticalStack}" VerticalOptions="FillAndExpand">
 
-                <Button Clicked="SettingsButton_Clicked" Style="{StaticResource CancelUpdateDeleteButton}" Text="Settings"/>
-
                 <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
                     <Grid>
                         <Label Grid.Row="0" Grid.Column="0"
@@ -30,6 +28,8 @@
                                     Wrap="Wrap"
                                     Padding="40"/>
 
+                <Button Clicked="SettingsButton_Clicked" Style="{StaticResource CancelUpdateDeleteButton}" Text="Settings"/>
+                
                 <StackLayout
                     Orientation="Horizontal"
                     VerticalOptions="EndAndExpand">
