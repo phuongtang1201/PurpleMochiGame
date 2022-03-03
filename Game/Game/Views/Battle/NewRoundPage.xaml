@@ -25,9 +25,10 @@
                 </StackLayout>
 
                 <FlexLayout x:Name="PartyListFrame"
-                                    JustifyContent="Start"
+                                    JustifyContent="Center"
                                     AlignContent="Start"
-                                    Wrap="Wrap"/>
+                                    Wrap="Wrap"
+                                    Padding="80"/>
 
                 <StackLayout Padding="1"></StackLayout>
 
