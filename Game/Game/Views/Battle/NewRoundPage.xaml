@@ -19,7 +19,7 @@
                         <Label Grid.Row="0" Grid.Column="1"
                             Text="0" 
                             x:Name="TotalRound" 
-                            Style="{StaticResource CenterMessageLargeStyle}"/>
+                            Style="{StaticResource CenterMessageExtraLargeStyle}"/>
                     </Grid>
                     
                 </StackLayout>
