@@ -19,7 +19,7 @@
                         
                         <Label Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"
                                    Grid.ColumnSpan="2" Text="Are you ready to begin?"
-                                   Style="{StaticResource GrayBoxStyle}"/>
+                                   Style="{StaticResource CenterMessageLargeStyle}"/>
 
                         <Button Grid.Row="1" Grid.Column="0"
                                     Style="{StaticResource BattleButton}" 
