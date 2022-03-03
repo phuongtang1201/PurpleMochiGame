@@ -18,10 +18,7 @@ namespace Game.Views
         /// </summary>
         public RoundOverPage()
         {
-            InitializeComponent();
-
-            // Update the Round Count
-            TotalRound.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.BattleScore.RoundCount.ToString();
+            InitializeComponent();        
 
             // Update the Found Number
             TotalFound.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.BattleScore.ItemModelDropList.Count().ToString();
