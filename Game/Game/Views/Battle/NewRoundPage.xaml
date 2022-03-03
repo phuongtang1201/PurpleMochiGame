@@ -35,7 +35,9 @@
                     VerticalOptions="EndAndExpand">
 
                     <Button 
-                        Style="{StaticResource CancelUpdateDeleteButton}" 
+                        Style="{StaticResource BattleButton}" 
+                        WidthRequest="200"
+                        FontSize="30"
                         Text="Reassign Items"/>
 
                     <Button 
