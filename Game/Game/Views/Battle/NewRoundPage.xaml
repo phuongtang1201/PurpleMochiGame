@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <ScrollView VerticalScrollBarVisibility="Never" HorizontalScrollBarVisibility="Never">
 
-            <StackLayout Style="{StaticResource VerticalStack}">
+            <StackLayout Style="{StaticResource VerticalStack}" VerticalOptions="FillAndExpand">
 
                 <Button Clicked="SettingsButton_Clicked" Style="{StaticResource CancelUpdateDeleteButton}" Text="Settings"/>
 
