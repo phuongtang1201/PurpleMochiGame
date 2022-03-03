@@ -192,7 +192,20 @@ namespace UnitTests.Engine.EngineGame
             Assert.AreEqual(true, result);
         }
 
-        
+        [Test]
+        public void AutoBattleEngine_DetectInfinateLoop_InValid_TurnCount_Count_More_Than_Max_Should_Return_True()
+        {
+            // Arrange
+            AutoBattleEngine.Battle.EngineSettings.BattleScore.TurnCount = AutoBattleEngine.Battle.EngineSettings.MaxTurnCount + 1;
+
+            // Act
+            var result = AutoBattleEngine.DetectInfinateLoop();
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(true, result);
+        }
         #endregion DetectInfinateLoop
     }
 }
