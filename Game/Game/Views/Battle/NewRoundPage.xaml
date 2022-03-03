@@ -32,7 +32,11 @@
                     HorizontalOptions="Center"
                     VerticalOptions="EndAndExpand">
 
-                    <Button Clicked="SettingsButton_Clicked" Style="{StaticResource CancelUpdateDeleteButton}" Text="Settings"/>
+                    <ImageButton 
+                        VerticalOptions="EndAndExpand"
+                        Clicked="SettingsButton_Clicked" 
+                        Source="settings.png"
+                        Style="{StaticResource HomeImageButton}"/>
 
                     <StackLayout
                     Orientation="Horizontal"
