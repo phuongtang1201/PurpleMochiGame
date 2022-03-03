@@ -42,8 +42,10 @@
 
                     <Button 
                         Clicked="BeginButton_Clicked" 
-                        Style="{StaticResource CancelUpdateDeleteButton}" 
+                        Style="{StaticResource BattleButton}" 
+                        FontSize="30"
                         Text="Continue"/>
+                    
                 </StackLayout>
             </StackLayout>
         </ScrollView>
