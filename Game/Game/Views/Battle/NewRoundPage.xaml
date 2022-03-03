@@ -38,23 +38,19 @@
                         Source="settings.png"
                         Style="{StaticResource HomeImageButton}"/>
 
-                    <StackLayout
-                    Orientation="Horizontal"
-                    VerticalOptions="EndAndExpand">
+                    <Grid>
+                        <Button Grid.Row="0" Grid.Column="0"
+                            Style="{StaticResource BattleButton}" 
+                            WidthRequest="200"
+                            FontSize="30"
+                            Text="Reassign Items"/>
 
-                        <Button 
-                        Style="{StaticResource BattleButton}" 
-                        WidthRequest="200"
-                        FontSize="30"
-                        Text="Reassign Items"/>
-
-                        <Button 
-                        Clicked="BeginButton_Clicked" 
-                        Style="{StaticResource BattleButton}" 
-                        FontSize="30"
-                        Text="Continue"/>
-
-                    </StackLayout>
+                        <Button Grid.Row="0" Grid.Column="1"
+                            Clicked="BeginButton_Clicked" 
+                            Style="{StaticResource BattleButton}" 
+                            FontSize="30"
+                            Text="Continue"/>
+                    </Grid>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
