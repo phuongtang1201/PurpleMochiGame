@@ -30,12 +30,6 @@ namespace Game.Views
                 PartyListFrame.Children.Add(CreatePlayerDisplayBox(data));
             }
 
-            // Draw the Monsters
-            foreach (var data in EngineViewModel.Engine.EngineSettings.MonsterList)
-            {
-                MonsterListFrame.Children.Add(CreatePlayerDisplayBox(data));
-            }
-
         }
 
         /// <summary>
