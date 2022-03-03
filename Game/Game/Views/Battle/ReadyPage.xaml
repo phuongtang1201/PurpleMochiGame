@@ -13,22 +13,25 @@
                 <StackLayout Style="{StaticResource HorizontalStack}"
                          HorizontalOptions="CenterAndExpand"
                          VerticalOptions="CenterAndExpand">
-                    <Grid>
-                        <BoxView Style="{StaticResource FlexLayoutBoxView}"
+
+                    <Frame Style="{StaticResource BattleMessageFrameStyle}">
+                        <Grid>
+                            <BoxView Style="{StaticResource FlexLayoutBoxView}"
                                      Grid.ColumnSpan="2" Grid.RowSpan="2" />
-                        
-                        <Label Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"
+
+                            <Label Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"
                                    Grid.ColumnSpan="2" Text="Are you ready to begin?"
                                    Style="{StaticResource CenterMessageLargeStyle}"/>
 
-                        <Button Grid.Row="1" Grid.Column="0"
+                            <Button Grid.Row="1" Grid.Column="0"
                                     Style="{StaticResource BattleButton}" 
                                     Clicked="CloseButton_Clicked"  Text="BACK"/>
 
-                        <Button Grid.Row="1" Grid.Column="1"
+                            <Button Grid.Row="1" Grid.Column="1"
                                     Clicked="BeginButton_Clicked" Text="BEGIN"
                                     Style="{StaticResource BattleButton}" />
-                    </Grid>
+                        </Grid>
+                    </Frame>
                 </StackLayout>
 
             </StackLayout>
