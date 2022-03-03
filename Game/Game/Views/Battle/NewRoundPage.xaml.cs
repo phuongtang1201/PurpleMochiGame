@@ -76,48 +76,7 @@ namespace Game.Views
                 Source = data.ImageURI
             };
 
-            // Add the Level
-            var PlayerLevelLabel = new Label
-            {
-                Text = "Level : " + data.Level,
-                Style = (Style)Application.Current.Resources["ValueStyleMicro"],
-                HorizontalOptions = LayoutOptions.Center,
-                HorizontalTextAlignment = TextAlignment.Center,
-                Padding = 0,
-                LineBreakMode = LineBreakMode.TailTruncation,
-                CharacterSpacing = 1,
-                LineHeight = 1,
-                MaxLines = 1,
-            };
-
-            // Add the HP
-            var PlayerHPLabel = new Label
-            {
-                Text = "HP : " + data.GetCurrentHealthTotal,
-                Style = (Style)Application.Current.Resources["ValueStyleMicro"],
-                HorizontalOptions = LayoutOptions.Center,
-                HorizontalTextAlignment = TextAlignment.Center,
-                Padding = 0,
-                LineBreakMode = LineBreakMode.TailTruncation,
-                CharacterSpacing = 1,
-                LineHeight = 1,
-                MaxLines = 1,
-            };
-
-            var PlayerNameLabel = new Label()
-            {
-                Text = data.Name,
-                Style = (Style)Application.Current.Resources["ValueStyle"],
-                HorizontalOptions = LayoutOptions.Center,
-                HorizontalTextAlignment = TextAlignment.Center,
-                Padding = 0,
-                LineBreakMode = LineBreakMode.TailTruncation,
-                CharacterSpacing = 1,
-                LineHeight = 1,
-                MaxLines = 1,
-            };
-
-            // Put the Image Button and Text inside a layout
+            // Put the Image Button inside a layout
             var PlayerStack = new StackLayout
             {
                 Style = (Style)Application.Current.Resources["PlayerInfoBox"],
@@ -126,9 +85,6 @@ namespace Game.Views
                 Spacing = 0,
                 Children = {
                     PlayerImage,
-                    PlayerNameLabel,
-                    PlayerLevelLabel,
-                    PlayerHPLabel,
                 },
             };
 
