@@ -82,7 +82,7 @@ namespace Game.Views
                 Style = (Style)Application.Current.Resources["PlayerInfoBox"],
                 HorizontalOptions = LayoutOptions.Center,
                 Padding = 0,
-                Spacing = 0,
+                Spacing = 30,
                 Children = {
                     PlayerImage,
                 },
