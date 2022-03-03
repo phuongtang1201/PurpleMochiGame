@@ -12,6 +12,20 @@
 
                 <Label Text="Beginning a Round" Style="{StaticResource CenterMessageLargeStyle}"/>
 
+                <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
+                    <Grid>
+                        <Label Grid.Row="0" Grid.Column="0"
+                            Text="Round" 
+                            Style="{StaticResource CenterMessageLargeStyle}"/>
+                        
+                        <Label Grid.Row="0" Grid.Column="1"
+                            Text="0" 
+                            x:Name="TotalRound" 
+                            Style="{StaticResource CenterMessageLargeStyle}"/>
+                    </Grid>
+                    
+                </StackLayout>
+
                 <FlexLayout x:Name="PartyListFrame"
                                     JustifyContent="Start"
                                     AlignContent="Start"
