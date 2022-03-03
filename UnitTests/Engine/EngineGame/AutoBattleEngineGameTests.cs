@@ -206,6 +206,22 @@ namespace UnitTests.Engine.EngineGame
             // Assert
             Assert.AreEqual(true, result);
         }
+
+        [Test]
+        public void AutoBattleEngine_DetectInfinateLoop_Valid_Counts_Less_Than_Max_Should_Return_false()
+        {
+            // Arrange
+            AutoBattleEngine.Battle.EngineSettings.BattleScore.TurnCount = AutoBattleEngine.Battle.EngineSettings.MaxTurnCount - 1;
+            AutoBattleEngine.Battle.EngineSettings.BattleScore.RoundCount = AutoBattleEngine.Battle.EngineSettings.MaxRoundCount - 1;
+
+            // Act
+            var result = AutoBattleEngine.DetectInfinateLoop();
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(false, result);
+        }
         #endregion DetectInfinateLoop
     }
 }
