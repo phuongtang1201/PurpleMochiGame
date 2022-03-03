@@ -14,7 +14,7 @@
                     <Grid>
                         <Label Grid.Row="0" Grid.Column="0"
                             Text="Round" 
-                            Style="{StaticResource CenterMessageLargeStyle}"/>
+                            Style="{StaticResource CenterMessageExtraLargeStyle}"/>
                         
                         <Label Grid.Row="0" Grid.Column="1"
                             Text="0" 
