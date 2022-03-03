@@ -30,10 +30,15 @@
                                     Wrap="Wrap"
                                     Padding="80"/>
 
-                <StackLayout Padding="1"></StackLayout>
+                <StackLayout
+                    Orientation="Horizontal"
+                    VerticalOptions="EndAndExpand">
 
-                <Button Clicked="BeginButton_Clicked" Style="{StaticResource CancelUpdateDeleteButton}" Text="Begin"/>
-                
+                    <Button 
+                        Clicked="BeginButton_Clicked" 
+                        Style="{StaticResource CancelUpdateDeleteButton}" 
+                        Text="Begin"/>
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
