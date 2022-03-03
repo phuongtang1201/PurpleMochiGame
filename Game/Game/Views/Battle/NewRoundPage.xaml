@@ -19,8 +19,6 @@
                                     AlignContent="Start"
                                     Wrap="Wrap"/>
 
-                <Label Text="Monsters" Style="{StaticResource MessageLargeStyle}"/>
-
                 <StackLayout Padding="1"></StackLayout>
 
                 <Button Clicked="BeginButton_Clicked" Style="{StaticResource CancelUpdateDeleteButton}" Text="Begin"/>
