@@ -40,7 +40,7 @@
 
                     <Button 
                         Clicked="BeginButton_Clicked" 
-                        Style="{StaticResource BattleButton}" 
+                        Style="{StaticResource CancelUpdateDeleteButton}" 
                         Text="Continue"/>
                 </StackLayout>
             </StackLayout>
