@@ -257,6 +257,11 @@ namespace Game.GameRules
             else
             {
                 rnd = DiceHelper.RollDice(1, MonsterIndexViewModel.Instance.Dataset.Count - 3);
+
+                if(rnd == 0)
+                {
+                    rnd++;
+                }
             }
 
             var result = new MonsterModel(MonsterIndexViewModel.Instance.Dataset.ElementAt(rnd - 1))
