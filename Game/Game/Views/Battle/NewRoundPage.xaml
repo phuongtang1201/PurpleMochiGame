@@ -37,7 +37,7 @@
                     <Button 
                         Clicked="BeginButton_Clicked" 
                         Style="{StaticResource CancelUpdateDeleteButton}" 
-                        Text="Begin"/>
+                        Text="Continue"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
