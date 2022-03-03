@@ -546,12 +546,16 @@ namespace Game.Engine.EngineGame
         /// </summary>
         public override List<ItemModel> GetRandomMonsterItemDrops(int round)
         {
-            // Roll of dice depends on round
-            // Lower round, a greater range for dice roll
-            // Idea is to give less help the more the game goes on
-            var drops = 6 - round;
-            if (drops <= 0 && round < 20)
+            // Roll of dice depends on number of characters and the round
+            // Lower round and more characters => a greater range for dice roll
+            // Idea is to give more help with more characters, but have the help
+            // decrease the longer the game goes on
+            var partyCount = EngineSettings.CharacterList.Count();
+            var drops = partyCount - round;
+            if (drops <= 0)
                 drops = 1;
+            if (round > 20)
+                drops = 0;
 
             // The Number drop can be up to the calculated value 
             // Will drop something until round 20
