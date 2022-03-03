@@ -12,8 +12,6 @@
 
                 <Label Text="Beginning a Round" Style="{StaticResource CenterMessageLargeStyle}"/>
 
-                <Label Text="Characters" Style="{StaticResource MessageLargeStyle}"/>
-
                 <FlexLayout x:Name="PartyListFrame"
                                     JustifyContent="Start"
                                     AlignContent="Start"
