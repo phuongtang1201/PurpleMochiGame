@@ -697,8 +697,8 @@ namespace UnitTests.Engine.EngineGame
 
             _ = DiceHelper.EnableForcedRolls();
 
-            // Drop is 0-Number, so 2 will yield 1
-            _ = DiceHelper.SetForcedRollValue(2);
+            // Drop is based on dice result, so 1 will yield 1
+            _ = DiceHelper.SetForcedRollValue(1);
 
             // Act
             var result = Engine.Round.Turn.DropItems(PlayerInfo);
