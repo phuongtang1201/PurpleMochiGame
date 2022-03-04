@@ -75,7 +75,7 @@ namespace Game.Engine.EngineGame
                 // Check for excessive duration.
                 if (DetectInfinateLoop())
                 {
-                    Debug.WriteLine("Aborting, More than Max Rounds");
+                    Debug.WriteLine("Aborting, More than Max Rounds or Turns");
                     _ = Battle.EndBattle();
                     return false;
                 }

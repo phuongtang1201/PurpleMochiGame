@@ -184,6 +184,8 @@ namespace Game.Engine.EngineKoenig
 
                 // Only Attack for now
                 EngineSettings.CurrentAction = ActionEnum.Attack;
+                // Implement Action logic
+                // TODO
             }
 
             // Do the turn....
