@@ -93,7 +93,6 @@ namespace Game.Engine.EngineGame
         /// <returns></returns>
         public override int AddMonstersToRound()
         {
-            // TODO: Teams, You need to implement your own Logic can not use mine.
 
             var TargetLevel = 1;
 
@@ -107,6 +106,9 @@ namespace Game.Engine.EngineGame
                 // Get the Max Character Level
                 maxTargetLevel = Convert.ToInt32(EngineSettings.CharacterList.Max(m => m.Level));
             }
+
+            var avgTargetLevel = (TargetLevel + maxTargetLevel) / 2;
+            var monsterNum = 1;
 
             // Allow Boss Monsters
             if (EngineSettings.BattleSettingsModel.AllowBossMonsters && DiceHelper.RollDice(1, 10) > 5)
@@ -139,10 +141,13 @@ namespace Game.Engine.EngineGame
             { 
                 for (var i = 0; i < EngineSettings.MaxNumberPartyMonsters; i++)
                 {
-                    var data = RandomPlayerHelper.GetRandomMonster(TargetLevel, EngineSettings.BattleSettingsModel.AllowMonsterItems, false);
+                    // Set monster level as the average of lowest and highest
+                    var data = RandomPlayerHelper.GetRandomMonster(avgTargetLevel, EngineSettings.BattleSettingsModel.AllowMonsterItems, false);
 
                     // Help identify which Monster it is
-                    data.Name += " " + EngineSettings.MonsterList.Count() + 1;
+                    //data.Name += " " + EngineSettings.MonsterList.Count() + 1;
+                    data.Name += " " + monsterNum.ToString();
+                    monsterNum++;
 
                     EngineSettings.MonsterList.Add(new PlayerInfoModel(data));
                 }
