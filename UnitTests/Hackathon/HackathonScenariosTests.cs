@@ -317,6 +317,106 @@ namespace Scenario
             Assert.AreEqual(totalHP + 20, 60);
 
         }
+
+        [Test]
+        public async Task HackathonScenario_Scenario_14_Player_Level_17_Should_Yield_Level_20_Boss()
+        {
+            /* 
+            * Scenario Number:  
+            *      14
+            *      
+            * Description: 
+            *      Rather than 6 monsters, 1 really tough monster is created for a given round.
+            * 
+            * Changes Required (Classes, Methods etc.)  List Files, Methods, and Describe Changes: 
+            *      Changes in RoundEngine.cs: Add logic to AddMonstersToRound to allow the 
+            *      creation of Boss Monsters if AllowBossMonsters toggle was selected.
+            *      
+            *      Changes in RandomPlayerHelper.cs: Add parameter for if Boss Monsters are allowed,
+            *      and if so create one.
+            *     
+            * 
+            * Test Algrorithm:
+            *       Create 2 Characters
+            *       Set AllowBossMonsters = true
+            *       Enable Forced Rolls to ensure that the next round is a Boss level
+            *  
+            *      Startup Battle
+            *      Run Auto Battle
+            * 
+            * Test Conditions:
+            *      Default condition is sufficient
+            * 
+            * Validation:
+            *       
+            *       Verify that the single Monster Level = 20 when highest character level > 16
+            *   
+            */
+
+            EngineViewModel.Engine.EngineSettings.MonsterList.Clear();
+
+            // Arrange
+
+            EngineViewModel.Engine.EngineSettings.BattleSettingsModel.AllowBossMonsters = true;
+
+            var Character1 = new CharacterModel
+            {
+                Speed = 20,
+                Level = 17,
+                CurrentHealth = 20,
+                ExperienceTotal = 1,
+                Name = "Character1",
+                ListOrder = 1,
+            };
+
+            var Character2 = new CharacterModel
+            {
+                Speed = 20,
+                Level = 17,
+                CurrentHealth = 20,
+                ExperienceTotal = 1,
+                Name = "Character2",
+                ListOrder = 1,
+            };
+
+            var BossMonster = new MonsterModel
+            {
+                Speed = 20,
+                Level = 20,
+                CurrentHealth = 20,
+                ExperienceTotal = 1,
+                Name = "BossMonster",
+                ListOrder = 1,
+            };
+
+            // Add each model here to warm up and load it.
+            _ = Game.Helpers.DataSetsHelper.WarmUp();
+
+            EngineViewModel.Engine.EngineSettings.CharacterList.Clear();
+
+            EngineViewModel.Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character1));
+            EngineViewModel.Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character2));
+
+            _ = DiceHelper.EnableForcedRolls();
+            _ = DiceHelper.SetForcedRollValue(6);
+
+            //EngineViewModel.Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel());
+            EngineViewModel.Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel(BossMonster));
+
+            // Make the List
+            EngineViewModel.Engine.EngineSettings.PlayerList = EngineViewModel.Engine.Round.MakePlayerList();
+
+            _ = DiceHelper.DisableForcedRolls();
+
+            // Act
+            var result = EngineViewModel.Engine.EngineSettings.MonsterList[0].Level;
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(result, 20);
+
+        }
         #endregion Scenario14
 
         #region Scenario16
