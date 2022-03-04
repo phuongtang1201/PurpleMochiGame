@@ -830,6 +830,7 @@ namespace Game.Views
         /// <param name="message"></param>
         public void GameMessage()
         {
+            BattleMessages.Text = string.Empty;
 
             // Output The Message that happened.
             BattleMessages.Text = string.Format("{0} \n{1}", BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.TurnMessage, BattleMessages.Text);
@@ -837,7 +838,7 @@ namespace Game.Views
             //show message if target is killed
             if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender?.Alive == false)
             {
-                BattleMessages.Text = string.Empty;
+                
 
                 //If monster is killed, then shows success. Otherwise, shows fail
                 //if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Character)
