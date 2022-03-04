@@ -298,7 +298,7 @@ namespace Game.Engine.EngineGame
                 Debug.WriteLine("Uses Focused attack and drop " + droppedItem.Name.ToString());
 
                 EngineSettings.BattleMessagesModel.AttackStatus = " uses Focused Attack to ";
-                EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + EngineSettings.BattleMessagesModel.AttackStatus + Target.Name + " and drop "+ droppedItem.Name.ToString()+ " forever" + EngineSettings.BattleMessagesModel.TurnMessageSpecial + EngineSettings.BattleMessagesModel.ExperienceEarned;
+                EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + EngineSettings.BattleMessagesModel.AttackStatus + Target.Name + " and drop "+ droppedItem.Name.ToString()+ " forever. " + EngineSettings.BattleMessagesModel.TurnMessageSpecial + EngineSettings.BattleMessagesModel.ExperienceEarned;
                 Debug.WriteLine(EngineSettings.BattleMessagesModel.TurnMessage);
 
                 return true;
@@ -392,7 +392,7 @@ namespace Game.Engine.EngineGame
             bool found;
 
             // Mark Status in output
-            EngineSettings.BattleMessagesModel.TurnMessageSpecial = " and causes death. ";
+            EngineSettings.BattleMessagesModel.TurnMessageSpecial = string.Empty;
 
             //Notify the target is killed
             EngineSettings.BattleMessagesModel.TurnDeathMessage = Target.Name + " has been cooked!";
