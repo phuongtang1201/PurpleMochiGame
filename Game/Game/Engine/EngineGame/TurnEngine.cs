@@ -292,8 +292,13 @@ namespace Game.Engine.EngineGame
                 // If it is a character apply the experience earned
                 _ = CalculateExperience(Attacker, Target);
 
+
+                //Dropped the lowest value item
+                var droppedItem = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.DropLowestValueItem();
+                Debug.WriteLine("Uses Focused attack and drop " + droppedItem.Name.ToString());
+
                 EngineSettings.BattleMessagesModel.AttackStatus = " uses Focused Attack to ";
-                EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + EngineSettings.BattleMessagesModel.AttackStatus + Target.Name + EngineSettings.BattleMessagesModel.TurnMessageSpecial + EngineSettings.BattleMessagesModel.ExperienceEarned;
+                EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + EngineSettings.BattleMessagesModel.AttackStatus + Target.Name + " and drop "+ droppedItem.Name.ToString()+ " forever" + EngineSettings.BattleMessagesModel.TurnMessageSpecial + EngineSettings.BattleMessagesModel.ExperienceEarned;
                 Debug.WriteLine(EngineSettings.BattleMessagesModel.TurnMessage);
 
                 return true;
