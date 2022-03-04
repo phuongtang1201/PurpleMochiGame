@@ -77,8 +77,10 @@ namespace Game.Engine.EngineGame
 
                 // If ability was chosen, use heal
                 case ActionEnum.Ability:
-                    if (EngineSettings.CurrentActionAbility == AbilityEnum.Unknown)
+                    if (EngineSettings.CurrentActionAbility == AbilityEnum.Unknown && Attacker.GetCurrentHealth() < (Attacker.GetMaxHealth() / 4))
                         EngineSettings.CurrentActionAbility = AbilityEnum.Heal;
+                    else
+                        EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
                     result = UseAbility(Attacker);
                     break;
 
