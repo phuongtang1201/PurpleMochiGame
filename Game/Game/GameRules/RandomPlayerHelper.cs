@@ -260,7 +260,7 @@ namespace Game.GameRules
 
                 if(rnd == 0)
                 {
-                    rnd++;
+                    rnd = 1;
                 }
             }
 
