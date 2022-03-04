@@ -75,12 +75,22 @@ namespace Game.Engine.EngineGame
                     result = Attack(Attacker);
                     break;
 
-                // If ability was chosen, use heal
+                // If ability was chosen, use bandage if health less than 3,
+                // If speed less than 5, use nimble
+                // If defense less than 5, use toughness
+                // Otherwise, use Focus
                 case ActionEnum.Ability:
-                    if (EngineSettings.CurrentActionAbility == AbilityEnum.Unknown && Attacker.GetCurrentHealth() < (Attacker.GetMaxHealth() / 4))
-                        EngineSettings.CurrentActionAbility = AbilityEnum.Heal;
-                    else
-                        EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
+                    if (EngineSettings.CurrentActionAbility == AbilityEnum.Unknown || EngineSettings.CurrentActionAbility == AbilityEnum.None)
+                    {
+                        if (Attacker.GetCurrentHealth() < 3)
+                            EngineSettings.CurrentActionAbility = AbilityEnum.Bandage;
+                        else if (Attacker.GetSpeed() < 5)
+                            EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
+                        else if (Attacker.GetDefense() < 5)
+                            EngineSettings.CurrentActionAbility = AbilityEnum.Toughness;
+                        else
+                            EngineSettings.CurrentActionAbility = AbilityEnum.Focus;
+                    }
                     result = UseAbility(Attacker);
                     break;
 
@@ -602,12 +612,6 @@ namespace Game.Engine.EngineGame
                         return EngineSettings.CurrentAction;
                     }
                 }
-            }
-
-            // If Attacker needs help, use ability
-            if (Attacker.GetCurrentHealth() < (Attacker.GetMaxHealth() / 4))
-            {
-                return ActionEnum.Ability;
             }
 
             return base.DetermineActionChoice(Attacker);
