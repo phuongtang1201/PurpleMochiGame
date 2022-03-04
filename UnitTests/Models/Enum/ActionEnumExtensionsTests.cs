@@ -118,5 +118,19 @@ namespace UnitTests.Models
             // Assert
             Assert.AreEqual("action_default.png", result);
         }
+
+        [Test]
+        public void ActionEnumExtensionsTests_ToImage_FocusedAttack_Default_Should_Pass()
+        {
+            // Arrange
+
+            // Act
+            var result = ActionEnum.FocusedAttack.ToImageURI();
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual("rollingpin.png", result);
+        }
     }
 }
