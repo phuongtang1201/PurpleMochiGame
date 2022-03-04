@@ -1057,7 +1057,7 @@ namespace Game.Views
         {
             NextRoundButton.IsVisible = false;
             StartBattleButton.IsVisible = false;
-            AttackButton.IsVisible = false;
+        //    AttackButton.IsVisible = false;
             MessageDisplayBox.IsVisible = false;
             OptionBox.IsVisible = false;
          //   BattlePlayerInfomationBox.IsVisible = false;
@@ -1124,7 +1124,7 @@ namespace Game.Views
                     GameUIDisplay.IsVisible = true;
             //        BattlePlayerInfomationBox.IsVisible = true;
                     MessageDisplayBox.IsVisible = true;
-                    AttackButton.IsVisible = true;
+                  //  AttackButton.IsVisible = true;
                     OptionBox.IsVisible = true;
                     break;
 
