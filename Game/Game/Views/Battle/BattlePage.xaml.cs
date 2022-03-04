@@ -915,9 +915,6 @@ namespace Game.Views
 
             FocusedAttack();
 
-            //Dropped the lowest value item
-            var droppedItem = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.DropLowestValueItem();
-            Debug.WriteLine("Uses Focused attack and drop "+ droppedItem.Name.ToString());
         }
 
         /// <summary>
