@@ -598,7 +598,7 @@ namespace Game.Engine.EngineGame
             }
 
             // If Attacker needs help, use ability
-            if (Attacker.GetCurrentHealth() < (Attacker.GetMaxHealth() / 4)
+            if (Attacker.GetCurrentHealth() < (Attacker.GetMaxHealth() / 4))
             {
                 return ActionEnum.Ability;
             }
