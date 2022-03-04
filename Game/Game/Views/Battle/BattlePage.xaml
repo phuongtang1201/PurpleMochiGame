@@ -81,7 +81,7 @@
                                 </StackLayout>
                             </StackLayout>
 
-                            <!--The Monster Killed Screen -->
+                            <!--The Target Killed Message -->
                             <StackLayout 
                             Style="{StaticResource VerticalStack}"
                             x:Name="TargetKilledDisplay" 
@@ -91,11 +91,7 @@
                                     <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
                                         <Label x:Name="FailOrSuccess" Style="{StaticResource CenterMessageLargeStyle}"/>
 
-                                        <Label x:Name="NotifyDeath" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" />
-
-                                        <Button Text="Continue" Clicked="ContinueButton_Clicked" WidthRequest="50" HorizontalOptions="Center"/>
-
-
+                                        <Label x:Name="NotifyDeath" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" Padding="5,0,0,0"/>
                                     </StackLayout>
 
                                 </Frame>
