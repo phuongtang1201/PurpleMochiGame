@@ -81,6 +81,26 @@
                                 </StackLayout>
                             </StackLayout>
 
+                            <!--The Monster Killed Screen -->
+                            <StackLayout 
+                            Style="{StaticResource VerticalStack}"
+                            x:Name="TargetKilledDisplay" 
+                            IsVisible="false">  
+
+                                <Frame Style="{StaticResource BattleMessageFrameStyle}" Margin="40,0,0,0" >
+                                    <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                                        <Label x:Name="FailOrSuccess" Style="{StaticResource CenterMessageLargeStyle}"/>
+
+                                        <Label x:Name="NotifyDeath" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" />
+
+                                        <Button Text="Continue" Clicked="ContinueButton_Clicked" WidthRequest="50" HorizontalOptions="Center"/>
+
+
+                                    </StackLayout>
+
+                                </Frame>
+                            </StackLayout>
+
                             <StackLayout HorizontalOptions="Center"   Margin="0,20,0,0" VerticalOptions="Center">
                                 <Image x:Name="AttackerAttack" Source="mapcell.png" Style="{StaticResource ImageSmallStyle}"/>
                             </StackLayout>
@@ -205,27 +225,7 @@
                 </Frame>
             </StackLayout>
 
-            <!--The Monster Killed Screen -->
-            <StackLayout 
-                    Style="{StaticResource VerticalStack}"
-                    AbsoluteLayout.LayoutBounds="0.5,0.20,400,25"
-                    AbsoluteLayout.LayoutFlags="PositionProportional" 
-                    x:Name="TargetKilledDisplay" 
-                    IsVisible="false">
-
-                <Frame Style="{StaticResource BattleMessageFrameStyle}" Margin="40,0,0,0" >
-                    <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
-                        <Label x:Name="FailOrSuccess" Style="{StaticResource CenterMessageLargeStyle}"/>
-
-                        <Label x:Name="NotifyDeath" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" MaxLines="5" Padding="20"/>
-
-                        <Button Text="Continue" Clicked="ContinueButton_Clicked" WidthRequest="50" HorizontalOptions="Center"/>
-
-
-                    </StackLayout>
-
-                </Frame>
-            </StackLayout>
+            
 
         </AbsoluteLayout>
     </ContentPage.Content>
