@@ -48,12 +48,11 @@ namespace Game.Engine.EngineGame
         public override bool TakeTurn(PlayerInfoModel Attacker)
         {
             // Choose Action.  Such as Move, Attack etc.
-
-            // INFO: Teams, if you have other actions they would go here.
+            // Attack is default; Attack is also used if Move returns false
 
             var result = false;
 
-            // If the action is not set, then try to set it or use Attact
+            // If the action is not set, then try to set it or use Attack
             if (EngineSettings.CurrentAction == ActionEnum.Unknown)
             {
                 // Set the action if one is not set
@@ -80,8 +79,11 @@ namespace Game.Engine.EngineGame
                     result = UseAbility(Attacker);
                     break;
 
+                // If character can't move, choose attack
                 case ActionEnum.Move:
                     result = MoveAsTurn(Attacker);
+                    if (!result)
+                        result = Attack(Attacker);
                     break;
             }
 
@@ -591,6 +593,13 @@ namespace Game.Engine.EngineGame
                     }
                 }
             }
+
+            // If Attacker needs help, use ability
+            if (Attacker.GetCurrentHealth() < Attacker.GetMaxHealth() / 4 || Attacker.GetSpeed() < 20)
+            {
+                return ActionEnum.Ability;
+            }
+
             return base.DetermineActionChoice(Attacker);
         }
 
