@@ -77,15 +77,16 @@ namespace Game.Engine.EngineGame
 
                 // If ability was chosen, use heal
                 case ActionEnum.Ability:
-                    EngineSettings.CurrentActionAbility = AbilityEnum.Heal;
+                    if (EngineSettings.CurrentActionAbility == AbilityEnum.Unknown)
+                        EngineSettings.CurrentActionAbility = AbilityEnum.Heal;
                     result = UseAbility(Attacker);
                     break;
 
                 // If character can't move, choose attack
                 case ActionEnum.Move:
                     result = MoveAsTurn(Attacker);
-                    //if (!result)
-                    //    result = Attack(Attacker);
+                    if (!result)
+                        result = Attack(Attacker);
                     break;
             }
 
@@ -597,7 +598,7 @@ namespace Game.Engine.EngineGame
             }
 
             // If Attacker needs help, use ability
-            if (Attacker.GetCurrentHealth() < Attacker.GetMaxHealth() / 4)
+            if (Attacker.GetCurrentHealth() < (Attacker.GetMaxHealth() / 4)
             {
                 return ActionEnum.Ability;
             }
