@@ -830,36 +830,31 @@ namespace Game.Views
         /// <param name="message"></param>
         public void GameMessage()
         {
+
             // Output The Message that happened.
             BattleMessages.Text = string.Format("{0} \n{1}", BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.TurnMessage, BattleMessages.Text);
 
-            Debug.WriteLine(BattleMessages.Text);
-
-            // Output The Message that if target is killed
-            NotifyDeath.Text = string.Empty;
+            //show message if target is killed
             if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender?.Alive == false)
             {
-                //Hide the gameboard
-                //GameUIDisplay.IsVisible = false;
+                BattleMessages.Text = string.Empty;
 
                 //If monster is killed, then shows success. Otherwise, shows fail
-                if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Character)
-                {
-                    FailOrSuccess.Text = "Fail!";
-                }
+                //if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Character)
+                //{
+                //    FailOrSuccess.Text = "Fail!";
+                //}
 
-                if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Monster)
-                {
-                    FailOrSuccess.Text = "Success!";
-                }
+                //if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Monster)
+                //{
+                //    FailOrSuccess.Text = "Success!";
+                //}
 
-                TargetKilledDisplay.IsVisible = true;
-                NotifyDeath.Text = string.Format("{0} \n{1}", BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.TurnDeathMessage, NotifyDeath.Text);
-
+                
+                BattleMessages.Text = string.Format("{0} \n{1}", BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.TurnDeathMessage, BattleMessages.Text);
             }
-            
-
-            Debug.WriteLine(NotifyDeath.Text);
+ 
+            Debug.WriteLine(BattleMessages.Text);
 
             if (!string.IsNullOrEmpty(BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.LevelUpMessage))
             {
@@ -889,9 +884,7 @@ namespace Game.Views
         /// <param name="sender"></param>
         /// <param name="e"></param>
         public void ContinueButton_Clicked(object sender, EventArgs e)
-        {
-            //Turn off the TargetKilleDisplay
-            TargetKilledDisplay.IsVisible = false;
+        { 
 
             //Turn on the gameboard 
             GameUIDisplay.IsVisible = true;
