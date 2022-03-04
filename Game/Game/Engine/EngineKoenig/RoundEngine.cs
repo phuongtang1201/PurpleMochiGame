@@ -137,7 +137,7 @@ namespace Game.Engine.EngineKoenig
         public override bool PickupItemsForAllCharacters()
         {
             // In Auto Battle this happens and the characters get their items
-            // When called manualy, make sure to do the character pickup before calling EndRound
+            // When called manually, make sure to do the character pickup before calling EndRound
 
             // Have each character pickup items...
             foreach (var character in EngineSettings.CharacterList)
@@ -331,22 +331,16 @@ namespace Game.Engine.EngineKoenig
         public override bool PickupItemsFromPool(PlayerInfoModel character)
         {
 
-            // TODO: Teams, You need to implement your own Logic if not using auto apply
+            // Have the character walk the items in the pool and decide if any are better than current one.
 
-            // I use the same logic for Auto Battle as I do for Manual Battle
-
-            //if (BaseEngine.BattleScore.AutoBattle)
-            {
-                // Have the character, walk the items in the pool, and decide if any are better than current one.
-
-                _ = GetItemFromPoolIfBetter(character, ItemLocationEnum.Head);
-                _ = GetItemFromPoolIfBetter(character, ItemLocationEnum.Necklass);
-                _ = GetItemFromPoolIfBetter(character, ItemLocationEnum.PrimaryHand);
-                _ = GetItemFromPoolIfBetter(character, ItemLocationEnum.OffHand);
-                _ = GetItemFromPoolIfBetter(character, ItemLocationEnum.RightFinger);
-                _ = GetItemFromPoolIfBetter(character, ItemLocationEnum.LeftFinger);
-                _ = GetItemFromPoolIfBetter(character, ItemLocationEnum.Feet);
-            }
+            _ = GetItemFromPoolIfBetter(character, ItemLocationEnum.Head);
+            _ = GetItemFromPoolIfBetter(character, ItemLocationEnum.Necklass);
+            _ = GetItemFromPoolIfBetter(character, ItemLocationEnum.PrimaryHand);
+            _ = GetItemFromPoolIfBetter(character, ItemLocationEnum.OffHand);
+            _ = GetItemFromPoolIfBetter(character, ItemLocationEnum.RightFinger);
+            _ = GetItemFromPoolIfBetter(character, ItemLocationEnum.LeftFinger);
+            _ = GetItemFromPoolIfBetter(character, ItemLocationEnum.Feet);
+            
             return true;
         }
 
