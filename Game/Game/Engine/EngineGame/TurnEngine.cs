@@ -252,13 +252,11 @@ namespace Game.Engine.EngineGame
             }
 
             // Select first one to hit in the list for now...
-            // Attack the Weakness (lowest HP) MonsterModel first 
-
-            // TODO: Teams, You need to implement your own Logic can not use mine.
+            // Attack the lowest defense monster first 
 
             var Defender = EngineSettings.PlayerList
                 .Where(m => m.Alive && m.PlayerType == PlayerTypeEnum.Monster)
-                .OrderBy(m => m.CurrentHealth).FirstOrDefault();
+                .OrderBy(m => m.Defense).FirstOrDefault();
 
             return Defender;
         }
