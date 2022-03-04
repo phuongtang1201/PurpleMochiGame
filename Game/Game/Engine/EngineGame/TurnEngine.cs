@@ -227,10 +227,10 @@ namespace Game.Engine.EngineGame
 
             // Select first in the list
 
-            // TODO: Teams, You need to implement your own Logic can not use mine.
+            // Select who have fewest items first
             var Defender = EngineSettings.PlayerList
                 .Where(m => m.Alive && m.PlayerType == PlayerTypeEnum.Character)
-                .OrderBy(m => m.Defense)
+                .OrderBy(m => m.ItemsCount())
                 .FirstOrDefault();
             
             return Defender;
