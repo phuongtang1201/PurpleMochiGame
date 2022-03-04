@@ -148,7 +148,7 @@
 
                     <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand">
 
-                        <Button x:Name="AttackButton" Clicked="AttackButton_Clicked" Text="Next Attack" IsVisible="False"/>
+                        <!--<Button x:Name="AttackButton" Clicked="AttackButton_Clicked" Text="Next Attack" IsVisible="False"/>-->
                         <Button x:Name="NextRoundButton" Clicked="NextRoundButton_Clicked" Text="Next Round" IsVisible="False"/>
                         <!--<Button x:Name="CancelBattleButton" Style="{StaticResource CancelUpdateDeleteButton}" 
                                     Clicked="BackButton_Clicked" Text="BACK" IsVisible="False"/>-->
