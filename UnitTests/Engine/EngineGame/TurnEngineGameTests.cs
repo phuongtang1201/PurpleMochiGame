@@ -1348,6 +1348,7 @@ namespace UnitTests.Engine.EngineGame
             Engine.EngineSettings.BattleScore.AutoBattle = true;
 
             // Act
+            Engine.Round.Turn.MoveAsTurn(CharacterPlayer);
             var result = Engine.Round.Turn.DetermineActionChoice(CharacterPlayer);
 
             // Reset
