@@ -81,22 +81,6 @@
                                 </StackLayout>
                             </StackLayout>
 
-                            <!--The Target Killed Message -->
-                            <StackLayout 
-                            Style="{StaticResource VerticalStack}"
-                            x:Name="TargetKilledDisplay" 
-                            IsVisible="false">  
-
-                                <Frame Style="{StaticResource BattleMessageFrameStyle}" Margin="40,0,0,0" >
-                                    <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
-                                        <Label x:Name="FailOrSuccess" Style="{StaticResource CenterMessageLargeStyle}"/>
-
-                                        <Label x:Name="NotifyDeath" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" Padding="5,0,0,0"/>
-                                    </StackLayout>
-
-                                </Frame>
-                            </StackLayout>
-
                             <StackLayout HorizontalOptions="Center"   Margin="0,20,0,0" VerticalOptions="Center">
                                 <Image x:Name="AttackerAttack" Source="mapcell.png" Style="{StaticResource ImageSmallStyle}"/>
                             </StackLayout>
