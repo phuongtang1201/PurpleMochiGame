@@ -442,5 +442,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\steak.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\sushi_boss.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
