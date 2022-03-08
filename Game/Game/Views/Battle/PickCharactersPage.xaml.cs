@@ -86,7 +86,7 @@ namespace Game.Views
             // Populate a list of possible characters from the existing characters
             foreach (var item in BattleEngineViewModel.Instance.DatabaseCharacterList)
             {
-                PossibleCharacters.Add(new SelectCharacterModel() { IsSelected = false, ImageURI = item.ImageURI, Name = item.Name, Id=item.Id });
+                PossibleCharacters.Add(new SelectCharacterModel() { IsSelected = false, ImageURI = item.ImageURI, Name = item.Name, Description = item.Description, Id=item.Id });
             }
 
             CharacterSourceList.ItemsSource = PossibleCharacters;
