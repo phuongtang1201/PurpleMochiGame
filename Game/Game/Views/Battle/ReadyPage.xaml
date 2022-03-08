@@ -19,8 +19,12 @@
                             <BoxView Style="{StaticResource FlexLayoutBoxView}"
                                      Grid.ColumnSpan="2" Grid.RowSpan="2" />
 
-                            <Label Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" HorizontalOptions="Center"
-                                   Grid.ColumnSpan="2" Text="Are you ready &#10; to begin?"
+                            <Label Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"
+                                   Grid.ColumnSpan="2" Text="Are you ready"
+                                   Style="{StaticResource CenterMessageExtraLargeStyle}"/>
+
+                            <Label Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"
+                                   Grid.ColumnSpan="2" Text="to begin?"
                                    Style="{StaticResource CenterMessageExtraLargeStyle}"/>
 
                             <Button Grid.Row="2" Grid.Column="0"
