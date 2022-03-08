@@ -7,6 +7,8 @@ using Xamarin.Forms.Xaml;
 using Game.Models;
 using Game.ViewModels;
 using System.Linq;
+using System.Collections.Specialized;
+using System.Collections.ObjectModel;
 
 namespace Game.Views
 {
@@ -59,6 +61,8 @@ namespace Game.Views
     public partial class PickCharactersPage : ContentPage
     {
 
+        public ObservableCollection<SelectCharacterModel> PossibleCharacters { get; set; } = new ObservableCollection<SelectCharacterModel>();
+
         // Empty Constructor for UTs
         public PickCharactersPage(bool UnitTest) { }
 
@@ -78,6 +82,15 @@ namespace Game.Views
             BattleEngineViewModel.Instance.PartyCharacterList.Clear();
 
             UpdateNextButtonState();
+
+            // Populate a list of possible characters from the existing characters
+            foreach (var item in BattleEngineViewModel.Instance.DatabaseCharacterList)
+            {
+                PossibleCharacters.Add(new SelectCharacterModel() { IsSelected = false, ImageURI = item.ImageURI, Name = item.Name, Id=item.Id });
+            }
+
+            CharacterSourceList.ItemsSource = PossibleCharacters;
+            PartyListView.ItemsSource = BattleEngineViewModel.Instance.PartyCharacterList;
         }
 
         /// <summary>
@@ -87,19 +100,34 @@ namespace Game.Views
         /// <param name="args"></param>
         public void OnDatabaseCharacterItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            CharacterModel data = args.SelectedItem as CharacterModel;
+            var data = args.SelectedItem as SelectCharacterModel;
             if (data == null)
             {
                 return;
             }
 
-            // Manually deselect Character.
-            CharactersListView.SelectedItem = null;
+            if (data.IsSelected)
+            {
+                data.IsSelected = false;
+            }
+            else
+            {
+                data.IsSelected = true;
+            }
 
             // Don't add more than the party max
             if (BattleEngineViewModel.Instance.PartyCharacterList.Count() < BattleEngineViewModel.Instance.Engine.EngineSettings.MaxNumberPartyCharacters)
             {
-                BattleEngineViewModel.Instance.PartyCharacterList.Add(data);
+                var characterExist = BattleEngineViewModel.Instance.PartyCharacterList.Any(m => m.Id.Equals(data.Id));
+                if (characterExist == false)
+                {
+                    // Not in the list, so add
+                    var character = BattleEngineViewModel.Instance.DatabaseCharacterList.FirstOrDefault(m => m.Id.Equals(data.Id));
+                    if (character != null)
+                    {
+                        BattleEngineViewModel.Instance.PartyCharacterList.Add(character);
+                    }
+                }
             }
 
             UpdateNextButtonState();

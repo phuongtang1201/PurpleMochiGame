@@ -19,14 +19,15 @@
 
                         <StackLayout HorizontalOptions="Start">
 
-                            <ListView x:Name="CharactersListView" 
-                                      Style="{StaticResource IndexStyle}"
-                                      ItemsSource="{Binding DatabaseCharacterList}"
+                            <ListView x:Name="CharacterSourceList" 
+                                      ItemsSource="{Binding PossibleCharacters}"
                                       IsRefreshing="{Binding IsBusy, Mode=OneWay}"
                                       RefreshCommand="{Binding LoadItemsCommand}"
                                       CachingStrategy="RecycleElement"
                                       ItemSelected="OnDatabaseCharacterItemSelected"
-                                      Margin="5,0,5,0">
+                                      HasUnevenRows="true"
+                                      Margin="5,0,5,0"
+                                      RowHeight="80">
 
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
@@ -44,6 +45,12 @@
                                                         <RowDefinition Height="auto"/>
                                                         <RowDefinition Height="auto"/>
                                                     </Grid.RowDefinitions>
+
+                                                    <Frame 
+                                                        Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
+                                                        Style="{Binding FrameStyle, Mode=TwoWay}"
+                                                        IsVisible="{Binding IsSelected, Mode=TwoWay}"
+                                                    />
 
                                                     <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
                                                            Source="{Binding ImageURI}"
