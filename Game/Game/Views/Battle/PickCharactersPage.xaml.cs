@@ -109,23 +109,36 @@ namespace Game.Views
             if (data.IsSelected)
             {
                 data.IsSelected = false;
+
+                if (data == null)
+                {
+                    return;
+                }
+
+                // Manually deselect Character.
+                PartyListView.SelectedItem = null;
+
+                // Remove the character from the list
+                _ = BattleEngineViewModel.Instance.PartyCharacterList.Remove(data);
+
+                UpdateNextButtonState();
             }
             else
             {
                 data.IsSelected = true;
-            }
 
-            // Don't add more than the party max
-            if (BattleEngineViewModel.Instance.PartyCharacterList.Count() < BattleEngineViewModel.Instance.Engine.EngineSettings.MaxNumberPartyCharacters)
-            {
-                var characterExist = BattleEngineViewModel.Instance.PartyCharacterList.Any(m => m.Id.Equals(data.Id));
-                if (characterExist == false)
+                // Don't add more than the party max
+                if (BattleEngineViewModel.Instance.PartyCharacterList.Count() < BattleEngineViewModel.Instance.Engine.EngineSettings.MaxNumberPartyCharacters)
                 {
-                    // Not in the list, so add
-                    var character = BattleEngineViewModel.Instance.DatabaseCharacterList.FirstOrDefault(m => m.Id.Equals(data.Id));
-                    if (character != null)
+                    var characterExist = BattleEngineViewModel.Instance.PartyCharacterList.Any(m => m.Id.Equals(data.Id));
+                    if (characterExist == false)
                     {
-                        BattleEngineViewModel.Instance.PartyCharacterList.Add(character);
+                        // Not in the list, so add
+                        var character = BattleEngineViewModel.Instance.DatabaseCharacterList.FirstOrDefault(m => m.Id.Equals(data.Id));
+                        if (character != null)
+                        {
+                            BattleEngineViewModel.Instance.PartyCharacterList.Add(character);
+                        }
                     }
                 }
             }
