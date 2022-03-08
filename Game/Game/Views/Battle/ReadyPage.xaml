@@ -14,7 +14,10 @@
                          HorizontalOptions="CenterAndExpand"
                          VerticalOptions="CenterAndExpand">
 
-                    <Frame Style="{StaticResource BattleMessageFrameStyle}">
+                    <Frame Style="{StaticResource BattleMessageFrameStyle}" 
+                           HeightRequest="200" 
+                           WidthRequest="270"
+                           Padding="10,20,10,10">
                         <Grid>
                             <BoxView Style="{StaticResource FlexLayoutBoxView}"
                                      Grid.ColumnSpan="2" Grid.RowSpan="2" />
@@ -29,11 +32,15 @@
 
                             <Button Grid.Row="2" Grid.Column="0"
                                     Style="{StaticResource BattleButton}" 
+                                    BackgroundColor="LightBlue"
+                                    WidthRequest="110"
                                     Clicked="CloseButton_Clicked"  Text="BACK"/>
 
                             <Button Grid.Row="2" Grid.Column="1"
                                     Clicked="BeginButton_Clicked" Text="BEGIN"
-                                    Style="{StaticResource BattleButton}" />
+                                    Style="{StaticResource BattleButton}" 
+                                    WidthRequest="110"
+                                    BackgroundColor="LightBlue"/>
                         </Grid>
                     </Frame>
                 </StackLayout>
