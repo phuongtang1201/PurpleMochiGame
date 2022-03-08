@@ -187,24 +187,44 @@
                 <!--The Game Over Screen -->
                 <StackLayout 
                     Style="{StaticResource VerticalStack}"
-                    AbsoluteLayout.LayoutBounds="0.5,0.25,400,25"
+                    AbsoluteLayout.LayoutBounds="0.5,0.25,300,300"
                     AbsoluteLayout.LayoutFlags="PositionProportional" 
                     x:Name="GameOverDisplay" 
                     IsVisible="false">
 
-                    <Frame Style="{StaticResource BattleMessageFrameStyle}" Margin="70,0,0,0" >
-                        <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
-                            <Label Text="Game Over" Style="{StaticResource CenterMessageLargeStyle}"/>
+                    <Frame Style="{StaticResource RoundGameOverFrameStyle}" HeightRequest="300">
+                        <Grid>
+                            <BoxView Style="{StaticResource FlexLayoutBoxView}"
+                                     Grid.ColumnSpan="2" Grid.RowSpan="2" />
 
-                            <Label Text="You've been cooked!" Style="{StaticResource MessageStyle}" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" MaxLines="5" Padding="20"/>
+                            <Label Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"
+                                   Grid.ColumnSpan="2" Text="GAME OVER"
+                                   Style="{StaticResource CenterMessageExtraLargeStyle}"/>
 
-                            <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
-                                <Button x:Name="ShowScoreButton" Clicked="ShowScoreButton_Clicked" Text="Score" WidthRequest="50"/>
+                            <Label Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"
+                                   Grid.ColumnSpan="2" Text="You've been"
+                                   Style="{StaticResource CenterMessageExtraLargeStyle}"/>
 
-                                <Button x:Name="ExitButton" Clicked="ExitButton_Clicked" Text="Exit" WidthRequest="50"></Button>
-                            </StackLayout>
-                        </StackLayout>
+                            <Label Grid.Row="2" Grid.Column="0" HorizontalOptions="Center"
+                                   Grid.ColumnSpan="2" Text="cooked!"
+                                   Style="{StaticResource CenterMessageExtraLargeStyle}"/>
 
+                            <Button Grid.Row="3" Grid.Column="0"
+                                    x:Name="ShowScoreButton" 
+                                    Style="{StaticResource BattleButton}" 
+                                    Text="Score" 
+                                    WidthRequest="110"
+                                    BackgroundColor="LightBlue"
+                                    Clicked="ShowScoreButton_Clicked"/>
+
+                            <Button Grid.Row="3" Grid.Column="1"
+                                    x:Name="ExitButton" 
+                                    Style="{StaticResource BattleButton}" 
+                                    Text="Exit" 
+                                    WidthRequest="110"
+                                    BackgroundColor="LightBlue"
+                                    Clicked="ExitButton_Clicked"/>
+                        </Grid>
                     </Frame>
                 </StackLayout>
             </AbsoluteLayout>
