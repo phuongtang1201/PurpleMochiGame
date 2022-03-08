@@ -156,6 +156,7 @@
     <Content Include="d10.png" />
     <Content Include="d20_2.png" />
     <Content Include="delete.png" />
+    <Content Include="donut_boss.gif" />
     <Content Include="donut_boss.png" />
     <Content Include="dungeon_door.png" />
     <Content Include="eggplant.png" />
