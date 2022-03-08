@@ -10,6 +10,38 @@ using System.Linq;
 
 namespace Game.Views
 {
+    public class SelectCharacterModel : CharacterModel, INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged = delegate { };
+
+        private bool isSelected;
+        public bool IsSelected
+        {
+            get { return isSelected; }
+            set
+            {
+                isSelected = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("IsSelected"));
+            }
+        }
+
+        public Style SelectedStyleTrue = (Style)Application.Current.Resources["BattleSelectedCharacterFrameTrue"];
+        public Style SelectedStyleFalse = (Style)Application.Current.Resources["BattleSelectedCharacterFrameFalse"];
+
+        public Style FrameStyle
+        {
+            get
+            {
+                if (isSelected)
+                {
+                    return SelectedStyleTrue;
+                }
+
+                return SelectedStyleFalse;
+            }
+        }
+    }
+
     /// <summary>
     /// Selecting Characters for the Game
     /// 
