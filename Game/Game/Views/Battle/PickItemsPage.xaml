@@ -12,7 +12,7 @@
         <StackLayout>
             <ScrollView VerticalScrollBarVisibility="Never">
                 <StackLayout Style="{StaticResource OuterBoxStack}">
-                    <Label Text="Select Items" Style="{StaticResource CenterMessageLargeStyle}"/>
+                    <Label Text="Assign Items" Style="{StaticResource CenterMessageExtraLargeStyle}"/>
 
                     <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand">
 
