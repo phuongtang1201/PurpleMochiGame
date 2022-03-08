@@ -46,7 +46,7 @@ namespace Game.Views
             }
 
             // Open the Update Page
-            await Navigation.PushAsync(new AddItemsPage(new GenericViewModel<CharacterModel>(data)));
+            await Navigation.PushModalAsync(new AddItemsPage(new GenericViewModel<CharacterModel>(data)));
 
             // Manually deselect Character.
             CharactersListView.SelectedItem = null;
