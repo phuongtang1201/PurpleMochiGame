@@ -44,6 +44,14 @@ namespace Game.Views
 
             this.ViewModel.Title = "Equip " + data.Title;
 
+            List<ItemModel> itemList = new List<ItemModel>();
+
+            // Add the rest of the items to the list
+            itemList.AddRange(ItemIndexViewModel.Instance.GetDefaultData());
+
+            // Populate the list with the items
+            ItemsListView.ItemsSource = itemList;
+
             _ = UpdatePageBindingContext();
         }
 
@@ -86,6 +94,24 @@ namespace Game.Views
             ViewModel.Data.Update(DataCopy);
 
             _ = await Navigation.PopModalAsync();
+        }
+
+        /// <summary>
+        /// The row selected from the list
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
+        public async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
+        {
+            ItemModel data = args.SelectedItem as ItemModel;
+            if (data == null)
+            {
+                return;
+            }
+
+            _ = ViewModel.Data.AddItem(data.Location, data.Id);
+
+            AddItemsToDisplay();
         }
 
         /// <summary>
