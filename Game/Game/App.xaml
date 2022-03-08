@@ -666,7 +666,18 @@
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property= "VerticalOptions" Value="Center"/>
             </Style>
-            
+
+            <Style TargetType="Frame"
+                x:Key="BattleSelectedCharacterFrameTrue">
+                <Setter Property="HeightRequest" Value="60" />
+                <Setter Property="WidthRequest" Value="60" />
+                <Setter Property="Margin" Value="0" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                <Setter Property="BorderColor" Value="{StaticResource SecondaryBackgroundColor}" />
+            </Style>
+
             <!-- Grid -->
             <Style TargetType="Grid">
                 <Setter Property="ColumnSpacing" Value="0" />
