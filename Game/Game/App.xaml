@@ -667,6 +667,13 @@
                 <Setter Property= "VerticalOptions" Value="Center"/>
             </Style>
 
+            <Style TargetType="Frame" x:Key="RoundGameOverFrameStyle"
+                   BasedOn="{StaticResource BattleMessageFrameStyle}">
+                <Setter Property="HeightRequest" Value="200"/>
+                <Setter Property="WidthRequest" Value="270"/>
+                <Setter Property="Padding" Value="10,20,10,10"/>
+            </Style>
+
             <Style TargetType="Frame"
                 x:Key="BattleSelectedCharacterFrameTrue">
                 <Setter Property="HeightRequest" Value="60" />
