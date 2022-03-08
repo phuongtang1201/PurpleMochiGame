@@ -678,6 +678,12 @@
                 <Setter Property="BorderColor" Value="{StaticResource SecondaryBackgroundColor}" />
             </Style>
 
+            <Style TargetType="Frame"
+                x:Key="BattleSelectedCharacterFrameFalse"
+                BasedOn="{StaticResource BattleSelectedCharacterFrameTrue}">
+                <Setter Property="BorderColor" Value="{StaticResource LightBackgroundColor}" />
+            </Style>
+
             <!-- Grid -->
             <Style TargetType="Grid">
                 <Setter Property="ColumnSpacing" Value="0" />
