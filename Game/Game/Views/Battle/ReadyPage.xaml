@@ -14,10 +14,7 @@
                          HorizontalOptions="CenterAndExpand"
                          VerticalOptions="CenterAndExpand">
 
-                    <Frame Style="{StaticResource BattleMessageFrameStyle}" 
-                           HeightRequest="200" 
-                           WidthRequest="270"
-                           Padding="10,20,10,10">
+                    <Frame Style="{StaticResource RoundGameOverFrameStyle}">
                         <Grid>
                             <BoxView Style="{StaticResource FlexLayoutBoxView}"
                                      Grid.ColumnSpan="2" Grid.RowSpan="2" />
