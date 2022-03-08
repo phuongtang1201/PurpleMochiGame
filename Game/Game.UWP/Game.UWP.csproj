@@ -141,6 +141,7 @@
     <Content Include="auto_battle.png" />
     <Content Include="battleboard.png" />
     <Content Include="cancel.png" />
+    <Content Include="carrots.gif" />
     <Content Include="carrots.png" />
     <Content Include="chefblue.png" />
     <Content Include="chefgreen.png" />
