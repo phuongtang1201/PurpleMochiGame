@@ -67,6 +67,7 @@
                                         LineHeight="1"
                                         CharacterSpacing="1"
                                         Style="{StaticResource LabelStyle}"
+                                        Margin="0,20,0,0"
                                         FontSize="Micro"/>
 
                                         <!--<WebView
