@@ -65,11 +65,15 @@
 
                             <Button Grid.Row="0" Grid.Column="0"
                                     Style="{StaticResource BattleButton}"
+                                    WidthRequest="180"
+                                    FontSize="30"
                                     Text="Change Items"/>
 
                             <Button Grid.Row="0" Grid.Column="1"
                                     Clicked="CloseButton_Clicked" 
                                     Style="{StaticResource BattleButton}"
+                                    WidthRequest="180"
+                                    FontSize="30"
                                     Text="Next Round"/>
                         </Grid>
                         
