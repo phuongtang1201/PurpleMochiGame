@@ -15,7 +15,7 @@
                             Style="{StaticResource CenterMessageExtraLargeStyle}"/>
                         
                         <Label Grid.Row="0" Grid.Column="1"
-                            Text="0" 
+                            Text="1" 
                             x:Name="TotalRound" 
                             Style="{StaticResource CenterMessageExtraLargeStyle}"/>
                     </Grid>
