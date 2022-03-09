@@ -22,16 +22,17 @@
                             HorizontalOptions="CenterAndExpand"
                             VerticalOptions="FillAndExpand">
 
-
                 <!--The Game UI Screen -->
                 <StackLayout VerticalOptions="FillAndExpand"
-                        x:Name="GameUIDisplay" 
-                        IsVisible="True" 
-                        AbsoluteLayout.LayoutBounds="1,1,1,1" 
-                        AbsoluteLayout.LayoutFlags="All">
+                             HorizontalOptions="CenterAndExpand"
+                             x:Name="GameUIDisplay" 
+                             IsVisible="True" 
+                             AbsoluteLayout.LayoutBounds="1,1,1,1" 
+                             AbsoluteLayout.LayoutFlags="All">
 
                     <!--The Top of the Battle UI Holds the List of Players-->
-                    <StackLayout VerticalOptions="Start" x:Name="TopPlayerDisplay">
+                    <StackLayout VerticalOptions="Start" 
+                                 x:Name="TopPlayerDisplay">
                         <StackLayout Style="{StaticResource VerticalStack}"
                         x:Name="GamePlayersTopDisplay" 
                         IsVisible="true" 
