@@ -28,7 +28,10 @@ namespace Game.GameRules
         /// <returns></returns>
         public static string GetMonsterUniqueItem()
         {
-            var result = ItemIndexViewModel.Instance.Dataset.ElementAt(DiceHelper.RollDice(1, ItemIndexViewModel.Instance.Dataset.Count()) - 1).Id;
+            var locationnumber = DiceHelper.RollDice(1, ItemIndexViewModel.Instance.Dataset.Count()) - 1;
+
+            locationnumber = Math.Min(locationnumber, ItemIndexViewModel.Instance.Dataset.Count -1 );
+            var result = ItemIndexViewModel.Instance.Dataset.ElementAt(locationnumber).Id;
 
             return result;
         }
@@ -249,7 +252,7 @@ namespace Game.GameRules
             int rnd;
 
             // Boss Monsters allowed
-            if(Boss == true) 
+            if (Boss == true)
             {
                 rnd = DiceHelper.RollDice(1, 3) + 9;
             }
@@ -258,7 +261,7 @@ namespace Game.GameRules
             {
                 rnd = DiceHelper.RollDice(1, MonsterIndexViewModel.Instance.Dataset.Count - 3);
 
-                if(rnd == 0)
+                if (rnd <= 0)
                 {
                     rnd = 1;
                 }
@@ -302,7 +305,9 @@ namespace Game.GameRules
             _ = result.LevelUpToValue(result.Level);
 
             // Set ExperienceRemaining so Monsters can both use this method
-            result.ExperienceRemaining = LevelTableHelper.LevelDetailsList[result.Level + 1].Experience;
+            var TargetLevel = Math.Min(20,result.Level + 1);
+            
+            result.ExperienceRemaining = LevelTableHelper.LevelDetailsList[TargetLevel].Experience;
 
             // Enter Battle at full health
             result.CurrentHealth = result.MaxHealth;
