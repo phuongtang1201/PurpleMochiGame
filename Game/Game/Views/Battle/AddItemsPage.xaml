@@ -133,23 +133,21 @@
                                 </ListView>
                             </StackLayout>
                         </ScrollView>
-                        
-
-                        <StackLayout Style="{StaticResource HorizontalStack}" 
-                            HorizontalOptions="Center">
-
-                            <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
-                                         Source="cancel.png"
-                                         Clicked="Cancel_Clicked"/>
-
-                            <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
-                                         Source="update.png"
-                                         Clicked="Save_Clicked"/>
-
-                        </StackLayout>
 
                     </StackLayout>
                 </ScrollView>
+                <StackLayout Style="{StaticResource HorizontalStack}" 
+                            HorizontalOptions="Center">
+
+                    <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
+                                         Source="cancel.png"
+                                         Clicked="Cancel_Clicked"/>
+
+                    <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
+                                         Source="update.png"
+                                         Clicked="Save_Clicked"/>
+
+                </StackLayout>
             </StackLayout>
 
            
@@ -164,8 +162,7 @@
                     VerticalOptions="CenterAndExpand" 
                     HorizontalOptions="CenterAndExpand"
                     WidthRequest="300"
-                    HeightRequest="300"
-                    >
+                    HeightRequest="300">
 
                     <Frame  BorderColor="{StaticResource TriciaryTextColor}" Padding="1">
                         <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" Padding="2">
@@ -177,8 +174,7 @@
                                 ItemSelected="OnPopupItemSelected"
                                 HasUnevenRows="true"
                                 Margin="5,0,5,0"
-                                RowHeight="80"
-                                >
+                                RowHeight="80">
 
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
