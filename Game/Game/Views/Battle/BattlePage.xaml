@@ -44,52 +44,62 @@
                                          Style="{StaticResource HorizontalStack}" 
                                          HorizontalOptions="Center"/>
 
-                                <StackLayout x:Name="BattlePlayerVerticalBox" 
-                                             Margin="0,30,0,0"  
-                                             Style="{StaticResource VerticalStack}" 
-                                             HorizontalOptions="Center">
+                            <StackLayout x:Name="BattlePlayerVerticalBox" 
+                                         Margin="0,30,0,0"  
+                                         Style="{StaticResource VerticalStack}" 
+                                         HorizontalOptions="Center">
 
-                                <StackLayout x:Name="CurrentMonsterBox" 
+                                <Grid>
+                                    <StackLayout x:Name="CurrentMonsterBox" 
+                                                 Grid.Row="0" Grid.Column="0"
                                                  Style="{StaticResource PlayerBattleInfoBox}" 
                                                  HorizontalOptions="CenterAndExpand">
-                                    <Image x:Name="MonsterImage" Source="strawberry.png" 
+                                        <Image x:Name="MonsterImage" Source="strawberry.png" 
                                                Style="{StaticResource ImageBattleMediumStyle}"/>
-                                    <Label x:Name="MonsterName" Text="" 
+                                        <Label x:Name="MonsterName" Text="" 
                                                Style="{StaticResource ValueStyleBattleMicro}"/>
-                                    <Label x:Name="MonsterHealth" Text="" 
+                                        <Label x:Name="MonsterHealth" Text="" 
                                                Style="{StaticResource ValueStyleBattleMicro}"/>
-                                </StackLayout>
+                                    </StackLayout>
 
-                                <StackLayout HorizontalOptions="Center"   Margin="0,20,0,0" VerticalOptions="Center">
-                                    <Image x:Name="AttackerAttack" Source="mapcell.png" Style="{StaticResource ImageSmallStyle}"/>
-                                </StackLayout>
+                                    <StackLayout HorizontalOptions="Center" 
+                                                 Grid.Row="0" Grid.Column="1"
+                                                 Margin="0,20,0,0" VerticalOptions="Center">
+                                        <Image x:Name="AttackerAttack" Source="mapcell.png" 
+                                               Style="{StaticResource ImageSmallStyle}"/>
+                                    </StackLayout>
 
-                                <StackLayout x:Name="CurrentCharacterBox"  Margin="0,20,0,0" Style="{StaticResource PlayerBattleInfoBox}" HorizontalOptions="CenterAndExpand">
-                                    <Image x:Name="CharacterImage" Source="chefwhite.png" Style="{StaticResource ImageBattleMediumStyle}"/>
-                                    <Label x:Name="CharacterName" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
-                                    <Label x:Name="CharacterHealth" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
-                                </StackLayout>
+                                    <StackLayout x:Name="CurrentCharacterBox"  
+                                                 Grid.Row="0" Grid.Column="2"
+                                                 Margin="0,20,0,0" 
+                                                 Style="{StaticResource PlayerBattleInfoBox}" 
+                                                 HorizontalOptions="CenterAndExpand">
+                                        <Image x:Name="CharacterImage" Source="chefwhite.png" Style="{StaticResource ImageBattleMediumStyle}"/>
+                                        <Label x:Name="CharacterName" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
+                                        <Label x:Name="CharacterHealth" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
+                                    </StackLayout>
 
-                                <StackLayout 
-                                Style="{StaticResource VerticalStack}" 
-                                HeightRequest="100"
-                                HorizontalOptions="CenterAndExpand">
+                                </Grid>
+                                
+                                <StackLayout Style="{StaticResource VerticalStack}" 
+                                             HeightRequest="100"
+                                             HorizontalOptions="CenterAndExpand">
 
                                     <StackLayout x:Name="MessageDisplayBox" 
-                                    IsVisible="false"
-                                    Style="{StaticResource VerticalStack}" 
-                                            VerticalOptions="StartAndExpand"
-                                            HorizontalOptions="CenterAndExpand">
+                                                 IsVisible="false"
+                                                 Style="{StaticResource VerticalStack}" 
+                                                 VerticalOptions="StartAndExpand"
+                                                 HorizontalOptions="CenterAndExpand">
 
                                         <Label x:Name="BattleMessages" 
-                                        HorizontalOptions="FillAndExpand" 
-                                        LineBreakMode="WordWrap" 
-                                        MaxLines="3"
-                                        LineHeight="1"
-                                        CharacterSpacing="1"
-                                        Style="{StaticResource LabelStyle}"
-                                        Margin="0,20,0,0"
-                                        FontSize="Micro"/>
+                                               HorizontalOptions="FillAndExpand" 
+                                               LineBreakMode="WordWrap" 
+                                               MaxLines="3"
+                                               LineHeight="1"
+                                               CharacterSpacing="1"
+                                               Style="{StaticResource LabelStyle}"
+                                               Margin="0,20,0,0"
+                                               FontSize="Small"/>
                                     </StackLayout>
                                 </StackLayout>
 
