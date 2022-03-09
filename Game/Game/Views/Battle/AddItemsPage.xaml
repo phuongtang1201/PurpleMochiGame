@@ -61,11 +61,11 @@
                                    FontSize="Small"
                                    Padding="5" />
                             <FlexLayout Grid.Row="1" Grid.Column="0" 
-                                        Margin="20,0,20,0"
-                                        Padding="10"
-                                        Wrap="Wrap"
-                                        JustifyContent="SpaceAround"
-                                        AlignContent="SpaceAround"
+                                        Margin="10,0,10,0"
+                                        Padding="0,10,0,10"
+                                        Wrap="NoWrap"
+                                        JustifyContent="Center"
+                                        AlignContent="Center"
                                         x:Name="ItemBox">
                             </FlexLayout>
                         </Grid>
