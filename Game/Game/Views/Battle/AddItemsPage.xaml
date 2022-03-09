@@ -212,7 +212,7 @@
 
                             <Button x:Name="PopupCloseButton" 
                                     Clicked="ClosePopup_Clicked" 
-                                    Text="Close"/>
+                                    Text="Confirm"/>
                         </StackLayout>
                     </Frame>
                 </StackLayout>
