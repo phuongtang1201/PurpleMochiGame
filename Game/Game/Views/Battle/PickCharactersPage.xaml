@@ -78,6 +78,10 @@
                                                            Text="{Binding Path=Speed, StringFormat= 'Speed {0:G}'}" 
                                                            Style="{StaticResource ListDescription}"/>
 
+                                                    <Label Grid.Column="4" Grid.Row="2"
+                                                           Text="{Binding Path=Defense, StringFormat= 'Defense {0:G}'}" 
+                                                           Style="{StaticResource ListDescription}"/>
+
                                                 </Grid>
                                             </Frame>
                                         </ViewCell>
