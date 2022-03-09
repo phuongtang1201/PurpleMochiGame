@@ -50,7 +50,7 @@ namespace Game.Views
             itemList.AddRange(ItemIndexViewModel.Instance.GetDefaultData());
 
             // Populate the list with the items
-            ItemsListView.ItemsSource = itemList;
+            //ItemsListView.ItemsSource = itemList;
 
             _ = UpdatePageBindingContext();
         }

@@ -70,7 +70,7 @@
                             </FlexLayout>
                         </Grid>
 
-                        <ScrollView>
+                        <!--<ScrollView>
                             <StackLayout Style="{StaticResource OuterBoxStack}">
 
                                 <ListView x:Name="ItemsListView" 
@@ -132,7 +132,7 @@
                                     </ListView.ItemTemplate>
                                 </ListView>
                             </StackLayout>
-                        </ScrollView>
+                        </ScrollView>-->
 
                     </StackLayout>
                 </ScrollView>
