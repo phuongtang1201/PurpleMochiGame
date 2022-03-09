@@ -97,7 +97,7 @@
                     x:Name="BackButton"
                     Clicked="CloseButton_Clicked" 
                     Text="Back"
-                    WidthRequest="100"
+                    WidthRequest="90"
                     VerticalOptions="End"/>
                 
             <Button Grid.Row="0" Grid.Column="1"
