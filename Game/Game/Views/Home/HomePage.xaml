@@ -33,8 +33,6 @@
                                  Style="{StaticResource HomeImageButton}"
                                  Clicked="AboutButton_Clicked"/>
 
-                    <ImageButton Source="settings.png"
-                                 Style="{StaticResource HomeImageButton}"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
