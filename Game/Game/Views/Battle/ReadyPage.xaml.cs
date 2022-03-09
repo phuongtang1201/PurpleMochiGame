@@ -28,6 +28,7 @@ namespace Game.Views
         public ReadyPage()
         {
             InitializeComponent();
+            BattleEngineViewModel.Instance.Engine.EngineSettings.BattleScore.RoundCount = 1;
         }
 
         /// <summary>
