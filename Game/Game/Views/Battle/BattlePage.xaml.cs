@@ -40,7 +40,7 @@ namespace Game.Views
         {
             InitializeComponent();
 
-            // Set initial State to Starting
+            // Set initial State to Battling
             BattleEngineViewModel.Instance.Engine.EngineSettings.BattleStateEnum = BattleStateEnum.Battling;
 
             // Set up the UI to Defaults
