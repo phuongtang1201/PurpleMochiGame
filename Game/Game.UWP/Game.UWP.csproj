@@ -189,6 +189,7 @@
     <Content Include="item.png" />
     <Content Include="items.png" />
     <Content Include="kitchen.png" />
+    <Content Include="Kitchen_Background.png" />
     <Content Include="knife.png" />
     <Content Include="knight.png" />
     <Content Include="lettuce.gif" />
