@@ -526,6 +526,7 @@ namespace Scenario
 
             // Reset
             _ = DiceHelper.DisableForcedRolls();
+            EngineViewModel.Engine.EngineSettings.BattleSettingsModel.AllowSlowestFirst = true;
 
             // Assert
             Assert.AreEqual(EngineViewModel.Engine.EngineSettings.PlayerList[3].Name, "Character1");
