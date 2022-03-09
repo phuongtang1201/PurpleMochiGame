@@ -91,12 +91,15 @@
                 </StackLayout>
             </ScrollView>
             <Grid>
+                
             <Button Grid.Row="0" Grid.Column="0"
                     Style="{StaticResource BattleButton}"
                     x:Name="BackButton"
                     Clicked="CloseButton_Clicked" 
                     Text="Back"
+                    WidthRequest="100"
                     VerticalOptions="End"/>
+                
             <Button Grid.Row="0" Grid.Column="1"
                     Style="{StaticResource BattleButton}"
                     x:Name="NextButton"
