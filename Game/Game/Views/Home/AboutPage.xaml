@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Game.Views.AboutPage"
-             Title="About">
+             Title="About"
+             BackgroundImageSource="food_stain_background.png">
 
     <ScrollView Margin="40,0,40,0" Padding="10,20,10,20"
                 VerticalOptions="Center" HorizontalOptions="Center"
