@@ -18,10 +18,9 @@
 
     <ContentPage.Content>
         <ScrollView>
-            <AbsoluteLayout
-                IsVisible="True"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand">
+            <AbsoluteLayout IsVisible="True"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="FillAndExpand">
 
 
                 <!--The Game UI Screen -->
