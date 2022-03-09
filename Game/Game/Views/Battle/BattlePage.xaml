@@ -49,16 +49,26 @@
                                              Style="{StaticResource VerticalStack}" 
                                              HorizontalOptions="Center">
 
-                                    <StackLayout x:Name="CurrentMonsterBox" 
+                                <StackLayout x:Name="CurrentMonsterBox" 
                                                  Style="{StaticResource PlayerBattleInfoBox}" 
                                                  HorizontalOptions="CenterAndExpand">
-                                        <Image x:Name="MonsterImage" Source="strawberry.png" 
+                                    <Image x:Name="MonsterImage" Source="strawberry.png" 
                                                Style="{StaticResource ImageBattleMediumStyle}"/>
-                                        <Label x:Name="MonsterName" Text="" 
+                                    <Label x:Name="MonsterName" Text="" 
                                                Style="{StaticResource ValueStyleBattleMicro}"/>
-                                        <Label x:Name="MonsterHealth" Text="" 
+                                    <Label x:Name="MonsterHealth" Text="" 
                                                Style="{StaticResource ValueStyleBattleMicro}"/>
-                                    </StackLayout>
+                                </StackLayout>
+
+                                <StackLayout HorizontalOptions="Center"   Margin="0,20,0,0" VerticalOptions="Center">
+                                    <Image x:Name="AttackerAttack" Source="mapcell.png" Style="{StaticResource ImageSmallStyle}"/>
+                                </StackLayout>
+
+                                <StackLayout x:Name="CurrentCharacterBox"  Margin="0,20,0,0" Style="{StaticResource PlayerBattleInfoBox}" HorizontalOptions="CenterAndExpand">
+                                    <Image x:Name="CharacterImage" Source="chefwhite.png" Style="{StaticResource ImageBattleMediumStyle}"/>
+                                    <Label x:Name="CharacterName" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
+                                    <Label x:Name="CharacterHealth" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
+                                </StackLayout>
 
                                 <StackLayout 
                                 Style="{StaticResource VerticalStack}" 
@@ -80,29 +90,7 @@
                                         Style="{StaticResource LabelStyle}"
                                         Margin="0,20,0,0"
                                         FontSize="Micro"/>
-
-                                        <!--<WebView
-                        x:Name="HtmlBox"
-                        WidthRequest="100"
-                        MinimumWidthRequest="100"
-                        HeightRequest="100"
-                        MinimumHeightRequest="100"
-                        HorizontalOptions="FillAndExpand"
-                        VerticalOptions="Start"
-                        BackgroundColor="Transparent"
-                        IsVisible="false"
-                        />-->
                                     </StackLayout>
-                                </StackLayout>
-
-                                <StackLayout HorizontalOptions="Center"   Margin="0,20,0,0" VerticalOptions="Center">
-                                    <Image x:Name="AttackerAttack" Source="mapcell.png" Style="{StaticResource ImageSmallStyle}"/>
-                                </StackLayout>
-
-                                <StackLayout x:Name="CurrentCharacterBox"  Margin="0,20,0,0" Style="{StaticResource PlayerBattleInfoBox}" HorizontalOptions="CenterAndExpand">
-                                    <Image x:Name="CharacterImage" Source="chefwhite.png" Style="{StaticResource ImageBattleMediumStyle}"/>
-                                    <Label x:Name="CharacterName" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
-                                    <Label x:Name="CharacterHealth" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
                                 </StackLayout>
 
                             </StackLayout>
