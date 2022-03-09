@@ -96,6 +96,9 @@ namespace UnitTests.Engine.EngineGame
             Engine.EngineSettings.CharacterList.Clear();
             Engine.EngineSettings.CharacterList.Add(CharacterPlayer);
 
+            var oldAllowSlowestFirst = Engine.EngineSettings.BattleSettingsModel.AllowSlowestFirst;
+            Engine.EngineSettings.BattleSettingsModel.AllowSlowestFirst = false;
+
             // Make the List
             Engine.EngineSettings.PlayerList = Engine.Round.MakePlayerList();
 
@@ -106,6 +109,7 @@ namespace UnitTests.Engine.EngineGame
             var result = Engine.Round.OrderPlayerListByTurnOrder();
 
             // Reset
+            Engine.EngineSettings.BattleSettingsModel.AllowSlowestFirst = oldAllowSlowestFirst;
 
             // Assert
             Assert.AreEqual("Z", result[0].Name);
