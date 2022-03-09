@@ -94,7 +94,7 @@ namespace Game.Views
             }
 
             CharacterSourceList.ItemsSource = PossibleCharacters;
-            PartyListView.ItemsSource = BattleEngineViewModel.Instance.PartyCharacterList;
+            //PartyListView.ItemsSource = BattleEngineViewModel.Instance.PartyCharacterList;
         }
 
         /// <summary>
@@ -125,7 +125,7 @@ namespace Game.Views
                 data.IsSelected = false;
 
                 // Manually deselect Character.
-                PartyListView.SelectedItem = null;
+                //PartyListView.SelectedItem = null;
 
                 // Remove the character from the list
                 var character = BattleEngineViewModel.Instance.DatabaseCharacterList.FirstOrDefault(m => m.Id.Equals(data.Id));
@@ -172,7 +172,7 @@ namespace Game.Views
             }
 
             // Manually deselect Character.
-            PartyListView.SelectedItem = null;
+            //PartyListView.SelectedItem = null;
 
             // Remove the character from the list
             _ = BattleEngineViewModel.Instance.PartyCharacterList.Remove(data);
