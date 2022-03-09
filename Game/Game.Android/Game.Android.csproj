@@ -460,5 +460,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\fridge_empty_background.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\food_stain_background.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
