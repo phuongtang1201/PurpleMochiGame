@@ -202,6 +202,7 @@
     <Content Include="no.png" />
     <Content Include="nonslip.png" />
     <Content Include="oven_hot_background.png" />
+    <Content Include="oven_off_background.png" />
     <Content Include="pineapple.gif" />
     <Content Include="pineapple.png" />
     <Content Include="pizza_boss.gif" />
