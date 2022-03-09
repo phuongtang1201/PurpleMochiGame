@@ -328,8 +328,8 @@ namespace Game.Views
         /// <param name="e"></param>
         public async void CloseButton_Clicked(object sender, EventArgs e)
         {
-            // Reset to a new Round
-            _ = BattleEngineViewModel.Instance.Engine.Round.NewRound();
+            // Increment Round
+            BattleEngineViewModel.Instance.Engine.EngineSettings.BattleScore.RoundCount++;
             await Navigation.PushModalAsync(new NavigationPage(new NewRoundPage()));
 
             // Show the New Round Screen
