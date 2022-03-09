@@ -80,7 +80,7 @@
                                     </StackLayout>
 
                                 </Grid>
-                                
+
                                 <StackLayout Style="{StaticResource VerticalStack}" 
                                              HeightRequest="100"
                                              HorizontalOptions="CenterAndExpand">
@@ -110,18 +110,24 @@
                     </StackLayout>
 
                     <!--The Battle Map Display -->
-                    <StackLayout x:Name="BattleMapDisplay" Style="{StaticResource BattleMapBox}"  HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
-                        <AbsoluteLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                            <Image Source="battleboard.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Aspect="Fill"/>
-                            <Grid x:Name="MapGrid" HorizontalOptions="Center" VerticalOptions="Start" ColumnSpacing="0" RowSpacing="0" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
+                    <StackLayout x:Name="BattleMapDisplay" Style="{StaticResource BattleMapBox}"  
+                                 HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
+                        <AbsoluteLayout HorizontalOptions="CenterAndExpand" 
+                                        VerticalOptions="CenterAndExpand">
+                            <Image Source="battleboard.png" AbsoluteLayout.LayoutBounds="0,0,1,1" 
+                                   AbsoluteLayout.LayoutFlags="All" Aspect="Fill"/>
+                            <Grid x:Name="MapGrid" HorizontalOptions="Center" VerticalOptions="Start" 
+                                  ColumnSpacing="0" RowSpacing="0" 
+                                  AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
                         </AbsoluteLayout>
                     </StackLayout>
 
                     <!-- This is the options box for chefs -->
                     <StackLayout x:Name="OptionBox" Margin="20,0,20,0" IsVisible="false">
                         <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
-                            <Button Text="Change Mutant Food" Style="{StaticResource OptionBoxBattleButton}"/>
-                            <Button Text="Focused Attack" Style="{StaticResource OptionBoxBattleButton}" Clicked="FocusedAttackButton_Clicked"/>
+                            <Button Text="Pick Enemy" Style="{StaticResource OptionBoxBattleButton}"/>
+                            <Button Text="Focused Attack" Style="{StaticResource OptionBoxBattleButton}" 
+                                    Clicked="FocusedAttackButton_Clicked"/>
                         </StackLayout>
 
                         <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
@@ -172,26 +178,6 @@
 
                     </StackLayout>
                 </StackLayout>
-
-                <!-- The Ready Page
-            <StackLayout Style="{StaticResource HorizontalStack}"
-                         x:Name="StartBattleQuery"
-                         HorizontalOptions="CenterAndExpand"
-                         VerticalOptions="Center">
-                <Grid>
-                    <BoxView Style="{StaticResource FlexLayoutBoxView}"
-                                     Grid.ColumnSpan="2" Grid.RowSpan="2" />
-                    <Label Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"
-                                   Grid.ColumnSpan="2" Text="Are you ready to begin?"
-                                   Style="{StaticResource GrayBoxStyle}"/>
-                    <Button Grid.Row="1" Grid.Column="0" x:Name="CancelBattleButton" 
-                                    Style="{StaticResource CancelUpdateDeleteButton}" 
-                                    Clicked="ExitButton_Clicked" Text="BACK" IsVisible="False"/>
-                    <Button Grid.Row="1" Grid.Column="1" x:Name="StartBattleButton" 
-                                    Clicked="StartButton_Clicked" Text="BEGIN" IsVisible="False"
-                                    Style="{StaticResource CancelUpdateDeleteButton}" />
-                </Grid>
-            </StackLayout> -->
 
                 <!--The Game Over Screen -->
                 <StackLayout 
