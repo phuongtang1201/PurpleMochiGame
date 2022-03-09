@@ -68,8 +68,12 @@
                                                        Text="{Binding Path=GetSpeedTotal, StringFormat= 'Speed {0:G}'}" 
                                                        Style="{StaticResource ListDescription}"/>
 
-                                                <Label Grid.Column="4" Grid.Row="2"
+                                                <Label Grid.Column="3" Grid.Row="2"
                                                        Text="{Binding Path=GetDefenseTotal, StringFormat= 'Defense {0:G}'}" 
+                                                       Style="{StaticResource ListDescription}"/>
+
+                                                <Label Grid.Column="4" Grid.Row="2"
+                                                       Text="{Binding Path=GetAttackTotal, StringFormat= 'Attack {0:G}'}" 
                                                        Style="{StaticResource ListDescription}"/>
 
                                                 </Grid>
