@@ -59,7 +59,7 @@
                                                    Style="{StaticResource ListDescription}" />
 
                                                 <Label Grid.Column="1" Grid.Row="2"
-                                                    Text="{Binding Path=MaxHealth, StringFormat= '{0:G} hp'}" 
+                                                    Text="{Binding Path=GetMaxHealthTotal, StringFormat= 'Health {0:G}'}" 
                                                     Style="{StaticResource ListStyle}"/>
 
                                             </Grid>
