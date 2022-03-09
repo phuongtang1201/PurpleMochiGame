@@ -107,6 +107,7 @@
                     x:Name="NextButton"
                     Clicked="NextPage_Clicked" 
                     Text="Next"
+                    CornerRadius="15"
                     FontSize="35"
                     VerticalOptions="End"/>
             </Grid>
