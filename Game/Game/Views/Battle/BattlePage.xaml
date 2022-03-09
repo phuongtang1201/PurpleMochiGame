@@ -42,7 +42,7 @@
 
                             <StackLayout x:Name="MonsterBox" 
                                          Style="{StaticResource HorizontalStack}" 
-                                         HorizontalOptions="CenterAndExpand"/>
+                                         HorizontalOptions="Center"/>
 
                                 <StackLayout x:Name="BattlePlayerVerticalBox" 
                                              Margin="0,30,0,0"  
