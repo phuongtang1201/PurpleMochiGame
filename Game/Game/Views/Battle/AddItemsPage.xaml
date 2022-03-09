@@ -160,17 +160,17 @@
 
                 <StackLayout Style="{StaticResource OuterBoxStack}">
 
-                    <Frame  BorderColor="{StaticResource TriciaryTextColor}" Padding="1">
+                    <Frame BorderColor="{StaticResource SecondaryBackgroundColor}" Padding="1">
                         <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" Padding="2">
                             <Label x:Name="PopupLocationLabel" Style="{StaticResource PopupItemTextStyle}" />
                             <Label x:Name="PopupLocationValue" Style="{StaticResource PopupItemTextStyle}" />
 
                             <ListView x:Name="PopupLocationItemListView" 
-                                CachingStrategy="RecycleElement"
-                                ItemSelected="OnPopupItemSelected"
-                                HasUnevenRows="true"
-                                Margin="5,0,5,0"
-                                RowHeight="80">
+                                      CachingStrategy="RecycleElement"
+                                      ItemSelected="OnPopupItemSelected"
+                                      HasUnevenRows="true"
+                                      Margin="5,0,5,0"
+                                      RowHeight="80">
 
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
@@ -187,13 +187,13 @@
                                                 </Grid.RowDefinitions>
 
                                                 <Image  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
-                                            Source="{Binding ImageURI}"
-                                            Style="{StaticResource ImageSmallStyle}"
-                                            VerticalOptions="CenterAndExpand"/>
+                                                        Source="{Binding ImageURI}"
+                                                        Style="{StaticResource ImageSmallStyle}"
+                                                        VerticalOptions="CenterAndExpand"/>
 
                                                 <Label Grid.Column="1" Grid.Row="0"
-                                            Text="{Binding Name}" 
-                                            Style="{StaticResource ListStyle}"/>
+                                                       Text="{Binding Name}" 
+                                                       Style="{StaticResource ListStyle}"/>
 
                                                 <StackLayout Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
                                                     <Label Text="{Binding Attribute}" Style="{StaticResource ListStyle}"/>
@@ -201,9 +201,9 @@
                                                 </StackLayout>
 
                                                 <Label Grid.Column="1" Grid.Row="2"
-                                                Text="{Binding Description}" 
-                                                Style="{StaticResource ListStyle}"
-                                                FontSize="Micro"/>
+                                                       Text="{Binding Description}" 
+                                                       Style="{StaticResource ListStyle}"
+                                                       FontSize="Micro"/>
                                             </Grid>
                                         </ViewCell>
                                     </DataTemplate>
@@ -211,8 +211,8 @@
                             </ListView>
 
                             <Button x:Name="PopupCloseButton" 
-                                Clicked="ClosePopup_Clicked" 
-                                Text="Close"/>
+                                    Clicked="ClosePopup_Clicked" 
+                                    Text="Close"/>
                         </StackLayout>
                     </Frame>
                 </StackLayout>
