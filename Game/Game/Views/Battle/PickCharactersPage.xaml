@@ -74,6 +74,10 @@
                                                            Text="{Binding Path=MaxHealth, StringFormat= 'Health {0:G}'}" 
                                                            Style="{StaticResource ListDescription}"/>
 
+                                                    <Label Grid.Column="3" Grid.Row="2"
+                                                           Text="{Binding Path=Speed, StringFormat= 'Speed {0:G}'}" 
+                                                           Style="{StaticResource ListDescription}"/>
+
                                                 </Grid>
                                             </Frame>
                                         </ViewCell>
