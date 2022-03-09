@@ -99,6 +99,7 @@
                     Text="Back"
                     WidthRequest="90"
                     CornerRadius="15"
+                    FontSize="35"
                     VerticalOptions="End"/>
                 
             <Button Grid.Row="0" Grid.Column="1"
