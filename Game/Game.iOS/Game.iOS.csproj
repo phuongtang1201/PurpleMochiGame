@@ -505,4 +505,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\food_stain_background.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fridge_cold_background.png" />
+  </ItemGroup>
 </Project>
