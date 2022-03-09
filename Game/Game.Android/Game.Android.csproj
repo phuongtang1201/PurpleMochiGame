@@ -451,5 +451,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\oven_off_background.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\oven_hot_background.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
