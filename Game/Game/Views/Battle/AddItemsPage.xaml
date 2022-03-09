@@ -155,7 +155,7 @@
             <StackLayout x:Name="PopupItemSelector" 
                  BackgroundColor="{StaticResource PageBackgroundColor}" 
                  IsVisible="false" 
-                 AbsoluteLayout.LayoutBounds=".5, .5,.5,.5" 
+                 AbsoluteLayout.LayoutBounds=".6,1,.9,.6" 
                  AbsoluteLayout.LayoutFlags="All">
 
                 <StackLayout Style="{StaticResource OuterBoxStack}">
