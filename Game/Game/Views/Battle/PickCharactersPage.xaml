@@ -13,7 +13,7 @@
             <ScrollView VerticalScrollBarVisibility="Never">
                 <StackLayout Style="{StaticResource OuterBoxStack}">
 
-                    <Label Text="Select Your Chefs" Style="{StaticResource CenterMessageLargeStyle}"/>
+                    <Label Text="Select Your Chefs" Style="{StaticResource CenterMessageExtraLargeStyle}"/>
                     <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand">
 
                         <StackLayout HorizontalOptions="Start">
