@@ -247,6 +247,7 @@ namespace Game.Views
             {
                 Text = location.ToMessage(),
                 Style = (Style)Application.Current.Resources["ValueStyleMicro"],
+                FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label)),
                 HorizontalOptions = LayoutOptions.Center,
                 HorizontalTextAlignment = TextAlignment.Center
             };
