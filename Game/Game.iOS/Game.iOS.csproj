@@ -493,4 +493,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\oven_off_background.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\oven_hot_background.png" />
+  </ItemGroup>
 </Project>
