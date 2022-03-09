@@ -32,6 +32,7 @@
 
                     <!--The Top of the Battle UI Holds the List of Players-->
                     <StackLayout VerticalOptions="Start" 
+                                 HorizontalOptions="CenterAndExpand"
                                  x:Name="TopPlayerDisplay">
                         <StackLayout Style="{StaticResource VerticalStack}"
                         x:Name="GamePlayersTopDisplay" 
