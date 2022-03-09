@@ -143,8 +143,8 @@ namespace Game.Views
         {
             PopupItemSelector.IsVisible = true;
 
-            PopupLocationLabel.Text = "Equipment for:";
-            PopupLocationValue.Text = location.ToMessage();
+            PopupLocationLabel.Text = "Equipment for: " + location.ToMessage();
+            //PopupLocationValue.Text = location.ToMessage();
 
             // Make a fake item for None
             var NoneItem = new ItemModel
