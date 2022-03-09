@@ -311,6 +311,7 @@ namespace Scenario
             }
 
             // Reset
+            EngineViewModel.Engine.EngineSettings.BattleSettingsModel.AllowBossMonsters = false;
 
             // Assert
             Assert.AreEqual(result, 1);
