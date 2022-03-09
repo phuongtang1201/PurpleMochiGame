@@ -499,4 +499,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\kitchen_background.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fridge_empty_background.png" />
+  </ItemGroup>
 </Project>
