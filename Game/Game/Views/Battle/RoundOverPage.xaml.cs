@@ -329,7 +329,7 @@ namespace Game.Views
         public async void CloseButton_Clicked(object sender, EventArgs e)
         {
             // Reset to a new Round
-            //_ = BattleEngineViewModel.Instance.Engine.Round.NewRound();
+            _ = BattleEngineViewModel.Instance.Engine.Round.NewRound();
             await Navigation.PushModalAsync(new NavigationPage(new NewRoundPage()));
 
             // Show the New Round Screen
