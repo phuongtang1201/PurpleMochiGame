@@ -206,10 +206,20 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-
-                    <Button x:Name="PopupCloseButton" 
-                            Clicked="ClosePopup_Clicked" 
-                            Text="Confirm"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60" />
+                        </Grid.RowDefinitions>
+                        <Button Grid.Row="0" Grid.Column="0" 
+                                Style="{StaticResource BattleButton}"
+                                Clicked="ClosePopup_Clicked"
+                                Text="Back" />
+                        <Button Grid.Row="0" Grid.Column="1" 
+                                x:Name="PopupCloseButton" 
+                                Style="{StaticResource BattleButton}"
+                                Clicked="ClosePopup_Clicked" 
+                                Text="Confirm"/>
+                    </Grid>
                 </StackLayout>
             </StackLayout>
             
