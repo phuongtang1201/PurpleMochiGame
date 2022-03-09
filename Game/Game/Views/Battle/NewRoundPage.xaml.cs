@@ -36,6 +36,16 @@ namespace Game.Views
         }
 
         /// <summary>
+        /// Go back to Pick Items screen
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public async void AddItems_Clicked(object sender, EventArgs e)
+        {
+            _ = await Navigation.PopModalAsync();
+        }
+
+        /// <summary>
         /// Start next Round, returning to the battle screen
         /// </summary>
         /// <param name="sender"></param>
