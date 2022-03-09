@@ -161,7 +161,12 @@
                     Toggled="SlowestFirst_Toggled"/>
             </Grid>
 
-            <Button Clicked="CloseButton_Clicked" Text="Close" HorizontalOptions="CenterAndExpand"/>
+            <Button 
+                Style="{StaticResource OptionBoxBattleButton}" 
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="80"
+                Text="Close"
+                Clicked="CloseButton_Clicked"/>
 
         </StackLayout>
     </ContentPage.Content>
