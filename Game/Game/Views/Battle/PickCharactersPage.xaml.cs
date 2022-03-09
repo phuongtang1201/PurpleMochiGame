@@ -87,7 +87,7 @@ namespace Game.Views
             foreach (var item in BattleEngineViewModel.Instance.DatabaseCharacterList)
             {
                 PossibleCharacters.Add(new SelectCharacterModel() { IsSelected = false, ImageURI = item.ImageURI, 
-                    Name = item.Name, Description = item.Description, MaxHealth = item.MaxHealth, Id=item.Id });
+                    Name = item.Name, Description = item.Description, Level = item.Level, MaxHealth = item.MaxHealth, Id=item.Id });
             }
 
             CharacterSourceList.ItemsSource = PossibleCharacters;
