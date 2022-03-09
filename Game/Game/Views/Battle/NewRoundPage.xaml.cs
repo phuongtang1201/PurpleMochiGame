@@ -42,7 +42,8 @@ namespace Game.Views
         /// <param name="e"></param>
         public async void AddItems_Clicked(object sender, EventArgs e)
         {
-            _ = await Navigation.PopModalAsync();
+            //_ = await Navigation.PopModalAsync();
+            await Navigation.PushModalAsync(new NavigationPage(new PickItemsPage()));
         }
 
         /// <summary>
