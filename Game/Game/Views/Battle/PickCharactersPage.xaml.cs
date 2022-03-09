@@ -17,6 +17,7 @@ namespace Game.Views
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
 
         private bool isSelected;
+
         public bool IsSelected
         {
             get { return isSelected; }
@@ -60,6 +61,7 @@ namespace Game.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PickCharactersPage : ContentPage
     {
+        //private int preIndex;
 
         public ObservableCollection<SelectCharacterModel> PossibleCharacters { get; set; } = new ObservableCollection<SelectCharacterModel>();
 
@@ -112,18 +114,17 @@ namespace Game.Views
             {
                 data.IsSelected = false;
 
-                if (data == null)
-                {
-                    return;
-                }
-
                 // Manually deselect Character.
                 PartyListView.SelectedItem = null;
+                CharacterSourceList.SelectedItem = null;
 
                 // Remove the character from the list
-                _ = BattleEngineViewModel.Instance.PartyCharacterList.Remove(data);
+                var character = BattleEngineViewModel.Instance.DatabaseCharacterList.FirstOrDefault(m => m.Id.Equals(data.Id));
+                if (character != null)
+                {
+                    BattleEngineViewModel.Instance.PartyCharacterList.Remove(character);
+                }
 
-                UpdateNextButtonState();
             }
             else
             {
