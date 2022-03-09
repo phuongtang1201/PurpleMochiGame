@@ -50,23 +50,29 @@
                                                     VerticalOptions="CenterAndExpand"/>
 
                                                 <Label Grid.Column="1" Grid.Row="0"
+                                                       Grid.ColumnSpan="4"
                                                    Text="{Binding Name}" 
                                                    Style="{StaticResource ListStyle}"
                                                    FontAttributes="Bold"/>
 
                                                 <Label Grid.Column="1" Grid.Row="1"
+                                                       Grid.ColumnSpan="4"
                                                    Text="{Binding Description}" 
                                                    Style="{StaticResource ListDescription}" />
+
+                                                <Label Grid.Column="1" Grid.Row="2"
+                                                    Text="{Binding Path=GetMaxHealthTotal, StringFormat= 'Health {0:G}'}" 
+                                                    Style="{StaticResource ListDescription}"/>
 
                                                 <Label Grid.Column="2" Grid.Row="2"
                                                        Text="{Binding Path=GetSpeedTotal, StringFormat= 'Speed {0:G}'}" 
                                                        Style="{StaticResource ListDescription}"/>
 
-                                                    <Label Grid.Column="1" Grid.Row="2"
-                                                    Text="{Binding Path=GetMaxHealthTotal, StringFormat= 'Health {0:G}'}" 
-                                                    Style="{StaticResource ListDescription}"/>
+                                                <Label Grid.Column="4" Grid.Row="2"
+                                                       Text="{Binding Path=GetDefenseTotal, StringFormat= 'Defense {0:G}'}" 
+                                                       Style="{StaticResource ListDescription}"/>
 
-                                            </Grid>
+                                                </Grid>
                                         </Frame>
                                     </ViewCell>
                                 </DataTemplate>
