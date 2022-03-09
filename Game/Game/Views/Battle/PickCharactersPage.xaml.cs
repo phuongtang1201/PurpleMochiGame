@@ -61,7 +61,7 @@ namespace Game.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PickCharactersPage : ContentPage
     {
-        //private int preIndex;
+        private int preIndex;
 
         public ObservableCollection<SelectCharacterModel> PossibleCharacters { get; set; } = new ObservableCollection<SelectCharacterModel>();
 
@@ -110,13 +110,22 @@ namespace Game.Views
                 return;
             }
 
+            if (preIndex == args.SelectedItemIndex)
+            {
+                CharacterSourceList.SelectedItem = null;
+                preIndex = -1;
+            }
+            else
+            {
+                preIndex = args.SelectedItemIndex;
+            }
+
             if (data.IsSelected)
             {
                 data.IsSelected = false;
 
                 // Manually deselect Character.
                 PartyListView.SelectedItem = null;
-                CharacterSourceList.SelectedItem = null;
 
                 // Remove the character from the list
                 var character = BattleEngineViewModel.Instance.DatabaseCharacterList.FirstOrDefault(m => m.Id.Equals(data.Id));
