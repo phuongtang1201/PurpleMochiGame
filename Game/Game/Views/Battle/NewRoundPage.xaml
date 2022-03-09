@@ -40,10 +40,11 @@
 
                     <Grid>
                         <Button Grid.Row="0" Grid.Column="0"
-                            Style="{StaticResource BattleButton}" 
-                            WidthRequest="200"
-                            FontSize="30"
-                            Text="Reassign Items"/>
+                                Style="{StaticResource BattleButton}" 
+                                Clicked="AddItems_Clicked"
+                                WidthRequest="200"
+                                FontSize="30"
+                                Text="Reassign Items"/>
 
                         <Button Grid.Row="0" Grid.Column="1"
                             Clicked="BeginButton_Clicked" 
