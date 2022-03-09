@@ -23,14 +23,14 @@
                         <Label 
                             Text="Food Cooked" Style="{StaticResource CenterMessageStyle}"/>
                         <FlexLayout x:Name="MonsterListFrame"
-                                    JustifyContent="Start"
-                                    AlignContent="Start"
+                                    JustifyContent="Center"
+                                    AlignContent="Center"
                                     Wrap="Wrap"/>
 
                         <Label Text="Chefs Cooked" Style="{StaticResource CenterMessageStyle}"/>
                         <FlexLayout x:Name="CharacterListFrame"
-                                    JustifyContent="Start"
-                                    AlignContent="Start"
+                                    JustifyContent="Center"
+                                    AlignContent="Center"
                                     Wrap="Wrap"/>
 
                         <Label Text="Items Found" Style="{StaticResource CenterMessageStyle}"/>
