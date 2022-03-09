@@ -98,6 +98,7 @@
                     Clicked="CloseButton_Clicked" 
                     Text="Back"
                     WidthRequest="90"
+                    CornerRadius="15"
                     VerticalOptions="End"/>
                 
             <Button Grid.Row="0" Grid.Column="1"
