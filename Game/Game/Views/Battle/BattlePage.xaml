@@ -41,9 +41,12 @@
                                      VerticalOptions="Start" 
                                      HorizontalOptions="FillAndExpand">
 
-                            <StackLayout x:Name="MonsterBox" 
-                                         Style="{StaticResource HorizontalStack}" 
-                                         HorizontalOptions="Center"/>
+                            <FlexLayout x:Name="MonsterBox"
+                                    JustifyContent="Center"
+                                    AlignContent="Center"
+                                    Wrap="Wrap"/>
+
+                            
 
                             <StackLayout x:Name="BattlePlayerVerticalBox" 
                                          Margin="0,30,0,0"  
