@@ -137,15 +137,15 @@
                     </StackLayout>
                 </ScrollView>
                 <StackLayout Style="{StaticResource HorizontalStack}" 
-                            HorizontalOptions="Center">
+                             HorizontalOptions="Center">
 
                     <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
-                                         Source="cancel.png"
-                                         Clicked="Cancel_Clicked"/>
+                                 Source="cancel.png"
+                                 Clicked="Cancel_Clicked"/>
 
                     <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
-                                         Source="update.png"
-                                         Clicked="Save_Clicked"/>
+                                 Source="update.png"
+                                 Clicked="Save_Clicked"/>
 
                 </StackLayout>
             </StackLayout>
@@ -162,11 +162,11 @@
                     <Label x:Name="PopupLocationLabel" Style="{StaticResource PopupItemTextStyle}" />
 
                     <ListView x:Name="PopupLocationItemListView" 
-                                      CachingStrategy="RecycleElement"
-                                      ItemSelected="OnPopupItemSelected"
-                                      HasUnevenRows="true"
-                                      Margin="5,0,5,0"
-                                      RowHeight="80">
+                              CachingStrategy="RecycleElement"
+                              ItemSelected="OnPopupItemSelected"
+                              HasUnevenRows="true"
+                              Margin="5,0,5,0"
+                              RowHeight="80">
 
                         <ListView.ItemTemplate>
                             <DataTemplate>
@@ -184,27 +184,27 @@
                                             </Grid.RowDefinitions>
 
                                             <Image  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
-                                                        Source="{Binding ImageURI}"
-                                                        Style="{StaticResource ImageSmallStyle}"
-                                                        VerticalOptions="CenterAndExpand"/>
+                                                    Source="{Binding ImageURI}"
+                                                    Style="{StaticResource ImageSmallStyle}"
+                                                    VerticalOptions="CenterAndExpand"/>
 
                                             <Label Grid.Column="1" Grid.Row="0"
-                                                       Text="{Binding Name}" 
-                                                       Style="{StaticResource ListStyle}"/>
+                                                   Text="{Binding Name}" 
+                                                   Style="{StaticResource ListStyle}"/>
 
                                             <Label Grid.Column="1" Grid.Row="1"
                                                    Text="{Binding Description}" 
                                                    Style="{StaticResource ListDescription}"/>
 
-                                            <StackLayout Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
+                                            <StackLayout Grid.Column="2" Grid.Row="1" Orientation="Horizontal">
                                                 <Label Text="{Binding Attribute}" Style="{StaticResource ListDescription}"/>
                                                 <Label Text="{Binding Value}" Style="{StaticResource ListDescription}"/>
                                             </StackLayout>
 
                                             <Label Grid.Column="1" Grid.Row="2"
-                                                       Text="{Binding Description}" 
-                                                       Style="{StaticResource ListStyle}"
-                                                       FontSize="Micro"/>
+                                                   Text="{Binding Description}" 
+                                                   Style="{StaticResource ListStyle}"
+                                                   FontSize="Micro"/>
                                         </Grid>
                                     </Frame>
                                 </ViewCell>
@@ -213,8 +213,8 @@
                     </ListView>
 
                     <Button x:Name="PopupCloseButton" 
-                                    Clicked="ClosePopup_Clicked" 
-                                    Text="Confirm"/>
+                            Clicked="ClosePopup_Clicked" 
+                            Text="Confirm"/>
                 </StackLayout>
             </StackLayout>
             
