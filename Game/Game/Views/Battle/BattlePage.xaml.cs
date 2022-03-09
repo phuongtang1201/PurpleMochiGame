@@ -70,17 +70,17 @@ namespace Game.Views
         /// </summary>
         public void DrawPlayerBoxes()
         {
-            //var CharacterBoxList = CharacterBox.Children.ToList();
-            //foreach (var data in CharacterBoxList)
-            //{
-            //    _ = CharacterBox.Children.Remove(data);
-            //}
+            var CharacterBoxList = CharacterBox.Children.ToList();
+            foreach (var data in CharacterBoxList)
+            {
+                _ = CharacterBox.Children.Remove(data);
+            }
 
             //// Draw the Characters
-            //foreach (var data in BattleEngineViewModel.Instance.Engine.EngineSettings.PlayerList.Where(m => m.PlayerType == PlayerTypeEnum.Character).ToList())
-            //{
-            //    CharacterBox.Children.Add(PlayerInfoDisplayBox(data));
-            //}
+            foreach (var data in BattleEngineViewModel.Instance.Engine.EngineSettings.PlayerList.Where(m => m.PlayerType == PlayerTypeEnum.Character).ToList())
+            {
+                CharacterBox.Children.Add(PlayerInfoDisplayBox(data));
+            }
 
             var MonsterBoxList = MonsterBox.Children.ToList();
             foreach (var data in MonsterBoxList)

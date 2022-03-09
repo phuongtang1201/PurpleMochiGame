@@ -103,6 +103,9 @@
                                                FontSize="Small"/>
                                     </StackLayout>
                                 </StackLayout>
+                                <StackLayout x:Name="CharacterBox" 
+                                         Style="{StaticResource HorizontalStack}" 
+                                         HorizontalOptions="Center"/>
 
                             </StackLayout>
 
