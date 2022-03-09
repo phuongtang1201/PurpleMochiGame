@@ -448,5 +448,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\watermelon.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\oven_off_background.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
