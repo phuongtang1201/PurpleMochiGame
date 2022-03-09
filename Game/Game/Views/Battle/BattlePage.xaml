@@ -19,12 +19,12 @@
     <ContentPage.Content>
         <ScrollView>
             <AbsoluteLayout IsVisible="True"
-                            HorizontalOptions="CenterAndExpand"
+                            HorizontalOptions="FillAndExpand"
                             VerticalOptions="FillAndExpand">
 
                 <!--The Game UI Screen -->
                 <StackLayout VerticalOptions="FillAndExpand"
-                             HorizontalOptions="CenterAndExpand"
+                             HorizontalOptions="FillAndExpand"
                              x:Name="GameUIDisplay" 
                              IsVisible="True" 
                              AbsoluteLayout.LayoutBounds="1,1,1,1" 
@@ -32,13 +32,13 @@
 
                     <!--The Top of the Battle UI Holds the List of Players-->
                     <StackLayout VerticalOptions="Start" 
-                                 HorizontalOptions="CenterAndExpand"
+                                 HorizontalOptions="FillAndExpand"
                                  x:Name="TopPlayerDisplay">
                         <StackLayout Style="{StaticResource VerticalStack}"
                                      x:Name="GamePlayersTopDisplay" 
                                      IsVisible="true" 
                                      VerticalOptions="Start" 
-                                     HorizontalOptions="CenterAndExpand">
+                                     HorizontalOptions="FillAndExpand">
 
                             <StackLayout x:Name="MonsterBox" 
                                          Style="{StaticResource HorizontalStack}" 
