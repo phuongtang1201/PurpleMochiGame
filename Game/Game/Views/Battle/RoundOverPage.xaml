@@ -40,8 +40,8 @@
                             <Label Text="0" x:Name="TotalFound" Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
                         <FlexLayout x:Name="ItemListFoundFrame"
-                                    JustifyContent="Start"
-                                    AlignContent="Start"
+                                    JustifyContent="Center"
+                                    AlignContent="Center"
                                     Wrap="Wrap"/>
 
                         <Button Clicked="AutoAssignButton_Clicked" Text="Assign Items"/>
