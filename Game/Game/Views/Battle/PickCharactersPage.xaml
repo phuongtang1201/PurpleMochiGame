@@ -45,11 +45,10 @@
                                                         <RowDefinition Height="auto"/>
                                                     </Grid.RowDefinitions>
 
-                                                    <Frame 
-                                                        Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
-                                                        Style="{Binding FrameStyle, Mode=TwoWay}"
-                                                        IsVisible="{Binding IsSelected, Mode=TwoWay}"
-                                                    />
+                                                    <Frame Grid.Column="0" Grid.Row="0" 
+                                                           Grid.RowSpan="3" Grid.ColumnSpan="5"
+                                                           Style="{Binding FrameStyle, Mode=TwoWay}"
+                                                           IsVisible="{Binding IsSelected, Mode=TwoWay}" />
 
                                                     <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
                                                            Source="{Binding ImageURI}"
@@ -57,11 +56,13 @@
                                                            VerticalOptions="CenterAndExpand"/>
 
                                                     <Label Grid.Column="1" Grid.Row="0"
+                                                           Grid.ColumnSpan="4"
                                                            Text="{Binding Name}" 
                                                            Style="{StaticResource ListStyle}"
                                                            FontAttributes="Bold"/>
 
                                                     <Label Grid.Column="1" Grid.Row="1"
+                                                           Grid.ColumnSpan="4"
                                                            Text="{Binding Description}" 
                                                            Style="{StaticResource ListDescription}" />
 
