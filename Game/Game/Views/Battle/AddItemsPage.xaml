@@ -166,7 +166,7 @@
                               ItemSelected="OnPopupItemSelected"
                               HasUnevenRows="true"
                               Margin="5,0,5,0"
-                              RowHeight="80">
+                              >
 
                         <ListView.ItemTemplate>
                             <DataTemplate>
@@ -200,11 +200,6 @@
                                                 <Label Text="{Binding Attribute}" Style="{StaticResource ListDescription}"/>
                                                 <Label Text="{Binding Value}" Style="{StaticResource ListDescription}"/>
                                             </StackLayout>
-
-                                            <Label Grid.Column="1" Grid.Row="2"
-                                                   Text="{Binding Description}" 
-                                                   Style="{StaticResource ListStyle}"
-                                                   FontSize="Micro"/>
                                         </Grid>
                                     </Frame>
                                 </ViewCell>
