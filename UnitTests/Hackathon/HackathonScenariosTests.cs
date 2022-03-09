@@ -413,6 +413,7 @@ namespace Scenario
             var result = EngineViewModel.Engine.EngineSettings.MonsterList[0].Level;
 
             // Reset
+            EngineViewModel.Engine.EngineSettings.BattleSettingsModel.AllowBossMonsters = false;
 
             // Assert
             Assert.AreEqual(result, 20);
