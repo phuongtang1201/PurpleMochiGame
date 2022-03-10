@@ -695,6 +695,16 @@ namespace Game.Views
         }
 
         /// <summary>
+        /// Next Action
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void NextButton_Clicked(object sender, EventArgs e)
+        {
+            NextAttackExample();
+        }
+
+        /// <summary>
         /// Attack Action
         /// </summary>
         /// <param name="sender"></param>
@@ -705,7 +715,7 @@ namespace Game.Views
         }
 
         /// <summary>
-        /// Attack Action
+        /// Heal Action
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
