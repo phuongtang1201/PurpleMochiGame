@@ -523,4 +523,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\change_item.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\close.png" />
+  </ItemGroup>
 </Project>
