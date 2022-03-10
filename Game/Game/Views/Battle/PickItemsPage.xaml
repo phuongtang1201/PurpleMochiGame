@@ -99,15 +99,12 @@
                     VerticalOptions="End"
                     Clicked="CloseButton_Clicked"/>
                 
-            <Button Grid.Row="0" Grid.Column="1"
-                    Style="{StaticResource BattleButton}"
+            <ImageButton Grid.Row="0" Grid.Column="1"
+                    Style="{StaticResource BackNextImageButton}"
                     x:Name="NextButton"
-                    Clicked="NextPage_Clicked" 
-                    Text="Next"
-                    WidthRequest="90"
-                    CornerRadius="15"
-                    FontSize="35"
-                    VerticalOptions="End"/>
+                    Source="next.png"
+                    VerticalOptions="End"
+                    Clicked="NextPage_Clicked"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>
