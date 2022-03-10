@@ -267,37 +267,6 @@ namespace Game.Views
             return ItemStack;
         }
 
-        /// <summary>
-        /// Randomize the Character, keep the level the same
-        /// </summary>
-        /// <returns></returns>
-        public bool RandomizeCharacter()
-        {
-            // Randomize Name
-            ViewModel.Data.Name = RandomPlayerHelper.GetCharacterName();
-            ViewModel.Data.Description = RandomPlayerHelper.GetCharacterDescription();
-
-            // Randomize the Attributes
-            ViewModel.Data.Attack = RandomPlayerHelper.GetAbilityValue();
-            ViewModel.Data.Speed = RandomPlayerHelper.GetAbilityValue();
-            ViewModel.Data.Defense = RandomPlayerHelper.GetAbilityValue();
-
-            // Randomize an Item for Location
-            ViewModel.Data.Head = RandomPlayerHelper.GetItem(ItemLocationEnum.Head);
-            ViewModel.Data.Necklass = RandomPlayerHelper.GetItem(ItemLocationEnum.Necklass);
-            ViewModel.Data.PrimaryHand = RandomPlayerHelper.GetItem(ItemLocationEnum.PrimaryHand);
-            ViewModel.Data.OffHand = RandomPlayerHelper.GetItem(ItemLocationEnum.OffHand);
-            ViewModel.Data.RightFinger = RandomPlayerHelper.GetItem(ItemLocationEnum.Finger);
-            ViewModel.Data.LeftFinger = RandomPlayerHelper.GetItem(ItemLocationEnum.Finger);
-            ViewModel.Data.Feet = RandomPlayerHelper.GetItem(ItemLocationEnum.Feet);
-
-            ViewModel.Data.MaxHealth = RandomPlayerHelper.GetHealth(ViewModel.Data.Level);
-
-            ViewModel.Data.ImageURI = RandomPlayerHelper.GetCharacterImage();
-
-            _ = UpdatePageBindingContext();
-
-            return true;
-        }
+        
     }
 }
