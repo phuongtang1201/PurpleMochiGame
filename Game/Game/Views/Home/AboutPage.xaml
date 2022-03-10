@@ -30,7 +30,7 @@
 
                     <Label Text="Designers: Rachel Bentfield, Abby Smith" 
                            Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" 
-                           LineBreakMode="WordWrap"/>
+                           LineBreakMode="WordWrap" Margin="5"/>
 
                     <Label x:Name="CurrentDateTime" Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  
                            HorizontalTextAlignment="Center" />
