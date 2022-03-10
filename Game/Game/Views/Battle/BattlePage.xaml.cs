@@ -711,7 +711,18 @@ namespace Game.Views
         /// <param name="e"></param>
         public void HealButton_Clicked(object sender, EventArgs e)
         {
-            NextAttackExample();
+            //Select action focused attack for this attacker
+            BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.Ability;
+            BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentActionAbility = AbilityEnum.Heal;
+
+            // Hold the current state
+            var RoundCondition = BattleEngineViewModel.Instance.Engine.Round.RoundNextTurn();
+
+            // Output the Message of what happened.
+            GameMessage();
+
+            // Show the outcome on the Board
+            DrawGameAttackerDefenderBoard();
         }
 
         /// <summary>
