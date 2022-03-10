@@ -205,7 +205,7 @@ namespace Game.Views
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void AllowZombieMonsters_Toggled(object sender, EventArgs e)
+        public void AllowZombieMonsters_Toggled(object sender, EventArgs e)
         {
             // Flip the settings
             if (AllowZombieMonstersSwitch.IsToggled == true)
