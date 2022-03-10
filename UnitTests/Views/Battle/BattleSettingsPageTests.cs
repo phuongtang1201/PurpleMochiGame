@@ -208,6 +208,28 @@ namespace UnitTests.Views
         }
 
         [Test]
+        public void BattleSettingsPage_AllowSlowestFirst_Toggled_True_Default_Should_Pass()
+        {
+            // Arrange
+
+            var control = (Switch)page.FindByName("AllowSlowestFirstSwitch");
+            var current = control.IsToggled;
+
+            ToggledEventArgs args = new ToggledEventArgs(current);
+            page.SlowestFirst_Toggled(null, args);
+
+            control.IsToggled = true;
+
+            // Act
+            page.SlowestFirst_Toggled(null, args);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(!current); // Got to here, so it happened...
+        }
+
+        [Test]
         public void BattleSettingsPage_AllowCriticalMiss_Toggled_Default_Should_Pass()
         {
             // Arrange
