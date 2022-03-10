@@ -63,11 +63,9 @@
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
 
-                            <Button Grid.Row="0" Grid.Column="0"
-                                    Style="{StaticResource BattleButton}"
-                                    WidthRequest="180"
-                                    FontSize="30"
-                                    Text="Change Items"/>
+                            <ImageButton Grid.Row="0" Grid.Column="0"
+                                    Style="{StaticResource ChangeNextImageButton}"
+                                    Source="change_item.png"/>
 
                             <Button Grid.Row="0" Grid.Column="1"
                                     Clicked="CloseButton_Clicked" 
