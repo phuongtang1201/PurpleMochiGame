@@ -123,6 +123,8 @@ namespace Scenario
                             {
                                 Speed = -1, // Will go last...
                                 Level = 1,
+                                Attack = 0,
+                                Defense = 0,
                                 CurrentHealth = 1,
                                 ExperienceTotal = 1,
                                 ExperienceRemaining = 1,
@@ -535,7 +537,7 @@ namespace Scenario
 
             // Reset
             _ = DiceHelper.DisableForcedRolls();
-            EngineViewModel.Engine.EngineSettings.BattleSettingsModel.AllowSlowestFirst = true;
+            EngineViewModel.Engine.EngineSettings.BattleSettingsModel.AllowSlowestFirst = false;
 
             // Assert
             Assert.AreEqual(EngineViewModel.Engine.EngineSettings.PlayerList[3].Name, "Character1");
