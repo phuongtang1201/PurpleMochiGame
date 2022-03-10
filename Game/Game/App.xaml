@@ -418,7 +418,7 @@
                 <Setter Property="Padding" Value="0" />
             </Style>
 
-            <Style TargetType="ImageButton" x:Key="BackBeginButton">
+            <Style TargetType="ImageButton" x:Key="BackBeginImageButton">
                 <Setter Property="WidthRequest" Value="110"/>
                 <Setter Property="HeightRequest" Value="60"/>
                 <Setter Property="Margin" Value="10,0,0,0" />
