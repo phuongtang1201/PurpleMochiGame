@@ -442,6 +442,12 @@
                 <Setter Property="Margin" Value="10,0,0,0" />
             </Style>
 
+            <Style TargetType="ImageButton" x:Key="ChangeNextImageButton">
+                <Setter Property="WidthRequest" Value="180"/>
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="Margin" Value="10,0,0,0" />
+            </Style>
+
             <!-- BoxView -->
             <Style TargetType="BoxView" x:Key="YesNoBoxView">
                 <Setter Property="CornerRadius" Value="5"/>
