@@ -711,6 +711,9 @@ namespace Game.Views
         /// <param name="e"></param>
         public void HealButton_Clicked(object sender, EventArgs e)
         {
+            // If attacker is a Monster, call the next turn
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Monster)
+                NextAttackExample();
             //Select action focused attack for this attacker
             BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.Ability;
             BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentActionAbility = AbilityEnum.Heal;
