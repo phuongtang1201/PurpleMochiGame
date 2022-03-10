@@ -732,6 +732,12 @@ namespace Game.Views
 
                 // Show the outcome on the Board
                 DrawGameAttackerDefenderBoard();
+
+                if (RoundCondition == RoundEnum.NewRound)
+                {
+                    BattleMessages.Text = string.Format("{0} \n{1}", "The round is over, press Next to continue.", BattleMessages.Text);
+                    return;
+                }
             }
             else
             {
