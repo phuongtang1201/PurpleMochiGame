@@ -105,6 +105,7 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(!current); // Got to here, so it happened...
         }
+
         [Test]
         public void BattleSettingsPage_AllowBossMonsters_Toggled_Default_Should_Pass()
         {
@@ -123,7 +124,28 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(!current); // Got to here, so it happened...
         }
-        
+
+        [Test]
+        public void BattleSettingsPage_AllowBossMonsters_Toggled_True_Default_Should_Pass()
+        {
+            // Arrange
+
+            var control = (Switch)page.FindByName("AllowBossMonstersSwitch");
+            var current = control.IsToggled;
+
+            ToggledEventArgs args = new ToggledEventArgs(current);
+            page.AllowBossMonsters_Toggled(null, args);
+
+            control.IsToggled = true;
+
+            // Act
+            page.AllowBossMonsters_Toggled(null, args);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(!current); // Got to here, so it happened...
+        }
 
         [Test]
         public void BattleSettingsPage_AllowCriticalMiss_Toggled_Default_Should_Pass()
