@@ -63,14 +63,14 @@
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
 
-                            <ImageButton Grid.Row="0" Grid.Column="0"
+                            <!--<ImageButton Grid.Row="0" Grid.Column="0"
                                     Style="{StaticResource ChangeNextImageButton}"
-                                    Source="change_item.png"/>
+                                    Source="change_item.png"/>-->
 
                             <ImageButton Grid.Row="0" Grid.Column="1"
-                                    Style="{StaticResource ChangeNextImageButton}"
-                                    Source="begin_round.png"
-                                    Clicked="CloseButton_Clicked"/>
+                                         Style="{StaticResource ChangeNextImageButton}"
+                                         Source="begin_round.png"
+                                         Clicked="CloseButton_Clicked"/>
                         </Grid>
                         
 
@@ -90,11 +90,9 @@
                         VerticalOptions="CenterAndExpand" 
                         HorizontalOptions="CenterAndExpand"
                         WidthRequest="300"
-                        HeightRequest="300"
-                        >
+                        HeightRequest="300">
 
-                    <Frame 
-                             BorderColor="{StaticResource TriciaryTextColor}" Padding="1">
+                    <Frame BorderColor="{StaticResource TriciaryTextColor}" Padding="1">
 
                         <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" Padding="2">
                             <Image x:Name="PopupItemImage" Style="{StaticResource ImageLargeStyle}"/>
@@ -103,7 +101,7 @@
                             <Label x:Name="PopupItemDescription" Style="{StaticResource PopupItemTextStyle}" MaxLines="2" LineBreakMode="WordWrap" />
 
                             <StackLayout Style="{StaticResource HorizontalStack}">
-                                <Label Text="Location : " Style="{StaticResource LabelStyle}" />
+                                <Label Text="Location: " Style="{StaticResource LabelStyle}" />
                                 <Label x:Name="PopupItemLocation" Style="{StaticResource ValueStyle}" />
                             </StackLayout>
 
