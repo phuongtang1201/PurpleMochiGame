@@ -8,10 +8,9 @@
         <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand">
             <StackLayout Style="{StaticResource CardImageTextBox}">
 
-                <ImageButton
-                        Source="cookbook.png"
-                        Style="{StaticResource ImageLargeStyle}"
-                        Clicked="AutobattleButton_Clicked"/>
+                <Image
+                    Source="cookbook.png"
+                    Style="{StaticResource ImageLargeStyle}"/>
 
                 <Button Style="{StaticResource OptionBoxBattleButton}"
                     Text="Begin Battle"
