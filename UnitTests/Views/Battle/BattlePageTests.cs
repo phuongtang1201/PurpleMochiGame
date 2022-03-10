@@ -383,7 +383,6 @@ namespace UnitTests.Views
             BattleEngineViewModel.Instance.Engine.EngineSettings.MonsterList.Clear();
             BattleEngineViewModel.Instance.Engine.EngineSettings.PlayerList.Clear();
 
-            // Arrange
             // Add each model here to warm up and load it.
             _ = Game.Helpers.DataSetsHelper.WarmUp();
 
@@ -400,11 +399,42 @@ namespace UnitTests.Views
 
             _ = BattleEngineViewModel.Instance.Engine.Round.MakePlayerList();
 
-            // Has no Character, so should show end game
-
             // Act
             page.FocusedAttackButton_Clicked(null, null);
             page.FocusedAttackButton_Clicked(null, null);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
+        [Test]
+        public async Task BattlePage_FocusedAttack_No_Items_Should_Pass()
+        {
+            // Arrange
+
+            BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterList.Clear();
+            BattleEngineViewModel.Instance.Engine.EngineSettings.MonsterList.Clear();
+            BattleEngineViewModel.Instance.Engine.EngineSettings.PlayerList.Clear();
+
+            // Arrange
+            // Add each model here to warm up and load it.
+            _ = Game.Helpers.DataSetsHelper.WarmUp();
+
+           
+
+            var data = new PlayerInfoModel();
+
+            // Add the first item
+          
+            BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterList.Add(data);
+
+            _ = BattleEngineViewModel.Instance.Engine.Round.MakePlayerList();
+
+            // Act
+            page.FocusedAttackButton_Clicked(null, null);
+            
 
             // Reset
 
