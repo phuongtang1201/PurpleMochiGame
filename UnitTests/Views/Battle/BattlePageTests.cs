@@ -467,6 +467,19 @@ namespace UnitTests.Views
         }
 
         [Test]
+        public void BattlePage_MonsterInfoDisplayBox_Null_Player_Should_Pass()
+        {
+            //Arrange
+
+            //Act
+            page.MonsterInfoDisplayBox(null);
+
+            //Reset
+
+            //Assert
+            Assert.IsTrue(true);
+        }
+        [Test]
         public void BattlePage_SetAttackerAndDefender_Character_vs_Monster_Should_Pass()
         {
             // Arrange
