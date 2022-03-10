@@ -410,7 +410,7 @@ namespace UnitTests.Views
         }
 
         [Test]
-        public async Task BattlePage_FocusedAttack_No_Items_Should_Pass()
+        public void BattlePage_FocusedAttack_No_Items_Should_Pass()
         {
             // Arrange
 
@@ -435,6 +435,30 @@ namespace UnitTests.Views
             // Act
             page.FocusedAttackButton_Clicked(null, null);
             
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
+        [Test]
+        public void BattlePage_FocusedAttack_GameOver_Should_Pass()
+        {
+            // Arrange
+
+            BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterList.Clear();
+            BattleEngineViewModel.Instance.Engine.EngineSettings.MonsterList.Clear();
+            BattleEngineViewModel.Instance.Engine.EngineSettings.PlayerList.Clear();
+
+            BattleEngineViewModel.Instance.Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel(new MonsterModel()));
+
+            _ = BattleEngineViewModel.Instance.Engine.Round.MakePlayerList();
+
+            // Has no Character, so should show end game
+
+            // Act
+            page.FocusedAttack();
 
             // Reset
 
