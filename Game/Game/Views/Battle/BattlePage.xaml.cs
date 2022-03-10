@@ -711,7 +711,24 @@ namespace Game.Views
         /// <param name="e"></param>
         public void AttackButton_Clicked(object sender, EventArgs e)
         {
-            NextAttackExample();
+            // Get the turn, set the current player and attacker
+            SetAttackerAndDefender();
+
+            // If attacker is a Character, attack
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Monster)
+            {
+                // Set action to attack
+                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.Attack;
+
+                // Hold the current state
+                var RoundCondition = BattleEngineViewModel.Instance.Engine.Round.RoundNextTurn();
+
+                // Output the Message of what happened.
+                GameMessage();
+
+                // Show the outcome on the Board
+                DrawGameAttackerDefenderBoard();
+            }
         }
 
         /// <summary>
