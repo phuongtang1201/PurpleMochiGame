@@ -227,7 +227,7 @@ namespace Game.Views
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void SlowestFirst_Toggled(object sender, EventArgs e)
+        public void SlowestFirst_Toggled(object sender, EventArgs e)
         {
             // Flip the settings
             if (AllowSlowestFirstSwitch.IsToggled == true)
