@@ -13,7 +13,7 @@ namespace UnitTests.Views
     public class AddReadyPageTests
     {
         App app;
-        AddReadyPageTests page;
+        ReadyPage page;
 
         [SetUp]
         public void Setup()
@@ -25,7 +25,7 @@ namespace UnitTests.Views
             app = new App();
             Application.Current = app;
 
-            page = new AddReadyPageTests();
+            page = new ReadyPage();
         }
 
         [TearDown]
@@ -46,6 +46,19 @@ namespace UnitTests.Views
 
             // Assert
             Assert.IsNotNull(result);
+        }
+
+        [Test]
+        public void NewRoundPage__BeginButton_Clicked_Default_Should_Pass()
+        {
+            // Arrange
+            // Act
+            page.BeginButton_Clicked(null, null);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
         }
 
     }
