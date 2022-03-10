@@ -711,8 +711,9 @@ namespace Game.Views
         /// <param name="e"></param>
         public void AttackButton_Clicked(object sender, EventArgs e)
         {
-            // Get the turn, set the current player and attacker
-            SetAttackerAndDefender();
+            // Get the turn, set the current player and attacker if needed
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null)
+                SetAttackerAndDefender();
 
             // If attacker is a Character, attack
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Monster)
@@ -731,7 +732,7 @@ namespace Game.Views
             }
             else
                 // Output message
-                BattleMessages.Text = string.Format("{0} \n{1}", "It's not your turn. Please press Next", BattleMessages.Text);
+                BattleMessages.Text = string.Format("{0} \n{1}", "It's not your turn. Please try again", BattleMessages.Text);
         }
 
         /// <summary>
@@ -741,7 +742,7 @@ namespace Game.Views
         /// <param name="e"></param>
         public void HealButton_Clicked(object sender, EventArgs e)
         {
-            // Get the turn, set the current player and attacker
+            // Get the turn, set the current player and attacker if needed
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null)
                 SetAttackerAndDefender();
 
