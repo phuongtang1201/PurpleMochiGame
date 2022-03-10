@@ -529,4 +529,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\confirm.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\continue.png" />
+  </ItemGroup>
 </Project>
