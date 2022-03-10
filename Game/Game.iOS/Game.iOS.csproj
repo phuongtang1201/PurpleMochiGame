@@ -520,4 +520,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\begin_round.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\change_item.png" />
+  </ItemGroup>
 </Project>
