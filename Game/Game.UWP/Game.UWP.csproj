@@ -142,6 +142,7 @@
     <Content Include="back_big.png" />
     <Content Include="back_small.png" />
     <Content Include="battleboard.png" />
+    <Content Include="begin.png" />
     <Content Include="cancel.png" />
     <Content Include="carrots.gif" />
     <Content Include="carrots.png" />
