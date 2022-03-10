@@ -211,6 +211,25 @@ namespace Game.Engine.EngineGame
         }
 
         /// <summary>
+        /// Decide to use an Ability or not
+        /// 
+        /// Set the Ability
+        /// </summary>
+        /// <param name="Attacker"></param>
+        /// <returns></returns>
+        public bool ChooseToUseHeal(PlayerInfoModel Attacker)
+        {
+            // See if healing is needed.
+            EngineSettings.CurrentActionAbility = Attacker.SelectHealingAbility();
+            if (EngineSettings.CurrentActionAbility == AbilityEnum.Unknown)
+            {
+                EngineSettings.CurrentAction = ActionEnum.Ability;
+                return false;
+            }
+            return true;
+        }
+
+        /// <summary>
         /// Pick the Character to Attack
         /// </summary>
         public override PlayerInfoModel SelectCharacterToAttack()
