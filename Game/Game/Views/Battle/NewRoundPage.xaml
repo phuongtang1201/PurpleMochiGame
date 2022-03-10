@@ -46,11 +46,10 @@
                                 FontSize="30"
                                 Text="Reassign Items"/>
 
-                        <Button Grid.Row="0" Grid.Column="1"
-                            Clicked="BeginButton_Clicked" 
-                            Style="{StaticResource BattleButton}" 
-                            FontSize="30"
-                            Text="Continue"/>
+                        <ImageButton Grid.Row="0" Grid.Column="1"                            
+                            Style="{StaticResource ConfirmContinueImageButton}" 
+                            Source="continue.png"
+                            Clicked="BeginButton_Clicked"/>
                     </Grid>
                 </StackLayout>
             </StackLayout>
