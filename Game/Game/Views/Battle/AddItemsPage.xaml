@@ -134,12 +134,13 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <StackLayout
-                        <Button Grid.Row="0" Grid.Column="1" 
-                                x:Name="PopupCloseButton" 
-                                Style="{StaticResource BattleButton}"
-                                Clicked="ClosePopup_Clicked" 
-                                Text="Confirm"/>
+                    <StackLayout>
+                        <ImageButton Style="{StaticResource ConfirmContinueImageButton}"
+                                     HorizontalOptions="Center"
+                                     x:Name="ContinueButton"
+                                     Source="confirm.png"
+                                     VerticalOptions="End"
+                                     Clicked="ClosePopup_Clicked"/>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
