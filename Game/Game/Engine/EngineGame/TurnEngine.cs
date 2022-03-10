@@ -97,7 +97,10 @@ namespace Game.Engine.EngineGame
                         if (result)
                             UseAbility(Attacker);
                         else
-                            result = Attack(Attacker);
+                        {
+                            Attack(Attacker);
+                            result = true;
+                        }
                         break;
                     }
                     result = UseAbility(Attacker);
