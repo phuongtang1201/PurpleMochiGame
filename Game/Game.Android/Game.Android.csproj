@@ -478,5 +478,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\begin_round.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\change_item.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
