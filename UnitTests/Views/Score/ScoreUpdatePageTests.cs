@@ -153,5 +153,20 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
         }
+
+        [Test]
+        public void ScoreUpdatePage_CreateMonsterDisplayBox_Null_Monster_Should_Pass()
+        {
+            // Arrange
+
+            // Act
+            page.CreateMonsterDisplayBox(null, 0);
+
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
     }
 }
