@@ -305,6 +305,22 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
         }
+        [Test]
+        public void BattlePage_DrawGameBoardAttackerDefender_CurrentAttacker_Is_Monster_Should_Pass()
+        {
+            // Arrange
+
+            _ = BattleEngineViewModel.Instance.Engine.Round.SetCurrentAttacker(new PlayerInfoModel(new MonsterModel { Alive = false }));
+            _ = BattleEngineViewModel.Instance.Engine.Round.SetCurrentDefender(new PlayerInfoModel(new CharacterModel()));
+
+            // Act
+            page.DrawGameBoardAttackerDefenderSection();
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
 
         [Test]
         public void BattlePage_DrawGameBoardAttackerDefender_Invalid_AttackerSource_Null_Should_Pass()
