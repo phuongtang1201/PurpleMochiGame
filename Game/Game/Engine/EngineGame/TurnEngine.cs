@@ -224,8 +224,8 @@ namespace Game.Engine.EngineGame
         /// <returns></returns>
         public bool ChooseToUseHeal(PlayerInfoModel Attacker)
         {
-            // Increase current health by 50%
-            if (Attacker.CurrentHealth < Attacker.MaxHealth)
+            // If current health down by 50%, increase current health by 50%
+            if (Attacker.CurrentHealth < Attacker.MaxHealth / 2)
             {
                 var moreHP = Attacker.CurrentHealth / 2;
                 Attacker.CurrentHealth += moreHP;
