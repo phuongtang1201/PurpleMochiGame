@@ -211,6 +211,7 @@
     <Content Include="mutant_foods.png" />
     <Content Include="neck1.png" />
     <Content Include="neck2.png" />
+    <Content Include="next.png" />
     <Content Include="no.png" />
     <Content Include="nonslip.png" />
     <Content Include="oven_hot_background.png" />
