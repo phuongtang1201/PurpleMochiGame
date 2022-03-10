@@ -42,9 +42,9 @@
                                      HorizontalOptions="FillAndExpand">
 
                             <FlexLayout x:Name="MonsterBox"
-                                    JustifyContent="Center"
-                                    AlignContent="Center"
-                                    Wrap="Wrap"/>
+                                        JustifyContent="SpaceAround"
+                                        AlignContent="SpaceAround"
+                                        Wrap="Wrap"/>
 
                             <StackLayout x:Name="BattlePlayerVerticalBox"  
                                          Style="{StaticResource VerticalStack}" 
@@ -106,9 +106,9 @@
                                     </StackLayout>
                                 </StackLayout>
                                 <FlexLayout x:Name="CharacterBox"
-                                    JustifyContent="Center"
-                                    AlignContent="Center"
-                                    Wrap="Wrap"/>
+                                            JustifyContent="SpaceAround"
+                                            AlignContent="SpaceAround"
+                                            Wrap="Wrap"/>
 
                             </StackLayout>
 
@@ -132,17 +132,16 @@
                     <!-- This is the options box for chefs -->
                     <StackLayout x:Name="OptionBox" Margin="20,0,20,0" IsVisible="false">
                         <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
-                            <Button Text="Pick Enemy" Style="{StaticResource OptionBoxBattleButton}"/>
-                            <Button Text="Focused Attack" Style="{StaticResource OptionBoxBattleButton}" 
-                                    Clicked="FocusedAttackButton_Clicked"/>
-                        </StackLayout>
-
-                        <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
                             <Button Text="Heal" Style="{StaticResource OptionBoxBattleButton}" WidthRequest="103"/>
                             <Button Text="Move" Style="{StaticResource OptionBoxBattleButton}" WidthRequest="103"/>
                             <Button Text="Attack" Style="{StaticResource OptionBoxBattleButton}" WidthRequest="103"
                                 Clicked="AttackButton_Clicked"/>
+                        </StackLayout>
 
+                        <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
+                            <Button Text="Pick Enemy" Style="{StaticResource OptionBoxBattleButton}"/>
+                            <Button Text="Focused Attack" Style="{StaticResource OptionBoxBattleButton}" 
+                                    Clicked="FocusedAttackButton_Clicked"/>
                         </StackLayout>
                     </StackLayout>
 
@@ -187,12 +186,11 @@
                 </StackLayout>
 
                 <!--The Game Over Screen -->
-                <StackLayout 
-                    Style="{StaticResource VerticalStack}"
-                    AbsoluteLayout.LayoutBounds="0.5,0.25,300,300"
-                    AbsoluteLayout.LayoutFlags="PositionProportional" 
-                    x:Name="GameOverDisplay" 
-                    IsVisible="false">
+                <StackLayout Style="{StaticResource VerticalStack}"
+                             AbsoluteLayout.LayoutBounds="0.5,0.25,300,300"
+                             AbsoluteLayout.LayoutFlags="PositionProportional" 
+                             x:Name="GameOverDisplay" 
+                             IsVisible="false">
 
                     <Frame Style="{StaticResource RoundGameOverFrameStyle}" HeightRequest="300">
                         <Grid>
