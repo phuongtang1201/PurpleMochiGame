@@ -738,6 +738,9 @@ namespace Game.Views
         /// <param name="e"></param>
         public void HealButton_Clicked(object sender, EventArgs e)
         {
+            // Get the turn, set the current player and attacker
+            SetAttackerAndDefender();
+
             // If attacker is a Monster, call the next turn
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Monster)
             {
