@@ -514,4 +514,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\back_small.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\begin.png" />
+  </ItemGroup>
 </Project>
