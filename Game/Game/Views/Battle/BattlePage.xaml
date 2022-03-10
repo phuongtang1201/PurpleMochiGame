@@ -145,7 +145,7 @@
                         </StackLayout>
 
                         <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
-                            <Button Text="Pick Enemy" Style="{StaticResource OptionBoxBattleButton}"/>
+                           <!-- <Button Text="Pick Enemy" Style="{StaticResource OptionBoxBattleButton}"/>-->
                             <Button Text="Focused Attack" Style="{StaticResource OptionBoxBattleButton}" 
                                     Clicked="FocusedAttackButton_Clicked"/>
                         </StackLayout>
