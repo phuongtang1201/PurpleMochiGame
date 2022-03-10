@@ -705,6 +705,16 @@ namespace Game.Views
         }
 
         /// <summary>
+        /// Attack Action
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void HealButton_Clicked(object sender, EventArgs e)
+        {
+            NextAttackExample();
+        }
+
+        /// <summary>
         /// Settings Page
         /// </summary>
         /// <param name="sender"></param>
