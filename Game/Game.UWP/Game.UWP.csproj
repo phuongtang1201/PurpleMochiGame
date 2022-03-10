@@ -140,6 +140,7 @@
     <Content Include="autobattle.png" />
     <Content Include="auto_battle.png" />
     <Content Include="back_big.png" />
+    <Content Include="back_small.png" />
     <Content Include="battleboard.png" />
     <Content Include="cancel.png" />
     <Content Include="carrots.gif" />
