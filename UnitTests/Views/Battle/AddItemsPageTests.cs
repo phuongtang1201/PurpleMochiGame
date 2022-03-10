@@ -6,6 +6,7 @@ using Xamarin.Forms.Mocks;
 using Xamarin.Forms;
 using Game.Helpers;
 using Game.Models;
+using Game.ViewModels;
 
 namespace UnitTests.Views
 {
@@ -13,7 +14,7 @@ namespace UnitTests.Views
     public class AddItemsPageTests
     {
         App app;
-        AddItemsPageTests page;
+        AddItemsPage page;
 
         [SetUp]
         public void Setup()
@@ -25,7 +26,7 @@ namespace UnitTests.Views
             app = new App();
             Application.Current = app;
 
-            page = new AddItemsPageTests();
+            page = new AddItemsPage(new GenericViewModel<CharacterModel>(new CharacterModel()));
         }
 
         [TearDown]
