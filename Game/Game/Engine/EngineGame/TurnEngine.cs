@@ -93,7 +93,7 @@ namespace Game.Engine.EngineGame
                     }
                     else if (EngineSettings.CurrentActionAbility == AbilityEnum.Heal && Attacker.PlayerType != PlayerTypeEnum.Monster)
                     {
-                        ChooseToUseHeal(Attacker);
+                        result = ChooseToUseHeal(Attacker);
                         break;
                     }
                     result = UseAbility(Attacker);
