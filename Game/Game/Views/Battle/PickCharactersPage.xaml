@@ -97,12 +97,12 @@
                 </StackLayout>
             </ScrollView>
 
-            <Button Style="{StaticResource BattleButton}"
+            <ImageButton Style="{StaticResource ConfirmContinueImageButton}"
                     x:Name="BeginBattleButton"
-                    Clicked="BattleButton_Clicked" 
-                    Text="Confirm"
+                    Source="confirm.png"
                     IsEnabled="False"
-                    VerticalOptions="End"/>
+                    VerticalOptions="End"
+                    Clicked="BattleButton_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
