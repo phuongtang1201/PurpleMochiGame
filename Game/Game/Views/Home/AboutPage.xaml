@@ -22,7 +22,7 @@
                            HorizontalOptions="Center"  HorizontalTextAlignment="Center" />
                     
                     <Label Text="Developed by the Purple Mochi team" Style="{StaticResource HeaderStyle}" 
-                           HorizontalOptions="Center"  HorizontalTextAlignment="Center" FontSize="30"/>
+                           HorizontalOptions="Center"  HorizontalTextAlignment="Center" FontSize="30" Margin="5"/>
                     
                     <Label Text="Developers: Erika Skornia-Olsen, Phuong Tang, Veronica Carpenter" 
                            Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" 
