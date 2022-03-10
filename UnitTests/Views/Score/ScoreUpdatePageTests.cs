@@ -123,5 +123,20 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
         }
+
+        [Test]
+        public void ScoreUpdatePage_CreateCharacterDisplayBox_Null_Player_Should_Pass()
+        {
+            // Arrange
+
+            // Act
+            page.CreateCharacterDisplayBox(null);
+
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
     }
 }
