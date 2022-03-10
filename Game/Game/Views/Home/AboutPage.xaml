@@ -28,7 +28,7 @@
                            Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" 
                            LineBreakMode="WordWrap"/>
 
-                    <Label Text="Designers: Rachel Bentfield, Abigail Smith" 
+                    <Label Text="Designers: Rachel Bentfield, Abby Smith" 
                            Style="{StaticResource MessageStyle}" HorizontalOptions="Center"  HorizontalTextAlignment="Center" 
                            LineBreakMode="WordWrap"/>
 
