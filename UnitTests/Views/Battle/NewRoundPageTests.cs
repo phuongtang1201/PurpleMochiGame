@@ -77,6 +77,19 @@ namespace UnitTests.Views
         }
 
         [Test]
+        public void NewRoundPage_AddItems_Clicked_Default_Should_Pass()
+        {
+            // Arrange
+            // Act
+            page.AddItems_Clicked(null, null);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
+        [Test]
         public void NewRoundPage_CreatePlayerDisplayBox_Valid_Should_Pass()
         {
             // Arrange
