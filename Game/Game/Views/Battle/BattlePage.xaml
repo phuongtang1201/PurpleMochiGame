@@ -208,7 +208,8 @@
                             <Label Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"
                                    Grid.ColumnSpan="2" Text="You've been cooked!"
                                    LineBreakMode="WordWrap" 
-                                   Style="{StaticResource CenterMessageExtraLargeStyle}"/>
+                                   Style="{StaticResource CenterMessageExtraLargeStyle}"
+                                   Margin="0,10,0,10"/>
 
                             <Button Grid.Row="2" Grid.Column="0"
                                     x:Name="ShowScoreButton" 
