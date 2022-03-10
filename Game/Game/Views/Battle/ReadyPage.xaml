@@ -31,11 +31,10 @@
                                    Margin="0,10,0,10"
                                    Style="{StaticResource CenterMessageExtraLargeStyle}"/>
 
-                            <Button Grid.Row="1" Grid.Column="0"
-                                    Style="{StaticResource BattleButton}" 
-                                    BackgroundColor="LightBlue"
-                                    WidthRequest="110"
-                                    Clicked="CloseButton_Clicked"  Text="BACK"/>
+                            <ImageButton Grid.Row="1" Grid.Column="0"
+                                    Style="{StaticResource BackBeginImageButton}" 
+                                    Source="back_big.png"
+                                    Clicked="CloseButton_Clicked"/>
 
                             <Button Grid.Row="1" Grid.Column="1"
                                     Clicked="BeginButton_Clicked" Text="BEGIN"
