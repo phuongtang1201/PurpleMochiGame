@@ -193,6 +193,9 @@
 
                     <Frame Style="{StaticResource RoundGameOverFrameStyle}" HeightRequest="300">
                         <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
                             <BoxView Style="{StaticResource FlexLayoutBoxView}"
                                      Grid.ColumnSpan="2" Grid.RowSpan="2" />
 
@@ -201,14 +204,11 @@
                                    Style="{StaticResource CenterMessageExtraLargeStyle}"/>
 
                             <Label Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"
-                                   Grid.ColumnSpan="2" Text="You've been"
+                                   Grid.ColumnSpan="2" Text="You've been cooked!"
+                                   LineBreakMode="WordWrap" 
                                    Style="{StaticResource CenterMessageExtraLargeStyle}"/>
 
-                            <Label Grid.Row="2" Grid.Column="0" HorizontalOptions="Center"
-                                   Grid.ColumnSpan="2" Text="cooked!"
-                                   Style="{StaticResource CenterMessageExtraLargeStyle}"/>
-
-                            <Button Grid.Row="3" Grid.Column="0"
+                            <Button Grid.Row="2" Grid.Column="0"
                                     x:Name="ShowScoreButton" 
                                     Style="{StaticResource BattleButton}" 
                                     Text="Score" 
@@ -216,7 +216,7 @@
                                     BackgroundColor="LightBlue"
                                     Clicked="ShowScoreButton_Clicked"/>
 
-                            <Button Grid.Row="3" Grid.Column="1"
+                            <Button Grid.Row="2" Grid.Column="1"
                                     x:Name="ExitButton" 
                                     Style="{StaticResource BattleButton}" 
                                     Text="Exit" 
