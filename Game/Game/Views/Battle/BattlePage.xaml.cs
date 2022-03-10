@@ -731,8 +731,13 @@ namespace Game.Views
                 DrawGameAttackerDefenderBoard();
             }
             else
+            {
                 // Output message
                 BattleMessages.Text = string.Format("{0} \n{1}", "It's not your turn. Please try again", BattleMessages.Text);
+
+                // Call next turn
+                NextAttackExample();
+            }
         }
 
         /// <summary>
