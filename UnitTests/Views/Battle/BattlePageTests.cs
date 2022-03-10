@@ -92,6 +92,20 @@ namespace UnitTests.Views
         }
 
         [Test]
+        public void BattlePage_FocusedAttackButton_Clicked_Default_Should_Pass()
+        {
+            // Arrange
+
+            // Act
+            page.FocusedAttackButton_Clicked(null, null);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
+        [Test]
         public void BattlePage_ShowScoreButton_Clicked_Default_Should_Pass()
         {
             // Arrange
