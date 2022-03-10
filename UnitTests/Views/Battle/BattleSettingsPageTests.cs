@@ -148,6 +148,25 @@ namespace UnitTests.Views
         }
 
         [Test]
+        public void BattleSettingsPage_AllowZombieMonsters_Toggled_Default_Should_Pass()
+        {
+            // Arrange
+
+            var control = (Switch)page.FindByName("AllowZombieMonstersSwitch");
+            var current = control.IsToggled;
+             
+            ToggledEventArgs args = new ToggledEventArgs(current);
+
+            // Act
+            page.AllowZombieMonsters_Toggled(null, args);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(!current); // Got to here, so it happened...
+        }
+
+        [Test]
         public void BattleSettingsPage_AllowCriticalMiss_Toggled_Default_Should_Pass()
         {
             // Arrange
