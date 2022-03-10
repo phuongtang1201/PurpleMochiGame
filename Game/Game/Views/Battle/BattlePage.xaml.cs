@@ -949,10 +949,11 @@ namespace Game.Views
         /// <param name="e"></param>
         public void FocusedAttackButton_Clicked(object sender, EventArgs e)
         {
-            BattleEngineViewModel.Instance.Engine.EngineSettings.BattleStateEnum = BattleStateEnum.Battling;
+            //BattleEngineViewModel.Instance.Engine.EngineSettings.BattleStateEnum = BattleStateEnum.Battling;
 
             // Get the turn, set the current player and attacker to match
-            SetAttackerAndDefender();
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null)
+                SetAttackerAndDefender();
 
             //if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Character)
             //{
@@ -961,7 +962,7 @@ namespace Game.Views
             //}
 
             //If no equipped items, then do the regular attack
-            if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ItemsCount() == 0)
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ItemsCount() == 0)
             {
                 NextAttackExample();
                 return;
