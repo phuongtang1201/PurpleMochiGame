@@ -215,12 +215,10 @@
                                    Style="{StaticResource CenterMessageExtraLargeStyle}"
                                    Margin="0,10,0,10"/>
 
-                            <Button Grid.Row="2" Grid.Column="0"
+                            <ImageButton Grid.Row="2" Grid.Column="0"
                                     x:Name="ShowScoreButton" 
-                                    Style="{StaticResource BattleButton}" 
-                                    Text="Score" 
-                                    WidthRequest="110"
-                                    BackgroundColor="LightBlue"
+                                    Style="{StaticResource BackBeginScoreExitImageButton}" 
+                                    Source="score.png"
                                     Clicked="ShowScoreButton_Clicked"/>
 
                             <Button Grid.Row="2" Grid.Column="1"
