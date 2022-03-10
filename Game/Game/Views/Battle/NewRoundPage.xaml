@@ -39,12 +39,10 @@
                         Style="{StaticResource HomeImageButton}"/>
 
                     <Grid>
-                        <Button Grid.Row="0" Grid.Column="0"
-                                Style="{StaticResource BattleButton}" 
-                                Clicked="AddItems_Clicked"
-                                WidthRequest="200"
-                                FontSize="30"
-                                Text="Reassign Items"/>
+                        <ImageButton Grid.Row="0" Grid.Column="0"
+                                Style="{StaticResource ReassignImageButton}" 
+                                Source="reassign_items.png"
+                                Clicked="AddItems_Clicked"/>
 
                         <ImageButton Grid.Row="0" Grid.Column="1"                            
                             Style="{StaticResource ConfirmContinueImageButton}" 
