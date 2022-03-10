@@ -147,20 +147,20 @@ namespace Game.Views
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public bool SelectMonster_Clicked(PlayerInfoModel data)
-        {
-            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null)
-            {
-                return false;
-            }
+        //public bool SelectMonster_Clicked(PlayerInfoModel data)
+        //{
+        //    if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null)
+        //    {
+        //        return false;
+        //    }
 
-            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Character)
-            {
-                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender = data;
-            }
-            DrawGameBoardAttackerDefenderSection();
-            return true;
-        }
+        //    if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Character)
+        //    {
+        //        BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender = data;
+        //    }
+        //    DrawGameBoardAttackerDefenderSection();
+        //    return true;
+        //}
 
         /// <summary>
         /// Put the Player into a Display Box
