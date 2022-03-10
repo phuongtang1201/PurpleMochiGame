@@ -68,5 +68,23 @@ namespace UnitTests.Views
             Assert.IsTrue(true); // Got to here, so it happened...
         }
 
+        [Test]
+        public void AddItemsPage_OnPopupItemSelected_Clicked_Default_Should_Pass()
+        {
+            // Arrange
+
+            var data = new ItemModel();
+
+            var selectedCharacterChangedEventArgs = new SelectedItemChangedEventArgs(data, 0);
+
+            // Act
+            page.OnPopupItemSelected(null, selectedCharacterChangedEventArgs);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
+
     }
 }
