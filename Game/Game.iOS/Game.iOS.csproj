@@ -532,4 +532,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\continue.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\exit.png" />
+  </ItemGroup>
 </Project>
