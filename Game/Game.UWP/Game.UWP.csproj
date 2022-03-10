@@ -158,6 +158,7 @@
     <Content Include="close.png" />
     <Content Include="coffee.png" />
     <Content Include="confirm.png" />
+    <Content Include="continue.png" />
     <Content Include="cookbook.png" />
     <Content Include="create.png" />
     <Content Include="d10.png" />
