@@ -58,5 +58,18 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
         }
+
+        [Test]
+        public void PickItemsPage_NextPage_Clicked_Default_Should_Pass()
+        {
+            // Arrange
+            // Act
+            page.NextPage_Clicked(null, null);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
     }
 }
