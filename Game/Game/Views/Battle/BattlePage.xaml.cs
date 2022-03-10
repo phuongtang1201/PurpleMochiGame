@@ -128,7 +128,7 @@ namespace Game.Views
             };
 
             //When click the button, select this monster as target
-            PlayerImage.Clicked += (sender, args) => SelectMonster_Clicked(data);
+        //    PlayerImage.Clicked += (sender, args) => SelectMonster_Clicked(data);
 
             // Put the Image Button and Text inside a layout
             var PlayerStack = new StackLayout
