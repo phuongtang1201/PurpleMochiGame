@@ -430,6 +430,12 @@
                 <Setter Property="Margin" Value="10,0,0,0" />
             </Style>
 
+            <Style TargetType="ImageButton" x:Key="ReassignImageButton">
+                <Setter Property="WidthRequest" Value="200"/>
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="Margin" Value="10,0,0,0" />
+            </Style>
+
             <Style TargetType="ImageButton" x:Key="BackNextImageButton">
                 <Setter Property="WidthRequest" Value="90"/>
                 <Setter Property="HeightRequest" Value="60"/>
