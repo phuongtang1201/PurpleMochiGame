@@ -20,7 +20,7 @@
                 
                 </StackLayout>
 
-                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="70,15,70,0">
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="70,0,70,0">
 
                     <ImageButton Source="play.png"
                                  Style="{StaticResource HomeImageButton}"
