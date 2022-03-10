@@ -129,6 +129,9 @@ namespace Scenario
                                 Name = "Mike",
                             });
 
+            // Clear character list
+            EngineViewModel.Engine.EngineSettings.CharacterList.Clear();
+
             EngineViewModel.Engine.EngineSettings.CharacterList.Add(CharacterPlayerMike);
 
             // Set Monster Conditions
