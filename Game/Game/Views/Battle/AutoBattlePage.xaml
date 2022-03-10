@@ -13,9 +13,11 @@
                         Style="{StaticResource ImageLargeStyle}"
                         Clicked="AutobattleButton_Clicked"/>
 
-                <Label 
-                        Text="Begin Battle"
-                        Style="{StaticResource CenterMessageStyle}"/>
+                <Button Style="{StaticResource OptionBoxBattleButton}"
+                    Text="Begin Battle"
+                    WidthRequest="120"
+                    Clicked="AutobattleButton_Clicked"/>
+  
             </StackLayout>
 
             <StackLayout Style="{StaticResource CardImageTextBox}">
