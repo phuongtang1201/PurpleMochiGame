@@ -16,12 +16,11 @@
                 <ScrollView x:Name="ScrollView">
 
                     <StackLayout Style="{StaticResource VerticalStack}"
-                         Spacing="30"
-                         VerticalOptions="FillAndExpand"
-                         HorizontalOptions="FillAndExpand">
+                                 Spacing="30"
+                                 VerticalOptions="FillAndExpand"
+                                 HorizontalOptions="FillAndExpand">
 
-                        <Label 
-                            Text="Food Cooked" Style="{StaticResource CenterMessageStyle}"/>
+                        <Label Text="Food Cooked" Style="{StaticResource CenterMessageStyle}"/>
                         <FlexLayout x:Name="MonsterListFrame"
                                     JustifyContent="Center"
                                     AlignContent="Center"
@@ -44,7 +43,10 @@
                                     AlignContent="Center"
                                     Wrap="Wrap"/>
 
-                        <Button Clicked="AutoAssignButton_Clicked" Text="Assign Items"/>
+                        <ImageButton Style="{StaticResource ChangeNextImageButton}"
+                                     Source="change_item.png"
+                                     Clicked="AutoAssignButton_Clicked" />
+                        <!--<Button Clicked="AutoAssignButton_Clicked" Text="Assign Items"/>-->
 
                         <Label Text="Items Collected" Style="{StaticResource CenterMessageStyle}"/>
                         
@@ -79,26 +81,27 @@
             </StackLayout>
 
             <!--The Item Popup-->
-            <StackLayout 
-                    x:Name="PopupLoadingView" 
-                    BackgroundColor="{StaticResource PageBackgroundColor}" 
-                    IsVisible="false" 
-                    AbsoluteLayout.LayoutBounds=".5, .5,.5,.5" 
-                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout x:Name="PopupLoadingView" 
+                         BackgroundColor="{StaticResource PageBackgroundColor}" 
+                         IsVisible="false" 
+                         AbsoluteLayout.LayoutBounds=".5, .5,.5,.5" 
+                         AbsoluteLayout.LayoutFlags="All">
 
-                <StackLayout 
-                        VerticalOptions="CenterAndExpand" 
-                        HorizontalOptions="CenterAndExpand"
-                        WidthRequest="300"
-                        HeightRequest="300">
+                <StackLayout VerticalOptions="CenterAndExpand" 
+                             HorizontalOptions="CenterAndExpand"
+                             WidthRequest="300"
+                             HeightRequest="300">
 
                     <Frame BorderColor="{StaticResource TriciaryTextColor}" Padding="1">
 
-                        <StackLayout Style="{StaticResource VerticalStack}" HorizontalOptions="CenterAndExpand" Padding="2">
+                        <StackLayout Style="{StaticResource VerticalStack}" 
+                                     HorizontalOptions="CenterAndExpand" Padding="2">
                             <Image x:Name="PopupItemImage" Style="{StaticResource ImageLargeStyle}"/>
 
-                            <Label x:Name="PopupItemName" Style="{StaticResource PopupItemTextStyle}" MaxLines="2" LineBreakMode="WordWrap" />
-                            <Label x:Name="PopupItemDescription" Style="{StaticResource PopupItemTextStyle}" MaxLines="2" LineBreakMode="WordWrap" />
+                            <Label x:Name="PopupItemName" Style="{StaticResource PopupItemTextStyle}" 
+                                   MaxLines="2" LineBreakMode="WordWrap" />
+                            <Label x:Name="PopupItemDescription" Style="{StaticResource PopupItemTextStyle}" 
+                                   MaxLines="2" LineBreakMode="WordWrap" />
 
                             <StackLayout Style="{StaticResource HorizontalStack}">
                                 <Label Text="Location: " Style="{StaticResource LabelStyle}" />
@@ -111,8 +114,8 @@
                             </StackLayout>
 
                             <Button x:Name="PopupCloseButton" 
-                                Clicked="ClosePopup_Clicked" 
-                                Text="Close"/>
+                                    Clicked="ClosePopup_Clicked" 
+                                    Text="Close"/>
                         </StackLayout>
                     </Frame>
                 </StackLayout>
