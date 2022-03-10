@@ -742,13 +742,15 @@ namespace Game.Views
         public void HealButton_Clicked(object sender, EventArgs e)
         {
             // Get the turn, set the current player and attacker
-            SetAttackerAndDefender();
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null)
+                SetAttackerAndDefender();
 
-            // If attacker is a Monster, call the next turn
+            // If attacker is a character, heal
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Monster)
             {
-                //Select action focused attack for this attacker
+                // Select action ability for this attacker
                 BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.Ability;
+                // Select heal ability
                 BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentActionAbility = AbilityEnum.Heal;
 
                 // Hold the current state
@@ -761,8 +763,13 @@ namespace Game.Views
                 DrawGameAttackerDefenderBoard();
             }
             else
+            {
                 // Output message
-                BattleMessages.Text = string.Format("{0} \n{1}", "It's not your turn. Please press Next", BattleMessages.Text);
+                BattleMessages.Text = string.Format("{0} \n{1}", "It's not your turn. Please try again.", BattleMessages.Text);
+
+                // Call next turn
+                NextAttackExample();
+            }
         }
 
         /// <summary>
