@@ -374,6 +374,43 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
         }
+        [Test]
+        public async Task BattlePage_FocusedAttack_Two_Times_Should_Pass()
+        {
+            // Arrange
+
+            BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterList.Clear();
+            BattleEngineViewModel.Instance.Engine.EngineSettings.MonsterList.Clear();
+            BattleEngineViewModel.Instance.Engine.EngineSettings.PlayerList.Clear();
+
+            // Arrange
+            // Add each model here to warm up and load it.
+            _ = Game.Helpers.DataSetsHelper.WarmUp();
+
+            _ = await ItemIndexViewModel.Instance.CreateAsync(new ItemModel { Attribute = AttributeEnum.Attack, Value = 1, Id = "head" });
+            _ = await ItemIndexViewModel.Instance.CreateAsync(new ItemModel { Attribute = AttributeEnum.Attack, Value = 20, Id = "necklass" });
+            
+            var data = new PlayerInfoModel();
+
+            // Add the first item
+            _ = data.AddItem(ItemLocationEnum.Head, (await ItemIndexViewModel.Instance.ReadAsync("head")).Id);
+            _ = data.AddItem(ItemLocationEnum.Necklass, (await ItemIndexViewModel.Instance.ReadAsync("necklass")).Id);
+
+            BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterList.Add(data);
+
+            _ = BattleEngineViewModel.Instance.Engine.Round.MakePlayerList();
+
+            // Has no Character, so should show end game
+
+            // Act
+            page.FocusedAttackButton_Clicked(null, null);
+            page.FocusedAttackButton_Clicked(null, null);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
 
         [Test]
         public void BattlePage_SetAttackerAndDefender_Character_vs_Monster_Should_Pass()
