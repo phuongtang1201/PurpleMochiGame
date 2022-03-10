@@ -46,9 +46,9 @@
                                     AlignContent="Center"
                                     Wrap="Wrap"/>
 
-                            <StackLayout x:Name="BattlePlayerVerticalBox" 
-                                         Margin="0,30,0,0"  
+                            <StackLayout x:Name="BattlePlayerVerticalBox"  
                                          Style="{StaticResource VerticalStack}" 
+                                         Margin="0"
                                          HorizontalOptions="Center"
                                          VerticalOptions="Start">
 
