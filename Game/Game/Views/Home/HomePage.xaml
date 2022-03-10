@@ -12,7 +12,7 @@
                 VerticalOptions="Center"
                 HorizontalOptions="Center">
 
-                <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
+                <StackLayout Style="{StaticResource HorizontalStack}" VerticalOptions="Center" HorizontalOptions="Center">
                    
                     <Image
                          Source="foodfightlogo.png"
