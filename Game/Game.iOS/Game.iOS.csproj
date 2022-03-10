@@ -526,4 +526,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\close.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\confirm.png" />
+  </ItemGroup>
 </Project>
