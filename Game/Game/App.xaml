@@ -418,6 +418,12 @@
                 <Setter Property="Padding" Value="0" />
             </Style>
 
+            <Style TargetType="ImageButton" x:Key="BackBeginButton">
+                <Setter Property="WidthRequest" Value="110"/>
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="Margin" Value="10,0,0,0" />
+            </Style>
+
             <!-- BoxView -->
             <Style TargetType="BoxView" x:Key="YesNoBoxView">
                 <Setter Property="CornerRadius" Value="5"/>
