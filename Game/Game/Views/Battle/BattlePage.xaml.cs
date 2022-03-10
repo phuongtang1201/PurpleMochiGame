@@ -662,7 +662,12 @@ namespace Game.Views
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.Alive == false)
             {
                 _ = UpdateMapGrid();
-             //   DefenderImage.BackgroundColor = Color.Red;
+                if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender?.PlayerType == PlayerTypeEnum.Monster)
+                {
+                    MonsterImage.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.ImageURI.Replace(".png", ".gif");
+                    MonsterImage.IsAnimationPlaying = true;
+                }
+                
             }
 
           //  BattlePlayerBoxVersus.Text = "vs";
@@ -939,8 +944,6 @@ namespace Game.Views
             //show message if target is killed
             if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender?.Alive == false)
             {
-                
-
                 //If monster is killed, then shows success. Otherwise, shows fail
                 //if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Character)
                 //{
@@ -952,7 +955,7 @@ namespace Game.Views
                 //    FailOrSuccess.Text = "Success!";
                 //}
 
-                
+
                 BattleMessages.Text = string.Format("{0} \n{1}", BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.TurnDeathMessage, BattleMessages.Text);
             }
  
