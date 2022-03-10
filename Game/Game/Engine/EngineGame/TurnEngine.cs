@@ -91,7 +91,7 @@ namespace Game.Engine.EngineGame
                         else
                             EngineSettings.CurrentActionAbility = AbilityEnum.Focus;
                     }
-                    else if (EngineSettings.CurrentActionAbility == AbilityEnum.Heal)
+                    else if (EngineSettings.CurrentActionAbility == AbilityEnum.Heal && Attacker.PlayerType != PlayerTypeEnum.Monster)
                     {
                         ChooseToUseHeal(Attacker);
                         break;
