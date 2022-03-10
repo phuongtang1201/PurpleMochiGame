@@ -41,10 +41,12 @@
                                      VerticalOptions="Start" 
                                      HorizontalOptions="FillAndExpand">
 
-                            <FlexLayout x:Name="MonsterBox"
-                                        JustifyContent="SpaceAround"
-                                        AlignContent="SpaceAround"
-                                        Wrap="Wrap"/>
+                            <StackLayout HeightRequest="150">
+                                <FlexLayout x:Name="MonsterBox"
+                                            JustifyContent="SpaceAround"
+                                            AlignContent="SpaceAround"
+                                            Wrap="Wrap"/>
+                            </StackLayout>
 
                             <StackLayout x:Name="BattlePlayerVerticalBox"  
                                          Style="{StaticResource VerticalStack}" 
@@ -104,10 +106,12 @@
                                                FontSize="Small"/>
                                     </StackLayout>
                                 </StackLayout>
+                                <StackLayout HeightRequest="150">
                                 <FlexLayout x:Name="CharacterBox"
                                             JustifyContent="SpaceAround"
                                             AlignContent="SpaceAround"
                                             Wrap="Wrap"/>
+                                </StackLayout>
 
                             </StackLayout>
 
