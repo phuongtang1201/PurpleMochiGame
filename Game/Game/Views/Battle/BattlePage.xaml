@@ -136,7 +136,8 @@
                     <!-- This is the options box for chefs -->
                     <StackLayout x:Name="OptionBox" Margin="20,0,20,0" IsVisible="false">
                         <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
-                            <Button Text="Heal" Style="{StaticResource OptionBoxBattleButton}" WidthRequest="103"/>
+                            <Button Text="Heal" Style="{StaticResource OptionBoxBattleButton}" WidthRequest="103"
+                                    Clicked="HealButton_Clicked" />
                             <Button Text="Attack" Style="{StaticResource OptionBoxBattleButton}" WidthRequest="103"
                                     Clicked="AttackButton_Clicked"/>
                             <Button Text="Next" Style="{StaticResource OptionBoxBattleButton}" WidthRequest="103"
