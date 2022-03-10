@@ -807,9 +807,6 @@ namespace Game.Views
         {
             BattleEngineViewModel.Instance.Engine.EngineSettings.BattleStateEnum = BattleStateEnum.Battling;
 
-            // Get the turn, set the current player and attacker to match
-            SetAttackerAndDefender();
-
             // Hold the current state
             var RoundCondition = BattleEngineViewModel.Instance.Engine.Round.RoundNextTurn();
 
