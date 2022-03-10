@@ -67,12 +67,10 @@
                                     Style="{StaticResource ChangeNextImageButton}"
                                     Source="change_item.png"/>
 
-                            <Button Grid.Row="0" Grid.Column="1"
-                                    Clicked="CloseButton_Clicked" 
-                                    Style="{StaticResource BattleButton}"
-                                    WidthRequest="180"
-                                    FontSize="30"
-                                    Text="Next Round"/>
+                            <ImageButton Grid.Row="0" Grid.Column="1"
+                                    Style="{StaticResource ChangeNextImageButton}"
+                                    Source="begin_round.png"
+                                    Clicked="CloseButton_Clicked"/>
                         </Grid>
                         
 
