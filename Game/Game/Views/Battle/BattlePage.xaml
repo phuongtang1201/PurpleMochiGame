@@ -137,7 +137,6 @@
                     <StackLayout x:Name="OptionBox" Margin="20,0,20,0" IsVisible="false">
                         <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
                             <Button Text="Heal" Style="{StaticResource OptionBoxBattleButton}" WidthRequest="103"/>
-                            <Button Text="Move" Style="{StaticResource OptionBoxBattleButton}" WidthRequest="103"/>
                             <Button Text="Attack" Style="{StaticResource OptionBoxBattleButton}" WidthRequest="103"
                                 Clicked="AttackButton_Clicked"/>
                         </StackLayout>
