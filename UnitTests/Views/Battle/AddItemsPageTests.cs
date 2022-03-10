@@ -7,6 +7,7 @@ using Xamarin.Forms;
 using Game.Helpers;
 using Game.Models;
 using Game.ViewModels;
+using System.Linq;
 
 namespace UnitTests.Views
 {
@@ -47,6 +48,24 @@ namespace UnitTests.Views
 
             // Assert
             Assert.IsNotNull(result);
+        }
+
+        [Test]
+        public void AddItemsPage_Item_ShowPopup_Default_Should_Pass()
+        {
+            // Arrange
+
+            var item = page.GetItemToDisplay(ItemLocationEnum.Head);
+
+            // Act
+            var itemButton = item.Children.FirstOrDefault(m => m.GetType().Name.Equals("Button"));
+
+            _ = page.ShowPopup(ItemLocationEnum.Head);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
         }
 
     }
