@@ -431,7 +431,7 @@
             </Style>
 
             <Style TargetType="ImageButton" x:Key="ReassignImageButton">
-                <Setter Property="WidthRequest" Value="200"/>
+                <Setter Property="WidthRequest" Value="160"/>
                 <Setter Property="HeightRequest" Value="60"/>
                 <Setter Property="Margin" Value="10,0,0,0" />
             </Style>
