@@ -64,18 +64,6 @@
 
                     </StackLayout>
                 </ScrollView>
-                <StackLayout Style="{StaticResource HorizontalStack}" 
-                             HorizontalOptions="Center">
-
-                    <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
-                                 Source="cancel.png"
-                                 Clicked="Cancel_Clicked"/>
-
-                    <ImageButton Style="{StaticResource CancelUpdateDeleteImageButton}"
-                                 Source="update.png"
-                                 Clicked="Save_Clicked"/>
-
-                </StackLayout>
             </StackLayout>
 
            
