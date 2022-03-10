@@ -71,5 +71,23 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
         }
+
+        [Test]
+        public void PickItemsPage_OnCharacterSelected_Clicked_Default_Should_Pass()
+        {
+            // Arrange
+
+            var data = new Game.Models.CharacterModel();
+
+            var selectedCharacterChangedEventArgs = new SelectedItemChangedEventArgs(data, 0);
+
+            // Act
+            page.OnCharacterSelected(null, selectedCharacterChangedEventArgs);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
     }
 }
