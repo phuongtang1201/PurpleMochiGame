@@ -538,4 +538,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\next.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\reassign_items.png" />
+  </ItemGroup>
 </Project>
