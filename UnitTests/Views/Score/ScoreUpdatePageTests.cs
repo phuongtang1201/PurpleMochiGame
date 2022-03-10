@@ -138,5 +138,20 @@ namespace UnitTests.Views
             // Assert
             Assert.IsTrue(true); // Got to here, so it happened...
         }
+
+        [Test]
+        public void ScoreUpdatePage_CreateItemDisplayBox_Null_Item_Should_Pass()
+        {
+            // Arrange
+
+            // Act
+            page.CreateItemDisplayBox(null, 0);
+
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(true); // Got to here, so it happened...
+        }
     }
 }
