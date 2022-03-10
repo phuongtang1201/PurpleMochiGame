@@ -134,16 +134,13 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="60" />
-                        </Grid.RowDefinitions>
+                    <StackLayout
                         <Button Grid.Row="0" Grid.Column="1" 
                                 x:Name="PopupCloseButton" 
                                 Style="{StaticResource BattleButton}"
                                 Clicked="ClosePopup_Clicked" 
                                 Text="Confirm"/>
-                    </Grid>
+                    </StackLayout>
                 </StackLayout>
             </StackLayout>
             
