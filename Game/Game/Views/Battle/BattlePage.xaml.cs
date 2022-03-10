@@ -701,6 +701,10 @@ namespace Game.Views
         /// <param name="e"></param>
         public void NextButton_Clicked(object sender, EventArgs e)
         {
+            // Set attacker and defender
+            SetAttackerAndDefender();
+
+            // Take Turn
             NextAttackExample();
         }
 
@@ -711,9 +715,8 @@ namespace Game.Views
         /// <param name="e"></param>
         public void AttackButton_Clicked(object sender, EventArgs e)
         {
-            // Get the turn, set the current player and attacker if needed
-            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null)
-                SetAttackerAndDefender();
+            // Get the turn, set the current player and attacker
+            SetAttackerAndDefender();
 
             // If attacker is a Character, attack
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Monster)
@@ -747,9 +750,8 @@ namespace Game.Views
         /// <param name="e"></param>
         public void HealButton_Clicked(object sender, EventArgs e)
         {
-            // Get the turn, set the current player and attacker if needed
-            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null)
-                SetAttackerAndDefender();
+            // Get the turn, set the current player and attacker
+            SetAttackerAndDefender();
 
             // If attacker is a character, heal
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Monster)
@@ -965,8 +967,7 @@ namespace Game.Views
             //BattleEngineViewModel.Instance.Engine.EngineSettings.BattleStateEnum = BattleStateEnum.Battling;
 
             // Get the turn, set the current player and attacker to match
-            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null)
-                SetAttackerAndDefender();
+            SetAttackerAndDefender();
 
             //if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Character)
             //{
