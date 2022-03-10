@@ -35,7 +35,7 @@
                         <Label Text="Items Found" Style="{StaticResource CenterMessageStyle}"/>
                         
                         <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label Text="Found : " Style="{StaticResource LabelStyle}"/>
+                            <Label Text="Found: " Style="{StaticResource LabelStyle}"/>
                             <Label Text="0" x:Name="TotalFound" Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
                         <FlexLayout x:Name="ItemListFoundFrame"
@@ -43,15 +43,17 @@
                                     AlignContent="Center"
                                     Wrap="Wrap"/>
 
-                        <ImageButton Style="{StaticResource ChangeNextImageButton}"
+                        <!--<ImageButton Style="{StaticResource ChangeNextImageButton}"
                                      Source="change_item.png"
-                                     Clicked="AutoAssignButton_Clicked" />
-                        <!--<Button Clicked="AutoAssignButton_Clicked" Text="Assign Items"/>-->
+                                     Clicked="AutoAssignButton_Clicked" />-->
+                        <Button Clicked="AutoAssignButton_Clicked" 
+                                Style="{StaticResource BattleButton}"
+                                Text="Assign Items"/>
 
                         <Label Text="Items Collected" Style="{StaticResource CenterMessageStyle}"/>
                         
                         <StackLayout Style="{StaticResource HorizontalStack}">
-                            <Label Text="Selected : " Style="{StaticResource LabelStyle}"/>
+                            <Label Text="Selected: " Style="{StaticResource LabelStyle}"/>
                             <Label Text="0" x:Name="TotalSelected" Style="{StaticResource ValueStyle}"/>
                         </StackLayout>
                         <FlexLayout x:Name="ItemListSelectedFrame"
