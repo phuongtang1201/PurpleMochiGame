@@ -46,7 +46,7 @@
 
                         <ImageButton Grid.Row="0" Grid.Column="1"                            
                             Style="{StaticResource ConfirmContinueImageButton}" 
-                            Source="continue.png"
+                            Source="continue1.png"
                             Clicked="BeginButton_Clicked"/>
                     </Grid>
                 </StackLayout>

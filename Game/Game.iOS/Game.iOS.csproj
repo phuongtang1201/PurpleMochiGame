@@ -530,7 +530,7 @@
     <BundleResource Include="Resources\confirm.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\continue.png" />
+    <BundleResource Include="Resources\continue1.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\exit.png" />

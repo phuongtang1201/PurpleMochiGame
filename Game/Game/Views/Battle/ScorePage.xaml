@@ -51,7 +51,7 @@
                     
                     <ImageButton 
                         Style="{StaticResource ConfirmContinueImageButton}"
-                        Source="continue.png"
+                        Source="continue1.png"
                         HorizontalOptions="EndAndExpand"
                         Clicked="CloseButton_Clicked"/>
                 </StackLayout>

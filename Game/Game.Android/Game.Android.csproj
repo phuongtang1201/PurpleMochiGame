@@ -488,7 +488,7 @@
     <AndroidResource Include="Resources\drawable\confirm.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\continue.png" />
+    <AndroidResource Include="Resources\drawable\continue1.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\exit.png" />
