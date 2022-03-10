@@ -297,6 +297,7 @@ namespace Scenario
             EngineViewModel.Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel());
 
             // Make the List
+            EngineViewModel.Engine.EngineSettings.PlayerList.Clear();
             EngineViewModel.Engine.EngineSettings.PlayerList = EngineViewModel.Engine.Round.MakePlayerList();
 
             _ = DiceHelper.DisableForcedRolls();
