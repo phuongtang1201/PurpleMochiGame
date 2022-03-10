@@ -760,6 +760,9 @@ namespace Game.Views
                 // Show the outcome on the Board
                 DrawGameAttackerDefenderBoard();
             }
+            else
+                // Output message
+                BattleMessages.Text = string.Format("{0} \n{1}", "It's not your turn. Please press Next", BattleMessages.Text);
         }
 
         /// <summary>
