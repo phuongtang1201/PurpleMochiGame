@@ -141,6 +141,9 @@ namespace Scenario
             // Monsters always hit
             EngineViewModel.Engine.EngineSettings.BattleSettingsModel.MonsterHitEnum = HitStatusEnum.Hit;
 
+            // Make sure rounds start at 0
+            BattleEngineViewModel.Instance.Engine.EngineSettings.BattleScore.RoundCount = 0;
+
             //Act
             var result = await EngineViewModel.AutoBattleEngine.RunAutoBattle();
 
