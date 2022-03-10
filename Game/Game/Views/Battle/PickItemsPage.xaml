@@ -92,15 +92,12 @@
             </ScrollView>
             <Grid>
                 
-            <Button Grid.Row="0" Grid.Column="0"
-                    Style="{StaticResource BattleButton}"
+            <ImageButton Grid.Row="0" Grid.Column="0"
+                    Style="{StaticResource BackNextImageButton}"
                     x:Name="BackButton"
-                    Clicked="CloseButton_Clicked" 
-                    Text="Back"
-                    WidthRequest="90"
-                    CornerRadius="15"
-                    FontSize="35"
-                    VerticalOptions="End"/>
+                    Source="back_small.png"
+                    VerticalOptions="End"
+                    Clicked="CloseButton_Clicked"/>
                 
             <Button Grid.Row="0" Grid.Column="1"
                     Style="{StaticResource BattleButton}"
