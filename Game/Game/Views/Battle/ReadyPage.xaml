@@ -32,12 +32,12 @@
                                    Style="{StaticResource CenterMessageExtraLargeStyle}"/>
 
                             <ImageButton Grid.Row="1" Grid.Column="0"
-                                    Style="{StaticResource BackBeginImageButton}" 
+                                    Style="{StaticResource BackBeginScoreExitImageButton}" 
                                     Source="back_big.png"
                                     Clicked="CloseButton_Clicked"/>
 
                             <ImageButton Grid.Row="1" Grid.Column="1"
-                                    Style="{StaticResource BackBeginImageButton}" 
+                                    Style="{StaticResource BackBeginScoreExitImageButton}" 
                                     Source="begin.png"
                                     Clicked="BeginButton_Clicked"/>
                         </Grid>
