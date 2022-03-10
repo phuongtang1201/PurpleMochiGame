@@ -221,12 +221,10 @@
                                     Source="score.png"
                                     Clicked="ShowScoreButton_Clicked"/>
 
-                            <Button Grid.Row="2" Grid.Column="1"
+                            <ImageButton Grid.Row="2" Grid.Column="1"
                                     x:Name="ExitButton" 
-                                    Style="{StaticResource BattleButton}" 
-                                    Text="Exit" 
-                                    WidthRequest="110"
-                                    BackgroundColor="LightBlue"
+                                    Style="{StaticResource BackBeginScoreExitImageButton}" 
+                                    Source="exit.png"
                                     Clicked="ExitButton_Clicked"/>
                         </Grid>
                     </Frame>
