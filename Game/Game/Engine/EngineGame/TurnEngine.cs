@@ -91,6 +91,11 @@ namespace Game.Engine.EngineGame
                         else
                             EngineSettings.CurrentActionAbility = AbilityEnum.Focus;
                     }
+                    else if (EngineSettings.CurrentActionAbility == AbilityEnum.Heal)
+                    {
+                        ChooseToUseHeal(Attacker);
+                        break;
+                    }
                     result = UseAbility(Attacker);
                     break;
 
@@ -219,13 +224,9 @@ namespace Game.Engine.EngineGame
         /// <returns></returns>
         public bool ChooseToUseHeal(PlayerInfoModel Attacker)
         {
-            // See if healing is needed.
-            EngineSettings.CurrentActionAbility = Attacker.SelectHealingAbility();
-            if (EngineSettings.CurrentActionAbility == AbilityEnum.Unknown)
-            {
-                EngineSettings.CurrentAction = ActionEnum.Ability;
-                return false;
-            }
+            // Increase current health by 50%
+            var moreHP = Attacker.CurrentHealth / 2;
+            Attacker.CurrentHealth += moreHP;
             return true;
         }
 
