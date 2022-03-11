@@ -236,7 +236,7 @@ namespace Game.Engine.EngineGame
             {
                 var moreHP = Attacker.CurrentHealth / 2;
                 Attacker.CurrentHealth += moreHP;
-                return true;
+                return UseAbility(Attacker);
             }
             return false;
         }
@@ -541,7 +541,7 @@ namespace Game.Engine.EngineGame
 
                 if (EngineSettings.BattleSettingsModel.AllowCriticalMiss)
                 {
-                    EngineSettings.BattleMessagesModel.AttackStatus = " rolls 1 to completly miss ";
+                    EngineSettings.BattleMessagesModel.AttackStatus = " rolls 1 to completely miss ";
                     EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.CriticalMiss;
                 }
 
