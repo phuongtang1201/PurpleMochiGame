@@ -281,6 +281,22 @@ namespace UnitTests.Models
         }
 
         [Test]
+        public void MapModel_AddPlayerToMap_Null_Should_Fail()
+        {
+            // Arrange
+
+            var map = new MapModel();
+
+            // Act
+            var result = map.AddPlayerToMap(null);
+
+            // Reset
+
+            // Assert 
+            Assert.IsFalse(result);
+        }
+
+        [Test]
         public void MapModel_GetEmptyLocations_InValid_Should_Return_Empty()
         {
             // Arrange
