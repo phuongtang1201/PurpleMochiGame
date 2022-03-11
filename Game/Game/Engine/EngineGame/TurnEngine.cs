@@ -117,6 +117,8 @@ namespace Game.Engine.EngineGame
 
             // Reset the Action to unknown for next time
             EngineSettings.CurrentAction = ActionEnum.Unknown;
+            // Reset the Ability to unknown for next time
+            EngineSettings.CurrentActionAbility = AbilityEnum.Unknown;
 
             return result;
         }
