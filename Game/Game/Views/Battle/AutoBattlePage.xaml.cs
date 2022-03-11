@@ -33,7 +33,7 @@ namespace Game.Views
             var Character = new CharacterModel
             {
                 ExperienceTotal = 300,    // Enough for next level
-                Name = "Mike Level Example",
+                Name = "Wesley",
                 Speed = 100,    // Go first
             };
 
@@ -47,7 +47,7 @@ namespace Game.Views
 
             BattleMessageValue.Text = BattleMessage;
 
-            AutobattleImage.Source = "troll6_d.gif";
+            AutobattleImage.Source = "sushi_boss.gif";
         }
     }
 }
