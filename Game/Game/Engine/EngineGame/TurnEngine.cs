@@ -107,6 +107,9 @@ namespace Game.Engine.EngineGame
                     break;
             }
 
+            if (!result)
+                result = Attack(Attacker);
+
             EngineSettings.BattleScore.TurnCount++;
 
             // Save the Previous Action off
