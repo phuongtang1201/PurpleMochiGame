@@ -5,45 +5,48 @@
              BackgroundImageSource="food_stain_background.png">
 
     <ContentPage.Content>
-        <ScrollView HorizontalOptions="Center"
-                    VerticalOptions="Center">
-          
-            <StackLayout VerticalOptions="Center"
-                         HorizontalOptions="Center">
+        <AbsoluteLayout HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="FillAndExpand">
+            <ScrollView HorizontalOptions="Center"
+                        VerticalOptions="Center">
 
-                <Grid ColumnSpacing="5" RowSpacing="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
-                    </Grid.RowDefinitions>
+                <StackLayout VerticalOptions="Center"
+                             HorizontalOptions="Center">
 
-                    <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
-                           Source="foodfightlogo.png"
-                           Style="{StaticResource ImageExtraExtraLargeStyle}"/>
+                    <Grid ColumnSpacing="5" RowSpacing="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
 
-                    <ImageButton Grid.Column="0" Grid.Row="1"
-                                 Source="play.png"
-                                 Style="{StaticResource HomeImageButton}"
-                                 Clicked="GameButton_Clicked"/>
+                        <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
+                               Source="foodfightlogo.png"
+                               Style="{StaticResource ImageExtraExtraLargeStyle}"/>
 
-                    <ImageButton Grid.Column="0" Grid.Row="2"
-                                 Source="home_leaderboard.png"
-                                 Style="{StaticResource HomeImageButton}"
-                                 Clicked="ScoresButton_Clicked"/>
+                        <ImageButton Grid.Column="0" Grid.Row="1"
+                                     Source="play.png"
+                                     Style="{StaticResource HomeImageButton}"
+                                     Clicked="GameButton_Clicked"/>
 
-                    <ImageButton Grid.Column="0" Grid.Row="3"
-                                 Source="about.png"
-                                 Style="{StaticResource HomeImageButton}"
-                                 Clicked="AboutButton_Clicked"/>
+                        <ImageButton Grid.Column="0" Grid.Row="2"
+                                     Source="home_leaderboard.png"
+                                     Style="{StaticResource HomeImageButton}"
+                                     Clicked="ScoresButton_Clicked"/>
 
-                </Grid>
-            </StackLayout>
-        </ScrollView>
+                        <ImageButton Grid.Column="0" Grid.Row="3"
+                                     Source="about.png"
+                                     Style="{StaticResource HomeImageButton}"
+                                     Clicked="AboutButton_Clicked"/>
+
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
