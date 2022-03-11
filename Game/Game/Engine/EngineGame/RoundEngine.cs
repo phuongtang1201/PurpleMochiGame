@@ -111,7 +111,7 @@ namespace Game.Engine.EngineGame
             var monsterNum = 1;
 
             // Allow Boss Monsters
-            if (EngineSettings.BattleSettingsModel.AllowBossMonsters && DiceHelper.RollDice(1, 10) > 5)
+            if (EngineSettings.BattleSettingsModel.AllowBossMonsters && DiceHelper.RollDice(1, 10) > 7)
             {
 
                 var data = RandomPlayerHelper.GetRandomMonster(maxTargetLevel, EngineSettings.BattleSettingsModel.AllowMonsterItems, true);
