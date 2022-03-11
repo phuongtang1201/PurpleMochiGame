@@ -262,7 +262,7 @@ namespace Scenario
             *      Default condition is sufficient
             * 
             * Validation:
-            *       Verify that when AllowBossMonsters is enabled and a dice roll of 6 
+            *       Verify that when AllowBossMonsters is enabled and a dice roll of 8 
             *       is rolled a single Monster is present in the round
             *       
             *       Verify that the single Monster HP = Character 1 HP + Character 2 HP + 20
@@ -304,7 +304,7 @@ namespace Scenario
             EngineViewModel.Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character2));
 
             _ = DiceHelper.EnableForcedRolls();
-            _ = DiceHelper.SetForcedRollValue(6);
+            _ = DiceHelper.SetForcedRollValue(8);
 
             EngineViewModel.Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel());
 
