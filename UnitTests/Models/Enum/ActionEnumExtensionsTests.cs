@@ -64,6 +64,20 @@ namespace UnitTests.Models
         }
 
         [Test]
+        public void ActionEnumExtensionsTests_FocusedAttack_Default_Should_Pass()
+        {
+            // Arrange
+
+            // Act
+            var result = ActionEnum.FocusedAttack.ToMessage();
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(" Uses Focused Attack ", result);
+        }
+
+        [Test]
         public void ActionEnumExtensionsTests_ToImage_Attack_Default_Should_Pass()
         {
             // Arrange
