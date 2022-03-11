@@ -301,6 +301,30 @@ namespace UnitTests.ViewModels
         }
 
         [Test]
+        public async Task BaseViewModel_CreateUpdateAsync_NotNull_Should_Pass()
+        {
+            // Arrange
+
+            // Add items into the list Z ordered
+            var dataTest = new ItemModel { Name = "test", Id="5" };
+            ViewModel.Dataset = new ObservableCollection<ItemModel>();
+
+            _ = await ViewModel.SetDataSource(0);
+
+            _ = await ViewModel.CreateAsync(dataTest);
+
+            var newTest = new ItemModel { Name = "z", Id="5" };
+
+            // Act
+            var testAsync = await ViewModel.CreateUpdateAsync(newTest);
+
+            // Reset
+
+            // Assert
+            Assert.IsTrue(testAsync);
+        }
+
+        [Test]
         public async Task BaseViewModel_CreateUpdateAsync_InValid_Null_Should_Fail()
         {
             // Arrange
