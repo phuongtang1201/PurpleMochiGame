@@ -5,14 +5,11 @@
              BackgroundImageSource="food_stain_background.png">
 
     <ContentPage.Content>
-        <ScrollView
-            HorizontalOptions="Center"
-            VerticalOptions="Center">
+        <ScrollView HorizontalOptions="Center"
+                    VerticalOptions="Center">
           
-            <StackLayout
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                Padding="30,0,0,0">
+            <StackLayout VerticalOptions="Center"
+                         HorizontalOptions="Center">
 
                 <Grid ColumnSpacing="5" RowSpacing="5">
                     <Grid.ColumnDefinitions>
@@ -27,23 +24,23 @@
                     </Grid.RowDefinitions>
 
                     <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
-                         Source="foodfightlogo.png"
-                         Style="{StaticResource ImageExtraExtraLargeStyle}"/>
+                           Source="foodfightlogo.png"
+                           Style="{StaticResource ImageExtraExtraLargeStyle}"/>
 
                     <ImageButton Grid.Column="0" Grid.Row="1"
-                        Source="play.png"
-                        Style="{StaticResource HomeImageButton}"
-                        Clicked="GameButton_Clicked"/>
+                                 Source="play.png"
+                                 Style="{StaticResource HomeImageButton}"
+                                 Clicked="GameButton_Clicked"/>
 
                     <ImageButton Grid.Column="0" Grid.Row="2"
-                        Source="home_leaderboard.png"
-                        Style="{StaticResource HomeImageButton}"
-                        Clicked="ScoresButton_Clicked"/>
+                                 Source="home_leaderboard.png"
+                                 Style="{StaticResource HomeImageButton}"
+                                 Clicked="ScoresButton_Clicked"/>
 
                     <ImageButton Grid.Column="0" Grid.Row="3"
-                        Source="about.png"
-                        Style="{StaticResource HomeImageButton}"
-                        Clicked="AboutButton_Clicked"/>
+                                 Source="about.png"
+                                 Style="{StaticResource HomeImageButton}"
+                                 Clicked="AboutButton_Clicked"/>
 
                 </Grid>
             </StackLayout>
