@@ -218,11 +218,7 @@ namespace Game.Views
             await Navigation.PushModalAsync(new NavigationPage(new PickItemsPage()));
             //_ = await Navigation.PopAsync();
         }
-        public async void BattleHomePage_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new NavigationPage(new BattleHomePage()));
-           // _ = await Navigation.PopAsync();
-        }
+        
 
         /// <summary>
         /// Clear out the old list and make the new list
