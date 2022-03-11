@@ -14,7 +14,7 @@
             <Label Text ="Battle Mode" Style="{StaticResource HeaderStyle}"
                    HorizontalTextAlignment="Center"/>
 
-            <Grid HorizontalOptions="StartAndExpand" 
+            <Grid HorizontalOptions="CenterAndExpand" 
                   Padding="10"
                   RowSpacing="1"
                   ColumnSpacing="2"
