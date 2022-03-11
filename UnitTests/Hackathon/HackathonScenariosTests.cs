@@ -143,6 +143,9 @@ namespace Scenario
             // Monsters always hit
             EngineViewModel.Engine.EngineSettings.BattleSettingsModel.MonsterHitEnum = HitStatusEnum.Hit;
 
+            // Character never hits
+            BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.CharacterHitEnum = HitStatusEnum.Miss;
+
             // Make sure rounds start at 0
             BattleEngineViewModel.Instance.Engine.EngineSettings.BattleScore.RoundCount = 0;
 
@@ -151,6 +154,7 @@ namespace Scenario
 
             //Reset
             EngineViewModel.Engine.EngineSettings.BattleSettingsModel.MonsterHitEnum = HitStatusEnum.Default;
+            BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.CharacterHitEnum = HitStatusEnum.Default;
 
             //Assert
             Assert.AreEqual(true, result);
