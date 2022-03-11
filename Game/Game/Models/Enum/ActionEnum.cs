@@ -52,7 +52,7 @@
                     break;
 
                 case ActionEnum.FocusedAttack:
-                    Message = "Uses Focused Attack ";
+                    Message = " Uses Focused Attack ";
                     break;
 
                 case ActionEnum.Unknown:
