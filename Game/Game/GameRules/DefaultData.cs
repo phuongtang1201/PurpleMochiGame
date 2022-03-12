@@ -236,7 +236,7 @@ namespace Game.GameRules
                 },
 
                 new CharacterModel {
-                    Name = "Sue",
+                    Name = "Wesley",
                     Description = "Sushi: Fish beware",
                     Level = 8,
                     MaxHealth = 30,
