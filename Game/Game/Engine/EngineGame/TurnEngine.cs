@@ -414,7 +414,6 @@ namespace Game.Engine.EngineGame
             Target.CurrentHealth = Target.MaxHealth / 2;
             Target.Name = "Zombie " + Target.Name;
             EngineSettings.MapModel.AddPlayerToMap(Target);
-                //EngineSettings.MonsterList.Add(Target);
             return true;
         }
         /// <summary>
@@ -462,7 +461,7 @@ namespace Game.Engine.EngineGame
                     //default:
                     var d20 = DiceHelper.RollDice(1, 20);
                     // 20% chance to revive
-                    if (BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters
+                    if (BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.AllowZombieMonsters && !Target.Name.Contains("Zombie")
                         && d20 < 4)
                     {
                         return ReviveMonster(Target);
@@ -495,7 +494,7 @@ namespace Game.Engine.EngineGame
         /// </summary>
         public override int DropItems(PlayerInfoModel Target)
         {
-            var DroppedMessage = "\nItems Dropped : \n";
+            var DroppedMessage = "\nItems Dropped: \n";
 
             // Drop Items to ItemModel Pool
             var myItemList = Target.DropAllItems();
