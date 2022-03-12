@@ -181,7 +181,7 @@ namespace Game.GameRules
 
             var datalist = new List<CharacterModel>()
             {
-                                new CharacterModel {
+                new CharacterModel {
                     Name = "Linda",
                     Description = "Gastropub: Combines quality with affordability",
                     Level = 4,
@@ -189,7 +189,7 @@ namespace Game.GameRules
                     Attack = 7,
                     Defense = 4,
                     Speed = 3,
-                    ImageURI = "chefblue.png",
+                    ImageURI = "chefwhite.png",
                     Head = null,
                     Necklass = null,
                     PrimaryHand = null,
@@ -243,7 +243,7 @@ namespace Game.GameRules
                     Attack = 7,
                     Defense = 6,
                     Speed = 4,
-                    ImageURI = "chefwhite.png",
+                    ImageURI = "chefblue.png",
                     Head = null,
                     Necklass = null,
                     PrimaryHand = null,
@@ -279,7 +279,7 @@ namespace Game.GameRules
                     Attack = 9,
                     Defense = 4,
                     Speed = 1,
-                    ImageURI = "chefpurple.png",
+                    ImageURI = "cheforange.png",
                     Head = HeadString,
                     Necklass = null,
                     PrimaryHand = PrimaryHandString,
@@ -297,7 +297,7 @@ namespace Game.GameRules
                     Attack = 5,
                     Defense = 8,
                     Speed = 1,
-                    ImageURI = "cheforange.png",
+                    ImageURI = "chefpurple.png",
                     Head = null,
                     Necklass = null,
                     PrimaryHand = null,
