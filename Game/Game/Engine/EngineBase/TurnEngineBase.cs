@@ -189,7 +189,7 @@ namespace Game.Engine.EngineBase
                 var openSquare = EngineSettings.MapModel.ReturnClosestEmptyLocation(locationDefender);
 
                 Debug.WriteLine(string.Format("{0} moves from {1},{2} to {3},{4}", locationAttacker.Player.Name, locationAttacker.Column, locationAttacker.Row, openSquare.Column, openSquare.Row));
-
+                // ???
                 EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + " moves closer to " + EngineSettings.CurrentDefender.Name;
 
                 return EngineSettings.MapModel.MovePlayerOnMap(locationAttacker, openSquare);
@@ -215,7 +215,7 @@ namespace Game.Engine.EngineBase
                 return true;
             }
 
-            // If not needed, then role dice to see if other ability should be used
+            // If not needed, then roll dice to see if other ability should be used
             // <30% chance
             if (DiceHelper.RollDice(1, 10) < 3)
             {
@@ -243,7 +243,7 @@ namespace Game.Engine.EngineBase
         /// <returns></returns>
         public virtual bool UseAbility(PlayerInfoModel Attacker)
         {
-            EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + " Uses Ability " + EngineSettings.CurrentActionAbility.ToMessage();
+            EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + " uses ability " + EngineSettings.CurrentActionAbility.ToMessage();
             return (Attacker.UseAbility(EngineSettings.CurrentActionAbility));
         }
 
@@ -452,19 +452,19 @@ namespace Game.Engine.EngineBase
             switch (myEnum)
             {
                 case HitStatusEnum.Hit:
-                    EngineSettings.BattleMessagesModel.AttackStatus = " somehow Hit ";
+                    EngineSettings.BattleMessagesModel.AttackStatus = " hit ";
                     return HitStatusEnum.Hit;
 
                 case HitStatusEnum.CriticalHit:
-                    EngineSettings.BattleMessagesModel.AttackStatus = " somehow Critical Hit ";
+                    EngineSettings.BattleMessagesModel.AttackStatus = " critical hit ";
                     return HitStatusEnum.CriticalHit;
 
                 case HitStatusEnum.Miss:
-                    EngineSettings.BattleMessagesModel.AttackStatus = " somehow Missed ";
+                    EngineSettings.BattleMessagesModel.AttackStatus = " missed ";
                     return HitStatusEnum.Miss;
 
                 case HitStatusEnum.CriticalMiss:
-                    EngineSettings.BattleMessagesModel.AttackStatus = " somehow Critical Missed ";
+                    EngineSettings.BattleMessagesModel.AttackStatus = " critical missed ";
                     return HitStatusEnum.CriticalMiss;
 
                 case HitStatusEnum.Unknown:
@@ -529,12 +529,12 @@ namespace Game.Engine.EngineBase
                     points = " point";
                 }
 
-                EngineSettings.BattleMessagesModel.ExperienceEarned = " Earned " + experienceEarned + points;
+                EngineSettings.BattleMessagesModel.ExperienceEarned = ", earned " + experienceEarned + points;
 
                 var LevelUp = Attacker.AddExperience(experienceEarned);
                 if (LevelUp)
                 {
-                    EngineSettings.BattleMessagesModel.LevelUpMessage = Attacker.Name + " is now Level " + Attacker.Level + " With Health Max of " + Attacker.GetMaxHealthTotal;
+                    EngineSettings.BattleMessagesModel.LevelUpMessage = Attacker.Name + " is now Level " + Attacker.Level + " with max health of " + Attacker.GetMaxHealthTotal;
                     Debug.WriteLine(EngineSettings.BattleMessagesModel.LevelUpMessage);
                 }
 
@@ -622,7 +622,7 @@ namespace Game.Engine.EngineBase
         /// <param name="Target"></param>
         public virtual int DropItems(PlayerInfoModel Target)
         {
-            var DroppedMessage = "\nItems Dropped : \n";
+            var DroppedMessage = "\nItems Dropped: \n";
 
             // Drop Items to ItemModel Pool
             var myItemList = Target.DropAllItems();
@@ -642,7 +642,7 @@ namespace Game.Engine.EngineBase
 
             if (myItemList.Count == 0)
             {
-                DroppedMessage = " Nothing dropped. ";
+                DroppedMessage = ", nothing dropped. ";
             }
 
             EngineSettings.BattleMessagesModel.DroppedMessage = DroppedMessage;
@@ -665,11 +665,11 @@ namespace Game.Engine.EngineBase
             if (d20 == 1)
             {
                 EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.Miss;
-                EngineSettings.BattleMessagesModel.AttackStatus = " rolls 1 to miss ";
+                EngineSettings.BattleMessagesModel.AttackStatus = " misses ";
 
                 if (EngineSettings.BattleSettingsModel.AllowCriticalMiss)
                 {
-                    EngineSettings.BattleMessagesModel.AttackStatus = " rolls 1 to completly miss ";
+                    EngineSettings.BattleMessagesModel.AttackStatus = " completely misses ";
                     EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.CriticalMiss;
                 }
 
@@ -678,12 +678,12 @@ namespace Game.Engine.EngineBase
 
             if (d20 == 20)
             {
-                EngineSettings.BattleMessagesModel.AttackStatus = " rolls 20 for hit ";
+                EngineSettings.BattleMessagesModel.AttackStatus = " hits ";
                 EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.Hit;
 
                 if (EngineSettings.BattleSettingsModel.AllowCriticalHit)
                 {
-                    EngineSettings.BattleMessagesModel.AttackStatus = " rolls 20 for lucky hit ";
+                    EngineSettings.BattleMessagesModel.AttackStatus = " lucky hits ";
                     EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.CriticalHit;
                 }
                 return EngineSettings.BattleMessagesModel.HitStatus;
@@ -692,7 +692,8 @@ namespace Game.Engine.EngineBase
             var ToHitScore = d20 + AttackScore;
             if (ToHitScore < DefenseScore)
             {
-                EngineSettings.BattleMessagesModel.AttackStatus = " rolls " + d20 + " and misses ";
+                //EngineSettings.BattleMessagesModel.AttackStatus = " rolls " + d20 + " and misses ";
+                EngineSettings.BattleMessagesModel.AttackStatus = " misses ";
 
                 // Miss
                 EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.Miss;
@@ -700,7 +701,8 @@ namespace Game.Engine.EngineBase
                 return EngineSettings.BattleMessagesModel.HitStatus;
             }
 
-            EngineSettings.BattleMessagesModel.AttackStatus = " rolls " + d20 + " and hits ";
+            //EngineSettings.BattleMessagesModel.AttackStatus = " rolls " + d20 + " and hits ";
+            EngineSettings.BattleMessagesModel.AttackStatus = " hits ";
 
             // Hit
             EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.Hit;
