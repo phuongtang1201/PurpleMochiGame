@@ -534,11 +534,11 @@ namespace Game.Engine.EngineGame
             if (d20 == 1)
             {
                 EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.Miss;
-                EngineSettings.BattleMessagesModel.AttackStatus = " rolls 1 to miss ";
+                EngineSettings.BattleMessagesModel.AttackStatus = " misses ";
 
                 if (EngineSettings.BattleSettingsModel.AllowCriticalMiss)
                 {
-                    EngineSettings.BattleMessagesModel.AttackStatus = " rolls 1 to completely miss ";
+                    EngineSettings.BattleMessagesModel.AttackStatus = " completely misses ";
                     EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.CriticalMiss;
                 }
 
@@ -547,12 +547,12 @@ namespace Game.Engine.EngineGame
 
             if (d20 == 20)
             {
-                EngineSettings.BattleMessagesModel.AttackStatus = " rolls 20 for hit ";
+                EngineSettings.BattleMessagesModel.AttackStatus = " hits ";
                 EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.Hit;
 
                 if (EngineSettings.BattleSettingsModel.AllowCriticalHit)
                 {
-                    EngineSettings.BattleMessagesModel.AttackStatus = " rolls 20 for lucky hit ";
+                    EngineSettings.BattleMessagesModel.AttackStatus = " lucky hits ";
                     EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.CriticalHit;
                 }
                 return EngineSettings.BattleMessagesModel.HitStatus;
@@ -561,7 +561,8 @@ namespace Game.Engine.EngineGame
             var ToHitScore = d20 + AttackScore;
             if (ToHitScore < DefenseScore)
             {
-                EngineSettings.BattleMessagesModel.AttackStatus = " rolls " + d20 + " and misses ";
+                //EngineSettings.BattleMessagesModel.AttackStatus = " rolls " + d20 + " and misses ";
+                EngineSettings.BattleMessagesModel.AttackStatus = " misses ";
 
                 // Miss
                 EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.Miss;
@@ -569,7 +570,8 @@ namespace Game.Engine.EngineGame
                 return EngineSettings.BattleMessagesModel.HitStatus;
             }
 
-            EngineSettings.BattleMessagesModel.AttackStatus = " rolls " + d20 + " and hits ";
+            EngineSettings.BattleMessagesModel.AttackStatus = " hits ";
+            //EngineSettings.BattleMessagesModel.AttackStatus = " rolls " + d20 + " and hits ";
 
             // Hit
             EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.Hit;
