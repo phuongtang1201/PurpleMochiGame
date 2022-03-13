@@ -780,7 +780,9 @@ namespace Game.Engine.EngineGame
         /// </summary>
         public override bool UseAbility(PlayerInfoModel Attacker)
         {
-            return base.UseAbility(Attacker);
+            EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + " uses ability " + EngineSettings.CurrentActionAbility.ToMessage();
+            return true;
+            //return base.UseAbility(Attacker);
         }
 
         /// <summary>
