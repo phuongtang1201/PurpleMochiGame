@@ -144,24 +144,6 @@ namespace UnitTests.Views
         }
 
         [Test]
-        public void PickCharactersPage_OnPartyCharacterItemSelected_Default_Should_Pass()
-        {
-            // Arrange
-
-            var selectedCharacter = new CharacterModel();
-
-            var selectedCharacterChangedEventArgs = new SelectedItemChangedEventArgs(selectedCharacter, 0);
-
-            // Act
-            page.OnPartyCharacterItemSelected(null, selectedCharacterChangedEventArgs);
-
-            // Reset
-
-            // Assert
-            Assert.IsTrue(true); // Got to here, so it happened...
-        }
-
-        [Test]
         public void PickCharactersPage_OnDatabaseCharacterItemSelected_Default_Should_Pass()
         {
             // Arrange
