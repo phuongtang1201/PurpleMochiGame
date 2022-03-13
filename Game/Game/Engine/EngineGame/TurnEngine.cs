@@ -82,7 +82,8 @@ namespace Game.Engine.EngineGame
                         result = ChooseToUseHeal(Attacker);
                         break;
                     }
-                    result = ChooseToUseAbility(Attacker);
+                    if (ChooseAbility(Attacker))
+                        result = ChooseToUseAbility(Attacker);
                     if (result)
                         result = UseAbility(Attacker);
                     break;
@@ -168,6 +169,10 @@ namespace Game.Engine.EngineGame
             // See if healing is needed.
             EngineSettings.CurrentActionAbility = Attacker.SelectHealingAbility();
 
+            // If ability is chosen, return true
+            if (EngineSettings.CurrentActionAbility != AbilityEnum.None && EngineSettings.CurrentActionAbility != AbilityEnum.Unknown)
+                return true;
+
             // If not needed, find attacker's greatest weakness, then roll dice to see if
             // ability should be applied; default is to roll dice for attack
             if (EngineSettings.CurrentActionAbility == AbilityEnum.None || EngineSettings.CurrentActionAbility == AbilityEnum.Unknown)
@@ -204,7 +209,7 @@ namespace Game.Engine.EngineGame
         }
 
         /// <summary>
-        /// Decide to use an Ability or not
+        /// Implement an Ability
         /// 
         /// Set the Ability
         /// </summary>
@@ -212,39 +217,6 @@ namespace Game.Engine.EngineGame
         /// <returns></returns>
         public override bool ChooseToUseAbility(PlayerInfoModel Attacker)
         {
-            // See if healing is needed.
-            EngineSettings.CurrentActionAbility = Attacker.SelectHealingAbility();
-
-            // If not needed, find attacker's greatest weakness, then roll dice to see if
-            // ability should be applied; default is to roll dice for attack
-            if (EngineSettings.CurrentActionAbility == AbilityEnum.None || EngineSettings.CurrentActionAbility == AbilityEnum.Unknown)
-            {
-                if (Attacker.GetSpeed() < Attacker.GetDefense() && Attacker.GetSpeed() < Attacker.GetAttack())
-                {
-                    if (DiceHelper.RollDice(1, 10) < 4)
-                    {
-                        EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
-                        EngineSettings.CurrentAction = ActionEnum.Ability;
-                    }
-                }
-                else if (Attacker.GetDefense() < Attacker.GetSpeed() && Attacker.GetDefense() < Attacker.GetAttack())
-                {
-                    if (DiceHelper.RollDice(1, 10) < 3)
-                    {
-                        EngineSettings.CurrentActionAbility = AbilityEnum.Toughness;
-                        EngineSettings.CurrentAction = ActionEnum.Ability;
-                    }
-                }
-                else
-                {
-                    if (DiceHelper.RollDice(1, 10) < 2)
-                    {
-                        EngineSettings.CurrentActionAbility = AbilityEnum.Focus;
-                        EngineSettings.CurrentAction = ActionEnum.Ability;
-                    }
-                }
-            }
-
             var moreP = 0;
             switch (EngineSettings.CurrentActionAbility)
             {
