@@ -1376,7 +1376,8 @@ namespace UnitTests.Engine.EngineGame
 
             _ = Engine.EngineSettings.MapModel.PopulateMapModel(Engine.EngineSettings.PlayerList);
 
-            Engine.EngineSettings.CurrentAction = ActionEnum.Unknown;
+            Engine.EngineSettings.CurrentAction = ActionEnum.Ability;
+            Engine.EngineSettings.CurrentActionAbility = AbilityEnum.Heal;
             Engine.EngineSettings.BattleScore.AutoBattle = true;
 
             // Act
