@@ -8,9 +8,12 @@
              x:Class="Game.Views.MonsterIndexPage"
              Title="Mutant Food Index">
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Clicked="Add_Clicked" IconImageSource="icon_add.png"/>
-    </ContentPage.ToolbarItems>
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <ImageButton Source="create.png" WidthRequest="100" HeightRequest="50" 
+                         Clicked="Add_Clicked" HorizontalOptions="End"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
 
     <ContentPage.Content>
         <StackLayout Style="{StaticResource OuterBoxStack}">
