@@ -47,8 +47,7 @@ namespace Game.Engine.EngineGame
         /// <returns></returns>
         public override bool TakeTurn(PlayerInfoModel Attacker)
         {
-            // Choose Action.  Such as Move, Attack etc.
-            // Attack is default; Attack is also used if Move returns false
+            // Attack is default; Attack is also used if Move or ability can't be used
 
             var result = false;
 
@@ -618,12 +617,12 @@ namespace Game.Engine.EngineGame
         /// <returns></returns>
         public override ActionEnum DetermineActionChoice(PlayerInfoModel Attacker)
         {
-            //Autobattle players will choose to perform Focused Attack if the Monster they are
-            //fighting has current health of more than 5x the damage they can deal with an attack,
-            //and they have an item equipped
+            // Autobattle players will choose to perform Focused Attack if the Monster they are
+            // fighting has current health of more than 5x the damage they can deal with an attack,
+            // and they have an item equipped
             if (EngineSettings.BattleScore.AutoBattle == true)
             {
-                // For Attack, Choose Who
+                // For Attack, Choose Whom
                 EngineSettings.CurrentDefender = AttackChoice(Attacker);
 
                 if (EngineSettings.CurrentDefender == null)
@@ -639,6 +638,10 @@ namespace Game.Engine.EngineGame
                         EngineSettings.CurrentAction = ActionEnum.FocusedAttack;
                         return EngineSettings.CurrentAction;
                     }
+                }
+                if (EngineSettings.CurrentAction == ActionEnum.Unknown)
+                {
+                    return ActionEnum.Attack;
                 }
             }
 
