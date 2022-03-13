@@ -75,7 +75,7 @@ namespace Game.Engine.EngineGame
                     break;
 
                 // If current ability is already heal, call ChooseToUseHeal
-                // Otherwise, let ChooseToUseAbility choose ability
+                // Otherwise, call ChooseToUseAbility
                 case ActionEnum.Ability:
                     if (EngineSettings.CurrentActionAbility == AbilityEnum.Heal && Attacker.PlayerType != PlayerTypeEnum.Monster)
                     {
@@ -186,44 +186,73 @@ namespace Game.Engine.EngineGame
         {
             // See if healing is needed.
             EngineSettings.CurrentActionAbility = Attacker.SelectHealingAbility();
-            if (EngineSettings.CurrentActionAbility != AbilityEnum.Unknown)
-            {
-                EngineSettings.CurrentAction = ActionEnum.Ability;
-                return true;
-            }
+            //if (EngineSettings.CurrentActionAbility != AbilityEnum.Unknown)
+            //{
+            //    EngineSettings.CurrentAction = ActionEnum.Ability;
+            //    return true;
+            //}
 
             // If not needed, find attacker's greatest weakness, then roll dice to see if
             // ability should be applied; default is to roll dice for attack
-            if (Attacker.GetSpeed() < Attacker.GetDefense() && Attacker.GetSpeed() < Attacker.GetAttack())
+            if (EngineSettings.CurrentActionAbility == AbilityEnum.None || EngineSettings.CurrentActionAbility == AbilityEnum.Unknown)
             {
-                if (DiceHelper.RollDice(1, 10) < 4)
+                if (Attacker.GetSpeed() < Attacker.GetDefense() && Attacker.GetSpeed() < Attacker.GetAttack())
                 {
-                    EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
-                    EngineSettings.CurrentAction = ActionEnum.Ability;
-                    return true;
+                    if (DiceHelper.RollDice(1, 10) < 4)
+                    {
+                        EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
+                        EngineSettings.CurrentAction = ActionEnum.Ability;
+                        //return true;
+                    }
+                    //return false;
                 }
-                return false;
+                else if (Attacker.GetDefense() < Attacker.GetSpeed() && Attacker.GetDefense() < Attacker.GetAttack())
+                {
+                    if (DiceHelper.RollDice(1, 10) < 3)
+                    {
+                        EngineSettings.CurrentActionAbility = AbilityEnum.Toughness;
+                        EngineSettings.CurrentAction = ActionEnum.Ability;
+                        //return true;
+                    }
+                    //return false;
+                }
+                else
+                {
+                    if (DiceHelper.RollDice(1, 10) < 2)
+                    {
+                        EngineSettings.CurrentActionAbility = AbilityEnum.Focus;
+                        EngineSettings.CurrentAction = ActionEnum.Ability;
+                        //return true;
+                    }
+                    //return false;
+                }
             }
-            else if (Attacker.GetDefense() < Attacker.GetSpeed() && Attacker.GetDefense() < Attacker.GetAttack())
+
+            var moreHP = 0;
+            switch (EngineSettings.CurrentActionAbility)
             {
-                if (DiceHelper.RollDice(1, 10) < 3)
-                {
-                    EngineSettings.CurrentActionAbility = AbilityEnum.Toughness;
-                    EngineSettings.CurrentAction = ActionEnum.Ability;
+                case AbilityEnum.Bandage:
+                    moreHP = Attacker.CurrentHealth / 4;
+                    Attacker.CurrentHealth += moreHP;
                     return true;
-                }
-                return false;
-            }
-            else
-            {
-                if (DiceHelper.RollDice(1, 10) < 2)
-                {
-                    EngineSettings.CurrentActionAbility = AbilityEnum.Focus;
-                    EngineSettings.CurrentAction = ActionEnum.Ability;
+                case AbilityEnum.Heal:
+                    moreHP = Attacker.CurrentHealth / 2;
+                    Attacker.CurrentHealth += moreHP;
                     return true;
-                }
-                return false;
+                case AbilityEnum.Nimble:
+                    moreHP = Attacker.Speed / 4;
+                    Attacker.Speed += moreHP;
+                    return true;
+                case AbilityEnum.Focus:
+                    moreHP = Attacker.Attack / 4;
+                    Attacker.Attack += moreHP;
+                    return true;
+                case AbilityEnum.Toughness:
+                    moreHP = Attacker.Defense / 4;
+                    Attacker.Defense += moreHP;
+                    return true;
             }
+            return false;
         }
 
         /// <summary>
