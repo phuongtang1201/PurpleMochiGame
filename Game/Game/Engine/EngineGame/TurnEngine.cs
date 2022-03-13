@@ -685,7 +685,7 @@ namespace Game.Engine.EngineGame
 
             return EngineSettings.CurrentAction;
 
-            return base.DetermineActionChoice(Attacker);
+            //return base.DetermineActionChoice(Attacker);
         }
 
         /// <summary>
