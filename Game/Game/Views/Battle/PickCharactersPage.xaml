@@ -47,6 +47,8 @@
                                                     <Frame Grid.Column="0" Grid.Row="0" 
                                                            Grid.RowSpan="3"
                                                            Grid.ColumnSpan="6"
+                                                           WidthRequest="700"
+                                                           HeightRequest="100"
                                                            Style="{Binding FrameStyle, Mode=TwoWay}"
                                                            IsVisible="{Binding IsSelected, Mode=TwoWay}" />
 
