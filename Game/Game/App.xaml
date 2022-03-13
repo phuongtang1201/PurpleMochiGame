@@ -639,6 +639,7 @@
             <Style TargetType="Frame" x:Key="CellFrameStyle"
                    BasedOn="{StaticResource NameFrameStyle}">
                 <Setter Property="Margin" Value="0,0,0,10" />
+                <Setter Property="Padding" Value="5" />
                 <Setter Property="HeightRequest" Value="90" />
                 <Setter Property="WidthRequest" Value="500" />
             </Style>
