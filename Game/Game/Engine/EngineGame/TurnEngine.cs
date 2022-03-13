@@ -566,7 +566,6 @@ namespace Game.Engine.EngineGame
             var ToHitScore = d20 + AttackScore;
             if (ToHitScore < DefenseScore)
             {
-                //EngineSettings.BattleMessagesModel.AttackStatus = " rolls " + d20 + " and misses ";
                 EngineSettings.BattleMessagesModel.AttackStatus = " misses ";
 
                 // Miss
@@ -576,7 +575,6 @@ namespace Game.Engine.EngineGame
             }
 
             EngineSettings.BattleMessagesModel.AttackStatus = " hits ";
-            //EngineSettings.BattleMessagesModel.AttackStatus = " rolls " + d20 + " and hits ";
 
             // Hit
             EngineSettings.BattleMessagesModel.HitStatus = HitStatusEnum.Hit;
