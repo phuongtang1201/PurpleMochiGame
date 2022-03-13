@@ -155,7 +155,7 @@ namespace Game.Views
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="args"></param>
-        public void OnPartyCharacterItemSelected(object sender, SelectedItemChangedEventArgs args)
+        /*public void OnPartyCharacterItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
             CharacterModel data = args.SelectedItem as CharacterModel;
             if (data == null)
@@ -170,7 +170,7 @@ namespace Game.Views
             _ = BattleEngineViewModel.Instance.PartyCharacterList.Remove(data);
 
             UpdateNextButtonState();
-        }
+        }*/
 
         /// <summary>
         /// Next Button is based on the count
