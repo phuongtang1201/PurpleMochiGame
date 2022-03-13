@@ -333,8 +333,8 @@ namespace Game.Engine.EngineGame
                 var droppedItem = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.DropLowestValueItem();
                 Debug.WriteLine("Uses Focused attack and drop " + droppedItem.Name.ToString());
 
-                EngineSettings.BattleMessagesModel.AttackStatus = " uses Focused Attack to ";
-                EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + EngineSettings.BattleMessagesModel.AttackStatus + Target.Name + " and drop "+ droppedItem.Name.ToString()+ " forever. " + EngineSettings.BattleMessagesModel.TurnMessageSpecial + EngineSettings.BattleMessagesModel.ExperienceEarned;
+                EngineSettings.BattleMessagesModel.AttackStatus = " uses focused attack to ";
+                EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + EngineSettings.BattleMessagesModel.AttackStatus + Target.Name + " and drops "+ droppedItem.Name.ToString()+ " forever " + EngineSettings.BattleMessagesModel.TurnMessageSpecial + EngineSettings.BattleMessagesModel.ExperienceEarned;
                 Debug.WriteLine(EngineSettings.BattleMessagesModel.TurnMessage);
 
                 return true;
