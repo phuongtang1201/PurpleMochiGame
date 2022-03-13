@@ -534,7 +534,7 @@ namespace Game.Engine.EngineBase
                 var LevelUp = Attacker.AddExperience(experienceEarned);
                 if (LevelUp)
                 {
-                    EngineSettings.BattleMessagesModel.LevelUpMessage = Attacker.Name + " is now Level " + Attacker.Level + " with max health of " + Attacker.GetMaxHealthTotal;
+                    EngineSettings.BattleMessagesModel.LevelUpMessage = Attacker.Name + " is now level " + Attacker.Level + " with max health of " + Attacker.GetMaxHealthTotal;
                     Debug.WriteLine(EngineSettings.BattleMessagesModel.LevelUpMessage);
                 }
 
