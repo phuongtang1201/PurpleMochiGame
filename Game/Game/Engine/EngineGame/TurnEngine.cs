@@ -74,15 +74,24 @@ namespace Game.Engine.EngineGame
                     result = Attack(Attacker);
                     break;
 
-                // If current ability is already heal, call ChooseToUseHeal
-                // Otherwise, call ChooseToUseAbility
+                // If current ability is already heal and attacker is a character, call ChooseToUseHeal
+                // Otherwise, check if there's already an ability
+                // If not, call ChooseAbility
                 case ActionEnum.Ability:
                     if (EngineSettings.CurrentActionAbility == AbilityEnum.Heal && Attacker.PlayerType != PlayerTypeEnum.Monster)
                     {
                         result = ChooseToUseHeal(Attacker);
                         break;
                     }
-                    if (ChooseAbility(Attacker))
+                    if (EngineSettings.CurrentActionAbility != AbilityEnum.None && EngineSettings.CurrentActionAbility != AbilityEnum.Unknown)
+                    {
+                        result = true;
+                    }
+                    else
+                    {
+                        result = ChooseAbility(Attacker);
+                    }
+                    if (result)
                         result = ChooseToUseAbility(Attacker);
                     if (result)
                         result = UseAbility(Attacker);
