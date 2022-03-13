@@ -219,7 +219,7 @@ namespace Game.Views
         public async void CloseButton_Clicked(object sender, EventArgs e)
         {
             //_ = await Navigation.PopModalAsync();
-            await Navigation.PushModalAsync(new PickCharactersPage());
+            await Navigation.PushModalAsync(new NavigationPage(new GamePage()));
         }
     }
 }
