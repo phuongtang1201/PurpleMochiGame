@@ -46,15 +46,9 @@ namespace Game.Views
     }
 
     /// <summary>
-    /// Selecting Characters for the Game
+    /// Selecting Characters for the Game 
     /// 
-    /// TODO: Team
-    /// Mike's game allows duplicate characters in a party (6 Mikes can all fight)
-    /// If you do not allow duplicates, change the code below
-    /// Instead of using the database list directly make a copy of it in the viewmodel
-    /// Then have on select of the database remove the character from that list and add to the part list
-    /// Have select from the party list remove it from the party list and add it to the database list
-    ///
+    /// Up to 6 characters can be chosen with no duplicates
     /// </summary>
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0019:Use pattern matching", Justification = "<Pending>")]
     [DesignTimeVisible(false)]
@@ -78,7 +72,6 @@ namespace Game.Views
             InitializeComponent();
 
             BindingContext = BattleEngineViewModel.Instance;
-            //BindingContext = BattleEngineViewModel.Instance;
 
             // Clear the Database List and the Party List to start
             BattleEngineViewModel.Instance.PartyCharacterList.Clear();
@@ -94,7 +87,6 @@ namespace Game.Views
             }
 
             CharacterSourceList.ItemsSource = PossibleCharacters;
-            //PartyListView.ItemsSource = BattleEngineViewModel.Instance.PartyCharacterList;
         }
 
         /// <summary>
