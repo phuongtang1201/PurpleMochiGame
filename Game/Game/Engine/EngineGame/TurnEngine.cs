@@ -178,6 +178,7 @@ namespace Game.Engine.EngineGame
                     {
                         EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
                         EngineSettings.CurrentAction = ActionEnum.Ability;
+                        return true;
                     }
                 }
                 else if (Attacker.GetDefense() < Attacker.GetSpeed() && Attacker.GetDefense() < Attacker.GetAttack())
@@ -186,6 +187,7 @@ namespace Game.Engine.EngineGame
                     {
                         EngineSettings.CurrentActionAbility = AbilityEnum.Toughness;
                         EngineSettings.CurrentAction = ActionEnum.Ability;
+                        return true;
                     }
                 }
                 else
@@ -194,33 +196,9 @@ namespace Game.Engine.EngineGame
                     {
                         EngineSettings.CurrentActionAbility = AbilityEnum.Focus;
                         EngineSettings.CurrentAction = ActionEnum.Ability;
+                        return true;
                     }
                 }
-            }
-
-            var moreP = 0;
-            switch (EngineSettings.CurrentActionAbility)
-            {
-                case AbilityEnum.Bandage:
-                    moreP = Attacker.CurrentHealth / 4;
-                    Attacker.CurrentHealth += moreP;
-                    return true;
-                case AbilityEnum.Heal:
-                    moreP = Attacker.CurrentHealth / 2;
-                    Attacker.CurrentHealth += moreP;
-                    return true;
-                case AbilityEnum.Nimble:
-                    moreP = Attacker.Speed / 4;
-                    Attacker.Speed += moreP;
-                    return true;
-                case AbilityEnum.Focus:
-                    moreP = Attacker.Attack / 4;
-                    Attacker.Attack += moreP;
-                    return true;
-                case AbilityEnum.Toughness:
-                    moreP = Attacker.Defense / 4;
-                    Attacker.Defense += moreP;
-                    return true;
             }
             return false;
         }
