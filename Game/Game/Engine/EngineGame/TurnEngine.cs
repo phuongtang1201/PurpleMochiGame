@@ -163,6 +163,75 @@ namespace Game.Engine.EngineGame
         /// </summary>
         /// <param name="Attacker"></param>
         /// <returns></returns>
+        public virtual bool ChooseAbility(PlayerInfoModel Attacker)
+        {
+            // See if healing is needed.
+            EngineSettings.CurrentActionAbility = Attacker.SelectHealingAbility();
+
+            // If not needed, find attacker's greatest weakness, then roll dice to see if
+            // ability should be applied; default is to roll dice for attack
+            if (EngineSettings.CurrentActionAbility == AbilityEnum.None || EngineSettings.CurrentActionAbility == AbilityEnum.Unknown)
+            {
+                if (Attacker.GetSpeed() < Attacker.GetDefense() && Attacker.GetSpeed() < Attacker.GetAttack())
+                {
+                    if (DiceHelper.RollDice(1, 10) < 4)
+                    {
+                        EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
+                        EngineSettings.CurrentAction = ActionEnum.Ability;
+                    }
+                }
+                else if (Attacker.GetDefense() < Attacker.GetSpeed() && Attacker.GetDefense() < Attacker.GetAttack())
+                {
+                    if (DiceHelper.RollDice(1, 10) < 3)
+                    {
+                        EngineSettings.CurrentActionAbility = AbilityEnum.Toughness;
+                        EngineSettings.CurrentAction = ActionEnum.Ability;
+                    }
+                }
+                else
+                {
+                    if (DiceHelper.RollDice(1, 10) < 2)
+                    {
+                        EngineSettings.CurrentActionAbility = AbilityEnum.Focus;
+                        EngineSettings.CurrentAction = ActionEnum.Ability;
+                    }
+                }
+            }
+
+            var moreP = 0;
+            switch (EngineSettings.CurrentActionAbility)
+            {
+                case AbilityEnum.Bandage:
+                    moreP = Attacker.CurrentHealth / 4;
+                    Attacker.CurrentHealth += moreP;
+                    return true;
+                case AbilityEnum.Heal:
+                    moreP = Attacker.CurrentHealth / 2;
+                    Attacker.CurrentHealth += moreP;
+                    return true;
+                case AbilityEnum.Nimble:
+                    moreP = Attacker.Speed / 4;
+                    Attacker.Speed += moreP;
+                    return true;
+                case AbilityEnum.Focus:
+                    moreP = Attacker.Attack / 4;
+                    Attacker.Attack += moreP;
+                    return true;
+                case AbilityEnum.Toughness:
+                    moreP = Attacker.Defense / 4;
+                    Attacker.Defense += moreP;
+                    return true;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Decide to use an Ability or not
+        /// 
+        /// Set the Ability
+        /// </summary>
+        /// <param name="Attacker"></param>
+        /// <returns></returns>
         public override bool ChooseToUseAbility(PlayerInfoModel Attacker)
         {
             // See if healing is needed.
@@ -296,7 +365,7 @@ namespace Game.Engine.EngineGame
         }
 
         /// <summary>
-        /// // MonsterModel Attacks CharacterModel
+        /// MonsterModel Attacks CharacterModel
         /// </summary>
         public override bool TurnAsAttack(PlayerInfoModel Attacker, PlayerInfoModel Target)
         {
