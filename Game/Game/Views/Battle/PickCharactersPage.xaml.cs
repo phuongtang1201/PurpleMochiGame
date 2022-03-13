@@ -191,7 +191,6 @@ namespace Game.Views
                 BeginBattleButton.IsEnabled = false;
             }
 
-            //PartyCountLabel.Text = currentCount.ToString();
         }
 
         /// <summary>
@@ -206,9 +205,7 @@ namespace Game.Views
             CreateEngineCharacterList();
 
             //await Navigation.PushModalAsync(new NavigationPage(new BattlePage()));
-            //await Navigation.PushModalAsync(new NavigationPage(new ReadyPage()));
             await Navigation.PushModalAsync(new NavigationPage(new PickItemsPage()));
-            //_ = await Navigation.PopAsync();
         }
         
 
@@ -217,7 +214,7 @@ namespace Game.Views
         /// </summary>
         public void CreateEngineCharacterList()
         {
-            // Clear the currett list
+            // Clear the current list
             BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterList.Clear();
 
             // Load the Characters into the Engine
