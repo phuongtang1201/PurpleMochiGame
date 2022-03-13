@@ -86,25 +86,6 @@ namespace Game.Engine.EngineGame
                     if (result)
                         result = UseAbility(Attacker);
                     break;
-                    /*if (EngineSettings.CurrentActionAbility == AbilityEnum.Unknown || EngineSettings.CurrentActionAbility == AbilityEnum.None)
-                    {
-                        if (Attacker.GetCurrentHealth() < 3)
-                            EngineSettings.CurrentActionAbility = AbilityEnum.Bandage;
-                        else if (Attacker.GetSpeed() < 5)
-                            EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
-                        else if (Attacker.GetDefense() < 5)
-                            EngineSettings.CurrentActionAbility = AbilityEnum.Toughness;
-                        else
-                            EngineSettings.CurrentActionAbility = AbilityEnum.Focus;
-                    }
-                    else if (EngineSettings.CurrentActionAbility == AbilityEnum.Heal && Attacker.PlayerType != PlayerTypeEnum.Monster)
-                    {
-                        result = ChooseToUseHeal(Attacker);
-                        break;
-                    }
-                    result = UseAbility(Attacker);
-                    break;*/
-
                 // If character can't move, choose attack
                 case ActionEnum.Move:
                     result = MoveAsTurn(Attacker);
@@ -186,11 +167,6 @@ namespace Game.Engine.EngineGame
         {
             // See if healing is needed.
             EngineSettings.CurrentActionAbility = Attacker.SelectHealingAbility();
-            //if (EngineSettings.CurrentActionAbility != AbilityEnum.Unknown)
-            //{
-            //    EngineSettings.CurrentAction = ActionEnum.Ability;
-            //    return true;
-            //}
 
             // If not needed, find attacker's greatest weakness, then roll dice to see if
             // ability should be applied; default is to roll dice for attack
@@ -202,9 +178,7 @@ namespace Game.Engine.EngineGame
                     {
                         EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
                         EngineSettings.CurrentAction = ActionEnum.Ability;
-                        //return true;
                     }
-                    //return false;
                 }
                 else if (Attacker.GetDefense() < Attacker.GetSpeed() && Attacker.GetDefense() < Attacker.GetAttack())
                 {
@@ -212,9 +186,7 @@ namespace Game.Engine.EngineGame
                     {
                         EngineSettings.CurrentActionAbility = AbilityEnum.Toughness;
                         EngineSettings.CurrentAction = ActionEnum.Ability;
-                        //return true;
                     }
-                    //return false;
                 }
                 else
                 {
@@ -222,43 +194,41 @@ namespace Game.Engine.EngineGame
                     {
                         EngineSettings.CurrentActionAbility = AbilityEnum.Focus;
                         EngineSettings.CurrentAction = ActionEnum.Ability;
-                        //return true;
                     }
-                    //return false;
                 }
             }
 
-            var moreHP = 0;
+            var moreP = 0;
             switch (EngineSettings.CurrentActionAbility)
             {
                 case AbilityEnum.Bandage:
-                    moreHP = Attacker.CurrentHealth / 4;
-                    Attacker.CurrentHealth += moreHP;
+                    moreP = Attacker.CurrentHealth / 4;
+                    Attacker.CurrentHealth += moreP;
                     return true;
                 case AbilityEnum.Heal:
-                    moreHP = Attacker.CurrentHealth / 2;
-                    Attacker.CurrentHealth += moreHP;
+                    moreP = Attacker.CurrentHealth / 2;
+                    Attacker.CurrentHealth += moreP;
                     return true;
                 case AbilityEnum.Nimble:
-                    moreHP = Attacker.Speed / 4;
-                    Attacker.Speed += moreHP;
+                    moreP = Attacker.Speed / 4;
+                    Attacker.Speed += moreP;
                     return true;
                 case AbilityEnum.Focus:
-                    moreHP = Attacker.Attack / 4;
-                    Attacker.Attack += moreHP;
+                    moreP = Attacker.Attack / 4;
+                    Attacker.Attack += moreP;
                     return true;
                 case AbilityEnum.Toughness:
-                    moreHP = Attacker.Defense / 4;
-                    Attacker.Defense += moreHP;
+                    moreP = Attacker.Defense / 4;
+                    Attacker.Defense += moreP;
                     return true;
             }
             return false;
         }
 
         /// <summary>
-        /// Decide to use an Ability or not
+        /// Decide to use health or not
         /// 
-        /// Set the Ability
+        /// Set the value
         /// </summary>
         /// <param name="Attacker"></param>
         /// <returns></returns>
@@ -549,7 +519,7 @@ namespace Game.Engine.EngineGame
 
             if (myItemList.Count == 0)
             {
-                DroppedMessage = " Nothing dropped. ";
+                DroppedMessage = " nothing dropped. ";
             }
 
             EngineSettings.BattleMessagesModel.DroppedMessage = DroppedMessage;
