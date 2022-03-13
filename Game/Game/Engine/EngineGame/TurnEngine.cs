@@ -80,7 +80,8 @@ namespace Game.Engine.EngineGame
                 case ActionEnum.Ability:
                     if (EngineSettings.CurrentActionAbility == AbilityEnum.Heal && Attacker.PlayerType != PlayerTypeEnum.Monster)
                     {
-                        result = ChooseToUseHeal(Attacker);
+                        if (ChooseToUseHeal(Attacker))
+                            result = UseAbility(Attacker);
                         break;
                     }
                     if (EngineSettings.CurrentActionAbility != AbilityEnum.None && EngineSettings.CurrentActionAbility != AbilityEnum.Unknown)
@@ -92,10 +93,10 @@ namespace Game.Engine.EngineGame
                         result = ChooseAbility(Attacker);
                     }
                     if (result)
-                        result = ChooseToUseAbility(Attacker);
-                    if (result)
-                        result = UseAbility(Attacker);
+                        if (ChooseToUseAbility(Attacker))
+                            result = UseAbility(Attacker);
                     break;
+
                 // If character can't move, choose attack
                 case ActionEnum.Move:
                     result = MoveAsTurn(Attacker);
