@@ -635,7 +635,7 @@ namespace Game.Engine.EngineGame
                 }
                 string DamgeString = EngineSettings.CurrentDefender.GetDamageTotalString;
                 
-                if (EngineSettings.CurrentDefender.CurrentHealth > (int.Parse(DamgeString)* 5))
+                if (EngineSettings.CurrentDefender.CurrentHealth > (int.Parse(DamgeString) * 5))
                 {
                     if (Attacker.ItemsCount() > 0)
                     {
@@ -648,6 +648,42 @@ namespace Game.Engine.EngineGame
                     return ActionEnum.Attack;
                 }
             }
+
+            // Otherwise, return a different action
+            // If it is the character's turn, NOT auto battle, and there's a current action, use what was sent into the engine
+            if (Attacker.PlayerType == PlayerTypeEnum.Character && EngineSettings.CurrentAction != ActionEnum.Unknown)
+            {
+                if (EngineSettings.BattleScore.AutoBattle == false)
+                {
+                    return EngineSettings.CurrentAction;
+                }
+            }
+
+            /*
+             * The following is Used for Monsters,  Auto Battle Characters, and characters when no action selected
+             * 
+             * Order of Priority
+             * If can attack Then Attack
+             * Next use Ability or Move
+             */
+
+            // Assume Move if nothing else happens
+            EngineSettings.CurrentAction = ActionEnum.Move;
+
+            // Check to see if ability is available
+            if (ChooseToUseAbility(Attacker))
+            {
+                EngineSettings.CurrentAction = ActionEnum.Ability;
+                return EngineSettings.CurrentAction;
+            }
+
+            // See if Desired Target is within Range, and if so attack away
+            if (EngineSettings.MapModel.IsTargetInRange(Attacker, AttackChoice(Attacker)))
+            {
+                EngineSettings.CurrentAction = ActionEnum.Attack;
+            }
+
+            return EngineSettings.CurrentAction;
 
             return base.DetermineActionChoice(Attacker);
         }
