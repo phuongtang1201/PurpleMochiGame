@@ -74,12 +74,19 @@ namespace Game.Engine.EngineGame
                     result = Attack(Attacker);
                     break;
 
-                // If ability was chosen, use bandage if health less than 3,
-                // If speed less than 5, use nimble
-                // If defense less than 5, use toughness
-                // Otherwise, use Focus
+                // If current ability is already heal, call ChooseToUseHeal
+                // Otherwise, let ChooseToUseAbility choose ability
                 case ActionEnum.Ability:
-                    if (EngineSettings.CurrentActionAbility == AbilityEnum.Unknown || EngineSettings.CurrentActionAbility == AbilityEnum.None)
+                    if (EngineSettings.CurrentActionAbility == AbilityEnum.Heal && Attacker.PlayerType != PlayerTypeEnum.Monster)
+                    {
+                        result = ChooseToUseHeal(Attacker);
+                        break;
+                    }
+                    result = ChooseToUseAbility(Attacker);
+                    if (result)
+                        result = UseAbility(Attacker);
+                    break;
+                    /*if (EngineSettings.CurrentActionAbility == AbilityEnum.Unknown || EngineSettings.CurrentActionAbility == AbilityEnum.None)
                     {
                         if (Attacker.GetCurrentHealth() < 3)
                             EngineSettings.CurrentActionAbility = AbilityEnum.Bandage;
@@ -96,7 +103,7 @@ namespace Game.Engine.EngineGame
                         break;
                     }
                     result = UseAbility(Attacker);
-                    break;
+                    break;*/
 
                 // If character can't move, choose attack
                 case ActionEnum.Move:
