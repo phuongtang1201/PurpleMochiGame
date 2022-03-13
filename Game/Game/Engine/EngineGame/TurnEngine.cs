@@ -182,8 +182,8 @@ namespace Game.Engine.EngineGame
             if (EngineSettings.CurrentActionAbility != AbilityEnum.None && EngineSettings.CurrentActionAbility != AbilityEnum.Unknown)
                 return true;
 
-            // If not needed, find attacker's greatest weakness, then roll dice to see if
-            // ability should be applied; default is to roll dice for attack
+            // If heal not needed, find attacker's greatest weakness, then roll dice to see if
+            // ability should be applied; default is to roll dice for focus
             if (EngineSettings.CurrentActionAbility == AbilityEnum.None || EngineSettings.CurrentActionAbility == AbilityEnum.Unknown)
             {
                 if (Attacker.GetSpeed() < Attacker.GetDefense() && Attacker.GetSpeed() < Attacker.GetAttack())
