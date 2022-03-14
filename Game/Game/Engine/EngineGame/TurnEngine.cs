@@ -390,7 +390,7 @@ namespace Game.Engine.EngineGame
 
                 return true;
 
-        }
+            }
 
             // Set Messages to empty
             _ = EngineSettings.BattleMessagesModel.ClearMessages();
@@ -398,7 +398,7 @@ namespace Game.Engine.EngineGame
             // Do the Attack
             _ = CalculateAttackStatus(Attacker, Target);
 
-            // See if the Battle Settings Overrides the Roll
+            // See if the Battle Settings Override the Roll
             EngineSettings.BattleMessagesModel.HitStatus = BattleSettingsOverride(Attacker);
 
             //Force Doug to always miss
@@ -421,6 +421,27 @@ namespace Game.Engine.EngineGame
                     break;
 
                 case HitStatusEnum.CriticalHit:
+                    // It's a Hit
+
+                    //Calculate Damage
+                    EngineSettings.BattleMessagesModel.DamageAmount = Attacker.GetDamageRollValue();
+
+                    // Since Critical Hit, double damage
+                    EngineSettings.BattleMessagesModel.DamageAmount *= 2;
+
+                    // Apply the Damage
+                    _ = ApplyDamage(Target);
+
+                    EngineSettings.BattleMessagesModel.TurnMessageSpecial = EngineSettings.BattleMessagesModel.GetCurrentHealthMessage();
+
+                    // Check if Dead and Remove
+                    _ = RemoveIfDead(Target);
+
+                    // If it is a character apply the experience earned
+                    _ = CalculateExperience(Attacker, Target);
+
+                    break;
+
                 case HitStatusEnum.Hit:
                     // It's a Hit
 
@@ -428,10 +449,10 @@ namespace Game.Engine.EngineGame
                     EngineSettings.BattleMessagesModel.DamageAmount = Attacker.GetDamageRollValue();
 
                     // If critical Hit, double the damage
-                    if (EngineSettings.BattleMessagesModel.HitStatus == HitStatusEnum.CriticalHit)
-                    {
-                        EngineSettings.BattleMessagesModel.DamageAmount *= 2;
-                    }
+                    //if (EngineSettings.BattleMessagesModel.HitStatus == HitStatusEnum.CriticalHit)
+                    //{
+                      //  EngineSettings.BattleMessagesModel.DamageAmount *= 2;
+                    //}
 
                     // Apply the Damage
                     _ = ApplyDamage(Target);
