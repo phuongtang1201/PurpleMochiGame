@@ -690,8 +690,11 @@ namespace Game.Views
             //BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive = false;
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null ||
                 BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Monster)
+            {
                 // Set attacker and defender
                 SetAttackerAndDefender();
+                //NextButton.IsEnabled = true;
+            }
 
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Character)
             {
@@ -699,6 +702,7 @@ namespace Game.Views
                 HealButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
                 AttackButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
                 FocusedButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
+                NextButton.IsEnabled = false;
             }
 
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Monster)
@@ -725,8 +729,13 @@ namespace Game.Views
                 SetAttackerAndDefender();
 
                 if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Character)
+                {
                     // Set character active to false
                     BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive = false;
+
+                    // Enabled next button
+                    NextButton.IsEnabled = true;
+                }
 
                 // Enable or disable buttons if attacker is/isn't a character
                 HealButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
