@@ -64,19 +64,23 @@ namespace Game.Models
             switch (value)
             {
                 case AbilityEnum.Bandage:
-                    Message = "Apply Bandages";
+                    //Message = "Apply Bandages";
+                    Message = "takes a break";
                     break;
 
                 case AbilityEnum.Nimble:
-                    Message = "React Quickly";
+                    //Message = "React Quickly";
+                    Message = "has a shot of espresso";
                     break;
 
                 case AbilityEnum.Toughness:
-                    Message = "Toughen Up";
+                    //Message = "Toughen Up";
+                    Message = "puts on a thicker chef's coat";
                     break;
 
                 case AbilityEnum.Focus:
-                    Message = "Mental Focus";
+                    //Message = "Mental Focus";
+                    Message = "sharpens knives";
                     break;
 
                 case AbilityEnum.Quick:
