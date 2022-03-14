@@ -782,7 +782,30 @@ namespace Game.Views
         /// <param name="e"></param>
         public void HealButton_Clicked(object sender, EventArgs e)
         {
-            // Get the turn, set the current player and attacker
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive == true)
+            {
+                // Set action to attack
+                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.Ability;
+
+                // Select heal ability
+                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentActionAbility = AbilityEnum.Bandage;
+
+                // Take Turn
+                NextAttackExample();
+
+                // Set attacker and defender
+                SetAttackerAndDefender();
+
+                if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Character)
+                    // Set character active to false
+                    BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive = false;
+
+                // Enable or disable buttons if attacker is/isn't a character
+                HealButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
+                AttackButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
+                FocusedButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
+            }
+            /*// Get the turn, set the current player and attacker
             SetAttackerAndDefender();
 
             // If attacker is a character, heal
@@ -823,7 +846,7 @@ namespace Game.Views
 
                 // Call next turn
                 NextAttackExample();
-            }
+            }*/
         }
 
         /// <summary>
