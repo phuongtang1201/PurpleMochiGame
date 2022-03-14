@@ -52,6 +52,12 @@ namespace Game.Engine.EngineGame
             // Set attacker to active
             Attacker.Active = true;
 
+            // If attacker is a character, set to active
+            if (Attacker.PlayerType == PlayerTypeEnum.Character)
+            {
+                BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive = true;
+            }
+
             var result = false;
 
             // If the action is not set, then try to set it or use Attack
@@ -113,6 +119,8 @@ namespace Game.Engine.EngineGame
             EngineSettings.CurrentActionAbility = AbilityEnum.Unknown;
             // Reset attacker active status
             Attacker.Active = false;
+            // Reset active character status
+            BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive = false;
 
             return result;
         }
