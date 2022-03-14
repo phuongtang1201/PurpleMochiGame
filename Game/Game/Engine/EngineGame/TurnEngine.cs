@@ -226,7 +226,11 @@ namespace Game.Engine.EngineGame
                 EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + " " + EngineSettings.CurrentActionAbility.ToMessage();
                 return true;
             }
-            return false;
+            else
+            {
+                EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + "'s current health is more than half max health. " + Attacker.Name + " lost a turn.";
+                return false;
+            }
         }
 
         /// <summary>
