@@ -9,7 +9,6 @@ namespace Game.Engine.EngineInterfaces
         bool TakeTurn(PlayerInfoModel Attacker);
         ActionEnum DetermineActionChoice(PlayerInfoModel Attacker);
         bool MoveAsTurn(PlayerInfoModel Attacker);
-        bool ChooseAbility(PlayerInfoModel Attacker);
         bool ChooseToUseAbility(PlayerInfoModel Attacker);
         bool UseAbility(PlayerInfoModel Attacker);
         bool Attack(PlayerInfoModel Attacker);
