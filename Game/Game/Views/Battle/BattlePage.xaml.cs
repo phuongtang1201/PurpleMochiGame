@@ -687,11 +687,23 @@ namespace Game.Views
         /// <param name="e"></param>
         public void NextButton_Clicked(object sender, EventArgs e)
         {
-            // Set attacker and defender
-            SetAttackerAndDefender();
+            //BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive = false;
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null ||
+                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Monster)
+                // Set attacker and defender
+                SetAttackerAndDefender();
 
-            // Take Turn
-            NextAttackExample();
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Character)
+            {
+                BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive = true;
+                HealButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
+                AttackButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
+                FocusedButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
+            }
+
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Monster)
+                // Take Turn
+                NextAttackExample();
         }
 
         /// <summary>
@@ -701,6 +713,7 @@ namespace Game.Views
         /// <param name="e"></param>
         public void AttackButton_Clicked(object sender, EventArgs e)
         {
+                
             // Get the turn, set the current player and attacker
             SetAttackerAndDefender();
 
