@@ -1471,7 +1471,7 @@ namespace UnitTests.Engine.EngineGame
             _ = DiceHelper.EnableForcedRolls();
             _ = DiceHelper.SetForcedRollValue(2);
             // Act
-            var result = Engine.Round.Turn.ChooseAbility(CharacterPlayer);
+            var result = Engine.Round.Turn.ChooseToUseAbility(CharacterPlayer);
 
             // Reset
             _ = DiceHelper.DisableForcedRolls();
