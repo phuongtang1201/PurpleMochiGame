@@ -4,19 +4,6 @@
              x:Class="Game.Views.BattlePage"
              BackgroundImageSource="fridge_empty_background.png" x:Name="BackgroundImage">
 
-    <!--<NavigationPage.TitleView>
-        --><!--Menu Bar--><!--
-        <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
-            <Frame Padding="10,0,0,0"/>
-            <Label Text="Chefs vs. Mutant Food" Style="{StaticResource CenterMessageLargeStyle}"/>
-            <Frame Padding="10,0,0,0"/>
-
-          --><!--  <ImageButton Source="icon_cancel.png" Clicked="ExitButton_Clicked" Style="{StaticResource BattleToolbarStyle}"/>
-            <Frame Padding="10,0,0,0"/>
-            <Label x:Name="BattleModeValue" Text="" Style="{StaticResource ValueStyleMicro}" HorizontalTextAlignment="Center"/>--><!--
-        </StackLayout>
-    </NavigationPage.TitleView>-->
-
     <ContentPage.Content>
         <ScrollView>
             <AbsoluteLayout IsVisible="True"
@@ -155,34 +142,10 @@
                     <!--The Bottom of the Battle UI  Holds the Player to Player boxes, Buttons, and the Messages-->
                     <StackLayout x:Name="BattleBottomBox" Style="{StaticResource BattleUIBottomBox}">
 
-                        <!--<Frame x:Name="BattlePlayerInfomationBox"
-                                Style="{StaticResource PlayerBattleOuterFrame}"
-                                IsVisible="False">
-
-                        <StackLayout x:Name="BattlePlayerBox" Style="{StaticResource PlayerBattleOuterBox}">
-
-                            <StackLayout x:Name="AttackerBox" Style="{StaticResource PlayerBattleInfoBox}" HorizontalOptions="Start">
-                                <Image x:Name="AttackerImage" Source="knight.png" Style="{StaticResource ImageBattleMediumStyle}"/>
-                                <Label x:Name="AttackerName" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
-                                <Label x:Name="AttackerHealth" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
-                            </StackLayout>
-
-                            
-
-                            <StackLayout x:Name="DefenderBox" Style="{StaticResource PlayerBattleInfoBox}" HorizontalOptions="End">
-                                <Image x:Name="DefenderImage" Source="troll.png" Style="{StaticResource ImageBattleMediumStyle}"/>
-                                <Label x:Name="DefenderName" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
-                                <Label x:Name="DefenderHealth" Text="" Style="{StaticResource ValueStyleBattleMicro}"/>
-                            </StackLayout>
-                        </StackLayout>
-                    </Frame>-->
-
                         <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="CenterAndExpand">
 
-                            <!--<Button x:Name="AttackButton" Clicked="AttackButton_Clicked" Text="Next Attack" IsVisible="False"/>-->
                             <Button x:Name="NextRoundButton" Clicked="NextRoundButton_Clicked" Text="Next Round" IsVisible="False"/>
-                            <!--<Button x:Name="CancelBattleButton" Style="{StaticResource CancelUpdateDeleteButton}" 
-                                    Clicked="BackButton_Clicked" Text="BACK" IsVisible="False"/>-->
+                            
                             <Button x:Name="StartBattleButton" Clicked="StartButton_Clicked" Text="BEGIN" IsVisible="False"
                                     Style="{StaticResource CancelUpdateDeleteButton}" />
 
