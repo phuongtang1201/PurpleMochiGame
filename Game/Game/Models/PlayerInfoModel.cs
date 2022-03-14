@@ -103,7 +103,7 @@ namespace Game.Models
 
             Job = data.Job;
 
-            // Give the copy a differet quid, so it can be used in the battles as a copy
+            // Give the copy a different guid, so it can be used in the battles as a copy
             Guid = System.Guid.NewGuid().ToString();
 
             // Set current experience to be 1 above minimum.
@@ -128,7 +128,7 @@ namespace Game.Models
                     break;
 
                 default:
-                    foreach (var item in AbilityEnumHelper.GetListOthers)
+                    foreach (var item in AbilityEnumHelper.GetFullList)
                     {
                         AbilityTracker.Add(AbilityEnumHelper.ConvertStringToEnum(item), Level);
                     }
