@@ -759,7 +759,7 @@ namespace Game.Views
                 // Select action ability for this attacker
                 BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.Ability;
                 // Select heal ability
-                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentActionAbility = AbilityEnum.Heal;
+                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentActionAbility = AbilityEnum.Bandage;
 
                 // Hold the current state
                 var RoundCondition = BattleEngineViewModel.Instance.Engine.Round.RoundNextTurn();
