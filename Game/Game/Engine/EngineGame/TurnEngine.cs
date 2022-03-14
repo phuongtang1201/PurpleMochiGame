@@ -74,7 +74,8 @@ namespace Game.Engine.EngineGame
                     result = Attack(Attacker);
                     break;
 
-                // 
+                // If action is ability, but ability is unknown, call ChooseToUseAbility
+                // If ability is Bandage, call ChooseToUseHeal
                 case ActionEnum.Ability:
                     if (EngineSettings.CurrentActionAbility == AbilityEnum.Unknown || EngineSettings.CurrentActionAbility == AbilityEnum.None)
                     {
@@ -160,58 +161,7 @@ namespace Game.Engine.EngineGame
         }
 
         /// <summary>
-        /// Decide to use an Ability or not
-        /// 
-        /// Set the Ability
-        /// </summary>
-        /// <param name="Attacker"></param>
-        /// <returns></returns>
-        /*public override bool ChooseAbility(PlayerInfoModel Attacker)
-        {
-            // See if healing is needed.
-            EngineSettings.CurrentActionAbility = Attacker.SelectHealingAbility();
-
-            // If ability is chosen, return true
-            if (EngineSettings.CurrentActionAbility != AbilityEnum.None && EngineSettings.CurrentActionAbility != AbilityEnum.Unknown)
-                return true;
-
-            // If heal not needed, find attacker's greatest weakness, then roll dice to see if
-            // ability should be applied; default is to roll dice for focus
-            if (EngineSettings.CurrentActionAbility == AbilityEnum.None || EngineSettings.CurrentActionAbility == AbilityEnum.Unknown)
-            {
-                if (Attacker.GetSpeed() < Attacker.GetDefense() && Attacker.GetSpeed() < Attacker.GetAttack())
-                {
-                    if (DiceHelper.RollDice(1, 10) < 4)
-                    {
-                        EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
-                        EngineSettings.CurrentAction = ActionEnum.Ability;
-                        return true;
-                    }
-                }
-                else if (Attacker.GetDefense() < Attacker.GetSpeed() && Attacker.GetDefense() < Attacker.GetAttack())
-                {
-                    if (DiceHelper.RollDice(1, 10) < 3)
-                    {
-                        EngineSettings.CurrentActionAbility = AbilityEnum.Toughness;
-                        EngineSettings.CurrentAction = ActionEnum.Ability;
-                        return true;
-                    }
-                }
-                else
-                {
-                    if (DiceHelper.RollDice(1, 10) < 2)
-                    {
-                        EngineSettings.CurrentActionAbility = AbilityEnum.Focus;
-                        EngineSettings.CurrentAction = ActionEnum.Ability;
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }*/
-
-        /// <summary>
-        /// Implement an Ability
+        /// Decide to use an Ability
         /// 
         /// Set the Ability
         /// </summary>
