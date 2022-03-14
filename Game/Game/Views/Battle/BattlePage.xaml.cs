@@ -1024,24 +1024,6 @@ namespace Game.Views
         /// <param name="e"></param>
         public void FocusedAttackButton_Clicked(object sender, EventArgs e)
         {
-            //BattleEngineViewModel.Instance.Engine.EngineSettings.BattleStateEnum = BattleStateEnum.Battling;
-
-            // Get the turn, set the current player and attacker to match
-            /*SetAttackerAndDefender();*/
-
-            //If no equipped items, then do the regular attack
-            //if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ItemsCount() == 0)
-            //{
-            //    NextAttackExample();
-            //    return;
-            //}
-
-            //Only allow one time using Focused Attack
-            //if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.CountFocusedAttackUsed != 0)
-            //{
-            //    NextAttackExample();
-            //    return;
-            //}
 
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ItemsCount() == 0 ||
                 BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.CountFocusedAttackUsed != 0)
@@ -1055,8 +1037,6 @@ namespace Game.Views
             else
                 // Call FocusedAttack
                 FocusedAttack();
-                // Set action to focused attack
-                //BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.FocusedAttack;
 
             // Set attacker and defender
             SetAttackerAndDefender();
