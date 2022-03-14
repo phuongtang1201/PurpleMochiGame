@@ -123,15 +123,17 @@
                     <!-- This is the options box for chefs -->
                     <StackLayout x:Name="OptionBox" Margin="20,0,20,0" IsVisible="false">
                         <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
-                        <Button Text="Attack" Style="{StaticResource OptionBoxBattleButton}"
+                        <Button x:Name="AttackButton" Text="Attack" 
+                                Style="{StaticResource OptionBoxBattleButton}"
                                     Clicked="AttackButton_Clicked" IsEnabled="False"/>
-                            <Button Text="Next" Style="{StaticResource OptionBoxBattleButton}"
-                                    Clicked="NextButton_Clicked"/>
+                        <Button Text="Next" Style="{StaticResource OptionBoxBattleButton}"
+                                Clicked="NextButton_Clicked"/>
                         </StackLayout>
 
                         
                         <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
-                            <Button Text="Focused Attack" Style="{StaticResource OptionBoxBattleButton}" 
+                            <Button x:Name="FocusedButton" Text="Focused Attack" 
+                                    Style="{StaticResource OptionBoxBattleButton}" 
                                     Clicked="FocusedAttackButton_Clicked" IsEnabled="False"/>
                             <Button x:Name="HealButton" Text="Heal" 
                                     Style="{StaticResource OptionBoxBattleButton}"
