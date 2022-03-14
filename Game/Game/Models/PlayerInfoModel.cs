@@ -323,6 +323,8 @@ namespace Game.Models
                     break;
 
                 case AbilityEnum.Toughness:
+                    _ = BuffDefense();
+                    break;
                 case AbilityEnum.Barrier:
                     _ = BuffDefense();
                     break;
