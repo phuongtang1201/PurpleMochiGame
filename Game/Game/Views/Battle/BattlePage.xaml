@@ -126,8 +126,9 @@
                         <Button x:Name="AttackButton" Text="Attack" 
                                 Style="{StaticResource OptionBoxBattleButton}"
                                     Clicked="AttackButton_Clicked" IsEnabled="False"/>
-                        <Button Text="Next" Style="{StaticResource OptionBoxBattleButton}"
-                                Clicked="NextButton_Clicked"/>
+                        <Button x:Name="NextButton" Text="Next" 
+                                Style="{StaticResource OptionBoxBattleButton}"
+                                Clicked="NextButton_Clicked" IsEnabled="True"/>
                         </StackLayout>
 
                         
