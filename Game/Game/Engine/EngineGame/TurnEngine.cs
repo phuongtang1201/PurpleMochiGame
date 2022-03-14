@@ -49,6 +49,9 @@ namespace Game.Engine.EngineGame
         {
             // Attack is default; Attack is also used if Move or ability can't be used
 
+            // Set attacker to active
+            Attacker.Active = true;
+
             var result = false;
 
             // If the action is not set, then try to set it or use Attack
@@ -108,6 +111,8 @@ namespace Game.Engine.EngineGame
             EngineSettings.CurrentAction = ActionEnum.Unknown;
             // Reset the Ability to unknown for next time
             EngineSettings.CurrentActionAbility = AbilityEnum.Unknown;
+            // Reset attacker active status
+            Attacker.Active = false;
 
             return result;
         }
