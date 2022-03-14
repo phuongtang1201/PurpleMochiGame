@@ -205,19 +205,6 @@ namespace Game.Engine.EngineBase
         /// </summary>
         /// <param name="Attacker"></param>
         /// <returns></returns>
-        public virtual bool ChooseAbility(PlayerInfoModel Attacker)
-        {
-            // Don't try
-            return false;
-        }
-
-        /// <summary>
-        /// Decide to use an Ability or not
-        /// 
-        /// Set the Ability
-        /// </summary>
-        /// <param name="Attacker"></param>
-        /// <returns></returns>
         public virtual bool ChooseToUseAbility(PlayerInfoModel Attacker)
         {
             // See if healing is needed.
