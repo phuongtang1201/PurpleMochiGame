@@ -325,7 +325,7 @@ namespace Game.Engine.EngineGame
                 Debug.WriteLine("Uses focused attack and drops " + droppedItem.Name.ToString());
 
                 EngineSettings.BattleMessagesModel.AttackStatus = " uses focused attack on ";
-                EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + EngineSettings.BattleMessagesModel.AttackStatus + Target.Name + " and drops "+ droppedItem.Name.ToString()+ " forever " + EngineSettings.BattleMessagesModel.TurnMessageSpecial + EngineSettings.BattleMessagesModel.ExperienceEarned;
+                EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + EngineSettings.BattleMessagesModel.AttackStatus + Target.Name + " and drops "+ droppedItem.Name.ToString()+ " forever" + EngineSettings.BattleMessagesModel.TurnMessageSpecial + EngineSettings.BattleMessagesModel.ExperienceEarned;
                 Debug.WriteLine(EngineSettings.BattleMessagesModel.TurnMessage);
 
                 return true;
