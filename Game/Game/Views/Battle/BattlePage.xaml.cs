@@ -791,34 +791,32 @@ namespace Game.Views
         /// <param name="e"></param>
         public void HealButton_Clicked(object sender, EventArgs e)
         {
-            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive == true)
+            // Set action to attack
+            BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.Ability;
+
+            // Select heal ability
+            BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentActionAbility = AbilityEnum.Bandage;
+
+            // Take Turn
+            NextAttackExample();
+
+            // Set attacker and defender
+            SetAttackerAndDefender();
+
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Character)
             {
-                // Set action to attack
-                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.Ability;
+                // Set character active to false
+                BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive = false;
 
-                // Select heal ability
-                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentActionAbility = AbilityEnum.Bandage;
-
-                // Take Turn
-                NextAttackExample();
-
-                // Set attacker and defender
-                SetAttackerAndDefender();
-
-                if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Character)
-                {
-                    // Set character active to false
-                    BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive = false;
-
-                    // Enabled next button
-                    NextButton.IsEnabled = true;
-                }
-
-                // Enable or disable buttons if attacker is/isn't a character
-                HealButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
-                AttackButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
-                FocusedButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
+                // Enabled next button
+                NextButton.IsEnabled = true;
             }
+
+            // Enable or disable buttons if attacker is/isn't a character
+            HealButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
+            AttackButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
+            FocusedButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
+ 
             /*// Get the turn, set the current player and attacker
             SetAttackerAndDefender();
 
