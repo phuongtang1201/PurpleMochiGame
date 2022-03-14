@@ -1451,7 +1451,7 @@ namespace UnitTests.Engine.EngineGame
         }
 
         [Test]
-        public void TurnEngine_ChooseAbility_Valid_Roll_2_Yes_Ability_Should_Return_True()
+        public void TurnEngine_ChooseToUseAbility_Valid_Roll_2_Yes_Ability_Should_Return_True()
         {
             // Arrange
 
