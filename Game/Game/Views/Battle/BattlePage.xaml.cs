@@ -96,9 +96,6 @@ namespace Game.Views
                 
             }
 
-            // Add one black PlayerInfoDisplayBox to hold space in case the list is empty
-            //CharacterBox.Children.Add(PlayerInfoDisplayBox(null));
-
             // Add one black PlayerInfoDisplayBox to hold space incase the list is empty
             MonsterBox.Children.Add(PlayerInfoDisplayBox(null));
 
@@ -693,7 +690,6 @@ namespace Game.Views
             {
                 // Set attacker and defender
                 SetAttackerAndDefender();
-                //NextButton.IsEnabled = true;
             }
 
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Character)
@@ -740,46 +736,6 @@ namespace Game.Views
             AttackButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
             FocusedButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
 
-            /*// Get the turn, set the current player and attacker
-            SetAttackerAndDefender();
-
-            // If attacker is a Character, attack
-            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Monster)
-            {
-                // Set action to attack
-                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.Attack;
-
-                // Hold the current state
-                var RoundCondition = BattleEngineViewModel.Instance.Engine.Round.RoundNextTurn();
-
-                // Output the Message of what happened.
-                GameMessage();
-
-                // Show the outcome on the Board
-                DrawGameAttackerDefenderBoard();
-
-                // Output message if round over
-                if (RoundCondition == RoundEnum.NewRound)
-                {
-                    BattleMessages.Text = string.Format("{0} \n{1}", "The round is over, press Next to continue.", BattleMessages.Text);
-                    return;
-                }
-
-                // Output message if game over
-                if (RoundCondition == RoundEnum.GameOver)
-                {
-                    BattleMessages.Text = string.Format("{0} \n{1}", "The game is over, press Next to continue.", BattleMessages.Text);
-                    return;
-                }
-            }
-            else
-            {
-                // Output message
-                BattleMessages.Text = string.Format("{0} \n{1}", "It's not your turn. Please try again", BattleMessages.Text);
-
-                // Call next turn
-                NextAttackExample();
-            }*/
         }
 
         /// <summary>
@@ -814,49 +770,7 @@ namespace Game.Views
             HealButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
             AttackButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
             FocusedButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
- 
-            /*// Get the turn, set the current player and attacker
-            SetAttackerAndDefender();
 
-            // If attacker is a character, heal
-            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Monster)
-            {
-                // Select action ability for this attacker
-                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.Ability;
-                // Select heal ability
-                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentActionAbility = AbilityEnum.Bandage;
-
-                // Hold the current state
-                var RoundCondition = BattleEngineViewModel.Instance.Engine.Round.RoundNextTurn();
-
-                // Output the Message of what happened.
-                GameMessage();
-
-                // Show the outcome on the Board
-                DrawGameAttackerDefenderBoard();
-
-                // Output message if round over
-                if (RoundCondition == RoundEnum.NewRound)
-                {
-                    BattleMessages.Text = string.Format("{0} \n{1}", "The round is over, press Next to continue.", BattleMessages.Text);
-                    return;
-                }
-
-                // Output message if game over
-                if (RoundCondition == RoundEnum.GameOver)
-                {
-                    BattleMessages.Text = string.Format("{0} \n{1}", "The game is over, press Next to continue.", BattleMessages.Text);
-                    return;
-                }
-            }
-            else
-            {
-                // Output message
-                BattleMessages.Text = string.Format("{0} \n{1}", "It's not your turn. Please try again.", BattleMessages.Text);
-
-                // Call next turn
-                NextAttackExample();
-            }*/
         }
 
         /// <summary>
