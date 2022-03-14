@@ -74,7 +74,7 @@ namespace UnitTests.Models
             // Reset
 
             // Assert
-            Assert.AreEqual("Mental Focus", result);
+            Assert.AreEqual("sharpens knives", result);
         }
 
         [Test]
