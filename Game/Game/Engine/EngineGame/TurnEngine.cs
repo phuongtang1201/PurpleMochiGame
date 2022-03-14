@@ -780,6 +780,8 @@ namespace Game.Engine.EngineGame
         /// </summary>
         public override bool UseAbility(PlayerInfoModel Attacker)
         {
+            if (Attacker.AbilityTracker[EngineSettings.CurrentActionAbility] == 0)
+                return false;
             EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + " uses ability " + EngineSettings.CurrentActionAbility.ToMessage();
             return true;
             //return base.UseAbility(Attacker);
