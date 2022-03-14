@@ -85,6 +85,8 @@ namespace Game.Engine.EngineGame
                     else if (EngineSettings.CurrentActionAbility == AbilityEnum.Bandage && Attacker.PlayerType != PlayerTypeEnum.Monster)
                     {
                         result = ChooseToUseHeal(Attacker);
+                        if (!result)
+                            return result;
                     }
                     break;
 
