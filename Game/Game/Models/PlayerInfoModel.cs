@@ -109,12 +109,8 @@ namespace Game.Models
             // Set current experience to be 1 above minimum.
             ExperienceTotal = LevelTableHelper.LevelDetailsList[Level - 1].Experience + 1;
 
-            // Fill dictionary with all abilities since game doesn't use jobs
-            foreach (var item in AbilityEnumHelper.GetFullList)
-            {
-                AbilityTracker.Add(AbilityEnumHelper.ConvertStringToEnum(item), Level);
-            }
-            /*switch (Job)
+            // Fill dictionary with job-based abilities
+            switch (Job)
             {
                 case CharacterJobEnum.Cleric:
 
@@ -137,7 +133,7 @@ namespace Game.Models
                         AbilityTracker.Add(AbilityEnumHelper.ConvertStringToEnum(item), Level);
                     }
                     break;
-            }*/
+            }
         }
 
         /// <summary>
