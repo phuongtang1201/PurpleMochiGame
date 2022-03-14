@@ -225,7 +225,9 @@ namespace Game.Engine.EngineGame
             {
                 var moreHP = Attacker.CurrentHealth / 2;
                 Attacker.CurrentHealth += moreHP;
-                return UseAbility(Attacker);
+                EngineSettings.BattleMessagesModel.TurnMessage = Attacker.Name + " uses ability " + EngineSettings.CurrentActionAbility.ToMessage();
+                return true;
+                //return UseAbility(Attacker);
             }
             return false;
         }
