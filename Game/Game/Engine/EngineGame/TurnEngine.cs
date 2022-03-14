@@ -90,7 +90,7 @@ namespace Game.Engine.EngineGame
                     }
                     else
                     {
-                        result = ChooseAbility(Attacker);
+                        result = ChooseToUseAbility(Attacker);
                     }
                     if (result)
                         if (ChooseToUseAbility(Attacker))
