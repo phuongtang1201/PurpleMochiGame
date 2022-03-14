@@ -17,6 +17,9 @@ namespace Game.Models
         // The Ability will be the List of Abilities per Job, and a count of how many times they can use it per round
         public Dictionary<AbilityEnum, int> AbilityTracker = new Dictionary<AbilityEnum, int>();
 
+        // Bool to keep track of whether player is the active attacker
+        public bool Active;
+
         /// <summary>
         /// Default Constructor
         /// </summary>
@@ -61,6 +64,8 @@ namespace Game.Models
 
             Job = data.Job;
 
+            Active = data.Active;
+
             AbilityTracker = data.AbilityTracker;
         }
 
@@ -102,6 +107,8 @@ namespace Game.Models
             Difficulty = data.Difficulty;
 
             Job = data.Job;
+
+            Active = false;
 
             // Give the copy a different guid, so it can be used in the battles as a copy
             Guid = System.Guid.NewGuid().ToString();
