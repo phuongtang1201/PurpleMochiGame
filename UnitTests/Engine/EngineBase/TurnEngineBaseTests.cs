@@ -1141,8 +1141,7 @@ namespace UnitTests.Engine.EngineBase
 
             var characterPlayer = new PlayerInfoModel(new CharacterModel { Job = CharacterJobEnum.Unknown });
 
-            // remove it so it is not found
-            characterPlayer.AbilityTracker.Add(AbilityEnum.Toughness, 1);
+            // assign ability
             Engine.EngineSettings.CurrentActionAbility = AbilityEnum.Toughness;
 
             // Act
