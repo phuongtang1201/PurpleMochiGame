@@ -174,7 +174,7 @@ namespace Game.Engine.EngineGame
         /// </summary>
         /// <param name="Attacker"></param>
         /// <returns></returns>
-        public override bool ChooseAbility(PlayerInfoModel Attacker)
+        /*public override bool ChooseAbility(PlayerInfoModel Attacker)
         {
             // See if healing is needed.
             EngineSettings.CurrentActionAbility = Attacker.SelectHealingAbility();
@@ -216,7 +216,7 @@ namespace Game.Engine.EngineGame
                 }
             }
             return false;
-        }
+        }*/
 
         /// <summary>
         /// Implement an Ability
