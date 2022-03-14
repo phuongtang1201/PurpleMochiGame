@@ -1027,23 +1027,53 @@ namespace Game.Views
             //BattleEngineViewModel.Instance.Engine.EngineSettings.BattleStateEnum = BattleStateEnum.Battling;
 
             // Get the turn, set the current player and attacker to match
-            SetAttackerAndDefender();
+            /*SetAttackerAndDefender();*/
 
             //If no equipped items, then do the regular attack
-            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ItemsCount() == 0)
-            {
-                NextAttackExample();
-                return;
-            }
+            //if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ItemsCount() == 0)
+            //{
+            //    NextAttackExample();
+            //    return;
+            //}
 
             //Only allow one time using Focused Attack
-            if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.CountFocusedAttackUsed != 0)
+            //if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.CountFocusedAttackUsed != 0)
+            //{
+            //    NextAttackExample();
+            //    return;
+            //}
+
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ItemsCount() == 0 ||
+                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.CountFocusedAttackUsed != 0)
             {
+                // Set action to attack
+                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.Attack;
+
+                // Take Turn
                 NextAttackExample();
-                return;
+            }
+            else
+                // Call FocusedAttack
+                FocusedAttack();
+                // Set action to focused attack
+                //BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAction = ActionEnum.FocusedAttack;
+
+            // Set attacker and defender
+            SetAttackerAndDefender();
+            //FocusedAttack();
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Character)
+            {
+                // Set character active to false
+                BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive = false;
+
+                // Enabled next button
+                NextButton.IsEnabled = true;
             }
 
-            FocusedAttack();
+            // Enable or disable buttons if attacker is/isn't a character
+            HealButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
+            AttackButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
+            FocusedButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
 
         }
 
