@@ -488,6 +488,9 @@ namespace UnitTests.Views
 
             _ = BattleEngineViewModel.Instance.Engine.Round.MakePlayerList();
 
+            // Set attacker and defender
+            SetAttackerAndDefender();
+
             // Act
             page.FocusedAttackButton_Clicked(null, null);
             page.FocusedAttackButton_Clicked(null, null);
