@@ -642,10 +642,6 @@ namespace Game.Views
                 MonsterHealth.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetCurrentHealthTotal.ToString() + " / " + BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetMaxHealthTotal.ToString();
             }
 
-            //AttackerImage.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ImageURI;
-            //AttackerName.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.Name;
-            //AttackerHealth.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.GetCurrentHealthTotal.ToString() + " / " + BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.GetMaxHealthTotal.ToString();
-
             // Show what action the Attacker used
             AttackerAttack.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.PreviousAction.ToImageURI();
 
@@ -654,10 +650,6 @@ namespace Game.Views
             {
                 AttackerAttack.Source = item.ImageURI;
             }
-
-            //DefenderImage.Source = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.ImageURI;
-            //DefenderName.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.Name;
-            //DefenderHealth.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetCurrentHealthTotal.ToString() + " / " + BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.GetMaxHealthTotal.ToString();
 
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.Alive == false)
             {
@@ -669,8 +661,6 @@ namespace Game.Views
                 }
                 
             }
-
-          //  BattlePlayerBoxVersus.Text = "vs";
         }
 
         /// <summary>
@@ -678,15 +668,6 @@ namespace Game.Views
         /// </summary>
         public void DrawGameBoardClear()
         {
-            //AttackerImage.Source = string.Empty;
-            //AttackerName.Text = string.Empty;
-            //AttackerHealth.Text = string.Empty;
-
-            //DefenderImage.Source = string.Empty;
-            //DefenderName.Text = string.Empty;
-            //DefenderHealth.Text = string.Empty;
-            //DefenderImage.BackgroundColor = Color.Transparent;
-
             MonsterImage.Source = string.Empty;
             MonsterName.Text = string.Empty;
             MonsterHealth.Text = string.Empty;
@@ -944,18 +925,6 @@ namespace Game.Views
             //show message if target is killed
             if(BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender?.Alive == false)
             {
-                //If monster is killed, then shows success. Otherwise, shows fail
-                //if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Character)
-                //{
-                //    FailOrSuccess.Text = "Fail!";
-                //}
-
-                //if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Monster)
-                //{
-                //    FailOrSuccess.Text = "Success!";
-                //}
-
-
                 BattleMessages.Text = string.Format("{0} \n{1}", BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.TurnDeathMessage, BattleMessages.Text);
             }
  
@@ -966,8 +935,6 @@ namespace Game.Views
                 BattleMessages.Text = string.Format("{0} \n{1}", BattleEngineViewModel.Instance.Engine.EngineSettings.BattleMessagesModel.LevelUpMessage, BattleMessages.Text);
             }
 
-            //htmlSource.Html = BattleEngineViewModel.Instance.Engine.BattleMessagesModel.GetHTMLFormattedTurnMessage();
-            //HtmlBox.Source = HtmlBox.Source = htmlSource;
         }
 
         /// <summary>
@@ -996,12 +963,6 @@ namespace Game.Views
 
             // Get the turn, set the current player and attacker to match
             SetAttackerAndDefender();
-
-            //if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentDefender.PlayerType == PlayerTypeEnum.Character)
-            //{
-            //    NextAttackExample();
-            //    return;
-            //}
 
             //If no equipped items, then do the regular attack
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.ItemsCount() == 0)
@@ -1159,11 +1120,8 @@ namespace Game.Views
         {
             NextRoundButton.IsVisible = false;
             StartBattleButton.IsVisible = false;
-        //    AttackButton.IsVisible = false;
             MessageDisplayBox.IsVisible = false;
             OptionBox.IsVisible = false;
-         //   BattlePlayerInfomationBox.IsVisible = false;
-
         }
 
         /// <summary>
@@ -1184,7 +1142,6 @@ namespace Game.Views
             DrawPlayerBoxes();
 
             // Update the Mode
-            //BattleModeValue.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.BattleSettingsModel.BattleModeEnum.ToMessage();
 
             ShowBattleModeDisplay();
 
@@ -1199,11 +1156,8 @@ namespace Game.Views
             switch (BattleEngineViewModel.Instance.Engine.EngineSettings.BattleStateEnum)
             {
                 case BattleStateEnum.Starting:
-                    //GameUIDisplay.IsVisible = false;
                     AttackerAttack.Source = ActionEnum.Unknown.ToImageURI();
-                    //StartBattleQuery.IsVisible = true;
                     StartBattleButton.IsVisible = true;
-                    //CancelBattleButton.IsVisible = true;
                     break;
 
                 case BattleStateEnum.NewRound:
@@ -1224,9 +1178,7 @@ namespace Game.Views
                 case BattleStateEnum.RoundOver:
                 case BattleStateEnum.Battling:
                     GameUIDisplay.IsVisible = true;
-            //        BattlePlayerInfomationBox.IsVisible = true;
                     MessageDisplayBox.IsVisible = true;
-                  //  AttackButton.IsVisible = true;
                     OptionBox.IsVisible = true;
                     break;
 
