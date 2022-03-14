@@ -59,6 +59,9 @@ namespace Game.Engine.EngineModels
         // Current Player who is the Defender
         public PlayerInfoModel CurrentDefender { get; set; }
 
+        // Holds whether the Attacker is a Character
+        public bool CharacterActive { get; set; }
+
         // The Action 
         public ActionEnum CurrentAction { get; set; }
 
