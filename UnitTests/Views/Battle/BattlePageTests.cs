@@ -511,8 +511,6 @@ namespace UnitTests.Views
             // Add each model here to warm up and load it.
             _ = Game.Helpers.DataSetsHelper.WarmUp();
 
-           
-
             var data = new PlayerInfoModel();
 
             // Add the first item
@@ -520,6 +518,9 @@ namespace UnitTests.Views
             BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterList.Add(data);
 
             _ = BattleEngineViewModel.Instance.Engine.Round.MakePlayerList();
+
+            // Set attacker and defender
+            SetAttackerAndDefender();
 
             // Act
             page.FocusedAttackButton_Clicked(null, null);
