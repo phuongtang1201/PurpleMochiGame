@@ -83,16 +83,7 @@ namespace Game.Engine.EngineGame
                         result = ChooseToUseHeal(Attacker);
                         break;
                     }
-                    if (EngineSettings.CurrentActionAbility != AbilityEnum.None && EngineSettings.CurrentActionAbility != AbilityEnum.Unknown)
-                    {
-                        result = true;
-                    }
-                    else
-                    {
-                        result = ChooseToUseAbility(Attacker);
-                    }
-                    if (result)
-                        result = ChooseToUseAbility(Attacker);
+                    result = ChooseToUseAbility(Attacker);
                     if (result)
                         result = UseAbility(Attacker);
                     break;
