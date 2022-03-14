@@ -1119,8 +1119,7 @@ namespace UnitTests.Engine.EngineGame
 
             var characterPlayer = new PlayerInfoModel(new CharacterModel { Job = CharacterJobEnum.Unknown });
 
-            // remove it so it is not found
-            characterPlayer.AbilityTracker.Add(AbilityEnum.Heal, 1);
+            // assign ability
             Engine.EngineSettings.CurrentActionAbility = AbilityEnum.Heal;
 
             // Act
