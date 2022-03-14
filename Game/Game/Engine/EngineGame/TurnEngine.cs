@@ -74,18 +74,28 @@ namespace Game.Engine.EngineGame
                     result = Attack(Attacker);
                     break;
 
-                // If current ability is already heal and attacker is a character, call ChooseToUseHeal
-                // Otherwise, check if there's already an ability
-                // If not, call ChooseAbility
+                // If ability was chosen, use bandage if health less than 3,
+                // If speed less than 5, use nimble
+                // If defense less than 5, use toughness
+                // Otherwise, use Focus
                 case ActionEnum.Ability:
-                    if (EngineSettings.CurrentActionAbility == AbilityEnum.Heal && Attacker.PlayerType != PlayerTypeEnum.Monster)
+                    if (EngineSettings.CurrentActionAbility == AbilityEnum.Unknown || EngineSettings.CurrentActionAbility == AbilityEnum.None)
+                    {
+                        if (Attacker.GetCurrentHealth() < 3)
+                            EngineSettings.CurrentActionAbility = AbilityEnum.Bandage;
+                        else if (Attacker.GetSpeed() < 5)
+                            EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
+                        else if (Attacker.GetDefense() < 5)
+                            EngineSettings.CurrentActionAbility = AbilityEnum.Toughness;
+                        else
+                            EngineSettings.CurrentActionAbility = AbilityEnum.Focus;
+                    }
+                    else if (EngineSettings.CurrentActionAbility == AbilityEnum.Heal && Attacker.PlayerType != PlayerTypeEnum.Monster)
                     {
                         result = ChooseToUseHeal(Attacker);
                         break;
                     }
-                    result = ChooseToUseAbility(Attacker);
-                    if (result)
-                        result = UseAbility(Attacker);
+                    result = UseAbility(Attacker);
                     break;
 
                 // If character can't move, choose attack
