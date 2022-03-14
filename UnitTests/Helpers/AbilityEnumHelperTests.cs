@@ -57,7 +57,7 @@ namespace UnitTests.Helpers
             var result = AbilityEnumHelper.GetListOthers;
 
             // Assert
-            Assert.AreEqual(1, result.Count);
+            Assert.AreEqual(4, result.Count);
         }
 
         [Test]
