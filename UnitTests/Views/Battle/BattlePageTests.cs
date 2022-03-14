@@ -108,6 +108,8 @@ namespace UnitTests.Views
         public void BattlePage_FocusedAttackButton_Clicked_Default_Should_Pass()
         {
             // Arrange
+            // Set attacker and defender
+            SetAttackerAndDefender();
 
             // Act
             page.FocusedAttackButton_Clicked(null, null);
