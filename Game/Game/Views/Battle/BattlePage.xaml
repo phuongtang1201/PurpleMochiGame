@@ -124,7 +124,7 @@
                     <StackLayout x:Name="OptionBox" Margin="20,0,20,0" IsVisible="false">
                         <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
                         <Button Text="Attack" Style="{StaticResource OptionBoxBattleButton}"
-                                    Clicked="AttackButton_Clicked"/>
+                                    Clicked="AttackButton_Clicked" IsEnabled="False"/>
                             <Button Text="Next" Style="{StaticResource OptionBoxBattleButton}"
                                     Clicked="NextButton_Clicked"/>
                         </StackLayout>
@@ -132,7 +132,7 @@
                         
                         <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
                             <Button Text="Focused Attack" Style="{StaticResource OptionBoxBattleButton}" 
-                                    Clicked="FocusedAttackButton_Clicked"/>
+                                    Clicked="FocusedAttackButton_Clicked" IsEnabled="False"/>
                             <Button x:Name="HealButton" Text="Heal" 
                                     Style="{StaticResource OptionBoxBattleButton}"
                                     Clicked="HealButton_Clicked" IsEnabled="False"/>
