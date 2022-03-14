@@ -94,6 +94,8 @@ namespace UnitTests.Views
         public void BattlePage_HealButton_Clicked_Default_Should_Pass()
         {
             // Arrange
+            // Set attacker and defender
+            SetAttackerAndDefender();
 
             // Act
             page.HealButton_Clicked(null, null);
