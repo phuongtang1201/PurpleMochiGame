@@ -185,7 +185,7 @@ namespace Game.Models
             ExperienceRemaining = LevelTableHelper.LevelDetailsList[Level + 1].Experience - 1;
 
             // Adding abilities for monsters, why not, they work hard for a living
-            foreach (var item in AbilityEnumHelper.GetListOthers)
+            foreach (var item in AbilityEnumHelper.GetFullList)
             {
                 AbilityTracker.Add(AbilityEnumHelper.ConvertStringToEnum(item), Level);
             }
