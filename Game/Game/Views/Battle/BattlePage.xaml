@@ -135,7 +135,7 @@
                                     Clicked="FocusedAttackButton_Clicked"/>
                             <Button x:Name="HealButton" Text="Heal" 
                                     Style="{StaticResource OptionBoxBattleButton}"
-                                    Clicked="HealButton_Clicked" />
+                                    Clicked="HealButton_Clicked" IsEnabled="False"/>
                             <!-- <Button Text="Pick Enemy" Style="{StaticResource OptionBoxBattleButton}"/>-->
                         </StackLayout>
                     </StackLayout>
