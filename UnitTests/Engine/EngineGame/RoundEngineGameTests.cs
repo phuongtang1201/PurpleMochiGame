@@ -1173,6 +1173,8 @@ namespace UnitTests.Engine.EngineGame
 
             Engine.EngineSettings.CharacterList.Clear();
 
+            Engine.EngineSettings.BattleSettingsModel.AllowBossMonsters = false;
+
             // Act
             var result = Engine.Round.AddMonstersToRound();
 
