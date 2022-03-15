@@ -86,6 +86,15 @@ namespace Game.Engine.EngineGame
                     else if (EngineSettings.CurrentActionAbility == AbilityEnum.Bandage && Attacker.PlayerType != PlayerTypeEnum.Monster)
                     {
                         result = ChooseToUseHeal(Attacker);
+                        EngineSettings.BattleScore.TurnCount++;
+
+                        // Save the Previous Action off
+                        EngineSettings.PreviousAction = EngineSettings.CurrentAction;
+
+                        // Reset the Action to unknown for next time
+                        EngineSettings.CurrentAction = ActionEnum.Unknown;
+                        // Reset the Ability to unknown for next time
+                        EngineSettings.CurrentActionAbility = AbilityEnum.Unknown;
                         if (!result)
                             return result;
                     }
