@@ -819,6 +819,24 @@ namespace UnitTests.Engine.EngineGame
             // Assert
             Assert.AreEqual(Engine.EngineSettings.BattleMessagesModel.TurnDeathMessage, "Mutant Food Name has been cooked!");
         }
+
+        [Test]
+        public void TurnEngine_CharacterDied_Message_Should_Pass()
+        {
+            // Arrange
+            var player = new CharacterModel();
+
+            var PlayerInfo = new PlayerInfoModel(player);
+            Engine.EngineSettings.CharacterList.Add(PlayerInfo);
+
+            // Act
+            _ = Engine.Round.Turn.TargetDied(PlayerInfo);
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(Engine.EngineSettings.BattleMessagesModel.TurnDeathMessage, "Chef Name has been cooked!");
+        }
         #endregion TargetDied
 
         #region TurnAsAttack
