@@ -1196,50 +1196,6 @@ namespace UnitTests.Engine.EngineGame
             Assert.AreEqual(6, result);
         }
 
-        [Test]
-        public void RoundEngine_AddMonstersToRound_MaxLevel_Should_Pass()
-        {
-            // Arrange
-            Engine.EngineSettings.MonsterList.Clear();
-
-            Engine.EngineSettings.CharacterList.Clear();
-
-            var character1 = new CharacterModel
-            {
-                Speed = 1,
-                Level = 20,
-                CurrentHealth = 100,
-                ExperienceTotal = 1000,
-                Name = "A",
-            };
-
-            var character2 = new CharacterModel
-            {
-                Speed = 1,
-                Level = 10,
-                CurrentHealth = 100,
-                ExperienceTotal = 1000,
-                Name = "B",
-            };
-
-            var Player1 = new PlayerInfoModel(character1);
-            var Player2 = new PlayerInfoModel(character2);
-            
-            Engine.EngineSettings.CharacterList.Add(Player1);
-            Engine.EngineSettings.CharacterList.Add(Player2);
-
-            // Act
-            var result = Engine.Round.AddMonstersToRound();
-            // Make the List
-            Engine.EngineSettings.PlayerList = Engine.Round.MakePlayerList();
-
-            var list = Engine.Round.OrderPlayerListByTurnOrder();
-
-            // Reset
-
-            // Assert
-            Assert.IsTrue(list[0].Level <= 15);
-        }
         #endregion
     }
 }
