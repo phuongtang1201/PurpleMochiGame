@@ -603,7 +603,7 @@ namespace Game.Engine.EngineGame
             // Idea is to give more help with more characters, but have the help
             // decrease the longer the game goes on
             var partyCount = EngineSettings.CharacterList.Count();
-            var drops = partyCount - round;
+            var drops = (partyCount / 2) - round;
             if (drops <= 0)
                 drops = 1;
             if (round > 20)
