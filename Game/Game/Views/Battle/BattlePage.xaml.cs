@@ -692,8 +692,10 @@ namespace Game.Views
                 SetAttackerAndDefender();
             }
 
+            var name = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.Name;
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Character)
             {
+                BattleMessages.Text = string.Format("{0} \n{1}", "It's now " + name + "'s turn.", BattleMessages.Text);
                 BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive = true;
                 HealButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
                 AttackButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
