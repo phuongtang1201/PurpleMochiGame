@@ -1206,7 +1206,7 @@ namespace UnitTests.Engine.EngineGame
 
             var character1 = new CharacterModel
             {
-                Speed = -1,
+                Speed = 1,
                 Level = 20,
                 CurrentHealth = 100,
                 ExperienceTotal = 1000,
@@ -1215,7 +1215,7 @@ namespace UnitTests.Engine.EngineGame
 
             var character2 = new CharacterModel
             {
-                Speed = -1,
+                Speed = 1,
                 Level = 10,
                 CurrentHealth = 100,
                 ExperienceTotal = 1000,
