@@ -25,7 +25,7 @@ namespace Game.Views
             InitializeComponent();
 
             // Update the Round Count
-            TotalRound.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.BattleScore.RoundCount.ToString();
+            //TotalRound.Text = BattleEngineViewModel.Instance.Engine.EngineSettings.BattleScore.RoundCount.ToString();
 
             // Draw the Characters
             foreach (var data in EngineViewModel.Engine.EngineSettings.CharacterList)
