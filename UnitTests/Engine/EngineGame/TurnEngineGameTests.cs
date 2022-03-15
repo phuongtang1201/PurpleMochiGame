@@ -803,7 +803,7 @@ namespace UnitTests.Engine.EngineGame
         }
 
         [Test]
-        public void TurnEngine_TargetDied_Message_Should_Pass()
+        public void TurnEngine_MonsterDied_Message_Should_Pass()
         {
             // Arrange
             var player = new MonsterModel();
