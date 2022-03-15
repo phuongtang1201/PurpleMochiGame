@@ -133,7 +133,7 @@ namespace Game.Engine.EngineGame
             }
             else // Don't allow Boss Monsters
             { 
-                for (var i = 0; i < 6; i++)
+                for (var i = 0; i < EngineSettings.MaxNumberPartyMonsters; i++)
                 {
                     // Set monster level as the average of lowest and highest
                     var data = RandomPlayerHelper.GetRandomMonster(avgTargetLevel, EngineSettings.BattleSettingsModel.AllowMonsterItems, false);
