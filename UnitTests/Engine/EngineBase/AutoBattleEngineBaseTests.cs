@@ -198,6 +198,7 @@ namespace UnitTests.Engine.EngineBase
             var result = await AutoBattleEngine.RunAutoBattle();
 
             //Reset
+            AutoBattleEngine.Battle.EngineSettings.MaxNumberPartyMonsters = 6;
 
             //Assert
             Assert.AreEqual(false, result);
