@@ -254,10 +254,10 @@
     <BundleResource Include="Resources\item.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\icon_add.png" />
+    <BundleResource Include="Resources\icon_add1.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\icon_cancel.png" />
+    <BundleResource Include="Resources\icon_cancel1.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\icon_delete.png" />
@@ -540,5 +540,11 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\reassign_items.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_add.png" />
   </ItemGroup>
 </Project>

@@ -206,7 +206,9 @@
     <Content Include="homeleaderboard.png" />
     <Content Include="home_leaderboard.png" />
     <Content Include="icon_add.png" />
+    <Content Include="icon_add1.png" />
     <Content Include="icon_cancel.png" />
+    <Content Include="icon_cancel1.png" />
     <Content Include="icon_delete.png" />
     <Content Include="icon_edit.png" />
     <Content Include="icon_new.png" />
