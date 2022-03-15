@@ -684,13 +684,8 @@ namespace Game.Views
         /// <param name="e"></param>
         public void NextButton_Clicked(object sender, EventArgs e)
         {
-            //BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive = false;
-            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null ||
-                BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Monster)
-            {
-                // Set attacker and defender
-                SetAttackerAndDefender();
-            }
+            // Set attacker and defender
+            SetAttackerAndDefender();
 
             var name = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.Name;
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Character)
