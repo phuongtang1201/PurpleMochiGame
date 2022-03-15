@@ -9,7 +9,10 @@
             <StackLayout Style="{StaticResource VerticalStack}" VerticalOptions="FillAndExpand">
 
                 <StackLayout Style="{StaticResource HorizontalStack}" HorizontalOptions="Center">
-                    <Grid>
+                    <Label Grid.Row="0" Grid.Column="0"
+                            Text="New Round" 
+                            Style="{StaticResource CenterMessageExtraLargeStyle}"/>
+                    <!--<Grid>
                         <Label Grid.Row="0" Grid.Column="0"
                             Text="Round" 
                             Style="{StaticResource CenterMessageExtraLargeStyle}"/>
@@ -18,7 +21,7 @@
                             Text="1" 
                             x:Name="TotalRound" 
                             Style="{StaticResource CenterMessageExtraLargeStyle}"/>
-                    </Grid>
+                    </Grid>-->
                     
                 </StackLayout>
 
