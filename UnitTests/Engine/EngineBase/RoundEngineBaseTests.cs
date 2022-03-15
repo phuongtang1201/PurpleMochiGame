@@ -1167,6 +1167,13 @@ namespace UnitTests.Engine.EngineBase
         public void RoundEngine_PlayerList_Valid_Default_Should_Pass()
         {
             // Act
+            Engine.EngineSettings.CharacterList.Clear();
+            Engine.EngineSettings.MonsterList.Clear();
+            var CharacterPlayer = new PlayerInfoModel(new CharacterModel());
+            Engine.EngineSettings.MonsterList.Add(CharacterPlayer);
+            var MonsterPlayer = new PlayerInfoModel(new MonsterModel());
+            Engine.EngineSettings.MonsterList.Add(MonsterPlayer);
+
             var result = Engine.Round.PlayerList();
 
             // Reset
