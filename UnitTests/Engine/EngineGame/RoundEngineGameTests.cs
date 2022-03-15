@@ -655,7 +655,6 @@ namespace UnitTests.Engine.EngineGame
         {
             Engine.EngineSettings.MonsterList.Clear();
 
-            // Both need to be character to fall through to the Name Test
             // Arrange
             var Character = new CharacterModel
             {
@@ -668,11 +667,24 @@ namespace UnitTests.Engine.EngineGame
                 Guid = "me"
             };
 
+            var Monster = new MonsterModel
+            {
+                Speed = 20,
+                Level = 1,
+                CurrentHealth = 1,
+                ExperienceTotal = 1,
+                Name = "A",
+                ListOrder = 2,
+                Guid = "you"
+            };
+
             // Add each model here to warm up and load it.
             _ = Game.Helpers.DataSetsHelper.WarmUp();
 
             Engine.EngineSettings.CharacterList.Clear();
             Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(Character));
+
+            Engine.EngineSettings.MonsterList.Add(new PlayerInfoModel(Monster));
 
             // Make the List
             Engine.EngineSettings.PlayerList = Engine.Round.MakePlayerList();
