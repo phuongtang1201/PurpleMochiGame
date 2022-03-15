@@ -785,7 +785,7 @@ namespace UnitTests.Engine.EngineGame
         }
 
         [Test]
-        public void TurnEngine_TargedDied_Valid_Monseter_Should_Pass()
+        public void TurnEngine_TargedDied_Valid_Monster_Should_Pass()
         {
             // Arrange
             var player = new MonsterModel();
