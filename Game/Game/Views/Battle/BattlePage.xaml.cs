@@ -963,7 +963,7 @@ namespace Game.Views
 
             // Set attacker and defender
             SetAttackerAndDefender();
-            //FocusedAttack();
+
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Character)
             {
                 // Set character active to false
@@ -971,6 +971,12 @@ namespace Game.Views
 
                 // Enabled next button
                 NextButton.IsEnabled = true;
+            }
+
+            var name = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.Name;
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Character)
+            {
+                BattleMessages.Text = string.Format("{0} \n{1}", "It's now " + name + "'s turn.", BattleMessages.Text);
             }
 
             // Enable or disable buttons if attacker is/isn't a character
