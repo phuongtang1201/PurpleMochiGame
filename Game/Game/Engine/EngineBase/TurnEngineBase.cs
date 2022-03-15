@@ -105,7 +105,7 @@ namespace Game.Engine.EngineBase
             // If it is the characters turn, and NOT auto battle, use what was sent into the engine
             if (Attacker.PlayerType == PlayerTypeEnum.Character)
             {
-                if (EngineSettings.BattleScore.AutoBattle == false)
+                if (EngineSettings.BattleScore.AutoBattle == false || EngineSettings.CurrentAction != ActionEnum.Unknown)
                 {
                     return EngineSettings.CurrentAction;
                 }
