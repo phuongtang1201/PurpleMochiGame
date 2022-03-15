@@ -769,6 +769,12 @@ namespace Game.Views
                 NextButton.IsEnabled = true;
             }
 
+            var name = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.Name;
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Character)
+            {
+                BattleMessages.Text = string.Format("{0} \n{1}", "It's now " + name + "'s turn.", BattleMessages.Text);
+            }
+
             // Enable or disable buttons if attacker is/isn't a character
             HealButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
             AttackButton.IsEnabled = BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterActive;
