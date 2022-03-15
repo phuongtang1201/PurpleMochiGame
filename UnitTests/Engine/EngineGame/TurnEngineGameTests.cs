@@ -566,10 +566,10 @@ namespace UnitTests.Engine.EngineGame
         }
 
         [Test]
-        public void TurnEngine_TakeTurn_Character_Use_Ability_Should_Pass()
+        public void TurnEngine_TakeTurn_Monster_Use_Ability_Should_Pass()
         {
             // Arrange
-            var PlayerInfo = new PlayerInfoModel(new CharacterModel());
+            var PlayerInfo = new PlayerInfoModel(new MonsterModel());
             Engine.EngineSettings.CurrentAction = ActionEnum.Ability;
             Engine.EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
 
