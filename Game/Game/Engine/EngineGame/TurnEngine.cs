@@ -76,6 +76,7 @@ namespace Game.Engine.EngineGame
 
                 // If action is ability, but ability is unknown, call ChooseToUseAbility
                 // If ability is Bandage, call ChooseToUseHeal
+                // If ability is known, use ability
                 case ActionEnum.Ability:
                     if (EngineSettings.CurrentActionAbility == AbilityEnum.Unknown || EngineSettings.CurrentActionAbility == AbilityEnum.None)
                     {
@@ -88,6 +89,8 @@ namespace Game.Engine.EngineGame
                         if (!result)
                             return result;
                     }
+                    else
+                        result = UseAbility(Attacker);
                     break;
 
                 // If character can't move, choose attack
