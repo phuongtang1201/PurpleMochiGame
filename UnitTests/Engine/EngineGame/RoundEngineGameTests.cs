@@ -1163,5 +1163,24 @@ namespace UnitTests.Engine.EngineGame
             Assert.AreEqual(Engine.EngineSettings.PlayerList.First().Guid, result.Guid);
         }
         #endregion GetNextPlayerInList
+
+        #region AddMonstersToRound
+        [Test]
+        public void RoundEngine_AddMonstersToRound_0Characters_Should_Pass()
+        {
+            // Arrange
+            Engine.EngineSettings.MonsterList.Clear();
+
+            Engine.EngineSettings.CharacterList.Clear();
+
+            // Act
+            var result = Engine.Round.AddMonstersToRound();
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(6, result);
+        }
+        #endregion
     }
 }
