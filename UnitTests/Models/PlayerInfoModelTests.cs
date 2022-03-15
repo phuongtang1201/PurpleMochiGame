@@ -241,6 +241,9 @@ namespace UnitTests.Models
         {
             // Arrange
             var data = new PlayerInfoModel(new MonsterModel());
+            data.AbilityTracker[AbilityEnum.Nimble] = 0;
+            data.AbilityTracker[AbilityEnum.Toughness] = 0;
+            data.AbilityTracker[AbilityEnum.Focus] = 0;
 
             // Act
             var result = data.SelectAbilityToUse();
