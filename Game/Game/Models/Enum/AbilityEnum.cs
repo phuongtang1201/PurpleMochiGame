@@ -158,10 +158,11 @@ namespace Game.Models
                 AbilityEnum.Quick.ToString(),
                 AbilityEnum.Barrier.ToString(),
                 AbilityEnum.Curse.ToString(),
-                AbilityEnum.Heal.ToString()
+                AbilityEnum.Heal.ToString(),
+                AbilityEnum.Bandage.ToString()
                 };
 
-                AbilityList.AddRange(GetListOthers);
+                //AbilityList.AddRange(GetListOthers);
                 return AbilityList;
             }
         }
