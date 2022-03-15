@@ -684,8 +684,9 @@ namespace Game.Views
         /// <param name="e"></param>
         public void NextButton_Clicked(object sender, EventArgs e)
         {
-            // Set attacker and defender
-            SetAttackerAndDefender();
+            if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker == null)
+                // Set attacker and defender
+                SetAttackerAndDefender();
 
             var name = BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.Name;
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType == PlayerTypeEnum.Character)
@@ -717,7 +718,7 @@ namespace Game.Views
             NextAttackExample();
 
             // Set attacker and defender
-            SetAttackerAndDefender();
+            //SetAttackerAndDefender();
 
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Character)
             {
@@ -758,7 +759,7 @@ namespace Game.Views
             NextAttackExample();
 
             // Set attacker and defender
-            SetAttackerAndDefender();
+            //SetAttackerAndDefender();
 
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Character)
             {
@@ -848,6 +849,9 @@ namespace Game.Views
                 GameOver();
                 return;
             }
+
+            // Set new attacker and defender
+            SetAttackerAndDefender();
         }
 
         /// <summary>
@@ -962,7 +966,7 @@ namespace Game.Views
                 FocusedAttack();
 
             // Set attacker and defender
-            SetAttackerAndDefender();
+            //SetAttackerAndDefender();
 
             if (BattleEngineViewModel.Instance.Engine.EngineSettings.CurrentAttacker.PlayerType != PlayerTypeEnum.Character)
             {
