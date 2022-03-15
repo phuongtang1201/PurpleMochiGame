@@ -107,7 +107,8 @@ namespace Game.Engine.EngineGame
                 maxTargetLevel = Convert.ToInt32(EngineSettings.CharacterList.Max(m => m.Level));
             }
 
-            var avgTargetLevel = (TargetLevel + maxTargetLevel) / 2;
+            var avgTargetLevel = 1;
+            avgTargetLevel += (TargetLevel + maxTargetLevel) / 2;
             var monsterNum = 1;
 
             // Allow Boss Monsters
