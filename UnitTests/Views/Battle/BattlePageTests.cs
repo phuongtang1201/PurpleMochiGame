@@ -399,28 +399,6 @@ namespace UnitTests.Views
         }
 
         [Test]
-        public void BattlePage_HealButton_Clicked_NextRound_Should_Pass()
-        {
-            // Arrange
-
-            BattleEngineViewModel.Instance.Engine.EngineSettings.CharacterList.Add(new PlayerInfoModel(new CharacterModel()));
-
-            BattleEngineViewModel.Instance.Engine.EngineSettings.MonsterList.Clear();
-
-            _ = BattleEngineViewModel.Instance.Engine.Round.MakePlayerList();
-
-            // Has no monster, so should show next round.
-
-            // Act
-            page.HealButton_Clicked(null,null);
-
-            // Reset
-
-            // Assert
-            Assert.IsTrue(true); // Got to here, so it happened...
-        }
-
-        [Test]
         public void BattlePage_NextAttackExample_GameOver_Should_Pass()
         {
             // Arrange
