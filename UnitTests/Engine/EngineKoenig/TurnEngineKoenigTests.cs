@@ -1313,7 +1313,7 @@ namespace UnitTests.Engine.EngineKoenig
             CharacterPlayer.CurrentHealth = 1;
             CharacterPlayer.MaxHealth = 1000;
 
-            Engine.EngineSettings.CurrentAction = ActionEnum.Unknown;
+            Engine.EngineSettings.CurrentAction = ActionEnum.Ability;
             Engine.EngineSettings.BattleScore.AutoBattle = true;
 
             // Act
