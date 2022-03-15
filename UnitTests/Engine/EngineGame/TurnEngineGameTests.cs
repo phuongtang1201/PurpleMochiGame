@@ -736,6 +736,33 @@ namespace UnitTests.Engine.EngineGame
             // Assert
             Assert.AreEqual(3, result);
         }
+
+        [Test]
+        public void TurnEngine_DropItems_Valid_Monster_Round_20_Random_Drop_0_Should_Return_0()
+        {
+            // Arrange
+            var player = new CharacterModel();
+
+            var PlayerInfo = new PlayerInfoModel(player);
+
+            Engine.EngineSettings.BattleScore.RoundCount = 20;
+
+            _ = DiceHelper.EnableForcedRolls();
+
+            // Drop is based on party number
+
+            // Drop is based on dice result, so 1 will yield 1
+            _ = DiceHelper.SetForcedRollValue(0);
+
+            // Act
+            var result = Engine.Round.Turn.DropItems(PlayerInfo);
+
+            // Reset
+            _ = DiceHelper.DisableForcedRolls();
+
+            // Assert
+            Assert.AreEqual(0, result);
+        }
         #endregion DropItems
 
         #region TargetDied
