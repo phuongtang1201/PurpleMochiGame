@@ -109,6 +109,8 @@ namespace Game.Engine.EngineBase
                 {
                     return EngineSettings.CurrentAction;
                 }
+                else
+                    return ActionEnum.Attack;
             }
 
             /*
