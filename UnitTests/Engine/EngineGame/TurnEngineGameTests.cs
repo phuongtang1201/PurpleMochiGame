@@ -566,6 +566,23 @@ namespace UnitTests.Engine.EngineGame
         }
 
         [Test]
+        public void TurnEngine_TakeTurn_Character_Use_Ability_Should_Pass()
+        {
+            // Arrange
+            var PlayerInfo = new PlayerInfoModel(new CharacterModel());
+            Engine.EngineSettings.CurrentAction = ActionEnum.Ability;
+            Engine.EngineSettings.CurrentActionAbility = AbilityEnum.Nimble;
+
+            // Act
+            var result = Engine.Round.Turn.TakeTurn(PlayerInfo);
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(true, result);
+        }
+
+        [Test]
         public void TurnEngine_TakeTurn_Ability_Should_Pass()
         {
             // Arrange
